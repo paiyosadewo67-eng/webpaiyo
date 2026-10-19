@@ -1002,7 +1002,7 @@
           { id: "IX-05", kelas: "IX", nama: "Bangun Ruang Sisi Lengkung",          slug: "/brsl9",              url: "", status: "segera", ikon: "tabung",  deskripsi: "Tabung, kerucut, dan bola: luas permukaan dan volume." }
         ],
         unduhan: [
-          { nama: "Bilangan Berpangkat dan Bentuk Akar — Materi PPT (41 slide)", label: "Materi Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", bab: "IX-01", grup: "modul", berkas: "PPTX", ikon: "gambar", tombol: "Unduh PPT", url: "download/ppt/9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx", status: "aktif", deskripsi: "Presentasi materi lengkap bab Bilangan Berpangkat dan Bentuk Akar karya Pak Paiyo — unduh dan pelajari kembali di rumah, dengan atau tanpa internet." },
+          { nama: "Bilangan Berpangkat dan Bentuk Akar — Materi PPT (41 slide)", label: "Materi Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", bab: "IX-01", grup: "modul", berkas: "PPTX", ikon: "gambar", tombol: "Unduh PPT", url: "download/ppt/9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx", urlLihat: "https://docs.google.com/viewer?url=https%3A%2F%2Fpaiyosadewo67-eng.github.io%2Fwebpaiyo%2Fdownload%2Fppt%2F9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx&embedded=true", tombolLihat: "Lihat E-Modul", status: "aktif", deskripsi: "Presentasi materi lengkap bab Bilangan Berpangkat dan Bentuk Akar karya Pak Paiyo — unduh dan pelajari kembali di rumah, dengan atau tanpa internet." },
           { nama: "LKS Kelas 9 Bab 1 — Perpangkatan dan Bentuk Akar (Word)", label: "LKPD · Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", bab: "IX-01", grup: "lkpd", berkas: "DOCX", ikon: "lkpd", tombol: "Unduh Word", url: "lkpd/LKS__9_BAB_1PERPANGKATAN_DAN_BENTUK_AKAR_KUR_13_REV_NOP.docx", status: "aktif", deskripsi: "Lembar kerja siswa (LKS) Kelas 9 Bab 1 Perpangkatan dan Bentuk Akar Kurikulum 13 revisi dalam format Word — unduh untuk dikerjakan, dicetak, atau disesuaikan kembali." }
         ],
         /* ---------- Poster komik edukasi (PDF, dibuka di tab baru) ---------- */
@@ -1124,7 +1124,10 @@
         if (s.dari === "unduhan") {
           return (LINK_DB.unduhan || [])
             .filter(function (d) { return d.bab === b.id && d.status === "aktif" && d.url && (!s.grup || d.grup === s.grup); })
-            .map(function (d) { return { nama: d.nama, url: d.url, unduh: true }; });
+            .map(function (d) {
+              if (d.urlLihat) return { nama: d.tombolLihat || "Lihat E-Modul", url: d.urlLihat };
+              return { nama: d.nama, url: d.url, unduh: true };
+            });
         }
         if (s.dari === "poster") {
           return (LINK_DB.poster || [])
