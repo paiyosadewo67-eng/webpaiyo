@@ -356,6 +356,31 @@
       .bab-card.next h3 { color: var(--muted); font-size: 1.1rem; }
       .bab-card.next p { font-size: .88rem; }
 
+      /* ---------- Sumber belajar per bab (kartu yang dapat diperluas) ---------- */
+      .bab-toggle {
+        margin-top: .35rem; display: inline-flex; align-items: center; gap: .5rem;
+        font: inherit; font-size: .88rem; font-weight: 700; cursor: pointer;
+        color: var(--kc); background: color-mix(in srgb, var(--kc) 8%, transparent);
+        border: 1px solid color-mix(in srgb, var(--kc) 35%, transparent);
+        padding: .6rem 1rem; border-radius: 10px; align-self: flex-start;
+        transition: background .18s ease, border-color .18s ease;
+      }
+      .bab-toggle:hover { background: color-mix(in srgb, var(--kc) 15%, transparent); }
+      .bab-toggle svg { transition: transform .2s ease; flex: none; }
+      .bab-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+      .bab-sumber { border-top: 1px dashed var(--line-strong); margin-top: .9rem; padding-top: 1rem; display: grid; gap: 1.05rem; }
+      .bab-sumber[hidden] { display: none; }
+      .sumber-group h4 { margin: 0; font-size: .95rem; font-weight: 800; display: flex; align-items: center; gap: .5rem; }
+      .sumber-list { list-style: none; margin: .5rem 0 0; padding: 0; display: grid; gap: .4rem; }
+      .sumber-link {
+        display: flex; align-items: center; justify-content: space-between; gap: .6rem;
+        padding: .55rem .75rem; border: 1px solid var(--line); border-radius: 10px;
+        background: var(--surface-2); text-decoration: none; font-size: .87rem; font-weight: 600;
+        transition: border-color .18s ease, background .18s ease;
+      }
+      .sumber-link:hover { border-color: var(--gold); background: var(--surface); }
+      .sumber-link svg { flex: none; color: var(--faint); }
+
       /* ---------- Unduhan ---------- */
       .dl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
       @media (max-width: 760px) { .dl-grid { grid-template-columns: 1fr; } }
@@ -868,6 +893,17 @@
          Struktur halaman tidak perlu diubah — kartu akan otomatis
          menjadi tautan yang bisa diklik.
          Status yang dikenal: "aktif" | "segera"
+         Bab juga dapat memiliki kolom "sumber": kelompok tautan sumber
+         belajar (Portal Rumah Belajar, E-Modul, Game, Asesmen & Kuis,
+         LKPD) yang tampil saat kartu bab diperluas lewat tombol
+         "Lihat Sumber Belajar". URL-nya TIDAK ditulis ulang di kolom
+         "sumber" — cukup tunjuk sumbernya lewat "dari":
+           "portal"     → memakai url bab itu sendiri
+           "unduhan"    → entri LINK_DB.unduhan dengan bab = id bab ini
+           "interaktif" → entri LINK_DB.interaktif dengan bab = id bab
+                          ini dan grup yang sesuai ("game"/"quiz"/"lkpd")
+         Contoh lengkapnya ada di bab IX-01 — tiru pola itu untuk
+         bab-bab berikutnya.
          ============================================================ */
       var LINK_DB = {
         domain: "aaamaatkeren.id",
@@ -901,24 +937,31 @@
           { id: "VIII-06", kelas: "VIII", nama: "Bangun Ruang Sisi Datar",         slug: "/brsd",               url: "", status: "segera", ikon: "ruang",   deskripsi: "Kubus, balok, prisma, dan limas: jaring-jaring, luas, dan volume." },
           { id: "VIII-07", kelas: "VIII", nama: "Statistika",                      slug: "/statistika",         url: "", status: "segera", ikon: "data",    deskripsi: "Mean, median, modus, dan penyajian data." },
           /* ---------- KELAS IX ---------- */
-          { id: "IX-01", kelas: "IX", nama: "Bilangan Berpangkat & Bentuk Akar",   slug: "/bilanganberpangkat", url: "https://ais-pre-di23lyzdrzodvzlarbynza-438289882508.asia-southeast1.run.app/", status: "aktif", ikon: "pangkat", deskripsi: "Eksponen, sifat-sifat pangkat, dan operasi bentuk akar." },
+          { id: "IX-01", kelas: "IX", nama: "Bilangan Berpangkat & Bentuk Akar",   slug: "/bilanganberpangkat", url: "https://ais-pre-di23lyzdrzodvzlarbynza-438289882508.asia-southeast1.run.app/", status: "aktif", ikon: "pangkat", deskripsi: "Eksponen, sifat-sifat pangkat, dan operasi bentuk akar.",
+            sumber: [
+              { judul: "Portal Rumah Belajar", emoji: "🏠", dari: "portal" },
+              { judul: "E-Modul",              emoji: "📖", dari: "unduhan" },
+              { judul: "Game",                 emoji: "🎮", dari: "interaktif", grup: "game" },
+              { judul: "Asesmen & Kuis",        emoji: "📊", dari: "interaktif", grup: "quiz" },
+              { judul: "LKPD",                 emoji: "📝", dari: "interaktif", grup: "lkpd" }
+            ] },
           { id: "IX-02", kelas: "IX", nama: "Transformasi",                        slug: "/transformasi",       url: "", status: "segera", ikon: "transformasi", deskripsi: "Refleksi, translasi, rotasi, dan dilatasi pada bidang koordinat." },
           { id: "IX-03", kelas: "IX", nama: "Kekongruenan & Kesebangunan",         slug: "/kekongruenan",       url: "", status: "segera", ikon: "sebangun", deskripsi: "Dua bangun yang sama persis dan yang sebanding — lengkap dengan video pembelajarannya." },
           { id: "IX-04", kelas: "IX", nama: "Peluang",                             slug: "/peluang",            url: "", status: "segera", ikon: "peluang", deskripsi: "Peluang teoretik dan empirik dari percobaan sederhana." },
           { id: "IX-05", kelas: "IX", nama: "Bangun Ruang Sisi Lengkung",          slug: "/brsl9",              url: "", status: "segera", ikon: "tabung",  deskripsi: "Tabung, kerucut, dan bola: luas permukaan dan volume." }
         ],
         unduhan: [
-          { nama: "Bilangan Berpangkat dan Bentuk Akar — Materi PPT (41 slide)", label: "Materi Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", berkas: "PPTX", ikon: "gambar", url: "download/ppt/9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx", status: "aktif", deskripsi: "Presentasi materi lengkap bab Bilangan Berpangkat dan Bentuk Akar karya Pak Paiyo — unduh dan pelajari kembali di rumah, dengan atau tanpa internet." }
+          { nama: "Bilangan Berpangkat dan Bentuk Akar — Materi PPT (41 slide)", label: "Materi Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", bab: "IX-01", berkas: "PPTX", ikon: "gambar", url: "download/ppt/9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx", status: "aktif", deskripsi: "Presentasi materi lengkap bab Bilangan Berpangkat dan Bentuk Akar karya Pak Paiyo — unduh dan pelajari kembali di rumah, dengan atau tanpa internet." }
         ],
         /* ---------- Materi interaktif yang bisa dimainkan (grup: "lkpd" | "game" | "quiz") ---------- */
         interaktif: [
-          { grup: "lkpd", ikon: "lkpd", nama: "LKPD Digital Interaktif — Bilangan Berpangkat dan Bentuk Akar", label: "LKPD Visual · Bab IX-01", url: "https://igatrisna.my.canva.site/lkpd-interaktif-pangkat-akar", deskripsi: "Lembar kerja digital interaktif untuk berlatih konsep pangkat dan bentuk akar selangkah demi selangkah." },
-          { grup: "game", ikon: "game", nama: "Game Interaktif Escape Room HOTS — Bilangan Berpangkat", label: "Game Edukasi · Bab IX-01", url: "https://igatrisna.my.canva.site/game-interaktif-escape-room-hots-bab-bilangan-berpangkat", deskripsi: "Pecahkan teka-teki HOTS bilangan berpangkat untuk meloloskan diri dari ruang terkunci." },
-          { grup: "game", ikon: "game", nama: "Game Escape Room — Notasi Ilmiah", label: "Game Edukasi · Notasi Ilmiah", url: "https://igatrisna.my.canva.site/escape-room-matematika-notasi-ilmiah", deskripsi: "Misi escape room seru untuk menguasai penulisan bilangan dalam notasi ilmiah." },
-          { grup: "game", ikon: "game", nama: "Game Escape Room — Bentuk Akar", label: "Game Edukasi · Bentuk Akar", url: "https://igatrisna.my.canva.site/aaamat-keren-escape-room-matematika-bentuk-akar", deskripsi: "Jelajahi tantangan escape room sambil berlatih operasi dan penyederhanaan bentuk akar." },
-          { grup: "quiz", ikon: "quiz", nama: "Kuis Simulasi TKA 2026 — Pangkat & Bentuk Akar", label: "Quiz · Simulasi TKA 2026", url: "https://igatrisna.my.canva.site/simulasi-tka-matematika-bab-pangkat-akar", deskripsi: "Simulasi kuis persiapan TKA 2026 untuk bab pangkat dan bentuk akar." },
-          { grup: "quiz", ikon: "quiz", nama: "Asesmen Sumatif 1 — Bilangan Berpangkat dan Notasi Ilmiah", label: "Quiz · Asesmen Sumatif", url: "https://igatrisna.my.canva.site/asesmen-sumatif-1-bilangan-berpangkat-dan-notasi-ilmiah", deskripsi: "Asesmen sumatif pertama untuk mengukur penguasaan bilangan berpangkat dan notasi ilmiah." },
-          { grup: "quiz", ikon: "quiz", nama: "Kuis Game Interaktif TKA — Pangkat & Akar", label: "Quiz · TKA", url: "https://igatrisna.my.canva.site/kuisgameinteraktif-tka-pangkat-akar", deskripsi: "Kuis bergaya game untuk latihan TKA materi pangkat dan akar." }
+          { grup: "lkpd", bab: "IX-01", ikon: "lkpd", nama: "LKPD Digital Interaktif — Bilangan Berpangkat dan Bentuk Akar", label: "LKPD Visual · Bab IX-01", url: "https://igatrisna.my.canva.site/lkpd-interaktif-pangkat-akar", deskripsi: "Lembar kerja digital interaktif untuk berlatih konsep pangkat dan bentuk akar selangkah demi selangkah." },
+          { grup: "game", bab: "IX-01", ikon: "game", nama: "Game Interaktif Escape Room HOTS — Bilangan Berpangkat", label: "Game Edukasi · Bab IX-01", url: "https://igatrisna.my.canva.site/game-interaktif-escape-room-hots-bab-bilangan-berpangkat", deskripsi: "Pecahkan teka-teki HOTS bilangan berpangkat untuk meloloskan diri dari ruang terkunci." },
+          { grup: "game", bab: "IX-01", ikon: "game", nama: "Game Escape Room — Notasi Ilmiah", label: "Game Edukasi · Notasi Ilmiah", url: "https://igatrisna.my.canva.site/escape-room-matematika-notasi-ilmiah", deskripsi: "Misi escape room seru untuk menguasai penulisan bilangan dalam notasi ilmiah." },
+          { grup: "game", bab: "IX-01", ikon: "game", nama: "Game Escape Room — Bentuk Akar", label: "Game Edukasi · Bentuk Akar", url: "https://igatrisna.my.canva.site/aaamat-keren-escape-room-matematika-bentuk-akar", deskripsi: "Jelajahi tantangan escape room sambil berlatih operasi dan penyederhanaan bentuk akar." },
+          { grup: "quiz", bab: "IX-01", ikon: "quiz", nama: "Kuis Simulasi TKA 2026 — Pangkat & Bentuk Akar", label: "Quiz · Simulasi TKA 2026", url: "https://igatrisna.my.canva.site/simulasi-tka-matematika-bab-pangkat-akar", deskripsi: "Simulasi kuis persiapan TKA 2026 untuk bab pangkat dan bentuk akar." },
+          { grup: "quiz", bab: "IX-01", ikon: "quiz", nama: "Asesmen Sumatif 1 — Bilangan Berpangkat dan Notasi Ilmiah", label: "Quiz · Asesmen Sumatif", url: "https://igatrisna.my.canva.site/asesmen-sumatif-1-bilangan-berpangkat-dan-notasi-ilmiah", deskripsi: "Asesmen sumatif pertama untuk mengukur penguasaan bilangan berpangkat dan notasi ilmiah." },
+          { grup: "quiz", bab: "IX-01", ikon: "quiz", nama: "Kuis Game Interaktif TKA — Pangkat & Akar", label: "Quiz · TKA", url: "https://igatrisna.my.canva.site/kuisgameinteraktif-tka-pangkat-akar", deskripsi: "Kuis bergaya game untuk latihan TKA materi pangkat dan akar." }
         ]
       };
 
@@ -986,6 +1029,44 @@
         grid.innerHTML = html;
       })();
 
+      /* ---------- Sumber belajar per bab (pola "sumber" di LINK_DB.bab) ----------
+         Mengambil URL dari entri LINK_DB yang sudah ada — tidak ada URL
+         yang ditulis ulang di sini. */
+      var IKON_BUKA = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4L11 13"/><path d="M19 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>';
+      function tautanSumber(b, s) {
+        if (s.dari === "portal") {
+          return b.url ? [{ nama: "Buka Portal Rumah Belajar", url: b.url }] : [];
+        }
+        if (s.dari === "unduhan") {
+          return (LINK_DB.unduhan || [])
+            .filter(function (d) { return d.bab === b.id && d.status === "aktif" && d.url; })
+            .map(function (d) { return { nama: d.nama, url: d.url, unduh: true }; });
+        }
+        if (s.dari === "interaktif") {
+          return (LINK_DB.interaktif || [])
+            .filter(function (it) { return it.bab === b.id && it.grup === s.grup; })
+            .map(function (it) { return { nama: it.nama, url: it.url }; });
+        }
+        return [];
+      }
+      function panelSumber(b) {
+        var html = '<div class="bab-sumber" id="sumber-' + esc(b.id) + '" hidden>';
+        b.sumber.forEach(function (s) {
+          var tautan = tautanSumber(b, s);
+          if (!tautan.length) return;
+          html += '<div class="sumber-group"><h4><span aria-hidden="true">' + s.emoji + '</span>' + esc(s.judul) + '</h4><ul class="sumber-list">';
+          tautan.forEach(function (t) {
+            var namaBerkas = t.unduh ? t.url.split("/").pop() : "";
+            html += '<li><a class="sumber-link" href="' + esc(t.url) + '" target="_blank" rel="noopener"' +
+              (t.unduh ? ' download="' + esc(namaBerkas) + '"' : '') +
+              '><span>' + esc(t.nama) + '</span>' + IKON_BUKA + '</a></li>';
+          });
+          html += '</ul></div>';
+        });
+        html += '</div>';
+        return html;
+      }
+
       /* ---------- Render kartu bab dari LINK_DB.bab ---------- */
       (function renderBab() {
         var perKelas = {};
@@ -1004,7 +1085,15 @@
               '<h3>' + esc(b.nama) + '</h3>' +
               '<p class="bab-desc">' + esc(b.deskripsi) + '</p>' +
               '<p class="bab-url">' + esc(LINK_DB.domain + b.slug) + '</p>';
-            if (aktif) {
+            if (aktif && b.sumber && b.sumber.length) {
+              html += '<article class="bab-card">' + isi +
+                '<button type="button" class="bab-toggle" aria-expanded="false" aria-controls="sumber-' + esc(b.id) + '">' +
+                  '<span class="bab-toggle-label">Lihat Sumber Belajar</span>' +
+                  '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>' +
+                '</button>' +
+                panelSumber(b) +
+              '</article>';
+            } else if (aktif) {
               var eksternal = /^https?:\/\//.test(b.url);
               html += '<a class="bab-card" href="' + esc(b.url) + '"' + (eksternal ? ' target="_blank" rel="noopener"' : '') + '>' + isi + '</a>';
             } else {
@@ -1013,6 +1102,21 @@
           });
           html += '<article class="bab-card next"><span class="bab-ic">' + svgIkon("buku", 34) + '</span><h3>Bab Berikutnya Menyusul</h3><p>Materi baru akan terus ditambahkan mengikuti Master Site Map AAAMAAT KEREN.</p></article>';
           grid.innerHTML = html;
+        });
+      })();
+
+      /* ---------- Buka/tutup panel sumber belajar pada kartu bab ---------- */
+      (function toggleSumber() {
+        document.addEventListener("click", function (e) {
+          var tombol = e.target.closest(".bab-toggle");
+          if (!tombol) return;
+          var panel = document.getElementById(tombol.getAttribute("aria-controls"));
+          if (!panel) return;
+          var terbuka = tombol.getAttribute("aria-expanded") === "true";
+          tombol.setAttribute("aria-expanded", terbuka ? "false" : "true");
+          panel.hidden = terbuka;
+          var label = tombol.querySelector(".bab-toggle-label");
+          if (label) label.textContent = terbuka ? "Lihat Sumber Belajar" : "Tutup Sumber Belajar";
         });
       })();
 
