@@ -356,6 +356,31 @@
       .bab-card.next h3 { color: var(--muted); font-size: 1.1rem; }
       .bab-card.next p { font-size: .88rem; }
 
+      /* ---------- Unduhan ---------- */
+      .dl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+      @media (max-width: 760px) { .dl-grid { grid-template-columns: 1fr; } }
+      .dl-card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 1.5rem 1.5rem 1.4rem; display: flex; flex-direction: column; gap: .6rem;
+        box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
+      }
+      .dl-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: var(--gold); }
+      .dl-top { display: flex; align-items: center; justify-content: space-between; gap: .7rem; }
+      .dl-file {
+        display: inline-flex; align-items: center; gap: .5rem;
+        font-family: "JetBrains Mono", monospace; font-size: .76rem; font-weight: 600;
+        color: var(--ix); background: color-mix(in srgb, var(--ix) 9%, transparent);
+        border: 1px solid color-mix(in srgb, var(--ix) 28%, transparent);
+        padding: .3rem .65rem; border-radius: 8px;
+      }
+      .dl-card h3 { font-size: 1.2rem; font-weight: 700; font-family: "Plus Jakarta Sans", sans-serif; line-height: 1.35; }
+      .dl-label { font-size: .88rem; font-weight: 700; color: var(--gold); letter-spacing: .02em; }
+      .dl-desc { font-size: .9rem; color: var(--muted); flex: 1; }
+      .dl-btn { align-self: flex-start; margin-top: .4rem; }
+      .dl-card.next { border-style: dashed; background: transparent; box-shadow: none; justify-content: center; color: var(--muted); }
+      .dl-card.next::before { display: none; }
+      .dl-card.next h3 { color: var(--muted); font-size: 1.12rem; }
+
       /* ---------- Profil guru ---------- */
       .guru { display: grid; grid-template-columns: .9fr 1.1fr; gap: 3rem; align-items: center; }
       @media (max-width: 860px) { .guru { grid-template-columns: 1fr; gap: 1.8rem; } }
@@ -639,6 +664,18 @@
       </div>
     </section>
 
+    <!-- ================= DOWNLOAD ================= -->
+    <section id="download">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kicker">Download</span>
+          <h2>Unduh Bahan Belajar</h2>
+          <p>File materi yang bisa disimpan dan dipelajari luring — mulai dari presentasi PPT bab Bilangan Berpangkat &amp; Bentuk Akar. Bahan unduhan lain (PDF, LKPD, dan ringkasan materi) menyusul bertahap.</p>
+        </div>
+        <div class="dl-grid" id="downloadGrid"><!-- Item unduhan dirender dari LINK_DB.unduhan --></div>
+      </div>
+    </section>
+
     <!-- ================= PROFIL GURU ================= -->
     <section class="band" id="profil-guru">
       <div class="wrap guru">
@@ -774,7 +811,7 @@
           { id: "F-07", nama: "Misi HOTS",            ikon: "otak",     warna: "#C2410C",           url: "",                      status: "segera", deskripsi: "Tantangan berpikir tingkat tinggi: analisis, evaluasi, dan ciptakan solusi." },
           { id: "F-08", nama: "Game Edukasi",         ikon: "game",     warna: "#1E7A46",           url: "",                      status: "segera", deskripsi: "Belajar sambil bermain — latih kecepatan dan ketepatanmu lewat permainan." },
           { id: "F-09", nama: "Quiz",                 ikon: "quiz",     warna: "#2456C4",           url: "",                      status: "segera", deskripsi: "Uji pemahaman tiap bab dengan kuis singkat dan umpan balik langsung." },
-          { id: "F-10", nama: "Download",             ikon: "unduh",    warna: "#8A6410",           url: "",                      status: "segera", deskripsi: "Unduh bahan belajar: PDF, PPT, LKPD, dan ringkasan materi untuk belajar luring." },
+          { id: "F-10", nama: "Download",             ikon: "unduh",    warna: "#8A6410",           url: "#download",             status: "aktif",  deskripsi: "Unduh bahan belajar: PDF, PPT, LKPD, dan ringkasan materi untuk belajar luring." },
           { id: "F-11", nama: "Kontak",               ikon: "kontak",   warna: "#0F766E",           url: "#kontak",               status: "aktif",  deskripsi: "Cara terhubung dengan Pak Paiyo dan informasi sekolah." },
           { id: "F-12", nama: "Tentang AAAMAAT KEREN", ikon: "hati",    warna: "#BC3F2E",           url: "#tentang",              status: "aktif",  deskripsi: "Kisah di balik nama AAAMAAT KEREN dan lima pilar KEREN." }
         ],
@@ -799,6 +836,9 @@
           { id: "IX-03", kelas: "IX", nama: "Kekongruenan & Kesebangunan",         slug: "/kekongruenan",       url: "", status: "segera", ikon: "sebangun", deskripsi: "Dua bangun yang sama persis dan yang sebanding — lengkap dengan video pembelajarannya." },
           { id: "IX-04", kelas: "IX", nama: "Peluang",                             slug: "/peluang",            url: "", status: "segera", ikon: "peluang", deskripsi: "Peluang teoretik dan empirik dari percobaan sederhana." },
           { id: "IX-05", kelas: "IX", nama: "Bangun Ruang Sisi Lengkung",          slug: "/brsl9",              url: "", status: "segera", ikon: "tabung",  deskripsi: "Tabung, kerucut, dan bola: luas permukaan dan volume." }
+        ],
+        unduhan: [
+          { nama: "Bilangan Berpangkat dan Bentuk Akar — Materi PPT (41 slide)", label: "Materi Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", berkas: "PPTX", ikon: "gambar", url: "download/ppt/9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx", status: "aktif", deskripsi: "Presentasi materi lengkap bab Bilangan Berpangkat dan Bentuk Akar karya Pak Paiyo — unduh dan pelajari kembali di rumah, dengan atau tanpa internet." }
         ]
       };
 
@@ -894,6 +934,31 @@
           html += '<article class="bab-card next"><span class="bab-ic">' + svgIkon("buku", 34) + '</span><h3>Bab Berikutnya Menyusul</h3><p>Materi baru akan terus ditambahkan mengikuti Master Site Map AAAMAAT KEREN.</p></article>';
           grid.innerHTML = html;
         });
+      })();
+
+      /* ---------- Render item unduhan dari LINK_DB.unduhan ---------- */
+      (function renderUnduhan() {
+        var grid = document.getElementById("downloadGrid");
+        if (!grid) return;
+        var html = "";
+        (LINK_DB.unduhan || []).forEach(function (d) {
+          var aktif = d.status === "aktif" && d.url;
+          var namaBerkas = d.url ? d.url.split("/").pop() : "";
+          html +=
+            '<article class="dl-card">' +
+              '<div class="dl-top"><span class="dl-file">' + svgIkon(d.ikon || "unduh", 15) + esc(d.berkas) + '</span>' + lencana(d.status) + '</div>' +
+              '<h3>' + esc(d.nama) + '</h3>' +
+              '<p class="dl-label">' + esc(d.label) + '</p>' +
+              '<p class="dl-desc">' + esc(d.deskripsi) + '</p>' +
+              (aktif
+                ? '<a class="btn btn-gold dl-btn" href="' + esc(d.url) + '" download="' + esc(namaBerkas) + '">' +
+                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11M7 10l5 5 5-5"/><path d="M4 20h16"/></svg>' +
+                    'Unduh PPT</a>'
+                : '') +
+            '</article>';
+        });
+        html += '<article class="dl-card next"><div class="dl-top"><span class="dl-file">' + svgIkon("unduh", 15) + 'PDF · LKPD · Ringkasan</span><span class="badge badge-soon">Segera Hadir</span></div><h3>Bahan Unduhan Lainnya Menyusul</h3><p class="dl-desc">File PDF, LKPD, dan ringkasan materi bab-bab lain akan ditambahkan di sini secara bertahap.</p></article>';
+        grid.innerHTML = html;
       })();
 
       /* ---------- Menu seluler ---------- */
