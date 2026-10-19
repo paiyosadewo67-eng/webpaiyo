@@ -997,7 +997,7 @@
               { judul: "LKPD",                 emoji: "📝", dari: "lkpd" }
             ] },
           { id: "IX-02", kelas: "IX", nama: "Transformasi",                        slug: "/transformasi",       url: "", status: "segera", ikon: "transformasi", deskripsi: "Refleksi, translasi, rotasi, dan dilatasi pada bidang koordinat." },
-          { id: "IX-03", kelas: "IX", nama: "Kekongruenan & Kesebangunan",         slug: "/kekongruenan",       url: "", status: "segera", ikon: "sebangun", deskripsi: "Dua bangun yang sama persis dan yang sebanding — lengkap dengan video pembelajarannya." },
+          { id: "IX-03", kelas: "IX", nama: "Kekongruenan & Kesebangunan",         slug: "/kekongruenan",       url: "https://ais-pre-6k4w2l5sry42m6e2slpyoq-253889415088.asia-east1.run.app", status: "aktif", ikon: "sebangun", deskripsi: "Dua bangun yang sama persis dan yang sebanding — lengkap dengan video pembelajarannya." },
           { id: "IX-04", kelas: "IX", nama: "Peluang",                             slug: "/peluang",            url: "", status: "segera", ikon: "peluang", deskripsi: "Peluang teoretik dan empirik dari percobaan sederhana." },
           { id: "IX-05", kelas: "IX", nama: "Bangun Ruang Sisi Lengkung",          slug: "/brsl9",              url: "", status: "segera", ikon: "tabung",  deskripsi: "Tabung, kerucut, dan bola: luas permukaan dan volume." }
         ],
@@ -1012,6 +1012,7 @@
         /* ---------- Materi interaktif yang bisa dimainkan (grup: "lkpd" | "game" | "quiz") ---------- */
         interaktif: [
           { grup: "lkpd", bab: "IX-01", ikon: "lkpd", nama: "LKPD Digital Interaktif — Bilangan Berpangkat dan Bentuk Akar", label: "LKPD Visual · Bab IX-01", url: "https://igatrisna.my.canva.site/lkpd-interaktif-pangkat-akar", deskripsi: "Lembar kerja digital interaktif untuk berlatih konsep pangkat dan bentuk akar selangkah demi selangkah." },
+          { grup: "lkpd", bab: "IX-03", ikon: "lkpd", nama: "LKPD Matematika Interaktif — Kekongruenan dan Kesebangunan", label: "LKPD Visual · Bab IX-03", tombol: "Buka LKPD", url: "https://ais-pre-6k4w2l5sry42m6e2slpyoq-253889415088.asia-east1.run.app", deskripsi: "LKPD Matematika Interaktif SMP karya Drs. Paiyo — 11 indikator tujuan pembelajaran, rangkuman dan simulator geometri interaktif dinamis, soal pemahaman, contoh soal numerasi, latihan campuran dan HOTS, kuis ekspedisi 15 landmark Nusantara, hingga sertifikat kelulusan." },
           { grup: "game", bab: "IX-01", ikon: "game", nama: "Game Interaktif Escape Room HOTS — Bilangan Berpangkat", label: "Game Edukasi · Bab IX-01", url: "https://igatrisna.my.canva.site/game-interaktif-escape-room-hots-bab-bilangan-berpangkat", deskripsi: "Pecahkan teka-teki HOTS bilangan berpangkat untuk meloloskan diri dari ruang terkunci." },
           { grup: "game", bab: "IX-01", ikon: "game", nama: "Game Escape Room — Notasi Ilmiah", label: "Game Edukasi · Notasi Ilmiah", url: "https://igatrisna.my.canva.site/escape-room-matematika-notasi-ilmiah", deskripsi: "Misi escape room seru untuk menguasai penulisan bilangan dalam notasi ilmiah." },
           { grup: "game", bab: "IX-01", ikon: "game", nama: "Game Escape Room — Bentuk Akar", label: "Game Edukasi · Bentuk Akar", url: "https://igatrisna.my.canva.site/aaamat-keren-escape-room-matematika-bentuk-akar", deskripsi: "Jelajahi tantangan escape room sambil berlatih operasi dan penyederhanaan bentuk akar." },
@@ -1327,7 +1328,7 @@
                 '<p class="play-desc">' + esc(it.deskripsi) + '</p>' +
                 '<a class="btn btn-gold play-btn" href="' + esc(it.url) + '" target="_blank" rel="noopener">' +
                   '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z"/></svg>' +
-                  'Mainkan</a>' +
+                  esc(it.tombol || "Mainkan") + '</a>' +
               '</article>';
           });
           /* Unduhan yang tergabung dalam grup ini (mis. file Word di grup LKPD) */
