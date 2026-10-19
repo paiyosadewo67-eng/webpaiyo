@@ -749,6 +749,18 @@
       </div>
     </section>
 
+    <!-- ================= POSTER KOMIK EDUKASI ================= -->
+    <section id="poster-komik">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kicker">Poster Komik Edukasi</span>
+          <h2>Belajar Konsep Lewat Komik</h2>
+          <p>Poster komik edukasi untuk Bab Bilangan Berpangkat &amp; Bentuk Akar — konsep pangkat dan akar diceritakan lewat gambar dan cerita yang seru dibaca. Klik <b>Lihat Poster</b> untuk membukanya sebagai PDF di tab baru.</p>
+        </div>
+        <div class="dl-grid" id="posterGrid"><!-- Kartu poster dirender dari LINK_DB.poster --></div>
+      </div>
+    </section>
+
     <!-- ================= BELAJAR INTERAKTIF ================= -->
     <section id="interaktif">
       <div class="wrap">
@@ -928,6 +940,11 @@
          "sumber" — cukup tunjuk sumbernya lewat "dari":
            "portal"     → memakai url bab itu sendiri
            "unduhan"    → entri LINK_DB.unduhan dengan bab = id bab ini
+                          (bila "grup" diisi, hanya entri unduhan dengan
+                          grup yang sama, misalnya "modul")
+           "poster"     → entri LINK_DB.poster dengan bab = id bab ini
+           "lkpd"       → gabungan entri LINK_DB.interaktif grup "lkpd"
+                          dan entri LINK_DB.unduhan grup "lkpd" bab ini
            "interaktif" → entri LINK_DB.interaktif dengan bab = id bab
                           ini dan grup yang sesuai ("game"/"quiz"/"lkpd")
            "video"      → daftar LINK_DB.video_<id bab huruf kecil tanpa
@@ -944,7 +961,7 @@
           { id: "F-02", nama: "Kelas VIII",           ikon: "buku",     warna: "var(--viii)",       url: "#kelas-viii",           status: "aktif",  deskripsi: "Pola bilangan, fungsi, garis lurus, SPLDV, Pythagoras, bangun ruang, dan statistika." },
           { id: "F-03", nama: "Kelas IX",             ikon: "buku",     warna: "var(--ix)",         url: "#kelas-ix",             status: "aktif",  deskripsi: "Bilangan berpangkat, transformasi, kekongruenan & kesebangunan, peluang, dan BRSL." },
           { id: "F-04", nama: "Video Pembelajaran",   ikon: "video",    warna: "#B7791F",           url: "",                      status: "segera", deskripsi: "Penjelasan materi lewat video karya Pak Paiyo — tonton, jeda, dan ulangi sesukamu." },
-          { id: "F-05", nama: "Poster Komik Edukasi", ikon: "gambar",   warna: "#7C4DBE",           url: "",                      status: "segera", deskripsi: "Konsep matematika yang diceritakan lewat poster dan komik yang seru dibaca." },
+          { id: "F-05", nama: "Poster Komik Edukasi", ikon: "gambar",   warna: "#7C4DBE",           url: "#poster-komik",         status: "aktif",  deskripsi: "Konsep matematika yang diceritakan lewat poster dan komik yang seru dibaca." },
           { id: "F-06", nama: "LKPD Visual",          ikon: "lkpd",     warna: "#0E7C7B",           url: "#lkpd-visual",          status: "aktif",  deskripsi: "Lembar kerja peserta didik bergambar untuk berlatih selangkah demi selangkah." },
           { id: "F-07", nama: "Misi HOTS",            ikon: "otak",     warna: "#C2410C",           url: "",                      status: "segera", deskripsi: "Tantangan berpikir tingkat tinggi: analisis, evaluasi, dan ciptakan solusi." },
           { id: "F-08", nama: "Game Edukasi",         ikon: "game",     warna: "#1E7A46",           url: "#game-edukasi",         status: "aktif",  deskripsi: "Belajar sambil bermain — latih kecepatan dan ketepatanmu lewat permainan." },
@@ -972,11 +989,12 @@
           { id: "IX-01", kelas: "IX", nama: "Bilangan Berpangkat & Bentuk Akar",   slug: "/bilanganberpangkat", url: "https://ais-pre-di23lyzdrzodvzlarbynza-438289882508.asia-southeast1.run.app/", status: "aktif", ikon: "pangkat", deskripsi: "Eksponen, sifat-sifat pangkat, dan operasi bentuk akar.",
             sumber: [
               { judul: "Portal Rumah Belajar", emoji: "🏠", dari: "portal" },
-              { judul: "E-Modul",              emoji: "📖", dari: "unduhan" },
+              { judul: "E-Modul",              emoji: "📖", dari: "unduhan", grup: "modul" },
+              { judul: "Poster",               emoji: "🖼", dari: "poster" },
               { judul: "Video Pembelajaran",   emoji: "🎬", dari: "video" },
               { judul: "Game",                 emoji: "🎮", dari: "interaktif", grup: "game" },
               { judul: "Asesmen & Kuis",        emoji: "📊", dari: "interaktif", grup: "quiz" },
-              { judul: "LKPD",                 emoji: "📝", dari: "interaktif", grup: "lkpd" }
+              { judul: "LKPD",                 emoji: "📝", dari: "lkpd" }
             ] },
           { id: "IX-02", kelas: "IX", nama: "Transformasi",                        slug: "/transformasi",       url: "", status: "segera", ikon: "transformasi", deskripsi: "Refleksi, translasi, rotasi, dan dilatasi pada bidang koordinat." },
           { id: "IX-03", kelas: "IX", nama: "Kekongruenan & Kesebangunan",         slug: "/kekongruenan",       url: "", status: "segera", ikon: "sebangun", deskripsi: "Dua bangun yang sama persis dan yang sebanding — lengkap dengan video pembelajarannya." },
@@ -984,7 +1002,12 @@
           { id: "IX-05", kelas: "IX", nama: "Bangun Ruang Sisi Lengkung",          slug: "/brsl9",              url: "", status: "segera", ikon: "tabung",  deskripsi: "Tabung, kerucut, dan bola: luas permukaan dan volume." }
         ],
         unduhan: [
-          { nama: "Bilangan Berpangkat dan Bentuk Akar — Materi PPT (41 slide)", label: "Materi Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", bab: "IX-01", berkas: "PPTX", ikon: "gambar", url: "download/ppt/9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx", status: "aktif", deskripsi: "Presentasi materi lengkap bab Bilangan Berpangkat dan Bentuk Akar karya Pak Paiyo — unduh dan pelajari kembali di rumah, dengan atau tanpa internet." }
+          { nama: "Bilangan Berpangkat dan Bentuk Akar — Materi PPT (41 slide)", label: "Materi Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", bab: "IX-01", grup: "modul", berkas: "PPTX", ikon: "gambar", tombol: "Unduh PPT", url: "download/ppt/9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx", status: "aktif", deskripsi: "Presentasi materi lengkap bab Bilangan Berpangkat dan Bentuk Akar karya Pak Paiyo — unduh dan pelajari kembali di rumah, dengan atau tanpa internet." },
+          { nama: "LKS Kelas 9 Bab 1 — Perpangkatan dan Bentuk Akar (Word)", label: "LKPD · Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", bab: "IX-01", grup: "lkpd", berkas: "DOCX", ikon: "lkpd", tombol: "Unduh Word", url: "lkpd/LKS__9_BAB_1PERPANGKATAN_DAN_BENTUK_AKAR_KUR_13_REV_NOP.docx", status: "aktif", deskripsi: "Lembar kerja siswa (LKS) Kelas 9 Bab 1 Perpangkatan dan Bentuk Akar Kurikulum 13 revisi dalam format Word — unduh untuk dikerjakan, dicetak, atau disesuaikan kembali." }
+        ],
+        /* ---------- Poster komik edukasi (PDF, dibuka di tab baru) ---------- */
+        poster: [
+          { nama: "Poster Komik Edukasi — Bilangan Berpangkat & Bentuk Akar", label: "Poster Komik · Bab IX-01", bab: "IX-01", berkas: "PDF", ikon: "gambar", url: "poster/LKPD_KOMIK_EDUKASI_BAB_PANGKAT_BENTUK_AKAR_POSTER.pdf", status: "aktif", deskripsi: "Poster komik edukasi bab Bilangan Berpangkat & Bentuk Akar — konsep pangkat dan akar diceritakan lewat komik yang seru dibaca. Klik Lihat Poster untuk membukanya sebagai PDF di tab baru." }
         ],
         /* ---------- Materi interaktif yang bisa dimainkan (grup: "lkpd" | "game" | "quiz") ---------- */
         interaktif: [
@@ -1099,8 +1122,22 @@
         }
         if (s.dari === "unduhan") {
           return (LINK_DB.unduhan || [])
-            .filter(function (d) { return d.bab === b.id && d.status === "aktif" && d.url; })
+            .filter(function (d) { return d.bab === b.id && d.status === "aktif" && d.url && (!s.grup || d.grup === s.grup); })
             .map(function (d) { return { nama: d.nama, url: d.url, unduh: true }; });
+        }
+        if (s.dari === "poster") {
+          return (LINK_DB.poster || [])
+            .filter(function (p) { return p.bab === b.id && p.status === "aktif" && p.url; })
+            .map(function (p) { return { nama: p.nama, url: p.url }; });
+        }
+        if (s.dari === "lkpd") {
+          var digital = (LINK_DB.interaktif || [])
+            .filter(function (it) { return it.bab === b.id && it.grup === "lkpd"; })
+            .map(function (it) { return { nama: it.nama, url: it.url }; });
+          var berkas = (LINK_DB.unduhan || [])
+            .filter(function (d) { return d.bab === b.id && d.grup === "lkpd" && d.status === "aktif" && d.url; })
+            .map(function (d) { return { nama: d.nama, url: d.url, unduh: true }; });
+          return digital.concat(berkas);
         }
         if (s.dari === "interaktif") {
           return (LINK_DB.interaktif || [])
@@ -1228,6 +1265,7 @@
         if (!grid) return;
         var html = "";
         (LINK_DB.unduhan || []).forEach(function (d) {
+          if (d.grup && d.grup !== "modul") return; /* entri bergrup tampil di ruang fiturnya sendiri */
           var aktif = d.status === "aktif" && d.url;
           var namaBerkas = d.url ? d.url.split("/").pop() : "";
           html +=
@@ -1239,11 +1277,34 @@
               (aktif
                 ? '<a class="btn btn-gold dl-btn" href="' + esc(d.url) + '" download="' + esc(namaBerkas) + '">' +
                     '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11M7 10l5 5 5-5"/><path d="M4 20h16"/></svg>' +
-                    'Unduh PPT</a>'
+                    esc(d.tombol || "Unduh") + '</a>'
                 : '') +
             '</article>';
         });
         html += '<article class="dl-card next"><div class="dl-top"><span class="dl-file">' + svgIkon("unduh", 15) + 'PDF · LKPD · Ringkasan</span><span class="badge badge-soon">Segera Hadir</span></div><h3>Bahan Unduhan Lainnya Menyusul</h3><p class="dl-desc">File PDF, LKPD, dan ringkasan materi bab-bab lain akan ditambahkan di sini secara bertahap.</p></article>';
+        grid.innerHTML = html;
+      })();
+
+      /* ---------- Render kartu poster dari LINK_DB.poster ---------- */
+      (function renderPoster() {
+        var grid = document.getElementById("posterGrid");
+        if (!grid) return;
+        var html = "";
+        (LINK_DB.poster || []).forEach(function (p) {
+          var aktif = p.status === "aktif" && p.url;
+          html +=
+            '<article class="dl-card">' +
+              '<div class="dl-top"><span class="dl-file">' + svgIkon(p.ikon || "gambar", 15) + esc(p.berkas) + '</span>' + lencana(p.status) + '</div>' +
+              '<h3>' + esc(p.nama) + '</h3>' +
+              '<p class="dl-label">' + esc(p.label) + '</p>' +
+              '<p class="dl-desc">' + esc(p.deskripsi) + '</p>' +
+              (aktif
+                ? '<a class="btn btn-gold dl-btn" href="' + esc(p.url) + '" target="_blank" rel="noopener">' +
+                    '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>' +
+                    'Lihat Poster</a>'
+                : '') +
+            '</article>';
+        });
         grid.innerHTML = html;
       })();
 
@@ -1269,6 +1330,22 @@
                   'Mainkan</a>' +
               '</article>';
           });
+          /* Unduhan yang tergabung dalam grup ini (mis. file Word di grup LKPD) */
+          (LINK_DB.unduhan || [])
+            .filter(function (d) { return d.grup === grup && d.status === "aktif" && d.url; })
+            .forEach(function (d) {
+              var namaBerkas = d.url.split("/").pop();
+              html +=
+                '<article class="play-card">' +
+                  '<span class="menu-ic">' + svgIkon(d.ikon || "unduh", 25) + '</span>' +
+                  '<h3>' + esc(d.nama) + '</h3>' +
+                  '<p class="play-label">' + esc(d.label) + '</p>' +
+                  '<p class="play-desc">' + esc(d.deskripsi) + '</p>' +
+                  '<a class="btn btn-gold play-btn" href="' + esc(d.url) + '" download="' + esc(namaBerkas) + '">' +
+                    '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11M7 10l5 5 5-5"/><path d="M4 20h16"/></svg>' +
+                    esc(d.tombol || "Unduh") + '</a>' +
+                '</article>';
+            });
           grid.innerHTML = html;
         });
       })();
