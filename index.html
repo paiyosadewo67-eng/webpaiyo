@@ -951,6 +951,11 @@
                           tanda hubung> (bab IX-01 → LINK_DB.video_ix01);
                           video tampil sebagai thumbnail YouTube dan
                           diputar langsung di situs saat diklik
+           "eksternal"  → entri LINK_DB.eksternal dengan bab = id bab ini
+                          dan grup yang sesuai ("emodul" / "materi") —
+                          tautan daring yang dibuka di tab baru, bukan
+                          berkas unduhan (mis. aplikasi E-Modul dan
+                          dokumen Google Docs)
          Contoh lengkapnya ada di bab IX-01 — tiru pola itu untuk
          bab-bab berikutnya.
          ============================================================ */
@@ -997,7 +1002,16 @@
               { judul: "LKPD",                 emoji: "📝", dari: "lkpd" }
             ] },
           { id: "IX-02", kelas: "IX", nama: "Transformasi",                        slug: "/transformasi",       url: "", status: "segera", ikon: "transformasi", deskripsi: "Refleksi, translasi, rotasi, dan dilatasi pada bidang koordinat." },
-          { id: "IX-03", kelas: "IX", nama: "Kekongruenan & Kesebangunan",         slug: "/kekongruenan",       url: "https://ais-pre-6k4w2l5sry42m6e2slpyoq-253889415088.asia-east1.run.app", status: "aktif", ikon: "sebangun", deskripsi: "Dua bangun yang sama persis dan yang sebanding — lengkap dengan video pembelajarannya." },
+          { id: "IX-03", kelas: "IX", nama: "Kekongruenan & Kesebangunan",         slug: "/kekongruenan",       url: "https://ais-pre-y55obnbxhflokcbor2mh72-438289882508.asia-southeast1.run.app/", status: "aktif", ikon: "sebangun", deskripsi: "Dua bangun yang sama persis dan yang sebanding — lengkap dengan video pembelajarannya.",
+            sumber: [
+              { judul: "Portal Rumah Belajar", emoji: "🏠", dari: "portal" },
+              { judul: "E-Modul",              emoji: "📖", dari: "eksternal", grup: "emodul" },
+              { judul: "Game",                 emoji: "🎮", dari: "interaktif", grup: "game" },
+              { judul: "Asesmen & Kuis",        emoji: "📊", dari: "interaktif", grup: "quiz" },
+              { judul: "LKPD",                 emoji: "📝", dari: "lkpd" },
+              { judul: "Video Pembelajaran",   emoji: "🎬", dari: "video" },
+              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" }
+            ] },
           { id: "IX-04", kelas: "IX", nama: "Peluang",                             slug: "/peluang",            url: "", status: "segera", ikon: "peluang", deskripsi: "Peluang teoretik dan empirik dari percobaan sederhana." },
           { id: "IX-05", kelas: "IX", nama: "Bangun Ruang Sisi Lengkung",          slug: "/brsl9",              url: "", status: "segera", ikon: "tabung",  deskripsi: "Tabung, kerucut, dan bola: luas permukaan dan volume." }
         ],
@@ -1009,6 +1023,18 @@
         poster: [
           { nama: "Poster Komik Edukasi — Bilangan Berpangkat & Bentuk Akar", label: "Poster Komik · Bab IX-01", bab: "IX-01", berkas: "PDF", ikon: "gambar", url: "poster/LKPD_KOMIK_EDUKASI_BAB_PANGKAT_BENTUK_AKAR_POSTER.pdf", status: "aktif", deskripsi: "Poster komik edukasi bab Bilangan Berpangkat & Bentuk Akar — konsep pangkat dan akar diceritakan lewat komik yang seru dibaca. Klik Lihat Poster untuk membukanya sebagai PDF di tab baru." }
         ],
+        /* ---------- Sumber daring per bab (dibuka di tab baru, bukan unduhan) ----------
+           Grup yang dikenal: "emodul" (aplikasi E-Modul) dan "materi"
+           (dokumen Google Docs: PPT, naskah soal, LKPD Word, PPM). */
+        eksternal: [
+          { bab: "IX-03", grup: "emodul", nama: "E-Modul Digital Interaktif Kekongruenan & Kesebangunan", url: "https://ais-pre-sfya3jyk34q34ejwcbly4u-253889415088.asia-east1.run.app" },
+          { bab: "IX-03", grup: "materi", nama: "Materi 1 (PPT)", url: "https://docs.google.com/presentation/d/1wMXz9Z44T4_lTYTP7c-zXVahWkTYF1tr/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
+          { bab: "IX-03", grup: "materi", nama: "Materi 2 (PPT)", url: "https://docs.google.com/presentation/d/1Lus6YNWU6JstT4cgVWlWmJX_5vkrxg3_/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
+          { bab: "IX-03", grup: "materi", nama: "Naskah Soal Asesmen Sumatif", url: "https://docs.google.com/document/d/1is8gR0hAGYHUNIaYlYv-P28d6L6g6wK_/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
+          { bab: "IX-03", grup: "materi", nama: "LKPD Diskusi (Word)", url: "https://docs.google.com/document/d/1BqxHTYV_RjCI9QMPy1TEQimY8o7_6Oxx/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
+          { bab: "IX-03", grup: "materi", nama: "PPM Bab", url: "https://docs.google.com/document/d/130dAwaQwWKaFwIDJzRhVRVlfOSddSNWL/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
+          { bab: "IX-03", grup: "materi", nama: "PPM Kesebangunan", url: "https://docs.google.com/document/d/1ePi4cMDmVkbU71BH80XUvb47eSsJ3sMZ/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" }
+        ],
         /* ---------- Materi interaktif yang bisa dimainkan (grup: "lkpd" | "game" | "quiz") ---------- */
         interaktif: [
           { grup: "lkpd", bab: "IX-01", ikon: "lkpd", nama: "LKPD Digital Interaktif — Bilangan Berpangkat dan Bentuk Akar", label: "LKPD Visual · Bab IX-01", url: "https://igatrisna.my.canva.site/lkpd-interaktif-pangkat-akar", deskripsi: "Lembar kerja digital interaktif untuk berlatih konsep pangkat dan bentuk akar selangkah demi selangkah." },
@@ -1018,7 +1044,15 @@
           { grup: "game", bab: "IX-01", ikon: "game", nama: "Game Escape Room — Bentuk Akar", label: "Game Edukasi · Bentuk Akar", url: "https://igatrisna.my.canva.site/aaamat-keren-escape-room-matematika-bentuk-akar", deskripsi: "Jelajahi tantangan escape room sambil berlatih operasi dan penyederhanaan bentuk akar." },
           { grup: "quiz", bab: "IX-01", ikon: "quiz", nama: "Kuis Simulasi TKA 2026 — Pangkat & Bentuk Akar", label: "Quiz · Simulasi TKA 2026", url: "https://igatrisna.my.canva.site/simulasi-tka-matematika-bab-pangkat-akar", deskripsi: "Simulasi kuis persiapan TKA 2026 untuk bab pangkat dan bentuk akar." },
           { grup: "quiz", bab: "IX-01", ikon: "quiz", nama: "Asesmen Sumatif 1 — Bilangan Berpangkat dan Notasi Ilmiah", label: "Quiz · Asesmen Sumatif", url: "https://igatrisna.my.canva.site/asesmen-sumatif-1-bilangan-berpangkat-dan-notasi-ilmiah", deskripsi: "Asesmen sumatif pertama untuk mengukur penguasaan bilangan berpangkat dan notasi ilmiah." },
-          { grup: "quiz", bab: "IX-01", ikon: "quiz", nama: "Kuis Game Interaktif TKA — Pangkat & Akar", label: "Quiz · TKA", url: "https://igatrisna.my.canva.site/kuisgameinteraktif-tka-pangkat-akar", deskripsi: "Kuis bergaya game untuk latihan TKA materi pangkat dan akar." }
+          { grup: "quiz", bab: "IX-01", ikon: "quiz", nama: "Kuis Game Interaktif TKA — Pangkat & Akar", label: "Quiz · TKA", url: "https://igatrisna.my.canva.site/kuisgameinteraktif-tka-pangkat-akar", deskripsi: "Kuis bergaya game untuk latihan TKA materi pangkat dan akar." },
+          { grup: "lkpd", bab: "IX-03", ikon: "lkpd", nama: "LKPD Digital Interaktif (Canva)", label: "LKPD Visual · Bab IX-03", url: "https://igatrisna.my.canva.site/untitled-app-lkpd-kekongruenan-kesebangunan", deskripsi: "LKPD digital interaktif berbasis Canva untuk berlatih kekongruenan dan kesebangunan selangkah demi selangkah." },
+          { grup: "game", bab: "IX-03", ikon: "game", nama: "Escape Room Misi HOTS Kekongruenan & Kesebangunan", label: "Game Edukasi · Bab IX-03", url: "https://igatrisna.my.canva.site/game-interaktif-escape-room-misi-hots-kekongruenan-kesebangunan-", deskripsi: "Escape room misi HOTS — pecahkan tantangan kekongruenan dan kesebangunan untuk menyelesaikan misi." },
+          { grup: "game", bab: "IX-03", ikon: "game", nama: "Game Misi HOTS 2", label: "Game Edukasi · Bab IX-03", url: "https://ais-pre-i37js4zwhmteyerlhkf23t-57322949575.asia-east1.run.app", deskripsi: "Lanjutan misi HOTS kekongruenan dan kesebangunan untuk mengasah penalaran geometri." },
+          { grup: "game", bab: "IX-03", ikon: "game", nama: "Simulator Hologram 3D", label: "Game Edukasi · Bab IX-03", url: "https://ais-pre-5bz7nvxh2oat762te5n7sx-438289882508.asia-southeast1.run.app", deskripsi: "Simulator hologram 3D untuk menjelajahi bangun kongruen dan sebangun secara visual." },
+          { grup: "quiz", bab: "IX-03", ikon: "quiz", nama: "Asesmen Sumatif 3 Kekongruenan (Token: KONGRUEN9)", label: "Quiz · Bab IX-03", url: "https://ais-pre-gtyrodhi7mnqwfhocz3p2r-438289882508.asia-southeast1.run.app", deskripsi: "Asesmen sumatif 3 materi kekongruenan — masukkan token KONGRUEN9 saat memulai." },
+          { grup: "quiz", bab: "IX-03", ikon: "quiz", nama: "Simulasi Asesmen Sumatif Kesebangunan (Token: SEBANGUN9)", label: "Quiz · Bab IX-03", url: "https://ais-pre-fjh5paivfkr5lalqwdjx7l-253889415088.asia-east1.run.app", deskripsi: "Simulasi asesmen sumatif materi kesebangunan — masukkan token SEBANGUN9 saat memulai." },
+          { grup: "quiz", bab: "IX-03", ikon: "quiz", nama: "Simulasi TKA Geometri", label: "Quiz · Bab IX-03", url: "https://igatrisna.my.canva.site/untitled-app-simulasi-tka-geometri-kekongruenan-kesebangunan", deskripsi: "Simulasi TKA geometri untuk materi kekongruenan dan kesebangunan." },
+          { grup: "quiz", bab: "IX-03", ikon: "quiz", nama: "Kuis Asesmen Sumatif 3", label: "Quiz · Bab IX-03", url: "https://ais-pre-uhqikzcm55ikvnkb6jl2mh-438289882508.asia-southeast1.run.app/", deskripsi: "Kuis asesmen sumatif 3 untuk menguji pemahaman kekongruenan dan kesebangunan." }
         ],
         /* ---------- Video pembelajaran per bab (YouTube, diputar langsung di situs) ----------
            Kunci mengikuti pola "video_" + id bab huruf kecil tanpa tanda hubung
@@ -1046,6 +1080,19 @@
           { yt: "3sgQ85ny18U", judul: "Menyelesaikan Soal-soal HOTS Tipe OSN bagian 2" },
           { yt: "mmvvb0J-6YY", judul: "Menyelesaikan Soal-soal HOTS Tipe OSN bagian 3" },
           { yt: "ZHuyWrodjGs", judul: "Menyelesaikan Soal-soal HOTS Tipe OSN bagian 4" }
+        ],
+        video_ix03: [
+          { yt: "7e1XgAblA-8", judul: "Pengertian Kekongruenan dan Syarat dua Bangun Kongruen" },
+          { yt: "hO5keA4DPns", judul: "Pengertian dan Syarat Dua Segitiga Kongruen" },
+          { yt: "nz5Qo03EwWs", judul: "Sifat Dua Segitiga Kongruen, Contoh Soal dan Pembahasannya" },
+          { yt: "seX4ho1hRNk", judul: "Membuktikan Dua Segitiga Kongruen" },
+          { yt: "yk2TiyJIZpI", judul: "Membuktikan Dua Bangun Sebangun dan Sifat-sifatnya" },
+          { yt: "P3C8VryYS68", judul: "Menentukan Panjang Sisi pada Dua Bangun Sebangun" },
+          { yt: "IYXWRBYbVbk", judul: "Membuktikan Dua Segitiga Sebangun" },
+          { yt: "XSHrEWJ7mPg", judul: "Menemukan Panjang Sisi pada Dua Segitiga Sebangun" },
+          { yt: "IdoY8Uh7eUg", judul: "Perbandingan Ruas Garis pada Dua Segitiga Sebangun" },
+          { yt: "bSbGO3G4-2c", judul: "Menaksir Tinggi Menara Masjid, Tinggi Tiang Bendera" },
+          { yt: "Vx_JkjCa8gs", judul: "Menaksir Tinggi Pohon, Tinggi Gedung, Tinggi Menara" }
         ]
       };
 
@@ -1152,6 +1199,11 @@
           var kunci = "video_" + b.id.toLowerCase().replace(/-/g, "");
           return (LINK_DB[kunci] || [])
             .map(function (v) { return { nama: v.judul, yt: v.yt }; });
+        }
+        if (s.dari === "eksternal") {
+          return (LINK_DB.eksternal || [])
+            .filter(function (x) { return x.bab === b.id && x.grup === s.grup; })
+            .map(function (x) { return { nama: x.nama, url: x.url }; });
         }
         return [];
       }
