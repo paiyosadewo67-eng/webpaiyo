@@ -518,6 +518,57 @@
       footer ul a:hover { color: var(--gold-2); }
       .foot-slogan { font-family: "Playfair Display", serif; font-style: italic; color: var(--gold-soft); font-size: 1.05rem; margin-top: .6rem; }
       .foot-bottom { border-top: 1px solid rgba(255,255,255,.12); padding-top: 1.4rem; font-size: .82rem; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
+
+      /* ---------- Kunci kode akses ---------- */
+      .akses-btn {
+        font: inherit; font-size: .88rem; font-weight: 700; cursor: pointer; white-space: nowrap;
+        color: var(--gold-soft); background: rgba(233,196,76,.1);
+        border: 1.5px solid rgba(233,196,76,.55); border-radius: 999px;
+        padding: .5rem 1rem; margin-left: .5rem;
+        transition: background .18s ease, color .18s ease, border-color .18s ease;
+      }
+      .akses-btn:hover { background: rgba(233,196,76,.22); color: #fff; }
+      .akses-btn.terbuka { color: #A9E8BC; border-color: rgba(127,215,154,.55); background: rgba(28,107,50,.28); cursor: default; }
+      .akses-btn.terbuka:hover { background: rgba(28,107,50,.28); color: #A9E8BC; }
+      @media (max-width: 900px) {
+        .nav-links .akses-btn { margin-left: 0; margin-top: .4rem; text-align: center; }
+      }
+      .akses-overlay {
+        position: fixed; inset: 0; z-index: 200; display: grid; place-items: center;
+        padding: 1.1rem; background: rgba(4, 9, 24, .66);
+        backdrop-filter: blur(4px);
+      }
+      .akses-overlay[hidden] { display: none; }
+      .akses-card {
+        width: min(400px, 100%); background: var(--surface); color: var(--ink);
+        border: 1px solid var(--line-strong); border-radius: 20px;
+        padding: 2rem 1.8rem 1.7rem; box-shadow: var(--shadow); text-align: center;
+      }
+      .akses-ic {
+        width: 58px; height: 58px; margin: 0 auto 1rem; border-radius: 50%;
+        display: grid; place-items: center; color: var(--gold);
+        background: color-mix(in srgb, var(--gold) 12%, transparent);
+        border: 1.5px solid color-mix(in srgb, var(--gold) 45%, transparent);
+      }
+      .akses-card h3 { font-size: 1.45rem; margin-bottom: .5rem; }
+      .akses-card > p { color: var(--muted); font-size: .94rem; }
+      .akses-form { margin-top: 1.3rem; text-align: left; }
+      .akses-form label { display: block; font-size: .82rem; font-weight: 700; letter-spacing: .04em; margin-bottom: .4rem; }
+      .akses-form input {
+        width: 100%; font: inherit; font-size: 1rem; padding: .75rem .9rem;
+        border: 1.5px solid var(--line-strong); border-radius: 11px;
+        background: var(--surface-2); color: var(--ink);
+      }
+      .akses-form input:focus { outline: 2.5px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
+      .akses-error { color: var(--ix); font-weight: 700; font-size: .9rem; margin-top: .6rem; }
+      .akses-btns { display: flex; gap: .7rem; margin-top: 1.25rem; }
+      .akses-btns .btn { flex: 1; justify-content: center; cursor: pointer; font-family: inherit; }
+      .akses-btns .btn-gold { border: none; }
+      .akses-batal {
+        background: transparent; color: var(--muted);
+        border: 1.5px solid var(--line-strong);
+      }
+      .akses-batal:hover { color: var(--ink); border-color: var(--muted); }
     </style>
   </head>
   <body>
@@ -541,6 +592,7 @@
           <a href="#kelas-ix">Kelas IX</a>
           <a href="#profil-guru">Profil Guru</a>
           <a href="profil-guru-drs-paiyo/" class="cta">Tentang Guru</a>
+          <button type="button" class="akses-btn" id="aksesBtn">🔒 Masuk dengan Kode</button>
         </nav>
       </div>
     </header>
@@ -942,6 +994,26 @@
         </div>
       </div>
     </footer>
+
+    <!-- ================= MODAL KODE AKSES ================= -->
+    <div class="akses-overlay" id="modalAkses" hidden>
+      <div class="akses-card" role="dialog" aria-modal="true" aria-labelledby="aksesJudul">
+        <span class="akses-ic" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        </span>
+        <h3 id="aksesJudul">Kode Akses</h3>
+        <p>Masukkan kode akses dari Drs. Paiyo untuk membuka materi belajar.</p>
+        <form class="akses-form" id="formAkses">
+          <label for="inputKode">Kode Akses</label>
+          <input id="inputKode" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Ketik kode akses di sini" />
+          <p class="akses-error" id="aksesError" role="alert" hidden>Kode salah, silakan coba lagi.</p>
+          <div class="akses-btns">
+            <button type="button" class="btn akses-batal" id="aksesBatal">Batal</button>
+            <button type="submit" class="btn btn-gold">Buka Akses</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script>
       /* ============================================================
@@ -1719,6 +1791,207 @@
             tombol.setAttribute("aria-expanded", "false");
           }
         });
+      })();
+    </script>
+
+    <script>
+      /* ============================================================
+         KUNCI KODE AKSES — AAAMAAT KEREN
+         Halaman tetap bebas dilihat (hero, berita, menu, kartu bab,
+         profil guru, tentang, kontak). Yang dikunci hanyalah aksi
+         MASUK ke materi belajar:
+           1. Tombol portal utama pada kartu bab (tautan aplikasi AIS).
+           2. Tombol "Lihat Sumber Belajar" (membuka panel materi).
+           3. Item tautan di ruang fitur global (Ruang Portal, E-Modul,
+              Game Edukasi, Quiz/Asesmen, LKPD Visual, Video, Materi).
+           4. Semua tombol unduh di bagian Unduhan.
+           5. Tautan eksternal ke aplikasi AIS, Canva, Google
+              Docs/Drive, dan video YouTube di dalam panel materi bab.
+         Kode diperiksa dengan SHA-256 (crypto.subtle.digest) — di
+         halaman ini hanya HASH kodenya yang disimpan, bukan kodenya.
+         Setelah berhasil, status terbuka disimpan di localStorage
+         perangkat pengunjung (kunci "aaamatAkses") supaya perangkat
+         yang sama tidak ditanya lagi pada kunjungan berikutnya.
+         Klik yang tertunda dilanjutkan otomatis setelah kode benar.
+         ============================================================ */
+      (function kunciAkses() {
+        var HASH_AKSES = "55d6684c4d630cc9316a201813397c2a35021c66f31d8184d0627a5895a53c7b";
+        var KUNCI_LS = "aaamatAkses";
+        var terbukaMemori = false;
+        var aksiTertunda = null;
+
+        var btnStatus = document.getElementById("aksesBtn");
+        var modal = document.getElementById("modalAkses");
+        var form = document.getElementById("formAkses");
+        var input = document.getElementById("inputKode");
+        var pesanSalah = document.getElementById("aksesError");
+        var btnBatal = document.getElementById("aksesBatal");
+        if (!btnStatus || !modal || !form || !input) return;
+
+        function aksesTerbuka() {
+          if (terbukaMemori) return true;
+          try { return localStorage.getItem(KUNCI_LS) === HASH_AKSES; }
+          catch (e) { return false; }
+        }
+        function perbaruiTombolStatus() {
+          if (aksesTerbuka()) {
+            btnStatus.textContent = "🔓 Akses Terbuka";
+            btnStatus.classList.add("terbuka");
+          } else {
+            btnStatus.textContent = "🔒 Masuk dengan Kode";
+            btnStatus.classList.remove("terbuka");
+          }
+        }
+        function tampilkanModal() {
+          pesanSalah.hidden = true;
+          input.value = "";
+          modal.hidden = false;
+          document.body.style.overflow = "hidden";
+          setTimeout(function () { input.focus(); }, 30);
+        }
+        function sembunyikanModal() {
+          modal.hidden = true;
+          document.body.style.overflow = "";
+        }
+        function batalkanModal() {
+          aksiTertunda = null;
+          sembunyikanModal();
+        }
+
+        /* ---------- SHA-256 ---------- */
+        /* Cadangan SHA-256 murni JavaScript, hanya dipakai bila
+           crypto.subtle tidak tersedia (konteks non-HTTPS lama). */
+        function sha256js(ascii) {
+          function rr(v, a) { return (v >>> a) | (v << (32 - a)); }
+          var maxWord = Math.pow(2, 32), hasil = "";
+          var words = [], bitLen = ascii.length * 8;
+          var hash = sha256js.h = sha256js.h || [], k = sha256js.k = sha256js.k || [];
+          var primeCounter = k.length, isComposite = {};
+          for (var candidate = 2; primeCounter < 64; candidate++) {
+            if (!isComposite[candidate]) {
+              for (var i = 0; i < 313; i += candidate) isComposite[i] = candidate;
+              hash[primeCounter] = (Math.pow(candidate, .5) * maxWord) | 0;
+              k[primeCounter++] = (Math.pow(candidate, 1 / 3) * maxWord) | 0;
+            }
+          }
+          ascii += "\x80";
+          while (ascii.length % 64 - 56) ascii += "\x00";
+          for (var i2 = 0; i2 < ascii.length; i2++) {
+            var j = ascii.charCodeAt(i2);
+            if (j >> 8) return "";
+            words[i2 >> 2] |= j << ((3 - i2) % 4) * 8;
+          }
+          words[words.length] = ((bitLen / maxWord) | 0);
+          words[words.length] = (bitLen);
+          for (var j2 = 0; j2 < words.length;) {
+            var w = words.slice(j2, j2 += 16), oldHash = hash;
+            hash = hash.slice(0, 8);
+            for (var i3 = 0; i3 < 64; i3++) {
+              var w15 = w[i3 - 15], w2 = w[i3 - 2];
+              var a = hash[0], e = hash[4];
+              var temp1 = hash[7]
+                + (rr(e, 6) ^ rr(e, 11) ^ rr(e, 25))
+                + ((e & hash[5]) ^ ((~e) & hash[6]))
+                + k[i3]
+                + (w[i3] = (i3 < 16) ? w[i3] : (
+                    w[i3 - 16]
+                    + (rr(w15, 7) ^ rr(w15, 18) ^ (w15 >>> 3))
+                    + w[i3 - 7]
+                    + (rr(w2, 17) ^ rr(w2, 19) ^ (w2 >>> 10))
+                  ) | 0);
+              var temp2 = (rr(a, 2) ^ rr(a, 13) ^ rr(a, 22))
+                + ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));
+              hash = [(temp1 + temp2) | 0].concat(hash);
+              hash[4] = (hash[4] + temp1) | 0;
+            }
+            for (var i4 = 0; i4 < 8; i4++) hash[i4] = (hash[i4] + oldHash[i4]) | 0;
+          }
+          for (var i5 = 0; i5 < 8; i5++) {
+            for (var j3 = 3; j3 + 1; j3--) {
+              var b = (hash[i5] >> (j3 * 8)) & 255;
+              hasil += ((b < 16) ? "0" : "") + b.toString(16);
+            }
+          }
+          return hasil;
+        }
+        function hashKode(kode) {
+          if (window.crypto && crypto.subtle && crypto.subtle.digest && window.TextEncoder) {
+            return crypto.subtle.digest("SHA-256", new TextEncoder().encode(kode))
+              .then(function (buf) {
+                var hex = "", bytes = new Uint8Array(buf);
+                for (var i = 0; i < bytes.length; i++) hex += ("0" + bytes[i].toString(16)).slice(-2);
+                return hex;
+              })
+              .catch(function () { return sha256js(unescape(encodeURIComponent(kode))); });
+          }
+          return Promise.resolve(sha256js(unescape(encodeURIComponent(kode))));
+        }
+
+        /* ---------- Gerbang klik: tahan aksi masuk materi saat terkunci ---------- */
+        document.addEventListener("click", function (e) {
+          if (aksesTerbuka()) return;
+          if (e.target.closest("#modalAkses") || e.target.closest("#aksesBtn")) return;
+          var el = e.target.closest(".bab-toggle, .yt-btn, a");
+          if (!el) return;
+          var dikunci = false;
+          if (el.classList.contains("bab-toggle")) {
+            /* Membuka panel sumber belajar = masuk materi.
+               Menutup panel yang sudah terbuka dibiarkan bebas. */
+            dikunci = el.getAttribute("aria-expanded") !== "true";
+          } else if (el.classList.contains("yt-btn")) {
+            /* Video di dalam panel materi bab dikunci; video pembuka
+               di bagian perkenalan tetap bebas diputar. */
+            dikunci = !!el.closest(".bab-sumber");
+          } else if (el.tagName === "A") {
+            var href = el.getAttribute("href") || "";
+            dikunci = /^https?:\/\//i.test(href)
+              || el.hasAttribute("download")
+              || el.getAttribute("target") === "_blank";
+          }
+          if (!dikunci) return;
+          e.preventDefault();
+          e.stopPropagation();
+          aksiTertunda = el;
+          tampilkanModal();
+        }, true);
+
+        /* ---------- Tombol status di menu ---------- */
+        btnStatus.addEventListener("click", function () {
+          if (aksesTerbuka()) return;
+          aksiTertunda = null;
+          tampilkanModal();
+        });
+
+        /* ---------- Periksa kode ---------- */
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var kode = input.value.replace(/^\s+|\s+$/g, "");
+          if (!kode) { pesanSalah.hidden = false; input.focus(); return; }
+          hashKode(kode).then(function (hex) {
+            if (hex === HASH_AKSES) {
+              terbukaMemori = true;
+              try { localStorage.setItem(KUNCI_LS, HASH_AKSES); } catch (err) {}
+              perbaruiTombolStatus();
+              var aksi = aksiTertunda;
+              aksiTertunda = null;
+              sembunyikanModal();
+              if (aksi) aksi.click(); /* lanjutkan klik yang tertunda */
+            } else {
+              pesanSalah.hidden = false;
+              input.select();
+            }
+          });
+        });
+
+        btnBatal.addEventListener("click", batalkanModal);
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) batalkanModal();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && !modal.hidden) batalkanModal();
+        });
+
+        perbaruiTombolStatus();
       })();
     </script>
   </body>
