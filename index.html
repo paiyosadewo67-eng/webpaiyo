@@ -663,6 +663,11 @@
           <aside class="news-card" aria-label="Berita dan update portal">
             <h3>Berita / Update</h3>
             <div class="news-item">
+              <time datetime="2026-10-21">21 Oktober 2026</time>
+              <b>Perangkat Mengajar Kelas 9 Terhubung ke Portal</b>
+              <p>Folder Perangkat Mengajar Kelas 9 Semester 1 kini terpilah ke tiap bab — modul ajar, RPM, soal &amp; pembahasan, folder video, dan kartu Penyimpanan Prompt — plus bab khusus Pendalaman Materi TKA dan tautan Jurnal Sholatku di Menu Utama.</p>
+            </div>
+            <div class="news-item">
               <time datetime="2026-10-20">20 Oktober 2026</time>
               <b>Video Pembuka Portal Resmi Tayang</b>
               <p>Video avatar Pak Paiyo menyapa siswa dan memperkenalkan Portal Rumah Belajar Mandiri Siswa AAAMAAT KEREN kini dapat ditonton langsung di bagian Video Perkenalan di atas.</p>
@@ -989,7 +994,8 @@
           { id: "F-09", nama: "Quiz",                 ikon: "quiz",     warna: "#2456C4",           url: "#quiz",                 status: "aktif",  deskripsi: "Uji pemahaman tiap bab dengan kuis singkat dan umpan balik langsung." },
           { id: "F-10", nama: "Download",             ikon: "unduh",    warna: "#8A6410",           url: "#download",             status: "aktif",  deskripsi: "Unduh bahan belajar: PDF, PPT, LKPD, dan ringkasan materi untuk belajar luring." },
           { id: "F-11", nama: "Kontak",               ikon: "kontak",   warna: "#0F766E",           url: "#kontak",               status: "aktif",  deskripsi: "Cara terhubung dengan Pak Paiyo dan informasi sekolah." },
-          { id: "F-12", nama: "Tentang AAAMAAT KEREN", ikon: "hati",    warna: "#BC3F2E",           url: "#tentang",              status: "aktif",  deskripsi: "Kisah di balik nama AAAMAAT KEREN dan lima pilar KEREN." }
+          { id: "F-12", nama: "Tentang AAAMAAT KEREN", ikon: "hati",    warna: "#BC3F2E",           url: "#tentang",              status: "aktif",  deskripsi: "Kisah di balik nama AAAMAAT KEREN dan lima pilar KEREN." },
+          { id: "F-13", nama: "Jurnal Sholatku",     ikon: "hati",     warna: "#15803D",           url: "https://drive.google.com/drive/folders/1tQ07u_NVLm5SMpGRmnbkYIG5iP2gxM10?usp=sharing", status: "aktif",  deskripsi: "Jurnal ibadah sholat harian siswa — isi, pantau, dan tumbuhkan kebiasaan baik setiap hari." }
         ],
         bab: [
           /* ---------- KELAS VII ---------- */
@@ -1015,7 +1021,9 @@
               { judul: "Video Pembelajaran",   emoji: "🎬", dari: "video" },
               { judul: "Game",                 emoji: "🎮", dari: "interaktif", grup: "game" },
               { judul: "Asesmen & Kuis",        emoji: "📊", dari: "interaktif", grup: "quiz" },
-              { judul: "LKPD",                 emoji: "📝", dari: "lkpd" }
+              { judul: "LKPD",                 emoji: "📝", dari: "lkpd" },
+              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" },
+              { judul: "Penyimpanan Prompt", emoji: "🗂️", dari: "eksternal", grup: "prompt" }
             ] },
           { id: "IX-02", kelas: "IX", nama: "Transformasi",                        slug: "/transformasi",       url: "https://ais-pre-7kaxu3suqhdkqfh6xks7gb-438289882508.asia-southeast1.run.app/", status: "aktif", ikon: "transformasi", deskripsi: "Refleksi, translasi, rotasi, dan dilatasi pada bidang koordinat.",
             sumber: [
@@ -1025,7 +1033,8 @@
               { judul: "Asesmen & Kuis",        emoji: "📊", dari: "interaktif", grup: "quiz" },
               { judul: "LKPD",                 emoji: "📝", dari: "lkpd" },
               { judul: "Video Pembelajaran",   emoji: "🎬", dari: "video" },
-              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" }
+              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" },
+              { judul: "Penyimpanan Prompt", emoji: "🗂️", dari: "eksternal", grup: "prompt" }
             ] },
           { id: "IX-03", kelas: "IX", nama: "Kekongruenan & Kesebangunan",         slug: "/kekongruenan",       url: "https://ais-pre-y55obnbxhflokcbor2mh72-438289882508.asia-southeast1.run.app/", status: "aktif", ikon: "sebangun", deskripsi: "Dua bangun yang sama persis dan yang sebanding — lengkap dengan video pembelajarannya.",
             sumber: [
@@ -1035,7 +1044,8 @@
               { judul: "Asesmen & Kuis",        emoji: "📊", dari: "interaktif", grup: "quiz" },
               { judul: "LKPD",                 emoji: "📝", dari: "lkpd" },
               { judul: "Video Pembelajaran",   emoji: "🎬", dari: "video" },
-              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" }
+              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" },
+              { judul: "Penyimpanan Prompt", emoji: "🗂️", dari: "eksternal", grup: "prompt" }
             ] },
           { id: "IX-04", kelas: "IX", nama: "Peluang",                             slug: "/peluang",            url: "https://ais-pre-iwlu36bfiam3x6tmpojzk5-438289882508.asia-southeast1.run.app/", status: "aktif", ikon: "peluang", deskripsi: "Peluang teoretik dan empirik dari percobaan sederhana.",
             sumber: [
@@ -1045,9 +1055,19 @@
               { judul: "Asesmen & Kuis",        emoji: "📊", dari: "interaktif", grup: "quiz" },
               { judul: "LKPD",                 emoji: "📝", dari: "lkpd" },
               { judul: "Video Pembelajaran",   emoji: "🎬", dari: "video" },
-              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" }
+              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" },
+              { judul: "Penyimpanan Prompt", emoji: "🗂️", dari: "eksternal", grup: "prompt" }
             ] },
-          { id: "IX-05", kelas: "IX", nama: "Bangun Ruang Sisi Lengkung",          slug: "/brsl9",              url: "", status: "segera", ikon: "tabung",  deskripsi: "Tabung, kerucut, dan bola: luas permukaan dan volume." }
+          { id: "IX-05", kelas: "IX", nama: "Bangun Ruang Sisi Lengkung",          slug: "/brsl9",              url: "https://drive.google.com/file/d/10TXo2TV_ntwzKMSH1jeklO-F-5x5mzz9/view?usp=sharing", status: "aktif", ikon: "tabung",  deskripsi: "Tabung, kerucut, dan bola: luas permukaan dan volume.",
+            sumber: [
+              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" },
+              { judul: "Penyimpanan Prompt",   emoji: "🗂️", dari: "eksternal", grup: "prompt" }
+            ] },
+          { id: "IX-06", kelas: "IX", nama: "Pendalaman Materi TKA",               slug: "/pendalamantka",    url: "https://drive.google.com/drive/folders/1P8LEs9tXgAk8CuiN4e5exj_DG7WeBzEW?usp=sharing", status: "aktif", ikon: "otak",   deskripsi: "Pendalaman materi & simulasi TKA Matematika SMP: elemen bilangan, aljabar, geometri, serta data & ketidakpastian.",
+            sumber: [
+              { judul: "Materi TKA",           emoji: "🎯", dari: "eksternal", grup: "tka" },
+              { judul: "Penyimpanan Prompt",   emoji: "🗂️", dari: "eksternal", grup: "prompt" }
+            ] }
         ],
         unduhan: [
           { nama: "Bilangan Berpangkat dan Bentuk Akar — Materi PPT (41 slide)", label: "Materi Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", bab: "IX-01", grup: "modul", berkas: "PPTX", ikon: "gambar", tombol: "Unduh PPT", url: "download/ppt/9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx", urlLihat: "https://docs.google.com/viewer?url=https%3A%2F%2Fpaiyosadewo67-eng.github.io%2Fwebpaiyo%2Fdownload%2Fppt%2F9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx&embedded=true", tombolLihat: "Lihat E-Modul", status: "aktif", deskripsi: "Presentasi materi lengkap bab Bilangan Berpangkat dan Bentuk Akar karya Pak Paiyo — unduh dan pelajari kembali di rumah, dengan atau tanpa internet." },
@@ -1083,7 +1103,81 @@
           { bab: "IX-04", grup: "materi", nama: "Naskah Soal Asesmen Sumatif Bab Peluang", url: "https://docs.google.com/document/d/12gOR9BnnRoKM3cmZtLFoFwGWsJh_Auu5/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
           { bab: "IX-04", grup: "materi", nama: "PPM Kejadian Sederhana", url: "https://docs.google.com/document/d/1270xDSQLXuj93repHyWzltRtK3FLgB5Y/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
           { bab: "IX-04", grup: "materi", nama: "PPM Peluang Empiris", url: "https://docs.google.com/document/d/1K27feogMyq-YrSz4nXDts0ruC-7o3U7o/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
-          { bab: "IX-04", grup: "materi", nama: "PPM Frekuensi Harapan", url: "https://docs.google.com/document/d/1RnE-kVJV9lQ57KMzYcWMXLHhHfPgvDTr/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" }
+          { bab: "IX-04", grup: "materi", nama: "PPM Frekuensi Harapan", url: "https://docs.google.com/document/d/1RnE-kVJV9lQ57KMzYcWMXLHhHfPgvDTr/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
+          { bab: "IX-01", grup: "materi", nama: "Modul Ajar — Bilangan Berpangkat dan Bentuk Akar", url: "https://drive.google.com/file/d/1dwQ4kpM58j-khtTgu6wcx8Ji5jQ2TSrX/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "RPM Bilangan Berpangkat dan Bentuk Akar (TP 2026/2027)", url: "https://drive.google.com/file/d/1BxPQWEcE0cHC5TgBoqDmZlHmMq4mGpUT/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "RPP Bentuk Akar — 6 Pertemuan", url: "https://drive.google.com/file/d/1IveasVj3Whhgj8ik8A_fc9FlPMv5vK8x/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "PPM Bab Bentuk Akar (PDF)", url: "https://drive.google.com/file/d/1nwOie5lVn5a1ksBBy8GMrlOuxDKwGDr-/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Folder PPT Bab Bilangan Berpangkat (Google Drive)", url: "https://drive.google.com/drive/folders/1yQYUO0680hoKTPuT9sFHCYpDciwvqrdu?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Folder Video Bab Bilangan Berpangkat (Google Drive)", url: "https://drive.google.com/drive/folders/1_UvZ1UvIin1MQ2N7pCxHuUH1cuyN4aKT?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Perangkat Asesmen Bab — Model TKA", url: "https://drive.google.com/file/d/1-OB9f2KJ1L3Zbn_kILh8BrjsmvCcaW5I/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Asesmen Sumatif 1 — Naskah Soal (Word)", url: "https://drive.google.com/file/d/1WGL2WhDz1o6MnoIiYWtpmAlL2NBq0S0g/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Asesmen Sumatif 1 — Naskah Soal (PDF)", url: "https://drive.google.com/file/d/14PHrJNL5waUY6Qt1F0GDJZGnDazvvzFq/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Soal dan Pembahasan Asesmen Sumatif 1", url: "https://drive.google.com/file/d/1boJHTItfBqc3hl92bkiY9kZAshxfaSPz/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Pembahasan Soal OSN — Bilangan Berpangkat", url: "https://drive.google.com/file/d/1zBbtaUJbtQWcwXv2MrMNkg9GmUqedShf/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Pembahasan Contoh Soal TKA — Pangkat dan Bentuk Akar", url: "https://drive.google.com/file/d/1exOzfj_a70_H7uPnuKKooXvPoGuXQjNy/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Menyederhanakan Bentuk Akar", url: "https://drive.google.com/file/d/1_LruIz9kYRWf8T4O5zq4mfOQ7d435ujt/view?usp=sharing" },
+          { bab: "IX-01", grup: "materi", nama: "Cara Merasionalkan Penyebut Bentuk Akar", url: "https://drive.google.com/file/d/1YgYCygPtmkU-RinE3-9sZrsawNqjILcu/view?usp=sharing" },
+          { bab: "IX-01", grup: "prompt", nama: "Prompt Game Interaktif — Bentuk Akar", url: "https://drive.google.com/file/d/1dwyip9_yygw2zvc7AitfmYGa8-gHo_Ao/view?usp=sharing" },
+          { bab: "IX-01", grup: "prompt", nama: "Prompt Game Escape Room — Notasi Ilmiah", url: "https://drive.google.com/file/d/1Fx9SOjp1RN1X1XOlftGzEx8xk_DCn98_/view?usp=sharing" },
+          { bab: "IX-01", grup: "prompt", nama: "Prompt Simulasi Asesmen Sumatif 1 — Model TKA", url: "https://drive.google.com/file/d/1vyN5B4QEUmM3RscpVULFNqLsc8-MeNOi/view?usp=sharing" },
+          { bab: "IX-01", grup: "prompt", nama: "Prompt Utama Video Avatar — Bentuk Akar", url: "https://drive.google.com/file/d/14HJJdJ9-r6PC9A5Gmvu-IDyffP0xZwJ1/view?usp=sharing" },
+          { bab: "IX-01", grup: "prompt", nama: "Prompt Dialog Video Avatar — Bilangan Berpangkat", url: "https://drive.google.com/file/d/1SqsreKF5TzI_LabXJS1wWzcbvEKvl5SV/view?usp=sharing" },
+          { bab: "IX-01", grup: "prompt", nama: "Prompt Poster Komik Edukasi — Bentuk Baku", url: "https://drive.google.com/file/d/1RISAqxvai5qdGD4agOAr9eqoknh2Cu4f/view?usp=sharing" },
+          { bab: "IX-01", grup: "prompt", nama: "Prompt Video Avatar — Misteri Pangkat Negatif", url: "https://drive.google.com/file/d/1gzl93F_sUEOz2Vi3DUB8vn6CUXtYl8t2/view?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Modul Ajar — Transformasi", url: "https://drive.google.com/file/d/1PNi-vrv211VbgUp-78vPcONW728e_jTk/view?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "RPM Transformasi Tunggal (TP 2026/2027)", url: "https://drive.google.com/file/d/1dmR09K3C6o4WO5k6ZLukZWvX_dzB6h8q/view?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Folder PPT Bab Transformasi (Google Drive)", url: "https://drive.google.com/drive/folders/1hWjxn4-ksxBZG5DGx6TVJ4Su6W0FhWsd?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Folder Video Bab Transformasi (Google Drive)", url: "https://drive.google.com/drive/folders/1TZhj-wX9Ku3jWcCH2qEgOpM7Su9N-H5G?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Soal dan Pembahasan Transformasi Geometri", url: "https://drive.google.com/file/d/1K7j3WuHf8NDt47vCs3mYVuRl7Kv1zOct/view?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Soal dan Pembahasan Rotasi", url: "https://drive.google.com/file/d/1EPy6tQeUhXiSGTtPAL4ZoeiWyB8qblcy/view?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Soal dan Pembahasan Dilatasi", url: "https://drive.google.com/file/d/1oLTMCcN-6E3ODl1m-o2h_DCm1ZUT_ITd/view?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Pembahasan Soal TKA Transformasi", url: "https://drive.google.com/file/d/19B86bAORC6QG4aegp2oC2G52zLFUQFGA/view?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Asesmen Sumatif 2 Bab Transformasi (Word)", url: "https://drive.google.com/file/d/1D3X3KzFNGJYNL3ofiX9Az9n_a4zsYT9j/view?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Asesmen Sumatif 2 Bab Transformasi (PDF)", url: "https://drive.google.com/file/d/19GjKx-tP1ulLVDJ6NBXfbbyRSPJ9Ae4J/view?usp=sharing" },
+          { bab: "IX-02", grup: "materi", nama: "Soal dan Pembahasan Asesmen Sumatif 2 Transformasi", url: "https://drive.google.com/file/d/1xlle9YJdeb_3o_wd1ivgnS_EPb0jRwhG/view?usp=sharing" },
+          { bab: "IX-02", grup: "prompt", nama: "Prompt Game Interaktif — Bab Transformasi", url: "https://drive.google.com/file/d/1urQMEWVVP-xj6FCo3BVQPYP28MsROhpW/view?usp=sharing" },
+          { bab: "IX-02", grup: "prompt", nama: "Prompt E-Modul Digital Interaktif — Transformasi Tunggal", url: "https://drive.google.com/file/d/11QcxcBllxLewNCX7aZUoTd7I121EmoaL/view?usp=sharing" },
+          { bab: "IX-02", grup: "prompt", nama: "Prompt Game Misi HOTS — Detektif Transformasi Tunggal", url: "https://drive.google.com/file/d/1StK0Ms4sYhCu9lhTLCvpf8CqJbS_gifa/view?usp=sharing" },
+          { bab: "IX-02", grup: "prompt", nama: "Prompt Game Misi HOTS — Detektif Rotasi", url: "https://drive.google.com/file/d/1yqmaQYCOptcymq0hNbRjynROrouw5skR/view?usp=sharing" },
+          { bab: "IX-02", grup: "prompt", nama: "Prompt Game Misi HOTS — Detektif Dilatasi", url: "https://drive.google.com/file/d/1xQcdV7hYUPUY3Sgs4gQ-dyBrRTz6tz0o/view?usp=sharing" },
+          { bab: "IX-02", grup: "prompt", nama: "Prompt Poster Panggung Teater Interaktif Hologram", url: "https://drive.google.com/file/d/1cRULBI_V1q1BOmXevvXtoHrLWVorX3bS/view?usp=sharing" },
+          { bab: "IX-03", grup: "materi", nama: "Modul Ajar — Kesebangunan dan Kekongruenan", url: "https://drive.google.com/file/d/1UqvV8Zf-oh-8AbN7c_ameshrGWcb_WY0/view?usp=sharing" },
+          { bab: "IX-03", grup: "materi", nama: "Folder PPT Bab Kesebangunan & Kekongruenan (Google Drive)", url: "https://drive.google.com/drive/folders/1a3SBefUdQfI1L9TJwr6sSSbGqohbLL2j?usp=sharing" },
+          { bab: "IX-03", grup: "materi", nama: "Folder Video Bab Kekongruenan & Kesebangunan (Google Drive)", url: "https://drive.google.com/drive/folders/1OghMAklAq1Q-W2b9ZO9osEFvHUu9s9wk?usp=sharing" },
+          { bab: "IX-03", grup: "materi", nama: "Folder Asesmen Sumatif 3 (Google Drive)", url: "https://drive.google.com/drive/folders/17ZuSQZmfxy905AfsWWYX7tjXCJfudInF?usp=sharing" },
+          { bab: "IX-03", grup: "materi", nama: "LKPD Lengkap Kekongruenan & Kesebangunan (Word)", url: "https://drive.google.com/file/d/1AUsCwddCQOvDnupRobSfxIW68zS-b_8M/view?usp=sharing" },
+          { bab: "IX-03", grup: "materi", nama: "Soal Latihan Bab Kekongruenan (PDF)", url: "https://drive.google.com/file/d/1mabqb0A24PfgYFqBSi4r9b22CFG507U9/view?usp=sharing" },
+          { bab: "IX-03", grup: "materi", nama: "Soal dan Pembahasan — Kekongruenan Kelas IX", url: "https://drive.google.com/file/d/1TeXVOTcOtYFXNPIxpJjPAaFJmkWEKX5o/view?usp=sharing" },
+          { bab: "IX-03", grup: "materi", nama: "Soal dan Pembahasan HOTS Geometria", url: "https://drive.google.com/file/d/1_oI3liExPOYKW7LVUhWAhr8jbqh-YFsa/view?usp=sharing" },
+          { bab: "IX-03", grup: "prompt", nama: "Prompt E-Modul Digital Interaktif — Kekongruenan & Kesebangunan", url: "https://drive.google.com/file/d/1mBVLFRbIlOars_PtaSrhX7VNu-gSd3kS/view?usp=sharing" },
+          { bab: "IX-03", grup: "prompt", nama: "Prompt Game Interaktif — Misi Kekongruenan", url: "https://drive.google.com/file/d/1uMthPsFPbp1rqbkvXV-fZHjlwvG_5hFv/view?usp=sharing" },
+          { bab: "IX-03", grup: "prompt", nama: "Prompt LKPD Interaktif — Kekongruenan & Kesebangunan", url: "https://drive.google.com/file/d/1Q3kN72jvikhX2l00Pu4xKKAOQLPvnJD9/view?usp=sharing" },
+          { bab: "IX-03", grup: "prompt", nama: "Prompt Game Math Mission Geometry Detective — Kesebangunan", url: "https://drive.google.com/file/d/1RvdUywesxBwCUNYdS8tmFdZgUGI9_yV-/view?usp=sharing" },
+          { bab: "IX-03", grup: "prompt", nama: "Prompt Dialog Avatar — Pertemuan 5: Foto yang Diperbesar", url: "https://drive.google.com/file/d/1J6MN8mLgekOCcckm3zNALmhqqYmKpspy/view?usp=sharing" },
+          { bab: "IX-03", grup: "prompt", nama: "Dialog Video Avatar Google Flow — Rahasia Kekongruenan & Kesebangunan", url: "https://drive.google.com/file/d/1ZLmtDSza0UHob-_3TQG86OI6lx0qSnMS/view?usp=sharing" },
+          { bab: "IX-03", grup: "prompt", nama: "Naskah Adegan Video Avatar — Misi TKA No 19", url: "https://drive.google.com/file/d/18P7bIUzoN0jGae5gcl4N1xbS1-syNx8x/view?usp=sharing" },
+          { bab: "IX-03", grup: "prompt", nama: "Prompt Utama Poster Pembuka", url: "https://drive.google.com/file/d/1LszpfdYVnAtFjdekKS9fxpILI1-2Xahw/view?usp=sharing" },
+          { bab: "IX-04", grup: "materi", nama: "Modul Ajar — Peluang", url: "https://drive.google.com/file/d/1JvSVAb8_Foku_jr5F5GDnYdSWV8Y8RrY/view?usp=sharing" },
+          { bab: "IX-04", grup: "materi", nama: "Folder Video & Lampiran Bab Peluang (Google Drive)", url: "https://drive.google.com/drive/folders/1P_WfPK_jVshJXIs6J-AJVyo2D4Aznxxm?usp=sharing" },
+          { bab: "IX-04", grup: "materi", nama: "Soal dan Pembahasan Peluang", url: "https://drive.google.com/file/d/1zW6bglaNK4lmKpmHUlQ8udAW6PPtWpQW/view?usp=sharing" },
+          { bab: "IX-04", grup: "materi", nama: "Lampiran Lengkap E-Modul Peluang Kelas IX", url: "https://drive.google.com/file/d/1nb7-Bt1kSJlGtvg64EpbCt6IRUIP_c6i/view?usp=sharing" },
+          { bab: "IX-04", grup: "materi", nama: "PPM Bab Peluang Kelas IX", url: "https://drive.google.com/file/d/1DbsJPi6t8ldmGAnDTi6Q_MmlSExMdHlR/view?usp=sharing" },
+          { bab: "IX-04", grup: "materi", nama: "Lampiran Asesmen Bab Peluang", url: "https://drive.google.com/file/d/1pspwYWnhXppNd2eH_zaB3e6iWybSMMwc/view?usp=sharing" },
+          { bab: "IX-04", grup: "prompt", nama: "Prompt E-Modul Interaktif Misi Detektif — Peluang", url: "https://drive.google.com/file/d/1STxx82jI76u-DdyFeyElOkC8efUxvpxK/view?usp=sharing" },
+          { bab: "IX-05", grup: "materi", nama: "Modul Ajar — Bangun Ruang Sisi Lengkung", url: "https://drive.google.com/file/d/10TXo2TV_ntwzKMSH1jeklO-F-5x5mzz9/view?usp=sharing" },
+          { bab: "IX-05", grup: "prompt", nama: "Prompt LKPD Interaktif — Bangun Ruang Sisi Lengkung", url: "https://drive.google.com/file/d/1cqUM2e-ytOToAfyvL8vUCAXAMY8PLcj0/view?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Folder TKA — Elemen Bilangan", url: "https://drive.google.com/drive/folders/1tsWPWV3ZeR7EWhb1W3tX1_V9VwE-okDW?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Folder TKA — Elemen Aljabar", url: "https://drive.google.com/drive/folders/1u6kis3R0HJsTFZsTeze-DKH1W2aQB8N9?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Folder TKA — Elemen Geometri", url: "https://drive.google.com/drive/folders/1XtpGNB4nrv-Hw9R1D3lIa2sOkJKt1VQY?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Folder TKA — Elemen Data dan Ketidakpastian", url: "https://drive.google.com/drive/folders/1QLtaSSLo-ZMNu0_FrNvDu81XbWWcLxBN?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Folder Simulasi TKA MTK SMP Tahun 2026", url: "https://drive.google.com/drive/folders/1QM-cqihSV9dniv42hd3rZfyztd5qQTAH?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Kisi-kisi Persiapan TKA Matematika SMP Kab. Brebes", url: "https://drive.google.com/file/d/1y5sUd3lSQrJiiXjYwQan8dfPCfiHkm9i/view?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Link Game Interaktif Ekspedisi TKA Matematika SMP", url: "https://drive.google.com/file/d/15fRgrryxKtmbO2v3uXrjMlasgp_gJ3LY/view?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Pembahasan Soal Simulasi Ayo Coba TKA SMP — Matematika", url: "https://drive.google.com/file/d/1nuSiIx_OMNTTQWWYJY8yfOtUY060r9Fe/view?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Soal dan Pembahasan TKA 2026", url: "https://drive.google.com/file/d/108_scAAfpOK5ckGMgC7HEH0DXtNhdRnF/view?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Soal dan Pembahasan TKA Matematika 2026", url: "https://drive.google.com/file/d/1_kgkt83tSyJCykjScOfxpK5YIncmogUn/view?usp=sharing" },
+          { bab: "IX-06", grup: "prompt", nama: "Prompt Simulasi TKA SMP/MTs Tahun 2026", url: "https://drive.google.com/file/d/1FdwKGGOraL5vrZcXwfnL9PwVJXUviTev/view?usp=sharing" }
         ],
         /* ---------- Materi interaktif yang bisa dimainkan (grup: "lkpd" | "game" | "quiz") ---------- */
         interaktif: [
@@ -1232,7 +1326,7 @@
             (aktif ? '<span class="menu-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>' : '') +
             '</div>';
           if (aktif) {
-            html += '<a class="menu-card" style="--ac:' + f.warna + '" href="' + esc(f.url) + '">' + isi + '</a>';
+            html += '<a class="menu-card" style="--ac:' + f.warna + '" href="' + esc(f.url) + '"' + (/^https?:\/\//.test(f.url) ? ' target="_blank" rel="noopener"' : '') + '>' + isi + '</a>';
           } else {
             html += '<article class="menu-card" style="--ac:' + f.warna + '" aria-label="' + esc(f.nama) + ' — segera hadir">' + isi + '</article>';
           }
