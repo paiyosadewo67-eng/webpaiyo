@@ -565,7 +565,7 @@
           </div>
           <div class="hero-stats">
             <div><b>3</b><span>Kelas · VII–IX</span></div>
-            <div><b>17</b><span>Bab Disiapkan</span></div>
+            <div><b>18</b><span>Bab Disiapkan</span></div>
             <div><b>12</b><span>Menu &amp; Fitur</span></div>
             <div><b>5</b><span>Pilar KEREN</span></div>
           </div>
@@ -711,11 +711,11 @@
           <div class="sec-head">
             <span class="kicker" style="color: var(--vii)">Materi Kelas VII</span>
             <h2>Kelas VII — Fondasi Berpikir Matematika</h2>
-            <p>Lima bab pembuka perjalanan: dari bilangan bulat dan pecahan, rasio, persamaan linear, sampai bangun ruang. Begitu file materinya terpasang, kartu bab berubah menjadi Aktif dan bisa diklik untuk membuka materinya.</p>
+            <p>Enam bab pembuka perjalanan: dari bilangan bulat dan pecahan, rasio, bentuk aljabar, persamaan linear, sampai bangun ruang. Begitu file materinya terpasang, kartu bab berubah menjadi Aktif dan bisa diklik untuk membuka materinya.</p>
           </div>
           <span class="kelas-chip" style="--kc: var(--vii); background: var(--vii)">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
-            5 Bab Materi
+            6 Bab Materi
           </span>
         </div>
         <div class="bab-grid" data-kelas-grid="VII"></div>
@@ -842,7 +842,7 @@
           <p class="school">SMP Negeri 1 Bantarkawung</p>
           <div class="guru-meta">
             <div><b>VII–IX</b><span>Kelas Diampu</span></div>
-            <div><b>17</b><span>Bab Disiapkan</span></div>
+            <div><b>18</b><span>Bab Disiapkan</span></div>
             <div><b>1</b><span>Portal Belajar</span></div>
           </div>
         </div>
@@ -919,7 +919,7 @@
           <div>
             <h4>Materi Kelas</h4>
             <ul>
-              <li><a href="#kelas-vii">Kelas VII — 5 Bab</a></li>
+              <li><a href="#kelas-vii">Kelas VII — 6 Bab</a></li>
               <li><a href="#kelas-viii">Kelas VIII — 7 Bab</a></li>
               <li><a href="#kelas-ix">Kelas IX — 5 Bab</a></li>
               <li><a href="#menu-utama">Semua Menu &amp; Fitur</a></li>
@@ -983,7 +983,7 @@
       var LINK_DB = {
         domain: "aaamaatkeren.id",
         fitur: [
-          { id: "F-01", nama: "Kelas VII",            ikon: "buku",     warna: "var(--vii)",        url: "#kelas-vii",            status: "aktif",  deskripsi: "Bilangan bulat, pecahan, rasio, PLSV & PtLSV, dan BRSL — fondasi matematika SMP." },
+          { id: "F-01", nama: "Kelas VII",            ikon: "buku",     warna: "var(--vii)",        url: "#kelas-vii",            status: "aktif",  deskripsi: "Bilangan bulat, pecahan, rasio, bentuk aljabar, PLSV & PtLSV, dan BRSL — fondasi matematika SMP." },
           { id: "F-02", nama: "Kelas VIII",           ikon: "buku",     warna: "var(--viii)",       url: "#kelas-viii",           status: "aktif",  deskripsi: "Pola bilangan, fungsi, garis lurus, SPLDV, Pythagoras, bangun ruang, dan statistika." },
           { id: "F-03", nama: "Kelas IX",             ikon: "buku",     warna: "var(--ix)",         url: "#kelas-ix",             status: "aktif",  deskripsi: "Bilangan berpangkat, transformasi, kekongruenan & kesebangunan, peluang, dan BRSL." },
           { id: "F-04", nama: "Video Pembelajaran",   ikon: "video",    warna: "#B7791F",           url: "",                      status: "segera", deskripsi: "Penjelasan materi lewat video karya Pak Paiyo — tonton, jeda, dan ulangi sesukamu." },
@@ -999,13 +999,25 @@
         ],
         bab: [
           /* ---------- KELAS VII ---------- */
-          { id: "VII-01", kelas: "VII", nama: "Bilangan Bulat",                    slug: "/bilanganbulat",      url: "", status: "segera", ikon: "bulat",   deskripsi: "Operasi hitung bilangan bulat, garis bilangan, dan penerapannya sehari-hari." },
+          { id: "VII-01", kelas: "VII", nama: "Bilangan Bulat",                    slug: "/bilanganbulat",      url: "https://ais-pre-avmdh7hfw3ub7ppccjzrtw-438289882508.asia-southeast1.run.app/", status: "aktif", ikon: "bulat",   deskripsi: "Operasi hitung bilangan bulat, garis bilangan, dan penerapannya sehari-hari.",
+            sumber: [
+              { judul: "Portal Rumah Belajar", emoji: "🏠", dari: "portal" },
+              { judul: "Game",                 emoji: "🎮", dari: "interaktif", grup: "game" }
+            ] },
           { id: "VII-02", kelas: "VII", nama: "Bilangan Rasional / Pecahan",       slug: "/bilanganpecahan",    url: "", status: "segera", ikon: "pecahan", deskripsi: "Pecahan, desimal, persen, dan operasi hitung bilangan rasional." },
           { id: "VII-03", kelas: "VII", nama: "Rasio",                             slug: "/rasio",              url: "", status: "segera", ikon: "rasio",   deskripsi: "Perbandingan dua besaran, skala, dan laju perubahan." },
-          { id: "VII-04", kelas: "VII", nama: "PLSV & PtLSV",                      slug: "/plsv",               url: "", status: "segera", ikon: "plsv",    deskripsi: "Persamaan dan pertidaksamaan linear satu variabel." },
-          { id: "VII-05", kelas: "VII", nama: "BRSL",                              slug: "/brsl7",              url: "", status: "segera", ikon: "ruang",   deskripsi: "Bangun ruang dan unsur-unsurnya dalam kehidupan sehari-hari." },
+          { id: "VII-04", kelas: "VII", nama: "Bentuk Aljabar",                    slug: "/bentukaljabar",      url: "", status: "segera", ikon: "aljabar", deskripsi: "Unsur-unsur aljabar, suku sejenis, dan operasi hitung bentuk aljabar." },
+          { id: "VII-05", kelas: "VII", nama: "PLSV & PtLSV",                      slug: "/plsv",               url: "", status: "segera", ikon: "plsv",    deskripsi: "Persamaan dan pertidaksamaan linear satu variabel." },
+          { id: "VII-06", kelas: "VII", nama: "BRSL",                              slug: "/brsl7",              url: "", status: "segera", ikon: "ruang",   deskripsi: "Bangun ruang dan unsur-unsurnya dalam kehidupan sehari-hari." },
           /* ---------- KELAS VIII ---------- */
-          { id: "VIII-01", kelas: "VIII", nama: "Pola Bilangan",                   slug: "/polabilangan",       url: "", status: "segera", ikon: "pola",    deskripsi: "Barisan, deret, dan pola konfigurasi bilangan." },
+          { id: "VIII-01", kelas: "VIII", nama: "Pola Bilangan",                   slug: "/polabilangan",       url: "https://ais-pre-y5smbvbrpyrgbut5wk5cff-438289882508.asia-southeast1.run.app/", status: "aktif", ikon: "pola",    deskripsi: "Barisan, deret, dan pola konfigurasi bilangan.",
+            sumber: [
+              { judul: "Portal Rumah Belajar", emoji: "🏠", dari: "portal" },
+              { judul: "LKPD",                 emoji: "📝", dari: "lkpd" },
+              { judul: "Asesmen & Kuis",        emoji: "📊", dari: "interaktif", grup: "quiz" },
+              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" },
+              { judul: "Video Pembelajaran",   emoji: "🎬", dari: "video" }
+            ] },
           { id: "VIII-02", kelas: "VIII", nama: "Relasi & Fungsi",                 slug: "/relasifungsi",       url: "", status: "segera", ikon: "fungsi",  deskripsi: "Relasi, fungsi, korespondensi satu-satu, dan grafik fungsi." },
           { id: "VIII-03", kelas: "VIII", nama: "Gradien & Persamaan Garis Lurus", slug: "/gradienpgl",         url: "", status: "segera", ikon: "garis",   deskripsi: "Kemiringan garis dan cara menyusun persamaan garis lurus." },
           { id: "VIII-04", kelas: "VIII", nama: "SPLDV",                           slug: "/spldv",              url: "", status: "segera", ikon: "spldv",   deskripsi: "Sistem persamaan linear dua variabel: substitusi, eliminasi, dan campuran." },
@@ -1177,7 +1189,12 @@
           { bab: "IX-06", grup: "tka", nama: "Pembahasan Soal Simulasi Ayo Coba TKA SMP — Matematika", url: "https://drive.google.com/file/d/1nuSiIx_OMNTTQWWYJY8yfOtUY060r9Fe/view?usp=sharing" },
           { bab: "IX-06", grup: "tka", nama: "Soal dan Pembahasan TKA 2026", url: "https://drive.google.com/file/d/108_scAAfpOK5ckGMgC7HEH0DXtNhdRnF/view?usp=sharing" },
           { bab: "IX-06", grup: "tka", nama: "Soal dan Pembahasan TKA Matematika 2026", url: "https://drive.google.com/file/d/1_kgkt83tSyJCykjScOfxpK5YIncmogUn/view?usp=sharing" },
-          { bab: "IX-06", grup: "prompt", nama: "Prompt Simulasi TKA SMP/MTs Tahun 2026", url: "https://drive.google.com/file/d/1FdwKGGOraL5vrZcXwfnL9PwVJXUviTev/view?usp=sharing" }
+          { bab: "IX-06", grup: "prompt", nama: "Prompt Simulasi TKA SMP/MTs Tahun 2026", url: "https://drive.google.com/file/d/1FdwKGGOraL5vrZcXwfnL9PwVJXUviTev/view?usp=sharing" },
+          { bab: "VIII-01", grup: "materi", nama: "Materi PPT Pola Barisan Bilangan (Lengkap)", url: "https://docs.google.com/presentation/d/1tDBW-VaH1AI6yNA-G4JGSrukrSoUBUhA/view" },
+          { bab: "VIII-01", grup: "materi", nama: "Naskah Soal Asesmen 1", url: "https://docs.google.com/document/d/121txbAPWvAj0iGnQCmh_Jz7riMJOSs4l/view" },
+          { bab: "VIII-01", grup: "materi", nama: "Soal & Pembahasan Asesmen 1", url: "https://docs.google.com/document/d/1nLUkkge63RfkiyvstOY3uX_g3KPvBYUk/view" },
+          { bab: "VIII-01", grup: "materi", nama: "Naskah Soal Asesmen 2", url: "https://docs.google.com/document/d/1THKIDt69ZYKscP-FV35NYLr2kCY3QvNB/view" },
+          { bab: "VIII-01", grup: "materi", nama: "Soal & Pembahasan Asesmen 2", url: "https://docs.google.com/document/d/1ZR4q8IodF6gkyyEgxXKkGz6AK0_VOfgu/view" }
         ],
         /* ---------- Materi interaktif yang bisa dimainkan (grup: "lkpd" | "game" | "quiz") ---------- */
         interaktif: [
@@ -1211,13 +1228,43 @@
           { grup: "game", bab: "IX-04", ikon: "game", nama: "Game Escape Room Bab Peluang", label: "Game Edukasi · Bab IX-04", url: "https://igatrisna.my.canva.site/aaamat-keren-escape-room-peluang", deskripsi: "Escape room seru untuk menguasai peluang teoretik dan empirik sambil menyelesaikan tantangan." },
           { grup: "quiz", bab: "IX-04", ikon: "quiz", nama: "Asesmen Sumatif 4 Bab Peluang", label: "Quiz · Bab IX-04", url: "https://ais-pre-orjjk6ktc367uuqppwssg4-438289882508.asia-southeast1.run.app", deskripsi: "Asesmen sumatif 4 untuk mengukur penguasaan bab Peluang." },
           { grup: "lkpd", bab: "IX-04", ikon: "lkpd", nama: "LKPD Interaktif Bab Peluang", label: "LKPD Visual · Bab IX-04", url: "https://igatrisna.my.canva.site/lkpd-interaktif-bab-peluang-matematika-kelas-ix", deskripsi: "LKPD interaktif untuk berlatih konsep peluang matematika kelas IX selangkah demi selangkah." },
-          { grup: "lkpd", bab: "IX-04", ikon: "lkpd", nama: "LKPD Interaktif Peluang Kedua", label: "LKPD Visual · Bab IX-04", url: "https://igatrisna.my.canva.site/aplikasi-lkpd-peluang-kedua", deskripsi: "LKPD interaktif kedua bab Peluang untuk latihan tambahan peluang teoretik, empirik, dan frekuensi harapan." }
+          { grup: "lkpd", bab: "IX-04", ikon: "lkpd", nama: "LKPD Interaktif Peluang Kedua", label: "LKPD Visual · Bab IX-04", url: "https://igatrisna.my.canva.site/aplikasi-lkpd-peluang-kedua", deskripsi: "LKPD interaktif kedua bab Peluang untuk latihan tambahan peluang teoretik, empirik, dan frekuensi harapan." },
+          { grup: "lkpd", bab: "VIII-01", ikon: "lkpd", nama: "LKPD Interaktif Pola & Barisan Bilangan", label: "LKPD Visual · Bab VIII-01", tombol: "Buka LKPD", url: "https://ais-pre-y5smbvbrpyrgbut5wk5cff-438289882508.asia-southeast1.run.app/", deskripsi: "LKPD interaktif untuk berlatih pola dan barisan bilangan selangkah demi selangkah." },
+          { grup: "lkpd", bab: "VIII-01", ikon: "lkpd", nama: "LKPD Diskusi Pola Barisan Bilangan (Word)", label: "LKPD Visual · Bab VIII-01", tombol: "Buka LKPD", url: "https://docs.google.com/document/d/1EH1wTknj9Eh7cKzI3TJL2ebywPZBsD8l/view", deskripsi: "LKPD diskusi pola barisan bilangan dalam format Word untuk dikerjakan berkelompok di kelas." },
+          { grup: "quiz", bab: "VIII-01", ikon: "quiz", nama: "Asesmen Sumatif 1 Pola & Barisan Bilangan (Kab. Brebes)", label: "Quiz · Bab VIII-01", url: "https://ais-pre-agt2efaqvfcf6saecwu3q7-438289882508.asia-southeast1.run.app/", deskripsi: "Asesmen sumatif 1 pola & barisan bilangan — versi Kabupaten Brebes." },
+          { grup: "quiz", bab: "VIII-01", ikon: "quiz", nama: "Asesmen Sumatif 1 Pola & Barisan Bilangan (SMPN 1 Bantarkawung)", label: "Quiz · Bab VIII-01", url: "https://ais-pre-issuro4dtbhffecum4l46d-438289882508.asia-southeast1.run.app/", deskripsi: "Asesmen sumatif 1 pola & barisan bilangan — versi SMPN 1 Bantarkawung." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Latihan TKA: Perbandingan & Sifat-sifat Bilangan", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-perbandingan-sifatsifatbilangan", deskripsi: "Game ekspedisi paket TKA elemen bilangan — latihan perbandingan dan sifat-sifat bilangan." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Latihan TKA: Operasi Aritmetika Bilangan", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/ekspedisi-paket-tka", deskripsi: "Game ekspedisi paket TKA elemen bilangan — latihan operasi aritmetika bilangan." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Latihan TKA: Estimasi & Faktorisasi Prima", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/ekspedisi-paket-tka-prima-estimasi-faktorisasi-prima", deskripsi: "Game ekspedisi paket TKA elemen bilangan — latihan estimasi dan faktorisasi prima." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Latihan TKA: Rasio", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-rasio-latihan", deskripsi: "Game ekspedisi paket TKA elemen bilangan — latihan rasio." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Latihan TKA: Perbandingan Senilai & Berbalik Nilai", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-senilai-berbaliknilai", deskripsi: "Game ekspedisi paket TKA elemen bilangan — latihan perbandingan senilai dan berbalik nilai." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Uji TKA: Perbandingan Bilangan", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/ekspedisi-paket-tka-uji-perbandingan-bilangan", deskripsi: "Game ekspedisi paket TKA elemen bilangan — uji perbandingan bilangan." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Uji TKA: Operasi Aritmetika Bilangan", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-tes-operasi-aritmatika-bilangan", deskripsi: "Game ekspedisi paket TKA elemen bilangan — uji operasi aritmetika bilangan." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Uji TKA: Estimasi", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-estimasi", deskripsi: "Game ekspedisi paket TKA elemen bilangan — uji estimasi." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Uji TKA: Faktorisasi Prima", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/ekspedisi-paket-tka-tes-faktorisasi-prima", deskripsi: "Game ekspedisi paket TKA elemen bilangan — uji faktorisasi prima." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Uji TKA: Rasio", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-tes-rasio", deskripsi: "Game ekspedisi paket TKA elemen bilangan — uji rasio." },
+          { grup: "game", bab: "VII-01", ikon: "game", nama: "Uji TKA: Perbandingan Senilai & Berbalik Nilai", label: "Game Edukasi · Bab VII-01", url: "https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-tes-seniali-berbaliknilai", deskripsi: "Game ekspedisi paket TKA elemen bilangan — uji perbandingan senilai dan berbalik nilai." }
         ],
         /* ---------- Video pembelajaran per bab (YouTube, diputar langsung di situs) ----------
            Kunci mengikuti pola "video_" + id bab huruf kecil tanpa tanda hubung
            (bab IX-01 → video_ix01). "yt" adalah ID video YouTube; thumbnail
            diambil dari i.ytimg.com dan iframe embed hanya dimuat saat video
            diklik, supaya halaman tetap ringan di HP. */
+        video_viii01: [
+          { yt: "xryq1osE3Ck", judul: "Pola Bilangan: Aturan dan Jenis Pola" },
+          { yt: "zHFRIX3dmog", judul: "Memprediksi Suku ke-n Pola Bilangan" },
+          { yt: "R_fqh2-tVbw", judul: "Memprediksi Pola ke-n Pola Bilangan" },
+          { yt: "39mVxwEq67U", judul: "Menemukan Rumus Suku ke-n Pola Bilangan" },
+          { yt: "eiQ684OLt-w", judul: "Menentukan Suku ke-n Barisan Aritmatika" },
+          { yt: "oLyyuiqdTaY", judul: "Contoh Soal TKA Barisan Aritmatika" },
+          { yt: "JagHwoVUQ7w", judul: "Barisan Geometri: Rasio dan Suku ke-n" },
+          { yt: "5-QNnz3IFz4", judul: "Pembahasan Asesmen Formatif 3 Pola & Barisan Bilangan" },
+          { yt: "5S8CL33IU3g", judul: "Pola Persegi, Persegipanjang, dan Segitiga" },
+          { yt: "pwXJvqDdbQ8", judul: "Pola Fibonacci dan Segitiga Pascal" },
+          { yt: "Lf9ZDG4pbik", judul: "Pembahasan Soal HOTS Pola Bilangan" },
+          { yt: "Tu8-s4pfhtc", judul: "Pembahasan Soal HOTS Tipe ANBK/TKA" },
+          { yt: "1cols6-2LGs", judul: "Pembahasan Soal HOTS Tipe Numerasi Literasi" }
+        ],
         video_ix01: [
           { yt: "rDqyYoaXuho", judul: "Memahami konsep Bilangan Berpangkat" },
           { yt: "RZHcwgToMTo", judul: "Memahami Konsep Bilangan Berpangkat Nol dan Bilangan berpangkat negatif" },
@@ -1286,6 +1333,7 @@
         pecahan: '<circle cx="12" cy="12" r="9"/><path d="M12 3v9h9"/>',
         rasio: '<circle cx="7" cy="7" r="3.2"/><circle cx="17" cy="17" r="3.2"/><path d="M17 3l-9.5 13"/>',
         plsv: '<path d="M5 7h14M5 12h9M5 17h14"/><path d="M18.5 9.5l2 2.5-2 2.5"/>',
+        aljabar: '<path d="M4 6l7 12M11 6L4 18"/><path d="M15.5 12H21M18.25 9.25v5.5"/>',
         ruang: '<path d="M12 3l8.5 4.5v9L12 21l-8.5-4.5v-9z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9"/>',
         pola: '<circle cx="5.5" cy="12" r="1.6"/><circle cx="10" cy="12" r="1.6"/><circle cx="14.5" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/><path d="M5.5 5.5c3-2.4 9.5-2.4 13 0" stroke-dasharray="2.5 2.5"/>',
         fungsi: '<path d="M4 19c4-1 5-13 8-13 2.4 0 2 8 4 8 1.6 0 2.4-2.4 4-3"/><path d="M3 21h18" stroke-dasharray="2.5 2.5"/>',
