@@ -430,6 +430,34 @@
         display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
       }
 
+      /* ---------- Video kajian Google Drive (bisa dibuka-tutup, diputar di tempat) ---------- */
+      .drive-toggle { width: 100%; text-align: left; font: inherit; cursor: pointer; color: inherit; }
+      .drive-toggle svg { transition: transform .2s ease; }
+      .drive-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+      .drive-box { margin-top: .55rem; display: grid; gap: .6rem; }
+      .drive-box[hidden] { display: none; }
+      .drive-placeholder {
+        position: absolute; inset: 0; display: grid; place-items: center; align-content: center; gap: .55rem;
+        text-align: center; padding: 1rem; color: var(--gold-2);
+        font-size: .85rem; font-weight: 600; line-height: 1.5;
+      }
+      .drive-placeholder .yt-play { position: static; transform: none; }
+      .drive-now { font-size: .82rem; color: var(--muted); line-height: 1.5; }
+      .drive-now[hidden] { display: none; }
+      .drive-now-title { color: var(--ink); font-weight: 700; }
+      .drive-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem; }
+      .drive-item {
+        width: 100%; display: flex; align-items: center; gap: .55rem; text-align: left;
+        padding: .5rem .7rem; border: 1px solid var(--line); border-radius: 10px;
+        background: var(--surface-2); font: inherit; font-size: .84rem; font-weight: 600;
+        color: inherit; cursor: pointer;
+        transition: border-color .18s ease, background .18s ease;
+      }
+      .drive-item svg { flex: none; color: var(--faint); }
+      .drive-item:hover { border-color: var(--gold); background: var(--surface); }
+      .drive-item.aktif { border-color: var(--gold); background: color-mix(in srgb, var(--gold) 12%, var(--surface)); }
+      .drive-item.aktif svg { color: var(--gold); }
+
       /* ---------- Unduhan ---------- */
       .dl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
       @media (max-width: 760px) { .dl-grid { grid-template-columns: 1fr; } }
@@ -1316,7 +1344,9 @@
            "prompt" (Penyimpanan Prompt, terkunci kode khusus), "tka",
            serta grup khusus fitur F-13 Jurnal Sholatku: "aplikasi",
            "video", dan "folder" (tautan Drive), dan grup khusus fitur
-           F-14 Kajian Pedoman Hidup Islami: "arsip" (dokumen kajian). */
+           F-14 Kajian Pedoman Hidup Islami: "arsip" (dokumen kajian dan
+           bagian video Fiqh Sholat yang diputar di tempat — entri
+           bertanda videodrive, daftar videonya di LINK_DB.video_f14). */
         eksternal: [
           { bab: "IX-03", grup: "emodul", nama: "E-Modul Digital Interaktif Kekongruenan & Kesebangunan", url: "https://ais-pre-sfya3jyk34q34ejwcbly4u-253889415088.asia-east1.run.app" },
           { bab: "IX-03", grup: "materi", nama: "Materi 1 (PPT)", url: "https://docs.google.com/presentation/d/1wMXz9Z44T4_lTYTP7c-zXVahWkTYF1tr/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
@@ -1506,7 +1536,7 @@
           { bab: "F-13", grup: "prompt", nama: "Prompt Master Jurnal Sholatku Digital", url: "https://drive.google.com/file/d/1VzBbrL_5CDaXl814is-ZkZVCuuEVunnF/view?usp=sharing" },
           /* ---------- Kajian Pedoman Hidup Islami (fitur F-14, panel di Menu Utama) ---------- */
           { bab: "F-14", grup: "arsip", nama: "Kajian Pedoman Hidup Islami — Pandangan Islam tentang Kehidupan", url: "https://drive.google.com/file/d/1b-d9juBUwjIW8TjpMW7Pk0Pc85qFwzVi/view?usp=sharing" },
-          { bab: "F-14", grup: "arsip", nama: "Fiqh Sholat — Ustadz Adi Hidayat (Folder Video Kajian)", url: "https://drive.google.com/drive/folders/1ux5Jq3FNrN7NkvOFu7xqD4qycU1CMMRn?usp=sharing" }
+          { bab: "F-14", grup: "arsip", nama: "Fiqh Sholat — Ustadz Adi Hidayat (53 Video Kajian)", videodrive: true, folder: "https://drive.google.com/drive/folders/1ux5Jq3FNrN7NkvOFu7xqD4qycU1CMMRn?usp=sharing" }
         ],
         /* ---------- Materi interaktif yang bisa dimainkan (grup: "lkpd" | "game" | "quiz") ---------- */
         interaktif: [
@@ -1673,6 +1703,67 @@
           { yt: "IQMXjHnWhDM", judul: "Luas dan Volume Gabungan BRSL — Tugas Mandiri 5" },
           { yt: "osYuv92iyAU", judul: "Luas dan Volume Gabungan BRSL — Latihan Mandiri 5 (1)" },
           { yt: "qZswBf7aE8E", judul: "Luas dan Volume Gabungan BRSL — Latihan Mandiri 5 (2)" }
+        ],
+        /* ---------- Video kajian Fiqh Sholat — Ustadz Adi Hidayat (Google Drive,
+           diputar langsung di portal lewat pratinjau Drive) ----------
+           "gd" adalah ID berkas Google Drive; judul sesuai nama berkas di
+           foldernya (akhiran .mp4 dan garis bawah dibersihkan). Dipakai oleh
+           entri bertanda videodrive pada panel F-14 Kajian Pedoman Hidup
+           Islami, kelompok Arsip Kajian. */
+        video_f14: [
+          { gd: "1CRT6bmIF0t2ujYoIxGhkrwdIxeSouPxq", judul: "1. Waktu Sholat dalam Al-Quran - Ustadz Adi Hidayat" },
+          { gd: "1EvJIxCUiBHzMasquiKe_vp4i796TegXR", judul: "2. Tata Cara Wudhu Yang Baik & Benar (Lengkap) - Ust. Adi Hiday" },
+          { gd: "1qUNJsZt6k4hDaXgINnh2n9Dqvt78vPuM", judul: "3. Hukum Melafadzkan Niat Sholat! Bid'ah kah - Ust. ADI HIDAYA" },
+          { gd: "1gzmY3jRZB3uRB35r2v2pMYLnq7tMq_wn", judul: "3.1 Cara Menyusun Shaf Dalam Shalat - Ustadz Adi Hidayat Lc, MA" },
+          { gd: "1HuExJrz22dZlVZcqDT8HjF3qJGAn7nvb", judul: "3.2 Cara Mengangkat Tangan Dalam Shalat - Ustadz Adi Hidayat, Lc" },
+          { gd: "1ffVxycF8iUAMWWSJcWIgO0m5BT2OSuxj", judul: "3.3 Cara Mengikuti Gerakan Imam yang Benar dalam Shalat - Ustadz" },
+          { gd: "1pVYFU8ZbvLwU5YvpFmlZfDDBvN0s4X8u", judul: "3.4 Posisi Kedua Kaki Ketika Berdiri dalam Shalat - Ustadz Adi H" },
+          { gd: "1eximrEYV0TZqIHwHkwwvPUTJa7B0pUQz", judul: "4.1 Doa Iftitaf dalam Shalat - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "13afNhbWolVV8rI4pkwvPRA6awQL-vVAk", judul: "4.2. 12 Macam Do'a Iftitah, Mana Yg Seharusnya diPakai - Ust. A" },
+          { gd: "1louhqAu8VZDwcQAL_jI7KFFdxa39xkSv", judul: "5. Makna Bismillah - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1ZD9KJ6ELNKLO4SK3H1WDbe5-fZgagra4", judul: "6. Cara Ruku yang Benar - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1gqNvqsA8Jplq3aYChPlTMidLnlhyLJ2b", judul: "6.1 Doa Ketika Ruku - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1DcmlmUIdTekmkI53rvktkN2b_RrgKpJk", judul: "7. Kapan Waktu Berdo'a Dalam Sholat Yang Benar, Saat Sujud Ata" },
+          { gd: "1PC2VdkoIrg8X2kONVK8vVAtSwENxFN2S", judul: "7.1 Ketika Akan Sujud Tangan Dulu Atau Lutut Dulu - Ust. ADI HI" },
+          { gd: "1c_0n7w6ejB_BpX-ve3ioWEc5bfOspr83", judul: "8. Kenapa Tahiyat Tidak Pakai Sayyidina! - Ust. Adi Hidayat, Lc., MA" },
+          { gd: "1_fQzLB6IUwMBieVvyn6hQkdrBQfQFjMy", judul: "8.1 Saat Tahiyat Jari Telunjuk diGerakan atau Diam Saja - Ust." },
+          { gd: "1y3043rREyLzdMh2O4tmlYIMylvibTUC4", judul: "Ada 3 Syarat Bagi Wanita Untuk Shalat Berjama'ah di Masjid - Ust" },
+          { gd: "1aRH6hRmIFRTdSYRXxYHbW-I56bEFj2WI", judul: "Ada 4 Keutamaan Shalat Tahajud - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1P9jORKuRG39ouESwV3ZsyJuSe3Ud_XOP", judul: "Ada 5 Hal yang Akan Kita Dapatkan di Dunia Jika Shalat Kita Bena" },
+          { gd: "1R7ROCRW1S9dwx9bcE7BHreDVGTViA4ID", judul: "Adakah Tahiyatul Masjid Untuk Mushola - Ust. ADI HIDAYAT Lc," },
+          { gd: "1CteI8bt3tHbk0Bix1MxsE_eyj2381KAk", judul: "Arti Khusyu Yang Sebenarnya - Ustadz Adi Hidayat Lc, MA" },
+          { gd: "1WL7Da5k-5-84nxfPBhbkEouwPZRbGk7Y", judul: "Asal-Usul Terjadinya Perbedaan Raka'at Tarawih - Ust. ADI HI" },
+          { gd: "1yfBzg-h2UIVshoGMh359MyEbYf0g2qjZ", judul: "Berapakah Jumlah Rakaat Shalat Tahajud - Ustadz Adi Hidayat" },
+          { gd: "1hDyreio_PtJA87kfmcyU6gBPwVa5VB41", judul: "Bolehkah Shalat Tahajud Berjama'ah - Ustadz Adi Hidayat, Lc" },
+          { gd: "13xMGFQufdSI9zZhbMwQXy96LuR3E-ZIw", judul: "Cara Berdoa Ketika Shalat Agar Dikabulkan - Ustadz Adi Hiday" },
+          { gd: "1ItAlboSKMk7eSfLR8O3cvk2RJz89OZzW", judul: "Cara Mengangkat Tangan Ketika Berdoa - Ustadz Adi Hidayat, L" },
+          { gd: "1T_AqvPUIL7Tos1jUmhaDib-Vqu-Q-ZOW", judul: "Dimanakah Nabi Menunaikan Shalat Sunnah Rawatib - Ustadz Ad" },
+          { gd: "1lQt6lyYqA6-IY46umo57mWQYNuG4drpM", judul: "Ditekankannya Shalat Berjama'ah di Masjid Bagi Laki Laki - U" },
+          { gd: "1bSLViSvzaLszi45ZV6YTP2HBw_J3vl1w", judul: "Fungsi Shalat - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "189ItmTVUKHVPfD491hcZXIjzVGNGnxPE", judul: "Gerakan Shalat Nabi - Ustadz Adi Hidayat Lc, MA" },
+          { gd: "1G0i3q54_i2KQAO7T2JDh6lNLtoIlFx5Z", judul: "Godaan Setan Saat Shalat - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1P53Gy5TOhj0_jE_OQ_j3DR-MW3xZBLOE", judul: "Hikmah Berdzikir - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1DISkRyMsMmhWAc2TiutmA0-gY_l9zrjf", judul: "Hukum Dzikir Dikeraskan dan Bersalaman Setelah Sholat Fardhu" },
+          { gd: "1aSH8C3CyxQGSpbmh6QaoXFSzM6sOW3rr", judul: "Hukum Mengusap Wajah Setelah Shalat - Ustadz ADI HIDAYAT Lc," },
+          { gd: "1fNhRk3ueA22DljVTTBhTOftb3-otZQVp", judul: "Inilah Setan Khusus Mengganggu Orang Shalat - Ustadz Adi Hid" },
+          { gd: "1vZHOIk5hMx8FSfsCqDsv5YHLVd4tgm46", judul: "Jaminan Allah Bagi Orang yang Shalat Tahajud - Ustadz Adi Hi" },
+          { gd: "1GQ6FljejhKme1PsB4EPCrb6KexnsXSG4", judul: "Keistimewaan Shalat Tahajud - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1VxAqD62pzAXK5RoTyFt4E-gzo1__dwjr", judul: "Kemuliaan Shalat Tahajud - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "14k6EJxr0vEx8HW7Uo6mwpRJ3whIajFhV", judul: "Ketentuan 3 Hal Penting Imam Shalat - Ustadz Adi Hidayat Lc, MA" },
+          { gd: "1VJtCwRV_iU6WC3uoMJfgQAbitWOy_Syz", judul: "Keutamaan 2 Raka'at Sebelum Shubuh - Ustadz Adi Hidayat, Lc," },
+          { gd: "1mR-PLF3Cn-Ky5mWIhE_Exi3ueuDCanQ4", judul: "Keutamaan Shalat Sunnah Rawatib - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1gbWjj0Aa8bW4fdOMVbC-ISlUi1a5Uk8g", judul: "Meresapi Makna Dzikir - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1ermzjDMPXI4xz2CvlPvHvW9AEq7eH6UR", judul: "Pengertian Shalat Jama' dan Qashar, Kapan dan Cara Mengerjak" },
+          { gd: "10BjJackw6JJYaJWiKo2hgfeqGbzp_tZ4", judul: "Permohonan dalam Shalat - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "16s5aVMb-AbLgKCU851zIJ9ULqJzpxEKO", judul: "Rahasia Besar Dalam Shalat Agar Kebutuhan Kita Dimudahkan" },
+          { gd: "1H4OAerCBMdIow38tFjyCTKMWr57Tsywu", judul: "Rumus Menggapai Khusyu dalam Shalat - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1gDo7kiJyIkqQHEs1zZTQRyQw7PCYB_hO", judul: "Shalat Tahajud Setelah Witir diBulan Ramadhan, Bolehkah - U" },
+          { gd: "1IZOBOz7jQhivat0ugIUVzu7kB1-sj_aA", judul: "Shalat Tarawih 11 atau 23 Raka'at, Jumlah Raka'at Pilihan Ra" },
+          { gd: "1HTG6BmssZtlBnkPKfn_uZ-cygfyAeL2g", judul: "Sholat - Adi Hidayat" },
+          { gd: "1Fxq7JVvBAI6yT7qk8BA4azjqYZX-d1eo", judul: "Sudah Benarkah Shalat Kita - Ustadz Adi Hidayat, Lc, MA" },
+          { gd: "1Jj7Lu3JiQGMRvRrOkcdFcdLGWV2koWA9", judul: "Surat yang Dibaca Dalam Shalat Dhuha - Ustadz Adi Hidayat, L" },
+          { gd: "1Z8AFFRLqdaWX82wGtp-IRhK4xuAQvxGu", judul: "Tata Cara Sholat Berjamaah Yang Baik dan Benar - Ust. ADI HI" },
+          { gd: "1LbioQqqEvxg7dJUPU1oNWuqS-WlkdToJ", judul: "Tata Cara Sholat Ketika di Pesawat Terbang - Ust. ADI HIDAYA" }
         ]
       };
 
@@ -1722,6 +1813,12 @@
          Dideklarasikan sebelum renderFitur karena panelSumber() juga
          dipanggil dari sana (kartu fitur berpola panel, mis. F-13). */
       var IKON_BUKA = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4L11 13"/><path d="M19 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>';
+
+      /* Ikon untuk bagian video Drive di panel — juga dideklarasikan
+         sebelum renderFitur karena bagianVideoDrive() dipanggil dari
+         panelSumber() saat kartu fitur dirender. */
+      var IKON_PUTAR_KECIL = '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z"/></svg>';
+      var IKON_PANAH = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
 
       /* ---------- Render Menu Utama dari LINK_DB.fitur ---------- */
       (function renderFitur() {
@@ -1800,7 +1897,7 @@
         if (s.dari === "eksternal") {
           return (LINK_DB.eksternal || [])
             .filter(function (x) { return x.bab === b.id && x.grup === s.grup; })
-            .map(function (x) { return { nama: x.nama, url: x.url }; });
+            .map(function (x) { return { nama: x.nama, url: x.url, videodrive: x.videodrive, folder: x.folder }; });
         }
         if (s.dari === "promptberbagi") {
           return (LINK_DB.promptberbagi || [])
@@ -1810,6 +1907,38 @@
         return [];
       }
       var IKON_PUTAR = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z"/></svg>';
+
+      /* ---------- Bagian video Google Drive yang bisa dibuka-tutup ----------
+         Satu pemutar tertanam (pratinjau Drive, rasio 16:9) dan daftar judul
+         di bawahnya; mengklik judul memuat video itu ke pemutar di tempat,
+         tanpa pindah ke Google Drive atau YouTube. Daftar videonya diambil
+         dari LINK_DB dengan kunci pola "video_" + id huruf kecil tanpa tanda
+         hubung (F-14 → video_f14), sama seperti daftar video bab. Di akhir
+         bagian tetap ada tautan biasa ke folder Drive-nya. */
+      function bagianVideoDrive(b, t) {
+        var kunci = "video_" + b.id.toLowerCase().replace(/-/g, "");
+        var daftar = LINK_DB[kunci] || [];
+        var idKotak = "drive-" + b.id;
+        var html = '<button type="button" class="sumber-link drive-toggle" aria-expanded="false" aria-controls="' + esc(idKotak) + '">' +
+          '<span>🎬 ' + esc(t.nama) + '</span>' + IKON_PANAH + '</button>';
+        html += '<div class="drive-box" id="' + esc(idKotak) + '" hidden>';
+        html += '<div class="yt-frame drive-frame"><div class="drive-placeholder">' +
+          '<span class="yt-play" aria-hidden="true">' + IKON_PUTAR_KECIL + '</span>' +
+          '<span>Pilih judul video di bawah ini untuk menonton langsung di sini.</span>' +
+        '</div></div>';
+        html += '<p class="drive-now" hidden>Sedang diputar: <span class="drive-now-title"></span></p>';
+        html += '<ul class="drive-list">';
+        daftar.forEach(function (v) {
+          html += '<li><button type="button" class="drive-item" data-gd="' + esc(v.gd) + '" data-judul="' + esc(v.judul) + '">' +
+            IKON_PUTAR_KECIL + '<span>' + esc(v.judul) + '</span></button></li>';
+        });
+        html += '</ul>';
+        if (t.folder) {
+          html += '<a class="sumber-link" href="' + esc(t.folder) + '" target="_blank" rel="noopener"><span>Buka Folder Fiqh Sholat di Google Drive</span>' + IKON_BUKA + '</a>';
+        }
+        html += '</div>';
+        return html;
+      }
       function panelSumber(b) {
         var html = '<div class="bab-sumber" id="sumber-' + esc(b.id) + '" hidden>';
         b.sumber.forEach(function (s) {
@@ -1833,6 +1962,10 @@
           } else {
             html += '<ul class="sumber-list">';
             tautan.forEach(function (t) {
+              if (t.videodrive) {
+                html += '<li>' + bagianVideoDrive(b, t) + '</li>';
+                return;
+              }
               var namaBerkas = t.unduh ? t.url.split("/").pop() : "";
               html += '<li><a class="sumber-link" href="' + esc(t.url) + '" target="_blank" rel="noopener"' +
                 (s.grup === "prompt" ? ' data-khusus="prompt"' : '') +
@@ -1916,6 +2049,48 @@
           bingkai.classList.remove("video-lead-frame");
           bingkai.innerHTML = "";
           bingkai.appendChild(iframe);
+        });
+      })();
+
+      /* ---------- Video kajian Drive: buka-tutup bagian & putar di tempat ----------
+         Klik judul video memuat pratinjau Google Drive video itu ke pemutar
+         tertanam di bagian yang sama — pengunjung menonton langsung di
+         portal tanpa pindah ke Drive atau YouTube. */
+      (function putarVideoDrive() {
+        document.addEventListener("click", function (e) {
+          var toggle = e.target.closest(".drive-toggle");
+          if (toggle) {
+            var kotak = document.getElementById(toggle.getAttribute("aria-controls"));
+            if (!kotak) return;
+            var terbuka = toggle.getAttribute("aria-expanded") === "true";
+            toggle.setAttribute("aria-expanded", terbuka ? "false" : "true");
+            kotak.hidden = terbuka;
+            return;
+          }
+          var item = e.target.closest(".drive-item");
+          if (!item) return;
+          var id = item.getAttribute("data-gd");
+          var kotakVideo = item.closest(".drive-box");
+          if (!id || !kotakVideo) return;
+          var bingkai = kotakVideo.querySelector(".drive-frame");
+          if (!bingkai) return;
+          var iframe = document.createElement("iframe");
+          iframe.src = "https://drive.google.com/file/d/" + id + "/preview";
+          iframe.title = item.getAttribute("data-judul") || "Video kajian";
+          iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
+          iframe.setAttribute("allowfullscreen", "");
+          bingkai.innerHTML = "";
+          bingkai.appendChild(iframe);
+          var aktifLama = kotakVideo.querySelectorAll(".drive-item.aktif");
+          for (var i = 0; i < aktifLama.length; i++) aktifLama[i].classList.remove("aktif");
+          item.classList.add("aktif");
+          var kini = kotakVideo.querySelector(".drive-now");
+          if (kini) {
+            kini.hidden = false;
+            var judulKini = kini.querySelector(".drive-now-title");
+            if (judulKini) judulKini.textContent = item.getAttribute("data-judul") || "";
+          }
+          if (bingkai.scrollIntoView) bingkai.scrollIntoView({ block: "nearest" });
         });
       })();
 
