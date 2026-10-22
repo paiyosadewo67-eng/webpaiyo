@@ -1,0 +1,626 @@
+PROMPT  E-MODUL DIGITAL INTERAKTIF  BAB BANGUN RUANG SISI LENGKUNG
+
+Link Share WA : “ Assalamu'alaikum! 👋 Ayo pelajari E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENJELAJAH RUANG GEOMETRI BANGUN RUANG SISI LENGKUNG”; bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+https://ais-pre-p5zzq2s2za7i7qzdga54f7-438289882508.asia-southeast1.run.app
+Assalamu’alaikum,...Selamat malam, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat  “ E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP “MENJELAJAH RUANG GEOMETRI BANGUN RUANG SISI LENGKUNG”
+. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+Buat sebuah game edukasi matematika interaktif berbasis web untuk siswa kelas IX SMP dengan tema:
+Buatkan: “ E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP “MENJELAJAH RUANG GEOMETRI BANGUN RUANG SISI LENGKUNG”
+Berbasis Problem Based Learning (PBL)Untuk Meningkatkan Kemampuan Berpikir Kritis Peserta Didik
+SMP NEGERI 1 BANTARKAWUNG KABUPATEN BREBES
+TOKOH UTAMA:1. Guru matematika laki-laki Indonesia memakai SERAGAM BREBESAN hitam khas Brebes seperti foto referensi, lengkap tanda pengenal guru, peci batik Brebesan hitam putih, wajah ramah berwibawa, duduk di meja digital modern di rumah sambil mengoperasikan papan pembelajaran hologram dengan tampilan " Link share wa =Assalamu'alaikum! 👋 Ayo pelajari E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENJELAJAH RUANG GEOMETRI BANGUN RUANG SISI LENGKUNG”
+bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+Ekspresi inspiratif, hangat, profesional, seperti guru kreatif modern Indonesia.2. Anis → siswi SMP berhijab biru muda, duduk santai di meja digital belajar mandiri di rumah, aktif membuka fitur pembelajarandengan tampilan " Link share wa =Assalamu'alaikum! 👋 Ayo pelajari E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENJELAJAH RUANG GEOMETRI BANGUN RUANG SISI LENGKUNG”
+bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+3. Muhammad Attariq → siswa SMP berpakaian rapi sopan, duduk di meja digital futuristik di teras rumah, aktif belajar mandiri dengan tampilan hologram dengan tampilan " Link share wa =Assalamu'alaikum! 👋 Ayo pelajari E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENJELAJAH RUANG GEOMETRI BANGUN RUANG SISI LENGKUNG”
+bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+WAJIB menggunakan wajah guru MENYERUPAI foto referensi yang diupload:- wajah asli Indonesia- senyum ramah- kumis dan jenggot tipis- peci Brebesan hitam putih- seragam Brebesan hitam elegan- memakai ID card guruprompt /imagine prompt: A wide-angle 3D Pixar aesthetic diorama render of a warm wooden classroom in rural Indonesia. In the center, a smiling Indonesian math teacher named Drs. Paiyo wearing traditional black Brebesan attire and batik blangkon, sitting at a glowing holographic glass desk filled with neon geometric wireframes, glowing math formulas, and a cute mini AI robot. On the left, a schoolgirl in hijab (Anis) studying on a glowing holographic interface. On the right, a polite schoolboy (Muhammad Attariq) interacting with floating 3D math prisms. Above, a glowing wooden banner "AAAMAT KEREN - ASAH ASIH ASUH MATEMATIKA". Warm sunlight, rich wood tones, cinematic lighting, Unreal Engine 5 render, highly detailed . --ar 16:9 Lumen global illumination, Nanite geometry, Raytraced reflections, 8k Octane render, Isometric 3D Diorama. Guru dan siswa beda rumah, Guru di "Sanggar Belajar Mandiri Siswa AAAMAT KEREN", Anis berada di ruang kamar rumahnya, sedangkan Atta di teras rumahnya. Terimakasih atas solusinyaTeks yang tampil di layar:TEMA UTAMA :" E-MODUL DIGITAL INTERAKTIF “MENJELAJAH RUANG GEOMETRI BANGUN RUANG SISI LENGKUNG”
+MATEMATIKA KELAS IX SMP”bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!HEADER UTAMA:Di bagian atas terdapat papan judul besar warna hitam doff glossy dengan bingkai kayu modern dan baut logam futuristik.Tulisan glowing neon 3D warna kuning-oranye terang:“AAAMAT KEREN”Subjudul:“ASAH ASIH ASUH MATEMATIKA”“KREATIF – EKSPLORATIF – REPRESENTATIF – EKSLEN – NO DROP”FITUR TOMBOL INTERAKTIF BESAR DAN MENYALA:1. BERANDA (MULAI BELAJAR)2. TUJUAN PEMBELAJARAN (PETA BELAJAR)3. VIDEO PEMBELAJARAN4. E-MODUL (9 Pertemuan)5. ESCAPE ROOM HOTS
+6. KUIS FORMATIF (ASESMEN SUMATIF)7. EVALUASI AKHIR 8. AUDIO PEMBELAJARAN ICE BREAKING9. RAPOR DIGITALSLOGAN PENUTUP BESAR:“BELAJAR MATEMATIKA JADI MUDAH, MODERN, dan… AAAMAT KEREN!”“MATEMATIKA…!” → “AAAMAT KEREN!”“ASAH… ASIH… ASUH… MATEMATIKA”
+STYLE VISUAL:Pixar animation style, Unreal Engine 5 render, cinematic educational diorama, ultra detail miniature scene, glowing holographic UI, Indonesia modern smart classroom, highly detailed character expression, depth of field, realistic material texture, warm ambient light, inspirational atmosphere, premium educational poster design.NEGATIVE PROMPT:blur, low quality, extra fingers, distorted face, dark board, unreadable text, messy layout, horror style, gloomy atmosphere, duplicated objects, low contrast, flat lighting, cropped body, unrealistic anatomy, dull color, low resolution, watermark, broken hands, asymmetrical eyes
+E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP
+MENJELAJAH RUANG GEOMETRIBANGUN RUANG SISI LENGKUNG
+Tabung • Kerucut • Bola • Bangun Gabungan
+
+Berbasis Problem Based Learning (PBL)Untuk Mengembangkan Kemampuan Berpikir Kritis Siswa
+
+SMP NEGERI 1 BANTARKAWUNGNama Pengembang: Drs. PAIYO
+
+Palet visual: biru • hijau • putih • oranye | Format ramah smartphone, tablet, dan laptop
+
+PETUNJUK PENGGUNAAN E-MODUL
+Bacalah masalah pemantik sebelum membuka rumus. Tuliskan apa yang diketahui, apa yang ditanyakan, dan informasi yang masih dibutuhkan.
+Kerjakan aktivitas secara individu atau berkelompok 3–4 orang. Setiap jawaban harus disertai alasan, gambar/model, atau perhitungan.
+Gunakan π = 22/7 jika jari-jari atau diameter merupakan kelipatan 7; selain itu gunakan π ≈ 3,14, kecuali soal menyatakan lain.
+Pada kegiatan digital, guru dapat menambahkan tautan video, simulasi geometri, kuis Google Forms/Quizizz, dan lembar kolaborasi. Tautan dapat ditempel pada tombol/kartu aktivitas.
+Akhiri setiap pertemuan dengan refleksi: strategi apa yang berhasil, apakah jawaban masuk akal, dan apa yang akan diperbaiki.
+IDENTITAS DAN DESAIN PEMBELAJARAN
+Komponen
+Keterangan
+Sasaran
+Siswa kelas IX SMP/MTs; Fase D
+Alokasi
+9 pertemuan × 2 JP; setiap pertemuan 2 × 40 menit
+Model utama
+Problem Based Learning (PBL)
+Materi
+Tabung, kerucut, bola, dan gabungan bangun ruang sisi lengkung
+Fokus berpikir kritis
+Interpretasi informasi, analisis, inferensi, evaluasi strategi, penjelasan alasan, dan refleksi
+Produk akhir
+Rancangan kemasan/monumen mini berbasis bangun ruang sisi lengkung disertai perhitungan dan argumen
+Media
+Benda nyata, kertas jaring-jaring, penggaris, kalkulator, gambar/slide, kuis digital, lembar kerja
+
+TUJUAN PEMBELAJARAN
+Mengidentifikasi bentuk dan unsur tabung, kerucut, serta bola pada benda di lingkungan sekitar.
+Membuat atau menafsirkan jaring-jaring tabung dan kerucut serta menjelaskan hubungan jaring-jaring dengan luas permukaan.
+Menemukan dan menggunakan rumus luas permukaan serta volume tabung, kerucut, dan bola dengan alasan yang benar.
+Membedakan belahan bola padat dan belahan bola berongga serta menentukan luas/volume sesuai konteks dan bagian yang dihitung.
+Menyelesaikan masalah kontekstual yang melibatkan perubahan skala, perbandingan panjang, luas, dan volume.
+Menganalisis gabungan tabung, kerucut, dan bola dengan menentukan bagian yang dihitung atau tidak dihitung.
+Menyampaikan kesimpulan dengan perhitungan, gambar/model, satuan, dan evaluasi kewajaran hasil.
+PETA 9 PERTEMUAN
+Pertemuan
+Fokus
+Masalah kontekstual / produk
+1
+Eksplorasi tabung, unsur, dan jaring-jaring
+Desain label kaleng minuman; model jaring-jaring
+2
+Luas permukaan dan volume tabung
+Memilih ukuran wadah penyimpanan; perhitungan bahan dan kapasitas
+3
+Perubahan proporsional tabung
+Membandingkan ukuran kemasan versi mini dan jumbo
+4
+Kerucut, unsur, jaring-jaring, luas permukaan
+Mendesain topi pesta/corong; menentukan bahan
+5
+Volume kerucut dan masalah kontekstual
+Kapasitas corong/kerucut pasir dan hubungan dengan tabung
+6
+Bola, belahan bola, luas permukaan
+Desain kubah/kemasan bola; padat vs berongga
+7
+Volume bola dan perubahan proporsional
+Kebutuhan bahan untuk bola dekorasi berukuran berbeda
+8
+Gabungan tabung–kerucut–bola
+Model menara air/ornamen taman; luas dan volume bagian terpilih
+9
+Final Mission: investigasi desain
+Presentasi proyek, evaluasi sumatif, refleksi berpikir kritis
+
+KARTU RUMUS: PAHAMI MAKNA, BUKAN SEKADAR HAFAL
+Bangun
+Luas permukaan
+Volume
+Catatan penting
+Tabung
+2πr² + 2πrt = 2πr(r+t)
+πr²t
+Luas dua lingkaran + selimut; t adalah tinggi tegak
+Kerucut
+πr² + πrs = πr(r+s)
+⅓πr²t
+s = garis pelukis; s² = r² + t² untuk kerucut tegak
+Bola
+4πr²
+(4/3)πr³
+r adalah jari-jari
+Belahan bola padat
+3πr² (lengkung + alas)
+(2/3)πr³
+Luas total mencakup alas lingkaran
+Belahan bola tanpa alas/berongga
+2πr² (selimut lengkung)
+Bergantung ketebalan dan definisi rongga
+Jangan samakan luas lengkung dengan luas total
+
+Catatan: Untuk benda berongga, volume bahan tidak sama dengan volume ruang yang dapat diisi. Jika ketebalan dinding tidak diberikan, jangan menganggap volume bahan dapat dihitung secara tepat.
+
+PERTEMUAN 1 — DETEKTIF TABUNG: BENTUK, UNSUR, DAN JARING-JARING
+Masalah pemantik
+Panitia kelas ingin membuat label yang menutupi sisi lengkung kaleng tanpa menutupi tutup dan alas. Bagaimana menentukan bentuk dan ukuran label agar pas?
+Tujuan pertemuan
+Mengenali tabung dan contohnya; mengidentifikasi jari-jari, diameter, tinggi, alas, tutup, dan selimut; membuat jaring-jaring tabung.
+Alur PBL (2 × 40 menit)
+Tahap / waktu
+Aktivitas guru dan siswa
+Pendahuluan (10 menit)
+Guru menunjukkan kaleng/botol silinder. Siswa menyebutkan pengamatan dan dugaan: bagian mana yang melengkung, datar, atau berbentuk lingkaran.
+Memahami (15 menit)
+Kelompok menandai unsur tabung pada gambar dan mengukur diameter serta tinggi kaleng. Bedakan diameter d dan jari-jari r = d/2.
+Mengaplikasi (35 menit)
+Siswa membungkus kaleng dengan kertas, membuka hasilnya, lalu mengamati bahwa selimut menjadi persegi panjang berukuran keliling alas × tinggi. Buat jaring-jaring lengkap dengan dua lingkaran.
+Merefleksi (10 menit)
+Siswa menjelaskan mengapa panjang persegi panjang sama dengan keliling lingkaran, bukan diameternya.
+Penutup (10 menit)
+Exit ticket: gambar jaring-jaring dan tuliskan satu kesalahan yang perlu dihindari.
+
+Kuis formatif (5 soal)
+1. Sebutkan tiga benda berbentuk tabung dan jelaskan ciri yang membuatnya termasuk tabung.
+2. Sebuah tabung memiliki diameter 12 cm dan tinggi 20 cm. Tentukan jari-jarinya.
+3. Sebutkan dua bidang datar yang terdapat pada tabung tertutup.
+4. Jaring-jaring tabung terdiri atas bangun datar apa saja?
+5. Mengapa panjang selimut pada jaring-jaring sama dengan keliling alas? Jelaskan.
+LKPD / kartu aktivitas
+LKPD 1 — Ukur satu benda berbentuk tabung. Catat nama benda, diameter, jari-jari, tinggi, bentuk alas, dan sketsa jaring-jaring. Prediksi ukuran persegi panjang selimut, kemudian cocokkan dengan hasil pengukuran.
+Pertanyaan HOTS dan refleksi
+HOTS: Apakah strategi kelompokmu paling efisien? Bandingkan dengan strategi lain dan gunakan bukti matematis.
+Refleksi: Bagian mana yang paling kamu pahami? Kesalahan apa yang berhasil kamu temukan atau perbaiki?
+
+PERTEMUAN 2 — INVESTIGASI LUAS PERMUKAAN DAN VOLUME TABUNG
+Masalah pemantik
+Koperasi sekolah akan memilih wadah minuman. Satu wadah perlu diberi label pada sisi lengkung dan diketahui kapasitasnya. Bagaimana menghitung kebutuhan label dan isi maksimum?
+Tujuan pertemuan
+Menurunkan rumus luas permukaan dan volume tabung; menghitung luas permukaan serta volume dengan satuan yang tepat.
+Alur PBL (2 × 40 menit)
+Tahap / waktu
+Aktivitas guru dan siswa
+Pendahuluan (10 menit)
+Tinjau jaring-jaring pertemuan sebelumnya. Guru menyajikan dua wadah dengan ukuran berbeda dan meminta siswa menebak mana yang lebih luas/berkapasitas besar.
+Memahami (15 menit)
+Siswa menguraikan luas permukaan menjadi dua lingkaran dan satu persegi panjang. Diskusikan volume sebagai luas alas × tinggi.
+Mengaplikasi (35 menit)
+Kelompok menyelesaikan masalah wadah: r = 7 cm, t = 15 cm. Hitung luas permukaan tertutup dan volume; nyatakan satuan cm² dan cm³.
+Merefleksi (10 menit)
+Bandingkan jawaban kelompok. Periksa apakah luas diberi satuan persegi dan volume satuan kubik.
+Penutup (10 menit)
+Siswa menulis satu alasan mengapa volume tabung bukan 2πrt.
+
+Kuis formatif (5 soal)
+1. Tabung berjari-jari 7 cm dan tinggi 10 cm. Hitung volumenya dengan π = 22/7.
+2. Tabung r = 7 cm dan t = 10 cm. Hitung luas permukaan tertutupnya.
+3. Sebuah tabung memiliki luas alas 50 cm² dan tinggi 12 cm. Tentukan volumenya.
+4. Jelaskan perbedaan makna luas permukaan dan volume tabung.
+5. Dina menghitung volume dengan rumus 2πr + t. Identifikasi kesalahannya dan tuliskan rumus yang benar.
+LKPD / kartu aktivitas
+LKPD 2 — Untuk kaleng r = 7 cm, t = 15 cm, tentukan luas bahan untuk kaleng tertutup, luas label yang hanya menutupi selimut, dan kapasitas. Jelaskan mengapa ketiga kebutuhan itu tidak boleh disamakan.
+Pertanyaan HOTS dan refleksi
+HOTS: Apakah strategi kelompokmu paling efisien? Bandingkan dengan strategi lain dan gunakan bukti matematis.
+Refleksi: Bagian mana yang paling kamu pahami? Kesalahan apa yang berhasil kamu temukan atau perbaiki?
+
+PERTEMUAN 3 — SKALA DAN PERUBAHAN PROPORSIONAL TABUNG
+Masalah pemantik
+Produsen membuat versi mini dan jumbo dari sebuah kaleng dengan bentuk serupa. Jika semua ukuran panjang menjadi dua kali, apakah luas bahan dan kapasitas juga menjadi dua kali?
+Tujuan pertemuan
+Menalar perubahan panjang, luas, dan volume ketika ukuran linear berubah dengan faktor skala k.
+Alur PBL (2 × 40 menit)
+Tahap / waktu
+Aktivitas guru dan siswa
+Pendahuluan (10 menit)
+Siswa memprediksi dampak penggandaan jari-jari dan tinggi pada luas dan volume.
+Memahami (15 menit)
+Gunakan rumus: skala panjang k, luas permukaan k², volume k³ bila semua ukuran linear berubah seragam.
+Mengaplikasi (35 menit)
+Kelompok membandingkan tabung A (r = 3 cm, t = 8 cm) dengan tabung B yang semua ukuran linear dua kali. Hitung perbandingan luas dan volume, lalu jelaskan tanpa hanya menyebut angka.
+Merefleksi (10 menit)
+Diskusikan implikasi pada biaya bahan dan jumlah isi.
+Penutup (10 menit)
+Kartu cepat: jika panjang menjadi 3 kali, faktor luas dan volume berapa?
+
+Kuis formatif (5 soal)
+1. Jika jari-jari dan tinggi tabung menjadi 2 kali, volume berubah menjadi berapa kali?
+2. Jika seluruh ukuran linear menjadi 3 kali, luas permukaan berubah menjadi berapa kali?
+3. Dua tabung sebangun memiliki faktor skala panjang 1:4. Tentukan rasio luas permukaan.
+4. Mengapa menggandakan tinggi saja tidak selalu menggandakan luas permukaan total?
+5. Sebuah wadah diperbesar dengan faktor panjang 1,5. Jelaskan faktor perubahan volumenya.
+LKPD / kartu aktivitas
+LKPD 3 — Buat tabel perbandingan tabung mini dan jumbo untuk faktor skala 2 dan 3. Isi kolom faktor panjang, luas, volume, lalu tuliskan rekomendasi ukuran berdasarkan kebutuhan.
+Pertanyaan HOTS dan refleksi
+HOTS: Apakah strategi kelompokmu paling efisien? Bandingkan dengan strategi lain dan gunakan bukti matematis.
+Refleksi: Bagian mana yang paling kamu pahami? Kesalahan apa yang berhasil kamu temukan atau perbaiki?
+
+PERTEMUAN 4 — KERUCUT: UNSUR, JARING-JARING, DAN LUAS PERMUKAAN
+Masalah pemantik
+Kelompok seni membuat topi pesta berbentuk kerucut dari karton. Topi tidak memiliki alas. Berapa luas karton yang diperlukan dan bagaimana bentuk pola potongannya?
+Tujuan pertemuan
+Mengenali unsur kerucut; membuat jaring-jaring; membedakan tinggi tegak dan garis pelukis; menentukan luas selimut dan luas permukaan.
+Alur PBL (2 × 40 menit)
+Tahap / waktu
+Aktivitas guru dan siswa
+Pendahuluan (10 menit)
+Amati topi pesta, corong, dan kerucut lalu lintas. Siswa menyebutkan kesamaan dan perbedaannya.
+Memahami (15 menit)
+Identifikasi alas, titik puncak, jari-jari, tinggi t, dan garis pelukis s. Pada kerucut tegak, s² = r² + t².
+Mengaplikasi (35 menit)
+Buat model kerucut dari sektor lingkaran. Hitung luas selimut πrs dan luas total πrs + πr². Bahas mengapa topi tanpa alas hanya membutuhkan selimut.
+Merefleksi (10 menit)
+Siswa mengevaluasi apakah luas alas perlu dimasukkan dalam setiap konteks.
+Penutup (10 menit)
+Satu kalimat: kapan menggunakan luas selimut, kapan luas permukaan total?
+
+Kuis formatif (5 soal)
+1. Sebutkan empat unsur kerucut.
+2. Kerucut memiliki r = 5 cm dan t = 12 cm. Tentukan garis pelukisnya.
+3. Kerucut r = 5 cm dan s = 13 cm. Hitung luas selimut dengan π = 3,14.
+4. Mengapa jaring-jaring kerucut terdiri atas satu lingkaran dan satu juring lingkaran?
+5. Topi pesta tidak memiliki alas. Bagian luas mana yang dihitung? Berikan alasan.
+LKPD / kartu aktivitas
+LKPD 4 — Rancang topi pesta dengan r = 7 cm dan garis pelukis 25 cm. Tentukan luas karton untuk 10 topi tanpa alas. Tambahkan 10% untuk sisa potongan dan jelaskan asumsi yang digunakan.
+Pertanyaan HOTS dan refleksi
+HOTS: Apakah strategi kelompokmu paling efisien? Bandingkan dengan strategi lain dan gunakan bukti matematis.
+Refleksi: Bagian mana yang paling kamu pahami? Kesalahan apa yang berhasil kamu temukan atau perbaiki?
+
+PERTEMUAN 5 — VOLUME KERUCUT DAN HUBUNGANNYA DENGAN TABUNG
+Masalah pemantik
+Sebuah corong berbentuk kerucut digunakan untuk menuangkan biji-bijian. Bagaimana memperkirakan kapasitasnya dan menjelaskan hubungan kapasitas kerucut dengan tabung yang alas dan tingginya sama?
+Tujuan pertemuan
+Menjelaskan dan menggunakan rumus volume kerucut; membandingkan volume kerucut dan tabung dengan alas serta tinggi sama.
+Alur PBL (2 × 40 menit)
+Tahap / waktu
+Aktivitas guru dan siswa
+Pendahuluan (10 menit)
+Siswa memperkirakan berapa kali isi kerucut dapat mengisi tabung dengan ukuran alas dan tinggi yang sama.
+Memahami (15 menit)
+Melalui demonstrasi pasir/beras atau ilustrasi, amati bahwa tiga takaran kerucut mengisi kira-kira satu tabung seukuran. Rumus V kerucut = ⅓πr²t.
+Mengaplikasi (35 menit)
+Hitung volume kerucut r = 6 cm, t = 10 cm. Lalu bandingkan dengan tabung yang r dan t sama.
+Merefleksi (10 menit)
+Siswa menyatakan batas demonstrasi: ketelitian bentuk, pengisian, dan pemadatan dapat memengaruhi hasil percobaan.
+Penutup (10 menit)
+Kuis lisan: jika volume tabung 900 cm³, berapa volume kerucut dengan alas dan tinggi sama?
+
+Kuis formatif (5 soal)
+1. Hitung volume kerucut dengan r = 7 cm dan t = 12 cm.
+2. Volume tabung adalah 1.200 cm³. Tentukan volume kerucut yang memiliki alas dan tinggi sama.
+3. Kerucut r = 3 cm, t = 8 cm. Hitung volume dengan π = 3,14.
+4. Mengapa rumus volume kerucut memuat faktor ⅓?
+5. Seorang siswa memakai garis pelukis sebagai tinggi dalam rumus volume. Jelaskan mengapa itu keliru.
+LKPD / kartu aktivitas
+LKPD 5 — Bandingkan dua wadah yang memiliki jari-jari alas 4 cm dan tinggi 9 cm: satu tabung, satu kerucut. Hitung volume keduanya dan jelaskan mana yang lebih sesuai untuk menampung bahan dengan ruang terbatas.
+Pertanyaan HOTS dan refleksi
+HOTS: Apakah strategi kelompokmu paling efisien? Bandingkan dengan strategi lain dan gunakan bukti matematis.
+Refleksi: Bagian mana yang paling kamu pahami? Kesalahan apa yang berhasil kamu temukan atau perbaiki?
+
+PERTEMUAN 6 — BOLA DAN BELAHAN BOLA: LUAS PERMUKAAN
+Masalah pemantik
+Sekolah akan membuat ornamen berbentuk bola dan kubah setengah bola. Desainer perlu membedakan luas kulit lengkung dengan luas total yang mencakup bidang alas.
+Tujuan pertemuan
+Mengenali unsur bola; membedakan bola padat dan berongga serta belahan bola dengan/tanpa alas; menghitung luas permukaan yang sesuai konteks.
+Alur PBL (2 × 40 menit)
+Tahap / waktu
+Aktivitas guru dan siswa
+Pendahuluan (10 menit)
+Amati bola, globe, kubah, dan mangkuk setengah bola. Siswa menentukan bagian yang terlihat dan bagian yang menjadi alas.
+Memahami (15 menit)
+Kenali pusat, jari-jari, dan diameter. Luas bola 4πr²; luas lengkung belahan bola 2πr²; jika alas lingkaran disertakan, luas total belahan bola 3πr².
+Mengaplikasi (35 menit)
+Selesaikan masalah pengecatan bola dan pelapisan kubah. Siswa menggambar bagian yang akan dicat sebelum memilih rumus.
+Merefleksi (10 menit)
+Tukar soal: kelompok lain memeriksa apakah alas dihitung dua kali atau terlewat.
+Penutup (10 menit)
+Exit ticket: jelaskan perbedaan luas lengkung dan luas total belahan bola.
+
+Kuis formatif (5 soal)
+1. Sebutkan pusat, jari-jari, dan diameter bola serta hubungan diameter dengan jari-jari.
+2. Bola berjari-jari 7 cm. Hitung luas permukaannya.
+3. Belahan bola berjari-jari 7 cm tanpa alas. Hitung luas bidang lengkungnya.
+4. Belahan bola berjari-jari 7 cm dengan alas. Hitung luas permukaan totalnya.
+5. Mengapa luas belahan bola total bukan hanya 2πr²?
+LKPD / kartu aktivitas
+LKPD 6 — Pilih rumus yang sesuai untuk: (a) mengecat permukaan bola utuh, (b) melapisi bagian lengkung kubah, (c) membuat benda setengah bola lengkap dengan bidang alas. Beri sketsa dan alasan.
+Pertanyaan HOTS dan refleksi
+HOTS: Apakah strategi kelompokmu paling efisien? Bandingkan dengan strategi lain dan gunakan bukti matematis.
+Refleksi: Bagian mana yang paling kamu pahami? Kesalahan apa yang berhasil kamu temukan atau perbaiki?
+
+PERTEMUAN 7 — VOLUME BOLA DAN SKALA UKURAN
+Masalah pemantik
+Panitia ingin membuat bola dekorasi berdiameter 20 cm dan versi besar berdiameter 40 cm. Apakah bahan pengisi yang dibutuhkan hanya dua kali lebih banyak?
+Tujuan pertemuan
+Menghitung volume bola dan belahan bola; menalar perubahan volume berdasarkan faktor skala.
+Alur PBL (2 × 40 menit)
+Tahap / waktu
+Aktivitas guru dan siswa
+Pendahuluan (10 menit)
+Prediksi dampak penggandaan diameter terhadap volume.
+Memahami (15 menit)
+Gunakan V bola = ⁴⁄₃πr³ dan V belahan bola = ⅔πr³. Ingat bahwa diameter harus dibagi dua untuk memperoleh jari-jari.
+Mengaplikasi (35 menit)
+Hitung volume bola dengan diameter 20 cm dan 40 cm. Bandingkan rasio hasil dan hubungkan dengan faktor skala kubik.
+Merefleksi (10 menit)
+Diskusikan mengapa biaya bahan pengisi dapat meningkat lebih cepat daripada diameter.
+Penutup (10 menit)
+Siswa menulis langkah pemeriksaan satuan dan kewajaran hasil.
+
+Kuis formatif (5 soal)
+1. Hitung volume bola berjari-jari 3 cm dengan π = 3,14.
+2. Hitung volume belahan bola berjari-jari 6 cm.
+3. Jika jari-jari bola menjadi 2 kali, volume menjadi berapa kali?
+4. Jika diameter bola menjadi 3 kali, bagaimana perubahan luas dan volume?
+5. Bola A berjari-jari 4 cm dan bola B berjari-jari 8 cm. Bandingkan volumenya.
+LKPD / kartu aktivitas
+LKPD 7 — Buat perbandingan bola dekorasi diameter 10, 20, dan 30 cm. Hitung volume, bandingkan rasio volume, lalu sarankan ukuran yang paling hemat untuk batas ruang tertentu.
+Pertanyaan HOTS dan refleksi
+HOTS: Apakah strategi kelompokmu paling efisien? Bandingkan dengan strategi lain dan gunakan bukti matematis.
+Refleksi: Bagian mana yang paling kamu pahami? Kesalahan apa yang berhasil kamu temukan atau perbaiki?
+
+PERTEMUAN 8 — MISI ARSITEK: GABUNGAN TABUNG, KERUCUT, DAN BOLA
+Masalah pemantik
+Siswa merancang ornamen taman yang tersusun dari tabung sebagai badan, kerucut sebagai atap, dan setengah bola sebagai kubah kecil. Bagaimana menghitung kebutuhan bahan tanpa menghitung bidang yang saling menempel?
+Tujuan pertemuan
+Memodelkan gabungan bangun; memisahkan komponen; menentukan bidang luar yang dihitung; menjumlahkan volume dengan benar.
+Alur PBL (2 × 40 menit)
+Tahap / waktu
+Aktivitas guru dan siswa
+Pendahuluan (10 menit)
+Guru menampilkan gambar/model gabungan. Siswa menandai setiap komponen dengan warna berbeda.
+Memahami (15 menit)
+Buat sketsa berlabel ukuran. Bedakan luas permukaan luar dari bidang kontak yang tertutup saat dirakit.
+Mengaplikasi (35 menit)
+Kelompok menghitung volume total dari masing-masing komponen. Untuk luas bahan, hitung hanya permukaan yang terlihat/terbuka sesuai desain. Tulis asumsi secara eksplisit.
+Merefleksi (10 menit)
+Kelompok lain mengaudit model: apakah ada bidang kontak dihitung, atau bagian luar terlewat?
+Penutup (10 menit)
+Presentasi singkat strategi dan satu keputusan yang dibuat berdasarkan bukti.
+
+Kuis formatif (5 soal)
+1. Mengapa volume gabungan dapat dihitung dengan menjumlahkan volume komponen jika tidak ada tumpang tindih?
+2. Pada tabung beratap kerucut, apakah lingkaran pertemuan tabung dan kerucut dihitung sebagai luas luar? Jelaskan.
+3. Sebutkan data minimum yang dibutuhkan untuk menghitung volume tabung dan kerucut.
+4. Sebuah model terdiri dari tabung volume 500 cm³ dan kerucut volume 120 cm³. Tentukan volume total jika tidak ada tumpang tindih.
+5. Buat sketsa gabungan dua bangun dan tandai permukaan yang tidak perlu dicat.
+LKPD / kartu aktivitas
+LKPD 8 — Rancang ornamen dengan tabung (r = 7 cm, tinggi = 20 cm), kerucut di atasnya (r = 7 cm, tinggi = 12 cm), dan kubah belahan bola (r = 7 cm). Tentukan volume gabungan. Untuk luas bahan, jelaskan permukaan mana yang dihitung berdasarkan rancanganmu.
+Pertanyaan HOTS dan refleksi
+HOTS: Apakah strategi kelompokmu paling efisien? Bandingkan dengan strategi lain dan gunakan bukti matematis.
+Refleksi: Bagian mana yang paling kamu pahami? Kesalahan apa yang berhasil kamu temukan atau perbaiki?
+
+PERTEMUAN 9 — FINAL MISSION: DESAIN, UJI, DAN PRESENTASIKAN
+Masalah pemantik
+Sekolah ingin membuat prototipe tempat pajangan berbentuk gabungan tabung, kerucut, dan bola/semibola. Tim harus mengusulkan desain yang menarik, hemat bahan, dan sesuai kapasitas yang ditargetkan.
+Tujuan pertemuan
+Mengintegrasikan semua konsep; membangun argumen matematis; mengevaluasi strategi dan menyajikan rekomendasi berbasis data.
+Alur PBL (2 × 40 menit)
+Tahap / waktu
+Aktivitas guru dan siswa
+Pendahuluan (10 menit)
+Guru menjelaskan kriteria proyek, rubrik, dan pembagian peran tim: pemodel, penghitung, pemeriksa, penyaji.
+Memahami (15 menit)
+Tim memilih konteks, membuat sketsa dengan ukuran dan menulis kebutuhan pengguna.
+Mengaplikasi (35 menit)
+Tim menghitung volume, luas bahan yang tampak, dan faktor skala. Periksa satuan, asumsi, serta efisiensi desain.
+Merefleksi (10 menit)
+Kelompok melakukan gallery walk dan memberikan umpan balik berbasis bukti: satu kelebihan dan satu saran perbaikan.
+Penutup (10 menit)
+Presentasi kesimpulan, refleksi individu, dan rencana remedial/pengayaan.
+
+Kuis formatif (5 soal)
+1. Jelaskan mengapa model matematika yang baik perlu menyatakan asumsi.
+2. Bagaimana memastikan bidang pertemuan dua bangun tidak dihitung sebagai permukaan luar?
+3. Jika skala panjang prototipe diperbesar 2 kali, faktor perubahan volume berapa?
+4. Berikan satu cara memeriksa kewajaran hasil volume yang diperoleh.
+5. Apa bukti bahwa desain pilihanmu lebih efisien daripada alternatif lain?
+LKPD / kartu aktivitas
+LKPD 9 — Proposal desain: gambar berlabel; daftar ukuran; rumus yang dipilih; perhitungan luas bahan dan volume; faktor skala; asumsi; pemeriksaan hasil; alasan memilih desain; refleksi pembagian kerja.
+Pertanyaan HOTS dan refleksi
+HOTS: Apakah strategi kelompokmu paling efisien? Bandingkan dengan strategi lain dan gunakan bukti matematis.
+Refleksi: Bagian mana yang paling kamu pahami? Kesalahan apa yang berhasil kamu temukan atau perbaiki?
+
+ASESMEN DIAGNOSTIK AWAL
+Kerjakan tanpa melihat kartu rumus. Tujuannya memetakan kesiapan, bukan memberi label kemampuan.
+1. Sebuah lingkaran berdiameter 14 cm. Tentukan jari-jarinya.
+2. Hitung luas lingkaran berjari-jari 7 cm dengan π = 22/7.
+3. Sebuah persegi panjang berukuran 8 cm × 5 cm. Hitung luasnya.
+4. Jelaskan perbedaan satuan cm² dan cm³.
+5. Sebutkan benda sehari-hari yang menyerupai tabung, kerucut, dan bola.
+Interpretasi hasil diagnostik
+Hasil
+Tindak lanjut
+4–5 jawaban tepat
+Siap mengikuti kegiatan inti; beri tantangan penalaran tambahan.
+2–3 jawaban tepat
+Berikan penguatan jari-jari/diameter, luas lingkaran, dan satuan.
+0–1 jawaban tepat
+Gunakan benda konkret, gambar berlabel, tutor sebaya, dan latihan prasyarat bertahap.
+
+ASESMEN SUMATIF AKHIR — MODEL TKA/AKM
+Petunjuk: gunakan π = 22/7 untuk ukuran yang sesuai atau π = 3,14. Tuliskan proses dan alasan untuk soal uraian. Soal ini merupakan contoh asesmen pembelajaran, bukan naskah resmi TKA.
+A. Pilihan Ganda
+1. Sebuah tabung memiliki r = 7 cm dan tinggi 10 cm. Volumenya adalah …
+A. 770 cm³  B. 1.540 cm³  C. 2.200 cm³  D. 3.080 cm³
+2. Tabung tertutup dengan r = 7 cm dan t = 10 cm memiliki luas permukaan …
+A. 440 cm²  B. 616 cm²  C. 748 cm²  D. 1.078 cm²
+3. Kerucut memiliki r = 3 cm dan tinggi 4 cm. Garis pelukisnya adalah …
+A. 3 cm  B. 4 cm  C. 5 cm  D. 7 cm
+4. Volume kerucut yang alas dan tingginya sama dengan tabung bervolume 900 cm³ adalah …
+A. 100 cm³  B. 300 cm³  C. 600 cm³  D. 2.700 cm³
+5. Bola berjari-jari 3 cm memiliki volume …
+A. 12π cm³  B. 27π cm³  C. 36π cm³  D. 108π cm³
+6. Jika semua ukuran panjang suatu tabung diperbesar 2 kali, volumenya menjadi …
+A. 2 kali  B. 4 kali  C. 6 kali  D. 8 kali
+B. Pilihan Ganda Kompleks — Benar/Salah
+7. Untuk tabung tertutup, r = 7 cm dan t = 10 cm. Tentukan benar atau salah setiap pernyataan.
+Pernyataan
+Benar
+Salah
+Volume tabung adalah 1.540 cm³.
+☐
+☐
+Luas selimut tabung adalah 440 cm².
+☐
+☐
+Luas permukaan total tabung adalah 748 cm².
+☐
+☐
+
+8. Tentang belahan bola berjari-jari r, tentukan benar atau salah.
+Pernyataan
+Benar
+Salah
+Luas bidang lengkungnya 2πr².
+☐
+☐
+Luas total dengan alas lingkaran 3πr².
+☐
+☐
+Volumenya sama dengan volume bola penuh.
+☐
+☐
+
+C. Pilihan Ganda Kompleks — Pilih Semua yang Benar
+9. Sebuah kerucut tegak memiliki r = 5 cm dan t = 12 cm. Pilih semua pernyataan yang benar.
+A. Garis pelukisnya 13 cm.
+B. Luas selimutnya 65π cm².
+C. Volume kerucutnya 100π cm³.
+D. Luas alasnya 25π cm².
+10. Sebuah ornamen tersusun dari tabung dan kerucut yang alasnya sama dan saling menempel. Pilih semua pernyataan yang benar.
+A. Volume total dapat dijumlahkan jika tidak ada bagian yang saling tumpang tindih.
+B. Lingkaran pertemuan yang tertutup tidak dihitung sebagai permukaan luar.
+C. Luas permukaan total selalu sama dengan jumlah luas permukaan lengkap kedua bangun.
+D. Sketsa berlabel membantu menghindari penghitungan bidang yang tertutup.
+D. Uraian / Penalaran
+11. Sebuah kaleng berbentuk tabung memiliki diameter 14 cm dan tinggi 20 cm. Hitung (a) luas label yang menutupi sisi lengkung saja, (b) volume kaleng. Jelaskan perbedaan kedua hasil dan satuannya.
+12. Topi pesta berbentuk kerucut tanpa alas memiliki jari-jari 7 cm dan garis pelukis 25 cm. Hitung luas karton untuk 20 topi. Jika disediakan tambahan 10% untuk sisa potongan, berapa luas karton minimum yang perlu disiapkan?
+13. Bola dekorasi berdiameter 14 cm akan dibuat menjadi versi dengan diameter 28 cm. Tentukan faktor perubahan luas permukaan dan volume. Jelaskan mengapa kedua faktor berbeda.
+14. Sebuah menara mini terdiri atas tabung (r = 7 cm, t = 15 cm) dan kerucut di atasnya (r = 7 cm, t = 24 cm). Hitung volume gabungan. Tentukan garis pelukis kerucut dan jelaskan bagian bidang mana yang tidak dihitung sebagai permukaan luar saat kedua bangun disatukan.
+15. Rancang satu benda gabungan tabung, kerucut, dan/atau bola untuk lingkungan sekolah. Buat sketsa berlabel, tentukan luas bahan luar yang diperlukan dan volume bagian-bagiannya, nyatakan asumsi, lalu berikan alasan mengapa desainmu layak.
+
+KUNCI JAWABAN DAN PEMBAHASAN RINGKAS
+Kunci diagnostik
+1. 7 cm.
+2. 154 cm².
+3. 40 cm².
+4. cm² untuk luas, cm³ untuk volume.
+5. Contoh: kaleng, topi pesta/corong, bola olahraga.
+Kunci pilihan ganda sumatif
+Nomor
+Jawaban
+Alasan ringkas
+1
+B
+V = πr²t = (22/7)(49)(10) = 1.540 cm³.
+2
+C
+L = 2πr² + 2πrt = 308 + 440 = 748 cm².
+3
+C
+s = √(3² + 4²) = 5 cm.
+4
+B
+Volume kerucut = sepertiga volume tabung = 300 cm³.
+5
+C
+V = (4/3)π(27) = 36π cm³.
+6
+D
+Volume berubah menurut faktor skala panjang pangkat tiga: 2³ = 8.
+
+Kunci benar/salah dan pilihan kompleks
+Nomor
+Kunci
+Alasan
+7
+Benar; Benar; Benar
+V = 1.540 cm³; selimut = 440 cm²; total = 748 cm².
+8
+Benar; Benar; Salah
+Belahan bola volumenya setengah bola penuh: (2/3)πr³.
+9
+A, B, D
+s = 13; luas selimut = π(5)(13) = 65π; volume = (1/3)π(25)(12) = 100π.
+10
+A, B, D
+Bidang pertemuan tertutup tidak menjadi permukaan luar; luas lengkap kedua bangun akan menghitung bidang kontak dua kali.
+
+Pembahasan uraian
+11. r = 7 cm. Luas label = 2πrt = 2 × 22/7 × 7 × 20 = 880 cm². Volume = πr²t = 22/7 × 49 × 20 = 3.080 cm³.
+12. Luas selimut satu topi = πrs = (22/7) × 7 × 25 = 550 cm². Untuk 20 topi = 11.000 cm². Tambahan 10% = 1.100 cm²; total = 12.100 cm².
+13. Faktor skala panjang = 2. Luas berubah 2² = 4 kali; volume berubah 2³ = 8 kali.
+14. V tabung = (22/7) × 49 × 15 = 2.310 cm³. Kerucut: s = √(7² + 24²) = 25 cm; V = (1/3)(22/7)(49)(24) = 1.232 cm³. Total = 3.542 cm³. Lingkaran pertemuan tertutup tidak dihitung sebagai permukaan luar.
+15. Jawaban bervariasi. Nilai diberikan berdasarkan ketepatan model, perhitungan, satuan, asumsi, pemeriksaan kewajaran, dan kualitas argumen.
+RUBRIK PENILAIAN BERPIKIR KRITIS
+Aspek
+4 — Sangat baik
+3 — Baik
+2 — Berkembang
+1 — Perlu bimbingan
+Interpretasi
+Mengidentifikasi semua data, tujuan, dan batasan secara tepat.
+Sebagian besar data dan tujuan tepat.
+Ada data penting terlewat.
+Belum memahami masalah.
+Analisis/model
+Model/sketsa tepat, komponen dan bidang luar dibedakan.
+Model tepat dengan kekurangan kecil.
+Model kurang lengkap atau ada kekeliruan.
+Tidak dapat membangun model yang sesuai.
+Penalaran/perhitungan
+Strategi efisien, langkah logis, hasil dan satuan benar.
+Langkah cukup logis, ada kesalahan kecil.
+Beberapa langkah tidak konsisten.
+Perhitungan tidak mendukung jawaban.
+Evaluasi bukti
+Memeriksa kewajaran, membandingkan strategi, dan memberi alasan.
+Memberi alasan dan pemeriksaan sederhana.
+Alasan masih umum.
+Tidak memberi alasan atau pemeriksaan.
+Komunikasi/refleksi
+Kesimpulan jelas, berbasis bukti, dan refleksi spesifik.
+Kesimpulan jelas, refleksi cukup.
+Penjelasan kurang runtut.
+Kesimpulan tidak jelas.
+
+Skor rubrik = jumlah skor yang diperoleh ÷ skor maksimum × 100. Untuk 5 aspek dengan skor maksimum 20, nilai = skor perolehan ÷ 20 × 100.
+RUBRIK PROYEK FINAL MISSION
+Kriteria
+Bobot
+Indikator
+Model dan sketsa
+20%
+Bangun dan ukuran diberi label; bidang kontak teridentifikasi.
+Ketepatan matematika
+30%
+Rumus, perhitungan, satuan, dan pembulatan tepat.
+Berpikir kritis
+25%
+Asumsi, alasan, alternatif, dan pemeriksaan kewajaran dijelaskan.
+Kontekstualitas/efisiensi
+15%
+Desain sesuai kebutuhan dan bahan tidak dihitung berlebihan.
+Kolaborasi/presentasi
+10%
+Pembagian peran, komunikasi, dan respons terhadap umpan balik.
+
+REMEDIAL, PENGAYAAN, DAN DIFERENSIASI
+Kebutuhan siswa
+Tindak lanjut
+Remedial prasyarat
+Gunakan model benda nyata, kartu unsur, latihan radius-diameter, luas lingkaran, dan satuan.
+Remedial rumus
+Siswa membangun rumus dari jaring-jaring atau gambar berlabel; kerjakan satu contoh bersama lalu satu mandiri.
+Pengayaan HOTS
+Bandingkan dua desain dengan kapasitas sama tetapi kebutuhan bahan berbeda; jelaskan asumsi dan optimasi.
+Diferensiasi proses
+Sediakan pilihan bekerja dengan benda konkret, sketsa, tabel, atau simulasi digital.
+Diferensiasi produk
+Siswa boleh mengumpulkan poster, presentasi, laporan singkat, atau model fisik/digital dengan kriteria matematika sama.
+
+BANK PERTANYAAN HOTS TAMBAHAN
+Kaleng A dan B memiliki volume sama, tetapi bentuknya berbeda. Data apa yang diperlukan untuk membandingkan kebutuhan bahan pembuatannya?
+Apakah dua tabung dengan volume sama pasti memiliki luas permukaan sama? Buat contoh atau argumen untuk mendukung jawaban.
+Sebuah perusahaan ingin mengurangi bahan kemasan tanpa mengurangi kapasitas. Variabel ukuran apa yang dapat diubah dan apa konsekuensinya?
+Kubah setengah bola akan dicat, tetapi bagian bawahnya menempel pada bangunan. Jelaskan mengapa memilih rumus luas yang salah dapat membuat perkiraan biaya keliru.
+Untuk model gabungan, kapan volume komponen boleh dijumlahkan langsung? Kapan perlu mengurangi volume tumpang tindih?
+Buat satu soal kontekstual yang jawabannya memerlukan dua rumus berbeda. Sertakan penyelesaian dan pemeriksaan kewajaran.
+REFLEKSI SISWA
+Saya sekarang dapat menjelaskan perbedaan luas permukaan dan volume karena …
+Strategi yang paling membantu saya memahami rumus adalah …
+Saat memeriksa jawaban, saya menemukan bahwa …
+Hal yang masih membingungkan dan akan saya tanyakan adalah …
+Dalam kerja kelompok, kontribusi saya adalah …
+CATATAN IMPLEMENTASI DIGITAL
+Buat halaman awal berisi tombol: Mulai, Peta Belajar, Kartu Rumus, Misi P1–P9, Kuis, Final Mission, Refleksi.
+Gunakan satu layar untuk satu ide utama. Hindari paragraf panjang; tampilkan rumus dalam kartu berwarna dan contoh melalui diagram berlabel.
+Tambahkan kuis interaktif dengan umpan balik: jawaban benar menjelaskan alasan, jawaban salah memberi petunjuk bertahap.
+Gunakan warna biru untuk konsep, hijau untuk strategi/solusi, oranye untuk tantangan/HOTS, dan putih sebagai latar agar mudah dibaca.
+Pastikan kontras teks memadai, ukuran huruf nyaman, gambar memiliki label, dan versi cetak tetap dapat digunakan tanpa internet.
+Disusun untuk mendukung pembelajaran matematika yang kontekstual, aktif, reflektif, dan AAAMAT KEREN.
