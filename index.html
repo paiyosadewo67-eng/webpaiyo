@@ -381,6 +381,7 @@
       .bab-sumber { border-top: 1px dashed var(--line-strong); margin-top: .9rem; padding-top: 1rem; display: grid; gap: 1.05rem; }
       .bab-sumber[hidden] { display: none; }
       .sumber-group h4 { margin: 0; font-size: .95rem; font-weight: 800; display: flex; align-items: center; gap: .5rem; }
+      .prompt-badge { font-size: .68rem; font-weight: 700; letter-spacing: .04em; color: #7a5b12; background: #f6e3ac; border: 1px solid #d9b45b; border-radius: 999px; padding: .12rem .55rem; }
       .sumber-list { list-style: none; margin: .5rem 0 0; padding: 0; display: grid; gap: .4rem; }
       .sumber-link {
         display: flex; align-items: center; justify-content: space-between; gap: .6rem;
@@ -1002,7 +1003,7 @@
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
         </span>
         <h3 id="aksesJudul">Kode Akses</h3>
-        <p>Masukkan kode akses dari Drs. Paiyo untuk membuka materi belajar.</p>
+        <p id="aksesKeterangan">Masukkan kode akses dari Drs. Paiyo untuk membuka materi belajar.</p>
         <form class="akses-form" id="formAkses">
           <label for="inputKode">Kode Akses</label>
           <input id="inputKode" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Ketik kode akses di sini" />
@@ -1584,7 +1585,7 @@
         b.sumber.forEach(function (s) {
           var tautan = tautanSumber(b, s);
           if (!tautan.length) return;
-          html += '<div class="sumber-group"><h4><span aria-hidden="true">' + s.emoji + '</span>' + esc(s.judul) + '</h4>';
+          html += '<div class="sumber-group"><h4><span aria-hidden="true">' + s.emoji + '</span>' + esc(s.judul) + (s.grup === "prompt" ? ' <span class="prompt-badge">🔐 Kode Khusus</span>' : '') + '</h4>';
           if (s.dari === "video") {
             html += '<div class="video-grid">';
             tautan.forEach(function (t) {
@@ -1604,6 +1605,7 @@
             tautan.forEach(function (t) {
               var namaBerkas = t.unduh ? t.url.split("/").pop() : "";
               html += '<li><a class="sumber-link" href="' + esc(t.url) + '" target="_blank" rel="noopener"' +
+                (s.grup === "prompt" ? ' data-khusus="prompt"' : '') +
                 (t.unduh ? ' download="' + esc(namaBerkas) + '"' : '') +
                 '><span>' + esc(t.nama) + '</span>' + IKON_BUKA + '</a></li>';
             });
@@ -1815,11 +1817,23 @@
          perangkat pengunjung (kunci "aaamatAkses") supaya perangkat
          yang sama tidak ditanya lagi pada kunjungan berikutnya.
          Klik yang tertunda dilanjutkan otomatis setelah kode benar.
+         LAPIS KEDUA — KODE KHUSUS PROMPT: tautan pada kelompok
+         "Penyimpanan Prompt" di panel bab (atribut data-khusus=
+         "prompt") dikunci satu lapis lagi dengan kode khusus guru,
+         di atas kode umum. Hash kodenya HASH_KHUSUS; status terbukanya
+         disimpan terpisah di localStorage (kunci "aaamatPrompt").
+         Alurnya berantai: klik tautan prompt saat semua terkunci →
+         modal kode umum dulu → setelah benar, klik diteruskan dan
+         modal kode khusus muncul → setelah benar, tautan terbuka.
          ============================================================ */
       (function kunciAkses() {
         var HASH_AKSES = "55d6684c4d630cc9316a201813397c2a35021c66f31d8184d0627a5895a53c7b";
         var KUNCI_LS = "aaamatAkses";
+        var HASH_KHUSUS = "fa864c89fd4730323d445a16b806ba536622dc1e6d577288ed782cfea0ad333b";
+        var KUNCI_LS_KHUSUS = "aaamatPrompt";
         var terbukaMemori = false;
+        var khususMemori = false;
+        var modeKhusus = false;
         var aksiTertunda = null;
 
         var btnStatus = document.getElementById("aksesBtn");
@@ -1828,11 +1842,18 @@
         var input = document.getElementById("inputKode");
         var pesanSalah = document.getElementById("aksesError");
         var btnBatal = document.getElementById("aksesBatal");
+        var judulEl = document.getElementById("aksesJudul");
+        var ketEl = document.getElementById("aksesKeterangan");
         if (!btnStatus || !modal || !form || !input) return;
 
         function aksesTerbuka() {
           if (terbukaMemori) return true;
           try { return localStorage.getItem(KUNCI_LS) === HASH_AKSES; }
+          catch (e) { return false; }
+        }
+        function khususTerbuka() {
+          if (khususMemori) return true;
+          try { return localStorage.getItem(KUNCI_LS_KHUSUS) === HASH_KHUSUS; }
           catch (e) { return false; }
         }
         function perbaruiTombolStatus() {
@@ -1844,7 +1865,12 @@
             btnStatus.classList.remove("terbuka");
           }
         }
-        function tampilkanModal() {
+        function tampilkanModal(khusus) {
+          modeKhusus = !!khusus;
+          if (judulEl) judulEl.textContent = modeKhusus ? "Kode Khusus Prompt" : "Kode Akses";
+          if (ketEl) ketEl.textContent = modeKhusus
+            ? "Penyimpanan Prompt dilindungi kode khusus guru. Masukkan kode khusus dari Drs. Paiyo untuk membukanya."
+            : "Masukkan kode akses dari Drs. Paiyo untuk membuka materi belajar.";
           pesanSalah.hidden = true;
           input.value = "";
           modal.hidden = false;
@@ -1857,6 +1883,7 @@
         }
         function batalkanModal() {
           aksiTertunda = null;
+          modeKhusus = false;
           sembunyikanModal();
         }
 
@@ -1931,8 +1958,19 @@
 
         /* ---------- Gerbang klik: tahan aksi masuk materi saat terkunci ---------- */
         document.addEventListener("click", function (e) {
-          if (aksesTerbuka()) return;
           if (e.target.closest("#modalAkses") || e.target.closest("#aksesBtn")) return;
+          if (aksesTerbuka()) {
+            /* Lapis kedua: tautan Penyimpanan Prompt (data-khusus=
+               "prompt") tetap terkunci sampai kode khusus dimasukkan. */
+            if (khususTerbuka()) return;
+            var elK = e.target.closest('a[data-khusus="prompt"]');
+            if (!elK) return;
+            e.preventDefault();
+            e.stopPropagation();
+            aksiTertunda = elK;
+            tampilkanModal(true);
+            return;
+          }
           var el = e.target.closest(".bab-toggle, .yt-btn, a");
           if (!el) return;
           var dikunci = false;
@@ -1969,13 +2007,20 @@
           e.preventDefault();
           var kode = input.value.replace(/^\s+|\s+$/g, "");
           if (!kode) { pesanSalah.hidden = false; input.focus(); return; }
+          var targetHash = modeKhusus ? HASH_KHUSUS : HASH_AKSES;
           hashKode(kode).then(function (hex) {
-            if (hex === HASH_AKSES) {
-              terbukaMemori = true;
-              try { localStorage.setItem(KUNCI_LS, HASH_AKSES); } catch (err) {}
-              perbaruiTombolStatus();
+            if (hex === targetHash) {
+              if (modeKhusus) {
+                khususMemori = true;
+                try { localStorage.setItem(KUNCI_LS_KHUSUS, HASH_KHUSUS); } catch (err) {}
+              } else {
+                terbukaMemori = true;
+                try { localStorage.setItem(KUNCI_LS, HASH_AKSES); } catch (err) {}
+                perbaruiTombolStatus();
+              }
               var aksi = aksiTertunda;
               aksiTertunda = null;
+              modeKhusus = false;
               sembunyikanModal();
               if (aksi) aksi.click(); /* lanjutkan klik yang tertunda */
             } else {
