@@ -1,0 +1,280 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Misi HOTS — Detektif Dilatasi
+Bab   : IX-02 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT GAME INTERAKTIF  MISI HOTS DETEKTIF DILATASI
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA : “ Assalamu'alaikum! Yuk ikut GAME INTERAKTIF 🎮🏆 “MISI HOTS DETEKTIF DILATASI”👨‍🏫 Pengembang: Drs. PAIYO! AAAMAT KEREN DIGITAL LEARNING
+Halo teman-teman kelas VII! Ayo asah kemampuan berpikir tingkat tinggi (HOTS) melalui 7 Misi Detektif Matematika seru! 👉 Akses aplikasi di sini:
+Assalamu'alaikum Warahmatullahi Wabarakatuh.
+Mari bergabung dalam game edukasi matematika interaktif:
+🔎 MISI HOTS DETEKTIF DILATASI
+Transformasi Geometri Kelas IX — SMP Negeri 1 Bantarkawung
+Pengembang: Drs. PAIYO
+Slogan: "Temukan Pusatnya, Tentukan Skalanya, Buktikan Bayangannya!"
+Akses langsung di sini:
+https://ais-pre-yfrnm4cwejdecykk2dh73u-253889415088.asia-east1.run.app
+Daftar Nilainya :
+Assalamu’alaikum,...Selamat siang, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat “ AAAMAT KEREN DIGITAL LEARNING “MISI HOTS DETEKTIF DILATASI”
+. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+Buat sebuah game edukasi matematika interaktif berbasis web untuk siswa kelas IX SMP dengan tema:
+🔎 MISI HOTS DETEKTIF DILATASI
+Subjudul:
+Transformasi Geometri — Dilatasi
+SMP Negeri 1 Bantarkawung
+Pengembang: Drs. PAIYO
+Game harus responsif dan dapat digunakan pada:
+komputer;
+laptop;
+tablet;
+smartphone.
+Gunakan desain:
+modern;
+futuristik;
+edukatif;
+visual matematika yang jelas;
+nuansa detektif;
+warna biru-indigo, cyan, kuning, dan putih;
+animasi ringan;
+bidang koordinat Kartesius interaktif.
+1. HALAMAN AWAL
+Tampilkan judul besar:
+MISI HOTS DETEKTIF DILATASI
+Slogan:
+“Temukan Pusatnya, Tentukan Skalanya, Buktikan Bayangannya!”
+Formulir siswa:
+Nama lengkap
+Kelas IX A–G
+Nomor absen
+Nama sekolah
+Tombol:
+🚀 MULAI MISI
+2. SISTEM LEVEL
+Buat game terdiri atas 6 level.
+LEVEL 1 — DETEKSI DILATASI
+Siswa memilih apakah gambar mengalami:
+pembesaran;
+pengecilan;
+tidak berubah.
+Hadiah: +50 XP
+LEVEL 2 — TEMUKAN FAKTOR SKALA
+Berikan pasangan:
+objek awal → objek hasil.
+Siswa menentukan:
+k
+Contoh:
+A(2,3) → A’(6,9)
+Jawaban:
+k = 3
+Hadiah: +75 XP
+LEVEL 3 — LACAK KOORDINAT O(0,0)
+Tampilkan bidang koordinat interaktif.
+Soal:
+A(2,−3)
+pusat:
+O(0,0)
+k = 2
+Siswa memilih atau menyeret titik bayangan ke:
+A’(4,−6)
+Hadiah: +100 XP
+LEVEL 4 — PECAHKAN BANGUN DATAR
+Tampilkan segitiga:
+A(1,1)
+B(4,1)
+C(2,3)
+k = 2
+Peserta didik menentukan:
+A’, B’, C’.
+Setelah benar, tampilkan animasi perubahan bangun secara halus.
+Hadiah: +125 XP
+3. LEVEL 5 — PUSAT RAHASIA P(a,b)
+Gunakan rumus:
+x’ = a + k(x−a)
+y’ = b + k(y−b)
+Berikan masalah:
+A(4,5)
+pusat:
+P(2,1)
+k = 2
+Siswa harus menentukan:
+A’(6,9)
+Hadiah: +150 XP
+4. LEVEL 6 — FINAL MISSION HOTS
+Berikan kasus nyata secara acak dari konteks:
+desain grafis;
+foto digital;
+peta;
+mikroskop;
+teleskop;
+poster;
+desain arsitektur.
+Contoh:
+Sebuah poster 20 cm × 30 cm diperbesar dengan faktor 1,5.
+Pertanyaan:
+Berapa ukuran baru?
+Berapa faktor perubahan luas?
+Apakah bentuk berubah?
+Apakah kedua poster sebangun?
+Apakah kongruen?
+Sistem memberikan poin parsial berdasarkan jawaban.
+Hadiah: +200 XP
+5. TIPE SOAL
+Gunakan variasi:
+pilihan ganda;
+benar/salah;
+MCMA;
+drag and drop;
+input angka;
+memilih titik pada koordinat;
+menggeser titik bayangan;
+mencocokkan pasangan;
+analisis HOTS.
+6. BIDANG KOORDINAT INTERAKTIF
+Tampilkan sumbu:
+x
+y
+origin O(0,0)
+Gunakan grid jelas.
+Siswa dapat:
+mengklik titik;
+menyeret titik;
+melihat koordinat;
+menampilkan garis pusat ke bayangan;
+membandingkan jarak.
+Berikan efek visual ketika jawaban benar.
+7. FEEDBACK JAWABAN
+Jika benar:
+✅ “BUKTI DITEMUKAN!”
+“Hebat! Koordinat bayanganmu tepat.”
+Jika salah:
+🔍 “PERIKSA KEMBALI BUKTINYA!”
+Berikan petunjuk, bukan langsung memberikan jawaban.
+Contoh:
+“Perhatikan pusat dilatasi dan kalikan jarak titik dari pusat dengan faktor skala.”
+8. SISTEM NYAWA
+Sediakan:
+❤️❤️❤️
+Kesalahan tidak langsung membuat siswa gagal.
+Setelah tiga kesalahan:
+tampilkan:
+🧠 MODE BANTUAN DETEKTIF
+Berikan contoh sederhana dan kesempatan mencoba lagi.
+9. SISTEM XP
+Level | XP
+Level 1 | 50
+Level 2 | 75
+Level 3 | 100
+Level 4 | 125
+Level 5 | 150
+Final Mission | 200
+Total:
+700 XP
+10. BADGE
+Buat badge:
+🏅 Detektif Skala
+🏅 Pemburu Koordinat
+🏅 Ahli Transformasi
+🏅 Penguji Bukti
+🏅 Analis HOTS
+Jika seluruh level selesai:
+🏆 MASTER DILATASI
+11. LEADERBOARD
+Buat:
+🏆 TOP 10 MASTER DILATASI
+Tampilkan:
+peringkat;
+nama;
+kelas;
+nomor absen;
+skor;
+XP;
+waktu;
+tanggal.
+12. RAPOR DIGITAL
+Setelah selesai tampilkan:
+RAPOR MISI DETEKTIF
+Data:
+Nama
+Kelas
+Nomor Absen
+Level terselesaikan
+Jawaban benar
+Skor
+Total XP
+Badge
+Waktu pengerjaan
+Kategori kemampuan
+Kategori:
+90–100 = MASTER DILATASI
+80–89 = DETEKTIF AHLI
+70–79 = DETEKTIF MUDA
+<70 = PERLU LATIHAN MISI
+13. MENU GURU
+Tambahkan tombol:
+📊 DAFTAR NILAI
+Tampilkan:
+nama;
+kelas;
+absen;
+skor;
+XP;
+badge;
+tanggal.
+Sediakan:
+urutkan berdasarkan nilai;
+filter kelas;
+reset;
+cetak;
+export CSV jika memungkinkan.
+14. TIMER
+Tambahkan timer opsional:
+30 MENIT
+Timer tidak boleh mengganggu.
+Ketika habis:
+jawaban tersimpan otomatis.
+15. AUDIO
+Gunakan:
+musik investigasi ringan;
+suara klik lembut;
+efek “success” ketika benar;
+efek “clue” saat petunjuk muncul.
+Sediakan tombol:
+🔊 ON / OFF
+16. DESAIN VISUAL
+Gunakan:
+dashboard akademis biru-indigo;
+kartu soal berbentuk “CASE FILE”;
+ikon kaca pembesar;
+pin koordinat;
+grid matematika;
+garis hologram;
+animasi transformasi halus;
+desain profesional dan tidak terlalu kekanak-kanakan.
+17. PESAN AKHIR
+Jika siswa berhasil:
+🎉 MISI SELESAI!
+“Selamat! Kamu berhasil memecahkan seluruh kasus Dilatasi.”
+Kemudian tampil:
+🏆 MASTER DILATASI
+Pesan:
+“Detektif matematika sejati bukan hanya mendapatkan jawaban, tetapi mampu membuktikan mengapa jawabannya benar.”
+Tombol:
+🔄 MAIN LAGI
+🏆 LEADERBOARD
+📊 RAPOR DIGITAL
+💬 SHARE WA
+18. FOOTER
+Tampilkan pada seluruh halaman:
+MISI HOTS DETEKTIF DILATASI
+Matematika Kelas IX — SMP Negeri 1 Bantarkawung
+Pengembang: Drs. PAIYO
+Slogan:
+“MATEMATIKA… AAAMAT KEREN!”
+ASAH • ASIH • ASUH • MATEMATIKA

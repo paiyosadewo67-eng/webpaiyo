@@ -1,0 +1,424 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Interaktif — Misi Kekongruenan
+Bab   : IX-03 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+3. PROMPT GAME  INTERAKTIF 🕵️ AAAMAT KEREN – MISI KEKONGRUENAN
+Link Share WA :
+https://igatrisna.my.canva.site/aaamat-keren-misi-kekongruenan
+Assalamu’alaikum,...Selamat malam, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: Buat sebuah WEB GAME MATEMATIKA INTERAKTIF ONLINE untuk siswa SMP dengan judul:
+“🕵️ AAAMAT KEREN – MISI KEKONGRUENAN”
+Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+PROMPT PEMBUATAN GAME ONLINE
+“AAAMAT KEREN – MISI KEKONGRUENAN”
+Terintegrasi Google Sheets sebagai Database Nilai
+Buat sebuah WEB GAME MATEMATIKA INTERAKTIF ONLINE untuk siswa SMP dengan judul:
+“🕵️ AAAMAT KEREN – MISI KEKONGRUENAN”
+Identitas:
+SMP Negeri 1 Bantarkawung
+Pengembang: Drs. PAIYO
+Mata Pelajaran: Matematika
+Materi: Kekongruenan
+Sasaran: Kelas IX SMP
+Model: Game edukasi + TKA/AKM + HOTS
+Platform: Web responsive
+Database: Google Sheets
+Backend: Google Apps Script Web App
+A. KONSEP UTAMA
+Buat game seperti misi detektif matematika.
+Siswa harus menyelesaikan 3 level:
+LEVEL 1 – PEMAHAMAN
+Fokus:
+Pengertian kekongruenan
+Sisi bersesuaian
+Sudut bersesuaian
+Syarat kongruensi
+SSS
+SAS
+ASA/AAS
+LEVEL 2 – APLIKASI
+Fokus:
+Menentukan sisi bersesuaian
+Menentukan sudut bersesuaian
+Menentukan panjang sisi
+Menentukan besar sudut
+Membuktikan dua segitiga kongruen
+Jenis soal:
+Pilihan Ganda biasa
+Pilihan Ganda Kompleks Benar/Salah dengan 3 pernyataan
+MCMA dengan 4 pernyataan dan jawaban benar dapat lebih dari satu
+LEVEL 3 – HOTS TKA
+Gunakan soal berbasis stimulus dan penalaran.
+Jenis soal:
+Pilihan Ganda biasa
+Pilihan Ganda Kompleks Benar/Salah – 3 pernyataan
+MCMA – 4 pernyataan, lebih dari satu jawaban benar
+Gunakan konteks:
+bangun geometri
+desain
+denah
+pintu
+jembatan
+pola bangun
+perbandingan sisi dan sudut
+analisis kesalahan siswa
+B. SUMBER SOAL
+Gunakan soal dari dokumen:
+“SOAL LATIHAN BAB KEKONGRUENAN”
+Pertahankan substansi soal sumber, terutama:
+Latihan 3.1
+Latihan 3.2
+Uji Pemahaman Kekongruenan
+Termasuk materi:
+pasangan bangun kongruen/tidak kongruen
+segiempat ABCD dan KLMN
+dua daun pintu kongruen
+pembuktian ΔADC dan ΔBDC
+pembuktian ΔAEC dan ΔBDC
+pembuktian ΔABE dan ΔCDE
+segitiga sama kaki
+pasangan sudut sama besar
+SSS, SAS, ASA/AAS
+korespondensi sisi dan sudut.
+Jangan mengubah konsep matematika dari soal sumber tanpa alasan.
+Jika gambar asli tidak tersedia dalam bentuk digital, buat ulang ilustrasi geometri yang setara dan beri label titik yang jelas.
+C. IDENTITAS SISWA
+Sebelum game dimulai tampilkan:
+“SELAMAT DATANG, DETEKTIF KEKONGRUENAN!”
+Form:
+Nama Lengkap:
+[________________________]
+Kelas:
+[IX A ▼]
+Nomor Absen:
+[____]
+Kode Game:
+[otomatis]
+Tombol:
+🚀 MULAI MISI
+Data identitas tersebut harus disimpan bersama hasil permainan.
+D. SISTEM GAME
+Gunakan:
+⭐ XP
+❤️ 3 nyawa
+⏱️ timer opsional
+🏆 badge
+📊 progress bar
+🔐 Final Mission
+Skor:
+LEVEL 1:
+10 XP per soal
+LEVEL 2:
+20 XP per soal
+LEVEL 3:
+30 XP per soal
+Tampilkan skor secara realtime.
+E. FEEDBACK
+Setelah siswa menjawab:
+Jika benar:
+✅ BENAR!
+Tambahkan penjelasan singkat mengapa jawaban benar.
+Jika salah:
+❌ BELUM TEPAT
+Tampilkan:
+jawaban yang benar
+alasan
+konsep matematika yang perlu diperhatikan
+Jangan hanya memberikan benar/salah.
+F. FINAL MISSION
+Setelah semua level selesai:
+Tampilkan:
+🏆 FINAL MISSION SELESAI!
+Nama:
+Kelas:
+Skor XP:
+Nilai:
+Predikat:
+Predikat:
+90–100 = MASTER DETEKTIF
+80–89 = ANALIS GEOMETRI
+75–79 = PEMBURU BUKTI
+<75 = DETEKTIF PEMULA
+Tambahkan badge:
+🏅 Master Detektif Kongruen
+dan pesan:
+“Selamat! Kamu berhasil menyelesaikan Misi Kekongruenan.”
+G. PERHITUNGAN NILAI
+Gunakan:
+Nilai = (Skor diperoleh / Skor maksimum) × 100
+Simpan:
+skor XP
+skor maksimum
+nilai
+jumlah benar
+jumlah salah
+level yang diselesaikan
+waktu mulai
+waktu selesai
+H. GOOGLE SHEETS SEBAGAI DATABASE
+Gunakan Google Sheets sebagai database pusat.
+Buat spreadsheet dengan nama:
+DATABASE NILAI MISI KEKONGRUENAN – SMPN 1 BANTARKAWUNG
+Buat sheet:
+1. DATA_NILAI
+Kolom:
+ID
+Timestamp
+Nama
+Kelas
+No_Absen
+Kode_Game
+Skor_XP
+Skor_Maksimum
+Nilai
+Jumlah_Benar
+Jumlah_Salah
+Level_1
+Level_2
+Level_3
+Waktu_Mulai
+Waktu_Selesai
+Durasi
+Predikat
+2. DAFTAR_SISWA
+Kolom:
+No
+Nama
+Kelas
+No_Absen
+3. REKAP_KELAS
+Tampilkan otomatis:
+Kelas
+Jumlah Siswa
+Rata-rata
+Nilai Tertinggi
+Nilai Terendah
+Jumlah Tuntas
+Persentase Ketuntasan
+Untuk:
+IX A
+IX B
+IX C
+IX D
+IX E
+IX F
+IX G
+IX H
+I. GOOGLE APPS SCRIPT
+Buat backend menggunakan:
+Google Apps Script
+Gunakan:
+doGet(e)
+dan
+doPost(e)
+atau endpoint API yang sesuai.
+Fungsi backend minimal:
+saveResult()
+getResults()
+getClassResults()
+getStudentResults()
+getStatistics()
+J. KEAMANAN
+Jangan menyimpan data Google Sheets langsung di JavaScript frontend.
+Gunakan:
+Google Apps Script Web App
+Frontend mengirim data menggunakan:
+fetch()
+ke URL Web App.
+Contoh struktur:
+POST
+{
+"action": "saveResult",
+"nama": "...",
+"kelas": "...",
+"absen": "...",
+"skor": 120,
+"nilai": 80
+}
+Backend memvalidasi data sebelum menulis ke Google Sheets.
+K. CEGAH DATA GANDA
+Gunakan ID unik:
+GAME + TIMESTAMP + ID_RANDOM
+Contoh:
+KONG-20261005-ABC123
+Jika siswa mengulang game, simpan sebagai percobaan baru.
+Jangan menimpa percobaan sebelumnya.
+L. DASHBOARD GURU
+Buat halaman:
+👨‍🏫 DASHBOARD GURU
+Tampilkan kartu statistik:
+👥 Total Peserta
+📊 Rata-rata Nilai
+🏆 Nilai Tertinggi
+📉 Nilai Terendah
+✅ Jumlah Tuntas
+❌ Belum Tuntas
+M. FILTER DASHBOARD
+Guru dapat memilih:
+Semua Kelas
+IX A
+IX B
+IX C
+IX D
+IX E
+IX F
+IX G
+IX H
+Tambahkan:
+🔎 Cari nama siswa
+N. TABEL NILAI
+Kolom:
+No
+Nama
+Kelas
+Absen
+Skor XP
+Nilai
+Predikat
+Benar
+Salah
+Durasi
+Tanggal
+Aksi
+Urutkan:
+Nilai tertinggi
+Nilai terendah
+Nama
+Kelas
+Waktu pengerjaan
+O. RANKING
+Buat ranking otomatis:
+🥇 Peringkat 1
+🥈 Peringkat 2
+🥉 Peringkat 3
+dan seterusnya.
+Ranking dapat difilter berdasarkan:
+semua kelas
+satu kelas
+P. GRAFIK
+Dashboard Guru harus memiliki grafik:
+Distribusi nilai
+Rata-rata tiap kelas
+Persentase ketuntasan
+Jumlah siswa tiap kelas
+Nilai tertinggi dan terendah
+Gunakan Chart.js atau library grafik ringan.
+Q. EKSPOR
+Sediakan tombol:
+📥 DOWNLOAD CSV
+📊 DOWNLOAD EXCEL
+🖨️ CETAK LAPORAN
+Laporan dapat berisi:
+DAFTAR NILAI MISI KEKONGRUENAN
+SMP Negeri 1 Bantarkawung
+Kelas:
+Tanggal:
+R. DASHBOARD ANALISIS GURU
+Tambahkan analisis otomatis:
+Contoh:
+Analisis Pembelajaran
+Rata-rata kelas: 78
+Ketuntasan: 82%
+Materi yang paling banyak salah:
+“Korespondensi sisi dan sudut”
+Rekomendasi:
+“Berikan penguatan pada konsep pasangan titik, sisi, dan sudut bersesuaian.”
+Buat rekomendasi berdasarkan data jawaban siswa.
+S. REMEDIAL DAN PENGAYAAN
+Jika nilai <75:
+Tampilkan:
+🔄 MISI REMEDIAL
+Berikan soal penguatan tentang:
+konsep kongruensi
+SSS
+SAS
+pasangan sisi
+pasangan sudut
+Jika nilai ≥90:
+Tampilkan:
+🚀 MISI PENGAYAAN
+Berikan soal HOTS tambahan.
+T. DESAIN
+Gunakan desain:
+Modern
+Futuristik
+STEM
+Neon
+Edukatif
+Responsif
+Warna dominan:
+biru
+ungu
+cyan
+Tema:
+“Detektif Geometri Futuristik”
+Tambahkan maskot:
+🤖 AAAMAT KEREN
+Gunakan kartu misi, badge, XP, progress bar, dan animasi ringan.
+U. RESPONSIVE
+Game harus nyaman digunakan pada:
+HP Android
+Tablet
+Laptop
+Desktop
+Gunakan:
+HTML5
+CSS3
+JavaScript
+V. ARSITEKTUR FILE
+Buat struktur:
+/index.html
+/game.html
+/guru.html
+/style.css
+/game.js
+/guru.js
+/google-apps-script.gs
+/README.md
+Jika platform hanya memungkinkan satu file, gabungkan semuanya menjadi satu aplikasi HTML + Google Apps Script.
+W. README
+Buat petunjuk lengkap untuk guru:
+Membuat Google Sheet
+Membuat Google Apps Script
+Menempelkan kode Apps Script
+Mengatur nama Sheet
+Deploy → New Deployment
+Pilih Web App
+Execute as: Me
+Who has access: sesuai kebutuhan sekolah
+Salin URL Web App
+Masukkan URL tersebut ke konfigurasi aplikasi
+Uji pengiriman nilai
+Membuka Dashboard Guru
+Berikan contoh konfigurasi:
+const API_URL = "URL_GOOGLE_APPS_SCRIPT";
+Jelaskan dengan bahasa Indonesia yang mudah dipahami guru SMP.
+X. HASIL AKHIR YANG DIHARAPKAN
+Saya ingin menghasilkan satu sistem lengkap:
+🎮 GAME SISWA
+↓
+📝 Siswa mengerjakan Misi Kekongruenan
+↓
+⭐ Skor dihitung
+↓
+☁️ Data dikirim ke Google Apps Script
+↓
+📊 Google Sheets
+↓
+👨‍🏫 DASHBOARD GURU
+↓
+📈 Analisis nilai
+↓
+🏆 Ranking
+↓
+📋 Rekap IX A–IX H
+↓
+📥 Ekspor laporan
+Semua antarmuka menggunakan Bahasa Indonesia.
+Buat kode yang benar-benar dapat dijalankan, bukan sekadar contoh pseudocode.
+Berikan seluruh kode frontend, backend Google Apps Script, struktur Google Sheets, dan petunjuk instalasi/deployment secara lengkap.

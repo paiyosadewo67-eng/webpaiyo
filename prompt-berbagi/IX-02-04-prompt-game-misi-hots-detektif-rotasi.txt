@@ -1,0 +1,309 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Misi HOTS — Detektif Rotasi
+Bab   : IX-02 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+2.3 PROMPT GAME — “AAAMAT KEREN: MISI HOTS DETEKTIF ROTASI”
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA : GAME — “AAAMAT KEREN: MISI HOTS DETEKTIF ROTASI”👨‍🏫 Pengembang: Drs. PAIYO (SMP Negeri 1 Bantarkawung):Klik Link berikut:
+AAAMAT KEREN: MISI HOTS DETEKTIF ROTASI
+Karya: Drs. PAIYO (SMP Negeri 1 Bantarkawung)“Belajar matematika jadi mudah, modern, dan AAAMAT KEREN”
+Mainkan sekarang:
+MISI HOTS DETEKTIF ROTASI - AAAMAT KEREN DIGITAL LEARNING 🏆
+Karya Pengembang: Drs. PAIYO (SMP Negeri 1 Bantarkawung)
+Halo! Saya Detektif Siswa IX (Kelas IX-A / Absen 01) dari SMP Negeri 1 Bantarkawung.
+Saya sedang menyelidiki kasus transformasi geometri rotasi dengan capaian undefined XP (Gelar: Detektif Pemula)!
+🔎 Uji analisis HOTS dan buktikan kemampuan rotasimu sekarang di:
+https://ais-pre-vmyl2cncfpa4vmhchbhjzq-438289882508.asia-southeast1.run.app
+Assalamu’alaikum,...Selamat pagi, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk:
+"Buatkan konten GAME INTERAKTIF “AAAMAT KEREN: MISI HOTS DETEKTIF ROTASI”. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada Beranda Tambah Link “ Share WA “ mode ais pre ; pada akhir game dekat sertifikat ada Link “ Unduh word Soal dan Pembahasan” hasil unduh sertakan gambar dan grafiknya.
+BUATKAN SEBUAH GAME PEMBELAJARAN MATEMATIKA INTERAKTIF BERBASIS WEB/APP DENGAN JUDUL:
+🎮 “MISI HOTS DETEKTIF ROTASI” Tagline: 🔎 “Temukan Polanya – Putar Strateginya – Buktikan Jawabannya!”
+Brand: 🏆 AAAMAT KEREN DIGITAL LEARNING
+SASARAN: Siswa SMP Fase D/Kelas IX.
+MATERI: Transformasi Geometri – ROTASI.
+TUJUAN: Game harus membantu siswa memahami konsep rotasi, menentukan koordinat hasil rotasi, memecahkan masalah HOTS, memberikan alasan matematis, dan menerapkan konsep rotasi dalam kehidupan nyata.
+================================================== A. KONSEP GAME ==================================================
+Buat game bergaya:
+• Modern educational game • Detective mission • Futuristic classroom • 3D educational interface • Ramah siswa SMP • Menyenangkan tetapi tetap akademis • Visual cerah, tajam, modern • Dominan nuansa matematika dan teknologi • Responsive untuk HP, tablet, dan laptop
+Gunakan karakter utama:
+🔎 “DETEKTIF ROTASI”
+Karakter siswa SMP yang sedang menyelesaikan berbagai kasus matematika.
+Tambahkan karakter pendamping berupa: 🤖 Robot Asisten Matematika
+Robot memberikan: • petunjuk • motivasi • feedback • informasi misi
+Jangan memberikan jawaban langsung melalui robot.
+================================================== B. HALAMAN PEMBUKA ==================================================
+Buat halaman opening dengan:
+🎮 MISI HOTS 🔎 DETEKTIF ROTASI
+“Selamat datang, Detektif!”
+Narasi:
+“Kota Matematika sedang mengalami gangguan rotasi. Beberapa objek berubah posisi secara misterius. Tugasmu adalah menemukan pusat rotasi, menentukan arah putaran, menghitung koordinat bayangan, dan membuktikan setiap jawaban.”
+Tombol:
+▶ MULAI MISI
+📖 PETUNJUK
+🏆 BADGE
+📊 PROGRES
+================================================== C. SISTEM LEVEL / MISI ==================================================
+Game terdiri atas:
+MISI 1 🔎 DETEKSI ROTASI
+MISI 2 🧠 BONGKAR KONSEP
+MISI 3 📐 KOORDINAT RAHASIA
+MISI 4 🧩 UJI BUKTI HOTS
+MISI 5 🎯 PUSAT MISTERIUS
+MISI 6 🌏 ROTASI LINTAS BIDANG
+FINAL MISSION 🏆 MASTER ROTASI
+Setiap misi harus memiliki:
+• tujuan • cerita singkat • tantangan • soal • input jawaban • tombol cek jawaban • feedback • hint • XP • status misi
+================================================== D. MISI 1 – DETEKSI ROTASI ==================================================
+Tampilkan beberapa objek:
+🚲 roda sepeda 🕐 jarum jam 🌀 kipas 🚪 pintu 🎨 motif batik 🤖 robot
+Tanyakan:
+“Manakah objek yang menunjukkan gerak rotasi?”
+Setelah siswa memilih objek, tanyakan:
+Apa pusat rotasinya?
+Ke arah mana objek berputar?
+Mengapa gerakan tersebut disebut rotasi?
+Berikan feedback:
+✅ BENAR: “Detektif hebat! Kamu berhasil menemukan bukti rotasi.”
+❌ SALAH: “Belum tepat. Amati kembali titik yang menjadi pusat putaran.”
+Reward: +50 XP
+================================================== E. MISI 2 – BONGKAR KONSEP ==================================================
+Tampilkan konsep interaktif:
+ROTASI memiliki:
+📍 PUSAT ROTASI 📐 SUDUT ROTASI ↩️ ARAH ROTASI
+Buat aktivitas drag-and-drop.
+Siswa memasangkan:
+Pusat → titik tetap/poros Sudut → besar putaran Arah → searah/berlawanan jarum jam
+Kemudian berikan pertanyaan:
+“Apakah ukuran dan bentuk bangun berubah setelah rotasi?”
+Jawaban: Tidak.
+Jelaskan:
+“Rotasi mempertahankan bentuk dan ukuran bangun.”
+Reward: +75 XP
+================================================== F. MISI 3 – KOORDINAT RAHASIA ==================================================
+Buat bidang Kartesius INTERAKTIF.
+Tampilkan titik:
+A(3,2)
+Tantangan:
+“Putar titik A sebesar 90° berlawanan arah jarum jam terhadap O(0,0).”
+Sediakan:
+• bidang Kartesius • titik A • tombol rotasi • input koordinat • tombol PERIKSA
+Gunakan aturan:
+90° berlawanan arah jarum jam:
+(x,y) → (−y,x)
+Sehingga:
+A(3,2) → A’(−2,3)
+Jika benar:
+🎉 “Koordinat berhasil ditemukan!”
++100 XP
+Tambahkan soal berikutnya dengan tingkat kesulitan meningkat.
+Contoh:
+B(−4,1), rotasi 180°.
+C(2,−3), rotasi 270°.
+================================================== G. MISI 4 – UJI BUKTI HOTS ==================================================
+Tampilkan kasus:
+“Seorang siswa mengatakan:
+A(2,−5) setelah diputar 90° berlawanan arah jarum jam menjadi A’(−5,−2).”
+Pertanyaan:
+APAKAH PERNYATAAN TERSEBUT BENAR?
+Pilihan:
+🟢 BENAR 🔴 SALAH
+Tetapi siswa WAJIB memberikan alasan.
+Sediakan kotak:
+“Bukti matematis saya:”
+Sistem menilai:
+• pilihan benar/salah • ketepatan alasan
+Feedback:
+“Detektif matematika tidak cukup hanya menjawab. Detektif harus memberikan BUKTI.”
+Reward: +125 XP
+================================================== H. MISI 5 – PUSAT MISTERIUS ==================================================
+Perkenalkan pusat:
+P(a,b)
+Jelaskan strategi:
+LANGKAH 1 Geser pusat P(a,b) menjadi O(0,0).
+LANGKAH 2 Lakukan rotasi.
+LANGKAH 3 Geser kembali.
+Contoh:
+A(5,2)
+diputar 90° berlawanan arah jarum jam
+terhadap P(2,1).
+Hasil:
+A’(1,4)
+Kemudian berikan tantangan baru.
+Sistem harus menyediakan:
+🔎 HINT 1 “Cari selisih koordinat titik dengan pusat.”
+🔎 HINT 2 “Gunakan aturan rotasi pusat (0,0).”
+🔎 HINT 3 “Setelah rotasi, kembalikan koordinat terhadap pusat P.”
+Hint diberikan bertahap dan TIDAK BOLEH langsung membocorkan jawaban.
+Reward: +125 XP
+================================================== I. MISI 6 – ROTASI LINTAS BIDANG ==================================================
+Buat empat zona:
+🎨 SENI BUDAYA ⚙️ FISIKA 🤖 TEKNOLOGI/ROBOTIKA 🌍 GEOGRAFI
+SENI BUDAYA:
+Tantangan: “Bagaimana rotasi digunakan dalam desain batik atau ornamen?”
+FISIKA:
+“Di manakah pusat rotasi roda?”
+TEKNOLOGI:
+“Robot menghadap UTARA kemudian diputar 90° searah jarum jam. Ke arah mana robot menghadap?”
+GEOGRAFI:
+“Bagaimana rotasi bumi berkaitan dengan perubahan posisi dan arah?”
+Reward: +100 XP
+================================================== J. FINAL MISSION – MASTER ROTASI ==================================================
+Buat kasus HOTS:
+Sebuah logo digital mempunyai titik:
+A(2,1) B(4,1) C(2,3)
+Logo diputar:
+90° berlawanan arah jarum jam
+dengan pusat:
+P(1,1)
+Tugas siswa:
+Tentukan A’.
+Tentukan B’.
+Tentukan C’.
+Jelaskan strategi.
+Berikan bukti bahwa bentuk dan ukuran tetap.
+Hubungkan rotasi dengan desain digital.
+Siswa harus memasukkan:
+• jawaban • langkah pengerjaan • alasan • kesimpulan
+Reward:
+🏆 +150 XP
+================================================== K. SISTEM XP ==================================================
+Gunakan sistem:
+Misi 1 = 50 XP Misi 2 = 75 XP Misi 3 = 100 XP Misi 4 = 125 XP Misi 5 = 125 XP Misi 6 = 100 XP Final Mission = 150 XP
+Total:
+🏆 725 XP
+Buat progress bar:
+XP 0 ─────────────── 725 XP
+Tampilkan level:
+LEVEL 1 Detektif Pemula
+LEVEL 2 Pengamat Rotasi
+LEVEL 3 Analis Koordinat
+LEVEL 4 Penguji Bukti
+LEVEL 5 Master Rotasi
+================================================== L. SISTEM BADGE ==================================================
+Buat badge yang dapat terbuka otomatis:
+🔎 BADGE 1 DETEKTIF ROTASI PEMULA
+Syarat: Misi 1–2 selesai.
+📐 BADGE 2 ANALIS KOORDINAT
+Syarat: Misi 3 selesai.
+🧠 BADGE 3 PENGUJI BUKTI
+Syarat: Misi 4 selesai dengan alasan benar.
+🎨 BADGE 4 ROTASI KREATIF
+Syarat: Misi Seni Budaya selesai.
+🤖 BADGE 5 TEKNO DETEKTIF
+Syarat: Misi Robotika selesai.
+🌍 BADGE 6 DETEKTIF LINTAS BIDANG
+Syarat: Minimal 3 penerapan selesai.
+🏆 BADGE FINAL MASTER ROTASI
+Syarat: Final Mission berhasil.
+Saat badge terbuka:
+🎉 ANIMASI UNLOCK BADGE
+“SELAMAT!”
+“Kamu telah membuktikan kemampuanmu sebagai Detektif Rotasi!”
+================================================== M. SISTEM HINT ==================================================
+Setiap soal HOTS menyediakan tombol:
+💡 HINT
+Tetapi hint diberikan bertahap:
+HINT 1: mengarah pada konsep.
+HINT 2: mengarah pada strategi.
+HINT 3: mengarah pada langkah pengerjaan.
+JANGAN langsung menampilkan jawaban.
+Jika siswa menggunakan hint:
+Kurangi XP secara ringan.
+Contoh:
+Hint 1 = −5 XP Hint 2 = −10 XP Hint 3 = −15 XP
+Tujuan: mendorong siswa berpikir mandiri.
+================================================== N. SISTEM FEEDBACK ==================================================
+Jika jawaban benar:
+🎉 BENAR!
+“Strategimu tepat. Sekarang lanjutkan ke misi berikutnya.”
+Jika salah:
+🔎 “Belum tepat.”
+“Jangan menyerah. Periksa kembali aturan rotasi dan tanda positif/negatif.”
+Jangan langsung memberikan jawaban.
+================================================== O. SISTEM LENCANA PRESTASI ==================================================
+Tambahkan achievement:
+🔥 PERFECT MISSION Tanpa kesalahan.
+🧠 CRITICAL THINKER Memberikan alasan HOTS dengan benar.
+⚡ FAST DETECTIVE Menyelesaikan misi dengan cepat.
+🔍 EVIDENCE MASTER Selalu memberikan bukti matematis.
+🎯 ZERO HINT Menyelesaikan misi tanpa bantuan.
+================================================== P. DASHBOARD SISWA ==================================================
+Buat halaman:
+📊 DASHBOARD DETEKTIF
+Nama: [……………………]
+XP: [……..]
+Level: [……..]
+Misi: […….. / 7]
+Badge: […….. / 7]
+Progress: ████████░░ 80%
+Tambahkan tombol:
+▶ LANJUTKAN MISI 🏆 LIHAT BADGE 📊 HASIL 🔄 ULANGI MISI
+================================================== Q. HALAMAN HASIL AKHIR ==================================================
+Setelah Final Mission:
+🏆 MISI SELESAI!
+“SELAMAT DETEKTIF!”
+Tampilkan:
+Nama siswa Total XP Level Badge Jumlah misi selesai Jumlah hint Skor Kemampuan berpikir kritis
+Berikan gelar berdasarkan XP:
+0–199: 🔎 Detektif Pemula
+200–399: 📐 Detektif Koordinat
+400–599: 🧠 Detektif Analitis
+600–699: 🎯 Detektif Ahli
+700–725: 🏆 MASTER ROTASI
+================================================== R. FITUR TEKNIS ==================================================
+Jika dibuat menggunakan AI Studio/Gemini:
+Buat sebagai aplikasi web interaktif.
+Gunakan:
+HTML CSS JavaScript
+Jika memungkinkan gunakan:
+Canvas/SVG untuk bidang Kartesius.
+Semua tombol harus berfungsi.
+Gunakan sistem state untuk:
+• XP • level • badge • progres • skor • jawaban • hint • misi yang telah selesai
+Data progres siswa dapat disimpan menggunakan:
+localStorage
+Buat desain RESPONSIVE:
+📱 Smartphone 💻 Laptop 🖥️ Desktop 📱 Tablet
+================================================== S. VERSI CANVA ==================================================
+Jika dibuat di Canva:
+Gunakan desain:
+• Presentasi interaktif • Tombol navigasi • Hyperlink antarhalaman • Popup informasi • Halaman misi • Halaman hint • Halaman feedback • Halaman badge • Halaman dashboard
+Gunakan tombol:
+▶ MULAI ⬅ KEMBALI ➡ LANJUT 💡 HINT ✅ PERIKSA 🏆 BADGE 📊 PROGRES
+Buat setiap misi seperti “ruang detektif” yang harus diselesaikan sebelum siswa dapat membuka misi berikutnya.
+================================================== T. GAYA VISUAL ==================================================
+Gunakan visual:
+🎮 Modern educational game 🔎 Detective mission 📐 Mathematical geometry 🤖 Futuristic technology ✨ 3D educational illustration 🌟 Cinematic lighting 📱 Mobile friendly
+Warna:
+• biru digital • kuning/oranye untuk reward • putih untuk teks utama • latar gelap futuristik
+Gunakan ikon:
+🔎 📐 🧠 🎯 🤖 🏆 ⭐ 🔐
+Pastikan seluruh teks bahasa Indonesia benar, jelas, dan mudah dibaca siswa SMP.
+================================================== U. PRINSIP PEMBELAJARAN ==================================================
+Game harus menerapkan:
+Pembelajaran aktif.
+Problem Based Learning.
+HOTS.
+Berpikir kritis.
+Pemecahan masalah.
+Argumentasi matematis.
+Refleksi.
+Gamifikasi.
+Pembelajaran kontekstual.
+Pembelajaran mendalam.
+JANGAN membuat game hanya berupa kuis pilihan ganda.
+Siswa harus:
+MENGAMATI ↓ MENANYA ↓ MENYELIDIKI ↓ MENGHITUNG ↓ MEMBUKTIKAN ↓ MENGOMUNIKASIKAN ↓ MEREFLEKSIKAN
+================================================== V. OUTPUT AKHIR ==================================================
+HASILKAN GAME YANG:
+✅ Interaktif ✅ Edukatif ✅ HOTS ✅ Berbasis PBL ✅ Kontekstual ✅ Memiliki 7 Misi ✅ Memiliki XP ✅ Memiliki Level ✅ Memiliki Badge ✅ Memiliki Hint bertahap ✅ Memiliki Feedback ✅ Memiliki Dashboard ✅ Memiliki Final Mission ✅ Responsive ✅ Mudah digunakan siswa SMP ✅ Dapat digunakan guru dalam pembelajaran
+Judul akhir:
+🎮🔎 “MISI HOTS DETEKTIF ROTASI” AAAMAT KEREN DIGITAL LEARNING
+Tagline:
+“AMATI – PUTAR – ANALISIS – BUKTIKAN!”

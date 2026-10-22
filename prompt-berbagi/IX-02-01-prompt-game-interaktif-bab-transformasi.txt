@@ -1,0 +1,616 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Interaktif — Bab Transformasi
+Bab   : IX-02 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT GAME INTERAKTIF AAAMAT KEREN — ESCAPE ROOM MATEMATIKA
+MISI TRANSFORMASI TUNGGAL Translasi • Refleksi • Rotasi • Dilatasi
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share wa “ 🎮 GAME AAAMAT KEREN 🔐 ESCAPE ROOM 🔐 MATERI TRANSFORMASI TUNGGAL “
+https://igatrisna.my.canva.site/aaamat-keren-escape-room-transformasi-tunggal
+Assalamu’alaikum,...Selamat pagi, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat “ 🎮 AAAMAT KEREN🔐 ESCAPE ROOM MATEMATIKA"MISI TRANSFORMASI TUNGGAL"
+”. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+BERTINDAKLAH SEBAGAI:
+Game Designer Pendidikan + Guru Matematika SMP + UI/UX Designer + Developer HTML/CSS/JavaScript.
+BUAT GAME EDUKASI INTERAKTIF BERBASIS WEB:
+🎮 AAAMAT KEREN
+🔐 ESCAPE ROOM MATEMATIKA
+"MISI TRANSFORMASI TUNGGAL"
+TARGET:
+Siswa SMP Kelas IX / Fase D
+SMP Negeri 1 Bantarkawung
+Guru: Drs. PAIYO
+====================================================
+1. KONSEP UTAMA GAME
+====================================================
+Buat sebuah Escape Room Matematika yang sangat menarik,
+modern, interaktif, visual, dan bernuansa petualangan.
+Tema cerita:
+"LABORATORIUM KOORDINAT TERKUNCI"
+Robot AAAMAT KEREN sedang menjaga Laboratorium Transformasi.
+Tiba-tiba sistem keamanan aktif dan semua pintu terkunci.
+Untuk membuka pintu utama, pemain harus menyelesaikan
+5 RUANG MISI:
+🔐 RUANG 1 — TRANSLASI
+🪞 RUANG 2 — REFLEKSI
+🔄 RUANG 3 — ROTASI
+🔍 RUANG 4 — DILATASI
+👑 RUANG 5 — MASTER TRANSFORMASI / HOTS
+Setiap ruangan memiliki tantangan.
+Setelah tantangan berhasil diselesaikan,
+pemain memperoleh 1 DIGIT KODE RAHASIA.
+Tujuan akhir:
+mengumpulkan seluruh digit dan membuka
+"PORTAL KELUAR LABORATORIUM".
+====================================================
+2. GAYA VISUAL
+====================================================
+Gunakan gaya:
+- AAAMAT KEREN
+- futuristic STEM classroom
+- escape room
+- hologram
+- neon blue-purple
+- 3D educational game
+- clean modern interface
+- glowing buttons
+- animated coordinate grid
+- holographic Cartesian plane
+- robot guide bernama AAAMAT
+- cinematic transition antar-misi
+Jangan membuat tampilan terlalu gelap.
+Gunakan panel digital yang CERAH agar teks mudah dibaca.
+Gunakan:
+- kartu soal
+- progress bar
+- indikator energi
+- kunci/gembok
+- ikon transformasi
+- koordinat Kartesius
+- animasi titik dan bangun
+====================================================
+3. LAYAR PEMBUKA
+====================================================
+Tampilkan:
+🎮 AAAMAT KEREN
+ESCAPE ROOM MATEMATIKA
+🔐 MISI TRANSFORMASI TUNGGAL
+"Temukan pola.
+Buktikan transformasi.
+Pecahkan kode.
+Selamatkan Laboratorium Koordinat!"
+Tampilkan:
+▶ MULAI MISI
+📖 PETUNJUK
+🏆 MODE PRESTASI
+Tambahkan karakter robot AAAMAT yang berkata:
+"Halo, Matematikawan!
+Laboratorium Koordinat terkunci!
+Hanya penjelajah yang mampu menaklukkan
+TRANSFORMASI TUNGGAL yang dapat membuka portal!"
+====================================================
+4. ATURAN GAME
+====================================================
+Jumlah tantangan utama:
+20 soal.
+Komposisi:
+- 10 Pilihan Ganda
+- 5 Benar/Salah Kompleks
+- 5 MCMA
+Level:
+🟢 Pemahaman
+🔵 Aplikasi
+🟣 HOTS
+Setiap soal memiliki stimulus.
+Sistem skor:
+- Jawaban benar = +100 XP
+- Jawaban salah = tidak mengurangi nilai utama
+- Hint digunakan = -20 XP
+- Perfect Room = bonus +200 XP
+Nyawa:
+❤️❤️❤️
+Jika salah:
+AAAMAT memberikan umpan balik singkat,
+tetapi JANGAN langsung memberikan jawaban.
+Contoh:
+"Perhatikan kembali tanda negatif pada koordinat x."
+Setelah percobaan kedua,
+berikan petunjuk tambahan.
+====================================================
+5. PETA ESCAPE ROOM
+====================================================
+Buat peta interaktif:
+                🚪 PORTAL AKHIR
+                      ▲
+                      │
+          👑 RUANG MASTER
+                      ▲
+                      │
+       🔍 DILATASI ← 🔄 ROTASI
+                      ▲
+                      │
+                  🪞 REFLEKSI
+                      ▲
+                      │
+                  ➡ TRANSLASI
+                      ▲
+                      │
+                🚀 START
+Setiap ruangan awalnya terkunci.
+Ruangan berikutnya terbuka setelah
+syarat ruangan sebelumnya tercapai.
+====================================================
+6. RUANG 1 — MISI TRANSLASI
+====================================================
+Tema:
+"PETA DIGITAL KOTA"
+Visual:
+Tampilkan bidang koordinat Kartesius.
+Tampilkan titik yang bergerak dengan animasi.
+Gunakan soal dari asesmen sumatif berikut.
+SOAL 1 — PEMAHAMAN
+Stimulus:
+Pada peta grid A(2,3) dipindah 5 satuan ke kanan
+dan 2 satuan ke bawah.
+Pertanyaan:
+Koordinat A' adalah ...
+A. (7,1)
+B. (-3,5)
+C. (7,5)
+D. (-3,1)
+Kunci:
+A
+---
+SOAL 6 — APLIKASI
+Stimulus:
+B(4,1) ditranslasi dengan vektor (2,-1).
+B' adalah ...
+A. (2,0)
+B. (6,0)
+C. (6,2)
+D. (2,2)
+Kunci:
+B
+---
+SOAL 11 — BENAR/SALAH
+Stimulus:
+A(3,2) ditranslasi menjadi A'(-1,5).
+Tampilkan tabel:
+| Pernyataan | Benar | Salah |
+|---|---|---|
+| Translasi (-4,3) | ☐ | ☐ |
+| Bentuk dan ukuran tetap | ☐ | ☐ |
+| Jarak antar titik berubah | ☐ | ☐ |
+Kunci:
+Benar, Benar, Salah
+---
+SOAL 16 — MCMA
+Stimulus:
+P(2,-3) ditranslasi dengan vektor (-4,-5).
+Tampilkan 4 pilihan:
+A. P' = (-2,2)
+B. x berkurang 4
+C. y bertambah 5
+D. P' = (6,-8)
+Kunci berdasarkan dokumen asesmen:
+A, B, C
+CATATAN PENTING UNTUK SISTEM:
+Jangan mengubah isi soal sumber.
+Namun tandai soal ini sebagai "PERLU VERIFIKASI GURU"
+karena perhitungan koordinat dari stimulus tampak perlu diperiksa.
+Sediakan Teacher Mode untuk mengubah kunci tanpa mengubah tampilan soal.
+====================================================
+7. RUANG 2 — MISI REFLEKSI
+====================================================
+Tema:
+"RUANG CERMIN HOLOGRAM"
+Visual:
+Pemain melihat bangun pada bidang koordinat.
+Sebuah sinar laser memantul pada garis cermin.
+SOAL 2 — PEMAHAMAN
+Stimulus:
+B(-4,2) dicerminkan terhadap sumbu-X.
+Bayangan adalah ...
+A. (4,2)
+B. (-4,-2)
+C. (4,-2)
+D. (-4,2)
+Kunci:
+B
+---
+SOAL 7 — APLIKASI
+Stimulus:
+P(2,1) dicerminkan terhadap sumbu-Y,
+kemudian ditranslasi 3 satuan ke kanan.
+Hasil akhir ...
+A. (1,1)
+B. (-2,1)
+C. (5,1)
+D. (-5,1)
+Kunci:
+A
+---
+SOAL 12 — BENAR/SALAH
+Stimulus:
+B(-2,4) dicerminkan terhadap sumbu-X.
+| Pernyataan | Benar | Salah |
+|---|---|---|
+| Bayangan (-2,-4) | ☐ | ☐ |
+| Nilai x tetap | ☐ | ☐ |
+| Nilai y tetap | ☐ | ☐ |
+Kunci:
+Benar, Benar, Salah
+---
+SOAL 17 — MCMA
+Stimulus:
+Q(3,-2) dicerminkan terhadap sumbu-Y.
+| Pernyataan | Pilih |
+|---|---|
+| A. Q' = (-3,-2) | ☐ |
+| B. Jarak ke sumbu-Y tetap | ☐ |
+| C. y berubah tanda | ☐ |
+| D. x berubah tanda | ☐ |
+Kunci:
+A, B, D
+====================================================
+8. RUANG 3 — MISI ROTASI
+====================================================
+Tema:
+"RUANG MESIN WAKTU"
+Tampilkan roda berputar,
+panah arah rotasi,
+dan bidang koordinat yang ikut berputar.
+SOAL 3 — PEMAHAMAN
+Stimulus:
+C(3,-1) diputar 180° terhadap titik O.
+Bayangan ...
+A. (-3,1)
+B. (3,-1)
+C. (-1,3)
+D. (1,-3)
+Kunci:
+A
+---
+SOAL 18 — MCMA
+Stimulus:
+R(1,-4) diputar 90° berlawanan arah jarum jam
+terhadap O.
+A. R' = (4,1)
+B. Berpindah kuadran
+C. Jarak ke O tetap
+D. R' = (-4,1)
+Kunci:
+A, B, C
+====================================================
+9. RUANG 4 — MISI DILATASI
+====================================================
+Tema:
+"PORTAL PERBESARAN"
+Visual:
+Objek diperbesar dan diperkecil secara animasi.
+SOAL 4 — PEMAHAMAN
+Stimulus:
+D(2,3) didilatasi dengan faktor skala k=2
+berpusat di O.
+D' adalah ...
+A. (4,6)
+B. (2,6)
+C. (4,3)
+D. (-4,6)
+Kunci:
+A
+---
+SOAL 8 — APLIKASI
+Stimulus:
+Jarak suatu gambar dari pusat O adalah 4 unit.
+Gambar didilatasi dengan faktor 1,5.
+Jarak baru ...
+A. 2,5
+B. 4
+C. 5,5
+D. 6
+Kunci:
+D
+---
+SOAL 9 — HOTS
+Stimulus:
+Sebuah bangun memiliki luas 12 satuan².
+Bangun tersebut didilatasi dengan faktor skala 3.
+Luas bayangan ...
+A. 36
+B. 72
+C. 108
+D. 324
+Kunci:
+C
+---
+SOAL 14 — BENAR/SALAH
+Stimulus:
+Sebuah segitiga didilatasi dengan faktor skala 2.
+| Pernyataan | Benar | Salah |
+|---|---|---|
+| Jarak dari O menjadi dua kali | ☐ | ☐ |
+| Bentuk tetap sebangun | ☐ | ☐ |
+| Luas menjadi dua kali | ☐ | ☐ |
+Kunci:
+Benar, Benar, Salah
+---
+SOAL 19 — MCMA
+Stimulus:
+Sebuah persegi didilatasi dengan faktor skala 3.
+| Pernyataan | Pilih |
+|---|---|
+| A. Sisi menjadi 3 kali | ☐ |
+| B. Keliling menjadi 3 kali | ☐ |
+| C. Luas menjadi 9 kali | ☐ |
+| D. Sudut berubah | ☐ |
+Kunci:
+A, B, C
+====================================================
+10. RUANG 5 — MASTER TRANSFORMASI
+====================================================
+Tema:
+"CORE TRANSFORMATION"
+Ruangan paling sulit.
+Gunakan visual:
+- beberapa bidang koordinat
+- jalur transformasi
+- hologram
+- bangun bergerak
+- tabel koordinat
+SOAL 5 — APLIKASI
+Stimulus:
+E(1,4) menjadi E'(-4,1).
+Transformasi yang sesuai adalah ...
+A. Rotasi 90° CCW
+B. Rotasi 90° CW
+C. Refleksi X
+D. Translasi
+Kunci:
+A
+---
+SOAL 10 — HOTS
+Stimulus:
+P(-2,3) ditranslasi (4,-5),
+kemudian direfleksi terhadap sumbu-X.
+Hasil akhir ...
+A. (-2,-2)
+B. (2,2)
+C. (-2,2)
+D. (-6,2)
+Kunci:
+B
+---
+SOAL 13 — BENAR/SALAH
+Stimulus:
+C(2,-3) diputar 180° terhadap O.
+| Pernyataan | Benar | Salah |
+|---|---|---|
+| Bayangan (-2,3) | ☐ | ☐ |
+| Jarak ke O tetap | ☐ | ☐ |
+| x dan y sama-sama berubah tanda | ☐ | ☐ |
+Kunci:
+Benar, Benar, Benar
+---
+SOAL 15 — HOTS B/S
+Stimulus:
+Sebuah pola mengalami refleksi kemudian translasi.
+| Pernyataan | Benar | Salah |
+|---|---|---|
+| Urutan dapat memengaruhi posisi akhir | ☐ | ☐ |
+| Koordinat dapat melacak setiap tahap | ☐ | ☐ |
+| Refleksi selalu mengubah ukuran | ☐ | ☐ |
+Kunci:
+Benar, Benar, Salah
+---
+SOAL 20 — HOTS MCMA
+Stimulus:
+Sebuah desain mengalami translasi kemudian refleksi.
+| Pernyataan | Pilih |
+|---|---|
+| A. Koordinat dapat melacak setiap tahap | ☐ |
+| B. Urutan dapat memengaruhi posisi akhir | ☐ |
+| C. Ukuran pasti berubah | ☐ |
+| D. Tabel koordinat membantu memeriksa hasil | ☐ |
+Kunci:
+A, B, D
+====================================================
+11. SISTEM KODE RAHASIA
+====================================================
+Setiap ruang menghasilkan satu digit kode.
+Jangan langsung memperlihatkan digit.
+Jika pemain menyelesaikan misi dengan baik,
+tampilkan animasi:
+🔓 KUNCI TERBUKA!
+"Anda memperoleh 1 bagian kode."
+Setelah 5 ruang selesai:
+🔐 KODE PORTAL AKHIR
+[ _ ] [ _ ] [ _ ] [ _ ] [ _ ]
+Pemain memasukkan kode.
+Jika benar:
+🎉 PORTAL TERBUKA!
+"SELAMAT!
+Kamu telah menaklukkan
+TRANSFORMASI TUNGGAL!"
+Jika salah:
+"Kode belum tepat.
+Periksa kembali hasil transformasimu."
+====================================================
+12. SISTEM HINT
+====================================================
+Setiap soal memiliki tombol:
+💡 HINT
+Hint tidak langsung memberikan jawaban.
+Contoh translasi:
+"Perhatikan perubahan x dan y."
+Contoh refleksi:
+"Pada refleksi sumbu-Y, koordinat mana yang berubah tanda?"
+Contoh rotasi:
+"Gunakan aturan rotasi terhadap O."
+Contoh dilatasi:
+"Kalikan koordinat dengan faktor skala."
+====================================================
+13. SISTEM FEEDBACK
+====================================================
+Jawaban BENAR:
+🎉 "LUAR BIASA!"
+"Transformasimu tepat!"
+Jawaban SALAH:
+🤔 "Belum tepat..."
+"Periksa kembali koordinat dan arah transformasi."
+Untuk HOTS:
+"Jangan hanya mencari jawaban.
+Cari alasan matematisnya."
+====================================================
+14. SISTEM LEVEL
+====================================================
+🏅 BRONZE
+Berhasil menyelesaikan 10 soal.
+🥈 SILVER
+Berhasil menyelesaikan 15 soal.
+🥇 GOLD
+Berhasil menyelesaikan 18 soal.
+👑 MASTER TRANSFORMASI
+Berhasil menyelesaikan seluruh 20 soal.
+====================================================
+15. PETA KOMPETENSI
+====================================================
+Setelah game selesai tampilkan:
+📊 HASIL MISI
+Translasi       ██████████
+Refleksi        ██████████
+Rotasi          ████████
+Dilatasi        █████████
+HOTS            ███████
+Tampilkan:
+- skor
+- jumlah benar
+- jumlah salah
+- hint yang digunakan
+- level
+- transformasi yang perlu dipelajari kembali
+Berikan rekomendasi:
+"Jika skor translasi rendah:
+latih kembali perubahan koordinat."
+"Jika skor refleksi rendah:
+latih kembali aturan pencerminan."
+"Jika skor rotasi rendah:
+gunakan visual putaran pada bidang koordinat."
+"Jika skor dilatasi rendah:
+latih hubungan faktor skala dengan panjang dan luas."
+====================================================
+16. MODE GURU
+====================================================
+Buat tombol:
+👨‍🏫 TEACHER MODE
+Fitur:
+- melihat skor seluruh permainan
+- melihat jawaban siswa
+- melihat soal yang salah
+- melihat level Pemahaman/Aplikasi/HOTS
+- reset permainan
+- mengaktifkan/nonaktifkan timer
+- mengubah kunci jawaban jika diperlukan
+- melihat analisis miskonsepsi
+PENTING:
+Jangan menghapus atau mengubah soal sumber
+tanpa persetujuan guru.
+====================================================
+17. TEKNOLOGI
+====================================================
+Jika memungkinkan buat sebagai satu file:
+HTML + CSS + JavaScript
+Tidak membutuhkan server.
+Game harus:
+- responsif desktop/laptop/tablet
+- tombol mudah diklik
+- animasi ringan
+- dapat digunakan di browser
+- dapat menyimpan skor selama sesi
+- dapat di-reset
+Gunakan SVG untuk:
+- bidang koordinat Kartesius
+- titik
+- segitiga
+- panah translasi
+- garis cermin
+- rotasi
+- dilatasi
+Animasi SVG harus memperlihatkan
+perubahan posisi objek secara visual.
+====================================================
+18. PENUTUP GAME
+====================================================
+Setelah portal terbuka:
+🎉🎉🎉
+MISSION COMPLETE!
+🏆 MASTER TRANSFORMASI
+"Selamat!
+Kamu telah membuktikan bahwa
+koordinat bukan sekadar angka,
+tetapi sebuah bahasa untuk menjelaskan
+pergerakan dan perubahan bentuk."
+Tampilkan:
+👨‍🏫
+DRS. PAIYO
+SMP NEGERI 1 BANTARKAWUNG
+MATEMATIKA KELAS IX / FASE D
+Kemudian tampilkan tombol:
+🔄 MAIN LAGI
+📊 LIHAT HASIL
+🏆 CETAK SERTIFIKAT
+====================================================
+19. SERTIFIKAT DIGITAL
+====================================================
+Jika pemain mencapai level MASTER:
+Buat sertifikat:
+🏆 SERTIFIKAT DIGITAL
+"MASTER TRANSFORMASI TUNGGAL"
+Nama Siswa: ____________
+Telah berhasil menyelesaikan
+ESCAPE ROOM MATEMATIKA
+TRANSFORMASI TUNGGAL
+Translasi ✓
+Refleksi ✓
+Rotasi ✓
+Dilatasi ✓
+HOTS ✓
+Guru:
+Drs. PAIYO
+SMP Negeri 1 Bantarkawung
+====================================================
+20. ATURAN PENTING UNTUK AI PEMBUAT GAME
+====================================================
+1. Jangan membuat game seperti kuis biasa.
+2. Harus terasa seperti ESCAPE ROOM.
+3. Setiap soal harus menjadi bagian dari cerita.
+4. Gunakan visual koordinat Kartesius sebanyak mungkin.
+5. Jangan memberikan jawaban sebelum siswa mencoba.
+6. Berikan feedback pedagogis.
+7. Gunakan soal asesmen sumatif sebagai basis utama.
+8. Pertahankan komposisi 20 soal.
+9. Jangan mengubah kompetensi matematika.
+10. Sediakan Teacher Mode.
+11. Pastikan simbol negatif koordinat ditampilkan dengan jelas.
+12. Pastikan semua operasi transformasi dapat dibaca dengan benar.
+13. Gunakan animasi transformasi agar siswa dapat MELIHAT
+    perubahan koordinat, bukan hanya membaca angka.
+14. Buat tampilan menarik tetapi tetap mudah digunakan siswa SMP.
+15. Pastikan semua teks matematika terbaca jelas.
+16. Jangan gunakan timer sebagai hukuman.
+17. Fokus utama game adalah BELAJAR melalui eksplorasi,
+    bukan sekadar mengejar skor.
+HASIL AKHIR YANG DIINGINKAN:
+Sebuah game Escape Room Matematika yang terasa seperti
+petualangan digital, tetapi seluruh tantangannya tetap
+berbasis asesmen Transformasi Tunggal.
+Nama final:
+🎮 AAAMAT KEREN
+🔐 ESCAPE ROOM MATEMATIKA
+"MISSION: TRANSFORMASI TUNGGAL"
+Terimakasih atas solusinya yang keren.

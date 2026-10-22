@@ -1,0 +1,228 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Simulasi TKA SMP/MTs Tahun 2026
+Bab   : IX-06 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT SIMULASI TKA MATEMATIKA SMP 2026
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA “ Assalamualaikum wr. wb. Yuk ikuti kuis simulasi TKA SMP/M.Ts 2026 di SMPN 1 Bantarkawung” oleh Drs. PAIYO melalui tautan berikut:
+https://igatrisna.my.canva.site/simulasi-tka-matematika-smp-2026
+Assalamu’alaikum,.. selamat sore, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantun untuk :
+Buatkan Kuis Simulasi  “SIMULASI TKA Matematika SMP/MTs Tahun 2026;  model TKA. dengan Judul “ SIMULASI TKA Matematika SMP/MTs Tahun 2026 SMP NEGERI 1 BANTARKAWUNG " yang tampilannya mirip dengan website simulasi TKA kemendikdasmen. Tujuan game: Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait  elemen Bilangan, Aljabar, Geometri dan Statistika Peluang ;Nama pengembang: [Drs. PAIYO].
+Tahapr 1. Buatkan entri pemain game, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+tahab 2: Model soal Pilgan biasa( 50% ), Pilgan komplek B/G (25%), Pilgan MCMA pilihan jawaban benar lebih dari satu(25%):meliputi soal tipe TKA/AKM( Jumlah soal sesuaikan dengan input jumlah soal) Soal Model 1 pilihan ganda (generated otomatis ) Khusus soal model 2 ganda kompleks dengan 3 pernyataan dengan kategori pilihan jawaban benar atau salah dibuat dalam bentuk tabel Khusus soal model 3 pilihan ganda komplek dengan 4 pernyataan dan jawaban benar lebih dari 1 dibuat dalam bentuk tabel , Semua soal harus ada stimulus tipe TKA / AKM. tiap soal  menggunakan stimulus sendiri – sendiri. Jika diperlukan adanya gambar maka stimulus boleh berisi gambar penunjang untuk melengkapi stimulus baik gambar dalam bentuk infografis maupun dalam bentuk grafik/ tabel. Ilustrasi visual SVG untuk soal-soal geometri
+Fitur terpisah antara Model Pilgan biasa, Pilgan MCMA B/S, Pilgan MCMA Pilihan jawaban benar lebih dari satu , Uraian. ada link selanjutnya antar model soal
+ (7) Uraian : 2 soal pertanyaan terbuka dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi
+tahap 3 indikator soal : , munculkan indikator tiap soal dan bentuk pilgannya dan dengan indikator soal seperti : pada lampiran file
+tahap 4 : Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 75 menit untuk membantu karakter membawa paket ke rumah berikutnya. Banyak soal: 30 soal. Capaian Pembelajaran: Peserta didik dapat Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait bilangan berpangkat dan notasi ilmiah
+ tahap 5 : Berikan rekap hasil game skor, soal dan kunci jawaban: Slide akhir. Buatkan rekap rangking 10 terbesar di halaman awal, buatkan pula rangkuman materi , soal dan pembahasannya setelah game selesai,Pada soal dan pembahasan di beri pasword nama pengembang; serta sertifikat " Master of Ekspedisi  TKA SMP 2026 "; unduh sertifikat ; pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang);link Navigasi untuk cek soal yang belum di kerjakan atau ralat jawaban;
+Fitur Utama yang di harapkan:
+1. Latarbelakang judul
+“ SIMULASI TKA Matematika SMP/MTs Tahun 2026 SMP NEGERI 1 BANTARKAWUNG”
+Halaman Beranda (Landing Page):
+Formulir entri data peserta (Nama, Kelas, No Absen, dan Sekolah).
+Top 10 Master: Papan peringkat otomatis yang menampilkan 10 nilai tertinggi.
+Fitur "Daftar Nilai": dengan mode Klik langsung tampak rekap nilai “ Nama, kelas, no absen, sekolah, skor , tanggal mengerjakan”
+Fitur “ Share wa “ dengan mode “ ais pree “
+Mekanisme Permainan:
+Visual Pengantar Paket: Karakter siswa akan mengantar paket ke rumah berikutnya seiring kemajuan pengerjaan soal.
+Timer 75 Menit: Penghitung waktu mundur yang akan otomatis mengakhiri sesi jika waktu habis.
+Navigasi Soal: Sidebar untuk berpindah antar soal, mengecek soal yang belum dikerjakan, atau meralat jawaban.
+Model Soal TKA/AKM (Total 30 Soal):
+Pilihan Ganda Biasa (50% =  15 Soal): 1 jawaban benar.
+Pilihan Ganda Kompleks (25% = 8 soal ): Tabel Benar/Salah (3 pernyataan).
+MCMA (25% = 7 soal ): Pilihan jawaban benar lebih dari satu (4 pernyataan).
+Setiap soal dilengkapi dengan Stimulus dan Indikator yang relevan dengan elemen Bilangan, Aljabar, Geometri dan Statistika Peluang
+Ilustrasi SVG: Gambar denah, grafik, dan bangun geometri untuk memperjelas stimulus.
+Halaman Hasil (Result Slide):
+Rekap skor, jumlah jawaban benar, salah, dan waktu pengerjaan.
+Sertifikat "Master of Ekspedisi TKA SMP 2026": Dapat diunduh/dicetak langsung dengan nama peserta.
+Rangkuman & Pembahasan: Bagian ini diproteksi password menggunakan nama pengembang: Drs. PAIYO.
+Unduh Soal & Pembahasan (Word): Menambahkan tombol "Unduh Soal & Pembahasan (Word)" di halaman hasil (setelah simulasi selesai). Fitur ini akan mengunduh file .doc yang berisi daftar soal, indikator, stimulus, dan kunci jawaban.
+Hasilnya.
+Link share wa =
+Assalamualaikum wr. wb. Yuk ikuti kuis simulasi Asesmen Sumatif 1: Pola & Barisan Bilangan Kelas VIII SMPN 1 Bantarkawung oleh Drs. PAIYO melalui tautan berikut:
+Soal & Pembahasan
+Soal 1 | PG | Bilangan
+Menyelesaikan operasi bilangan bentuk pangkat (1)
+Stimulus: Hasil dari operasi bilangan berpangkat berikut adalah .... (7³ × 7⁻⁴) / 7²
+Jawaban: C. 7⁻³
+Penjelasan:
+Gunakan sifat eksponen a^m × a^n = a^(m+n) dan a^m / a^n = a^(m-n). (7³ × 7⁻⁴) / 7² = 7^(3-4-2) = 7^(-3)
+Soal 2 | PG | Bilangan
+Mengurutkan bilangan termasuk bilangan bulat dan bilangan desimal, berdasarkan informasi (4)
+Stimulus: Buah merupakan salah satu sumber vitamin C. Untuk menguji kandungan vitamin C, berikut data berat dan kandungan air:
+Jawaban: B. Buah B
+Penjelasan:
+Bandingkan berat dan kandungan air. Buah B: 130,7 gr (terbesar) dan 150 mL air (terbesar). Jawaban: B
+Soal 3 | PG | Bilangan
+Menentukan lambang bilangan lain dari suatu bilangan (5)
+Stimulus: Pada beberapa jenis makanan, suhu penyimpanan yang terlalu tinggi dapat menyebabkan basi. Rekomendasi suhu: Daging Merah ≤ -18°C, Makanan Laut = -18°C...
+Jawaban: C. 19 derajat di bawah 0°C
+Penjelasan:
+Daging unggas = -19°C, berarti 19 derajat di bawah 0°C
+Soal 4 | PG | Aljabar
+Menyatakan grafik penyelesaian pertidaksamaan linear satu variabel pada garis bilangan (10)
+Stimulus: Diketahui pertidaksamaan: 3x + 17 ≤ 7 − 2x Manakah garis bilangan yang menunjukkan himpunan penyelesaian dari pertidaksamaan tersebut?
+Jawaban: A. Garis dari -5 sampai -2 (titik penuh di -2, arah kiri)
+Penjelasan:
+Penjelasan detil tersedia di kunci jawaban.
+Soal 5 | PG | Aljabar
+Menyelesaikan permasalahan terkait informasi menggunakan konsep sistem persamaan linier 2 variabel (11)
+Stimulus: Jajanan Tradisional Harga kue putu mayang dan kue pancong di bazar: • 5 kotak putu mayang + 3 kotak pancong = Rp58.000 • 3 kotak putu mayang + 5 kotak...
+Jawaban: C. Rp44.000,00
+Penjelasan:
+Substitusi harga kue putu mayang Rp11.000 dan kue pancong Rp14.000 ke sistem persamaan. 3(11.000) + 1(14.000) = Rp47.000. (Catatan: hitung ulang dari sistem 5p+3c=58.000, 3p+5c=62.000)
+Soal 6 | PG | Aljabar
+Memodelkan masalah kontekstual ke dalam bentuk aljabar menggunakan sifat-sifat operasinya (12)
+Stimulus: Rino, Tiko, dan Bayu membeli buku tulis dan pulpen. • Rino: 4 buku tulis + 3 pulpen • Tiko: dua kali lipat dari Rino • Bayu: tiga kali lipat dari Rino...
+Jawaban: A. 24x + 18y
+Penjelasan:
+Rino: 4x+3y, Tiko: 2×(4x+3y)=8x+6y, Bayu: 3×(4x+3y)=12x+9y. Total: (4x+3y)+(8x+6y)+(12x+9y)=24x+18y
+Soal 7 | PG | Aljabar
+Menentukan rumus fungsi linear berdasarkan himpunan pasangan berurutan dari masalah kontekstual (13)
+Stimulus: Naura menggunakan operator "Nusantara Mobile". Paket kuota dan harganya: {(5, 14.000), (10, 23.000), (20, 41.000), (25, 50.000)} Jika x = paket kuota ...
+Jawaban: C. f(x) = 1.800x + 9.000
+Penjelasan:
+Dari pasangan berurutan, hitung slope: (23.000-14.000)/(10-5)=1.800. f(x)=1.800x+b. Gunakan (5,14.000): 14.000=1.800(5)+b → b=9.000
+Soal 8 | PG | Aljabar
+Menentukan suku ke-n dari pola bilangan berdasarkan konfigurasi objek (14)
+Stimulus: Suatu kompleks memiliki pagar rumah dengan pola barisan. Batu bata disusun membentuk segitiga dan persegi panjang. Tingkat 1: 1 segitiga + 1 persegi p...
+Jawaban: C. 20 batu bata
+Penjelasan:
+Tingkat 1: 2, Tingkat 2: 6, Tingkat 3: 12... pola: tingkat n = n(n+1). Tingkat 10: 10×11=110 batu bata
+Soal 9 | PG | Geometri dan Pengukuran
+Menentukan nilai variabel pada sudut dari dua garis berpotongan menggunakan hubungan antar-sudut (16)
+Stimulus: Garis AB dan garis PQ berpotongan di titik Q. Sudut AQP = 72° dan sudut PQB = (4x + 12)°. Nilai x yang tepat adalah...
+Jawaban: B. 24°
+Penjelasan:
+Sudut berpelurus: AQP+PQB=180°. 72°+(4x+12)°=180° → 4x=96° → x=24°
+Soal 10 | PG | Geometri dan Pengukuran
+Menginterpretasikan posisi sisi pada jaring-jaring prisma (17)
+Stimulus: Perhatikan gambar jaring-jaring prisma segitiga. Sisi tutup prisma adalah sisi ABC. Rusuk AC pada sisi tutup akan berhimpit dengan salah satu rusuk pa...
+Jawaban: A. 1
+Penjelasan:
+Dari jaring-jaring prisma segitiga, rusuk AC akan berhimpit dengan rusuk pada sisi tegak nomor 1
+Soal 11 | PG | Geometri dan Pengukuran
+Menentukan besar sudut pada gabungan segitiga dan dua garis sejajar menggunakan hubungan antar-sudut (18)
+Stimulus: Perhatikan gambar dua garis sejajar dipotong transversal. Sudut kiri atas = 68°, sudut kanan atas = 46°. Berapa nilai b?
+Jawaban: C. 112
+Penjelasan:
+Garis sejajar dipotong transversal. Sudut kiri atas=68°, sudut siku di tengah, kanan atas=46°. b=180°-68°=112° (sudut berpelurus) atau b=68°+46°=114° (perhatikan konfigurasi)
+Soal 12 | PG | Geometri dan Pengukuran
+Menyelesaikan permasalahan yang menggunakan konsep teorema Phytagoras (19)
+Stimulus: Pak Anton membangun rumah. Pagar tangga memiliki tinggi per anak tangga = 25 cm, panjang alas tangga = 150 cm. Ada 4 jenis bahan pagar: - Kayu jati 6 ...
+Jawaban: C. Pagar besi
+Penjelasan:
+Tangga: t=25cm, a=150cm. Gunakan Pythagoras: s=√(25²+150²)=√25625≈160cm. Pagar besi 5,5m=550cm cukup (sisa terkecil)
+Soal 13 | PG | Geometri dan Pengukuran
+Menganalisis hubungan posisi antara dua bangun datar setelah mengalami operasi translasi (20)
+Stimulus: Diketahui titik Q = titik K. Segitiga PQR akan ditranslasikan oleh T = (−4, −2). Bayangan segitiga PQR dan segitiga KLM akan saling....
+Jawaban: D. berhimpit
+Penjelasan:
+Translasi T=(-4,-2) membuat bayangan segitiga PQR. Karena Q=K, bayangan dan segitiga KLM akan berhimpit
+Soal 14 | PG | Geometri dan Pengukuran
+Membandingkan luas juring atau panjang busur pada lingkaran (21)
+Stimulus: Perhatikan gambar juring pada lingkaran. Jari-jari = 14 cm, sudut A = 70°, sudut C = 35°, sudut B = 90°-35° = sudut siku. Manakah pernyataan yang bena...
+Jawaban: B. Luas juring C setengah dari luas juring A
+Penjelasan:
+Juring A (70°), B (90°/siku), C (35°). Luas juring sebanding sudut. Luas C = 35/70 × Luas A = 0,5 × Luas A (Luas C setengah dari Luas A)
+Soal 15 | PG | Geometri dan Pengukuran
+Menentukan luas atau keliling persegi panjang lain menggunakan konsep kesebangunan (22)
+Stimulus: Perhatikan dua persegi panjang sebangun. Persegi panjang besar: tinggi 20 cm. Persegi panjang kecil: tinggi 5 cm. Luas persegi panjang besar = 320 cm²...
+Jawaban: B. 18 cm
+Penjelasan:
+Rasio tinggi 20:5=4:1, rasio luas 16:1. Luas kecil: 320/16=20cm². Panjang besar: 320/20=16cm. Panjang kecil: 16/4=4cm. Keliling kecil: 2(4+5)=18cm
+Soal 16 | BS | Aljabar
+Mengidentifikasi unsur-unsur pembentuk suatu bentuk aljabar (6)
+Stimulus: Diketahui bentuk aljabar: 2ab − b² + 3a²b + ab² − 5 Berdasarkan informasi tersebut, tentukan Benar atau Salah pernyataan berikut!
+Jawaban: Terdapat 2 variabel yaitu a dan b.: Benar, Konstanta pada bentuk aljabar tersebut adalah 5.: Salah, Bilangan 2, -1, 3, dan 1 merupakan koefisien.: Benar
+Penjelasan:
+Bentuk aljabar 2ab−b²+3a²b+ab²−5 memiliki: 2 variabel (a,b)✓, konstanta adalah -5 bukan 5✗, koefisien: 2,-1,3,1✓
+Soal 17 | BS | Aljabar
+Mengelompokkan berbagai bentuk penyajian relasi ke dalam fungsi atau bukan fungsi (7)
+Stimulus: Perhatikan diagram panah berikut. A={5,9,13,17}, B={p,q,r,s}. Diagram 1: setiap anggota A dipasangkan ke tepat satu anggota B Diagram 2: ada anggota A...
+Jawaban: Diagram 1: Benar, Diagram 2: Salah, Diagram 3: Benar
+Penjelasan:
+Diagram 1: setiap A ke 1 B (fungsi)✓, Diagram 2: ada A ke 2 B (bukan fungsi)✗, Diagram 3: setiap A ke 1 B (fungsi)✓
+Soal 18 | BS | Aljabar
+Menginterpretasi grafik fungsi linear dan memberikan beberapa kesimpulan (8)
+Stimulus: Pembayaran air PDAM: Biaya pemasangan awal Rp800.000. Tarif berdasarkan banyak air (grafik linear naik dari Rp800.000). Seseorang menghabiskan Rp920.0...
+Jawaban: Jumlah pemakaian air mencapai 60 m³.: Salah, Orang tersebut menghabiskan Rp120.000 jika tanpa pemasangan baru.: Benar, Tarif dapat mencapai 1 juta jika pemakaian air kurang dari 90 m³ dengan pemasangan baru.: Benar
+Penjelasan:
+Dari grafik linear: persamaan f(x)=ax+800.000. Di (60, 920.000): 920.000=60a+800.000 → a=2.000. f(60)=120.000✓, f(90)=980.000<1juta✓
+Soal 19 | BS | Aljabar
+Menyelesaikan permasalahan dengan menerapkan konsep sistem koordinat kartesius (9)
+Stimulus: Pekarangan Rumah Ayunda. Peta koordinat kartesius menunjukkan lokasi tanaman. Ayunda akan menanam pohon mangga di lokasi 1, 3, dan 4 yang masih kosong...
+Jawaban: (9,-2): Benar, (-2,9): Salah, (-9,-9): Benar
+Penjelasan:
+Lokasi kosong: (9,-2)✓ bisa ditanami, (-2,9)✗ ada tanaman, (-9,-9)✓ bisa ditanami
+Soal 20 | BS | Aljabar
+Menyelesaikan permasalahan terkait pola bilangan berdasarkan konfigurasi objek (15)
+Stimulus: Pagar dengan pola barisan segitiga dan persegi panjang. Dua pagar masing-masing 9 tingkat. Persediaan: 60 batu segitiga dan 80 persegi panjang. Apakah...
+Jawaban: Diperlukan tambahan 15 batu-bata segitiga.: Salah, Diperlukan tambahan 28 batu-bata persegi-panjang.: Benar, Diperlukan tambahan total sebanyak 43 batu-bata baik segitiga maupun persegi-panjang.: Salah
+Penjelasan:
+Pagar 9 tingkat: segitiga=(9×10)/2=45, persegi=(9+1)=10. Dua pagar: 90 segitiga, 20 persegi. Diperlukan tambah: 30 segitiga✗, 28 persegi✓, total 43✗
+Soal 21 | BS | Bilangan
+Menganalisis/mengevaluasi beberapa pernyataan berkaitan dengan operasi bilangan berdasarkan informasi (3)
+Stimulus: Rina memiliki voucher cashback: A(25% s/d 100RB), B(5% s/d 200RB), D(40% s/d 20RB). Rina memiliki voucher A, B, dan D. Belanja online dengan 2 transak...
+Jawaban: Voucher D, Total Rp50.000 → cashback terbesar: Benar, Voucher B, Total Rp200.000 → cashback terbesar: Salah, Voucher A, Total Rp2.500.000 → cashback terbesar: Salah
+Penjelasan:
+A (25% max 100RB): Rp50K→12.5K cashback✓ >10K. B (5% max 200RB): Rp50K→2.5K✗ <10K. D (40% max 20RB): Rp50K→cashback hanya 8K✗, A bisa
+Soal 22 | BS | Geometri dan Pengukuran
+Menganalisis/mengevaluasi beberapa pernyataan berkaitan dengan luas permukaaan atau volume bangun ruang (24)
+Stimulus: Pak Dodi pemasok minyak goreng curah. Tangki A: 6dm × 2m × 0,8m. Tangki B: 8dm × 2,2m × 1m. Pak Angga (jeriken 25L) dan Bu Susi (jeriken 30L). Persedi...
+Jawaban: Bu Susi membawa 32 jeriken A dan 22 jeriken B.: Salah, Pak Angga membawa 24 jeriken A dan 44 jeriken B.: Benar, Bu Susi membawa 21 jeriken A dan Pak Angga membawa 40 jeriken B.: Salah
+Penjelasan:
+Penjelasan detil tersedia di kunci jawaban.
+Soal 23 | PG | Data dan Peluang
+Menentukan modus dari kumpulan data yang ada dalam informasi (26)
+Stimulus: Tory kecanduan game online. Dokter merekomendasikan max 7 jam/minggu. Data durasi 12 minggu: 22, 20, 18, 20, 14, 16, 14, 14, 12, 10, 14, 12 jam. Dalam...
+Jawaban: B. 14 jam
+Penjelasan:
+Penjelasan detil tersedia di kunci jawaban.
+Soal 24 | MCMA | Bilangan
+Menyelesaikan permasalahan menggunakan operasi bilangan (2)
+Stimulus: Rina berbelanja online dengan voucher cashback: A: 25% s/d 100RB, B: 5% s/d 200RB, C: 10% s/d 20RB, D: 40% s/d 20RB. Rina membeli hadiah untuk 2 teman...
+Jawaban: Voucher A, Voucher D
+Penjelasan:
+Voucher A: 25% dari Rp50K=Rp12.500✓ >10K. Voucher D: 40% dari Rp20K=Rp8K✓ (max 20K). Jawaban: A dan D
+Soal 25 | MCMA | Geometri dan Pengukuran
+Menyelesaian permasalahan berkaitan dengan luas permukaaan atau volume bangun ruang (23)
+Stimulus: Pak Dodi pemasok minyak goreng curah. Tangki A: 6dm×2m×0,8m, Tangki B: 8dm×2,2m×1m. Minyak B (tangki penuh) dikemas: 300 botol 2L sudah diisi. Sisa di...
+Jawaban: Jumlah kemasan botol lebih banyak dari jeriken.
+Penjelasan:
+Tangki A: 6×2×0.8=9.6m³=9600L. Tangki B: 8×2.2×1=17.6m³=17600L. Total: 27200L. 300 botol 2L=600L, sisa 26600L. Jeriken 5L: 26600/5=5320 kemasan. (Perlu verifikasi perhitungan)
+Soal 26 | MCMA | Data dan Peluang
+Menyelesaikan permasalahan menggunakan konsep rata-rata (mean) (27)
+Stimulus: Tory bermain game online. Data 12 minggu: 22, 20, 18, 20, 14, 16, 14, 14, 12, 10, 14, 12. Dokter membandingkan rata-rata setiap 4 minggu (fase). Fase ...
+Jawaban: Fase pertama berkurang 5,5 jam., Fase akhir berkurang 5,25 jam.
+Penjelasan:
+Fase 1 (minggu 1-4): (22+20+18+20)/4=20. Fase 2 (minggu 5-8): (14+16+14+14)/4=14.5, turun 5.5✓. Fase 3 (minggu 9-12): (12+10+14+12)/4=12, turun 2.5✗ bukan 2.25
+Soal 27 | MCMA | Data dan Peluang
+Memperkirakan jumlah awal suatu objek dari percobaan pengambilan tanpa pengembalian menggunakan konsep peluang (30)
+Stimulus: Seorang guru menyiapkan kertas soal kode A, B, atau C digulung dalam kotak. Jumlah A < B. Guru mengambil 3 kertas kode sama. Sisa = 28 lembar. Jumlah ...
+Jawaban: 11 lembar, 12 lembar
+Penjelasan:
+Jumlah kertas: peluang C=2/7 → C=2k, total=7k. Ambil 3 sama, sisa 7k-3. Jika C=2k: 7k-3=28 → k=31/7 (tidak bulat). Coba B=11: A<11, C>11 gagal. Coba B=12: total 31, sisa 28, peluang C=2/7 → C=8. A<b</b
+Soal 28 | PG | Data dan Peluang
+Menentukan nilai peluang kejadian tunggal (28)
+Stimulus: Suatu paket terdiri dari 20 kotak misteri berisi patung Saka (8) dan Kirana (12). Riana mengambil 3 kotak: 1 Saka + 2 Kirana. Santi akan mengambil 1 k...
+Jawaban: D. 7/17
+Penjelasan:
+Penjelasan detil tersedia di kunci jawaban.
+Soal 29 | PG | Data dan Peluang
+Menghitung peluang kejadian sederhana berdasarkan informasi (29)
+Stimulus: Mesin tetas telur. Penetasan 18 hari. Data telur puyuh: |Usia|Banyak| |2 hari|20| |4 hari|35| |6 hari|30| |8 hari|15| Telur menetas jika usia ≥ 8 hari...
+Jawaban: A. 3/20
+Penjelasan:
+Penjelasan detil tersedia di kunci jawaban.
+Soal 30 | PG | Data dan Peluang
+Menyajikan sebagian data acak dari tabel ke dalam bentuk diagram garis atau batang (25)
+Stimulus: Data produksi karet dan kelapa Indonesia 2018-2024 (juta ton):
+Jawaban: D. Grafik turun dari 3.7 ke 2.6 (karet)
+Penjelasan:
+Penjelasan detil tersedia di kunci jawaban.

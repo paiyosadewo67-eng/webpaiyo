@@ -1,0 +1,311 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Simulasi Asesmen Sumatif 1 — Model TKA
+Bab   : IX-01 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT "SIMULASI ASESMEN SUMATIF BAB 1 BILANGAN BERPANGKAT DAN BENTUK AKAR"
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA nya = Assalamualaikum wr. wb. Yuk ikuti kuis simulasi TKA 2026 BAB PANGKA & BENTUK AKAR di SMPN 1 Bantarkawung oleh Drs. PAIYO melalui tautan berikut:
+https://igatrisna.my.canva.site/simulasi-tka-matematika-bab-pangkat-akar
+Assalamu’alaikum,.. selamat sore, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantun untuk :
+Buatkan Kuis Simulasi  “SIMULASI TKA Matematika SMP/MTs Tahun 2026;  model TKA. dengan Judul “ SIMULASI TKA Matematika SMP/MTs Tahun 2026 SMP NEGERI 1 BANTARKAWUNG " yang tampilannya mirip dengan website simulasi TKA kemendikdasmen. Tujuan game: Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait  elemen Bilangan, Aljabar, Geometri dan Statistika Peluang ;Nama pengembang: [Drs. PAIYO].
+Tahapr 1. Buatkan entri pemain game, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+PERAN AI
+Bertindaklah sebagai Tim Pengembang Game Edukasi, Guru Matematika SMP Indonesia, Ahli Asesmen AKM/TKA, UI/UX Designer, dan Programmer JavaScript profesional.
+Buatlah sebuah game edukasi Escape Room modern dengan kualitas premium.
+Tema :
+Escape Room : Laboratorium Matematika Digital
+Target :
+Siswa SMP Kelas IX
+Materi :
+BAB 1
+✔ Bilangan Berpangkat
+✔ Notasi Ilmiah
+✔ Bentuk Akar
+ALUR GAME
+Siswa terjebak di sebuah laboratorium digital.
+Untuk membuka pintu keluar mereka harus memperoleh
+20 Digital Key
+Setiap jawaban benar
+=
+1 Key
+Semua soal selesai
+↓
+Pintu terbuka
+↓
+Escape berhasil.
+Jika salah
+↓
+Alarm berbunyi
+↓
+Lampu berkedip merah
+↓
+Kesempatan berkurang.
+TAMPILAN
+Gaya :
+Pixar + Futuristic
+Dominasi warna :
+Biru
+Ungu
+Neon
+Animasi :
+Glow
+Particle
+Laser
+Digital Grid
+MENU
+Home
+Petunjuk
+Mulai Game
+Leaderboard
+Pengaturan
+Profil
+Nilai
+Keluar
+KARAKTER
+Guru AI
+Drs. Paiyo
+berfungsi memberi petunjuk.
+Robot Matematika
+memberikan misi.
+Avatar siswa
+bebas dipilih.
+SISTEM LEVEL
+Level 1
+10 soal Pemahaman Konsep
+↓
+Level 2
+6 soal Aplikasi
+↓
+Level 3
+4 soal HOTS
+↓
+Final Escape
+JUMLAH SOAL
+20 soal
+dengan rincian
+A.
+10 Soal Pemahaman Konsep
+Materi
+Bilangan Berpangkat
+Notasi Ilmiah
+Bentuk Akar
+B.
+6 soal
+Aplikasi dalam kehidupan sehari-hari
+Contoh
+Astronomi
+Teknologi
+Fisika
+Kesehatan
+Ekonomi
+Lingkungan
+C.
+4 soal HOTS
+Analisis
+Evaluasi
+Pemecahan Masalah
+Penalaran
+Model TKA
+MODEL SOAL
+MODEL 1
+Pilihan Ganda
+50 %
+Generated otomatis
+Format
+Stimulus
+Pertanyaan
+A
+B
+C
+D
+Jawaban
+Pembahasan
+MODEL 2
+Pilihan Ganda Kompleks
+Benar / Salah
+25 %
+Gunakan tabel.
+Contoh
+Pernyataan | Benar | Salah
+.... | ○ | ○
+.... | ○ | ○
+.... | ○ | ○
+Setelah tabel
+Tuliskan
+Kunci
+Pembahasan
+MODEL 3
+MCMA
+Multiple Choice Multiple Answer
+25%
+Empat pilihan
+Lebih dari satu benar.
+Gunakan tabel.
+Pernyataan | Dipilih
+A | □
+B | □
+C | □
+D | □
+Di bawah tabel
+Tuliskan
+Jawaban benar
+Pembahasan
+DISTRIBUSI OTOMATIS
+10 soal
+Model 1
+5 soal
+Model 2
+5 soal
+Model 3
+STIMULUS
+Setiap soal WAJIB mempunyai stimulus berbeda.
+Tidak boleh ada stimulus yang sama.
+Gunakan tipe AKM/TKA.
+Stimulus dapat berupa
+Narasi
+Artikel singkat
+Infografik
+Grafik
+Diagram
+Tabel
+Foto
+Ilustrasi
+Berita
+Komik
+Data
+Kasus
+Eksperimen
+Poster
+ILUSTRASI
+Jika diperlukan
+AI harus membuat ilustrasi SVG otomatis.
+Misalnya
+Grafik batang
+Diagram
+Koordinat
+Bangun geometri
+Pohon faktor
+Diagram alur
+Infografis
+Flowchart
+Semua ilustrasi dibuat menggunakan
+SVG
+responsive
+tanpa gambar bitmap.
+KUALITAS SOAL
+Gunakan indikator TKA.
+Minimal level Bloom
+C2
+hingga
+C6.
+Tidak boleh soal hafalan.
+Semua soal kontekstual.
+STRUKTUR OUTPUT SOAL
+Nomor
+Kompetensi
+Level Kognitif
+Indikator
+Stimulus
+(Ilustrasi SVG bila perlu)
+Pertanyaan
+Pilihan Jawaban
+Jawaban
+Pembahasan
+Skor
+FITUR GAME
+Timer
+90 menit
+Progress Bar
+Digital Key
+XP
+Badge
+Combo Score
+Sound
+Animasi
+Confetti
+Hint
+Maksimal
+3 kali.
+RANDOMISASI
+Acak
+Nomor soal
+Pilihan jawaban
+Stimulus
+Urutan level
+Setiap refresh
+Soal berubah.
+PENILAIAN
+Nilai otomatis
+Skor
+Persentase
+Predikat
+Analisis materi
+Rekomendasi belajar
+LAPORAN
+Di akhir game tampil
+Jumlah benar
+Jumlah salah
+Nilai
+Materi yang belum dikuasai
+Pembahasan seluruh soal
+Download PDF
+Download Excel
+Cetak Sertifikat
+TEKNOLOGI
+HTML5
+CSS3
+JavaScript ES6
+Tanpa framework
+Responsive
+Offline
+PWA Ready
+Dark Mode
+Auto Save
+Local Storage
+EFEK VISUAL
+Background Particles
+Neon
+Laser Door
+Door Unlock Animation
+Robot AI
+Glow Button
+Hover Animation
+Typing Effect
+Sound Effect
+AI GENERATOR SOAL
+Soal dibuat otomatis berdasarkan parameter berikut.
+Input
+Materi
+Jumlah Soal
+Persentase Tingkat Kesulitan
+Persentase Model Soal
+Output
+Selalu berbeda
+Tidak ada soal yang sama.
+OUTPUT PROGRAM
+AI menghasilkan:
+index.html
+style.css
+script.js
+bank_soal.js
+svg_assets.js
+audio
+README.md
+Dokumentasi lengkap
+Panduan guru
+Mudah diintegrasikan ke Google AI Studio, Google Flow, Canva AI Code maupun GitHub Pages.
+📋 Pembahasan Soal
+✅ Soal 1C2 | Bilangan Berpangkat
+Dalam teknologi penyimpanan data, kapasitas memori komputer sering dinyatakan dalam pangkat 2. Misal...
+📝 Sifat pangkat: aᵐ × aⁿ = aᵐ⁺ⁿ, jadi 3⁴ × 3² = 3⁶ = 729
+❌ Soal 2C3 | Notasi Ilmiah
+Data populasi beberapa negara disajikan dalam notasi ilmiah. Tentukan pernyataan yang BENAR....
+📝 3,2×10⁵=320.000 < 2,8×10⁶=2.800.000 ✗. 4,5×10³=4500 ✓. 0,007=7×10⁻³ ✓. 5600=5,6×10³ ✗
+✅ Soal 3C2 | Bilangan Berpangkat
+Pak Drs. Paiyo menjelaskan sifat-sifat bilangan berpangkat di kelas IX. Berikut pernyataan siswa ten...
+📝 a⁰=1 ✓. a⁻ⁿ = 1/aⁿ (bukan -aⁿ) ✗. (ab)ⁿ = aⁿbⁿ ✓
+✅ Soal 4C3 | Bentuk Akar

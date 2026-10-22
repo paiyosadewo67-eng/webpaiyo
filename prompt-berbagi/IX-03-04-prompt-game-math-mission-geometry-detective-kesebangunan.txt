@@ -1,0 +1,345 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Math Mission Geometry Detective — Kesebangunan
+Bab   : IX-03 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+Prompt game edukasi interaktif bergaya “Math Mission  Geometry Detective”
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA : “ Assalamu'alaikum!  “ AAAMAT KEREN “GEOMETRY MISSION MISI KESEBANGUNAN & KEKONGRUENAN”👨‍🏫 Pengembang: Drs. PAIYO! Ayo mainkan game detektif matematika pemecahan kasus kesebangunan ini dan dapatkan gelar 🏆 MASTER GEOMETRI ; Dengan klik Link :
+https://ais-pre-2peo7q6vhfkbqmhja2zalr-253889415088.asia-east1.run.app
+Daftar Nilainya :
+Assalamu’alaikum,...Selamat sore, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat game  “ AAAMAT KEREN “GEOMETRY MISSION MISI KESEBANGUNAN & KEKONGRUENAN”
+. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+BUATKAN GAME EDUKASI MATEMATIKA INTERAKTIF BERBASIS WEB DENGAN JUDUL:
+🎮 AAAMAT KEREN
+“GEOMETRY MISSION”
+MISI KESEBANGUNAN & KEKONGRUENAN
+Target:
+Siswa SMP Kelas IX / Fase D.
+Konsep:
+Game petualangan matematika bertema DETEKTIF GEOMETRI. Pemain harus menyelesaikan 5 misi untuk menjadi:
+🏆 MASTER KESEBANGUNAN & KEKONGRUENAN
+Gunakan desain visual modern, futuristik, edukatif, menyenangkan, dan sangat menarik bagi siswa SMP.
+==================================================
+HALAMAN PEMBUKA
+==================================================
+Tampilkan:
+AAAMAT KEREN
+GEOMETRY MISSION
+🔎 MISI KESEBANGUNAN & KEKONGRUENAN
+Subjudul:
+“Temukan bukti. Hitung perbandingan. Pecahkan kasus.”
+Visual:
+Laboratorium matematika futuristik
+Papan digital hologram
+Bangun datar segitiga, persegi panjang, dan berbagai bentuk geometri
+Robot AAAMAT KEREN sebagai pemandu
+Efek neon biru–ungu
+Ikon kaca pembesar, target, perisai, dan bintang
+Tombol besar:
+▶ MULAI MISI
+Buat peta perjalanan dengan 5 level:
+🔎 MISI 1 — DETEKSI BENTUK
++50 XP
+🎯 MISI 2 — CARI BUKTI
++75 XP
+📐 MISI 3 — UJI PERBANDINGAN
++100 XP
+🧩 MISI 4 — PECAHKAN KASUS
++125 XP
+👑 FINAL MISSION — MASTER GEOMETRI
++150 XP
+Tampilkan:
+XP pemain
+Progress bar
+Level
+Badge yang telah diperoleh
+Jumlah misi selesai
+Misi berikutnya terkunci sebelum misi sebelumnya selesai.
+Tujuan:
+Menentukan pasangan bangun yang SEBANGUN atau KONGRUEN.
+Buat beberapa soal visual.
+Contoh:
+Diberikan beberapa pasangan segitiga dengan ukuran berbeda.
+Pertanyaan:
+“Pasangan manakah yang sebangun?”
+Pilihan:
+A. Pasangan A
+B. Pasangan B
+C. Pasangan C
+D. Pasangan D
+Sediakan interaksi:
+Klik jawaban
+Animasi benar/salah
+Penjelasan otomatis
+Jika benar:
+🎉 BENAR!
++50 XP
+Jika salah:
+“Belum tepat. Periksa kembali bentuk dan perbandingan sisi.”
+Setelah berhasil:
+🏅 BADGE TERBUKA
+“DETEKTIF BENTUK”
+Deskripsi:
+“Berhasil mengidentifikasi pasangan bangun.”
+Tujuan:
+Menentukan sisi dan sudut yang bersesuaian.
+Tampilkan dua bangun yang sebangun/kongruen.
+Gunakan sistem DRAG & DROP.
+Contoh:
+Tarik sisi AB ke sisi yang bersesuaian.
+Tarik sudut A ke sudut yang bersesuaian.
+Berikan warna/indikator visual untuk pasangan yang cocok.
+Setelah selesai:
+🎉 MISI BERHASIL!
++75 XP
+🏅 BADGE:
+“PEMBURU PERBANDINGAN”
+Deskripsi:
+“Berhasil menentukan sisi dan sudut bersesuaian.”
+Tujuan:
+Menghitung faktor skala.
+Tampilkan dua bangun sebangun dengan beberapa ukuran sisi.
+Contoh:
+Bangun A:
+panjang = 6 cm
+lebar = 4 cm
+Bangun B:
+panjang = 9 cm
+lebar = 6 cm
+Pertanyaan:
+“Berapakah faktor skala dari Bangun A ke Bangun B?”
+Berikan pilihan jawaban.
+Tambahkan kalkulator sederhana yang dapat digunakan siswa.
+Jika benar:
+🎉 FAKTOR SKALA TERIDENTIFIKASI!
++100 XP
+Buka badge:
+🏅 “PEMBURU PERBANDINGAN”
+Gunakan masalah kontekstual kehidupan nyata.
+Contoh konteks:
+📸 FOTO & PEMBESARAN
+Sebuah foto diperbesar dengan tetap mempertahankan bentuknya.
+atau:
+🏗️ MINIATUR BANGUNAN
+Sebuah model gedung dibuat dengan skala tertentu.
+atau:
+🗺️ PETA
+Jarak pada peta dibandingkan dengan jarak sebenarnya.
+Siswa harus:
+Membaca stimulus.
+Menentukan informasi penting.
+Menentukan pasangan sisi bersesuaian.
+Menentukan faktor skala.
+Menghitung ukuran yang belum diketahui.
+Menuliskan alasan.
+Gunakan sistem:
+🔍 ANALISIS
+📐 HITUNG
+🧠 SIMPULKAN
+Jika berhasil:
++125 XP
+🏅 BADGE:
+“ANALIS GEOMETRI”
+Tampilkan layar dramatis:
+⚠️ FINAL MISSION
+“MASTER GEOMETRI”
++150 XP
+Berikan soal HOTS dengan stimulus kontekstual.
+Karakteristik soal:
+Memerlukan analisis.
+Tidak hanya substitusi rumus.
+Menggunakan informasi visual.
+Memerlukan perbandingan.
+Meminta siswa memberikan argumentasi matematis.
+Dapat menggunakan pilihan ganda kompleks atau jawaban terbuka.
+Contoh tipe kasus:
+Dua desain taman memiliki bentuk yang sama tetapi ukurannya berbeda. Siswa harus menentukan apakah kedua desain benar-benar sebangun berdasarkan data panjang sisi dan besar sudut.
+Pertanyaan lanjutan:
+“Apakah kesimpulan tersebut selalu benar?”
+“Buktikan alasanmu berdasarkan konsep kesebangunan.”
+Sistem penilaian:
+🟢 Jawaban benar + argumentasi lengkap
++150 XP
+🟡 Jawaban benar tetapi argumentasi kurang lengkap
++100 XP
+🔴 Jawaban belum tepat
++50 XP
+Setelah berhasil:
+🏆 MASTER KESEBANGUNAN & KEKONGRUENAN
+Deskripsi:
+“Berhasil menyelesaikan seluruh misi dan mampu menjelaskan alasan matematis.”
+Buat halaman khusus:
+🏅 MY BADGES
+Badge 1:
+🔎 DETEKTIF BENTUK
+Syarat:
+Berhasil mengidentifikasi pasangan bangun.
+Badge 2:
+📐 PEMBURU PERBANDINGAN
+Syarat:
+Berhasil menentukan faktor skala.
+Badge 3:
+🧠 ANALIS GEOMETRI
+Syarat:
+Berhasil menyelesaikan masalah kesebangunan.
+Badge 4:
+🔍 PENGUJI BUKTI
+Syarat:
+Berhasil menemukan kesalahan dalam suatu argumen.
+Badge 5:
+🏆 MASTER KESEBANGUNAN & KEKONGRUENAN
+Syarat:
+Menyelesaikan seluruh misi dan mampu menjelaskan alasan matematis.
+Gunakan efek animasi ketika badge diperoleh.
+Gunakan total XP maksimum:
+50 + 75 + 100 + 125 + 150 = 500 XP
+Level:
+0–99 XP
+🔎 GEOMETRY ROOKIE
+100–199 XP
+📐 GEOMETRY EXPLORER
+200–299 XP
+🧠 GEOMETRY ANALYST
+300–399 XP
+🔍 GEOMETRY DETECTIVE
+400–499 XP
+⚡ GEOMETRY EXPERT
+500 XP
+🏆 MASTER GEOMETRI
+Tampilkan progress bar XP secara real-time.
+Jangan hanya memberi informasi “BENAR” atau “SALAH”.
+Setiap jawaban harus memberikan:
+✅ Jawaban
+📐 Konsep matematika
+🧠 Alasan
+💡 Tips
+Contoh:
+“Benar. Kedua bangun sebangun karena sudut-sudut bersesuaian sama besar dan perbandingan sisi-sisi bersesuaian tetap.”
+Jika salah:
+“Coba periksa kembali pasangan sisi bersesuaian. Kesebangunan membutuhkan bentuk yang sama dengan ukuran yang dapat berbeda.”
+Tampilkan:
+XP
+Skor
+Jumlah jawaban benar
+Jumlah percobaan
+Badge
+Progress misi
+Di akhir tampilkan:
+🎉 MISSION COMPLETE!
+Nama:
+[Input nama siswa]
+Total XP:
+___ / 500
+Skor:
+___ / 100
+Badge:
+___ / 5
+Berikan predikat:
+90–100 = MASTER GEOMETRI
+80–89 = AHLI GEOMETRI
+70–79 = PENJELAJAH GEOMETRI
+<70 = LATIHAN LAGI
+Setelah semua misi selesai, tampilkan:
+🪞 REFLEKSI MASTER GEOMETRI
+Pertanyaan:
+Apa perbedaan utama antara bangun sebangun dan kongruen?
+Bagaimana menentukan sisi yang bersesuaian?
+Bagaimana cara menentukan faktor skala?
+Mengapa argumentasi matematis penting?
+Bagian misi mana yang paling menantang?
+Sediakan kotak jawaban siswa.
+Game harus:
+Responsive untuk laptop, tablet, dan HP.
+Bisa digunakan di browser.
+Navigasi sederhana.
+Tombol besar dan jelas.
+Animasi ringan.
+Tidak membutuhkan instalasi.
+Progress otomatis tersimpan selama sesi.
+Soal dapat diacak.
+Feedback langsung.
+XP otomatis bertambah.
+Badge otomatis terbuka.
+Tersedia tombol RESET GAME.
+Tersedia tombol ULANGI MISI.
+Gunakan gaya:
+🎮 Futuristic Educational Game
+🌌 Geometry Laboratory
+🔵 Neon holographic interface
+🤖 Robot AAAMAT KEREN
+📐 3D geometric objects
+✨ Particle effects
+🏆 Achievement system
+Warna dominan:
+Biru neon
+Ungu
+Cyan
+Putih
+Dark navy
+Namun tetap prioritaskan keterbacaan teks.
+Gunakan font modern, tebal, dan mudah dibaca.
+Gunakan robot:
+🤖 AAAMAT KEREN
+Sebagai mentor/pemandu.
+Dialog contoh:
+“Selamat datang, Detektif Geometri!”
+“Lihat baik-baik. Bentuk boleh berbeda ukuran, tetapi apakah perbandingannya tetap sama?”
+“Jangan terburu-buru. Cari bukti matematisnya!”
+“Hebat! Kamu berhasil menemukan faktornya.”
+“Sekarang saatnya menghadapi FINAL MISSION!”
+Tambahkan:
+Efek suara ketika jawaban benar.
+Efek suara lembut ketika jawaban salah.
+Suara kemenangan saat badge terbuka.
+Musik latar futuristik yang tidak mengganggu konsentrasi.
+Animasi XP bertambah.
+Animasi progress bar.
+Animasi badge terbuka.
+Confetti ketika seluruh misi selesai.
+Sediakan tombol:
+🔊 AUDIO ON/OFF
+Game harus tetap berorientasi pada pembelajaran matematika.
+Fokus konsep:
+KESEBANGUNAN:
+Bentuk sama.
+Sudut bersesuaian sama besar.
+Sisi bersesuaian memiliki perbandingan yang sama.
+Faktor skala.
+KEKONGRUENAN:
+Bentuk dan ukuran sama.
+Sisi bersesuaian sama panjang.
+Sudut bersesuaian sama besar.
+Gunakan pendekatan:
+HOTS
+Numerasi
+Pemecahan masalah
+Penalaran
+Argumentasi matematis
+Jangan membuat game sekadar permainan tebak jawaban.
+Setiap tantangan harus membantu siswa memahami konsep.
+Jika semua misi berhasil:
+🎉 CONGRATULATIONS!
+🏆 MASTER KESEBANGUNAN
+& KEKONGRUENAN
+“Bukan hanya menemukan jawaban,
+tetapi mampu membuktikan alasan matematisnya.”
+Tampilkan:
+⭐⭐⭐⭐⭐
+TOTAL XP: 500 / 500
+BADGES: 5 / 5
+STATUS:
+🏆 MASTER GEOMETRI
+Tombol:
+🔁 MAIN LAGI
+📊 LIHAT HASIL
+🪞 REFLEKSI
+🏠 KEMBALI KE MENU
+Pastikan seluruh game terasa seperti sebuah PETUALANGAN MATEMATIKA, bukan sekadar kumpulan soal.
+Bonus ide AAAMAT KEREN: game ini akan jauh lebih hidup kalau setiap misi dibuat seperti “ruang kasus”—Misi 1 di Geometry Scanner, Misi 2 di Evidence Room, Misi 3 di Scale Lab, Misi 4 di Case Investigation Room, lalu Final Mission di Master Geometry Chamber. Jadi siswa merasa sedang naik level sebagai detektif matematika. 🔎📐🤖🏆

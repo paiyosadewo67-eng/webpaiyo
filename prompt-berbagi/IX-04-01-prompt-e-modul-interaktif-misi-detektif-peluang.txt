@@ -1,0 +1,629 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt E-Modul Interaktif Misi Detektif — Peluang
+Bab   : IX-04 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT E-MODUL DIGITAL INTERAKTIF MISI DEDEKTIF MENGUNGKAP RAHASIA PELUANG DARI SUATU KEJADIAN
+Link Share WA : “ Assalamu'alaikum! Halo Sobat Matematika 🚀Ayo bergabung di E-Modul Digital Interaktif Matematika Kelas IX “MENGUNGKAP RAHASIA PELUANG DARI SUATU KEJADIAN”🏫 SMP Negeri 1 Bantarkawung Kabupaten Brebes👨‍🏫 Pengembang: Drs. PAIYO; Klik tautan resmi untuk mulai bermain & belajar:
+https://ais-pre-536wk2vbfxftujudnsypnb-253889415088.asia-east1.run.app
+Assalamu'alaikum! 👋 Ayo pelajari E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP RAHASIA PELUANG DARI SUATU KEJADIAN”
+bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+Kunjungi langsung: https://ais-pre-536wk2vbfxftujudnsypnb-253889415088.asia-east1.run.app
+Assalamu’alaikum,.. selamat malam chatgpt, saya Drs. Paiyo guru SMP Negeri 1 Bantarkawung Minta bantuan :
+Buatlah sebuah E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP RAHASIA PELUANG DARI SUATU KEJADIAN”
+E-modul dirancang berbasis Problem Based Learning (PBL) untuk meningkatkan kemampuan berpikir kritis siswa kelas IX SMP pada materi Peluang suatu Kejadian
+A. KARAKTERISTIK E-MODUL
+Buat e-modul dengan ketentuan:
+Sasaran: Siswa kelas IX SMP/MTs.
+Alokasi: 5 kali pertemuan.
+BAB PELUANG
+A.	CAPAIAN PEMBELAJARAN (CP) NOMOR : 32 TAHUN 2024
+Pada akhir fase D,
+peserta didik dapat membandingkan peluang terjadinya suatu kejadian dari berbagai percobaan yang berbeda, serta menjelaskan interpretasi masing-masing. Memahami konsep peluang empiris sebagai frekuensi relatif dari suatu kejadian.
+Melakukan percobaan sederhana untuk menentukan peluang empiris suatu kejadian.
+Menghitung dan menginterpretasikan nilai peluang empiris dari suatu percobaan.
+Memecahkan masalah kontekstual yang berkaitan dengan peluang empiris.
+B. 	LINTAS DISIPLIN ILMU
+Ilmu Pengetahuan Alam (IPA): Genetika (peluang pewarisan sifat), fisika (peluang partikel), Percobaan ilmiah, pengumpulan data, dan analisis hasil, Konsep peluang dan frekuensi harapan digunakan dalam percobaan ilmiah (misalnya, genetika, probabilitas hasil eksperimen).
+Ilmu Pengetahuan Sosial (IPS): Survei, demografi (peluang kejadian sosial), Analisis data survei atau jajak pendapat, statistik kependudukan sederhana, Prediksi permintaan produk, perkiraan keuntungan berdasarkan probabilitas, analisis risiko.
+Ekonomi/Bisnis: Asuransi, investasi, analisis risiko.
+Olahraga: Peluang menang dalam pertandingan, strategi permainan.
+Teknologi Informasi dan Komunikasi (TIK): Penggunaan spreadsheet (Excel/Google Sheets) untuk mengelola data dan menghitung peluang, simulasi percobaan menggunakan aplikasi atau situs web.
+Statistika: Frekuensi harapan adalah dasar dalam inferensi statistik dan pengambilan keputusan berbasis data.
+Ilmu Komputer: Simulasi probabilitas dan algoritma random.
+C. 	TUJUAN PEMBELAJARAN
+Pertemuan 1 (2 JP): Ruang Sampel dan Kejadian
+T.1: Peserta didik dapat mengidentifikasi kejadian-kejadian yang melibatkan ketidakpastian dalam kehidupan sehari-hari dengan tepat.
+T.2: Peserta didik dapat menentukan ruang sampel dari suatu percobaan dengan mendaftar semua kemungkinan hasil secara cermat.
+T.3: Peserta didik dapat mengidentifikasi titik sampel dan kejadian dari suatu percobaan dengan benar.
+Pertemuan 2 (2 JP): Peluang Teoritis dan Frekuensi Relatif
+T.4: Peserta didik dapat menghitung peluang teoritis suatu kejadian sederhana dengan rumus yang benar.
+T.5: Peserta didik dapat melakukan percobaan peluang sederhana (misalnya, pelemparan koin/dadu) dan menentukan frekuensi relatif kejadian secara mandiri.
+T.6: Peserta didik dapat membandingkan peluang teoritis dengan frekuensi relatif dari suatu percobaan serta menjelaskan perbedaannya dengan logis.
+Pertemuan 3 (2 JP): Pengenalan Peluang Empiris dan Percobaan Sederhana
+T.7: Peserta didik mampu menjelaskan pengertian peluang empiris berdasarkan percobaan yang dilakukan dengan tepat.
+T.8:Peserta didik mampu melakukan percobaan sederhana (misalnya, melempar koin atau dadu) untuk mengumpulkan data frekuensi kejadian dengan teliti.
+T.9:Peserta didik mampu menghitung peluang empiris suatu kejadian dari data hasil percobaan dengan benar.
+Pertemuan 4 (2 JP): Aplikasi Peluang Empiris dan Interpretasi Hasil
+T.10:Peserta didik mampu membandingkan peluang empiris dengan peluang teoritis (jika relevan) dan mengidentifikasi faktor-faktor yang memengaruhinya melalui diskusi kelompok.
+T.11:Peserta didik mampu menginterpretasikan nilai peluang empiris dalam berbagai konteks kehidupan nyata dengan logis.
+T.12:Peserta didik mampu menyelesaikan masalah kontekstual yang melibatkan perhitungan dan interpretasi peluang empiris dengan cermat.
+Pertemuan 5 (2 JP): Frekuensi Harapan
+T.13:Peserta didik dapat mengidentifikasi perbedaan antara frekuensi relatif dan frekuensi harapan dengan tepat.
+T.14:Peserta didik dapat merumuskan konsep frekuensi harapan suatu kejadian secara mandiri berdasarkan pemahaman peluang dan jumlah percobaan.
+T.15:Peserta didik dapat menghitung frekuensi harapan suatu kejadian dengan benar dalam berbagai konteks masalah.
+T.16:Peserta didik dapat menginterpretasikan makna hasil perhitungan frekuensi harapan dalam kehidupan sehari-hari secara rasional.
+Setiap pertemuan dirancang untuk pembelajaran sekitar 2 × 40 menit.
+Pendekatan utama: Problem Based Learning (PBL).
+Fokus kemampuan: berpikir kritis.
+Gunakan bahasa Indonesia yang sederhana, komunikatif, dan sesuai perkembangan siswa SMP.
+Materi disajikan secara bertahap dari konkret menuju abstrak.
+Gunakan permasalahan kehidupan sehari-hari sebagai konteks utama.
+Hindari pembelajaran yang hanya berisi definisi dan rumus.
+Siswa harus aktif mengamati masalah, mengidentifikasi informasi, membuat dugaan, melakukan perhitungan, memberikan alasan, mengevaluasi strategi, dan menarik kesimpulan.
+Sertakan aktivitas interaktif, kuis, pertanyaan HOTS, refleksi, dan evaluasi.
+Gunakan desain visual modern dengan kombinasi warna biru, hijau, putih, dan oranye.
+Gunakan ikon matematika, ilustrasi kehidupan sehari-hari, diagram, tabel, kartu aktivitas, infografis, dan elemen visual yang menarik.
+Pastikan tampilan tidak terlalu padat sehingga nyaman dibaca melalui smartphone, tablet, maupun laptop.
+Assalamu’alaikum,...Selamat malam, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP RAHASIA PELUANG DARI SUATU KEJADIAN”
+Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+Buatkan: 📘 E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP “MENGUNGKAP RAHASIA PELUANG DARI SUATU KEJADIAN”
+E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP/MTs
+Berbasis Problem Based Learning (PBL)
+Untuk Meningkatkan Kemampuan Berpikir Kritis Peserta Didik
+SMP NEGERI 1 BANTARKAWUNG KABUPATEN BREBES
+TOKOH UTAMA:
+1. Guru matematika laki-laki Indonesia memakai SERAGAM BREBESAN hitam khas Brebes seperti foto referensi, lengkap tanda pengenal guru, peci batik Brebesan hitam putih, wajah ramah berwibawa, duduk di meja digital modern di rumah sambil mengoperasikan papan pembelajaran hologram dengan tampilan " Link share wa =
+Assalamu'alaikum! 👋 Ayo pelajari E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP RAHASIA KEKONGRUENAN DAN KESEBANGUNAN”
+bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+ Ekspresi inspiratif, hangat, profesional, seperti guru kreatif modern Indonesia.
+2. Anis → siswi SMP berhijab biru muda, duduk santai di meja digital belajar mandiri di rumah, aktif membuka fitur pembelajarandengan tampilan " Link share wa =
+Assalamu'alaikum! 👋 Ayo pelajari E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP RAHASIA KEKONGRUENAN DAN KESEBANGUNAN”
+bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+3. Muhammad Attariq → siswa SMP berpakaian rapi sopan, duduk di meja digital futuristik di teras rumah, aktif belajar mandiri dengan tampilan hologram dengan tampilan " Link share wa =
+Assalamu'alaikum! 👋 Ayo pelajari E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP RAHASIA KEKONGRUENAN DAN KESEBANGUNAN”
+bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+
+WAJIB menggunakan wajah guru MENYERUPAI foto referensi yang diupload:
+- wajah asli Indonesia
+- senyum ramah
+- kumis dan jenggot tipis
+- peci Brebesan hitam putih
+- seragam Brebesan hitam elegan
+- memakai ID card guru
+prompt /imagine prompt: A wide-angle 3D Pixar aesthetic diorama render of a warm wooden classroom in rural Indonesia. In the center, a smiling Indonesian math teacher named Drs. Paiyo wearing traditional black Brebesan attire and batik blangkon, sitting at a glowing holographic glass desk filled with neon geometric wireframes, glowing math formulas, and a cute mini AI robot. On the left, a schoolgirl in hijab (Anis) studying on a glowing holographic interface. On the right, a polite schoolboy (Muhammad Attariq) interacting with floating 3D math prisms. Above, a glowing wooden banner "AAAMAT KEREN - ASAH ASIH ASUH MATEMATIKA". Warm sunlight, rich wood tones, cinematic lighting, Unreal Engine 5 render, highly detailed . --ar 16:9 Lumen global illumination, Nanite geometry, Raytraced reflections, 8k Octane render, Isometric 3D Diorama. Guru dan siswa beda rumah, Guru di "Sanggar Belajar Mandiri Siswa AAAMAT KEREN", Anis berada di ruang kamar rumahnya, sedangkan Atta di teras rumahnya. Terimakasih atas solusinya
+Teks yang tampil di layar:
+TEMA UTAMA :
+" E-MODUL DIGITAL INTERAKTIF “MENGUNGKAP RAHASIA KEKONGRUENAN DAN KESEBANGUNAN” MATEMATIKA KELAS IX SMP”bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+HEADER UTAMA:
+Di bagian atas terdapat papan judul besar warna hitam doff glossy dengan bingkai kayu modern dan baut logam futuristik.
+Tulisan glowing neon 3D warna kuning-oranye terang:
+“AAAMAT KEREN”
+Subjudul:
+“ASAH ASIH ASUH MATEMATIKA”
+“KREATIF – EKSPLORATIF – REPRESENTATIF – EKSLEN – NO DROP”
+
+FITUR TOMBOL INTERAKTIF BESAR DAN MENYALA:
+1. BERANDA (MULAI BELAJAR)
+2. TUJUAN PEMBELAJARAN (PETA BELAJAR)
+3. VIDEO PEMBELAJARAN
+4. E-MODUL (8 Pertemuan)
+5. ESCAPE ROOM HOTS
+6. KUIS FORMATIF (ASESMEN SUMATIF)
+7. EVALUASI AKHIR 
+8. AUDIO PEMBELAJARAN ICE BREAKING
+9. RAPOR DIGITAL
+
+SLOGAN PENUTUP BESAR:
+“BELAJAR MATEMATIKA JADI MUDAH, MODERN, dan… AAAMAT KEREN!”
+“MATEMATIKA…!” → “AAAMAT KEREN!”
+“ASAH… ASIH… ASUH… MATEMATIKA”
+STYLE VISUAL:
+Pixar animation style, Unreal Engine 5 render, cinematic educational diorama, ultra detail miniature scene, glowing holographic UI, Indonesia modern smart classroom, highly detailed character expression, depth of field, realistic material texture, warm ambient light, inspirational atmosphere, premium educational poster design.
+
+NEGATIVE PROMPT:
+blur, low quality, extra fingers, distorted face, dark board, unreadable text, messy layout, horror style, gloomy atmosphere, duplicated objects, low contrast, flat lighting, cropped body, unrealistic anatomy, dull color, low resolution, watermark, broken hands, asymmetrical eyes
+HALAMAN SAMBUTAN
+👋 SELAMAT DATANG, DETEKTIF PELUANG!
+Pernahkah kamu bertanya:
+Apakah besok akan turun hujan?
+Berapa kemungkinan muncul angka tertentu ketika sebuah dadu dilempar?
+Mengapa hasil percobaan kadang berbeda dengan perkiraan?
+Jika sebuah permainan dilakukan 100 kali, berapa kali kira-kira suatu kejadian akan muncul?
+Semua pertanyaan tersebut berhubungan dengan peluang.
+Dalam modul ini kamu tidak hanya akan belajar rumus. Kamu akan menjadi Detektif Peluang yang bertugas mengamati kejadian, mengumpulkan data, melakukan percobaan, menghitung, membandingkan, memberikan alasan, dan menarik kesimpulan berdasarkan bukti.
+Misi utama kita:
+AMATI → TANYAKAN → SELIDIKI → HITUNG → BUKTIKAN → EVALUASI → SIMPULKAN
+Selamat menjalankan misi!
+Drs. PAIYO
+Guru Matematika
+SMP Negeri 1 Bantarkawung Kabupaten Brebes
+PETUNJUK PENGGUNAAN E-MODUL
+🏠 1. BERANDA
+Gunakan tombol Beranda untuk kembali ke halaman utama.
+🗺️ 2. PETA BELAJAR
+Ikuti perjalanan belajar dari Pertemuan 1 sampai Pertemuan 5.
+🔎 3. MISI
+Setiap pertemuan memiliki masalah nyata yang harus diselesaikan.
+🧠 4. BERPIKIR KRITIS
+Jangan hanya menuliskan jawaban. Selalu sertakan alasan dan bukti.
+🎯 5. KUIS
+Kerjakan kuis setelah mempelajari konsep.
+🪞 6. REFLEKSI
+Tuliskan apa yang telah kamu pahami dan bagian yang masih membingungkan.
+CAPAIAN PEMBELAJARAN
+Pada akhir Fase D, peserta didik diharapkan mampu membandingkan peluang terjadinya suatu kejadian dari berbagai percobaan yang berbeda serta menjelaskan interpretasinya, memahami peluang empiris sebagai frekuensi relatif suatu kejadian, melakukan percobaan sederhana, menghitung dan menginterpretasikan peluang empiris, serta memecahkan masalah kontekstual yang berkaitan dengan peluang empiris.
+LINTAS DISIPLIN ILMU
+🔬 IPA
+Peluang digunakan dalam percobaan ilmiah, genetika, pengumpulan data, dan analisis hasil eksperimen.
+🌎 IPS
+Peluang dapat digunakan dalam survei, demografi, jajak pendapat, dan analisis data sosial.
+💰 EKONOMI/BISNIS
+Peluang digunakan dalam analisis risiko, asuransi, investasi, dan perkiraan permintaan.
+⚽ OLAHRAGA
+Peluang dapat membantu menganalisis hasil pertandingan dan strategi permainan.
+💻 TIK
+Excel atau Google Sheets dapat digunakan untuk mengumpulkan data, membuat tabel, menghitung frekuensi relatif, dan melakukan simulasi.
+📊 STATISTIKA
+Peluang berkaitan erat dengan pengumpulan data, frekuensi, interpretasi, dan pengambilan keputusan berbasis data.
+🤖 ILMU KOMPUTER
+Simulasi peluang dapat dilakukan menggunakan algoritma dan bilangan acak.
+🎯 TUJUAN PEMBELAJARAN
+Setelah menyelesaikan modul, peserta didik mampu:
+T.1 Mengidentifikasi kejadian yang melibatkan ketidakpastian.
+T.2 Menentukan ruang sampel suatu percobaan.
+T.3 Mengidentifikasi titik sampel dan kejadian.
+T.4 Menghitung peluang teoritis kejadian sederhana.
+T.5 Melakukan percobaan peluang sederhana dan menentukan frekuensi relatif.
+T.6 Membandingkan peluang teoritis dengan frekuensi relatif.
+T.7 Menjelaskan peluang empiris berdasarkan hasil percobaan.
+T.8 Mengumpulkan data hasil percobaan secara teliti.
+T.9 Menghitung peluang empiris.
+T.10 Membandingkan peluang empiris dengan peluang teoritis.
+T.11 Menginterpretasikan peluang empiris dalam konteks kehidupan.
+T.12 Menyelesaikan masalah kontekstual.
+T.13 Membedakan frekuensi relatif dan frekuensi harapan.
+T.14 Menemukan konsep frekuensi harapan.
+T.15 Menghitung frekuensi harapan.
+T.16 Menginterpretasikan hasil frekuensi harapan secara rasional.
+🗺️ PETA PERJALANAN BELAJAR
+Pertemuan | Misi | Materi Utama
+1 | 🎲 Misteri Kemungkinan | Ruang sampel dan kejadian
+2 | 🪙 Koin & Dadu | Peluang teoritis dan frekuensi relatif
+3 | 🔬 Laboratorium Peluang | Peluang empiris
+4 | 🏀 Detektif Data | Aplikasi dan interpretasi
+5 | 🎯 Prediksi Masa Depan | Frekuensi harapan
+🔵 PERTEMUAN 1
+MISTERI KEMUNGKINAN
+⏱️ Alokasi: 2 × 40 menit
+🎯 Tujuan
+Peserta didik mampu menentukan ruang sampel, titik sampel, dan kejadian.
+🎬 PEMANTIK
+Bayangkan kamu mempunyai sebuah koin.
+Ketika koin dilempar, sisi yang muncul hanya mungkin:
+ANGKA atau GAMBAR.
+Tetapi sebelum dilempar, kita tidak mengetahui hasilnya.
+❓ Pertanyaan
+Apakah hasil pelemparan koin dapat dipastikan sebelumnya?
+Jika sebuah dadu dilempar, hasil apa saja yang mungkin muncul?
+🕵️ MISI 1 — DETEKTIF KEMUNGKINAN
+Sebuah permainan menggunakan dadu.
+Pemain mendapat hadiah jika muncul bilangan genap.
+Tugasmu:
+Tuliskan semua kemungkinan hasil pelemparan dadu.
+Tentukan hasil yang memenuhi syarat mendapat hadiah.
+Berapa banyak kemungkinan hasil seluruhnya?
+Berapa banyak hasil yang termasuk kejadian mendapat hadiah?
+🔎 TEMUKAN SENDIRI
+Semua kemungkinan hasil disebut:
+RUANG SAMPEL
+Sedangkan hasil tertentu yang menjadi perhatian disebut:
+KEJADIAN
+Contoh:
+Ruang sampel:
+S = {1, 2, 3, 4, 5, 6}
+Kejadian muncul bilangan genap:
+A = {2, 4, 6}
+🧠 BERPIKIR KRITIS
+Seorang siswa mengatakan:
+“Karena dadu mempunyai enam sisi, kejadian muncul angka 6 pasti terjadi.”
+Apakah pendapat tersebut benar?
+Jelaskan alasanmu.
+🎯 KUIS 1
+Ruang sampel pelemparan koin adalah ...
+Ruang sampel sebuah dadu adalah ...
+Kejadian muncul bilangan ganjil pada dadu adalah ...
+Apa perbedaan titik sampel dan kejadian?
+Mengapa ruang sampel harus memuat seluruh kemungkinan hasil?
+🪞 REFLEKSI
+Lengkapi:
+Hari ini saya memahami bahwa ...
+Hal yang masih membingungkan saya adalah ...
+Bukti yang membuat saya yakin adalah ...
+🟢 PERTEMUAN 2
+RAHASIA KOIN DAN DADU
+⏱️ 2 × 40 menit
+🎯 Tujuan
+Peserta didik mampu menghitung peluang teoritis dan menentukan frekuensi relatif.
+🎬 MASALAH
+Sebuah dadu dilempar satu kali.
+Kita ingin mengetahui peluang muncul bilangan genap.
+Kemungkinan:
+2, 4, 6
+Dari seluruh hasil:
+1, 2, 3, 4, 5, 6
+Ada 3 hasil yang diinginkan dari 6 kemungkinan.
+Maka peluang teoritis:
+[
+P(A)=\frac{\text{banyak hasil yang diinginkan}}
+{\text{banyak seluruh hasil yang mungkin}}
+]
+🪙 MISI PERCOBAAN
+Lempar sebuah koin sebanyak 20 kali.
+Catat hasilnya.
+Percobaan | Hasil
+1 | ...
+2 | ...
+3 | ...
+... | ...
+20 | ...
+Hitung:
+banyak muncul Angka;
+banyak muncul Gambar;
+frekuensi relatif Angka;
+frekuensi relatif Gambar.
+📊 RAHASIA FREKUENSI RELATIF
+Frekuensi relatif suatu kejadian:
+[
+FR=\frac{\text{frekuensi kejadian}}
+{\text{jumlah seluruh percobaan}}
+]
+Contoh
+Jika dari 20 lemparan muncul Angka sebanyak 11 kali:
+[
+FR=\frac{11}{20}=0,55
+]
+atau
+55%
+🧠 TANTANGAN
+Secara teoritis, peluang muncul Angka pada koin seimbang adalah 0,5.
+Namun hasil percobaanmu mungkin 0,55.
+❓ Mengapa hasil percobaan tidak harus sama persis dengan peluang teoritis?
+Tuliskan minimal dua alasan.
+🟠 PERTEMUAN 3
+LABORATORIUM PELUANG
+⏱️ 2 × 40 menit
+🎯 Tujuan
+Peserta didik mampu melakukan percobaan dan menghitung peluang empiris.
+🔬 MISI LABORATORIUM
+Hari ini kamu menjadi ilmuwan matematika.
+Lakukan percobaan:
+🎲 “DADU 60 KALI”
+Lempar sebuah dadu sebanyak 60 kali.
+Catat frekuensi setiap angka.
+Angka | Frekuensi
+1 | ...
+2 | ...
+3 | ...
+4 | ...
+5 | ...
+6 | ...
+Total | 60
+📊 HITUNG PELUANG EMPIRIS
+Misalnya angka 6 muncul sebanyak 8 kali.
+Maka:
+\frac{8}{60}
+]
+Jadi peluang empiris muncul angka 6 adalah sekitar:
+0,133 atau 13,3%
+💡 TEMUKAN KONSEP
+Peluang empiris
+Peluang empiris diperoleh berdasarkan hasil percobaan nyata.
+Secara umum:
+[
+P(E)=\frac{\text{frekuensi kejadian E}}
+{\text{jumlah seluruh percobaan}}
+]
+🔎 BANDINKAN
+Bandingkan:
+Peluang teoritis angka 6
+dengan
+Peluang empiris angka 6
+Pertanyaan:
+Apakah nilainya sama?
+Jika berbeda, apakah percobaanmu salah?
+Apa yang terjadi jika percobaan dilakukan 600 kali?
+🧠 HOTS
+Dua kelompok melakukan percobaan.
+Kelompok A: 20 kali lemparan.
+Kelompok B: 200 kali lemparan.
+Hasil keduanya berbeda.
+Pertanyaan:
+Apakah kelompok yang memperoleh hasil lebih dekat dengan peluang teoritis berarti melakukan percobaan lebih baik?
+Jelaskan berdasarkan data dan alasan matematis.
+🟢 PERTEMUAN 4
+DETEKTIF DATA PELUANG
+⏱️ 2 × 40 menit
+🎯 Tujuan
+Peserta didik mampu membandingkan peluang empiris dan teoritis serta menginterpretasikan hasil dalam kehidupan nyata.
+🏀 KASUS 1 — PERMAINAN BASKET
+Sebuah tim melakukan 50 kali percobaan lemparan bebas.
+Berhasil masuk:
+32 kali
+Pertanyaan:
+Tentukan frekuensi relatif keberhasilan.
+Tuliskan dalam bentuk desimal.
+Tuliskan dalam persentase.
+Apa arti angka tersebut?
+💭 JANGAN HANYA MENGHITUNG!
+Jika peluang empiris keberhasilan adalah 0,64, bukan berarti:
+“Pemain pasti berhasil 64 kali setiap 100 lemparan.”
+Yang lebih tepat:
+Berdasarkan hasil percobaan, sekitar 64% percobaan berhasil.
+🧠 Mengapa penggunaan kata “sekitar” penting?
+Jelaskan.
+🌧️ KASUS 2 — DATA CUACA
+Dalam suatu pengamatan sederhana, dari 30 hari terdapat 12 hari hujan.
+Tantangan:
+Hitung peluang empiris hari hujan berdasarkan data tersebut.
+Kemudian interpretasikan hasilnya.
+🔎 DETEKTIF KESALAHAN
+Seorang siswa mengatakan:
+“Peluang hujan adalah 40%, jadi besok pasti hujan dengan peluang 40%.”
+Apakah kesimpulan tersebut tepat?
+Jelaskan kesalahan berpikirnya.
+🧠 TANTANGAN HOTS
+Dua kelompok memiliki data:
+Kelompok A:
+10 percobaan → 6 berhasil.
+Kelompok B:
+100 percobaan → 58 berhasil.
+Pertanyaan:
+Hitung peluang empiris masing-masing.
+Apakah hasilnya sama?
+Kelompok mana yang memiliki data lebih banyak?
+Mengapa jumlah percobaan penting ketika kita menginterpretasikan peluang empiris?
+🟠 PERTEMUAN 5
+MISI AKHIR — FREKUENSI HARAPAN
+⏱️ 2 × 40 menit
+🎯 Tujuan
+Peserta didik mampu membedakan frekuensi relatif dan frekuensi harapan, menghitung frekuensi harapan, dan menginterpretasikan hasilnya.
+🎯 MISI PEMBUKA
+Sebuah dadu dilempar 120 kali.
+Kita ingin memperkirakan berapa kali angka 6 muncul.
+Secara teoritis:
+[
+P(6)=\frac16
+]
+Pertanyaan:
+Kira-kira berapa kali angka 6 akan muncul dalam 120 lemparan?
+🔍 TEMUKAN POLANYA
+Jika:
+jumlah percobaan = n
+dan
+peluang kejadian = P(E)
+maka frekuensi harapan dapat dihitung dengan:
+[
+F_h=n\times P(E)
+]
+Untuk 120 lemparan:
+[
+F_h=120\times\frac16
+]
+[
+F_h=20
+]
+Jadi secara teoritis, angka 6 diharapkan muncul sekitar 20 kali dalam 120 percobaan.
+⚠️ PERHATIKAN!
+Frekuensi harapan bukan jaminan.
+Jika dadu benar-benar dilempar 120 kali, hasil sebenarnya dapat saja:
+17 kali;
+19 kali;
+21 kali;
+24 kali;
+dan sebagainya.
+🧠 Mengapa?
+Karena frekuensi harapan merupakan perkiraan berdasarkan peluang, bukan kepastian hasil percobaan.
+🛒 MASALAH KONTEKSTUAL
+Sebuah permainan memiliki peluang seorang pemain memenangkan hadiah sebesar:
+[
+0,2
+]
+Jika permainan dilakukan sebanyak 500 kali, berapa frekuensi harapan pemain memperoleh hadiah?
+Penyelesaian:
+[
+F_h=500\times0,2
+]
+[
+F_h=100
+]
+Interpretasi:
+Dalam 500 percobaan, secara teoritis diharapkan terjadi sekitar 100 kali kemenangan.
+🧠 MISI DETEKTIF TERAKHIR
+Perhatikan pernyataan berikut:
+“Jika peluang mendapatkan hadiah adalah 20%, maka dalam 500 permainan pemain pasti mendapatkan tepat 100 hadiah.”
+❓ BENAR ATAU SALAH?
+Jelaskan jawabanmu.
+Petunjuk:
+Bedakan antara:
+PELUANG
+dan
+HASIL AKTUAL
+🏆 FINAL CHALLENGE
+Sebuah sekolah melakukan permainan edukatif dengan dadu.
+Dalam satu minggu dilakukan 600 percobaan.
+Peluang teoritis muncul angka ganjil adalah:
+[
+\frac{3}{6}
+]
+Tugas Detektif:
+A. Tentukan peluang teoritis muncul angka ganjil.
+B. Tentukan frekuensi harapannya.
+C. Jika hasil sebenarnya adalah 286 kali, tentukan frekuensi relatifnya.
+D. Bandingkan frekuensi relatif dengan peluang teoritis.
+E. Apakah hasil 286 berarti percobaan tersebut gagal?
+F. Jelaskan jawabanmu secara logis.
+🧠 REFLEKSI AKHIR MODUL
+Lengkapi kalimat berikut.
+1.
+Sekarang saya memahami bahwa peluang adalah ...
+2.
+Perbedaan peluang teoritis dan empiris adalah ...
+3.
+Frekuensi relatif digunakan untuk ...
+4.
+Frekuensi harapan berarti ...
+5.
+Hal terpenting yang saya pelajari tentang berpikir kritis adalah ...
+6.
+Ketika memperoleh jawaban matematika, saya sekarang akan ...
+🎯 ASESMEN AKHIR
+A. PILIHAN GANDA
+Ruang sampel pelemparan sebuah dadu adalah ...
+Peluang muncul bilangan prima pada dadu adalah ...
+Sebuah koin dilempar 40 kali dan muncul Angka 23 kali. Frekuensi relatif Angka adalah ...
+Jika suatu kejadian mempunyai peluang 0,25 dan dilakukan 200 percobaan, frekuensi harapannya adalah ...
+Peluang empiris diperoleh berdasarkan ...
+B. BENAR/SALAH + ALASAN
+Tentukan benar atau salah dan berikan alasan.
+Pernyataan 1
+Jika peluang suatu kejadian 0,5, maka kejadian tersebut pasti muncul tepat 50 kali dalam 100 percobaan.
+Pernyataan 2
+Peluang empiris diperoleh dari data hasil percobaan.
+Pernyataan 3
+Frekuensi relatif dapat digunakan untuk menggambarkan proporsi kemunculan suatu kejadian.
+Pernyataan 4
+Semakin banyak percobaan dilakukan, hasil empiris cenderung memberikan gambaran yang lebih stabil terhadap peluang teoritis, meskipun tidak menjamin hasil persis sama.
+C. PILIHAN GANDA KOMPLEKS
+Perhatikan sebuah dadu yang dilempar 120 kali.
+Pilih semua pernyataan yang benar.
+☐ Peluang muncul angka genap adalah 1/2.
+☐ Frekuensi harapan muncul angka genap adalah 60.
+☐ Hasil aktual harus tepat 60 kali.
+☐ Frekuensi relatif dapat dihitung dari data hasil percobaan.
+D. URAIAN HOTS
+Sebuah kelompok melakukan percobaan melempar koin sebanyak 100 kali dan memperoleh:
+Angka = 57
+Gambar = 43
+Seorang siswa mengatakan:
+“Percobaan tersebut salah karena peluang Angka seharusnya 50%.”
+Tugas:
+Apakah kamu setuju?
+Jelaskan menggunakan konsep:
+peluang teoritis;
+peluang empiris;
+frekuensi relatif;
+variasi hasil percobaan.
+🏆 PROYEK MINI
+“LABORATORIUM PELUANG KELASKU”
+Lakukan percobaan bersama kelompok.
+Pilih salah satu:
+🎲 Dadu
+🪙 Koin
+🎯 Spinner
+🃏 Kartu
+Langkah:
+1. Tentukan masalah.
+2. Tentukan ruang sampel.
+3. Tentukan kejadian yang diamati.
+4. Buat dugaan peluang teoritis.
+5. Lakukan minimal 50 percobaan.
+6. Catat data.
+7. Hitung frekuensi relatif.
+8. Hitung peluang empiris.
+9. Bandingkan dengan peluang teoritis.
+10. Buat kesimpulan.
+📊 FORMAT LAPORAN PROYEK
+Komponen | Hasil
+Nama percobaan | ...
+Anggota kelompok | ...
+Banyak percobaan | ...
+Ruang sampel | ...
+Kejadian | ...
+Dugaan teoritis | ...
+Frekuensi kejadian | ...
+Peluang empiris | ...
+Perbandingan | ...
+Kesimpulan | ...
+🧠 RUBRIK BERPIKIR KRITIS
+Indikator | 1 | 2 | 3 | 4
+Mengidentifikasi informasi | Belum mampu | Sebagian | Baik | Sangat baik
+Menganalisis data | Belum tepat | Masih banyak kesalahan | Tepat | Sangat tepat
+Memberikan alasan | Tidak ada | Kurang logis | Logis | Sangat kuat dan berbasis bukti
+Mengevaluasi strategi | Belum mampu | Terbatas | Baik | Sangat baik
+Menarik kesimpulan | Tidak sesuai | Sebagian sesuai | Sesuai | Sangat kuat berdasarkan bukti
+📚 GLOSARIUM
+Peluang
+Ukuran kemungkinan terjadinya suatu kejadian.
+Ruang Sampel
+Himpunan seluruh kemungkinan hasil suatu percobaan.
+Titik Sampel
+Setiap anggota ruang sampel.
+Kejadian
+Himpunan hasil yang menjadi perhatian dalam percobaan.
+Peluang Teoritis
+Peluang yang ditentukan berdasarkan kemungkinan hasil secara matematis.
+Frekuensi Relatif
+Perbandingan frekuensi suatu kejadian terhadap jumlah seluruh percobaan.
+Peluang Empiris
+Peluang yang diperoleh berdasarkan hasil percobaan nyata.
+Frekuensi Harapan
+Perkiraan banyaknya suatu kejadian yang diharapkan terjadi berdasarkan peluang dan jumlah percobaan.
+🌟 PESAN AKHIR
+“Matematika bukan hanya tentang mendapatkan jawaban. Matematika mengajarkan kita untuk bertanya, memeriksa bukti, membandingkan informasi, dan berani mengatakan mengapa sebuah jawaban dapat dipercaya.”
+🎉 SELAMAT!
+Kamu telah menyelesaikan:
+🕵️ MISI DETEKTIF PELUANG
+Dari kemungkinan → percobaan → data → peluang empiris → interpretasi → frekuensi harapan.
+Teruslah bertanya:
+“APA BUKTINYA?”
+“MENGAPA?”
+“APAKAH SELALU BENAR?”
+Drs. PAIYO
+Guru Matematika
+SMP Negeri 1 Bantarkawung Kabupaten Brebes
+Revisi:
+Alhamdulillah, luar biasa is ok, lanjutkan minta di tambahkan link video berikut :
+LINK VIDEO BELAJAR MANDIRI SISWA AAAMAT KEREN BAB PELUANG
+1. PELUANG EMPIRIK_CONTOH_SOAL
+1.1 Menjelaskan pengertian peluang empirik
+1. 2 Menghitung peluang empiris suatu kejadian dari hasil percobaan
+ https://youtu.be/hlbblBjnAQE?si=CIJewMCozfoVB09d
+2. TITIK SAMPEL_RUANG SAMPEL_PELUANG
+2.1 Menjelaskan pengertian titik sampel dan ruang sampel dari suatu percobaan
+2.2 Menentukan banyak  kejadian A dan banyak anggota ruang sampel dari data hasil percobaan
+https://youtu.be/wJI-K-XuxcY
+3. MENENTUKAN_PELUANG_SUATU KEJADIAN
+3.1 Menjelaskan pengertian peluang teoritik
+3.2 Menghitung peluang suatu kejadian
+https://youtu.be/aOGmgGj8TW8
+4. PELUANG_CONTOH SOAL_TKA_PG KOMPLEK_PG KATEGORI
+3.3 Contoh Soal Level Koqnitif Penalaran Menghitung peluang suatu kejadian
+https://youtu.be/kHJAjl9HmI4
+5. KISARAN NILAI PELUANG_FREKUENSI HARAPAN
+4.1 Menjelaskan pengertian Kisaran Nilai peluang
+4.2 Menghitung Frekuensi Harapan suatu kejadian
+https://youtu.be/VsUhWbz0M5Q
+6. PEMBAHASAN_ASESMEN SUMATIF4_PELUANG
+https://youtu.be/udTu1cOliJU
+Revisi kedua:
+Alhamdulillah, dilanjutkan pembaharuan, minta :
+Pada “ Ekspor csv” hasilnya belum rapi , minta agar Statistik Lengkap & Ekspor Excel pada Daftar Nilai, pada setiap siswa ada “hapus” untuk menghapus yang doubel ( ada pasword).
+2. Pembaruan Data Kepala Sekolah & NIP pada Sertifikat
+• Kepala SMP Negeri 1 Bantarkawung:
+o Nama: Erlina, S.Pd., M.Pd.
+o NIP: 19740417 200312 2 006
+• Guru Pengembang Matematika:
+o Nama: Drs. PAIYO
+o NIP: 19670713 199512 1 002 (diterapkan pada sertifikat resmi maupun dokumen unduhan kisi-kisi dan pembahasan Word). terimakasih atas solusinya

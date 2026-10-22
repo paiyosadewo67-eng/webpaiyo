@@ -1,0 +1,434 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Interaktif — Bentuk Akar
+Bab   : IX-01 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT GAME INTERAKTIF AAAMAT KEREN — ESCAPE ROOM MATEMATIKA PETUALANGAN BENTUK AKAR
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share wa “ GAME AAAMAT KEREN ESCAPE ROOM MATERI BENTUK AKAR“ =
+https://igatrisna.my.canva.site/aaamat-keren-escape-room-matematika-bentuk-akar
+Link Share wa “ GAME INTERAKTIF  ESCAPE ROOM HOTS BAB BILANGAN BERPANGKAT “ :
+Revisi :  https://igatrisna.my.canva.site/game-interaktif-escape-room-hots-bab-bilangan-berpangkat
+Assalamu’alaikum,...Selamat siang, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat “ AAAMAT KEREN ESCAPE ROOM MATEMATIKA PETUALANGAN BENTUK AKAR”. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+🎮 PROMPT GAME INTERAKTIF
+⭐ AAAMAT KEREN — ESCAPE ROOM MATEMATIKA
+PETUALANGAN BENTUK AKAR
+“Pecahkan Kode, Kuasai Akar, Buka Jalan Menuju Ruang Rahasia!”
+Buat sebuah GAME INTERAKTIF EDUKATIF berbasis ESCAPE ROOM MATEMATIKA untuk siswa SMP/MTs Kelas IX/Fase D dengan judul:
+⭐ AAAMAT KEREN
+🎮 ESCAPE ROOM MATEMATIKA
+🌟 PETUALANGAN BENTUK AKAR 🌟
+Tema besar:
+“Dari Mengenal Bentuk Akar sampai Menyelesaikan Soal HOTS Model TKA”
+Gunakan BAHASA INDONESIA sepenuhnya.
+GAME HARUS TERASA SEPERTI PETUALANGAN:
+siswa memasuki ruang rahasia matematika, menyelesaikan teka-teki, memperoleh KODE KUNCI, membuka pintu berikutnya, naik level, dan akhirnya berhasil keluar setelah menaklukkan Misi HOTS.
+Gunakan desain:
+Futuristic STEM Classroom
+Escape Room Adventure
+3D cinematic
+Ultra HD 4K
+Neon blue–cyan–purple
+Hologram
+Glowing digital panels
+Futuristic doors and locks
+Interactive buttons
+Robot AAAMATBOT
+Karakter Drs. PAIYO
+Karakter siswa Zulfa, Rafly, Anis, dan Atta
+Animasi ekspresi wajah
+Efek suara tombol, alarm, kunci terbuka, dan kemenangan
+Format utama:
+16:9 landscape.
+Tampilan harus bersih, terang, kontras, dan nyaman digunakan melalui proyektor kelas.
+Papan digital / layar soal harus menjadi fokus utama.
+Komik dan karakter dibuat lebih kecil sebagai pendukung.
+Drs. PAIYO
+Guru Matematika.
+Berperan sebagai:
+Game Master
+pemberi misi
+pemberi petunjuk
+pemberi motivasi
+pemberi penghargaan
+AAAMATBOT
+Robot pendamping siswa.
+Berfungsi sebagai:
+pemberi Hint
+penjaga waktu
+pemeriksa jawaban
+pemberi skor
+pemberi badge
+ZULFA
+Penanya kritis.
+RAFLY
+Pecinta tantangan.
+ANIS
+Ahli catatan.
+ATTA
+Eksplorator.
+Tampilkan pintu besi futuristik dengan tulisan:
+🔐 RUANG RAHASIA BENTUK AKAR
+Drs. PAIYO berkata:
+“Selamat datang, para penjelajah matematika!
+Hari ini kalian tidak hanya belajar bentuk akar.
+Kalian harus memecahkan kode untuk membuka setiap ruangan.”
+AAAMATBOT:
+“Setiap jawaban benar akan menghasilkan KODE KUNCI.
+Kumpulkan semua kode dan buka pintu terakhir!”
+Tombol:
+▶ MULAI PETUALANGAN
+📖 PETUNJUK PERMAINAN
+🏆 LIHAT LEVEL
+Tampilkan:
+🎯 Tujuan:
+Menguasai konsep dan operasi bentuk akar serta mampu menerapkannya dalam masalah nyata dan soal HOTS model TKA.
+⭐ Aturan:
+Selesaikan setiap misi.
+Jawaban benar memperoleh kode.
+Jawaban salah mendapat kesempatan memperbaiki.
+Gunakan Hint secara terbatas.
+Kumpulkan poin.
+Buka pintu berikutnya.
+Taklukkan FINAL BOSS.
+Sistem skor:
+Jawaban benar pertama:
++100 XP
+Jawaban benar setelah Hint:
++70 XP
+Jawaban benar setelah percobaan kedua:
++50 XP
+HOTS:
++200 XP
+TKA Challenge:
++300 XP
+Tujuan:
+Memahami pengertian bentuk akar.
+Materi:
+akar kuadrat
+akar pangkat n
+bilangan rasional
+bilangan irasional
+membedakan bentuk akar dan bukan bentuk akar
+Tampilkan papan digital besar.
+Contoh:
+√4 = 2
+√9 = 3
+√16 = 4
+√2 = 1,414...
+√3 = 1,732...
+Pertanyaan:
+“Manakah yang merupakan bentuk akar?”
+A. √4
+B. √9
+C. √2
+D. √16
+Jawaban:
+C
+Jika benar:
+🔓 PINTU 1 TERBUKA!
+Kode:
+AKAR-02
+AAAMATBOT:
+“Bagus! Kalian sudah menemukan sifat dasar bentuk akar.”
+Tambahkan 5 soal konsep serupa dengan tingkat kesulitan bertahap.
+Judul:
+🔬 LABORATORIUM AKAR & PANGKAT PECAHAN
+Materi:
+Hubungan bentuk akar dengan pangkat pecahan.
+Tampilkan konsep:
+√a = a^(1/2)
+√[n]a = a^(1/n)
+√n = a^(m/n)
+a%5em
+Buat soal mencocokkan:
+Bentuk akar ↔ pangkat pecahan.
+Contoh:
+√25
+25^(1/2)
+√[3]8
+8^(1/3)
+Tantangan:
+“Ubah 5^(3/2) menjadi bentuk akar.”
+Jawaban:
+√(5^3)
+Jika berhasil:
+🔓 PINTU 2 TERBUKA!
+Kode:
+PECAHAN-03
+Materi:
+➕ Penjumlahan
+➖ Pengurangan
+✖️ Perkalian
+➗ Pembagian
+Tekankan:
+Bentuk akar yang sejenis dapat dijumlahkan atau dikurangkan.
+Contoh:
+3√2 + 5√2 = 8√2
+Untuk perkalian:
+√a × √b = √(ab)
+Berikan soal interaktif.
+Contoh:
+2√3 + 5√3 = ...
+A. 7√3
+B. 7√6
+C. 10√3
+D. √8
+Jawaban:
+A
+Tambahkan soal:
+√6 × √24
+Siswa harus menyederhanakan hasil.
+Setiap jawaban benar memberikan potongan kode.
+Jika seluruh kode benar:
+🔓 PINTU 3 TERBUKA!
+Tampilkan mesin hologram yang memecah bilangan menjadi faktor.
+Misi:
+“Sederhanakan bentuk akar berikut.”
+Contoh:
+√50
+Siswa harus menemukan:
+50 = 25 × 2
+Kemudian:
+√50 = √25 × √2
+= 5√2
+Buat aktivitas DRAG AND DROP:
+siswa menarik faktor kuadrat sempurna ke dalam mesin.
+Contoh lain:
+√72
+√80
+√98
+√108
+Berikan feedback otomatis.
+AAAMATBOT:
+“Cari faktor berupa bilangan kuadrat sempurna.”
+Materi:
+Operasi pembagian bentuk akar.
+Tampilkan:
+3 / √3
+Pertanyaan:
+“Apa yang harus dilakukan agar penyebut tidak lagi mengandung bentuk akar?”
+Berikan pilihan strategi.
+A. Mengurangi penyebut
+B. Mengalikan pembilang dan penyebut dengan bentuk akar yang sesuai
+C. Menghilangkan akar
+D. Membagi pembilang saja
+Jawaban:
+B
+Kemudian tampilkan latihan merasionalkan penyebut.
+Ini menjadi level penting.
+Tampilkan pintu dengan tulisan:
+⚠️ PENYEBUT TIDAK BOLEH MENGANDUNG AKAR!
+Misi:
+Rasionalkan:
+1 / √2
+Siswa harus memilih langkah yang benar.
+Berikan animasi:
+Pembilang × √2
+Penyebut × √2
+Kemudian siswa menyederhanakan hasil.
+Tambahkan variasi:
+3 / √5
+5 / (2√3)
+2 / (√7)
+Berikan Hint:
+“Kalikan pembilang dan penyebut dengan bentuk yang membuat penyebut menjadi bilangan rasional.”
+Jika semua benar:
+🏆 BADGE:
+MASTER RASIONALISASI
+Buat 4 ruang mini:
+🌉 JEMBATAN
+📐 BANGUNAN
+📺 TEKNOLOGI
+🌳 TAMAN
+Siswa memilih satu kasus.
+CONTOH KASUS:
+Sebuah layar berbentuk persegi panjang memiliki panjang 6 dm dan lebar 8 dm.
+Tentukan panjang diagonal layar.
+Gunakan Teorema Pythagoras.
+d = √(6² + 8²)
+Siswa menentukan hasil.
+Kemudian berikan kasus berbeda dengan ukuran yang menghasilkan bentuk akar.
+Tambahkan pertanyaan:
+“Apakah hasil tersebut perlu disederhanakan?”
+Siswa harus menjelaskan alasannya.
+Judul besar:
+🔥 MISSION HOTS
+“PINTU TERAKHIR”
+Soal berbasis masalah nyata.
+Gunakan format:
+A. Pilihan Ganda
+B. MCMA — pilih semua jawaban benar
+C. Benar/Salah
+D. Isian singkat
+E. Uraian HOTS
+Setiap soal harus menguji:
+memahami informasi
+memilih strategi
+melakukan perhitungan
+menganalisis
+mengevaluasi jawaban
+membuat kesimpulan
+Buat suasana berubah menjadi ruang final.
+Timer:
+⏱️ 120 DETIK
+Judul:
+👑 TKA FINAL CHALLENGE
+“TAKLUKKAN BENTUK AKAR!”
+Soal harus menggunakan stimulus kontekstual.
+Contoh stimulus:
+“Seorang perancang membuat desain taman berbentuk persegi. Panjang diagonal taman dinyatakan dalam bentuk akar. Hasil perhitungan kemudian digunakan untuk menentukan jarak pemasangan lampu.”
+Siswa diberikan beberapa informasi.
+Pertanyaan dibuat bertingkat:
+Menentukan bentuk akar.
+Menyederhanakan.
+Menggunakan hasil untuk menentukan ukuran lain.
+Mengevaluasi pernyataan.
+Menentukan semua pernyataan yang benar.
+Gunakan format TKA:
+🟦 Pilihan Ganda
+🟪 Pilihan Ganda Kompleks / MCMA
+🟩 Benar-Salah
+🟨 Pilihan Ganda dengan alasan
+🟥 Uraian penalaran
+Jangan hanya menguji hafalan rumus.
+Soal harus menuntut penalaran.
+Tampilkan pintu raksasa:
+🔐 THE FINAL ROOT
+AAAMATBOT:
+“Semua ruangan sudah kalian taklukkan.
+Sekarang gunakan seluruh kemampuan kalian.”
+Drs. PAIYO:
+“Jangan takut pada soal sulit.
+Baca informasinya.
+Temukan polanya.
+Pilih strateginya.
+Hitung dengan teliti.
+Kemudian periksa kembali jawabanmu.”
+Tampilkan 1 soal final HOTS.
+Setelah berhasil:
+🎉 PINTU TERBUKA!
+Animasi:
+cahaya hologram
+confetti
+bintang
+robot melompat gembira
+siswa merayakan keberhasilan
+Berikan badge:
+🥉 PEMULA AKAR
+🥈 PENJELAJAH AKAR
+🥇 AHLI BENTUK AKAR
+💎 MASTER OPERASI AKAR
+👑 MASTER TKA BENTUK AKAR
+Tampilkan skor akhir:
+XP
+Jumlah soal benar
+Akurasi
+Jumlah Hint
+Waktu penyelesaian
+Level yang berhasil dibuka
+Sediakan:
+🎯 MODE LATIHAN
+Tanpa batas waktu.
+⚡ MODE SPEED CHALLENGE
+60 detik.
+👥 MODE DUEL 2 PEMAIN
+Pemain 1 vs Pemain 2.
+🏫 MODE KELAS
+Guru menampilkan game melalui proyektor dan siswa menjawab bersama.
+🧠 MODE HOTS
+Khusus soal penalaran.
+🏆 MODE TKA
+Simulasi soal TKA berbasis literasi numerasi.
+Tambahkan:
+📊 Dashboard Guru
+Menampilkan:
+nama siswa
+skor
+akurasi
+waktu
+jumlah soal benar
+jumlah Hint
+level tertinggi
+soal yang paling banyak salah
+Guru dapat:
+memilih level
+mengatur waktu
+mengulang soal
+menampilkan pembahasan
+mengaktifkan/nonaktifkan Hint
+mengatur jumlah soal
+Setelah siswa menjawab, jangan hanya menampilkan “BENAR” atau “SALAH”.
+Jika benar:
+✅ BENAR!
+Kemudian tampilkan:
+“Strategimu tepat karena ...”
+Jika salah:
+❌ BELUM TEPAT.
+Tampilkan:
+“Coba perhatikan kembali ...”
+Berikan Hint bertahap:
+💡 Hint 1 — konsep
+💡 Hint 2 — strategi
+💡 Hint 3 — langkah
+💡 Hint 4 — hampir sampai
+Jangan langsung memberikan jawaban sebelum siswa mencoba.
+Jika semua level selesai:
+🎉 SELAMAT!
+“Kamu berhasil keluar dari ESCAPE ROOM BENTUK AKAR!”
+Tampilkan:
+⭐ SKOR AKHIR
+🎯 AKURASI
+⏱️ WAKTU
+🧠 LEVEL TERTINGGI
+🏆 BADGE
+Pesan Drs. PAIYO:
+“Matematika bukan sekadar mencari jawaban.
+Matematika mengajarkan kita untuk berpikir,
+menganalisis, dan menemukan strategi.”
+AAAMATBOT:
+“Petualangan berikutnya menunggumu!”
+Tampilkan tombol:
+🔄 MAIN LAGI
+🔥 MISSION HOTS
+📚 BELAJAR LAGI
+🏆 SERTIFIKAT
+Footer:
+⭐ AAAMAT KEREN
+ASAH • ASIH • ASUH MATEMATIKA
+“KREATIF • EKSPLORATIF • REPRESENTATIF • EKSELEN • NO DROP”
+Game harus benar-benar INTERAKTIF.
+Gunakan:
+tombol yang dapat diklik
+pilihan jawaban
+drag and drop
+kode kunci
+timer
+skor
+progress bar
+feedback otomatis
+level unlock
+badge
+dashboard
+tombol kembali
+tombol lanjut
+Semua teks, instruksi, dialog, feedback, dan narasi menggunakan BAHASA INDONESIA.
+Pastikan game mudah digunakan siswa SMP dan dapat dimainkan melalui laptop, komputer, atau proyektor kelas.
+Utamakan keterbacaan papan digital.
+Jangan membuat terlalu banyak elemen dekoratif sehingga soal sulit dibaca.
+PRIORITAS UTAMA:
+SOAL
+PAPAN DIGITAL
+INTERAKSI
+PEMBAHASAN
+KOMIK DAN KARAKTER
+DEKORASI
+Game harus terasa seperti:
+“BELAJAR MATEMATIKA + PETUALANGAN + ESCAPE ROOM + HOTS + TKA”
+Hasil akhir harus terlihat profesional, modern, edukatif, menyenangkan, dan menjadi media unggulan:
+⭐ AAAMAT KEREN ESCAPE ROOM MATEMATIKA ⭐

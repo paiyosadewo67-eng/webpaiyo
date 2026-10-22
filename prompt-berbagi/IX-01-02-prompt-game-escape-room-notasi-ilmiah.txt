@@ -1,0 +1,239 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Escape Room — Notasi Ilmiah
+Bab   : IX-01 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT GAME INTERAKTIF AAAMAT KEREN ESCAPE ROOM MATEMATIK  NOTASI ILMIAH
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share wa “ GAME AAAMAT KEREN ESCAPE ROOM MATERI NOTASI ILMIAH“ =
+https://igatrisna.my.canva.site/escape-room-matematika-notasi-ilmiah
+Assalamu’alaikum,...Selamat pagi, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat “ AAAMAT KEREN ESCAPE ROOM MATEMATIKANOTASI ILMIAH (BENTUK BAKU)
+”. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+🎮 PROMPT GAME INTERAKTIF
+⭐ AAAMAT KEREN
+ESCAPE ROOM MATEMATIKA
+🔬 NOTASI ILMIAH (BENTUK BAKU)
+IDENTITAS GAME
+Judul
+🔬 Escape Room Matematika
+Misi HOTS Notasi Ilmiah
+Tema:
+"Selamatkan Laboratorium Sains Digital dengan Menguasai Notasi Ilmiah!"
+Target
+✅ SMP Kelas VIII
+Durasi
+30–45 menit
+Jumlah Level
+⭐ Level 1 (Mudah)
+⭐⭐ Level 2 (Sedang)
+⭐⭐⭐ Level 3 (HOTS TKA)
+Jumlah Soal
+30 soal
+10 Mudah
+10 Sedang
+10 HOTS
+CERITA
+AAAMATBOT mengirim pesan darurat.
+"Pak Paiyo...
+Superkomputer Laboratorium Nasional mengalami gangguan!
+Semua data penelitian berubah menjadi kode berbentuk notasi ilmiah.
+Hanya siswa terbaik yang mampu membuka 10 pintu keamanan digital.
+Setiap pintu hanya dapat dibuka jika kalian mampu menyelesaikan tantangan matematika."
+Robot memberi Digital Access Card.
+Skor awal:
+⭐ 0
+Target:
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+DESAIN VISUAL
+Futuristic STEM Laboratory
+Biru–cyan neon
+Orange glow
+Hologram
+Timer Digital
+Sound Effect
+Laser Door
+QR Scanner
+Robot AAAMATBOT
+Guru Drs. Paiyo sebagai Mission Commander
+Animasi pintu otomatis
+Efek suara keberhasilan dan alarm
+🟢 LEVEL 1
+KONSEP DASAR
+"Buka Ruang Penelitian"
+Tujuan:
+Memahami konsep bentuk baku.
+a×10na \times 10^na×10n
+2.12×105=2120002.12 \times 10^{5} = 2120002.12×105=212000
+Koefisien
+Koefisien
+Eksponen
+Eksponen
+212000
+Misi 1
+Manakah yang merupakan bentuk baku?
+A.
+25 × 10⁴
+B.
+2,5 × 10⁵
+C.
+0,25 × 10⁶
+D.
+250 × 10³
+Jawaban
+✅ B
+Misi 2
+2 × 10⁴ = ....
+A.
+200
+B.
+2.000
+C.
+20.000
+D.
+200.000
+Misi 3
+0,00045
+=
+....
+Misi 4
+4,2 × 10⁻³
+=
+....
+Misi 5
+Lengkapi tabel
+Bentuk Baku | Bilangan
+1×10⁶ | ......
+3,5×10² | ......
+6×10⁻⁴ | ......
+Tantangan Bonus
+Susun kartu angka menjadi bentuk baku yang benar.
+Hadiah
+🔑 Key Card 1
+🟡 LEVEL 2
+OPERASI NOTASI ILMIAH
+"Aktifkan Mesin Energi"
+Materi
+✔ Perkalian
+✔ Pembagian
+✔ Pangkat
+✔ Penjumlahan sederhana
+Misi 6
+(2 ×10³)
+×
+(4 ×10²)
+=
+....
+Misi 7
+(6 ×10⁸)
+÷
+(3 ×10⁴)
+=
+....
+Misi 8
+Bandingkan
+7×10⁶
+dan
+8×10⁵
+Misi 9
+Urutkan
+5×10⁷
+2×10⁹
+8×10⁶
+1×10⁸
+Misi 10
+Cocokkan pasangan.
+Puzzle
+Seret hasil ke kotak yang benar.
+Mini Boss
+Robot Error
+Harus menjawab 5 soal berturut-turut.
+Reward
+🔓 Security Chip
+🔴 LEVEL 3
+HOTS MODEL TKA
+Tema
+Literasi Numerasi
+Analisis Data
+Misi 11
+Astronomi
+Jarak sebuah planet
+4,6×10⁸ km
+Komet
+8×10⁷ km
+Manakah lebih jauh?
+Misi 12
+Mikrobiologi
+Virus
+1×10⁻⁷ m
+Bakteri
+2×10⁻⁶ m
+Urutkan.
+Misi 13
+Energi
+PLTA
+6×10⁸ watt
+PLTU
+9×10⁸ watt
+Bandingkan.
+Misi 14
+Lingkungan
+Emisi CO₂
+3,7×10¹⁰ ton
+Penanaman pohon
+1,6×10⁹
+Analisis hubungan kedua data tersebut.
+Misi 15
+Data Digital
+Cloud Storage
+2,5×10¹² byte
+SSD
+8×10¹¹ byte
+Tentukan media penyimpanan terbesar.
+Misi 16
+Model MCMA Benar/Salah
+Pilih benar atau salah.
+Misi 17
+Model MCMA Pilih Semua Jawaban Benar
+Lebih dari satu jawaban benar.
+Misi 18
+Drag and Drop
+Urutkan data dari terkecil ke terbesar.
+Misi 19
+Analisis Grafik
+Baca diagram batang holografik.
+Misi 20
+Final Boss
+AAAMATBOT mengunci pintu terakhir.
+Siswa harus memperoleh minimal 80 poin untuk membuka laboratorium.
+SISTEM SKOR
+🟢 Mudah = 10 poin
+🟡 Sedang = 20 poin
+🔴 HOTS = 30 poin
+Bonus waktu = +20
+Tanpa kesalahan = +30
+Skor maksimum = 500
+LEADERBOARD
+🥇 Professor Notasi Ilmiah
+🥈 Ahli Bentuk Baku
+🥉 Penjelajah Data
+🏅 Master HOTS
+👑 Juara AAAMAT KEREN
+FITUR INTERAKTIF
+✅ Timer digital
+✅ Hint 3 kali
+✅ Petunjuk suara AAAMATBOT
+✅ Animasi pintu terbuka
+✅ Efek laser
+✅ Sound benar/salah
+✅ Progress bar
+✅ Badge Achievement
+✅ Sertifikat otomatis
+✅ QR Code materi
+PENUTUP
+Setelah seluruh misi selesai, layar menampilkan animasi laboratorium kembali aktif. AAAMATBOT memberikan penghargaan:
+"Selamat! Anda berhasil menyelamatkan Laboratorium Sains Digital. Kini Anda telah menjadi Master Notasi Ilmiah AAAMAT KEREN. Teruslah belajar, berpikir kritis, dan gunakan matematika untuk memecahkan masalah dunia nyata!"

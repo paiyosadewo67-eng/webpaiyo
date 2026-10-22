@@ -1,0 +1,132 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Misi HOTS — Detektif Transformasi Tunggal
+Bab   : IX-02 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+2. PROMPT GAME INTERAKTIF MISI HOTS DETEKTIF TRANSFORMASI TUNGGAL
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA : “ Assalamu'alaikum! Yuk ikut “ AAAMAT KEREN GAME EDUKASI MATEMATIKA DIGITAL INTERAKTIF “MISI HOTS DETEKTIF TRANSFORMASI TUNGGAL”
+👨‍🏫 Pengembang: Drs. PAIYO! AAAMAT KEREN DIGITAL LEARNING
+Link Share WA : 🕵️‍♂️📐 AAAMAT KEREN - MISI HOTS DETEKTIF TRANSFORMASI TUNGGAL
+Ungkap Jejak Translasi, Bongkar Rahasia Refleksi, Pecahkan Kasus Rotasi, dan Taklukkan Dilatasi! Halo Sahabat Detektif!, Ayo uji nalar kritis, kemampuan numerasi, dan logika matematikamu bersama Robot AAAMAT KEREN dalam game edukasi matematika interaktif karya Drs. PAIYO (SMP Negeri 1 Bantarkawung)!
+⭐ Detektif Yo Sadewo Putro telah meraih 815 XP! Mampukah kamu melampauinya?
+🚀 Mainkan Sekarang di Mode AIS PRE:
+https://ais-pre-ehps2zcxm2lljchkndxghp-253889415088.asia-east1.run.app
+#MatematikaSMP #HOTS #TransformasiGeometri #SMPN1Bantarkawung #DrsPAIYO
+Daftar Nilainya :
+Assalamu’alaikum,...Selamat siang, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat “ AAAMAT KEREN GAME EDUKASI MATEMATIKA DIGITAL INTERAKTIF “MISI HOTS DETEKTIF TRANSFORMASI TUNGGAL”
+. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+Buat sebuah game edukasi matematika interaktif berbasis web untuk siswa kelas IX SMP dengan tema:
+“MISI HOTS DETEKTIF TRANSFORMASI TUNGGAL”
+Subjudul:
+“Ungkap Jejak Translasi, Bongkar Rahasia Refleksi, Pecahkan Kasus Rotasi, dan Taklukkan Dilatasi!”
+Game dirancang berbasis:
+Problem Based Learning (PBL)
+Higher Order Thinking Skills (HOTS)
+Berpikir kritis
+Numerasi
+Transformasi geometri pada koordinat Kartesius
+Konteks kehidupan sehari-hari
+Gamifikasi pendidikan
+Sasaran:
+Siswa Kelas IX SMP/MTs
+Materi:
+Translasi
+Refleksi
+Rotasi
+Dilatasi
+Final Mission Transformasi Tunggal
+1. KONSEP CERITA GAME
+Siswa menjadi:
+🕵️ DETEKTIF TRANSFORMASI
+Sebuah “Ruang Geometri” mengalami gangguan.
+Logo, robot, kendaraan, motif, peta, dan berbagai objek digital berpindah posisi secara misterius.
+Untuk mengembalikan keadaan normal, pemain harus menemukan:
+arah perpindahan,
+pola pencerminan,
+pusat dan sudut rotasi,
+faktor skala,
+koordinat bayangan,
+serta alasan matematis dari setiap perubahan.
+Robot pendamping bernama:
+🤖 AAAMAT KEREN
+bertugas memberikan instruksi, petunjuk, dan umpan balik.
+Jangan langsung memberikan jawaban.
+Gunakan sistem:
+AMATI → SELIDIKI → TEMUKAN POLA → BUKTIKAN → SIMPULKAN
+2. DESAIN VISUAL
+Gunakan desain:
+modern
+futuristik
+edukatif
+cerah
+ramah siswa SMP
+tidak terlalu ramai
+responsif untuk smartphone, tablet, dan laptop.
+Palet utama:
+🔵 Biru
+🟢 Hijau
+⚪ Putih
+🟠 Oranye
+Tambahkan:
+hologram
+papan koordinat digital
+grid Kartesius
+kartu misi
+ikon kaca pembesar
+badge
+XP
+progress bar
+tombol navigasi
+animasi ringan
+efek suara positif
+indikator level.
+Gunakan karakter:
+AAAMAT KEREN — Robot Detektif Matematika
+sebagai pemandu utama.
+3. HALAMAN PEMBUKA
+Tampilkan:
+🔎 MISI HOTS DETEKTIF
+TRANSFORMASI TUNGGAL
+“Empat kasus. Empat transformasi. Satu misi terakhir.”
+Tombol:
+▶ MULAI MISI
+📖 PETUNJUK
+🏆 BADGE SAYA
+📊 SKOR
+4. ATURAN PERMAINAN
+Tampilkan aturan singkat:
+Setiap misi terdiri atas:
+🔎 Amati Masalah
+🧩 Cari Informasi
+🧠 Analisis
+✏️ Hitung
+💡 Berikan Alasan
+🎯 Pecahkan Kasus
+🏆 Dapatkan XP
+Aturan:
+Jangan hanya mencari jawaban.
+Setiap jawaban harus disertai alasan.
+Gunakan koordinat Kartesius.
+Periksa kembali hasil.
+Kesalahan tidak mengakhiri permainan.
+Pemain dapat mencoba kembali.
+5. SISTEM XP
+Gunakan sistem pengalaman:
+Aktivitas | XP
+Menjawab pertanyaan dasar | +20 XP
+Menemukan pola | +30 XP
+Memberikan alasan | +40 XP
+Menyelesaikan soal HOTS | +50 XP
+Menyelesaikan kasus kontekstual | +75 XP
+Menyelesaikan Final Mission | +150 XP
+Tambahkan bonus:
+⭐ Jawaban benar berturut-turut: +20 XP
+💡 Menggunakan petunjuk tetapi tetap benar: +10 XP
+🧠 Memberikan alasan sangat lengkap: +25 XP

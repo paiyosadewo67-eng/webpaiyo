@@ -1,0 +1,20 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Utama Poster Pembuka
+Bab   : IX-03 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT UTAMA POSTER PEMBUKA
+ 1. Prompt Utama (Bahasa Inggris — Sangat Direkomendasikan untuk Hasil Maksimal di Semua AI)
+Cinematic 3D animation style by Pixar and Unreal Engine 5. A wide-angle, warm, and inviting traditional wooden Indonesian open-air classroom veranda with lush green nature in the background. In the center, a friendly and wise Indonesian male math teacher, Drs. Paiyo, wearing a traditional black Brebesan batik shirt and an authentic Javanese batik blangkon headband, sitting behind a high-tech glowing holographic glass desk. Emerging from the desk are glowing neon cyan and golden 3D mathematical geometric figures (pyramid, cubes, coordinate axes, transformation graphs) and floating equations. Beside him stands a cute, small, friendly white companion AI robot. On the left wooden school desk, a cheerful young Indonesian schoolgirl wearing a neat hijab and uniform (Anis) is studying on an interactive glowing holographic tablet. On the right wooden school desk, a polite schoolboy student in uniform (Muhammad Attariq) is exploring 3D geometric projections. Glowing wooden marquee signboard above displaying warm neon text: "AAAMAT KEREN - ASAH ASIH ASUH MATEMATIKA". Volumetric warm golden hour sunlight streaming through, cozy atmosphere, ultra-detailed textures, vibrant colors, 8k resolution, masterpiece render.
+🎨 2. Prompt Bahasa Indonesia (Cocok untuk Bing Image Creator / DALL-E 3 / Canva)
+Prompt:
+Poster ilustrasi animasi 3D gaya Pixar dan Unreal Engine 5. Suasana ruang kelas beranda kayu tradisional Indonesia yang hangat, asri, dengan pemandangan pepohonan hijau di luar. Di tengah, guru matematika pria ramah asal Indonesia bernama Drs. Paiyo, mengenakan pakaian adat khas Brebesan warna hitam rapi dan blangkon batik Jawa, duduk di balik meja kaca futuristik bercahaya hologram neon biru dan emas. Di atas meja melayang bentuk geometri 3D (limas, kubus, grafik kartesius) dan rumus matematika neon menyala, didampingi robot AI putih kecil yang lucu dan ramah. Di sisi kiri meja, siswi SMP berhijab rapi (Anis) sedang belajar dengan layar hologram interaktif. Di sisi kanan, siswa SMP laki-laki (Muhammad Attariq) sedang antusias mengamati proyeksi geometri. Di bagian atas terdapat papan kayu bercahaya neon bertuliskan "AAAMAT KEREN - ASAH ASIH ASUH MATEMATIKA". Pencahayaan sinar matahari sore yang hangat (golden hour), sangat detail, komposisi seimbang dan presisi, resolusi 8K.
+⚡ 3. Versi Khusus Midjourney (Dilengkapi Parameter Rasio Widescreen)
+Prompt:
+/imagine prompt: A wide-angle 3D Pixar aesthetic diorama render of a warm wooden classroom in rural Indonesia. In the center, a smiling Indonesian math teacher named Drs. Paiyo wearing traditional black Brebesan attire and batik blangkon, sitting at a glowing holographic glass desk filled with neon geometric wireframes, glowing math formulas, and a cute mini AI robot. On the left, a schoolgirl in hijab (Anis) studying on a glowing holographic interface. On the right, a polite schoolboy (Muhammad Attariq) interacting with floating 3D math prisms. Above, a glowing wooden banner "AAAMAT KEREN - ASAH ASIH ASUH MATEMATIKA". Warm sunlight, rich wood tones, cinematic lighting, Unreal Engine 5 render, highly detailed --ar 16:9 --v 6.1 --style raw --q 2
+💡 Tips Penggunaan:
+Rasio Tampilan: Gunakan rasio Widescreen 16:9 agar proporsi meja, Drs. Paiyo, kedua murid (Anis & Attariq), serta dekorasi kelas terlihat utuh dan tidak terpotong.
+Platform AI: Prompt di atas bisa langsung di-copy-paste ke Bing Image Creator (DALL-E 3), Midjourney, Leonardo.ai, atau aplikasi generator AI lainnya.

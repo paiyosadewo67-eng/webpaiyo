@@ -1,0 +1,407 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt E-Modul Digital Interaktif — Transformasi Tunggal
+Bab   : IX-02 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT  E-MODUL DIGITAL INTERAKTIF  BAB TRANSFORMASI TUNGGAL
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA : “ Assalamu'alaikum! Yuk ikut “ AAAMAT KEREN GAME EDUKASI MATEMATIKA DIGITAL INTERAKTIF “MISI HOTS DETEKTIF TRANSFORMASI TUNGGAL”👨‍🏫 Pengembang: Drs. PAIYO! AAAMAT KEREN DIGITAL LEARNING
+https://ais-pre-adi46y44z4lidobnpcu4pc-253889415088.asia-east1.run.app
+Link Share WA : “ Assalamu'alaikum! Yuk ikut belajar Mandiri di E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP “MENJELAJAH RUANG GEOMETRI TRANSFORMASI TUNGGAL” (Translasi • Refleksi • Rotasi • Dilatasi) ; Berbasis Problem Based Learning (PBL) • Fokus Berpikir Kritis Pengembang: Drs. PAIYO, Sekolah: SMP Negeri 1 Bantarkawung . Yuk belajar dan selesaikan tantangan game interaktifnya di sini:
+https://ais-pre-adi46y44z4lidobnpcu4pc-253889415088.asia-east1.run.app
+AAAMAT KEREN • Belajar matematika jadi mudah, modern, dan AAAMAT KEREN
+Daftar Nilainya :
+Assalamu’alaikum,...Selamat siang, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat  “ E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX SMP “MENJELAJAH RUANG GEOMETRI TRANSFORMASI TUNGGAL”
+. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+Buat sebuah game edukasi matematika interaktif berbasis web untuk siswa kelas IX SMP dengan tema:
+E-MODUL DIGITAL INTERAKTIF MATEMATIKA
+KELAS IX SMP
+“MENJELAJAH RUANG GEOMETRI TRANSFORMASI TUNGGAL”
+Translasi • Refleksi • Rotasi • Dilatasi
+
+Berbasis Problem Based Learning (PBL)
+Fokus: Kemampuan Berpikir Kritis
+
+SMP Negeri 1 Bantarkawung
+Nama Pengembang: Drs. PAIYO
+TAGLINE
+Amati • Selidiki • Hitung • Jelaskan • Evaluasi • Simpulkan
+PETUNJUK PENGGUNAAN E-MODUL
+Baca tujuan pembelajaran sebelum memulai setiap pertemuan.
+Ikuti alur PBL: orientasi masalah → mengorganisasi penyelidikan → investigasi → mengembangkan/presentasi solusi → evaluasi/refleksi.
+Gunakan kertas berpetak, cermin kecil, penggaris, atau GeoGebra bila tersedia.
+Tuliskan bukan hanya jawaban, tetapi juga alasan dan bukti yang mendukung jawaban.
+Pada bagian Cek Kritis, tanyakan: Apa informasi penting? Apa yang berubah? Apa yang tetap? Mengapa strategi ini benar?
+Gunakan kuis digital/interaktif yang dibuat guru sebagai penguatan; jika tombol/link belum tersedia, kerjakan pertanyaan pada modul.
+KODE AKTIVITAS
+🔎 Amati | 🧭 Selidiki | ✏️ Hitung | 💡 Jelaskan | 🧠 Cek Kritis | 🎯 Tantangan HOTS | 🔄 Refleksi
+PETA PERJALANAN BELAJAR
+Pertemuan | Fokus | Produk Belajar
+1 | Konsep translasi & titik | Peta perpindahan + koordinat bayangan
+2 | Translasi bangun & konteks | Desain/logo yang ditranslasi + solusi masalah
+3 | Refleksi sumbu-x & sumbu-y | Model cermin + pola koordinat
+4 | Refleksi y=x, y=-x, O(0,0) | Kartu pola rumus + pembuktian sederhana
+5 | Refleksi x=h dan y=k | Strategi penyelesaian masalah kontekstual
+6 | Rotasi pusat O | Peta rotasi 90°, 180°, 270°
+7 | Rotasi pusat P(a,b) | Solusi kasus rotasi + presentasi
+8 | Dilatasi pusat O | Analisis faktor skala
+9 | Dilatasi pusat P(a,b) | Proyek mini transformasi + evaluasi
+CAPAIAN PEMBELAJARAN
+CP Nomor 32 Tahun 2024 (sesuai rancangan pembelajaran): Pada akhir fase D, peserta didik dapat menjelaskan transformasi geometri (translasi, refleksi, rotasi, dan dilatasi), melakukan transformasi menggunakan koordinat Kartesius, serta menyelesaikan masalah kontekstual yang berkaitan dengan transformasi geometri.
+LINTAS DISIPLIN ILMU
+Bidang | Keterkaitan
+Fisika | Perpindahan/vektor, gerak melingkar, putaran roda, sistem mekanik, dan pembesaran optik.
+TIK | Desain grafis, pergerakan karakter game, visualisasi GeoGebra, robotika, kamera dan pengolahan gambar.
+Geografi | Arah, kompas, rotasi bumi, serta skala peta.
+Seni Rupa/Desain | Motif batik, simetri, logo, ornamen, pola berulang, pembesaran/pengecilan desain.
+TUJUAN PEMBELAJARAN
+Setelah menyelesaikan 9 pertemuan, peserta didik diharapkan mampu mengidentifikasi, menjelaskan, melakukan, dan menganalisis translasi, refleksi, rotasi, serta dilatasi pada titik dan bangun datar menggunakan koordinat Kartesius; menyelesaikan masalah kontekstual; mengomunikasikan alasan; mengevaluasi strategi; dan menarik kesimpulan berdasarkan bukti.
+PERTEMUAN 1 — KONSEP TRANSLASI DAN TRANSLASI TITIK
+TUJUAN PEMBELAJARAN
+• T.1 mengidentifikasi pergeseran dalam kehidupan sehari-hari.
+• T.2 menjelaskan translasi dengan bahasa sendiri.
+• T.3 menentukan koordinat bayangan titik hasil translasi.
+1. ORIENTASI MASALAH
+Di layar desain game, ikon pesawat berpindah 4 kotak ke kanan dan 2 kotak ke atas. Bagaimana cara memastikan posisi barunya tanpa menggambar ulang?
+2. MENGORGANISASI PENYELIDIKAN
+Amati arah dan jarak perpindahan.
+Nyatakan perpindahan sebagai pasangan (a,b).
+3. INVESTIGASI DAN EKSPLORASI
+Uji pada titik A(x,y).
+Rumuskan pola T(a,b): (x,y)→(x+a,y+b).
+4. POLA/RUMUS YANG DITEMUKAN
+RUMUS/POLA KUNCI
+T(a,b): (x,y) → (x+a, y+b).
+5. CEK KRITIS & KUIS
+Pemanasan: Titik A(2,3) ditranslasi (4,2).
+→ Kunci/arah jawaban: (6,5)
+Cek Kritis: Mengapa bentuk dan ukuran tidak berubah?
+→ Kunci/arah jawaban: Semua titik bergeser dengan arah dan jarak yang sama.
+HOTS: A'=(7,-1) setelah translasi (3,-4). Tentukan A.
+→ Kunci/arah jawaban: (4,3), gunakan operasi kebalikan.
+6. TANTANGAN HOTS
+Buat satu masalah baru dari kehidupan sehari-hari yang menggunakan transformasi pada pertemuan ini. Sertakan data, gambar/sketsa, pertanyaan, strategi, jawaban, dan alasan.
+7. REFLEKSI
+Indikator | Belum | Mulai | Mampu | Sangat Mampu
+Menjelaskan konsep dengan bahasa sendiri | □ | □ | □ | □
+Menggunakan koordinat dengan teliti | □ | □ | □ | □
+Memberi alasan/bukti | □ | □ | □ | □
+Memeriksa kembali strategi | □ | □ | □ | □
+PERTEMUAN 2 — TRANSLASI BANGUN DATAR DAN PENERAPAN KONTEKSTUAL
+TUJUAN PEMBELAJARAN
+• T.4 menentukan koordinat bayangan bangun.
+• T.5 menggambar bayangan bangun.
+• T.6 menyelesaikan masalah translasi.
+1. ORIENTASI MASALAH
+Logo segitiga A(1,1), B(4,1), C(2,3) dipindahkan 5 ke kiri dan 2 ke atas. Apakah bentuk berubah?
+2. MENGORGANISASI PENYELIDIKAN
+Tentukan vektor translasi.
+Translasikan setiap titik.
+3. INVESTIGASI DAN EKSPLORASI
+Gambar awal dan bayangan.
+Bandingkan sisi dan sudut.
+Jelaskan bukti kekongruenan.
+4. POLA/RUMUS YANG DITEMUKAN
+RUMUS/POLA KUNCI
+Semua titik sudut mengikuti satu vektor translasi yang sama.
+5. CEK KRITIS & KUIS
+Kuis: A(1,1),B(4,1),C(2,3) ditranslasi (-5,2).
+→ Kunci/arah jawaban: A'(-4,3), B'(-1,3), C'(-3,5).
+Cek Kritis: Mengapa cukup mentranslasi titik sudut?
+→ Kunci/arah jawaban: Sisi bangun mengikuti posisi titik sudut.
+HOTS: Kapan dua bangun yang sama ukuran belum tentu merupakan translasi?
+→ Kunci/arah jawaban: Jika tidak ada satu vektor perpindahan yang sama untuk semua titik.
+6. TANTANGAN HOTS
+Buat satu masalah baru dari kehidupan sehari-hari yang menggunakan transformasi pada pertemuan ini. Sertakan data, gambar/sketsa, pertanyaan, strategi, jawaban, dan alasan.
+7. REFLEKSI
+Indikator | Belum | Mulai | Mampu | Sangat Mampu
+Menjelaskan konsep dengan bahasa sendiri | □ | □ | □ | □
+Menggunakan koordinat dengan teliti | □ | □ | □ | □
+Memberi alasan/bukti | □ | □ | □ | □
+Memeriksa kembali strategi | □ | □ | □ | □
+PERTEMUAN 3 — KONSEP REFLEKSI DAN REFLEKSI TERHADAP SUMBU KOORDINAT
+TUJUAN PEMBELAJARAN
+• T.7 menjelaskan refleksi melalui percobaan.
+• T.8 menentukan bayangan terhadap sumbu-x dan sumbu-y.
+1. ORIENTASI MASALAH
+Letakkan gambar panah dekat cermin. Apa yang terjadi pada posisi dan jaraknya ketika dicerminkan?
+2. MENGORGANISASI PENYELIDIKAN
+Gunakan cermin/simulasi.
+Bandingkan jarak titik dan bayangan ke cermin.
+3. INVESTIGASI DAN EKSPLORASI
+Uji sumbu-x dan sumbu-y.
+Temukan pola koordinat.
+Jelaskan sifat refleksi dengan bukti.
+4. POLA/RUMUS YANG DITEMUKAN
+RUMUS/POLA KUNCI
+Sumbu-x: (x,y)→(x,-y); sumbu-y: (x,y)→(-x,y).
+5. CEK KRITIS & KUIS
+Kuis: Bayangan P(3,-5) terhadap sumbu-x.
+→ Kunci/arah jawaban: (3,5)
+Kuis: Bayangan Q(-2,4) terhadap sumbu-y.
+→ Kunci/arah jawaban: (2,4)
+HOTS: Mengapa pada sumbu-x hanya tanda y berubah?
+→ Kunci/arah jawaban: Posisi horizontal tetap; posisi vertikal berlawanan.
+6. TANTANGAN HOTS
+Buat satu masalah baru dari kehidupan sehari-hari yang menggunakan transformasi pada pertemuan ini. Sertakan data, gambar/sketsa, pertanyaan, strategi, jawaban, dan alasan.
+7. REFLEKSI
+Indikator | Belum | Mulai | Mampu | Sangat Mampu
+Menjelaskan konsep dengan bahasa sendiri | □ | □ | □ | □
+Menggunakan koordinat dengan teliti | □ | □ | □ | □
+Memberi alasan/bukti | □ | □ | □ | □
+Memeriksa kembali strategi | □ | □ | □ | □
+PERTEMUAN 4 — REFLEKSI TERHADAP y=x, y=-x, DAN TITIK ASAL
+TUJUAN PEMBELAJARAN
+• T.9 menemukan pola refleksi y=x dan y=-x.
+• T.10 menemukan pola refleksi terhadap O(0,0).
+1. ORIENTASI MASALAH
+Robot bergerak mengikuti garis y=x. Jika P(2,5) dicerminkan terhadap garis tersebut, apa koordinatnya?
+2. MENGORGANISASI PENYELIDIKAN
+Uji beberapa titik pada y=x.
+Bandingkan pasangan koordinat.
+3. INVESTIGASI DAN EKSPLORASI
+Uji y=-x.
+Uji titik asal.
+Susun kartu pola rumus.
+4. POLA/RUMUS YANG DITEMUKAN
+RUMUS/POLA KUNCI
+y=x: (x,y)→(y,x); y=-x: (x,y)→(-y,-x); O: (x,y)→(-x,-y).
+5. CEK KRITIS & KUIS
+Kuis: Refleksi (3,5) terhadap y=x.
+→ Kunci/arah jawaban: (5,3)
+Kuis: Refleksi (3,5) terhadap y=-x.
+→ Kunci/arah jawaban: (-5,-3)
+HOTS: Mengapa y=x menukar x dan y?
+→ Kunci/arah jawaban: Pasangan koordinat bertukar untuk mempertahankan jarak yang sama terhadap garis y=x.
+6. TANTANGAN HOTS
+Buat satu masalah baru dari kehidupan sehari-hari yang menggunakan transformasi pada pertemuan ini. Sertakan data, gambar/sketsa, pertanyaan, strategi, jawaban, dan alasan.
+7. REFLEKSI
+Indikator | Belum | Mulai | Mampu | Sangat Mampu
+Menjelaskan konsep dengan bahasa sendiri | □ | □ | □ | □
+Menggunakan koordinat dengan teliti | □ | □ | □ | □
+Memberi alasan/bukti | □ | □ | □ | □
+Memeriksa kembali strategi | □ | □ | □ | □
+PERTEMUAN 5 — REFLEKSI TERHADAP GARIS x=h DAN y=k
+TUJUAN PEMBELAJARAN
+• T.11 menentukan bayangan terhadap x=h dan y=k.
+• T.12 menyelesaikan masalah kontekstual.
+1. ORIENTASI MASALAH
+Layar simetri berada pada x=4. Karakter P(1,2). Di mana bayangannya?
+2. MENGORGANISASI PENYELIDIKAN
+Gambar garis cermin.
+Hitung jarak titik ke garis.
+3. INVESTIGASI DAN EKSPLORASI
+Pindahkan sejauh jarak yang sama.
+Uji beberapa titik.
+Rumuskan pola x=h dan y=k.
+4. POLA/RUMUS YANG DITEMUKAN
+RUMUS/POLA KUNCI
+x=h: (x,y)→(2h-x,y); y=k: (x,y)→(x,2k-y).
+5. CEK KRITIS & KUIS
+Kuis: Refleksi P(1,2) terhadap x=4.
+→ Kunci/arah jawaban: (7,2)
+Kuis: Refleksi Q(3,5) terhadap y=1.
+→ Kunci/arah jawaban: (3,-3)
+HOTS: Siswa menulis refleksi (2,3) terhadap x=5 menjadi (8,3). Benarkah?
+→ Kunci/arah jawaban: Benar; jarak 2 ke 5 adalah 3, sehingga bayangan 3 satuan di sisi lain adalah 8.
+6. TANTANGAN HOTS
+Buat satu masalah baru dari kehidupan sehari-hari yang menggunakan transformasi pada pertemuan ini. Sertakan data, gambar/sketsa, pertanyaan, strategi, jawaban, dan alasan.
+7. REFLEKSI
+Indikator | Belum | Mulai | Mampu | Sangat Mampu
+Menjelaskan konsep dengan bahasa sendiri | □ | □ | □ | □
+Menggunakan koordinat dengan teliti | □ | □ | □ | □
+Memberi alasan/bukti | □ | □ | □ | □
+Memeriksa kembali strategi | □ | □ | □ | □
+PERTEMUAN 6 — KONSEP DASAR ROTASI DAN ROTASI DENGAN PUSAT (0,0)
+TUJUAN PEMBELAJARAN
+• T.13 mengidentifikasi contoh rotasi.
+• T.14 menjelaskan pusat, sudut, arah.
+• T.15 menentukan bayangan 90°,180°,270°.
+1. ORIENTASI MASALAH
+Amati jarum jam, roda, kipas, atau karakter game. Informasi apa yang diperlukan untuk menentukan posisi akhir?
+2. MENGORGANISASI PENYELIDIKAN
+Tentukan pusat rotasi.
+Bedakan arah putaran.
+3. INVESTIGASI DAN EKSPLORASI
+Uji 90°, 180°, 270° pada kertas berpetak.
+Temukan pola koordinat.
+Periksa hasil dengan gambar.
+4. POLA/RUMUS YANG DITEMUKAN
+RUMUS/POLA KUNCI
+90° CCW: (-y,x); 180°: (-x,-y); 270° CCW: (y,-x).
+5. CEK KRITIS & KUIS
+Kuis: Rotasi 90° CCW.
+→ Kunci/arah jawaban: (x,y)→(-y,x)
+Kuis: Rotasi 180°.
+→ Kunci/arah jawaban: (x,y)→(-x,-y)
+HOTS: P(2,-3) diputar 90° CCW.
+→ Kunci/arah jawaban: P'=(3,2).
+6. TANTANGAN HOTS
+Buat satu masalah baru dari kehidupan sehari-hari yang menggunakan transformasi pada pertemuan ini. Sertakan data, gambar/sketsa, pertanyaan, strategi, jawaban, dan alasan.
+7. REFLEKSI
+Indikator | Belum | Mulai | Mampu | Sangat Mampu
+Menjelaskan konsep dengan bahasa sendiri | □ | □ | □ | □
+Menggunakan koordinat dengan teliti | □ | □ | □ | □
+Memberi alasan/bukti | □ | □ | □ | □
+Memeriksa kembali strategi | □ | □ | □ | □
+PERTEMUAN 7 — ROTASI DENGAN PUSAT P(a,b) DAN PENERAPAN
+TUJUAN PEMBELAJARAN
+• T.16 menentukan bayangan dengan pusat P(a,b).
+• T.17 menyelesaikan masalah rotasi.
+• T.18 mempresentasikan analisis.
+1. ORIENTASI MASALAH
+Robot berputar 90° dengan pusat P(2,1). Ujung lengan A(5,1). Tentukan posisi baru.
+2. MENGORGANISASI PENYELIDIKAN
+Geser pusat menjadi titik asal.
+Lakukan rotasi.
+3. INVESTIGASI DAN EKSPLORASI
+Geser kembali.
+Verifikasi jarak ke pusat.
+Presentasikan alasan.
+4. POLA/RUMUS YANG DITEMUKAN
+RUMUS/POLA KUNCI
+Pusat (a,b): geser ke pusat → rotasi → geser kembali.
+5. CEK KRITIS & KUIS
+Kuis: Langkah awal rotasi pusat (a,b).
+→ Kunci/arah jawaban: Kurangi koordinat titik dengan pusat.
+Cek Kritis: Mengapa jarak ke pusat tetap?
+→ Kunci/arah jawaban: Rotasi mengubah arah, bukan jarak dari pusat.
+HOTS: A(5,1) diputar 90° CCW terhadap P(2,1).
+→ Kunci/arah jawaban: A'=(2,4).
+6. TANTANGAN HOTS
+Buat satu masalah baru dari kehidupan sehari-hari yang menggunakan transformasi pada pertemuan ini. Sertakan data, gambar/sketsa, pertanyaan, strategi, jawaban, dan alasan.
+7. REFLEKSI
+Indikator | Belum | Mulai | Mampu | Sangat Mampu
+Menjelaskan konsep dengan bahasa sendiri | □ | □ | □ | □
+Menggunakan koordinat dengan teliti | □ | □ | □ | □
+Memberi alasan/bukti | □ | □ | □ | □
+Memeriksa kembali strategi | □ | □ | □ | □
+PERTEMUAN 8 — DILATASI DENGAN PUSAT (0,0)
+TUJUAN PEMBELAJARAN
+• T.19 mengidentifikasi pembesaran/pengecilan.
+• T.20 menentukan bayangan titik.
+• T.21 menentukan bayangan bangun.
+• T.22 menganalisis faktor skala.
+1. ORIENTASI MASALAH
+Kamera memperbesar ikon dari pusat layar. Apa yang terjadi pada jarak setiap titik jika k=2?
+2. MENGORGANISASI PENYELIDIKAN
+Uji k=2, 1/2, 1.
+Bandingkan jarak ke pusat.
+3. INVESTIGASI DAN EKSPLORASI
+Temukan pola (x,y)→(kx,ky).
+Analisis k negatif.
+Jelaskan pengaruh |k|.
+4. POLA/RUMUS YANG DITEMUKAN
+RUMUS/POLA KUNCI
+Pusat O: (x,y)→(kx,ky).
+5. CEK KRITIS & KUIS
+Kuis: Dilatasi P(3,-2), k=2.
+→ Kunci/arah jawaban: (6,-4)
+Kuis: Dilatasi Q(4,6), k=1/2.
+→ Kunci/arah jawaban: (2,3)
+HOTS: Makna k=1, k>1, 0<k<1, k<0.
+→ Kunci/arah jawaban: Tetap; membesar; mengecil; berbalik arah dan diskalakan.
+6. TANTANGAN HOTS
+Buat satu masalah baru dari kehidupan sehari-hari yang menggunakan transformasi pada pertemuan ini. Sertakan data, gambar/sketsa, pertanyaan, strategi, jawaban, dan alasan.
+7. REFLEKSI
+Indikator | Belum | Mulai | Mampu | Sangat Mampu
+Menjelaskan konsep dengan bahasa sendiri | □ | □ | □ | □
+Menggunakan koordinat dengan teliti | □ | □ | □ | □
+Memberi alasan/bukti | □ | □ | □ | □
+Memeriksa kembali strategi | □ | □ | □ | □
+PERTEMUAN 9 — DILATASI DENGAN PUSAT P(a,b) DAN APLIKASI
+TUJUAN PEMBELAJARAN
+• T.23 menentukan bayangan titik.
+• T.24 menentukan bayangan bangun.
+• T.25 menyelesaikan masalah dilatasi.
+1. ORIENTASI MASALAH
+Desainer memperbesar motif dengan pusat P(2,2), k=3. Titik A(3,4) menjadi titik apa?
+2. MENGORGANISASI PENYELIDIKAN
+Kurangi koordinat dengan pusat.
+Kalikan dengan k.
+3. INVESTIGASI DAN EKSPLORASI
+Tambahkan kembali pusat.
+Gambar sebelum-sesudah.
+Periksa rasio jarak.
+4. POLA/RUMUS YANG DITEMUKAN
+RUMUS/POLA KUNCI
+Pusat (a,b): (a+k(x-a), b+k(y-b)).
+5. CEK KRITIS & KUIS
+Kuis: A(3,4), pusat (2,2), k=3.
+→ Kunci/arah jawaban: (5,8)
+Cek Kritis: Mengapa tidak langsung mengalikan (x,y) dengan 3?
+→ Kunci/arah jawaban: Karena pusat dilatasi bukan O.
+HOTS: Jarak titik ke pusat 4 cm dan bayangan 10 cm. Mungkinkah dilatasi?
+→ Kunci/arah jawaban: Ya, rasio 10/4=2,5 jika arah relatif sesuai.
+6. TANTANGAN HOTS
+Buat satu masalah baru dari kehidupan sehari-hari yang menggunakan transformasi pada pertemuan ini. Sertakan data, gambar/sketsa, pertanyaan, strategi, jawaban, dan alasan.
+7. REFLEKSI
+Indikator | Belum | Mulai | Mampu | Sangat Mampu
+Menjelaskan konsep dengan bahasa sendiri | □ | □ | □ | □
+Menggunakan koordinat dengan teliti | □ | □ | □ | □
+Memberi alasan/bukti | □ | □ | □ | □
+Memeriksa kembali strategi | □ | □ | □ | □
+RANGKUMAN BESAR TRANSFORMASI TUNGGAL
+Transformasi | Aturan penting | Ciri utama
+Translasi | (x,y)→(x+a,y+b) | Geser; bentuk dan ukuran tetap.
+Refleksi sumbu-x | (x,y)→(x,-y) | Cermin terhadap sumbu-x.
+Refleksi sumbu-y | (x,y)→(-x,y) | Cermin terhadap sumbu-y.
+Refleksi y=x | (x,y)→(y,x) | Koordinat bertukar.
+Refleksi y=-x | (x,y)→(-y,-x) | Koordinat bertukar dan tanda berubah.
+Refleksi O | (x,y)→(-x,-y) | Jarak ke O tetap; arah berlawanan.
+Rotasi 90° CCW, O | (x,y)→(-y,x) | Jarak ke pusat tetap.
+Rotasi 180°, O | (x,y)→(-x,-y) | Setengah putaran.
+Rotasi 270° CCW, O | (x,y)→(y,-x) | Tiga perempat putaran.
+Dilatasi O | (x,y)→(kx,ky) | Jarak ke pusat dikali |k|.
+Dilatasi P(a,b) | (a+k(x-a), b+k(y-b)) | Jarak relatif terhadap pusat dikali |k|.
+ASESMEN SUMATIF — MISI DETEKTIF TRANSFORMASI
+Kerjakan dengan langkah dan alasan. Pada uraian, jawaban tanpa alasan belum lengkap.
+No | Soal | Kunci
+1 | A(-2,3) ditranslasi (5,-4). | (3,-1)
+2 | A(1,2), B(3,2), C(2,5) ditranslasi (-2,3). | (-1,5),(1,5),(0,8)
+3 | Refleksi P(-4,6) terhadap sumbu-x. | (-4,-6)
+4 | Refleksi Q(5,-2) terhadap sumbu-y. | (-5,-2)
+5 | Refleksi R(2,7) terhadap y=x. | (7,2)
+6 | Refleksi S(2,7) terhadap y=-x. | (-7,-2)
+7 | Refleksi T(-3,4) terhadap O. | (3,-4)
+8 | Refleksi U(2,5) terhadap x=6. | (10,5)
+9 | Refleksi V(4,-1) terhadap y=3. | (4,7)
+10 | Rotasi W(2,1) 90° CCW terhadap O. | (-1,2)
+11 | Rotasi X(3,-4) 180° terhadap O. | (-3,4)
+12 | Rotasi Y(5,2) 270° CCW terhadap O. | (2,-5)
+13 | Rotasi A(5,1) 90° CCW pusat (2,1). | (2,4)
+14 | Dilatasi B(3,-2), pusat O, k=2. | (6,-4)
+15 | Dilatasi C(6,4), pusat O, k=1/2. | (3,2)
+16 | Dilatasi D(3,4), pusat (2,2), k=3. | (5,8)
+RUBRIK BERPIKIR KRITIS
+Aspek | 4 | 3 | 2 | 1
+Identifikasi masalah | Informasi relevan lengkap dan tepat. | Hampir lengkap. | Sebagian tepat. | Tidak mampu memilah.
+Strategi | Tepat dan efisien. | Tepat dengan sedikit kekurangan. | Ada strategi tetapi kurang tepat. | Tidak ada strategi.
+Alasan/Bukti | Logis dan bukti kuat. | Cukup logis. | Masih umum. | Tanpa alasan.
+Evaluasi | Memeriksa dan memperbaiki. | Memeriksa hasil. | Terbatas. | Tidak memeriksa.
+Kesimpulan | Jelas dan berdasarkan bukti. | Tepat namun singkat. | Sebagian tepat. | Tidak sesuai.
+PROYEK MINI — GALERI TRANSFORMASI
+Pilih logo, motif batik, ikon, robot, rambu, atau karakter. Buat pada bidang Kartesius, lakukan minimal dua transformasi tunggal secara berurutan, lalu dokumentasikan perubahan koordinat dan alasan setiap langkah.
+Tentukan konteks dan objek.
+Tuliskan koordinat titik penting.
+Pilih transformasi dan aturan.
+Gambar objek awal dan hasil transformasi.
+Jelaskan perubahan dan sifat yang tetap/berubah.
+Presentasikan hasil selama 3–5 menit.
+PRODUK AKHIR
+Poster/slide/lembar digital berisi objek awal, transformasi, koordinat, perhitungan, alasan, dan refleksi. Tambahkan QR/link GeoGebra bila tersedia.
+LEMBAR REFLEKSI AKHIR
+□ Konsep transformasi yang paling saya kuasai adalah … karena …
+□ Kesalahan yang pernah saya lakukan dan cara memperbaikinya adalah …
+□ Saya dapat membedakan translasi, refleksi, rotasi, dan dilatasi dengan cara …
+□ Strategi berpikir kritis yang paling membantu saya adalah …
+□ Jika menghadapi masalah transformasi baru, langkah pertama saya adalah …
+
+“Matematika bukan sekadar menemukan jawaban, tetapi menemukan alasan mengapa jawaban itu benar.”
+AAAMAT KEREN • Belajar matematika jadi mudah, modern, dan AAAMAT KEREN.

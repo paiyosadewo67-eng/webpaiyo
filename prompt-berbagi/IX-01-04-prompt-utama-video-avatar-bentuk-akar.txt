@@ -1,0 +1,358 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Utama Video Avatar — Bentuk Akar
+Bab   : IX-01 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT UTAMA VIDEO AVATAR AAAMAT KEREN — KOMIK EDUKASI BENTUK AKAR
+🎬 PROMPT UTAMA VIDEO AVATAR
+⭐ AAAMAT KEREN — KOMIK EDUKASI BENTUK AKAR
+Instruksi umum untuk semua video:
+Buat video pembelajaran matematika edukatif bergaya cinematic 3D modern berdasarkan karakter dan adegan pada poster AAAMAT KEREN. Gunakan bahasa Indonesia sepenuhnya dalam dialog dan narasi. Jangan menggunakan bahasa Inggris dalam suara karakter. Pertahankan karakter Drs. PAIYO sebagai guru matematika yang ramah, inspiratif, berkumis tipis, mengenakan pakaian khas Indonesia dengan penutup kepala tradisional. Gunakan karakter Zulfa sebagai penanya kritis, Rafly sebagai siswa pecinta tantangan, Anis sebagai ahli catatan, Atta sebagai eksplorator, dan robot AAAMATBOT sebagai pendamping belajar.
+Gaya visual: 3D educational animation, cinematic, futuristic Indonesian classroom, neon blue-cyan hologram, warm lighting, expressive facial animation, natural lip-sync, friendly educational atmosphere, high detail, 16:9.
+Guru dan siswa berbicara secara bergantian sesuai dialog. Ekspresi wajah harus sesuai dengan isi pembicaraan. Tambahkan gerakan tangan sederhana, menunjuk papan digital, mengangguk, tersenyum, dan ekspresi berpikir.
+PENTING: Gunakan suara bahasa Indonesia yang jelas, natural, hangat, dan mudah dipahami siswa SMP. Jangan membuat dialog terlalu cepat. Berikan jeda alami antar kalimat. Jangan mengubah rumus matematika yang disebutkan.
+🎬 POSTER 1
+🌟 MENGENAL BENTUK AKAR
+Prompt Google Flow:
+Buat video avatar pembelajaran dari komik Poster 1 AAAMAT KEREN. Adegan berada di kelas matematika futuristik. Drs. PAIYO berdiri di depan papan hologram besar. Di papan muncul bilangan 1, 2, 3, 4, 5, 9, dan 16 beserta akar masing-masing.
+Dialog:
+Drs. PAIYO:
+"Anak-anak, hari ini kita akan mengenal bentuk akar. Perhatikan beberapa bilangan pada papan."
+Rafly:
+"Pak, kalau akar 1 hasilnya 1, akar 4 hasilnya 2, dan akar 9 hasilnya 3."
+Zulfa:
+"Berarti akar 2 berbeda, Pak. Hasilnya sekitar 1 koma 4142 dan tidak berhenti."
+Anis:
+"Jadi ada akar yang hasilnya bilangan rasional dan ada yang irasional?"
+Drs. PAIYO:
+"Betul sekali. Jika hasil akar merupakan bilangan irasional, maka kita menyebutnya bentuk akar."
+AAAMATBOT:
+"Ingat! Akar irasional termasuk bentuk akar. Akar yang hasilnya rasional bukan bentuk akar."
+Drs. PAIYO:
+"Hebat! Jangan hanya menghafal. Amati polanya dan pahami alasannya."
+Akhiri dengan semua siswa mengangguk dan papan hologram menampilkan tulisan: "PAHAMI KONSEPNYA!"
+Konsep Poster 1 memang menekankan pengenalan bentuk akar melalui perbandingan hasil akar rasional dan irasional.
+🎬 POSTER 2
+🔎 MENEMUKAN CIRI BENTUK AKAR
+Buat video lanjutan yang terasa menyambung langsung dengan Poster 1. Tampilkan Zulfa, Rafly, Anis, dan Atta berdiskusi di depan papan hologram.
+Rafly:
+"Sekarang saya ingin mencoba membedakan mana yang termasuk bentuk akar."
+Zulfa:
+"Coba kita perhatikan hasil akarnya. Kalau hasilnya irasional, berarti termasuk bentuk akar."
+Atta:
+"Kalau akar 4 sama dengan 2, berarti bukan bentuk akar karena hasilnya bilangan rasional."
+Anis:
+"Sedangkan akar 2, akar 3, dan akar 5 menghasilkan bilangan irasional."
+Drs. PAIYO:
+"Tepat! Kuncinya adalah melihat hasil penarikan akarnya."
+AAAMATBOT:
+"Tips AAAMAT KEREN: jangan hanya melihat simbol akar. Perhatikan hasilnya!"
+Drs. PAIYO:
+"Sekarang giliran kalian. Tentukan mana yang merupakan bentuk akar dan jelaskan alasannya."
+Tampilkan papan digital dengan beberapa akar dan siswa mulai mengerjakan.
+🎬 POSTER 3
+🔥 BENTUK AKAR DAN PANGKAT PECAHAN
+Poster ini memang berisi hubungan akar dengan pangkat pecahan, termasuk pola an=a1/n\sqrt[n]{a}=a^{1/n}na​=a1/n dan amn=am/n\sqrt[n]{a^m}=a^{m/n}nam​=am/n.
+Buat video pembelajaran dari komik Poster 3. Drs. PAIYO mengarahkan siswa mengamati pola pada papan hologram.
+Rafly:
+"Pak, apakah bentuk akar bisa ditulis menggunakan pangkat pecahan?"
+Drs. PAIYO:
+"Tentu. Perhatikan pola ini."
+Zulfa:
+"Berarti akar kuadrat dari 3 dapat ditulis sebagai 3 pangkat satu per dua?"
+Drs. PAIYO:
+"Benar. Jadi akar 3 sama dengan 3 pangkat satu per dua."
+Anis:
+"Kalau akar pangkat tiga dari 5 berarti 5 pangkat satu per tiga."
+Atta:
+"Wah, berarti akar pangkat n dari a dapat ditulis sebagai a pangkat satu per n!"
+Drs. PAIYO:
+"Luar biasa! Dan jika di dalam akar terdapat pangkat m, maka pangkat pecahannya menjadi m per n."
+AAAMATBOT:
+"Kesimpulan: bentuk akar dan pangkat pecahan adalah dua cara penulisan yang ekuivalen."
+Drs. PAIYO:
+"Sekarang coba ubah bentuk akar menjadi pangkat pecahan, dan sebaliknya."
+🎬 POSTER 4
+➕ OPERASI PENJUMLAHAN & PENGURANGAN
+Materi Poster 4 menekankan akar sejenis dan tidak sejenis, serta penyederhanaan sebelum operasi.
+Buat video pembelajaran dengan papan hologram menampilkan beberapa bentuk akar.
+Anis:
+"Pak, apakah semua bentuk akar bisa langsung dijumlahkan?"
+Drs. PAIYO:
+"Tidak. Kita harus melihat apakah bentuk akarnya sejenis."
+Zulfa:
+"Sejenis artinya memiliki bentuk akar yang sama?"
+Drs. PAIYO:
+"Betul. Misalnya tiga akar dua ditambah lima akar dua. Karena sejenis, koefisiennya dapat dijumlahkan."
+Rafly:
+"Jadi hasilnya delapan akar dua!"
+Atta:
+"Kalau akarnya berbeda?"
+Drs. PAIYO:
+"Tidak dapat langsung digabungkan. Sederhanakan terlebih dahulu dan periksa kembali apakah menjadi sejenis."
+AAAMATBOT:
+"Ingat! Akar sejenis dapat dijumlahkan atau dikurangkan. Akar tidak sejenis tidak dapat langsung digabungkan."
+Drs. PAIYO:
+"Sekarang, mari kita buktikan melalui latihan."
+🎬 POSTER 5
+✖️ PERKALIAN & PENYEDERHANAAN BENTUK AKAR
+Poster 5 berfokus pada perkalian akar, kuadrat akar, faktorisasi, dan bentuk paling sederhana.
+Buat video pembelajaran dengan suasana kelas menjadi lebih interaktif. Pada papan hologram muncul dua bentuk akar.
+Atta:
+"Pak, kalau bentuk akar dikalikan bagaimana?"
+Drs. PAIYO:
+"Kita dapat menggunakan sifat perkalian bentuk akar. Kalikan bagian yang sesuai, kemudian sederhanakan."
+Rafly:
+"Berarti setelah dikalikan, kita harus melihat apakah bilangan di dalam akar masih bisa disederhanakan."
+Drs. PAIYO:
+"Tepat sekali."
+Zulfa:
+"Jadi kita perlu mencari faktor bilangan kuadrat sempurna."
+Anis:
+"Misalnya 50 dapat ditulis sebagai 25 kali 2, sehingga akar 50 menjadi 5 akar 2."
+Drs. PAIYO:
+"Hebat! Itulah kunci penyederhanaan."
+AAAMATBOT:
+"Tips: faktorkan bilangan dalam akar. Cari faktor yang merupakan kuadrat sempurna."
+Drs. PAIYO:
+"Semakin terampil melakukan faktorisasi, semakin mudah menyederhanakan bentuk akar."
+🎬 POSTER 6
+🧠 OPERASI & PEMECAHAN MASALAH BENTUK AKAR
+Buat video pembelajaran dengan Drs. PAIYO mengajak siswa menyelesaikan masalah kontekstual. Papan hologram menampilkan contoh diagonal layar, tangga dan jarak.
+Drs. PAIYO:
+"Sekarang kita tidak hanya menghitung. Kita akan menggunakan bentuk akar untuk menyelesaikan masalah nyata."
+Rafly:
+"Misalnya menentukan diagonal suatu benda?"
+Drs. PAIYO:
+"Benar. Bentuk akar sering muncul ketika kita menentukan jarak atau diagonal."
+Zulfa:
+"Berarti kita harus memahami masalah terlebih dahulu, kemudian membuat model matematikanya."
+Anis:
+"Setelah itu melakukan perhitungan dan menyederhanakan hasil."
+Atta:
+"Lalu memeriksa apakah jawabannya masuk akal."
+Drs. PAIYO:
+"Itulah cara berpikir matematis yang baik: pahami masalah, buat model, hitung, lalu simpulkan."
+AAAMATBOT:
+"Jangan terburu-buru mencari jawaban. Temukan strateginya!"
+Akhiri dengan tulisan hologram: "PAHAMI → MODELKAN → HITUNG → SIMPULKAN."
+🎬 POSTER 7
+➗ OPERASI PEMBAGIAN BENTUK AKAR
+Buat video pembelajaran dengan fokus utama papan digital. Tampilkan contoh pembagian bentuk akar secara bertahap.
+Rafly:
+"Pak, bagaimana menyederhanakan pembagian yang penyebutnya berbentuk akar?"
+Drs. PAIYO:
+"Mari kita amati. Misalnya tiga dibagi akar tiga."
+Zulfa:
+"Kita dapat mengubahnya menjadi pecahan, lalu mengalikan pembilang dan penyebut dengan akar tiga."
+Drs. PAIYO:
+"Benar. Setelah itu sederhanakan."
+Anis:
+"Jadi hasil akhirnya menjadi akar tiga."
+Atta:
+"Ada cara cepatnya juga, Pak?"
+Drs. PAIYO:
+"Ada. Setelah memahami cara panjangnya, kita dapat menggunakan cara cepat untuk bentuk yang sesuai."
+AAAMATBOT:
+"Tetapi ingat: pahami konsepnya terlebih dahulu sebelum menggunakan cara cepat."
+Drs. PAIYO:
+"Sekarang coba kalian selesaikan beberapa soal pembagian bentuk akar."
+🎬 POSTER 8
+🚀 MERASIONALKAN PENYEBUT BENTUK AKAR
+Poster 8 memang berfokus pada operasi pembagian dan merasionalkan penyebut, dengan gagasan bahwa penyebut yang mengandung akar diubah menjadi bilangan rasional.
+Buat video pembelajaran sebagai puncak materi operasi bentuk akar. Drs. PAIYO berdiri di depan papan hologram yang sangat terang. Tampilkan sebuah pecahan dengan penyebut berbentuk akar.
+Rafly:
+"Pak, mengapa penyebut yang mengandung akar perlu dirasionalkan?"
+Drs. PAIYO:
+"Tujuannya agar penyebut menjadi bilangan rasional dan bentuk pecahan lebih standar serta mudah digunakan."
+Zulfa:
+"Caranya dengan mengalikan pembilang dan penyebut dengan bentuk akar yang sesuai?"
+Drs. PAIYO:
+"Betul sekali."
+Anis:
+"Jadi nilai pecahannya tetap sama, tetapi bentuknya menjadi lebih sederhana."
+Atta:
+"Wah, ternyata bukan mengubah nilainya, hanya mengubah bentuknya."
+Drs. PAIYO:
+"Tepat! Itulah inti merasionalkan penyebut."
+AAAMATBOT:
+"Langkah AAAMAT KEREN: lihat penyebut, tentukan faktor pengali, kalikan atas dan bawah, sederhanakan, lalu pastikan penyebut sudah rasional."
+Drs. PAIYO:
+"Sekarang kalian sudah siap menghadapi soal yang lebih menantang!"
+Semua siswa tersenyum dan mengangkat tangan.
+Semua:
+"AAAMAT KEREN!"
+Akhiri dengan hologram besar:
+"BERPIKIR KRITIS • TELITI MENGANALISIS • MEMECAHKAN MASALAH NYATA"
+🎯 PROMPT PENUTUP UNTUK SEMUA VIDEO
+Bapak bisa menambahkan bagian ini di akhir setiap prompt Google Flow agar karakter dan gaya videonya konsisten:
+Gunakan bahasa Indonesia 100%. Jangan menerjemahkan dialog ke bahasa Inggris. Jangan menghilangkan rumus matematika yang disebutkan. Pastikan pelafalan simbol matematika jelas dalam bahasa Indonesia. Pertahankan desain karakter Drs. PAIYO, Zulfa, Rafly, Anis, Atta, dan AAAMATBOT secara konsisten antarvideo. Gunakan gaya video pendidikan yang hangat, inspiratif, tidak terlalu cepat, dengan jeda alami agar siswa SMP dapat mengikuti penjelasan. Kamera terutama fokus pada karakter yang sedang berbicara dan papan hologram yang menampilkan konsep matematika. Format landscape 16:9, cinematic 3D, kualitas tinggi, futuristic Indonesian classroom, neon blue-cyan holographic educational interface.
+Dengan format ini, Poster 1–8 bisa menjadi satu serial video pembelajaran yang nyambung, bukan sekadar delapan video terpisah: mulai dari mengenal bentuk akar → pangkat pecahan → operasi → perkalian → pembagian → merasionalkan penyebut. Struktur dan karakter utamanya juga konsisten dengan poster yang Bapak lampirkan.
+Gunakan bahasa Indonesia pada setiap tulisan di poster; Buat ilustrasi edukasi matematika 3D bergaya diorama mini ultra detail dengan nuansa pembelajaran interaktif modern SMP Indonesia. Komposisi persegi rasio 1:1, kualitas ultra HD 4K, cinematic lighting hangat, warna cerah kontras tinggi, sangat tajam, gaya Pixar Animation + Unreal Engine 5 render, suasana ruang belajar digital futuristik namun tetap realistis, edukatif, elegan dan inspiratif.
+TOKOH UTAMA:
+1. Guru matematika laki-laki Indonesia memakai pakaian khas Brebesan seperti foto referensi, lengkap tanda pengenal guru, blangkon batik , wajah ramah berwibawa, duduk di meja digital modern di rumah sambil mengoperasikan papan pembelajaran hologram interaktif.
+Ekspresi inspiratif, hangat, profesional, seperti guru kreatif modern Indonesia.
+WAJIB menggunakan wajah guru sesuai foto referensi yang diupload:
+- wajah asli Indonesia
+- senyum ramah
+- kumis dan jenggot tipis
+- blangkon brebesan
+- seragam pakaian khas brebesan , blangkon  elegan
+- memakai ID card guru
+TEMA UTAMA :
+“ BENTUK AKAR ”
+HEADER UTAMA:
+Di bagian atas terdapat papan judul besar warna hitam doff glossy dengan bingkai kayu modern dan baut logam futuristik.
+Tulisan glowing neon 3D warna kuning-oranye terang:
+“AAAMAT KEREN”
+Subjudul:
+“ASAH ASIH ASUH MATEMATIKA”
+“KREATIF – EKSPLORATIF – REPRESENTATIF – EKSLEN – NO DROP”
+EFEK VISUAL:
+- neon glow
+- cinematic lighting
+- volumetric light
+- hologram effect
+- 3D embossed text
+- soft reflection
+- futuristic classroom ambience
+- ultra detailed textures
+- highly realistic lighting
+- floating digital particles
+- modern educational technology
+PAPAN DIGITAL INTERAKTIF:
+Papan digital utama dibuat TERANG dan KONTRAS sehingga seluruh tombol dan fitur terlihat jelas, bercahaya, dan mudah dibaca.
+Tampilan hologram matematika modern dengan animasi:
+- gambar ilustrasi Bentuk Akar bergerak dinamis
+- panah geometri bercahaya
+- permainan Bentuk Akar digital
+- game  Bentuk Akar terkait  Bentuk akar  digital aktif
+- rumus rumus Bentuk Akar dalam matematika melayang
+FITUR TOMBOL INTERAKTIF BESAR DAN MENYALA:
+1. MULAI BELAJAR
+2. TUJUAN PEMBELAJARAN
+3. VIDEO PEMBELAJARAN
+4. LKPD DIGITAL INTERAKTIF
+5. GAME INTERAKTIF
+6. ASESMEN SUMATIF
+7. MATERI PEMBELAJARAN
+8. AUDIO PEMBELAJARAN ICE BREAKING
+9. RAPOR DIGITAL
+ini isi link nya:
+2. Link TUJUAN PEMBELAJARAN
+Setelah menyimak, menonton, mengamati, mencoba belajar mandiri melalui Pembelajaran AAAMAT KEREN Interaktif ini, murid dapat :
+1.	1 Memahami kansep Bilangan Berpangkat
+2.	Memahami Konsep Bilangan Berpangkat Nol dan Bilangan berpangkat negatif
+3.	Menghitung Hasil Bilangan Berpangkat
+4.	Memahami Konsep Perkalian Bilangan Berpangkat
+5.	Memahami konsep Bilangan Berpangkat di Pangkatkan lagi
+6.	Memahami Konsep Pembagian Bilangan Berpangkat
+7.	Penerapan Bilangan Berpangkat
+8.	Memahami Bilangan Berpangkat Pecahan dan Bentuk Akar
+9.	Memahami cara mengubah Pangkat Pecahan menjadi Bentuk Akar
+10.	Menentukan Hasil Pangkat Pecahan atau Bentuk Akar
+11.	Memahami Operasi Penjumlahan Pengurangan Bentuk Akar
+12.	Penjumlahan Pengurangan Bentuk Akar Sejenis
+13.	.Memahami Perkaliahan Bentuk Akar
+14.	Menyederhanakan Bentuk Akar sederhana
+15.	Merasionalkan Penyebut bentuk Akar
+16.	Merasionalkan Bentuk Akar bagian kedua
+17.	Menyeselesaikan Soal soal HOTS Tipe OSN
+3.🔹 LINK VIDEO PEMBELAJARAN
+1.	Memahami kansep Bilangan Berpangkat
+https://youtu.be/rDqyYoaXuho?si=Zaob1jSCnHUpjLVv
+2.	Memahami Konsep Bilangan Berpangkat Nol dan Bilangan berpangkat negatif
+https://youtu.be/RZHcwgToMTo?si=N11gHW2KYWyyCw3t
+3.	Menghitung Hasil Bilangan Berpangkat
+https://youtu.be/dm0iQKpoRgs?si=ec0r8CTUfmz9LJLG
+4.	Memahami Konsep Perkalian Bilangan Berpangkat
+https://youtu.be/eTMScp3zijU?si=Lj3ocT2tfLhY3F6_
+5.	Memahami konsep Bilangan Berpangkat di Pangkatkan lagi
+https://youtu.be/AotlWozzjIw?si=SlL2nxZeFmGtwOK9
+6.	Memahami Konsep Pembagian Bilangan Berpangkat
+https://youtu.be/yk34l2-XrVc?si=G0aAT2raswUtkpWt
+7.	Penerapan Bilangan Berpangkat
+https://youtu.be/PTdDzd0wtLs?si=9zO08HF0BKBzCdg7
+8.	Memahami Bilangan Berpangkat Pecahan dan Bentuk Akar
+https://youtu.be/7vZ2muWkWpo?si=rnfSZMBm9u9d7Sua
+9.	Memahami cara mengubah Pangkat Pecahan menjadi Bentuk Akar
+https://youtu.be/2q4pXIoGA9Y?si=x2S6RQO0Kcl17fdi
+10.	Menentukan Hasil Pangkat Pecahan atau Bentuk Akar
+https://youtu.be/fw3u_ag1ehk?si=jamZmD664HbbkjwP
+11.	Memahami Operasi Penjumlahan Pengurangan Bentuk Akar
+https://youtu.be/KzHvZAgdy_4?si=m9PdCvdWjxDxWN1c
+12.	Penjumlahan Pengurangan Bentuk Akar Sejenis
+https://youtu.be/Q6xRQ-3EcWo?si=sZvVZKZLRJY55krV
+13.	.Memahami Perkaliahan Bentuk Akar
+https://youtu.be/fnpPC1mbC_c?si=ChJhUW0e37ylcsZF
+14.	Menyederhanakan Bentuk Akar sederhana
+https://youtu.be/jvTkpHp6LMQ?si=bIoAvQn75TrQsPom
+15.	Merasionalkan Penyebut bentuk Akar
+https://youtu.be/wJIxwpcor-A?si=XgSoRgNTjG8aj6jD
+16.	Merasionalkan Bentuk Akar bagian kedua
+https://youtu.be/68bcSxvvlkM?si=AgZZI7vuyFO8ZAUL
+17.	Menyeselesaikan Soal soal HOTS Tipe OSN bagian 1
+https://youtu.be/tMYCRtFFyqE?si=GPO13-BE4Ot4O7VC
+18.	Menyeselesaikan Soal soal HOTS Tipe OSN bagian 2
+https://youtu.be/3sgQ85ny18U?si=_NdX837TLzPgMcXB
+19.	Menyeselesaikan Soal soal HOTS Tipe OSN bagian 3
+https://youtu.be/mmvvb0J-6YY?si=nKQ28NY9SrvxU2Qs
+20.	Menyeselesaikan Soal soal HOTS Tipe OSN bagian 4
+https://youtu.be/ZHuyWrodjGs?si=0HhMxmix6Yp8g7vl
+4.🔹 LINK LKPD DIGITAL BELAJAR MANDIRI  INTERAKTIF BAB “BILANGAN BERPANGKAT DAN BENTUK AKAR”
+https://igatrisna.my.canva.site/lkpd-interaktif-pangkat-akar
+5.a.🔹 LINK GAME INTERAKTIF BELAJAR MANDIRI BAB “ BILANGAN BERPANGKAT DAN BENTUK AKAR”
+https://igatrisna.my.canva.site/kuisgameinteraktif-tka-pangkat-akar
+  b.🔹 LINK GAME INTERAKTIF “ GAME INTERAKTIF  ESCAPE ROOM HOTS BAB BILANGAN BERPANGKAT “ :
+https://igatrisna.my.canva.site/game-interaktif-escape-room-hots-bab-bilangan-berpangkat
+6.🔹 LINK ASESMEM SUMATIF BAB “ BILANGAN BERPANGKAT DAN BENTUK AKAR”
+Link 1 : https://ais-pre-x4afszguq3eggjympbtvm7-438289882508.asia-southeast1.run.app
+7.🔹 LINK MATERI BAB “ BILANGAN BERPANGKAT DAN BENTUK AKAR”
+a.LinK Materi “ BILANGAN BERPANGKAT DAN BENTUK AKAR”: Ppt
+b.LKPD diskusi “ BILANGAN BERPANGKAT DAN BENTUK AKAR” word :
+c. Poster Komik Edukasi Interaktif LKPD Visual
+d. LINK PPM BAB “ BILANGAN BERPANGKAT DAN BENTUK AKAR”
+🔊 AUDIO PEMBELAJARAN “ ICE BREAKING
+ Berikan musik klasik yang menenangkan tuk konsentrasi  berpikir positif bisa rileks
+ISI RAPOR DIGITAL:
+- nilai game edukasi
+- nilai kuis
+- nilai asesmen
+- progress belajar siswa
+- grafik perkembangan belajar
+- badge penghargaan digital
+FITUR KHUSUS WAJIB MUNCUL:
+- Tombol “DAFTAR KUNJUNGAN” di kiri atas bawah logo sekolah
+- Tombol “SHARE WA” di kanan layar
+- Tombol “PROFIL GURU” di kanan atas
+- QR Code mini elegan di kanan bawah
+- Sticky floating button modern
+PROFIL GURU:
+Nama : Drs. PAIYO
+NIP : 19670713 199512 1 002
+Pangkat/Gol : Pembina Utama Muda / IV C
+Status : Guru SMP Negeri 1 Bantarkawung
+LATAR SUASANA:
+- rumah modern edukatif
+- meja digital hologram
+- nuansa belajar mandiri futuristik
+- lampu warm cinematic
+- rak buku modern
+- ornamen matematika digital
+- suasana nyaman, inspiratif, kreatif
+- teknologi pendidikan masa depan
+TAMPILKAN:
+- hologram “Bilangan Berpangkat & Bentuk Akar” yang keren
+- rumus rumus Bilangan Berpangkat & Bentuk Akar  - animasi matematika bercahaya
+- ikon AI belajar Bilangan Berpangkat & Bentuk Akar
+- robot edukasi lucu futuristik
+- dashboard pembelajaran online
+SLOGAN PENUTUP BESAR:
+“BELAJAR MATEMATIKA JADI MUDAH, MODERN, dan… AAAMAT KEREN!”
+“MATEMATIKA…!” → “AAAMAT KEREN!”
+“ASAH… ASIH… ASUH… MATEMATIKA”
+STYLE VISUAL:
+Pixar animation style, Unreal Engine 5 render, cinematic educational diorama, ultra detail miniature scene, glowing holographic UI, Indonesia modern smart classroom, highly detailed character expression, depth of field, realistic material texture, warm ambient light, inspirational atmosphere, premium educational poster design.

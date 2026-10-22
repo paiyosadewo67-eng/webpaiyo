@@ -1,0 +1,87 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Dialog Video Avatar Google Flow — Rahasia Kekongruenan & Kesebangunan
+Bab   : IX-03 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+Dialog Video Avatar Google Flow Mengungkap Rahasia Kekongruenan dan Kesebangunan
+Create a high-quality 3D animated educational video for Indonesian Grade 9 junior high school mathematics.
+Lesson title: “Pertemuan 5 – Mengenal Kesebangunan: Foto yang Diperbesar, Dunia Bentuk yang Berubah Ukuran.”
+Main character: A friendly, confident Indonesian male mathematics teacher wearing a neat Brebes-style teacher uniform, a black peci, and a visible name tag. Maintain the same face, outfit, voice, and character proportions in every scene.
+Environment: A modern digital mathematics classroom with an interactive screen, geometric diagrams, photographs in different sizes, proportional measurements, and clear educational graphics.
+Visual style: Premium 3D animation, Pixar-inspired character design, Unreal Engine 5 quality, cinematic warm lighting, bright high-contrast colors, smooth natural gestures, expressive facial animation, realistic materials, 4K visual quality.
+Teaching approach: Problem Based Learning, inquiry, contextual examples, critical-thinking questions, and a friendly teacher-student atmosphere.
+Mathematical accuracy: Clearly distinguish congruent shapes from similar shapes. Show corresponding angles as equal and corresponding side lengths as proportional. For the example, animate a 4 cm × 3 cm photograph enlarging to 8 cm × 6 cm with a scale factor of 2. For the detective challenge, show photographs measuring 6 cm × 4 cm and 9 cm × 6 cm.
+Video format: 16:9 landscape, approximately 8–10 seconds per scene. Use Indonesian voice-over with clear pronunciation, natural pacing, accurate lip synchronization, and subtle background music at a low volume.
+Keep the teacher character and classroom consistent throughout all scenes. Ensure mathematical labels and measurements are readable and accurate. Avoid distorted text, incorrect measurements, unnecessary transitions, and distracting visual effects.
+Identitas video
+Tokoh avatar: Guru Matematika laki-laki, ramah, komunikatif, dan berwibawa.
+Latar: Ruang kelas digital modern dengan layar interaktif.
+Gaya visual: 3D Pixar, Unreal Engine 5, pencahayaan sinematik hangat, warna cerah, kualitas visual 4K.
+Format: Video 16:9, setiap adegan sekitar 8–10 detik.
+Bahasa: Bahasa Indonesia yang jelas, komunikatif, dan sesuai usia siswa SMP.
+Adegan 1 — Pembukaan: Foto yang Berubah Ukuran
+Avatar guru berdiri di depan layar digital yang menampilkan sebuah foto kecil dan foto yang sama dalam ukuran lebih besar.
+“Assalamu’alaikum, anak-anak hebat!
+Pernahkah kalian memperbesar foto di ponsel atau mencetak foto dalam ukuran yang lebih besar?
+Menarik, bukan?
+Ukuran foto berubah, tetapi bagaimana dengan bentuknya?
+Hari ini, kita akan mengungkap rahasia kesebangunan!”
+Adegan 2 — Mengamati Perubahan Ukuran Foto
+Visual Google Flow: Tiga foto pemandangan dengan ukuran berbeda muncul berurutan. Bentuk dan perbandingan panjang-lebarnya tetap sama.
+“Perhatikan ketiga foto ini! Ada yang kecil, sedang, dan besar.
+Meskipun ukurannya berbeda, bentuknya tetap sama
+karena panjang dan lebarnya berubah secara proporsional.
+Inilah salah satu contoh kesebangunan dalam kehidupan sehari-hari!”
+Adegan 3 — Apa Itu Kesebangunan?
+Visual Google Flow: Guru menunjuk dua persegi panjang dengan ukuran berbeda. Sudut-sudut bersesuaian diberi tanda sama, dan sisi-sisinya ditunjukkan memiliki perbandingan yang sama.
+“Kesebangunan adalah hubungan antara dua bangun yang memiliki sudut-sudut bersesuaian sama besar dan panjang sisi-sisi bersesuaian dengan perbandingan yang sama.
+Jadi, bangunnya boleh berbeda ukuran, asalkan bentuk dan proporsinya tetap!”
+Adegan 4 — Membedakan Kongruen dan Sebangun
+Visual Google Flow: Layar terbagi dua. Bagian kiri memperlihatkan dua persegi identik; bagian kanan menampilkan dua persegi panjang dengan ukuran berbeda tetapi proporsional.
+“Nah, anak-anak, jangan sampai tertukar!
+Kongruen berarti bentuk dan ukuran kedua bangun sama.
+Sementara itu,
+sebangun berarti bentuknya sama dan ukurannya boleh berbeda.
+Ingat, setiap bangun kongruen pasti sebangun,
+ tetapi bangun sebangun belum tentu kongruen!”
+Adegan 5 — Rahasia Perubahan Proporsional
+Visual Google Flow: Foto awal berukuran 4 cm × 3 cm diperbesar menjadi 8 cm × 6 cm. Angka dan panah perubahan ukuran tampil jelas.
+“Mari kita hitung bersama!
+Foto berukuran empat kali tiga sentimeter diperbesar menjadi delapan kali enam sentimeter.
+Panjangnya dikali dua dan lebarnya juga dikali dua.
+ Karena faktor perbesarannya sama,
+bentuk foto tetap proporsional.
+Faktor skala perbesarannya adalah dua!”
+Adegan 6 — Tantangan Detektif Matematika
+Visual Google Flow: Avatar guru memberikan tantangan. Dua foto ditampilkan: foto A berukuran 6 cm × 4 cm dan foto B berukuran 9 cm × 6 cm.
+“Sekarang, giliran kalian menjadi Detektif Matematika!
+Foto A berukuran enam kali empat sentimeter,
+sedangkan foto B berukuran sembilan kali enam sentimeter.
+Apakah kedua foto ini sebangun?
+Bandingkan panjang dengan panjang, lalu lebar dengan lebar.
+Temukan jawabannya dan jelaskan alasan kalian!”
+Kunci jawaban untuk guru: Ya, kedua foto sebangun karena perbandingan panjangnya \(6:9=2:3\) dan perbandingan lebarnya \(4:6=2:3\). Faktor skala dari foto A ke foto B adalah \(1{,}5\).
+Adegan 7 — Refleksi dan Penutup
+Visual Google Flow: Guru tersenyum, kemudian layar menampilkan rangkuman tiga kata kunci: bentuk, ukuran, dan proporsi.
+“Hebat sekali, Detektif Matematika! Hari ini kita belajar bahwa kesebangunan mempertahankan bentuk dan proporsi, sedangkan ukuran boleh berubah. Kongruen berarti bentuk dan ukuran sama. Sekarang, coba temukan contoh kesebangunan di rumah kalian! Sampai jumpa pada misi matematika berikutnya. Wassalamu’alaikum warahmatullahi wabarakatuh!”
+Indikator: Memecahkan masalah sisa margin karton pada pigura foto yang sebangun
+Stimulus soal 18: Pembuatan Pigura Foto Pahlawan Nasional
+Untuk memperingati Hari Sumpah Pemuda, sebuah foto pahlawan ditempelkan pada sehelai karton berukuran 40 cm × 60 cm. Di sebelah kiri, kanan, dan atas foto masih tersisa karton selebar 4 cm. Desainer menginginkan bentuk foto dan karton tersebut tetap SEBANGUN sempurna.
+Manakah pernyataan-pernyataan berikut yang bernilai BENAR mengenai dimensi foto dan sisa karton? (Jawaban benar lebih dari satu)
+Pilihan	Pernyataan (Jawaban Benar Lebih Dari Satu)
+A	Lebar karton yang tersisa di bagian bawah foto adalah 4 cm.
+B	Lebar foto pahlawan tersebut adalah 32 cm.
+C	Panjang vertikal foto pahlawan tersebut adalah 48 cm.
+D	Lebar karton yang tersisa di bagian bawah foto adalah 8 cm.
+Indikator: Menghitung kebutuhan material ubin keramik menggunakan konsep skala denah dan luas
+Stimulus soal 19: Proyek Renovasi Kamar Guru & Ruang Asesmen
+Sebuah denah ruang arsip asesmen berskala 1 : 100 memiliki ukuran gambar 3 cm × 4 cm. Ruang tersebut akan direnovasi dan dipasangi ubin keramik lantai berukuran 30 cm × 30 cm.
+. Pilihlah SEMUA pernyataan yang BENAR mengenai ukuran sebenarnya dan kebutuhan ubin keramik ruangan tersebut! (Jawaban benar lebih dari satu)
+Pilihan	Pernyataan (Jawaban Benar Lebih Dari Satu)
+A	Ukuran ruangan sebenarnya adalah 3 meter × 4 meter dengan luas lantai 12 m².
+B	Luas sebenarnya ruangan tersebut adalah 120 m².
+C	Satu keping ubin keramik memiliki luas 0,09 m² (atau 900 cm²).
+D	Banyak minimal ubin keramik yang dibutuhkan untuk menutup seluruh lantai adalah 134 buah (dibulatkan ke atas).

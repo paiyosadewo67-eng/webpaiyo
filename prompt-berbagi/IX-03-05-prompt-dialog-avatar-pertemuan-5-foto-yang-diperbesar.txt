@@ -1,0 +1,234 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Dialog Avatar — Pertemuan 5: Foto yang Diperbesar
+Bab   : IX-03 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT DIALOG AVATAR PERTEMUAN 5 — FOTO YANG DIPERBESAR
+Agar karakter avatar konsisten dari adegan ke adegan, gunakan deskripsi karakter yang sama pada setiap prompt: guru matematika laki-laki Indonesia, Drs. PAIYO, mengenakan seragam BREBESAN, tanda pengenal guru, peci hitam resmi, ramah dan berwibawa, kelas digital modern, gaya 3D cinematic educational, ultra HD 4K, pencahayaan hangat, ekspresi natural, lip-sync Bahasa Indonesia. Gunakan wajah mirip poto pak Paiyo terlampir.
+🎬 PERTEMUAN 5 — “FOTO YANG DIPERBESAR”
+Konsep visual umum: guru matematika laki-laki, seragam BREBESAN, peci hitam, berada di kelas digital modern. Tampilannya 3D cinematic, edukatif, ramah, dan profesional. Di layar muncul foto asli, foto diperbesar, diperkecil, dan diregangkan.
+🎥 Adegan 1 — Pembuka | 0–10 detik
+Visual: Guru berdiri di samping layar digital. Muncul sebuah foto asli.
+Dialog Avatar:
+“Pernahkah kalian memperbesar sebuah foto? Menariknya, ukuran foto bisa berubah, tetapi bentuknya tetap sama. Hari ini kita akan menyelidiki rahasianya.”
+🎥 Adegan 2 — Foto Diperbesar | 10–20 detik
+Visual: Foto diperbesar secara proporsional.
+Dialog:
+“Perhatikan foto ini. Ketika diperbesar secara proporsional, panjang dan lebarnya bertambah dengan perbandingan yang sama. Bentuk foto tetap terjaga.”
+🎥 Adegan 3 — Foto Diperkecil | 20–30 detik
+Visual: Foto mengecil secara proporsional.
+Dialog:
+“Sekarang foto diperkecil. Ukurannya memang berubah, tetapi bentuknya tidak berubah. Jadi, memperbesar atau memperkecil secara proporsional dapat mempertahankan bentuk.”
+🎥 Adegan 4 — Foto Diregangkan | 30–40 detik
+Visual: Foto diregangkan ke samping sehingga wajah terlihat melebar.
+Dialog:
+“Bagaimana dengan foto yang diregangkan? Perhatikan! Lebarnya berubah tidak sebanding dengan tingginya. Bentuk foto menjadi berbeda.”
+🎥 Adegan 5 — Tantangan | 40–50 detik
+Visual: Empat foto muncul berjajar: asli, diperbesar, diperkecil, diregangkan.
+Dialog:
+“Sekarang tantangannya: manakah yang masih memiliki bentuk sama dengan foto asli? Amati ukuran, perbandingan panjang dan lebar, lalu berikan alasanmu.”
+🎥 Adegan 6 — Menemukan Konsep | 50–60 detik
+Visual: Kata KESEBANGUNAN muncul dengan animasi.
+Dialog:
+“Inilah ide utama kesebangunan. Dua bangun dikatakan sebangun jika bentuknya sama, meskipun ukurannya dapat berbeda. Jadi, perbandingan sisi bersesuaian harus tetap.”
+📊 PERTEMUAN 6 — “RAHASIA PERBANDINGAN”
+Konsep visual: layar digital menampilkan dua bangun yang bentuknya sama tetapi berbeda ukuran. Sisi-sisi bersesuaian diberi label.
+🎥 Adegan 1 — Masuk ke Masalah | 0–10 detik
+Visual: Dua persegi panjang berbeda ukuran.
+Dialog:
+“Sekarang kita menemukan dua bangun yang bentuknya sama, tetapi ukurannya berbeda. Pertanyaannya, bagaimana kita membuktikan bahwa keduanya benar-benar sebangun?”
+🎥 Adegan 2 — Membandingkan Sisi | 10–20 detik
+Visual: Sisi-sisi bersesuaian disorot satu per satu.
+Dialog:
+“Caranya adalah membandingkan sisi-sisi yang bersesuaian. Kita tidak hanya melihat panjangnya, tetapi mencari perbandingan antara setiap pasangan sisi.”
+🎥 Adegan 3 — Rumus Perbandingan | 20–30 detik
+Visual: Rumus muncul perlahan:
+a1a2=b1b2=c1c2\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}
+Dialog:
+“Jika dua bangun sebangun, maka perbandingan sisi-sisi yang bersesuaian harus memiliki nilai yang sama. Inilah yang disebut perbandingan senilai.”
+🎥 Adegan 4 — Jangan Sekadar Menghitung | 30–40 detik
+Visual: Guru menunjuk hasil perhitungan di layar.
+Dialog:
+“Tetapi ingat! Matematika bukan hanya menghitung. Kita harus bertanya: mengapa perbandingan itu harus sama? Apa hubungan antara perbandingan dan bentuk bangun?”
+🎥 Adegan 5 — Pertanyaan Kritis | 40–50 detik
+Visual: Muncul dua bangun dengan sisi sebanding tetapi sudut berbeda.
+Dialog:
+“Sekarang pikirkan: jika semua sisi memiliki perbandingan yang sama, tetapi sudut-sudutnya berbeda, apakah kedua bangun pasti sebangun?”
+🎥 Adegan 6 — Berikan Alasan | 50–60 detik
+Visual: Ikon tanda tanya berubah menjadi ikon lampu ide.
+Dialog:
+“Jangan langsung menjawab ya atau tidak. Berikan alasan dan bukti. Ingat, kemampuan berpikir kritis berarti kita mampu mempertanggungjawabkan jawaban.”
+🎥 Adegan 7 — Kesimpulan | 60–70 detik
+Visual: Sisi bersesuaian dan sudut bersesuaian ditampilkan bersama.
+Dialog:
+“Kesebangunan tidak cukup dilihat dari satu informasi saja. Kita perlu memperhatikan hubungan sisi dan sudut yang bersesuaian. Sekarang, buktikan pemahamanmu!”
+🔺 PERTEMUAN 7 — “MENGUKUR TANPA MENYENTUH”
+Konsep visual: halaman sekolah. Terlihat pohon tinggi, tongkat tegak, dan bayangan keduanya. Guru berada di dekat siswa.
+🎥 Adegan 1 — Masalah Nyata | 0–10 detik
+Visual: Kamera mengarah ke pohon tinggi di halaman sekolah.
+Dialog:
+“Bayangkan kita ingin mengetahui tinggi sebuah pohon di halaman sekolah. Masalahnya, kita tidak boleh memanjat pohon. Lalu, bagaimana cara mengukurnya?”
+🎥 Adegan 2 — Strategi | 10–20 detik
+Visual: Siswa meletakkan tongkat tegak di tanah.
+Dialog:
+“Kita dapat menggunakan sebuah tongkat dan memanfaatkan bayangannya. Caranya sederhana, tetapi membutuhkan konsep kesebangunan.”
+🎥 Adegan 3 — Data Tongkat | 20–30 detik
+Visual: Muncul teks:
+Tinggi tongkat = 1,5 meter
+Bayangan tongkat = 2 meter
+Dialog:
+“Tinggi tongkat adalah satu koma lima meter, sedangkan panjang bayangannya dua meter. Sekarang kita ukur panjang bayangan pohon.”
+🎥 Adegan 4 — Data Pohon | 30–40 detik
+Visual: Panjang bayangan pohon diberi garis ukur.
+Teks:
+Bayangan pohon = 8 meter
+Dialog:
+“Ternyata panjang bayangan pohon adalah delapan meter. Dengan data ini, kita dapat memperkirakan tinggi pohon tanpa harus menyentuh puncaknya.”
+🎥 Adegan 5 — Membuat Perbandingan | 40–50 detik
+Visual: Segitiga tongkat dan segitiga pohon diperlihatkan berdampingan.
+Dialog:
+“Karena sinar matahari datang dengan arah yang sama, terbentuk dua segitiga yang sebangun. Maka, perbandingan tinggi dengan panjang bayangan keduanya juga sama.”
+🎥 Adegan 6 — Menghitung | 50–60 detik
+Visual: Perhitungan muncul:
+1,52=x8\frac{1,5}{2}=\frac{x}{8}
+Kemudian:
+x=6x=6
+Dialog:
+“Kita susun perbandingannya: satu koma lima dibanding dua sama dengan x dibanding delapan. Hasilnya, x sama dengan enam meter.”
+🎥 Adegan 7 — Jangan Berhenti pada Jawaban | 60–70 detik
+Visual: Guru mengangkat tangan, muncul tulisan MENGAPA?
+Dialog:
+“Tetapi apakah cukup mengatakan tinggi pohon enam meter? Belum. Kita harus menjelaskan mengapa metode ini dapat digunakan.”
+🎥 Adegan 8 — Alasan Matematis | 70–80 detik
+Visual: Dua segitiga ditampilkan dengan sudut-sudut bersesuaian.
+Dialog:
+“Metode ini dapat digunakan karena tinggi benda dan bayangannya membentuk segitiga siku-siku. Dengan arah sinar matahari yang sama, sudut-sudut bersesuaian sama besar, sehingga kedua segitiga sebangun.”
+🎥 Adegan 9 — Tantangan HOTS | 80–90 detik
+Visual: Guru menghadap kamera, muncul pertanyaan.
+“Bagaimana jika bayangan tongkat dan pohon diukur pada waktu yang berbeda?”
+Dialog:
+“Nah, ini tantangan berpikir kritis untuk kalian. Apakah perhitungannya masih dapat dipercaya? Jelaskan alasanmu berdasarkan konsep kesebangunan.”
+🎬 PENUTUP PERTEMUAN 5–7 | 90–100 detik
+Visual: Guru berjalan di halaman sekolah, kemudian layar berubah menjadi tiga kata:
+BENTUK → PERBANDINGAN → BUKTI
+Dialog:
+“Hari ini kita belajar bahwa kesebangunan bukan sekadar rumus. Kita menggunakannya untuk memahami bentuk, membandingkan ukuran, dan memecahkan masalah nyata. Jadilah matematikawan yang selalu bertanya: mengapa?”
+🎬 PERTEMUAN 8
+🕵️ “MISI AKHIR: DETEKTIF MATEMATIKA”
+Kekongruenan & Kesebangunan
+Durasi: ± 2 menit
+Format: 12 adegan × 10 detik
+Gaya: 3D cinematic educational, modern, misterius tetapi tetap ceria dan sesuai siswa SMP.
+🎥 ADEGAN 1 — PANGGILAN MISI
+⏱️ 0–10 detik
+Visual:
+Guru matematika berdiri di ruang kelas digital. Layar besar menampilkan tulisan:
+🕵️ MISI AKHIR
+DETEKTIF MATEMATIKA
+Dialog Avatar:
+“Selamat datang di misi terakhir, Detektif Matematika! Hari ini kita akan menguji kemampuan kalian memahami kekongruenan dan kesebangunan.”
+🎥 ADEGAN 2 — ATURAN MISI
+⏱️ 10–20 detik
+Visual:
+Muncul tiga ikon:
+🔎 Amati → 🧠 Analisis → 💡 Buktikan
+Dialog:
+“Ingat tiga aturan utama: amati informasinya, analisis hubungan matematikanya, lalu buktikan jawabanmu. Jangan hanya mencari hasil akhirnya.”
+🔎 KASUS 1 — DETEKTIF KEKONGRUENAN
+🎥 ADEGAN 3 — DUA DESAIN LANTAI
+⏱️ 20–30 detik
+Visual:
+Dua pola ubin lantai sekolah muncul di layar. Salah satu pola diputar.
+Dialog:
+“Kasus pertama! Dua pola ubin memiliki bentuk dan ukuran yang sama. Salah satunya bahkan diputar. Pertanyaannya: apakah keduanya masih kongruen?”
+🎥 ADEGAN 4 — BUKTIKAN!
+⏱️ 30–40 detik
+Visual:
+Sisi dan sudut kedua bangun disorot bergantian.
+Dialog:
+“Jangan terkecoh oleh posisinya. Bangun dapat diputar atau dicerminkan. Yang harus kalian periksa adalah ukuran sisi dan besar sudut yang bersesuaian.”
+🎥 ADEGAN 5 — TANTANGAN KEKONGRUENAN
+⏱️ 40–50 detik
+Visual:
+Muncul pertanyaan besar:
+“Apakah bentuk sama saja sudah cukup?”
+Dialog:
+“Sekarang jawab: apakah dua bangun cukup disebut kongruen hanya karena bentuknya terlihat sama? Berikan alasan dan bukti matematis kalian!”
+📏 KASUS 2 — DETEKTIF KESEBANGUNAN
+🎥 ADEGAN 6 — DENAH SEKOLAH
+⏱️ 50–60 detik
+Visual:
+Denah sekolah kecil muncul, kemudian diperbesar menjadi denah yang lebih besar dengan bentuk tetap.
+Dialog:
+“Kasus kedua! Sebuah denah sekolah diperbesar. Ukurannya berubah, tetapi bentuknya tetap. Konsep apa yang sedang kita gunakan?”
+Visual teks:
+KESEBANGUNAN
+🎥 ADEGAN 7 — RAHASIA PERBANDINGAN
+⏱️ 60–70 detik
+Visual:
+Dua bangun dengan sisi bersesuaian diberi label.
+Dialog:
+“Untuk membuktikannya, bandingkan sisi-sisi yang bersesuaian. Jika perbandingannya tetap dan sudut-sudut yang bersesuaian sama besar, maka kita memiliki hubungan kesebangunan.”
+🌳 KASUS 3 — MENGUKUR TANPA MENYENTUH
+🎥 ADEGAN 8 — POHON SEKOLAH
+⏱️ 70–80 detik
+Visual:
+Halaman sekolah. Sebuah pohon tinggi dan tongkat berdiri tegak. Bayangan keduanya terlihat jelas.
+Dialog:
+“Kasus ketiga! Kita ingin mengetahui tinggi pohon tanpa memanjatnya. Tinggi tongkat satu koma lima meter, bayangannya dua meter, dan bayangan pohon delapan meter.”
+🎥 ADEGAN 9 — MISI PERHITUNGAN
+⏱️ 80–90 detik
+Visual:
+Muncul perbandingan:
+1,52=x8\frac{1,5}{2}=\frac{x}{8}
+Kemudian muncul:
+x=6x=6
+Dialog:
+“Gunakan perbandingan kesebangunan. Satu koma lima dibanding dua sama dengan x dibanding delapan. Jadi, tinggi pohon adalah enam meter.”
+🎥 ADEGAN 10 — PERTANYAAN TERPENTING
+⏱️ 90–100 detik
+Visual:
+Hasil “6 meter” muncul, lalu tanda tanya besar.
+Dialog:
+“Tetapi seorang detektif tidak berhenti pada jawaban. Pertanyaan terpentingnya adalah: mengapa cara ini dapat digunakan?”
+🎥 ADEGAN 11 — BUKTI MATEMATIS
+⏱️ 100–110 detik
+Visual:
+Tongkat dan pohon berubah menjadi dua segitiga siku-siku. Sudut-sudut bersesuaian diberi tanda sama.
+Dialog:
+“Karena sinar matahari membentuk sudut yang sama, tinggi benda dan bayangannya membentuk segitiga-segitiga sebangun. Itulah alasan perbandingan dapat digunakan.”
+🧠 KASUS TERAKHIR — UJI BERPIKIR KRITIS
+🎥 ADEGAN 12 — PERNYATAAN MISTERI
+⏱️ 110–120 detik
+Visual:
+Layar menjadi gelap sebentar. Muncul tulisan:
+“SEMUA BANGUN SEBANGUN PASTI KONGRUEN.”
+Kemudian muncul tanda:
+❓ BENAR ATAU SALAH?
+Dialog Avatar:
+“Misi terakhir! Ada yang mengatakan: semua bangun sebangun pasti kongruen. Benarkah pernyataan tersebut? Jangan terburu-buru menjawab. Gunakan konsep yang telah kalian pelajari dan berikan contoh sebagai bukti!”
+🎬 ADEGAN BONUS — PENUTUP MISI
+Jika Bapak ingin video penutup sekitar 20 detik, saya sarankan dua adegan tambahan.
+🎥 ADEGAN 13 — JAWABAN DETEKTIF
+⏱️ 120–130 detik
+Visual:
+Dua persegi panjang dengan bentuk sama tetapi ukuran berbeda. Kemudian muncul dua bangun yang sama ukuran dan bentuknya.
+Dialog:
+“Ingat! Bangun kongruen memiliki bentuk dan ukuran yang sama. Bangun sebangun memiliki bentuk yang sama, tetapi ukurannya boleh berbeda.”
+🎥 ADEGAN 14 — SELAMAT, DETEKTIF!
+⏱️ 130–140 detik
+Visual:
+Guru tersenyum. Di belakangnya muncul animasi:
+🔎 AMATI
+🧠 ANALISIS
+📐 HITUNG
+💡 BUKTIKAN
+🏆 SIMPULKAN
+Dialog:
+“Selamat! Kalian telah menyelesaikan Misi Detektif Matematika. Ingat, matematika bukan sekadar menemukan jawaban, tetapi mampu menjelaskan mengapa jawaban itu benar. Sampai jumpa di misi berikutnya!”
+🎨 PROMPT KONSISTENSI GOOGLE FLOW
+Untuk setiap adegan, Bapak dapat mempertahankan karakter yang sama:
+Guru matematika laki-laki Indonesia, Drs. PAIYO, wearing formal BREBESAN traditional school uniform, official black peci, teacher name tag, friendly and authoritative expression, modern futuristic digital mathematics classroom, 3D educational diorama, cinematic warm lighting, ultra HD 4K, realistic facial expression, natural Indonesian lip-sync, professional educational atmosphere, blue green white orange visual accents.

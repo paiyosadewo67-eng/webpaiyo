@@ -1,0 +1,73 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Naskah Adegan Video Avatar — Misi TKA No 19
+Bab   : IX-03 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+ADEGAN VIDEO AVATAR MISI TKA NO 19 Proyek Renovasi Kamar Guru
+GOOGLE FLOW — ADEGAN VIDEO AVATAR MISI TKA NO 19 Proyek Renovasi Kamar Guru
+Buat video pembuka animasi 3D edukatif sinematik, horizontal 16:9, berlatar ruang STEM futuristik SMP Negeri 1 Bantarkawung.
+KAMERA DAN KOMPOSISI:
+Gunakan tampilan wide shot dari depan kelas. Sebuah layar digital holografik raksasa memenuhi sekitar 75–80% area visual. Layar harus tampak lebar, terang, tajam, dan menjadi pusat perhatian. Karakter Bapak PAIYO, Zulfa, Rafly, Anis, dan Atta berukuran lebih kecil, berada di sisi kiri dan kanan layar tanpa menutupi tulisan.
+TAMPILAN LAYAR:
+Gunakan latar biru tua dengan panel putih atau biru muda yang sangat terang, teks hitam besar, kontras tinggi, tata letak rapi, dan jarak antarbari yang cukup. Tampilkan seluruh soal berikut secara utuh, bukan hanya judul atau potongan kalimat.
+MISI HOTS DETEKTIF — TKA NOMOR 19
+Indikator: Menghitung kebutuhan material ubin keramik menggunakan konsep skala denah dan luas.
+Stimulus: Proyek Renovasi Kamar Guru & Ruang Asesmen
+Sebuah denah ruang arsip asesmen berskala 1 : 100 memiliki ukuran gambar 3 cm × 4 cm. Ruang tersebut akan direnovasi dan dipasangi ubin keramik lantai berukuran 30 cm × 30 cm.
+Pilihlah SEMUA pernyataan yang BENAR mengenai ukuran sebenarnya dan kebutuhan ubin keramik ruangan tersebut!
+A. Ukuran ruangan sebenarnya adalah 3 meter × 4 meter dengan luas lantai 12 m².
+B. Luas sebenarnya ruangan tersebut adalah 120 m².
+C. Satu keping ubin keramik memiliki luas 0,09 m² (atau 900 cm²).
+D. Banyak minimal ubin keramik yang dibutuhkan untuk menutup seluruh lantai adalah 134 buah (dibulatkan ke atas).
+Tambahkan ilustrasi denah persegi panjang di sebelah kanan panel soal, dengan label ukuran gambar 3 cm dan 4 cm, serta ilustrasi ubin persegi 30 cm × 30 cm.
+GERAKAN:
+Kamera bergerak perlahan mendekati layar, lalu berhenti pada tampilan penuh soal. Semua pilihan jawaban harus terlihat. Jangan tampilkan jawaban benar pada adegan pembuka.
+DIALOG BAPAK PAIYO:
+“Detektif matematika, tantangan TKA nomor 19 dimulai! Kita akan menyelidiki skala denah, luas ruangan, dan jumlah ubin keramik untuk renovasi ruang asesmen. Bacalah soal dengan cermat dan temukan semua pernyataan yang benar!”
+AUDIO:
+Suara guru laki-laki dewasa, ramah, jelas, berwibawa, dan penuh semangat. Musik latar futuristik inspiratif dengan volume rendah.
+KETENTUAN:
+Jangan mengubah isi soal, angka, satuan, maupun pilihan A–D. Jangan membuat teks acak, tulisan terpotong, layar miring, atau karakter menutupi soal. Pertahankan komposisi layar lebar dan terbaca. Jika teks panjang tidak dapat dirender dengan akurat, hasilkan layar digital yang bersih dan kosong pada area teks untuk ditambahkan sebagai overlay saat penyuntingan video.
+Adegan 2 — Misi skala denah
+10 detik
+Tokoh: Rafly.
+Visual: Rafly memperbesar denah pada layar digital. Ukuran gambar 3 cm × 4 cm dan skala 1 : 100 tampak jelas.
+Dialog Rafly:
+“Skala satu banding seratus berarti satu sentimeter pada denah mewakili seratus sentimeter sebenarnya. Jadi, panjang sebenarnya tiga meter dan lebarnya empat meter!”
+Adegan 3 — Menghitung luas lantai
+6–8 detik
+Tokoh: Anis.
+Visual: Papan digital menampilkan persegi panjang dengan ukuran sebenarnya 3 m × 4 m. Rumus luas muncul bertahap.
+Dialog Anis:
+“Luas lantai adalah panjang dikali lebar, yaitu tiga dikali empat sama dengan dua belas meter persegi. Jadi, pernyataan A benar, sedangkan B salah!”
+Adegan 4 — Mengungkap luas satu ubin
+10 detik
+Tokoh: Atta.
+Visual: Sebuah ubin persegi ditampilkan besar di layar, dengan label 30 cm pada kedua sisinya.
+Dialog Atta:
+“Luas satu ubin adalah tiga puluh kali tiga puluh, yaitu sembilan ratus sentimeter persegi. Jika diubah ke meter persegi, hasilnya nol koma nol sembilan meter persegi. Pernyataan C benar!”
+Adegan 5 — Misteri jumlah ubin
+10 detik
+Tokoh: Zulfa.
+Visual: Layar menampilkan perhitungan jumlah ubin, lalu angka 133,33 berubah menjadi 134 keping dengan efek hologram.
+Dialog Zulfa:
+“Luas lantai dua belas dibagi nol koma nol sembilan sama dengan seratus tiga puluh tiga koma tiga tiga. Karena ubin harus utuh, kebutuhan minimalnya dibulatkan ke atas menjadi 134 keping!”
+Adegan 6 — Final Mission: Kunci jawaban
+10 detik
+Tokoh: Bapak PAIYO dan seluruh tim.
+Visual: Layar menampilkan hasil akhir dengan huruf A dan B berstatus salah, sedangkan C dan D berstatus benar.
+Dialog Bapak PAIYO:
+“Hebat, detektif matematika! Jawaban yang benar adalah A, C, dan D. Kita berhasil menghitung ukuran ruangan, luas ubin, dan kebutuhan material dengan tepat!”
+Koreksi penting: Dialog tersebut harus menyebut A, C, dan D, bukan A dan B. Pernyataan A benar karena ukuran sebenarnya 3 m × 4 m dan luasnya 12 m².
+4. Kunci matematika untuk guru
+Pernyataan | Hasil | Alasan
+A | Benar | \(3\text{ m}\times4\text{ m}=12\text{ m}^2\)
+B | Salah | Luasnya 12 m², bukan 120 m²
+C | Benar | \(30\times30=900\text{ cm}^2=0{,}09\text{ m}^2\)
+D | Benar | \(12\div0{,}09=133{,}33\ldots\), dibulatkan ke atas menjadi 134
+\[ N=\left\lceil\frac{12}{0{,}09}\right\rceil=134 \]
+Jawaban akhir: A, C, dan D.
+Catatan untuk pembelajaran kontekstual: 134 keping merupakan kebutuhan teoritis minimum berdasarkan luas. Dalam proyek renovasi nyata, jumlah pembelian biasanya perlu ditambah untuk mengantisipasi pemotongan dan ubin rusak.
