@@ -378,6 +378,13 @@
       .bab-toggle:hover { background: color-mix(in srgb, var(--kc) 15%, transparent); }
       .bab-toggle svg { transition: transform .2s ease; flex: none; }
       .bab-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+      /* Tombol panel di kartu Menu Utama memakai warna aksen kartu (--ac) */
+      .menu-card .bab-toggle {
+        color: var(--ac, var(--gold));
+        background: color-mix(in srgb, var(--ac, var(--gold)) 8%, transparent);
+        border-color: color-mix(in srgb, var(--ac, var(--gold)) 35%, transparent);
+      }
+      .menu-card .bab-toggle:hover { background: color-mix(in srgb, var(--ac, var(--gold)) 15%, transparent); }
       .bab-sumber { border-top: 1px dashed var(--line-strong); margin-top: .9rem; padding-top: 1rem; display: grid; gap: 1.05rem; }
       .bab-sumber[hidden] { display: none; }
       .sumber-group h4 { margin: 0; font-size: .95rem; font-weight: 800; display: flex; align-items: center; gap: .5rem; }
@@ -1030,7 +1037,10 @@
          Bab juga dapat memiliki kolom "sumber": kelompok tautan sumber
          belajar (Portal Rumah Belajar, E-Modul, Game, Asesmen & Kuis,
          LKPD) yang tampil saat kartu bab diperluas lewat tombol
-         "Lihat Sumber Belajar". URL-nya TIDAK ditulis ulang di kolom
+         "Lihat Sumber Belajar". Kartu fitur di LINK_DB.fitur juga dapat
+         memiliki kolom "sumber" yang sama — dipakai Jurnal Sholatku
+         (F-13) di Menu Utama; entri tautannya memakai bab: "F-13" di
+         LINK_DB.eksternal dan LINK_DB.promptberbagi. URL-nya TIDAK ditulis ulang di kolom
          "sumber" — cukup tunjuk sumbernya lewat "dari":
            "portal"     → memakai url bab itu sendiri
            "unduhan"    → entri LINK_DB.unduhan dengan bab = id bab ini
@@ -1068,7 +1078,18 @@
           { id: "F-10", nama: "Download",             ikon: "unduh",    warna: "#8A6410",           url: "#download",             status: "aktif",  deskripsi: "Unduh bahan belajar: PDF, PPT, LKPD, dan ringkasan materi untuk belajar luring." },
           { id: "F-11", nama: "Kontak",               ikon: "kontak",   warna: "#0F766E",           url: "#kontak",               status: "aktif",  deskripsi: "Cara terhubung dengan Pak Paiyo dan informasi sekolah." },
           { id: "F-12", nama: "Tentang AAAMAAT KEREN", ikon: "hati",    warna: "#BC3F2E",           url: "#tentang",              status: "aktif",  deskripsi: "Kisah di balik nama AAAMAAT KEREN dan lima pilar KEREN." },
-          { id: "F-13", nama: "Jurnal Sholatku",     ikon: "hati",     warna: "#15803D",           url: "https://drive.google.com/drive/folders/1tQ07u_NVLm5SMpGRmnbkYIG5iP2gxM10?usp=sharing", status: "aktif",  deskripsi: "Jurnal ibadah sholat harian siswa — isi, pantau, dan tumbuhkan kebiasaan baik setiap hari." }
+          { id: "F-13", nama: "Jurnal Sholatku",     ikon: "hati",     warna: "#15803D",           url: "https://drive.google.com/drive/folders/1tQ07u_NVLm5SMpGRmnbkYIG5iP2gxM10?usp=sharing", status: "aktif",  deskripsi: "Jurnal ibadah sholat harian siswa — isi, pantau, dan tumbuhkan kebiasaan baik setiap hari.",
+            sumber: [
+              { judul: "Aplikasi",           emoji: "📱", dari: "eksternal", grup: "aplikasi" },
+              { judul: "Video",              emoji: "🎬", dari: "eksternal", grup: "video" },
+              { judul: "Folder Drive",       emoji: "📁", dari: "eksternal", grup: "folder" },
+              { judul: "Penyimpanan Prompt", emoji: "🗂️", dari: "eksternal", grup: "prompt" },
+              { judul: "Prompt Berbagi",     emoji: "🤝", dari: "promptberbagi" }
+            ] },
+          { id: "F-14", nama: "Kajian Pedoman Hidup Islami", ikon: "buku", warna: "#059669",        url: "https://drive.google.com/file/d/1b-d9juBUwjIW8TjpMW7Pk0Pc85qFwzVi/view?usp=sharing", status: "aktif",  deskripsi: "Folder arsip kajian Agama Islam — pedoman hidup Islami untuk memperkaya wawasan keislaman. Arsip berikutnya akan ditambahkan bertahap.",
+            sumber: [
+              { judul: "Arsip Kajian",       emoji: "📖", dari: "eksternal", grup: "arsip" }
+            ] }
         ],
         bab: [
           /* ---------- KELAS VII ---------- */
@@ -1279,6 +1300,7 @@
           { bab: "VIII-05", nama: "Prompt Kuis Game TKA Geometri — Pythagoras", url: "prompt-berbagi/VIII-05-01-prompt-kuis-game-tka-geometri-pythagoras.txt" },
           { bab: "VIII-07", nama: "Prompt LKPD Interaktif — Statistika", url: "prompt-berbagi/VIII-07-01-prompt-lkpd-interaktif-statistika.txt" },
           { bab: "VIII-07", nama: "Prompt Kuis Game Ekspedisi TKA — Statistika", url: "prompt-berbagi/VIII-07-02-prompt-kuis-game-ekspedisi-tka-statistika.txt" },,
+          { bab: "F-13", nama: "Prompt Jurnal Sholatku Digital", url: "prompt-berbagi/F13-01-prompt-jurnal-sholatku-digital.txt" }
         ],
         unduhan: [
           { nama: "Bilangan Berpangkat dan Bentuk Akar — Materi PPT (41 slide)", label: "Materi Bab IX-01 · Bilangan Berpangkat & Bentuk Akar", bab: "IX-01", grup: "modul", berkas: "PPTX", ikon: "gambar", tombol: "Unduh PPT", url: "download/ppt/9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx", urlLihat: "https://docs.google.com/viewer?url=https%3A%2F%2Fpaiyosadewo67-eng.github.io%2Fwebpaiyo%2Fdownload%2Fppt%2F9.1_BILANGAN_BERPANGKAT_dan_BENTUK_AKAR_an_PAIYO_Ref_2026.pptx&embedded=true", tombolLihat: "Lihat E-Modul", status: "aktif", deskripsi: "Presentasi materi lengkap bab Bilangan Berpangkat dan Bentuk Akar karya Pak Paiyo — unduh dan pelajari kembali di rumah, dengan atau tanpa internet." },
@@ -1289,8 +1311,12 @@
           { nama: "Poster Komik Edukasi — Bilangan Berpangkat & Bentuk Akar", label: "Poster Komik · Bab IX-01", bab: "IX-01", berkas: "PDF", ikon: "gambar", url: "poster/LKPD_KOMIK_EDUKASI_BAB_PANGKAT_BENTUK_AKAR_POSTER.pdf", status: "aktif", deskripsi: "Poster komik edukasi bab Bilangan Berpangkat & Bentuk Akar — konsep pangkat dan akar diceritakan lewat komik yang seru dibaca. Klik Lihat Poster untuk membukanya sebagai PDF di tab baru." }
         ],
         /* ---------- Sumber daring per bab (dibuka di tab baru, bukan unduhan) ----------
-           Grup yang dikenal: "emodul" (aplikasi E-Modul) dan "materi"
-           (dokumen Google Docs: PPT, naskah soal, LKPD Word, PPM). */
+           Grup yang dikenal: "emodul" (aplikasi E-Modul), "materi"
+           (dokumen Google Docs: PPT, naskah soal, LKPD Word, PPM),
+           "prompt" (Penyimpanan Prompt, terkunci kode khusus), "tka",
+           serta grup khusus fitur F-13 Jurnal Sholatku: "aplikasi",
+           "video", dan "folder" (tautan Drive), dan grup khusus fitur
+           F-14 Kajian Pedoman Hidup Islami: "arsip" (dokumen kajian). */
         eksternal: [
           { bab: "IX-03", grup: "emodul", nama: "E-Modul Digital Interaktif Kekongruenan & Kesebangunan", url: "https://ais-pre-sfya3jyk34q34ejwcbly4u-253889415088.asia-east1.run.app" },
           { bab: "IX-03", grup: "materi", nama: "Materi 1 (PPT)", url: "https://docs.google.com/presentation/d/1wMXz9Z44T4_lTYTP7c-zXVahWkTYF1tr/edit?usp=sharing&ouid=109078274520635659798&rtpof=true&sd=true" },
@@ -1472,7 +1498,14 @@
           { bab: "VIII-07", grup: "materi", nama: "Asesmen Sumatif Statistika: Penyajian Data", url: "https://docs.google.com/document/d/1YlcE8eMsFEoALVmlVAaA7t-3DHjWxGJN/view" },
           { bab: "VIII-07", grup: "materi", nama: "Asesmen Sumatif Bab Statistika Kelas VIII", url: "https://docs.google.com/document/d/1nmJdfq7cYVA_uGSperoW7cdYkBN2Fe5l/view" },
           { bab: "VIII-07", grup: "materi", nama: "PPM Statistika 1: Penyajian Data dan Diagram (Ref 2026)", url: "https://docs.google.com/document/d/1_BumVDPl54JutJGnxSOoVPjXYXQVs1_I/view" },
-          { bab: "VIII-07", grup: "materi", nama: "PPM Statistika 2: Pemusatan dan Penyebaran Data (Ref 2026)", url: "https://docs.google.com/document/d/1gQcApT57EchC3IcOZk3f2f6OKRdYKnoP/view" }
+          { bab: "VIII-07", grup: "materi", nama: "PPM Statistika 2: Pemusatan dan Penyebaran Data (Ref 2026)", url: "https://docs.google.com/document/d/1gQcApT57EchC3IcOZk3f2f6OKRdYKnoP/view" },
+          /* ---------- Jurnal Sholatku (fitur F-13, panel di Menu Utama) ---------- */
+          { bab: "F-13", grup: "aplikasi", nama: "Jurnal Sholatku Digital — Buka & Isi Jurnal Sholat", url: "https://ais-pre-ovl52ypqguqt5keyg5zs6d-438289882508.asia-southeast1.run.app" },
+          { bab: "F-13", grup: "video", nama: "Video Ajakan Mengisi Jurnal Sholat", url: "https://drive.google.com/file/d/1D5y1jfXCDwzJJ4eI5sWvfprvxP-PU6ty/view?usp=sharing" },
+          { bab: "F-13", grup: "folder", nama: "Folder Jurnal Sholatku — Google Drive", url: "https://drive.google.com/drive/folders/1tQ07u_NVLm5SMpGRmnbkYIG5iP2gxM10?usp=sharing" },
+          { bab: "F-13", grup: "prompt", nama: "Prompt Master Jurnal Sholatku Digital", url: "https://drive.google.com/file/d/1VzBbrL_5CDaXl814is-ZkZVCuuEVunnF/view?usp=sharing" },
+          /* ---------- Kajian Pedoman Hidup Islami (fitur F-14, panel di Menu Utama) ---------- */
+          { bab: "F-14", grup: "arsip", nama: "Kajian Pedoman Hidup Islami — Pandangan Islam tentang Kehidupan", url: "https://drive.google.com/file/d/1b-d9juBUwjIW8TjpMW7Pk0Pc85qFwzVi/view?usp=sharing" }
         ],
         /* ---------- Materi interaktif yang bisa dimainkan (grup: "lkpd" | "game" | "quiz") ---------- */
         interaktif: [
@@ -1684,21 +1717,38 @@
         return String(teks).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
       }
 
+      /* Ikon "buka di tab baru" untuk tautan panel sumber belajar.
+         Dideklarasikan sebelum renderFitur karena panelSumber() juga
+         dipanggil dari sana (kartu fitur berpola panel, mis. F-13). */
+      var IKON_BUKA = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4L11 13"/><path d="M19 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>';
+
       /* ---------- Render Menu Utama dari LINK_DB.fitur ---------- */
       (function renderFitur() {
         var grid = document.getElementById("menuGrid");
         if (!grid) return;
         var html = "";
         LINK_DB.fitur.forEach(function (f) {
-          var aktif = f.status === "aktif" && f.url;
+          var punyaPanel = !!(f.sumber && f.sumber.length);
+          var aktif = f.status === "aktif" && (f.url || punyaPanel);
           var isi =
             '<span class="menu-ic">' + svgIkon(f.ikon, 25) + '</span>' +
             '<h3>' + esc(f.nama) + '</h3>' +
             '<p>' + esc(f.deskripsi) + '</p>' +
             '<div class="menu-foot">' + lencana(f.status) +
-            (aktif ? '<span class="menu-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>' : '') +
+            (aktif && !punyaPanel ? '<span class="menu-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>' : '') +
             '</div>';
-          if (aktif) {
+          if (punyaPanel) {
+            /* Kartu dengan panel "Lihat Sumber Belajar" — pola yang sama
+               seperti kartu bab: tombolnya melewati gerbang kode akses
+               yang sama dan panelnya dibangun oleh panelSumber(). */
+            html += '<article class="menu-card" style="--ac:' + f.warna + '">' + isi +
+              '<button type="button" class="bab-toggle" aria-expanded="false" aria-controls="sumber-' + esc(f.id) + '">' +
+                '<span class="bab-toggle-label">Lihat Sumber Belajar</span>' +
+                '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>' +
+              '</button>' +
+              panelSumber(f) +
+            '</article>';
+          } else if (aktif) {
             html += '<a class="menu-card" style="--ac:' + f.warna + '" href="' + esc(f.url) + '"' + (/^https?:\/\//.test(f.url) ? ' target="_blank" rel="noopener"' : '') + '>' + isi + '</a>';
           } else {
             html += '<article class="menu-card" style="--ac:' + f.warna + '" aria-label="' + esc(f.nama) + ' — segera hadir">' + isi + '</article>';
@@ -1710,7 +1760,6 @@
       /* ---------- Sumber belajar per bab (pola "sumber" di LINK_DB.bab) ----------
          Mengambil URL dari entri LINK_DB yang sudah ada — tidak ada URL
          yang ditulis ulang di sini. */
-      var IKON_BUKA = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4L11 13"/><path d="M19 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>';
       function tautanSumber(b, s) {
         if (s.dari === "portal") {
           return b.url ? [{ nama: "Buka Portal Rumah Belajar", url: b.url }] : [];

@@ -1,0 +1,413 @@
+PROMPT MASTER — JURNAL SHOLATKU DIGITAL
+
+Link Dapunya =
+
+Link Share WA “ JURNAL SHOLATKU”   Assalamu'alaikum Warahmatullahi Wabarakatuh
+"Aku anak hebat! Aku rajin sholat dan berusaha melaksanakannya tepat waktu."
+� Buka &amp; Isi Jurnal Sholat Digital:
+
+Assalamu’alaikum,.. selamat malam, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantun untuk :
+🌙 PROMPT MASTER — JURNAL SHOLATKU DIGITAL
+Buat sebuah aplikasi web mobile-friendly bernama:
+🌙✨ JURNAL SHOLATKU ✨🌙
+Aplikasi ini ditujukan untuk murid SD/MI agar dapat mencatat pelaksanaan sholat wajib 5 waktu selama 30 hari dengan cara yang sangat sederhana melalui HP.
+Aplikasi harus memiliki tampilan ceria, Islami, ramah anak, sederhana, modern, ringan, dan mudah digunakan dengan satu tangan di HP.
+Gunakan Bahasa Indonesia untuk seluruh antarmuka.
+
+🎨 GAYA DESAIN
+Gunakan gaya:
+Cute Islamic Kids + Modern Mobile App + Clean UI
+Warna utama:
+Hijau mint
+Turquoise
+Biru langit
+Putih
+Aksen emas lembut
+Gunakan ilustrasi kecil:
+🌙 bulan sabit⭐ bintang🕌 masjid☁️ awan✨ ornamen geometris Islami
+Jangan membuat tampilan terlalu ramai.
+Gunakan tombol besar, tulisan jelas, sudut membulat, ikon sederhana, dan kontras tinggi agar mudah digunakan anak-anak.
+
+📱 HALAMAN 1 — BERANDA MURID
+Tampilkan:
+🌙 JURNAL SHOLATKU
+Assalamu'alaikum 👋
+[Pilih Nama Murid ▼]
+Setelah nama dipilih, tampilkan:
+Nama: AhmadKelas: 5AHari: Sabtu, 29 Agustus 2026
+Tambahkan kalimat motivasi:
+🌟 Aku anak hebat! Aku rajin sholat dan berusaha melaksanakannya tepat waktu. 🌟
+
+🕌 STATUS SHOLAT HARI INI
+Tampilkan lima kartu sholat:
+🌅 SUBUH☀️ DZUHUR🌤️ ASHAR🌇 MAGHRIB🌙 ISYA
+Setiap kartu mempunyai status:
+🟢 SUDAH SHOLAT
+atau
+🟡 BELUM SHOLAT
+atau
+🔵 BELUM MASUK WAKTU
+Gunakan warna berbeda agar anak mudah memahami statusnya.
+
+⏰ PENGINGAT WAKTU SHOLAT
+Aplikasi harus membaca waktu sekarang dan jadwal sholat.
+Ketika waktu sholat telah masuk, tampilkan kartu khusus:
+🔔 WAKTU SHOLAT TELAH TIBA
+🌇 MAGHRIB
+17:45
+Yuk, jangan lupa sholat Maghrib. 🤲
+Buat tombol besar:
+🟢 SAYA SUDAH SHOLAT
+Jika belum waktunya:
+⏳ Sholat Maghrib belum masuk waktunya.
+Jika sudah dicatat:
+✅ Alhamdulillah! Sholat Maghrib sudah tercatat.
+
+📝 FORM SETELAH MURID MENEKAN
+“SAYA SUDAH SHOLAT”
+Tampilkan:
+🤲 Alhamdulillah!
+Sholat: Maghrib
+Jam: otomatis mengambil waktu HP/server.
+Kemudian tampilkan pilihan:
+Kapan kamu sholat?
+🟢 TEPAT WAKTU
+🟡 TERLAMBAT
+Buat kedua pilihan sebagai tombol besar.
+Setelah dipilih, data disimpan.
+Tampilkan:
+🎉 Alhamdulillah!
+Sholat Maghrib berhasil dicatat.
+Tambahkan animasi ringan seperti bintang/konfeti sederhana.
+
+🔒 ATURAN PENCATATAN
+Murid hanya boleh mencatat satu kali untuk setiap sholat pada tanggal yang sama.
+Jika sudah tercatat, tombol:
+SAYA SUDAH SHOLAT
+diganti menjadi:
+✅ SUDAH TERCATAT
+Jangan memungkinkan murid membuat pencatatan ganda.
+
+📊 HALAMAN REKAP MURID
+Tambahkan tombol:
+📊 REKAP SAYA
+Tampilkan rekap 30 hari secara sederhana.
+Contoh:
+🌙 Rekap Sholat Ahmad
+Sholat
+Sudah
+Tepat Waktu
+🌅 Subuh
+28
+25
+☀️ Dzuhur
+29
+27
+🌤️ Ashar
+27
+24
+🌇 Maghrib
+30
+29
+🌙 Isya
+28
+26
+Tampilkan:
+⭐ TOTAL
+142 / 150 sholat
+Gunakan progress bar berbentuk lingkaran atau batang yang menarik untuk anak.
+
+⭐ SISTEM REWARD
+Tambahkan:
+⭐ BINTANG PRESTASIKU
+Anak mendapatkan bintang berdasarkan konsistensi.
+Contoh:
+⭐ 5 sholat⭐⭐ 10 sholat⭐⭐⭐ 20 sholat⭐⭐⭐⭐ 30 sholat🏆 5 hari berturut-turut🏆🏆 7 hari berturut-turut🏆🏆🏆 30 hari konsisten
+Gunakan reward sebagai motivasi positif, bukan hukuman.
+
+📲 TOMBOL SHARE WHATSAPP
+Buat tombol yang sangat jelas:
+🟢 📲 SHARE KE WHATSAPP
+Ketika diklik, aplikasi membuka WhatsApp dengan pesan otomatis.
+Contoh pesan:
+🌙 JURNAL SHOLATKU
+Alhamdulillah, hari ini saya sudah mencatat sholat saya. 🤲✨
+🌅 Subuh ✅☀️ Dzuhur ✅🌤️ Ashar ✅🌇 Maghrib ✅🌙 Isya ⏳
+⭐ Semoga saya selalu istiqamah menjaga sholat.
+Pesan harus dapat dibagikan kepada:
+Orang tua
+Guru
+Grup kelas
+
+👨‍🏫 HALAMAN GURU / ADMIN
+Buat halaman khusus guru dengan login sederhana.
+Menu:
+📊 DASHBOARD GURU
+Tampilkan:
+Jumlah Murid: 30
+Total Sholat Hari Ini: 128
+Tepat Waktu: 110
+Terlambat: 18
+Kemudian tabel:
+Nama
+Subuh
+Dzuhur
+Ashar
+Maghrib
+Isya
+Total
+Ahmad
+✅
+✅
+✅
+✅
+⏳
+4/5
+Fatimah
+✅
+✅
+✅
+✅
+✅
+5/5
+Ali
+⏳
+✅
+❌
+✅
+✅
+3/5
+Gunakan warna:
+🟢 Sudah🟡 Terlambat🔴 Belum⚪ Belum masuk waktu
+
+📅 REKAP 30 HARI
+Guru dapat memilih:
+Tanggal mulai
+dan melihat rekap:
+Hari 1 – Hari 30
+Sediakan filter:
+Semua Murid
+Kelas 1
+Kelas 2
+Kelas 3
+dan seterusnya.
+
+📈 GRAFIK
+Buat grafik sederhana:
+Konsistensi Sholat 30 Hari
+Tampilkan jumlah sholat:
+Tepat waktu
+Terlambat
+Belum dicatat
+Gunakan grafik yang mudah dipahami guru.
+
+🗃️ PENYIMPANAN DATA
+Aplikasi harus mempunyai struktur data:
+MURID
+ID
+Nama
+Kelas
+JADWAL_SHOLAT
+Tanggal
+Subuh
+Dzuhur
+Ashar
+Maghrib
+Isya
+ABSENSI_SHOLAT
+Timestamp
+Tanggal
+ID Murid
+Nama
+Kelas
+Sholat
+Jam Input
+Status
+Status:
+TEPAT_WAKTU
+atau
+TERLAMBAT
+
+⚙️ LOGIKA APLIKASI
+Gunakan waktu lokal lokasi sekolah.
+Aplikasi harus:
+Menampilkan tanggal hari ini.
+Menampilkan jadwal sholat hari ini.
+Menentukan sholat yang sudah masuk waktunya.
+Menampilkan pengingat di halaman aplikasi.
+Memungkinkan murid mencatat sholat.
+Mencatat jam input secara otomatis.
+Menentukan status tepat waktu/terlambat berdasarkan aturan yang ditentukan admin.
+Mencegah pencatatan ganda.
+Menyimpan data.
+Menampilkan rekap otomatis.
+Menampilkan statistik 30 hari.
+Menyediakan tombol Share WhatsApp.
+
+📱 PRIORITAS UTAMA
+Aplikasi harus mobile-first.
+Target utama adalah:
+HP Android murid.
+Jangan membuat desain seperti website desktop.
+Gunakan:
+tombol besar
+navigasi sederhana
+maksimal 3–4 menu utama
+teks singkat
+ikon jelas
+loading cepat
+tidak banyak form
+tidak memerlukan murid mengetik banyak
+Navigasi utama:
+🏠 BERANDA
+🕌 SHOLAT HARI INI
+📊 REKAP
+⭐ PRESTASI
+
+🔐 PRIVASI
+Murid hanya dapat melihat data miliknya sendiri.
+Guru/admin dapat melihat data seluruh murid.
+Jangan tampilkan data pribadi yang tidak diperlukan.
+
+🛠️ TEKNOLOGI
+Jika platform mendukung coding, buat sebagai:
+Responsive Web App / PWA
+Frontend:
+HTML + CSS + JavaScript
+Backend:
+Google Apps Script
+Database:
+Google Sheets
+Gunakan desain yang mudah dikembangkan dan mudah dikelola oleh guru yang tidak memiliki kemampuan coding tinggi.
+
+🎯 HASIL AKHIR YANG DIINGINKAN
+Hasil akhir harus terasa seperti:
+“Aplikasi jurnal sholat anak yang sederhana.”
+Bukan seperti Google Form.
+Bukan seperti tabel Excel.
+Bukan seperti website administrasi sekolah.
+Saat murid membuka link, pengalaman yang diinginkan adalah:
+Buka link → pilih nama → lihat sholat hari ini → dapat pengingat → klik “Saya Sudah Sholat” → pilih Tepat Waktu/Terlambat → selesai.
+Guru:
+Buka dashboard → lihat semua murid → lihat rekap → lihat perkembangan 30 hari.
+Sediakan tombol:
+📲 SHARE KE WHATSAPP
+pada halaman yang relevan.
+Buat desain yang ceria, Islami, positif, tidak menghakimi, dan memotivasi anak untuk istiqamah menjaga sholat.
+Kelengkapan fitur-fitur yang di harapkan :
+Tombol "Hapus Kelas" Berfungsi Lancar (In-App Dialog)
+Tombol Hapus Kelas kini menggunakan dialog konfirmasi internal yang responsif dan aman (tidak lagi diblokir oleh browser di HP).
+Menghapus kelas akan otomatis membersihkan seluruh data siswa dan catatan sholat di kelas tersebut secara tuntas.
+Database Ringan (Contoh 3 Kelas: 9A, 9B, 7A)
+Secara bawaan, aplikasi kini disiapkan dengan format ringan 3 Kelas Contoh (9A, 9B, 7A) dengan masing-masing 32 siswa.
+Bapak dapat dengan sangat leluasa menghapus kelas yang tidak dibutuhkan atau mengganti namanya.
+Kemudahan Input dari File Excel / Daftar Nilai Bapak
+Pada tab "Input 32 Siswa Sekaligus", Bapak cukup menyalin (Copy) kolom nama murid dari file Excel daftar nilai, lalu menempelkannya (Paste) ke dalam kotak input.
+Tersedia opsi centang "Ganti (Replace) seluruh murid di kelas target" agar daftar nama langsung terisi rapi sesuai urutan nomor absen (1 s/d 32).
+Opsi Database Rombel &amp; Reset
+Pada menu "⚙️ Opsi Database Rombel", tersedia 3 pilihan fleksibel:
+⭐ Muat Contoh 3 Kelas (9A, 9B, 7A) — Sangat ringan untuk mulai diedit sendiri.
+🏫 Muat 13 Rombel Lengkap SMPN 1 Bantarkawung (416 Siswa) — Jika sewaktu-waktu membutuhkan database komplit.
+🧹 Kosongkan Semua Data Murid — Untuk membersihkan semua kelas dan mengisi dari awal.
+Database Server Terpusat &amp; Sinkronisasi Otomatis
+Aplikasi kini dilengkapi backend server yang menyimpan seluruh data rombel, nama siswa, dan catatan sholat secara permanen di server.
+Setiap kali Bapak menambah/mengedit/menghapus kelas atau nama murid, data otomatis tersimpan ke server.
+Ketika link dibuka di HP Bapak, HP murid, atau HP orang tua, aplikasi langsung mengambil data master terbaru dari server.
+Panel Kontrol Sinkronisasi &amp; Cadangan di Dashboard GuruDi bagian atas Dashboard Guru (Drs. PAIYO), kini tersedia panel "DATABASE SERVER &amp; SINKRONISASI HP":
+🟢 Status Sinkronisasi (Real-Time): Menampilkan status keterhubungan dan jam sinkronisasi terakhir.
+💾 Simpan ke Server: Tombol untuk memastikan data yang baru Bapak ubah langsung dikirim ke server.
+🔄 Sinkron Server: Untuk memuat ulang data terbaru dari server jika diperlukan.
+📤 Cadangkan JSON &amp; 📥 Pulihkan JSON: Memungkinkan Bapak mengunduh file cadangan data seluruh kelas ke komputer/HP dan memulihkannya kapan saja.
+Menu "📲 Bagikan ke HP" (Link Per Kelas &amp; WhatsApp)
+Tersedia tombol "Bagikan ke HP" untuk menyalin link utama aplikasi atau link langsung ke kelas tertentu (misal: link langsung membuka Kelas 9A atau 9B).
+Terimakasih atas solusinya yang keren.
+
+Batas copy
+Hasil dialog nya =
+Alhamdulillah, fitur Kelola &amp; Hapus Kelas serta opsi pengaturan kelas contoh (2-3 kelas) telah selesai diperbaiki dan disempurnakan.
+Berikut ringkasan pembaruan yang telah aktif:
+Tombol "Hapus Kelas" Berfungsi Lancar (In-App Dialog)
+Tombol Hapus Kelas kini menggunakan dialog konfirmasi internal yang responsif dan aman (tidak lagi diblokir oleh browser di HP).
+Menghapus kelas akan otomatis membersihkan seluruh data siswa dan catatan sholat di kelas tersebut secara tuntas.
+Database Ringan (Contoh 3 Kelas: 9A, 9B, 7A)
+Secara bawaan, aplikasi kini disiapkan dengan format ringan 3 Kelas Contoh (9A, 9B, 7A) dengan masing-masing 32 siswa.
+Bapak dapat dengan sangat leluasa menghapus kelas yang tidak dibutuhkan atau mengganti namanya.
+Kemudahan Input dari File Excel / Daftar Nilai Bapak
+Pada tab "Input 32 Siswa Sekaligus", Bapak cukup menyalin (Copy) kolom nama murid dari file Excel daftar nilai, lalu menempelkannya (Paste) ke dalam kotak input.
+Tersedia opsi centang "Ganti (Replace) seluruh murid di kelas target" agar daftar nama langsung terisi rapi sesuai urutan nomor absen (1 s/d 32).
+Opsi Database Rombel &amp; Reset
+Pada menu "⚙️ Opsi Database Rombel", tersedia 3 pilihan fleksibel:
+⭐ Muat Contoh 3 Kelas (9A, 9B, 7A) — Sangat ringan untuk mulai diedit sendiri.
+🏫 Muat 13 Rombel Lengkap SMPN 1 Bantarkawung (416 Siswa) — Jika sewaktu-waktu membutuhkan database komplit.
+🧹 Kosongkan Semua Data Murid — Untuk membersihkan semua kelas dan mengisi dari awal.
+Solusi &amp; Pembaruan yang Telah Diterapkan:
+Database Server Terpusat &amp; Sinkronisasi Otomatis
+Aplikasi kini dilengkapi backend server yang menyimpan seluruh data rombel, nama siswa, dan catatan sholat secara permanen di server.
+Setiap kali Bapak menambah/mengedit/menghapus kelas atau nama murid, data otomatis tersimpan ke server.
+Ketika link dibuka di HP Bapak, HP murid, atau HP orang tua, aplikasi langsung mengambil data master terbaru dari server.
+Panel Kontrol Sinkronisasi &amp; Cadangan di Dashboard GuruDi bagian atas Dashboard Guru (Drs. PAIYO), kini tersedia panel "DATABASE SERVER &amp; SINKRONISASI HP":
+🟢 Status Sinkronisasi (Real-Time): Menampilkan status keterhubungan dan jam sinkronisasi terakhir.
+💾 Simpan ke Server: Tombol untuk memastikan data yang baru Bapak ubah langsung dikirim ke server.
+🔄 Sinkron Server: Untuk memuat ulang data terbaru dari server jika diperlukan.
+📤 Cadangkan JSON &amp; 📥 Pulihkan JSON: Memungkinkan Bapak mengunduh file cadangan data seluruh kelas ke komputer/HP dan memulihkannya kapan saja.
+Menu "📲 Bagikan ke HP" (Link Per Kelas &amp; WhatsApp)
+Tersedia tombol "Bagikan ke HP" untuk menyalin link utama aplikasi atau link langsung ke kelas tertentu (misal: link langsung membuka Kelas 9A atau 9B).
+Bapak juga dapat langsung membagikan link rekapitulasi harian ke grup WhatsApp kelas atau wali murid.
+
+💡 Langkah Mudah Menambah atau hapus data perkelas sebagai berikut:
+Buka menu Dashboard Guru (klik tombol 👨‍🏫 di pojok kanan atas).
+Atur kelas atau tempel daftar nama murid dari Excel di tab "Kelola Murid" jika ada yang ingin disesuaikan.
+Klik tombol "💾 Simpan ke Server" di banner atas (atau sistem akan otomatis menyimpannya).
+Buka kembali link di HP Bapak atau bagikan linknya — data kelas yang tampil di HP sekarang dijamin persis sama dengan yang ada di dapur.
+Cara Kerja  "Kunci HP Saya":
+Tombol "Kunci HP Saya" di Layar Murid (Mudah &amp; Cepat):
+Pada bagian atas aplikasi di HP murid, terdapat banner pelindung: [🛡️ KUNCI AKUN DI HP INI: Cegah teman mengisikan sholat atas namamu].
+Murid cukup menekan tombol [🔒 Kunci HP], lalu memasukkan PIN (bisa menggunakan PIN default 1234 atau PIN 4 angka buatan sendiri).
+Setelah dikunci, profil HP tersebut akan bertanda 🔒 AKUN TERKUNCI (AMAN) khusus atas nama murid tersebut.
+Perlindungan Otomatis Terhadap Pergantian Nama:
+Jika ada teman yang meminjam HP dan mencoba mengganti nama murid ke nama orang lain, aplikasi akan langsung menghadang dengan jendela verifikasi PIN keamanan.
+Tanpa memasukkan PIN yang benar, nama murid tidak bisa diubah dan sholat tidak bisa dicatatkan untuk orang lain.
+Master PIN Khusus Guru (Pak Drs. PAIYO):
+Jika sewaktu-waktu murid lupa PIN-nya, Bapak Drs. PAIYO dapat langsung membuka kunci HP murid manapun dengan memasukkan Master PIN Guru: 1234.
+Link Khusus Per-Murid Terkunci Otomatis (dari Dapur Guru):
+Pada menu "Bagikan Link Aplikasi ke HP" di Dashboard Guru, Bapak Drs. PAIYO dapat langsung menekan tombol [🔒 Salin Link Kunci] di samping nama murid yang diinginkan.
+Saat link tersebut dibuka oleh murid di HP-nya, aplikasi otomatis mengunci HP tersebut atas nama murid yang bersangkutan.
+Pembaharuan kedua:
+Ringkasan Fitur yang Telah Diimplementasikan:
+1. Server Database Sentral (/api/grades &amp; server_data/database.json)
+Penyimpanan Berkas JSON Terstruktur (Server Storage Engine):
+Berkas penyimpanan utama berlokasi di server_data/database.json.
+Menggunakan teknik Atomic Safe-Write (menulis berkas temporary lalu mengganti secara atomik), sehingga file tidak akan rusak meski terjadi lonjakan koneksi bersamaan.
+Endpoint sentral GET &amp; POST /api/grades, POST /api/grades/record, GET &amp; POST /api/grades/settings, dan POST /api/grades/reset telah aktif.
+2. Sinkronisasi Otomatis Antar Perangkat (Real-Time Auto-Polling)
+Sinkronisasi Berkala Cerdas:
+Semua HP murid dan laptop guru otomatis melakukan polling ke server secara berkala (default: 12 detik, dapat diatur).
+Menggunakan mekanisme Diff Check (modified: false jika data belum berubah), sehingga sangat hemat kuota dan cepat (&lt;10ms).
+Ketika murid mencatat sholat dari HP-nya, rekapan di layar guru langsung bertambah secara otomatis.
+Otomatis langsung menyinkronkan saat layar HP menyala atau murid kembali membuka tab browser (visibilitychange).
+3. Indikator Status Database Sentral
+Pada Layar Murid (Header Aplikasi):
+Terdapat indikator hijau menyala: 🟢 Database Sentral Terhubung • server_data/database.json.
+Murid/Guru dapat menekan indikator tersebut untuk membuka jendela diagnostik lengkap (status koneksi, waktu sinkron terakhir, dan tombol Sinkronkan Sekarang).
+Pada Dashboard Guru:
+Banner status real-time dengan status Tersambung (Real-Time), jumlah murid &amp; catatan, serta tombol pintas ekspor/impor.
+4. Penyimpanan Cadangan Ganda (Dual Backup Architecture)
+Cadangan 1: Fitur "Impor Nilai (Kode WA)" &amp; "Ekspor Kode WA":
+Tombol [📤 Ekspor Kode WA]: Menghasilkan teks data terenkripsi Base64 ringkas yang langsung dapat disalin atau dikirim ke chat WhatsApp guru/grup sekolah.
+Tombol [📥 Impor Kode WA]: Guru cukup menempelkan teks chat WA tersebut ke dalam sistem. Sistem secara otomatis mendeteksi jumlah siswa, catatan sholat, dan menyediakan pilihan:
+Gabungkan (Merge): Menambahkan rekaman baru tanpa menimpa data lama (direkomendasikan).
+Timpa Seluruhnya (Replace): Mengganti database saat ini dengan data dari Kode WA.
+Cadangan 2: Cadangan Lokal Browser (Local Snapshot):
+Otomatis menyimpan snapshot cadangan di browser setiap kali ada sinkronisasi baru, lengkap dengan riwayat waktu dan jumlah siswa.
+5. Pengaturan Token &amp; Jadwal Terpusat (Tab "Database Sentral")
+Menu baru di Dashboard Guru: 🗄️ Database Sentral, memuat kontrol terpusat:
+Master Token / PIN Guru: Default 1234 (dapat diubah sesuai kebutuhan).
+Nama Sekolah &amp; Tahun Ajaran: SMPN 1 Bantarkawung, 2026/2027, Semester Ganjil.
+Interval Auto-Polling: Pilihan kecepatan 8s, 12s, 20s, hingga 60s.
+Penyesuaian Jadwal Sholat Terpusat: Offset menit Subuh, Dzuhur, Ashar, Maghrib, Isya (+/- menit) untuk penyesuaian adzan masjid setempat.
+6. Tombol "Reset Data" Aman dengan Password
+Terdapat di zona perlindungan khusus pada tab Database Sentral:
+Opsi 1: Kosongkan Catatan Sholat Saja (Siswa &amp; Rombel tetap aman tersimpan).
+Opsi 2: Reset Database Penuh (Untuk mulai tahun ajaran baru dari nol).
+Perlindungan Keamanan: Wajib memasukkan Master Token/Password Guru (default: 1234).
+Snapshot Otomatis: Server otomatis membuat salinan cadangan di folder server_data/backups/ sesaat sebelum penghapusan dilakukan, sehingga data tidak akan hilang secara tidak sengaja.
