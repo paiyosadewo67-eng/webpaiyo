@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Simulasi Asesmen — Penerapan Kesebangunan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #f6f3ea;
+        --surface: #fffdf7;
+        --surface-2: #efe9da;
+        --ink: #22302a;
+        --ink-soft: #5a6a62;
+        --line: #ddd5c2;
+        --green: #17694a;
+        --green-deep: #0e4f37;
+        --green-tint: #e2efe6;
+        --amber: #b45309;
+        --amber-tint: #fbeed3;
+        --red: #b3261e;
+        --red-tint: #fbe7e4;
+        --ok: #17694a;
+        --ok-tint: #e2efe6;
+        --shadow: 0 2px 10px rgba(34, 48, 42, 0.08);
+        --radius: 14px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #131a17;
+          --surface: #1c2621;
+          --surface-2: #25322c;
+          --ink: #e8efe9;
+          --ink-soft: #a7b8ae;
+          --line: #33443b;
+          --green: #4cc38a;
+          --green-deep: #7fd6ab;
+          --green-tint: #1e3329;
+          --amber: #f0b35e;
+          --amber-tint: #3a2c15;
+          --red: #f08a84;
+          --red-tint: #3d211f;
+          --ok: #4cc38a;
+          --ok-tint: #1e3329;
+          --shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.55;
+      }
+      .wrap { max-width: 760px; margin: 0 auto; padding: 20px 16px 48px; }
+      .screen { display: none; }
+      .screen.active { display: block; }
+
+      /* ---------- Header / hero ---------- */
+      .hero { text-align: center; padding: 18px 4px 6px; }
+      .hero .kicker {
+        display: inline-block; font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em;
+        text-transform: uppercase; color: var(--green); background: var(--green-tint);
+        padding: 5px 12px; border-radius: 999px;
+      }
+      .hero h1 {
+        font-family: "Fraunces", Georgia, serif; font-weight: 900;
+        font-size: clamp(26px, 6vw, 40px); line-height: 1.15; margin: 14px 0 8px;
+      }
+      .hero p.sub { color: var(--ink-soft); margin: 0 auto; max-width: 560px; font-size: 15px; }
+      .hero p.sub strong { color: var(--ink); }
+      .diagram { margin: 18px auto 4px; max-width: 420px; }
+      .diagram svg { width: 100%; height: auto; display: block; }
+
+      /* ---------- Mode cards ---------- */
+      .modes { display: grid; gap: 14px; margin-top: 22px; }
+      @media (min-width: 620px) { .modes { grid-template-columns: 1fr 1fr; } }
+      .mode-card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 20px; box-shadow: var(--shadow); text-align: left;
+        display: flex; flex-direction: column; gap: 8px;
+      }
+      .mode-card .tag {
+        align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: 0.05em;
+        text-transform: uppercase; padding: 4px 10px; border-radius: 999px;
+        background: var(--amber-tint); color: var(--amber);
+      }
+      .mode-card h2 { font-size: 19px; margin: 2px 0 0; line-height: 1.3; }
+      .mode-card p { margin: 0; color: var(--ink-soft); font-size: 14.5px; }
+      .mode-card .meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13.5px; font-weight: 600; color: var(--ink); }
+      .mode-card .meta span::before { content: "• "; color: var(--green); font-weight: 800; }
+      .mode-card .meta span:first-child::before { content: ""; }
+      .btn {
+        appearance: none; border: 0; cursor: pointer; font: inherit; font-weight: 700;
+        border-radius: 10px; padding: 13px 18px; text-align: center; text-decoration: none;
+        display: inline-block; transition: transform 0.08s ease, opacity 0.15s ease;
+      }
+      .btn:active { transform: scale(0.98); }
+      .btn-primary { background: var(--green); color: #fff; }
+      @media (prefers-color-scheme: dark) { .btn-primary { color: #0c1f16; } }
+      .btn-primary:hover { opacity: 0.92; }
+      .btn-ghost { background: transparent; color: var(--green); border: 1.5px solid var(--green); }
+      .btn-block { width: 100%; }
+      .mode-card .btn { margin-top: auto; }
+
+      /* ---------- Share WA ---------- */
+      .share-box {
+        margin-top: 26px; background: var(--surface); border: 1px solid var(--line);
+        border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow);
+      }
+      .share-box h3 { margin: 0 0 6px; font-size: 16px; }
+      .share-box p { margin: 0 0 10px; color: var(--ink-soft); font-size: 14px; }
+      .share-box textarea {
+        width: 100%; min-height: 150px; resize: vertical; font: inherit; font-size: 14px;
+        color: var(--ink); background: var(--surface-2); border: 1px solid var(--line);
+        border-radius: 10px; padding: 12px;
+      }
+      .share-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+      .btn-wa { background: #1faa55; color: #fff; }
+      .btn-wa:hover { opacity: 0.92; }
+      .copied { font-size: 13.5px; font-weight: 600; color: var(--green); align-self: center; }
+
+      .foot-note { text-align: center; color: var(--ink-soft); font-size: 13px; margin-top: 26px; }
+
+      /* ---------- Form identitas ---------- */
+      .panel {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 22px 20px; box-shadow: var(--shadow); margin-top: 18px;
+      }
+      .panel h2 { margin: 0 0 4px; font-size: 20px; }
+      .panel .desc { color: var(--ink-soft); margin: 0 0 16px; font-size: 14.5px; }
+      label.field { display: block; margin-bottom: 14px; }
+      label.field span { display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+      label.field input, label.field select {
+        width: 100%; font: inherit; padding: 12px; border-radius: 10px;
+        border: 1.5px solid var(--line); background: var(--surface); color: var(--ink);
+      }
+      label.field input:focus, label.field select:focus { outline: 2px solid var(--green); outline-offset: 1px; border-color: var(--green); }
+      .form-error { display: none; background: var(--red-tint); color: var(--red); border-radius: 10px; padding: 10px 14px; font-size: 14px; font-weight: 600; margin-bottom: 14px; }
+      .form-error.show { display: block; }
+      .back-link { background: none; border: 0; color: var(--green); font: inherit; font-weight: 700; cursor: pointer; padding: 6px 0; }
+
+      /* ---------- Quiz ---------- */
+      .quiz-top {
+        position: sticky; top: 0; z-index: 20; margin: 0 -16px; padding: 10px 16px;
+        background: var(--bg); border-bottom: 1px solid var(--line);
+        display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      }
+      .quiz-top .who { font-size: 13.5px; font-weight: 600; color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .quiz-top .who strong { color: var(--ink); }
+      .timer {
+        font-variant-numeric: tabular-nums; font-weight: 800; font-size: 18px;
+        background: var(--surface); border: 1.5px solid var(--line); border-radius: 999px; padding: 5px 14px;
+        display: inline-flex; align-items: center; gap: 7px; white-space: nowrap;
+      }
+      .timer.low { color: var(--red); border-color: var(--red); background: var(--red-tint); }
+      .progress-line { font-size: 13px; color: var(--ink-soft); margin: 14px 0 0; font-weight: 600; }
+      .section-head {
+        margin: 26px 0 4px; font-size: 15px; font-weight: 800; letter-spacing: 0.02em;
+        color: var(--green-deep); display: flex; align-items: center; gap: 10px;
+      }
+      .section-head::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+      .q-card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 18px; box-shadow: var(--shadow); margin-top: 14px;
+      }
+      .q-card .q-num { font-size: 12.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--amber); }
+      .q-card .q-text { font-size: 16px; margin: 6px 0 12px; }
+      .q-card .q-hint { font-size: 13px; font-weight: 700; color: var(--green); background: var(--green-tint); display: inline-block; padding: 3px 10px; border-radius: 999px; margin-bottom: 10px; }
+      .opt {
+        display: flex; gap: 10px; align-items: flex-start; padding: 11px 12px; margin-top: 8px;
+        border: 1.5px solid var(--line); border-radius: 10px; cursor: pointer; font-size: 15px;
+      }
+      .opt input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--green); flex: none; }
+      .opt .letter { font-weight: 800; flex: none; }
+      .opt.selected { border-color: var(--green); background: var(--green-tint); }
+      .submit-zone { margin-top: 26px; }
+      .submit-zone p { color: var(--ink-soft); font-size: 13.5px; text-align: center; margin-top: 10px; }
+
+      /* ---------- Hasil ---------- */
+      .result-head { text-align: center; padding-top: 10px; }
+      .score-ring {
+        width: 138px; height: 138px; margin: 14px auto 6px; border-radius: 50%;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        border: 8px solid var(--green); background: var(--surface); box-shadow: var(--shadow);
+      }
+      .score-ring.fail { border-color: var(--red); }
+      .score-ring .num { font-family: "Fraunces", Georgia, serif; font-size: 46px; font-weight: 900; line-height: 1; }
+      .score-ring .of { font-size: 12px; color: var(--ink-soft); font-weight: 700; letter-spacing: 0.05em; }
+      .status-badge {
+        display: inline-block; font-weight: 800; font-size: 15px; padding: 7px 20px; border-radius: 999px; margin-top: 8px;
+      }
+      .status-badge.ok { background: var(--ok-tint); color: var(--ok); }
+      .status-badge.no { background: var(--red-tint); color: var(--red); }
+      .result-meta {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; text-align: left;
+      }
+      .result-meta .cell { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+      .result-meta .cell .k { font-size: 12px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); }
+      .result-meta .cell .v { font-size: 15.5px; font-weight: 700; margin-top: 2px; }
+      .review-title { margin: 28px 0 4px; font-size: 19px; }
+      .rev-card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 16px 18px; margin-top: 12px; box-shadow: var(--shadow);
+      }
+      .rev-card .rev-top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+      .rev-card .q-num { font-size: 12.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--amber); }
+      .mark { font-size: 13px; font-weight: 800; padding: 3px 11px; border-radius: 999px; white-space: nowrap; }
+      .mark.ok { background: var(--ok-tint); color: var(--ok); }
+      .mark.no { background: var(--red-tint); color: var(--red); }
+      .rev-card .q-text { margin: 6px 0 10px; font-size: 15.5px; }
+      .rev-card .ans { font-size: 14.5px; margin: 4px 0; }
+      .rev-card .ans .lbl { font-weight: 700; color: var(--ink-soft); }
+      .rev-card .expl {
+        margin-top: 10px; background: var(--surface-2); border-radius: 10px; padding: 10px 13px; font-size: 14px;
+      }
+      .rev-card .expl .lbl { font-weight: 800; }
+      .result-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+      .result-actions .btn { flex: 1 1 160px; }
+      .timeout-note { background: var(--amber-tint); color: var(--amber); font-weight: 700; border-radius: 10px; padding: 10px 14px; font-size: 14px; margin-top: 16px; display: none; }
+      .timeout-note.show { display: block; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+
+      <!-- ============ LAYAR MENU ============ -->
+      <section id="screen-menu" class="screen active">
+        <div class="hero">
+          <span class="kicker">Matematika Kelas 9</span>
+          <h1>Simulasi Asesmen — Penerapan Kesebangunan</h1>
+          <p class="sub">SMP Negeri 1 Bantarkawung • Guru: <strong>Drs. Paiyo</strong> • AAAMAAT KEREN</p>
+          <div class="diagram" aria-hidden="true">
+            <svg viewBox="0 0 420 190" role="img" aria-label="Ilustrasi menaksir tinggi pohon dengan bayangan">
+              <line x1="20" y1="168" x2="400" y2="168" stroke="var(--line)" stroke-width="3" />
+              <!-- pohon -->
+              <line x1="90" y1="168" x2="90" y2="86" stroke="var(--green)" stroke-width="6" stroke-linecap="round" />
+              <circle cx="90" cy="62" r="30" fill="var(--green)" opacity="0.85" />
+              <circle cx="66" cy="76" r="18" fill="var(--green)" opacity="0.65" />
+              <circle cx="114" cy="76" r="18" fill="var(--green)" opacity="0.65" />
+              <!-- bayangan pohon -->
+              <line x1="90" y1="168" x2="330" y2="168" stroke="var(--amber)" stroke-width="4" stroke-dasharray="7 6" />
+              <!-- sinar matahari -->
+              <line x1="90" y1="40" x2="330" y2="168" stroke="var(--amber)" stroke-width="2.5" opacity="0.8" />
+              <!-- tongkat -->
+              <line x1="215" y1="168" x2="215" y2="124" stroke="var(--ink)" stroke-width="4" stroke-linecap="round" />
+              <line x1="215" y1="124" x2="330" y2="168" stroke="var(--amber)" stroke-width="2.5" opacity="0.8" />
+              <line x1="215" y1="168" x2="330" y2="168" stroke="var(--amber)" stroke-width="3" stroke-dasharray="4 5" opacity="0.7" />
+              <!-- matahari -->
+              <circle cx="368" cy="34" r="15" fill="var(--amber)" />
+              <g stroke="var(--amber)" stroke-width="2.5" stroke-linecap="round">
+                <line x1="368" y1="8" x2="368" y2="14" /><line x1="368" y1="54" x2="368" y2="60" />
+                <line x1="342" y1="34" x2="348" y2="34" /><line x1="388" y1="34" x2="394" y2="34" />
+                <line x1="350" y1="16" x2="354" y2="20" /><line x1="382" y1="48" x2="386" y2="52" />
+                <line x1="386" y1="16" x2="382" y2="20" /><line x1="354" y1="48" x2="350" y2="52" />
+              </g>
+              <text x="90" y="186" text-anchor="middle" font-size="12" fill="var(--ink-soft)" font-weight="700">Pohon</text>
+              <text x="212" y="186" text-anchor="middle" font-size="12" fill="var(--ink-soft)" font-weight="700">Tongkat</text>
+              <text x="330" y="156" text-anchor="middle" font-size="12" fill="var(--amber)" font-weight="700">Bayangan</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modes">
+          <article class="mode-card">
+            <span class="tag">Mode 1</span>
+            <h2>Kuis Pretes</h2>
+            <p>Materi prasyarat: kesebangunan pada dua segitiga — syarat sebangun, perbandingan sisi, dan sudut yang bersesuaian, sebagai bekal menaksir tinggi pohon.</p>
+            <div class="meta"><span>5 soal pilihan ganda</span><span>Waktu 10 menit</span><span>Tiap soal 20 poin</span></div>
+            <button class="btn btn-primary" data-start-mode="pretes">Mulai Kuis Pretes</button>
+          </article>
+
+          <article class="mode-card">
+            <span class="tag">Mode 2</span>
+            <h2>Asesmen Formatif Pertemuan ke-7</h2>
+            <p>Materi penerapan kesebangunan: menaksir tinggi tiang bendera, menara, gedung, dan pohon dengan bayangan, cermin, dan skala foto.</p>
+            <div class="meta"><span>10 soal</span><span>Waktu 30 menit</span><span>5 PG • 3 Benar/Salah • 2 PG Kompleks</span></div>
+            <button class="btn btn-primary" data-start-mode="formatif">Mulai Asesmen Formatif</button>
+          </article>
+        </div>
+
+        <div class="share-box">
+          <h3>Bagikan ke WhatsApp Kelas</h3>
+          <p>Teks pengumuman siap pakai untuk guru. Ganti tulisan <strong>[tautan asesmen]</strong> dengan tautan halaman ini, lalu kirim.</p>
+          <textarea id="share-text" aria-label="Teks pengumuman WhatsApp">📢 SIMULASI ASESMEN — PENERAPAN KESEBANGUNAN
+Matematika Kelas 9 • SMP Negeri 1 Bantarkawung
+
+Anak-anak, silakan kerjakan simulasi asesmen berikut:
+
+1️⃣ Kuis Pretes — 5 soal pilihan ganda, waktu 10 menit
+2️⃣ Asesmen Formatif Pertemuan ke-7 — 10 soal (5 PG, 3 Benar/Salah, 2 PG Kompleks), waktu 30 menit
+
+🔗 Tautan asesmen: [tautan asesmen]
+
+Isi nama lengkap, kelas, dan nomor absen sebelum mulai. Kerjakan dengan jujur dan teliti ya. Nilai langsung terlihat setelah mengumpulkan. Selamat mengerjakan! 💪
+— Drs. Paiyo • AAAMAAT KEREN</textarea>
+          <div class="share-actions">
+            <a class="btn btn-wa" id="wa-share" href="#" target="_blank" rel="noopener">Kirim via WhatsApp</a>
+            <button class="btn btn-ghost" id="copy-share" type="button">Salin Teks</button>
+            <span class="copied" id="copy-note" hidden>Tersalin ✓</span>
+          </div>
+        </div>
+
+        <p class="foot-note">Hasil asesmen tampil langsung di perangkat masing-masing setelah jawaban dikumpulkan. KKM: 75.</p>
+      </section>
+
+      <!-- ============ LAYAR IDENTITAS ============ -->
+      <section id="screen-identity" class="screen">
+        <button class="back-link" id="back-to-menu" type="button">← Kembali ke Menu</button>
+        <div class="panel">
+          <h2 id="identity-title">Kuis Pretes</h2>
+          <p class="desc" id="identity-desc"></p>
+          <div class="form-error" id="form-error">Mohon lengkapi nama, kelas, dan nomor absen terlebih dahulu.</div>
+          <form id="identity-form" novalidate>
+            <label class="field">
+              <span>Nama Lengkap</span>
+              <input type="text" id="f-name" autocomplete="name" placeholder="Tulis nama lengkapmu" />
+            </label>
+            <label class="field">
+              <span>Kelas</span>
+              <select id="f-class">
+                <option value="">— Pilih kelas —</option>
+                <option>IX A</option><option>IX B</option><option>IX C</option><option>IX D</option>
+                <option>IX E</option><option>IX F</option><option>IX G</option><option>IX H</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Nomor Absen</span>
+              <input type="number" id="f-absen" min="1" max="40" inputmode="numeric" placeholder="Contoh: 12" />
+            </label>
+            <button class="btn btn-primary btn-block" type="submit">Mulai Mengerjakan</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ============ LAYAR SOAL ============ -->
+      <section id="screen-quiz" class="screen">
+        <div class="quiz-top">
+          <div class="who" id="quiz-who"></div>
+          <div class="timer" id="timer"><span aria-hidden="true">⏱</span><span id="timer-text">00:00</span></div>
+        </div>
+        <p class="progress-line" id="progress-line"></p>
+        <div id="quiz-body"></div>
+        <div class="submit-zone">
+          <button class="btn btn-primary btn-block" id="submit-btn" type="button">Kumpulkan Jawaban</button>
+          <p>Periksa kembali jawabanmu sebelum mengumpulkan. Jika waktu habis, jawaban terkumpul otomatis.</p>
+        </div>
+      </section>
+
+      <!-- ============ LAYAR HASIL ============ -->
+      <section id="screen-result" class="screen">
+        <div class="result-head">
+          <span class="kicker" style="display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--green);background:var(--green-tint);padding:5px 12px;border-radius:999px;">Hasil Asesmen</span>
+          <div class="score-ring" id="score-ring">
+            <div class="num" id="score-num">0</div>
+            <div class="of">dari 100</div>
+          </div>
+          <div><span class="status-badge" id="status-badge"></span></div>
+          <div class="timeout-note" id="timeout-note">Waktu pengerjaan habis — jawabanmu terkumpul otomatis.</div>
+        </div>
+        <div class="result-meta" id="result-meta"></div>
+        <h3 class="review-title">Pembahasan Soal</h3>
+        <div id="review-body"></div>
+        <div class="result-actions">
+          <button class="btn btn-primary" id="retry-btn" type="button">Ulangi</button>
+          <button class="btn btn-ghost" id="menu-btn" type="button">Kembali ke Menu</button>
+        </div>
+      </section>
+
+    </div>
+
+    <script>
+      "use strict";
+
+      /* ================= BANK SOAL ================= */
+      var LETTERS = ["A", "B", "C", "D"];
+
+      var PRETES = {
+        id: "pretes",
+        title: "Kuis Pretes",
+        minutes: 10,
+        points: 20,
+        desc: "5 soal pilihan ganda • Waktu 10 menit • Materi prasyarat: kesebangunan pada dua segitiga.",
+        questions: [
+          {
+            text: "Dua segitiga dikatakan sebangun apabila …",
+            options: [
+              "semua sisinya sama panjang",
+              "sudut-sudut yang bersesuaian sama besar dan sisi-sisi yang bersesuaian sebanding",
+              "luas kedua segitiga sama",
+              "keliling kedua segitiga sama"
+            ],
+            answer: [1],
+            explain: "Syarat dua segitiga sebangun ialah sudut-sudut yang bersesuaian sama besar dan sisi-sisi yang bersesuaian sebanding."
+          },
+          {
+            text: "Segitiga ABC sebangun dengan segitiga PQR. Panjang AB = 6 cm, BC = 8 cm, dan PQ = 9 cm. Jika sisi QR bersesuaian dengan sisi BC, panjang QR adalah …",
+            options: ["10 cm", "12 cm", "14 cm", "16 cm"],
+            answer: [1],
+            explain: "AB/PQ = 6/9 = 2/3, maka QR = BC × 3/2 = 8 × 3/2 = 12 cm."
+          },
+          {
+            text: "Segitiga ABC sebangun dengan segitiga DEF. Besar ∠A = 65° dan ∠B = 55°. Jika ∠A bersesuaian dengan ∠D, besar ∠D adalah …",
+            options: ["55°", "60°", "65°", "120°"],
+            answer: [2],
+            explain: "Sudut yang bersesuaian pada dua segitiga sebangun besarnya sama, jadi ∠D = ∠A = 65°."
+          },
+          {
+            text: "Pada saat yang sama, sebuah tongkat setinggi 1,5 m mempunyai bayangan sepanjang 2 m. Perbandingan tinggi tongkat dengan panjang bayangannya adalah …",
+            options: ["3 : 4", "4 : 3", "1 : 2", "2 : 1"],
+            answer: [0],
+            explain: "1,5 : 2 = 15 : 20 = 3 : 4."
+          },
+          {
+            text: "Sebuah pohon mempunyai bayangan sepanjang 8 m. Pada saat yang sama, tongkat setinggi 1 m mempunyai bayangan 2 m. Tinggi pohon tersebut adalah …",
+            options: ["2 m", "4 m", "8 m", "16 m"],
+            answer: [1],
+            explain: "Tinggi pohon / bayangan pohon = 1/2, maka tinggi pohon = 8 × 1/2 = 4 m."
+          }
+        ]
+      };
+
+      var FORMATIF = {
+        id: "formatif",
+        title: "Asesmen Formatif Pertemuan ke-7",
+        minutes: 30,
+        points: 10,
+        desc: "10 soal • Waktu 30 menit • Materi: penerapan kesebangunan (menaksir tinggi).",
+        questions: [
+          { section: "Bagian A — Pilihan Ganda Biasa" },
+          {
+            text: "Tiang bendera di halaman sekolah mempunyai bayangan sepanjang 6 m. Pada saat yang sama, seorang siswa setinggi 150 cm mempunyai bayangan 2 m. Tinggi tiang bendera adalah …",
+            options: ["3 m", "4 m", "4,5 m", "9 m"],
+            answer: [2],
+            explain: "Tinggi tiang = 6 × (1,5/2) = 6 × 0,75 = 4,5 m."
+          },
+          {
+            text: "Sebuah menara mempunyai bayangan sepanjang 20 m. Pada saat yang sama, tongkat sepanjang 2 m mempunyai bayangan 2,5 m. Tinggi menara adalah …",
+            options: ["12 m", "16 m", "20 m", "25 m"],
+            answer: [1],
+            explain: "Tinggi menara = 20 × (2/2,5) = 20 × 0,8 = 16 m."
+          },
+          {
+            text: "Sebuah gedung mempunyai bayangan sepanjang 15 m. Pada saat yang sama, pohon setinggi 4 m mempunyai bayangan 3 m. Tinggi gedung adalah …",
+            options: ["11,25 m", "16 m", "20 m", "24 m"],
+            answer: [2],
+            explain: "Tinggi gedung = 15 × (4/3) = 20 m."
+          },
+          {
+            text: "Seorang siswa menaksir tinggi menara dengan cermin yang diletakkan di tanah. Jarak siswa ke cermin 2 m dan jarak cermin ke kaki menara 18 m. Jika tinggi mata siswa dari tanah 160 cm, tinggi menara adalah …",
+            options: ["12,8 m", "14,4 m", "16 m", "28,8 m"],
+            answer: [1],
+            explain: "Dengan cermin terbentuk dua segitiga sebangun, tinggi menara = 18 × (1,6/2) = 18 × 0,8 = 14,4 m."
+          },
+          {
+            text: "Sebuah gedung difoto dengan skala 1 : 500. Jika tinggi gedung pada foto adalah 8 cm, tinggi gedung sebenarnya adalah …",
+            options: ["4 m", "40 m", "400 m", "0,4 m"],
+            answer: [1],
+            explain: "Tinggi sebenarnya = 8 cm × 500 = 4.000 cm = 40 m."
+          },
+          { section: "Bagian B — Pilihan Ganda Benar / Salah" },
+          {
+            text: "Pernyataan: “Pada saat yang sama, perbandingan antara tinggi benda dan panjang bayangannya adalah sama untuk semua benda.”",
+            options: ["Benar", "Salah"],
+            answer: [0],
+            explain: "Itulah prinsip dasar menaksir tinggi dengan bayangan, karena sinar matahari datang sejajar pada saat yang sama."
+          },
+          {
+            text: "Pernyataan: “Sebuah pohon mempunyai bayangan 10 m. Tongkat setinggi 2 m mempunyai bayangan 4 m. Maka tinggi pohon adalah 20 m.”",
+            options: ["Benar", "Salah"],
+            answer: [1],
+            explain: "Tinggi pohon = 10 × (2/4) = 5 m, bukan 20 m."
+          },
+          {
+            text: "Pernyataan: “Dua segitiga yang dibentuk oleh sebuah benda, bayangannya, dan sinar matahari pada saat yang sama merupakan dua segitiga yang sebangun.”",
+            options: ["Benar", "Salah"],
+            answer: [0],
+            explain: "Sudut di ujung bayangan sama besar (sinar matahari sejajar) dan sudut di kaki benda sama-sama siku-siku, sehingga kedua segitiga sebangun."
+          },
+          { section: "Bagian C — Pilihan Ganda Kompleks (MCMA)" },
+          {
+            multi: true,
+            text: "Sebuah pohon mempunyai bayangan sepanjang 12 m dan ditaksir tingginya 9 m. Pasangan data pembanding (tinggi tongkat dan panjang bayangannya) yang tepat digunakan untuk memperoleh taksiran tersebut adalah …",
+            options: [
+              "tongkat 3 m dengan bayangan 4 m",
+              "tongkat 1,5 m dengan bayangan 2 m",
+              "tongkat 2 m dengan bayangan 3 m",
+              "tongkat 6 m dengan bayangan 8 m"
+            ],
+            answer: [0, 1, 3],
+            explain: "Taksiran 9 m dari bayangan 12 m berarti perbandingan tinggi : bayangan = 3 : 4. Pilihan A (3:4), B (1,5:2 = 3:4), dan D (6:8 = 3:4) memenuhi; pilihan C (2:3) menghasilkan taksiran 8 m."
+          },
+          {
+            multi: true,
+            text: "Pernyataan yang benar tentang dua segitiga yang sebangun adalah …",
+            options: [
+              "sudut-sudut yang bersesuaian sama besar",
+              "sisi-sisi yang bersesuaian sebanding",
+              "semua sisi yang bersesuaian pasti sama panjang",
+              "perbandingan luasnya sama dengan perbandingan panjang sisinya"
+            ],
+            answer: [0, 1],
+            explain: "Pilihan C adalah sifat bangun kongruen; pilihan D keliru karena perbandingan luas dua bangun sebangun adalah kuadrat dari perbandingan panjang sisinya."
+          }
+        ]
+      };
+
+      var MODES = { pretes: PRETES, formatif: FORMATIF };
+
+      /* ================= STATE ================= */
+      var state = {
+        mode: null,
+        name: "", kelas: "", absen: "",
+        answers: {},          // qIndex -> array of selected option indexes
+        timerId: null,
+        remaining: 0,
+        startedAt: 0,
+        timedOut: false
+      };
+
+      function $(id) { return document.getElementById(id); }
+      function showScreen(id) {
+        var screens = document.querySelectorAll(".screen");
+        for (var i = 0; i < screens.length; i++) screens[i].classList.remove("active");
+        $(id).classList.add("active");
+        window.scrollTo(0, 0);
+      }
+      function stopTimer() {
+        if (state.timerId !== null) { clearInterval(state.timerId); state.timerId = null; }
+      }
+      function fmtTime(sec) {
+        sec = Math.max(0, sec);
+        var m = Math.floor(sec / 60), s = sec % 60;
+        return (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+      }
+      function realQuestions(mode) {
+        return mode.questions.filter(function (q) { return !q.section; });
+      }
+
+      /* ================= SHARE WA ================= */
+      function refreshWaLink() {
+        var text = $("share-text").value;
+        $("wa-share").href = "https://wa.me/?text=" + encodeURIComponent(text);
+      }
+      $("share-text").addEventListener("input", refreshWaLink);
+      refreshWaLink();
+      $("copy-share").addEventListener("click", function () {
+        var ta = $("share-text");
+        ta.select();
+        ta.setSelectionRange(0, ta.value.length);
+        function done() {
+          $("copy-note").hidden = false;
+          setTimeout(function () { $("copy-note").hidden = true; }, 2500);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(ta.value).then(done, function () {
+            document.execCommand("copy"); done();
+          });
+        } else {
+          document.execCommand("copy"); done();
+        }
+      });
+
+      /* ================= ALUR ================= */
+      var modeButtons = document.querySelectorAll("[data-start-mode]");
+      for (var b = 0; b < modeButtons.length; b++) {
+        modeButtons[b].addEventListener("click", function () {
+          openIdentity(this.getAttribute("data-start-mode"));
+        });
+      }
+      $("back-to-menu").addEventListener("click", function () { showScreen("screen-menu"); });
+
+      function openIdentity(modeId) {
+        state.mode = MODES[modeId];
+        $("identity-title").textContent = state.mode.title;
+        $("identity-desc").textContent = state.mode.desc + " Isi identitas dulu sebelum mulai.";
+        $("form-error").classList.remove("show");
+        showScreen("screen-identity");
+      }
+
+      $("identity-form").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var name = $("f-name").value.trim();
+        var kelas = $("f-class").value;
+        var absen = $("f-absen").value.trim();
+        if (!name || !kelas || !absen) {
+          $("form-error").classList.add("show");
+          return;
+        }
+        $("form-error").classList.remove("show");
+        state.name = name; state.kelas = kelas; state.absen = absen;
+        startQuiz();
+      });
+
+      function startQuiz() {
+        stopTimer();
+        state.answers = {};
+        state.timedOut = false;
+        state.remaining = state.mode.minutes * 60;
+        state.startedAt = Date.now();
+        $("quiz-who").innerHTML = "";
+        var strong = document.createElement("strong");
+        strong.textContent = state.name;
+        $("quiz-who").appendChild(strong);
+        $("quiz-who").appendChild(document.createTextNode(" • " + state.kelas + " • " + state.mode.title));
+        renderQuestions();
+        updateTimerUI();
+        updateProgress();
+        showScreen("screen-quiz");
+        state.timerId = setInterval(function () {
+          state.remaining -= 1;
+          updateTimerUI();
+          if (state.remaining <= 0) {
+            state.timedOut = true;
+            finishQuiz();
+          }
+        }, 1000);
+      }
+
+      function updateTimerUI() {
+        $("timer-text").textContent = fmtTime(state.remaining);
+        $("timer").classList.toggle("low", state.remaining <= 60);
+      }
+
+      function renderQuestions() {
+        var body = $("quiz-body");
+        body.innerHTML = "";
+        var qNo = 0;
+        state.mode.questions.forEach(function (q, qi) {
+          if (q.section) {
+            var h = document.createElement("div");
+            h.className = "section-head";
+            h.textContent = q.section;
+            body.appendChild(h);
+            return;
+          }
+          qNo += 1;
+          var card = document.createElement("div");
+          card.className = "q-card";
+
+          var num = document.createElement("div");
+          num.className = "q-num";
+          num.textContent = "Soal " + qNo;
+          card.appendChild(num);
+
+          var txt = document.createElement("p");
+          txt.className = "q-text";
+          txt.textContent = q.text;
+          card.appendChild(txt);
+
+          if (q.multi) {
+            var hint = document.createElement("span");
+            hint.className = "q-hint";
+            hint.textContent = "Pilih SEMUA jawaban yang benar";
+            card.appendChild(hint);
+          }
+
+          q.options.forEach(function (optText, oi) {
+            var label = document.createElement("label");
+            label.className = "opt";
+            var input = document.createElement("input");
+            input.type = q.multi ? "checkbox" : "radio";
+            input.name = "q" + qi;
+            input.value = oi;
+            input.addEventListener("change", function () {
+              onAnswer(qi, q.multi, card);
+            });
+            var letter = document.createElement("span");
+            letter.className = "letter";
+            letter.textContent = LETTERS[oi] + ".";
+            var span = document.createElement("span");
+            span.textContent = optText;
+            label.appendChild(input);
+            label.appendChild(letter);
+            label.appendChild(span);
+            card.appendChild(label);
+          });
+
+          body.appendChild(card);
+        });
+      }
+
+      function onAnswer(qi, multi, card) {
+        var inputs = card.querySelectorAll("input");
+        var picked = [];
+        for (var i = 0; i < inputs.length; i++) {
+          var wrap = inputs[i].closest(".opt");
+          if (inputs[i].checked) {
+            picked.push(parseInt(inputs[i].value, 10));
+            if (wrap) wrap.classList.add("selected");
+          } else if (wrap) {
+            wrap.classList.remove("selected");
+          }
+        }
+        state.answers[qi] = picked;
+        updateProgress();
+      }
+
+      function updateProgress() {
+        var qs = realQuestions(state.mode);
+        var total = qs.length;
+        var answered = 0;
+        state.mode.questions.forEach(function (q, qi) {
+          if (q.section) return;
+          var a = state.answers[qi];
+          if (a && a.length > 0) answered += 1;
+        });
+        $("progress-line").textContent = "Terjawab " + answered + " dari " + total + " soal • " + state.mode.title;
+      }
+
+      $("submit-btn").addEventListener("click", function () { finishQuiz(); });
+
+      function sameSet(a, b) {
+        if (a.length !== b.length) return false;
+        var sa = a.slice().sort(), sb = b.slice().sort();
+        for (var i = 0; i < sa.length; i++) if (sa[i] !== sb[i]) return false;
+        return true;
+      }
+
+      function answerLabel(q, picked) {
+        if (!picked || picked.length === 0) return "Tidak dijawab";
+        return picked.slice().sort().map(function (oi) {
+          return LETTERS[oi] + ". " + q.options[oi];
+        }).join("; ");
+      }
+      function keyLabel(q) {
+        return q.answer.slice().sort().map(function (oi) {
+          return LETTERS[oi] + ". " + q.options[oi];
+        }).join("; ");
+      }
+
+      function finishQuiz() {
+        stopTimer();
+        var mode = state.mode;
+        var elapsed = mode.minutes * 60 - Math.max(0, state.remaining);
+        var correct = 0, total = 0;
+        var review = $("review-body");
+        review.innerHTML = "";
+        var qNo = 0;
+
+        mode.questions.forEach(function (q, qi) {
+          if (q.section) return;
+          qNo += 1; total += 1;
+          var picked = state.answers[qi] || [];
+          var isRight = sameSet(picked, q.answer);
+          if (isRight) correct += 1;
+
+          var card = document.createElement("div");
+          card.className = "rev-card";
+          var top = document.createElement("div");
+          top.className = "rev-top";
+          var numEl = document.createElement("span");
+          numEl.className = "q-num";
+          numEl.textContent = "Soal " + qNo + (q.multi ? " • PG Kompleks" : "");
+          var mark = document.createElement("span");
+          mark.className = "mark " + (isRight ? "ok" : "no");
+          mark.textContent = isRight ? "✓ Benar" : "✗ Salah";
+          top.appendChild(numEl); top.appendChild(mark);
+          card.appendChild(top);
+
+          var txt = document.createElement("p");
+          txt.className = "q-text";
+          txt.textContent = q.text;
+          card.appendChild(txt);
+
+          var mine = document.createElement("p");
+          mine.className = "ans";
+          var l1 = document.createElement("span"); l1.className = "lbl"; l1.textContent = "Jawabanmu: ";
+          mine.appendChild(l1);
+          mine.appendChild(document.createTextNode(answerLabel(q, picked)));
+          card.appendChild(mine);
+
+          var key = document.createElement("p");
+          key.className = "ans";
+          var l2 = document.createElement("span"); l2.className = "lbl"; l2.textContent = "Kunci jawaban: ";
+          key.appendChild(l2);
+          key.appendChild(document.createTextNode(keyLabel(q)));
+          card.appendChild(key);
+
+          var expl = document.createElement("div");
+          expl.className = "expl";
+          var l3 = document.createElement("span"); l3.className = "lbl"; l3.textContent = "Pembahasan: ";
+          expl.appendChild(l3);
+          expl.appendChild(document.createTextNode(q.explain));
+          card.appendChild(expl);
+
+          review.appendChild(card);
+        });
+
+        var score = correct * mode.points;
+        var tuntas = score >= 75;
+
+        $("score-num").textContent = score;
+        $("score-ring").classList.toggle("fail", !tuntas);
+        var badge = $("status-badge");
+        badge.textContent = tuntas ? "Tuntas — mencapai KKM 75" : "Remidi — di bawah KKM 75";
+        badge.className = "status-badge " + (tuntas ? "ok" : "no");
+        $("timeout-note").classList.toggle("show", state.timedOut);
+
+        var meta = [
+          ["Nama", state.name],
+          ["Kelas / Absen", state.kelas + " / No. " + state.absen],
+          ["Mode", mode.title],
+          ["Jawaban Benar", correct + " dari " + total + " soal"],
+          ["Waktu Pengerjaan", fmtTime(elapsed) + (state.timedOut ? " (waktu habis)" : "")],
+          ["KKM", "75"]
+        ];
+        var metaEl = $("result-meta");
+        metaEl.innerHTML = "";
+        meta.forEach(function (pair) {
+          var cell = document.createElement("div");
+          cell.className = "cell";
+          var k = document.createElement("div"); k.className = "k"; k.textContent = pair[0];
+          var v = document.createElement("div"); v.className = "v"; v.textContent = pair[1];
+          cell.appendChild(k); cell.appendChild(v);
+          metaEl.appendChild(cell);
+        });
+
+        showScreen("screen-result");
+      }
+
+      $("retry-btn").addEventListener("click", function () { startQuiz(); });
+      $("menu-btn").addEventListener("click", function () { showScreen("screen-menu"); });
+    </script>
+  </body>
+</html>
