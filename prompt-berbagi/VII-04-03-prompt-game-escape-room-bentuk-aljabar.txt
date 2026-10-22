@@ -1,0 +1,343 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Escape Room — Bentuk Aljabar
+Bab   : VII-04 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT GAME INTERAKTIF AAAMAT KEREN ESCAPE ROOM BAB BENTUK ALJABAR
+Link Canva AI Code :  https://www.canva.com/ai/code/
+Link Share wa “ GAME INTERAKTIF AAAMAT KEREN ESCAPE ROOM BAB BENTUK ALJABAR “ =
+Awal di copy nya
+Assalamu’alaikum,...Selamat pagi, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk:
+"Buatkan GAME INTERAKTIF AAAMAT KEREN ESCAPE ROOM BAB BENTUK ALJABAR” .Nama pengembang: [Drs. PAIYO].
+Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan Fitur daftar nilai.
+🎮 PROMPT GAME INTERAKTIF
+⭐ AAAMAT KEREN ⭐
+ESCAPE ROOM MATEMATIKA
+BAB BENTUK ALJABAR
+PERAN AI
+Bertindaklah sebagai
+Game Designer Pendidikan
+Ahli Gamifikasi Pembelajaran SMP
+Desainer UI/UX Game Edukasi
+Ahli Kurikulum Matematika Indonesia
+Story Writer Escape Room
+Programmer Game HTML5
+Desainer Google Flow
+Desainer Canva Education Interactive
+Ilustrator Pixar Animation
+Unreal Engine 5 Environment Designer
+Rancang sebuah Escape Room Matematika yang sangat interaktif, penuh animasi, modern, dan menyenangkan sehingga siswa SMP kelas VII dapat belajar Bentuk Aljabar sambil bermain.
+IDENTITAS GAME
+Judul
+🤖 AAAMAT KEREN
+ESCAPE ROOM MATEMATIKA
+BAB
+BENTUK ALJABAR
+Subjudul
+"Jelajahi Laboratorium Aljabar, pecahkan setiap teka-teki, kumpulkan Kunci Variabel, dan selamatkan Robot AAAMAT KEREN!"
+GAYA VISUAL
+Pixar Animation
+Disney Style
+Unreal Engine 5
+Ultra HD 4K
+Neon Blue
+Golden Glow
+Glassmorphism
+Holographic Interface
+Futuristic STEM Classroom Indonesia
+Modern Smart Laboratory
+Cinematic Lighting
+Volumetric Light
+Floating Mathematical Formula
+Soft Shadow
+Glossy Effect
+Floating Digital Particle
+Cute Educational UI
+Professional Educational Game
+TOKOH
+👨‍🏫 Pak Paiyo
+Sebagai
+Guide
+Mentor
+AI Teacher
+Memberikan petunjuk
+Memberikan motivasi
+🤖 Robot AAAMAT KEREN
+Sebagai
+Navigator
+Penjaga Portal
+Pemberi Hint
+Penilai Skor
+AI Assistant
+👦 Atta
+Ahli mencoba ide
+👦 Rafly
+Ahli logika
+👧 Anis
+Ahli ketelitian
+👧 Zulfa
+Ahli penyelesaian soal
+CERITA
+Robot AAAMAT KEREN kehilangan 10 Crystal Aljabar.
+Crystal tersebut tersebar di berbagai ruang laboratorium.
+Untuk mendapatkannya siswa harus menyelesaikan tantangan Bentuk Aljabar.
+Setiap Crystal membuka portal berikutnya.
+Portal terakhir membuka
+Ruang Master Aljabar.
+MENU
+▶ Mulai Bermain
+📚 Materi
+🎯 Misi
+🏆 Skor
+🎵 Musik
+⚙ Pengaturan
+🚪 Keluar
+MAP PERMAINAN
+🏠 Lobby
+↓
+Portal 1
+Konsep Bentuk Aljabar
+↓
+Portal 2
+Suku
+Koefisien
+Variabel
+Konstanta
+↓
+Portal 3
+Menyederhanakan Bentuk Aljabar
+↓
+Portal 4
+Operasi Penjumlahan
+↓
+Portal 5
+Operasi Pengurangan
+↓
+Portal 6
+Operasi Perkalian
+↓
+Portal 7
+Operasi Pembagian
+↓
+Portal 8
+Substitusi Nilai Variabel
+↓
+Portal 9
+Bentuk Aljabar Ekuivalen
+↓
+Portal 10
+Penerapan Bentuk Aljabar
+↓
+FINAL BOSS
+MASTER ALJABAR
+LEVEL 1
+KONSEP BENTUK ALJABAR
+Ruangan
+Laboratorium Variabel
+Misi
+Cari pasangan
+Variabel
+Koefisien
+Konstanta
+Suku
+Game
+Drag and Drop
+Reward
+⭐100 XP
+LEVEL 2
+Puzzle
+Klik semua
+Suku Sejenis
+Contoh
+4x
+7x
+−2x
+5y
+8y
+LEVEL 3
+Operasi Penjumlahan
+Susun jawaban
+hingga
+4x+3x
+menjadi
+7x
+LEVEL 4
+Pengurangan
+Maze Digital
+Hanya jawaban benar yang membuka jalan.
+LEVEL 5
+Perkalian
+Gunakan
+Sifat Distributif
+untuk membuka pintu.
+LEVEL 6
+Pembagian
+Pecahkan
+Kode Digital
+dengan menyederhanakan bentuk aljabar.
+LEVEL 7
+Substitusi
+Masukkan nilai
+x
+ke mesin hologram.
+Contoh
+x = 4
+Hitung
+3x+5
+LEVEL 8
+Aljabar Ekuivalen
+Cari
+Pasangan Bentuk
+yang ekuivalen.
+Game
+Matching Card
+LEVEL 9
+Escape Puzzle
+Penerapan
+Keliling Taman
+Paket Internet
+Belanja
+Denah Rumah
+Luas Lantai
+Tangga
+Ubin
+Parkiran
+LEVEL 10
+MASTER HOTS
+Menyelesaikan
+Soal Model TKA
+SETIAP LEVEL MEMILIKI
+🎬 Video Pembuka
+📖 Materi Singkat
+🧩 Puzzle
+💡 Hint
+🎯 Tantangan
+📊 Skor
+🏅 Badge
+MODEL GAME
+Drag and Drop
+Memory Card
+Escape Maze
+Puzzle
+Klik Jawaban
+Tarik Garis
+Matching
+Mystery Box
+Escape Code
+Spin Wheel
+Find the Error
+True False
+MCMA
+Mini Quiz
+MATERI YANG MUNCUL
+Pengertian Bentuk Aljabar
+Variabel
+Konstanta
+Koefisien
+Suku
+Suku Sejenis
+Operasi Bentuk Aljabar
+Komutatif
+Asosiatif
+Distributif
+Substitusi
+Aljabar Ekuivalen
+Penerapan
+MISI HOTS TKA
+Setiap soal terdiri atas
+📖 Stimulus Bergambar
+↓
+🔍 Analisis Informasi
+↓
+🧠 Model Matematika
+↓
+📝 Pembahasan Hologram
+↓
+❓ Bentuk Soal
+A. Pilihan Ganda
+B. MCMA Benar/Salah
+C. MCMA Pilih Semua Jawaban Benar
+CONTOH STIMULUS
+🛒 Belanja
+🌳 Taman
+📶 Paket Internet
+🏠 Denah Rumah
+🎨 Pengecatan
+🚲 Jalur Sepeda
+🧱 Susunan Bata
+📚 Rak Buku
+Semua menggunakan Bentuk Aljabar.
+SISTEM SKOR
+Jawaban Benar
++100 XP
+Cepat
++50 XP
+Combo
++150 XP
+Perfect
++300 XP
+BADGE
+🥉 Penjelajah Aljabar
+🥈 Ahli Variabel
+🥇 Master Operasi
+🏆 HOTS Champion
+👑 AAAMAT KEREN HERO
+POWER UP
+💡 Hint
+❤️ Extra Life
+⭐ Double Score
+⏳ Freeze Time
+🔓 Auto Unlock
+EFEK VISUAL
+Portal Neon
+Laser
+Crystal
+Formula Melayang
+Hologram
+Glow
+Firework
+Confetti
+Digital Rain
+Animated Numbers
+Blue Energy Beam
+Golden Spark
+AUDIO
+Robot
+"Hebat!"
+"Jawaban Benar!"
+"Portal Terbuka!"
+"AAAMAT KEREN!"
+Pak Paiyo
+"Perhatikan suku sejenis."
+"Coba gunakan sifat distributif."
+"Bagus sekali."
+"Kamu semakin hebat."
+GAME BONUS
+🎯 Cari Suku Sejenis
+🎯 Puzzle Distributif
+🎯 Escape Code
+🎯 Susun Persamaan
+🎯 Tebak Variabel
+🎯 Maze Aljabar
+🎯 Memory Formula
+🎯 Hologram Puzzle
+PENILAIAN
+⭐⭐⭐⭐⭐
+Kecepatan
+Ketelitian
+Logika
+Strategi
+HOTS
+PENUTUP
+Robot berhasil memperoleh seluruh Crystal Aljabar.
+Laboratorium kembali menyala.
+Pak Paiyo bersama Atta, Rafly, Anis, dan Zulfa berdiri di depan Portal AAAMAT KEREN sambil memberikan tepuk tangan.
+Layar dipenuhi animasi konfeti, cahaya hologram biru-keemasan, dan tulisan besar:
+⭐ SELAMAT ⭐
+Misi Escape Room Matematika Berhasil Diselesaikan
+🏆 MASTER BENTUK ALJABAR
+"Matematika bukan sekadar menghitung simbol, tetapi melatih cara berpikir yang logis, kreatif, dan sistematis. Teruslah belajar, teruslah mencoba, dan jadilah pembelajar sepanjang hayat bersama AAAMAT KEREN!"

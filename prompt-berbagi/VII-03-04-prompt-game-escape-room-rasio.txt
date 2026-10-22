@@ -1,0 +1,227 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Escape Room — Rasio
+Bab   : VII-03 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT GAME INTERAKTIF AAAMAT KEREN ESCAPE ROOM MATEMATIKA BAB RASIO
+GAME INTERAKTIF AAAMAT KEREN ESCAPE ROOM RASIO
+Master Prompt yang dapat digunakan di ChatGPT, Gemini, Claude, Canva AI, Gamma, GenSpark, Manus, ataupun AI Website Builder untuk membuat Game Interaktif Escape Room Matematika yang menarik, modern, dan bernuansa AAAMAT KEREN.
+Link Canva AI :  https://www.canva.com/ai/code/
+https://labs.google/fx/id/tools/flow/project/178944a9-eb79-4d25-aac6-bb647fb11de7/scene/8c153f83-4e1a-4a83-993a-eb85da6dea0c
+Link Share wa “ GAME INTERAKTIF ESCAPE ROOM AAAMAT KEREN RASIO “ =
+https://igatrisna.my.canva.site/game-interaktif-escape-room-aaamat-keren-rasio
+Assalamu’alaikum,.. selamat malam, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantun untuk :  Buatkan Game Interaktif escape room AAAMAT KEREN Rasio, pada beranda di tambah input pemain: Nama, Kelas, No Absen, Sekolah. pada beranda munculkan fitur Daftar Nilai ; pada jawaban misi : jawaban benar A terus, mohon di variasi, ada bear a, ada b, ada c, ada d, berimbang.
+🎮 MASTER PROMPT GAME INTERAKTIF
+AAAMAT KEREN
+ESCAPE ROOM MATEMATIKA
+BAB RASIO
+PROMPT
+Bertindaklah sebagai Game Designer Pendidikan Internasional, Guru Matematika SMP Indonesia, UI/UX Designer, Programmer HTML5, Animator Pixar Disney, dan Pakar Gamifikasi Pembelajaran.
+Buatkan sebuah Game Escape Room Interaktif berbasis HTML5 yang dapat dimainkan pada laptop maupun smartphone tanpa instalasi aplikasi.
+Tema utama adalah
+🎮 ESCAPE ROOM MATEMATIKA
+"MISI MENYELAMATKAN KOTA RASIO"
+Game dibuat sangat menarik seperti permainan petualangan modern.
+TARGET
+Siswa SMP Kelas VII
+Materi:
+BAB RASIO
+sesuai Kurikulum Merdeka
+ALUR CERITA
+Robot AAAMAT KEREN datang membawa kabar bahwa
+"Kota Rasio kehilangan keseimbangan."
+Seluruh angka berubah menjadi acak.
+Untuk mengaktifkan kembali Mesin Rasio, siswa harus menyelesaikan seluruh tantangan.
+Setiap tantangan menghasilkan satu kunci.
+Jika semua kunci berhasil diperoleh,
+maka pintu terakhir akan terbuka.
+TOKOH
+Guru Drs. Paiyo
+sebagai mentor.
+Robot AAAMAT KEREN
+sebagai pemandu.
+Zulfa
+Rafly
+Ibnu
+Tari
+Yasir
+Dewi
+Anis
+Junada
+semuanya bergaya Pixar 3D.
+DESAIN
+Tema Futuristik
+Neon Biru
+Neon Ungu
+Glassmorphism
+Hologram
+Animasi ringan
+Efek Partikel
+Background Musik Edukatif
+Suara klik
+Efek membuka pintu
+Efek berhasil
+Efek gagal
+Timer Digital
+Progress Bar
+Skor
+XP
+Badge
+TAMPILAN MENU
+🏠 Home
+▶ Mulai Bermain
+📖 Petunjuk
+🏆 Papan Skor
+🎖 Badge
+⚙ Pengaturan
+🔊 Sound
+🌙 Dark Mode
+LEVEL GAME
+LEVEL 1
+RUANG PERBANDINGAN
+Puzzle 1
+Pilih pasangan yang merupakan rasio.
+Drag and Drop
+Puzzle 2
+Cocokkan gambar dengan rasio yang benar.
+Puzzle 3
+Isi tabel perbandingan.
+Jika benar
+Lampu menyala.
+LEVEL 2
+RUANG RASIO SENILAI
+Siswa membantu robot membuat resep minuman.
+Menghitung
+2 : 5
+4 : ?
+6 : ?
+8 : ?
+Semua menggunakan animasi gelas.
+LEVEL 3
+RUANG RASIO BERBALIK NILAI
+Permainan memperbaiki mesin.
+Jumlah pekerja bertambah.
+Waktu berkurang.
+Gunakan slider interaktif.
+LEVEL 4
+LABORATORIUM RASIO
+Mini Quiz
+Pilihan Ganda
+Pilihan Ganda Kompleks
+True False
+Drag Drop
+Urutkan
+Pasangkan
+Input Jawaban
+LEVEL 5
+RUANG BOS
+Robot Error
+Boss terakhir hanya bisa dikalahkan jika siswa menjawab
+10 soal HOTS
+berbasis
+Numerasi ANBK.
+CONTOH SOAL HOTS
+Di kantin sekolah,
+sirup dan air dicampur dengan rasio
+2 : 7.
+Jika digunakan
+12 liter sirup,
+berapa liter air yang diperlukan?
+Dalam sebuah peta,
+skala
+1 : 250.000
+Jarak sebenarnya
+15 km.
+Berapa cm pada peta?
+Perbandingan siswa laki-laki dan perempuan
+5 : 7.
+Jumlah seluruh siswa
+Hitung banyak siswa perempuan.
+Sebuah foto diperbesar.
+Ukuran awal
+15 × 10 cm
+Skala pembesaran
+3 : 2
+Hitung ukuran baru.
+FITUR INTERAKTIF
+Drag Drop
+Klik
+Input Angka
+Hint
+Clue
+Timer
+Skor
+Nyawa
+XP
+Achievement
+Animasi
+Suara
+Leaderboard
+BADGE
+🥉 Ahli Rasio
+🥈 Master Rasio
+🥇 Raja Rasio
+👑 Legend AAAMAT KEREN
+PENILAIAN
+Jawaban benar
++100 XP
+Jawaban salah
+−20 XP
+Hint digunakan
+−10 XP
+Bonus waktu
++50 XP
+AKHIR GAME
+Jika semua tantangan selesai
+muncul animasi
+Gerbang Kota Rasio terbuka.
+Robot berkata
+"Selamat!
+Kamu berhasil menyelamatkan Kota Rasio."
+Muncul
+Sertifikat Digital
+Nama Siswa
+Skor
+XP
+Badge
+QR Code
+Tombol
+Main Lagi
+Download Sertifikat
+WARNA
+Dominan
+Neon Blue
+Electric Purple
+Gold
+White
+Dark Navy
+FONT
+Poppins
+Fredoka
+Orbitron
+GAYA VISUAL
+Pixar Animation
+Disney Style
+Unreal Engine 5
+4K
+Super Colorful
+Modern STEM Classroom
+Interactive Dashboard
+High Detail
+Soft Lighting
+Glow Effect
+Friendly Character
+Very Attractive for Junior High School Students
+OUTPUT
+Buatkan game lengkap berbasis HTML5 + CSS3 + JavaScript dalam satu file yang dapat dijalankan secara offline, responsif di laptop maupun smartphone, tanpa memerlukan internet. Sertakan animasi ringan, efek suara (opsional jika file audio tidak tersedia), penyimpanan skor menggunakan Local Storage, sertifikat digital yang dapat dicetak, serta kode yang rapi, diberi komentar, dan mudah dimodifikasi oleh guru.
+🌟 Ciri Khas "AAAMAT KEREN"
+🤖 Robot AAAMAT KEREN sebagai pemandu di setiap level.
+👨‍🏫 Tokoh Drs. Paiyo hadir sebagai mentor yang memberi motivasi dan petunjuk.
+🎯 Setiap level diawali dengan Misi HOTS yang mengaitkan konsep rasio dengan kehidupan sehari-hari.
+🏅 Di akhir permainan, siswa memperoleh Badge, XP, dan Sertifikat Digital sebagai bentuk apresiasi.
+📊 Tersedia ringkasan hasil belajar yang menampilkan jumlah jawaban benar, waktu penyelesaian, skor akhir, dan tingkat penguasaan materi.
+Batas copy
+Semoga prompt ini dapat menghasilkan game yang benar-benar AAAMAT KEREN: interaktif, menyenangkan, mendukung pembelajaran mendalam (Deep Learning), serta melatih kemampuan berpikir kritis dan numerasi siswa SMP pada materi Rasio. Semoga bermanfaat untuk pembelajaran di SMP Negeri 1 Bantarkawung.

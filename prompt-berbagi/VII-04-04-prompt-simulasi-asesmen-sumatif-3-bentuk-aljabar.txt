@@ -1,0 +1,50 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Simulasi Asesmen Sumatif 3 — Bentuk Aljabar
+Bab   : VII-04 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT SIMULASI ASESMEN SUMATIF 3 BAB RASIO  KELAS VIII
+Assalamu’alaikum,.. selamat malam, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantun untuk :
+Buatkan Simulasi  “ASESMEN SUMATIF 4 BAB BENTUK ALJABAR KELAS VII TP 2026 / 2027 ;  model TKA. dengan Judul
+“ ASESMEN SUMATIF 4 BAB BENTUK ALJABAR KELAS VII  SMP  "
+SMP NEGERI 1 BANTARKAWUNG KABUPATEN BREBES
+TAHUN PELAJARAN 2026/2027"
+yang tampilannya mirip dengan website simulasi TKA kemendikdasmen. Tujuan game: Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait  bentuk Aljabar;Nama pengembang: [Drs. PAIYO].
+Tahapr 1. Buatkan entri pemain game, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+tahab 2: Model soal Pilgan biasa( 50% ), Pilgan komplek B/G (25%), Pilgan MCMA pilihan jawaban benar lebih dari satu(25%):meliputi soal tipe TKA/AKM( Jumlah soal sesuaikan dengan input jumlah soal) Soal Model 1 pilihan ganda (generated otomatis ) Khusus soal model 2 ganda kompleks dengan 3 pernyataan dengan kategori pilihan jawaban benar atau salah dibuat dalam bentuk tabel Khusus soal model 3 pilihan ganda komplek dengan 4 pernyataan dan jawaban benar lebih dari 1 dibuat dalam bentuk tabel , Semua soal harus ada stimulus tipe TKA / AKM. tiap soal  menggunakan stimulus sendiri – sendiri. Jika diperlukan adanya gambar maka stimulus boleh berisi gambar penunjang untuk melengkapi stimulus baik gambar dalam bentuk infografis maupun dalam bentuk grafik/ tabel. Ilustrasi visual SVG untuk soal-soal geometri
+Fitur terpisah antara Model Pilgan biasa, Pilgan MCMA B/S, Pilgan MCMA Pilihan jawaban benar lebih dari satu , Uraian. ada link selanjutnya antar model soal
+ (7) Uraian : 2 soal pertanyaan terbuka dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi
+tahap 3 indikator soal : , munculkan indikator tiap soal dan bentuk pilgannya dan dengan indikator soal seperti : pada lampiran file
+tahap 4 : Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 50 menit untuk membantu karakter membawa paket ke rumah berikutnya. Banyak soal: 22 soal. Capaian Pembelajaran: Peserta didik dapat Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Bentuk Aljabar
+ tahap 5 : Berikan rekap hasil game skor, soal dan kunci jawaban: Slide akhir. Buatkan rekap rangking 10 terbesar di halaman awal, buatkan pula rangkuman materi , soal dan pembahasannya setelah game selesai,Pada soal dan pembahasan di beri pasword nama pengembang; serta sertifikat " Master of Ekspedisi  BENTUK ALJABAR "; unduh sertifikat ; pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang);link Navigasi untuk cek soal yang belum di kerjakan atau ralat jawaban;
+Fitur Utama yang di harapkan:
+1. Latarbelakang judul
+“ ASESMEN SUMATIF 4 BAB BENTUK ALJABAR KELAS VII  SMP  "
+SMP NEGERI 1 BANTARKAWUNG KABUPATEN BREBES TAHUN PELAJARAN 2026/2027"
+Halaman Beranda (Landing Page):
+Formulir entri data peserta (Nama, Kelas, No Absen, dan Sekolah).
+Top 10 Master: Papan peringkat otomatis yang menampilkan 10 nilai tertinggi.
+Fitur "Daftar Nilai": dengan mode Klik langsung tampak rekap nilai “ Nama, kelas, no absen, sekolah, skor , tanggal mengerjakan”
+Fitur “ Share wa “ dengan mode “ ais pree “
+Mekanisme Permainan:
+Visual Pengantar Paket: Karakter siswa akan mengantar paket ke rumah berikutnya seiring kemajuan pengerjaan soal.
+Timer 60 Menit: Penghitung waktu mundur yang akan otomatis mengakhiri sesi jika waktu habis.
+Navigasi Soal: Sidebar untuk berpindah antar soal, mengecek soal yang belum dikerjakan, atau meralat jawaban.
+Model Soal TKA/AKM (Total 22 Soal):
+Pilihan Ganda Biasa (50% =  10 Soal): 1 jawaban benar.
+Pilihan Ganda Kompleks (25% = 5 soal ): Tabel Benar/Salah (3 pernyataan).
+MCMA (25% = 5 soal ): Pilihan jawaban benar lebih dari satu (4 pernyataan).
+Uraian : 2 soal pertanyaan terbuka dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi
+Setiap soal dilengkapi dengan Stimulus dan Indikator yang relevan dengan elemen RASIO.
+Ilustrasi SVG: Gambar denah, grafik, dan bangun geometri untuk memperjelas stimulus.
+Halaman Hasil (Result Slide):
+Rekap skor, jumlah jawaban benar, salah, dan waktu pengerjaan.
+Sertifikat "Master of Ekspedisi BENTUK ALJABAR ": Dapat diunduh/dicetak langsung dengan nama peserta.
+Rangkuman & Pembahasan: Bagian ini diproteksi password menggunakan nama pengembang: Drs. PAIYO.
+Unduh Soal & Pembahasan (Word): Menambahkan tombol "Unduh Soal & Pembahasan (Word)" di halaman hasil (setelah simulasi selesai). Fitur ini akan mengunduh file .doc yang berisi daftar soal, indikator, stimulus, dan kunci jawaban.
+Hasilnya.
+Link  Share wa =
+Halo! Saya baru saja menyelesaikan "Simulasi Asesmen Sumatif 4 BAB BENTUK ALJABAR Kelas VII" SMP Negeri 1 Bantarkawung yang dikembangkan oleh Drs. PAIYO. Uji kecerdasan logikamu sekarang menggunakan Link berikut:

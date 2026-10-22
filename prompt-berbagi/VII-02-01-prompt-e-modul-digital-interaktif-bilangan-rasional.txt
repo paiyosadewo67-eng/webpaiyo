@@ -1,0 +1,270 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt E-Modul Digital Interaktif — Bilangan Rasional
+Bab   : VII-02 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+2. PROMPT E-MODUL DIGITAL INTERAKTIF BAB BILANGAN RASIONAL
+Link share WA: “ Assalamu'alaikum! � Ayo pelajari E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS VII SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP MISTERI BILANGAN RASIONAL”; bimbingan Drs. PAIYO secara mandiri dan cermat di website aplikasi "AAAMAT KEREN" yang sangat interaktif dan edukatif!
+https://ais-pre-zgkyzdyzdpwkln2znafmbi-438289882508.asia-southeast1.run.app
+Assalamu'alaikum Wr. Wb.Mari belajar & berpetualang di E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS VII SMP: "MENGUNGKAP MISTERI BILANGAN RASIONAL"; � SMP Negeri 1 Bantarkawung, � Pengembang: Drs. PAIYO; � Berbasis Problem Based Learning (PBL) & 5 Langkah Detektif Berpikir Kritis.; � Akses langsung E-Modul (Mode Siswa / ais-pre):
+https://ais-pre-zgkyzdyzdpwkln2znafmbi-438289882508.asia-southeast1.run.app
+Assalamu’alaikum,...Selamat malam, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS VII SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP MISTERI BILANGAN RASIONAL”
+Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+. Buat sebuah E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS VII SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP MISTERI BILANGAN RASIONAL”
+📘 Struktur E-Modul
+E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS VII SMP
+🔎 MENGUNGKAP MISTERI BILANGAN RASIONAL
+Berbasis Problem Based Learning (PBL) untuk Meningkatkan Kemampuan Berpikir Kritis
+Identitas:
+SMP Negeri 1 Bantarkawung
+Pengembang: Drs. PAIYO
+Kelas: VII SMP/MTs
+Fase: D
+Alokasi: 6 × (2 × 40 menit)
+🎯 Misi Besar Siswa
+“Jadilah Detektif Bilangan! Pecahkan berbagai masalah kehidupan sehari-hari dengan menggunakan bilangan rasional secara logis, teliti, dan beralasan.”
+📚 STRUKTUR LENGKAP E-MODUL
+Saya sarankan file finalnya disusun menjadi:
+Cover
+Identitas E-Modul
+Kata Pengantar
+Petunjuk Penggunaan
+Peta Konsep
+CP
+Tujuan Pembelajaran
+Profil/Karakter yang Dikembangkan
+Lintas Disiplin Ilmu
+Peta Misi 1–6
+Asesmen Diagnostik
+P1 – Mengenal Bilangan Rasional
+LKPD P1
+Kuis P1
+Refleksi P1
+P2 – Membandingkan Bilangan Rasional
+LKPD P2
+Kuis P2
+Refleksi P2
+P3 – Penjumlahan & Pengurangan
+LKPD P3
+Kuis P3
+Refleksi P3
+P4 – Perkalian & Pembagian
+LKPD P4
+Kuis P4
+Refleksi P4
+P5 – Pemecahan Masalah
+LKPD Investigasi
+Kuis HOTS
+Refleksi
+P6 – Final Mission TKA
+Soal HOTS
+Tantangan OSN/SEAMO
+Asesmen Sumatif
+Kunci Jawaban
+Rubrik Berpikir Kritis
+Rubrik Aktivitas PBL
+Refleksi Akhir
+Remedial
+Pengayaan
+Glosarium
+🧩 PETA PERJALANAN 6 PERTEMUAN
+Pertemuan
+Misi
+Fokus Materi
+Produk/Aktivitas
+P1
+🔎 Detektif Bilangan
+Mengenal bilangan rasional
+Kartu klasifikasi
+P2
+⚖️ Misi Perbandingan
+Membandingkan & mengurutkan
+Garis bilangan
+P3
+➕➖ Misi Dapur Matematika
+Penjumlahan & pengurangan
+Resep makanan
+P4
+✖️➗ Misi Belanja Cerdas
+Perkalian & pembagian
+Simulasi transaksi
+P5
+🧠 Misi Pecahkan Kasus
+Masalah kombinasi operasi
+Investigasi kasus
+P6
+🏆 Final Mission TKA
+HOTS bilangan rasional
+Tantangan TKA/OSN/SEAMO
+🔎 PERTEMUAN 1 — DETEKTIF BILANGAN
+Masalah Pemantik
+Di kantin sekolah, tersedia:
+½ liter jus
+0,75 kg gula
+25% potongan harga
+3 buah apel
+√2 meter pita
+Pertanyaan Detektif:
+“Mana saja bilangan yang dapat dinyatakan sebagai perbandingan dua bilangan bulat?”
+Siswa tidak langsung diberi definisi. Mereka mengamati, mengelompokkan, membuat dugaan, lalu menemukan konsep.
+Konsep Inti
+Bilangan rasional adalah bilangan yang dapat dinyatakan dalam bentuk
+ab,a,b∈Z, b≠0\frac{a}{b},\qquad a,b\in\mathbb{Z},\ b\neq0
+Contoh:
+34,−25,5,0,75,25%\frac34,\quad -\frac25,\quad 5,\quad 0,75,\quad 25\%
+🧠 Misi HOTS
+Apakah setiap bilangan desimal merupakan bilangan rasional? Jelaskan alasanmu.
+🎮 Aktivitas Interaktif
+Kartu “Rasional atau Bukan?”
+Siswa menyeret/mengelompokkan:
+½ | 0,25 | -3 | √2 | 0,333... | π | 75%
+menjadi:
+🟢 RASIONAL
+🔴 BUKAN RASIONAL
+⚖️ PERTEMUAN 2 — MISI PERBANDINGAN
+Masalah Kontekstual
+Tiga siswa berlari:
+Andi: 0,75 km
+Budi: ¾ km
+Citra: 80% km
+Siapa yang menempuh jarak paling jauh?
+Siswa harus menyadari bahwa bentuk bilangan berbeda belum tentu nilainya berbeda.
+Strategi
+Bilangan dapat diubah ke bentuk yang sama:
+34=0,75=75%\frac34=0,75=75\%
+Kemudian dibandingkan.
+🧠 Misi Berpikir Kritis
+Urutkan dari terkecil ke terbesar:
+0,6;58;65%;230,6;\quad \frac58;\quad 65\%;\quad \frac23
+Tetapi siswa wajib menjelaskan strategi, bukan hanya menuliskan jawaban.
+🎮 Mini Game
+“Tangga Bilangan Rasional”
+Siswa menempatkan bilangan pada garis bilangan digital.
+🍰 PERTEMUAN 3 — MISI DAPUR MATEMATIKA
+Masalah Utama
+Sebuah resep membutuhkan:
+34 kg tepung\frac34\text{ kg tepung}
+dan
+25 kg gula.\frac25\text{ kg gula}.
+Jika persediaan tepung digunakan sebanyak 14\frac14 kg dan gula sebanyak 15\frac15 kg, berapa bahan yang tersisa?
+Siswa menemukan kebutuhan untuk melakukan operasi:
+34−14\frac34-\frac14
+dan
+25−15\frac25-\frac15
+Tantangan
+Mengapa penyebut harus disamakan ketika menjumlahkan atau mengurangkan pecahan?
+Siswa diminta menjelaskan alasan, bukan menghafalkan prosedur.
+Aktivitas
+🍰 “Racik Resep Tepat”
+Setiap kelompok memperoleh kartu bahan dan kartu operasi.
+🛒 PERTEMUAN 4 — MISI BELANJA CERDAS
+Masalah
+Harga sebuah alat tulis Rp12.000.
+Toko memberikan diskon:
+25%25\%
+Kemudian seorang siswa membeli:
+32\frac32
+kali jumlah barang yang semula direncanakan.
+Siswa menyelidiki hubungan antara:
+pecahan → desimal → persen → perkalian.
+Fokus
+23×34\frac23\times\frac34
+dan
+35:25\frac35:\frac25
+🧠 Pertanyaan Kritis
+Mengapa membagi dengan pecahan sama dengan mengalikan dengan kebalikannya?
+Siswa diminta memberikan model visual atau penjelasan logis.
+🧠 PERTEMUAN 5 — MISI PECAHKAN KASUS
+Ini menjadi jembatan menuju HOTS.
+🕵️ Kasus: “Pesta Kelas”
+Untuk membuat minuman diperlukan:
+34 liter\frac34\text{ liter}
+sirup untuk satu kelompok.
+Ada 4 kelompok.
+Persediaan sirup:
+312 liter.3\frac12\text{ liter}.
+Misi Detektif
+Berapa liter sirup yang dibutuhkan?
+Apakah persediaan mencukupi?
+Berapa sisanya?
+Jika sisa dibagikan kepada 3 kelompok, berapa bagian masing-masing?
+Apakah ada strategi penyelesaian lain?
+Di sini siswa harus:
+Memahami → Merencanakan → Menghitung → Memeriksa → Menjelaskan.
+🏆 PERTEMUAN 6 — FINAL MISSION TKA
+🔥 MISI HOTS BILANGAN RASIONAL
+Pertemuan terakhir dibuat seperti simulasi asesmen, tetapi tetap menggunakan konteks kehidupan nyata.
+Jenis soal:
+🟢 Level 1 — Memahami
+Mengidentifikasi dan merepresentasikan bilangan rasional.
+🔵 Level 2 — Mengaplikasikan
+Menggunakan operasi bilangan rasional pada situasi nyata.
+🟠 Level 3 — Bernalar
+Menganalisis informasi, memilih strategi, membuktikan alasan, dan mengevaluasi solusi.
+Contoh
+Sebuah resep untuk 4 orang membutuhkan:
+35 kg tepung\frac35\text{ kg tepung}
+dan
+14 kg gula.\frac14\text{ kg gula}.
+Resep akan digunakan untuk 10 orang.
+Seorang siswa mengatakan bahwa tepung yang diperlukan adalah:
+35×104=3020=112 kg.\frac35\times\frac{10}{4} =\frac{30}{20} =1\frac12\text{ kg}.
+Pertanyaan:
+Apakah perhitungan tersebut benar? Jelaskan alasanmu dan tentukan jumlah gula yang diperlukan.
+Siswa tidak hanya mencari hasil, tetapi harus memeriksa klaim dan memberikan alasan.
+🧠 FORMAT BERPIKIR KRITIS
+Setiap misi menggunakan 5 langkah Detektif:
+1️⃣ AMATI
+Apa yang diketahui?
+2️⃣ TANYAKAN
+Apa yang harus dicari?
+3️⃣ SELIDIKI
+Strategi apa yang dapat digunakan?
+4️⃣ BUKTIKAN
+Apakah jawaban masuk akal?
+5️⃣ SIMPULKAN
+Apa alasan dan kesimpulanmu?
+Ini akan menjadi ciri khas E-Modul AAAMAT KEREN Pak Paiyo.
+📱 DESAIN INTERAKTIF
+Setiap halaman modul dapat menggunakan komponen:
+🔵 Papan Misi
+Masalah kontekstual.
+🟢 Zona Eksplorasi
+Aktivitas siswa.
+🟠 Tantangan HOTS
+Pertanyaan bernalar.
+🟦 Cek Pemahaman
+Kuis singkat.
+🟢 Refleksi Detektif
+“Saya menemukan bahwa…”
+🏅 XP / Badge
+Contoh sistem gamifikasi:
+Aktivitas
+XP
+Menemukan informasi penting
++20
+Menjelaskan strategi
++30
+Menyelesaikan masalah
++40
+Memberikan alasan
++50
+Menemukan kesalahan solusi
++60
+Menyelesaikan Misi HOTS
++100
+Badge:
+🔎 Detektif Rasional
+⚖️ Master Perbandingan
+🧮 Ahli Operasi
+🧠 Analis Masalah
+🏆 Master Bilangan Rasional
+Terimakasih atas solusinya

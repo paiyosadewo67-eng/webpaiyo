@@ -1,0 +1,613 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt E-Modul Digital Interaktif — Bentuk Aljabar
+Bab   : VII-04 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT  E-MODUL DIGITAL INTERAKTIF  BAB BENTUK AL JABAR
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA : “ Assalamu'alaikum! Yuk ikut “ AAAMAT KEREN GAME EDUKASI MATEMATIKA DIGITAL INTERAKTIF “MENGUBAH MASALAH NYATA DALAM BENTUK ALJABAR”👨‍🏫 Pengembang: Drs. PAIYO! AAAMAT KEREN DIGITAL LEARNING
+🔗 https://ais-pre-hxpyziqzjklw7d7rd22t7a-57322949575.asia-east1.run.app
+Assalamu’alaikum Warahmatullahi Wabarakatuh.
+Yth. Bapak Guru Drs. PAIYO (SMP Negeri 1 Bantarkawung)
+Saya telah aktif belajar pada E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS VII:Materi: Mengubah Masalah Nyata dalam Bentuk Aljabar (PBL)📋 Identitas Siswa:* Nama: Yo Sadewo Soko Al Klateni* Kelas: VII-A* No Absen: 13* Sekolah: SMP Negeri 1 Bantarkawung🏆 Total Poin Belajar Detektif Aljabar: 0 Poin
+Silakan akses E-Modul digital mode ais-pre melalui tautan resmi berikut:
+🔗 https://ais-pre-hxpyziqzjklw7d7rd22t7a-57322949575.asia-east1.run.app
+Terima kasih atas bimbingannya, Pak Guru!
+Wassalamu’alaikum Wr. Wb.
+Assalamu’alaikum,...Selamat siang, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat  “ E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS VII SMP “MENGUBAH MASALAH NYATA DALAM BENTUK ALJABAR”. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+Buat sebuah game edukasi matematika interaktif berbasis web untuk siswa kelas VII SMP dengan tema:
+E-MODUL DIGITAL INTERAKTIF
+MATEMATIKA KELAS VII SMP/MTs
+MENGUBAH MASALAH NYATA
+DALAM BENTUK ALJABAR
+MISI BESAR
+“Bagaimana mengubah situasi sehari-hari menjadi model matematika yang dapat dihitung, dijelaskan, dan dipertanggungjawabkan?”
+SMP NEGERI 1 BANTARKAWUNG
+Kabupaten Brebes
+
+Penyusun: Drs. PAIYO
+NIP. 19670713 199512 1 002
+
+Matematika • Fase D • Kelas VII • Semester Ganjil
+Tahun Pelajaran 2026/2027
+
+6 Pertemuan × 2 × 40 menit
+IDENTITAS E-MODUL
+Nama Sekolah
+SMP Negeri 1 Bantarkawung
+Nama Penyusun
+Drs. PAIYO
+NIP
+19670713 199512 1 002
+Mata Pelajaran
+Matematika
+Fase/Kelas/Semester
+D / VII / Ganjil
+Materi
+Bentuk Aljabar
+Alokasi Waktu
+6 pertemuan (@ 2 × 40 menit)
+Pendekatan
+Problem Based Learning (PBL)
+Fokus
+Kemampuan berpikir kritis
+Tahun Pelajaran
+2026/2027
+PETUNJUK PENGGUNAAN
+Mulailah dari bagian “Misi Masalah”. Jangan langsung mencari rumus; pahami dulu situasinya.
+Gunakan langkah PBL: orientasi masalah → mengorganisasi penyelidikan → menyelidiki → mengembangkan/menyajikan solusi → menganalisis dan mengevaluasi.
+Gunakan kotak “Berpikir Kritis” untuk menuliskan bukti, alasan, dugaan, atau cara lain.
+Kerjakan kuis interaktif secara mandiri atau berpasangan. Jika digunakan dalam LMS, guru dapat mengubahnya menjadi Google Forms/Quizizz.
+Gunakan ikon/tautan yang disiapkan guru untuk video, GeoGebra/Desmos, spreadsheet, atau kuis daring.
+KODE WARNA
+🔵 Konsep & informasi   🟢 Aktivitas/kolaborasi   🟠 Tantangan HOTS   ⚪ Refleksi & kesimpulan
+PETA PERJALANAN BELAJAR
+Pertemuan
+Misi
+Produk Belajar
+Fokus Kritis
+1
+Detektif Aljabar
+Model situasi nyata
+Mengidentifikasi informasi & variabel
+2
+Kode Rahasia Nilai
+Substitusi & bentuk ekuivalen
+Menilai ketepatan model
+3
+Belanja Cerdas
+Operasi +/−
+Memberi alasan suku sejenis
+4
+Paket & Ukuran
+Operasi ×/÷
+Menguji strategi dan hasil
+5
+Proyek Mini
+Model biaya/luas/keliling
+Mencipta, menguji, mengomunikasikan
+6
+Misi HOTS/TKA
+Solusi bernalar
+Analisis, evaluasi, justifikasi
+IDENTIFIKASI KESIAPAN MURID
+Murid umumnya telah memiliki pemahaman dasar operasi hitung bilangan bulat dan pecahan, mampu membaca soal cerita sederhana, serta dapat bekerja dalam kelompok. Sebagian murid mungkin telah mengenal gagasan nilai yang belum diketahui (unknown). Guru dapat melakukan asesmen diagnostik singkat sebelum Pertemuan 1 untuk memetakan kesiapan.
+KARAKTERISTIK MATERI
+Bentuk aljabar merupakan pengetahuan konseptual dan prosedural yang dekat dengan kehidupan: belanja, harga, ukuran, keuntungan, pola, permainan, dan perencanaan. Pembelajaran bergerak dari benda/situasi konkret → tabel/diagram → simbol → operasi aljabar → pemodelan dan evaluasi.
+DIMENSI PROFIL LULUSAN YANG DIKUATKAN
+Penalaran kritis – menganalisis informasi, pola, hubungan, dan bukti.
+Kreativitas – menghasilkan model/strategi alternatif.
+Kolaborasi – berbagi peran, menguji ide, dan menghargai pendapat.
+Kemandirian – memonitor proses belajar dan memperbaiki kesalahan.
+Komunikasi – menjelaskan model, langkah, dan alasan matematika.
+CAPAIAN & TUJUAN PEMBELAJARAN
+CP yang digunakan mengikuti rumusan yang diberikan guru: murid pada Fase D mampu menggunakan pemodelan dan operasi aljabar untuk menyelesaikan masalah serta mengembangkan penalaran matematis. Modul ini memfokuskan penerapan pada Bentuk Aljabar kelas VII.
+Pertemuan 1 – Pengenalan Bentuk Aljabar
+Mengidentifikasi variabel, konstanta, suku, dan koefisien.
+Memodelkan masalah kontekstual sederhana ke bentuk aljabar.
+Pertemuan 2 – Substitusi & Bentuk Ekuivalen
+Menginterpretasikan nilai bentuk aljabar setelah substitusi.
+Mengubah bentuk aljabar menjadi bentuk ekuivalen menggunakan sifat operasi.
+Pertemuan 3 – Penjumlahan & Pengurangan
+Mengoperasikan suku sejenis dengan cermat.
+Menyelesaikan masalah kontekstual dan memberi alasan.
+Pertemuan 4 – Perkalian & Pembagian
+Mengalikan dan membagi bentuk aljabar.
+Menguji kewajaran hasil dalam konteks.
+Pertemuan 5 – Aplikasi/Proyek
+Merancang model biaya, luas, atau keliling.
+Mempresentasikan dan mempertahankan solusi.
+Pertemuan 6 – Misi HOTS Model TKA
+Memahami, mengaplikasikan, dan bernalar pada masalah bentuk aljabar.
+Mengevaluasi strategi berdasarkan sifat komutatif, asosiatif, dan distributif.
+LINTAS DISIPLIN & KONTEKS
+Bahasa Indonesia: membaca, menafsirkan, dan menulis alasan dari soal cerita.
+IPA: menggunakan simbol dan rumus sederhana yang memuat variabel.
+Ekonomi/Bisnis: harga, diskon, keuntungan/kerugian, dan biaya produksi.
+TIK: spreadsheet untuk tabel nilai dan eksplorasi pola.
+Lingkungan sekolah/rumah: kantin, alat tulis, denah ruangan, paket barang, dan kegiatan jual beli.
+ASESMEN DIAGNOSTIK AWAL
+TUJUAN
+Mengetahui kesiapan konsep bilangan, operasi hitung, dan kemampuan membaca situasi sebelum memasuki bentuk aljabar.
+1. Hitung 24 + 18 − 7 = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+2. Hitung 3 × 12 ÷ 4 = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+3. Sebuah pensil seharga Rp2.500. Berapa harga 4 pensil?
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+4. Sebuah bilangan ditambah 7 menghasilkan 19. Bilangan itu adalah …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+5. Perhatikan kalimat: “3 buku dan 2 pensil”. Jika harga satu buku adalah x rupiah dan satu pensil y rupiah, tuliskan total harganya.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Kunci Diagnostik
+1) 35
+2) 9
+3) Rp10.000
+4) 12
+5) 3x + 2y
+INTERPRETASI SINGKAT
+4–5 benar: siap; 2–3 benar: perlu penguatan operasi/membaca konteks; 0–1 benar: lakukan pendampingan awal.
+PERTEMUAN 1 • Pengenalan Bentuk Aljabar
+MISI MASALAH
+Di kantin, harga satu roti adalah x rupiah. Rani membeli 3 roti dan sebuah susu seharga Rp4.000.
+Bagaimana menuliskan total harga tanpa mengetahui harga roti? Apa arti x, 3, dan 4.000?
+⏱ Alokasi: 2 × 40 menit   |   🎯 Fokus berpikir kritis: mengidentifikasi informasi penting, memilih simbol, dan memberi alasan.
+Tujuan
+ALUR PBL
+1. Orientasi masalah – pahami situasi dan pertanyaan utama.
+2. Organisasi penyelidikan – tentukan informasi diketahui, ditanya, dan strategi.
+3. Penyelidikan – buat model, hitung, uji, dan bandingkan.
+4. Pengembangan & penyajian solusi – tuliskan solusi yang dapat dipahami orang lain.
+5. Analisis & evaluasi – cek kesesuaian model, hasil, dan alasan.
+Eksplorasi 1 – Dari benda ke simbol
+Situasi
+Model
+Makna
+5 buku, harga satu buku x
+5x
+5 = banyak buku; x = harga satu buku
+Rp10.000 + 2x
+2x + 10.000
+2x = harga 2 barang; 10.000 = konstanta
+3a + 7
+3a + 7
+3 = koefisien; a = variabel; 7 = konstanta
+Eksplorasi 2 – Kenali bagian bentuk aljabar
+Pada 7x + 3y − 5, identifikasi: variabel, koefisien, konstanta, dan suku.
+Jawabanmu:
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+BERPIKIR KRITIS
+Mengapa 7x dan 3y disebut suku yang berbeda? Apa yang harus sama agar dua suku dapat disebut sejenis?
+Kuis Cepat
+1. Pada 4p + 9, variabelnya adalah …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+2. Koefisien dari −6q adalah …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+3. Konstanta pada 8a − 2 adalah …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+4. Model “2 buku seharga x dan 1 pulpen Rp3.000” adalah …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+5. Benar/Salah: 3x dan 3y adalah suku sejenis. Jelaskan.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Refleksi
+Hari ini saya memahami bahwa …
+Kesalahan/keraguan saya …
+Bukti bahwa model saya benar …
+Tantangan HOTS
+Dua siswa memodelkan “3 paket, setiap paket berisi x buku dan y pensil” menjadi 3x + y dan 3x + 3y. Siapa yang tepat? Jelaskan tanpa hanya menyebut jawabannya.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+PERTEMUAN 2 • Substitusi & Bentuk Ekuivalen
+MISI MASALAH
+Sebuah koperasi menjual paket alat tulis dengan model harga P = 2x + 5.000.
+Jika x = 7.000, berapa P? Bagaimana memastikan perhitunganmu tidak salah?
+⏱ Alokasi: 2 × 40 menit   |   🎯 Fokus berpikir kritis: menafsirkan simbol, melakukan substitusi, dan memeriksa kewajaran.
+Tujuan
+ALUR PBL
+1. Orientasi masalah – pahami situasi dan pertanyaan utama.
+2. Organisasi penyelidikan – tentukan informasi diketahui, ditanya, dan strategi.
+3. Penyelidikan – buat model, hitung, uji, dan bandingkan.
+4. Pengembangan & penyajian solusi – tuliskan solusi yang dapat dipahami orang lain.
+5. Analisis & evaluasi – cek kesesuaian model, hasil, dan alasan.
+Konsep Kunci
+Substitusi berarti mengganti variabel dengan nilai yang diketahui. Jika P = 2x + 5.000 dan x = 7.000, maka P = 2(7.000) + 5.000 = 19.000.
+Aktivitas Kartu Nilai
+A = 3n + 2. Jika n = 4, A = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+B = 5p − 3. Jika p = 10, B = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+C = 2(x + 4). Jika x = 6, C = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+D = 4a + 2a. Apakah 6a ekuivalen dengan D? Buktikan dengan dua nilai a.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+UJI DUA CARA
+Untuk ekspresi 2(x + 4), coba hitung dengan cara langsung dan dengan sifat distributif. Apakah hasilnya selalu sama?
+Latihan Berpikir Kritis
+Seorang siswa menulis 3(x + 2) = 3x + 2. Apakah benar? Berikan contoh nilai x untuk membuktikan jawabanmu.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Refleksi
+Strategi pengecekan yang paling membantu saya adalah …
+Saya perlu lebih teliti pada …
+PERTEMUAN 3 • Penjumlahan & Pengurangan Bentuk Aljabar
+MISI MASALAH
+Kantin mencatat stok: pagi ada 3x + 5 roti, lalu datang 2x + 4 roti.
+Siang terjual x + 3 roti. Berapa stok akhir? Mengapa suku tertentu boleh digabungkan?
+⏱ Alokasi: 2 × 40 menit   |   🎯 Fokus berpikir kritis: mengelompokkan suku sejenis, mengontrol tanda, dan memberi justifikasi.
+Tujuan
+ALUR PBL
+1. Orientasi masalah – pahami situasi dan pertanyaan utama.
+2. Organisasi penyelidikan – tentukan informasi diketahui, ditanya, dan strategi.
+3. Penyelidikan – buat model, hitung, uji, dan bandingkan.
+4. Pengembangan & penyajian solusi – tuliskan solusi yang dapat dipahami orang lain.
+5. Analisis & evaluasi – cek kesesuaian model, hasil, dan alasan.
+Eksplorasi
+Gabungkan hanya suku sejenis: 3x + 2x = 5x dan 5 + 4 − 3 = 6. Jadi stok akhir = 5x + 6.
+Kartu Operasi
+(4x + 7) + (2x + 3) = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+(8a − 5) − (3a + 2) = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+(2p + 3q) + (5p − q) = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+(7m − 2n) − (3m + 4n) = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+PERDEBATAN MATEMATIKA
+Raka berkata: “2x + 3y = 5xy karena sama-sama punya angka.” Sinta berkata: “Tidak bisa digabung karena variabelnya berbeda.” Siapa yang alasannya lebih kuat? Jelaskan.
+Masalah Kontekstual
+Sebuah toko memiliki 4x + 12 barang. Datang kiriman 3x + 8 barang dan terjual 2x + 5 barang. Nyatakan stok akhir. Jika x = 10, berapa barang sebenarnya?
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Refleksi
+Saya tahu suku sejenis jika …
+Saya mengecek tanda negatif dengan cara …
+PERTEMUAN 4 • Perkalian & Pembagian Bentuk Aljabar
+MISI MASALAH
+Sebuah papan berbentuk persegi panjang memiliki panjang (x + 3) cm dan lebar 2 cm.
+Bagaimana menentukan luasnya? Bagaimana jika luas dibagi rata kepada 2 kelompok?
+⏱ Alokasi: 2 × 40 menit   |   🎯 Fokus berpikir kritis: memilih sifat distributif, menelusuri langkah, dan menguji hasil.
+Tujuan
+ALUR PBL
+1. Orientasi masalah – pahami situasi dan pertanyaan utama.
+2. Organisasi penyelidikan – tentukan informasi diketahui, ditanya, dan strategi.
+3. Penyelidikan – buat model, hitung, uji, dan bandingkan.
+4. Pengembangan & penyajian solusi – tuliskan solusi yang dapat dipahami orang lain.
+5. Analisis & evaluasi – cek kesesuaian model, hasil, dan alasan.
+Konsep Kunci
+Perkalian bentuk aljabar dapat menggunakan sifat distributif: 2(x + 3) = 2x + 6. Pembagian dapat dipahami sebagai kebalikan perkalian pada bentuk yang sesuai.
+Latihan Terbimbing
+3(2x + 5) = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+−2(a − 4) = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+(12x + 8) ÷ 4 = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+(15p − 10q) ÷ 5 = …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Misi Ukuran
+Sebuah persegi panjang memiliki panjang (x + 5) m dan lebar 3 m. Tuliskan luas dalam dua bentuk ekuivalen. Jika x = 7, bandingkan hasil model dengan perhitungan langsung.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+HOTS
+Mengapa 4(x + 2) sama dengan 4x + 8? Jelaskan dengan gambar luas/persegi panjang atau model benda, bukan hanya aturan simbol.
+Refleksi
+Sifat distributif membantu saya ketika …
+Kesalahan yang harus saya hindari …
+PERTEMUAN 5 • Aplikasi Bentuk Aljabar – Proyek Mini
+MISI MASALAH
+Sekolah ingin membuat paket sederhana untuk kegiatan kelas. Setiap paket berisi beberapa barang.
+Tugas tim: buat model aljabar untuk biaya, jumlah barang, atau ukuran; lalu uji model dengan beberapa nilai.
+⏱ Alokasi: 2 × 40 menit   |   🎯 Fokus berpikir kritis: merancang model, menguji asumsi, mengevaluasi, dan mengomunikasikan.
+Tujuan
+ALUR PBL
+1. Orientasi masalah – pahami situasi dan pertanyaan utama.
+2. Organisasi penyelidikan – tentukan informasi diketahui, ditanya, dan strategi.
+3. Penyelidikan – buat model, hitung, uji, dan bandingkan.
+4. Pengembangan & penyajian solusi – tuliskan solusi yang dapat dipahami orang lain.
+5. Analisis & evaluasi – cek kesesuaian model, hasil, dan alasan.
+PROYEK: “ALJABAR DI SEKITARKU”
+Pilih satu konteks: (A) biaya paket alat tulis, (B) jual beli sederhana, (C) denah/luas ruang, (D) produksi kerajinan, atau (E) teka-teki variabel.
+Langkah Proyek
+Tentukan masalah nyata dan tujuan.
+Kumpulkan/berikan data yang masuk akal (boleh simulasi).
+Tentukan variabel dan satuannya.
+Bangun bentuk/model aljabar.
+Hitung minimal dua kondisi nilai variabel.
+Uji apakah model masuk akal.
+Bandingkan minimal dua strategi atau bentuk ekuivalen.
+Buat poster/slide satu halaman dan presentasikan 3–5 menit.
+Lembar Perencanaan
+Judul proyek
+________________________________________________________
+Masalah nyata
+________________________________________________________
+Variabel & satuan
+________________________________________________________
+Bentuk aljabar
+________________________________________________________
+Data uji 1
+________________________________________________________
+Data uji 2
+________________________________________________________
+Hasil & alasan
+________________________________________________________
+Kesimpulan
+________________________________________________________
+Rubrik Proyek
+Aspek
+4
+3
+2
+1
+Model aljabar
+tepat & kuat
+tepat
+ada kekeliruan
+tidak sesuai
+Penalaran
+bukti & evaluasi lengkap
+alasan jelas
+alasan terbatas
+tanpa alasan
+Konteks
+sangat relevan
+relevan
+kurang relevan
+tidak jelas
+Komunikasi
+jelas & meyakinkan
+jelas
+cukup
+sulit dipahami
+Kolaborasi
+peran seimbang
+bekerja sama
+sebagian aktif
+tidak terkoordinasi
+Refleksi Proyek
+Apa asumsi yang kamu buat? Apa yang terjadi jika asumsi itu berubah?
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Bagian model mana yang paling perlu diuji? Mengapa?
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+PERTEMUAN 6 • Misi HOTS Model TKA
+MISI MASALAH
+Hari ini kamu menjadi “Detektif Aljabar”. Setiap soal menuntut tiga tahap: pahami informasi → bangun/ubah model → beri alasan dan cek hasil.
+⏱ Alokasi: 2 × 40 menit   |   🎯 Fokus berpikir kritis: analisis, aplikasi, evaluasi, dan justifikasi.
+Tujuan
+MISI 1 – Pemahaman
+1. Tentukan variabel, koefisien, suku, dan konstanta pada 5x − 2y + 9.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+2. Tuliskan model: “4 tiket seharga x rupiah per tiket dan biaya admin Rp5.000.”
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+3. Jika A = 3x + 4 dan x = 6, tentukan A.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+MISI 2 – Aplikasi
+4. Sebuah toko memberi paket berisi 2 buku dan 3 pensil. Harga buku x dan pensil y. Tuliskan biaya 5 paket.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+5. Sederhanakan: (4x + 7) + (3x − 2).
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+6. Sederhanakan: (9a − 4) − (2a + 5).
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+7. Kembangkan: 3(2p + 5).
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+8. Sederhanakan: (18m + 12n) ÷ 6.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+MISI 3 – Bernalar
+9. Dua model luas ditulis sebagai 2(x + 6) dan 2x + 12. Buktikan keduanya ekuivalen dengan alasan aljabar dan satu contoh numerik.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+10. Sebuah siswa menyederhanakan 5x + 2 − 3x − 7 menjadi 2x + 9. Temukan kesalahan dan perbaiki.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+11. Sebuah toko menawarkan Paket A: 3x + 10.000 dan Paket B: 2(x + 5.000). Apakah keduanya selalu sama? Jelaskan.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+12. Buat satu masalah kehidupan sehari-hari yang jawabannya dapat dimodelkan dengan 4x − 3, lalu jelaskan arti setiap bagian.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+13. Diketahui keliling persegi panjang P = 2(p + l). Jika p = x + 4 dan l = x − 1, bentuk aljabar kelilingnya adalah apa? Jelaskan.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+14. Mana yang lebih tepat untuk menghitung 6(10 + x): langsung mengalikan atau memakai distributif? Tunjukkan bahwa kedua cara konsisten.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+15. Buat teka-teki: “Saya memikirkan suatu bilangan …” yang penyelesaiannya memerlukan bentuk aljabar. Sertakan solusi dan alasan.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+MISI 4 – BENAR/SALAH + ALASAN
+A. 3x + 2x = 5x  [Benar/Salah + alasan]
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+B. 4a + 4b = 8ab  [Benar/Salah + alasan]
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+C. 2(x + 3) = 2x + 6  [Benar/Salah + alasan]
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+D. 8p ÷ 2 = 4p  [Benar/Salah + alasan]
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+E. 5x − (2x − 3) = 3x + 3  [Benar/Salah + alasan]
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+CHECKPOINT AKHIR
+Sebelum mengumpulkan: Apakah modelmu sesuai konteks? Apakah operasi hitung benar? Apakah satuan masuk akal? Bisakah kamu menjelaskan “mengapa” bukan hanya “berapa”?
+RANGKUMAN BESAR
+Variabel adalah simbol yang mewakili nilai yang dapat berubah/belum diketahui.
+Koefisien adalah bilangan pengali variabel; konstanta tidak memuat variabel.
+Suku sejenis memiliki bagian variabel yang sama sehingga dapat dijumlah/dikurangkan.
+Substitusi berarti mengganti variabel dengan nilai tertentu.
+Sifat distributif: a(b + c) = ab + ac.
+Sifat komutatif dan asosiatif membantu menata operasi tanpa mengubah hasil pada operasi yang sesuai.
+Model aljabar harus dibaca kembali dalam konteks: arti simbol, satuan, dan kewajaran hasil.
+KARTU REFLEKSI DIRI
+Saya paling paham tentang …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Saya masih bingung tentang …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Bukti saya dapat memodelkan masalah nyata adalah …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Strategi yang akan saya gunakan jika menemui soal sulit …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+Kontribusi saya dalam kelompok …
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+ASESMEN SUMATIF MINI
+Skor dapat disesuaikan guru. Rekomendasi: pemahaman 30%, aplikasi 40%, penalaran/HOTS 30%.
+1. Identifikasi variabel, koefisien, konstanta, dan suku pada 7x − 3y + 10.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+2. Modelkan pembelian 2 buku @x dan 3 pensil @y.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+3. Hitung nilai 4x + 7 untuk x = 8.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+4. Sederhanakan (5x + 3) + (2x − 8).
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+5. Sederhanakan (9a + 2) − (4a − 3).
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+6. Kembangkan 4(2p − 3).
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+7. Sederhanakan (20m − 10n) ÷ 5.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+8. Keliling persegi panjang dengan p = x + 2 dan l = x + 5.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+9. Jelaskan mengapa 3(x + 4) = 3x + 12.
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+10. Temukan dan perbaiki kesalahan: 2x + 5x = 7x².
+Jawaban/Alasan: ________________________________________________
+_______________________________________________________________
+KUNCI JAWABAN RINGKAS
+Diagnostik: 1)35; 2)9; 3)Rp10.000; 4)12; 5)3x+2y.
+M1: 1)x; 2)−6; 3)−2; 4)2x+3.000; 5)Salah, variabel berbeda.
+M2: 3(4)+2=14; 5(10)−3=47; 2(6+4)=20; 4a+2a=6a benar.
+M3: 6x+10; 5a−7; 7p+2q; 4m−6n; stok akhir = 5x+15, untuk x=10 → 65.
+M4: 6x+15; −2a+8; 3x+15; 3p−2q; luas = 3x+15, untuk x=7 → 36 m².
+M6: 1)5, −2, 9, 5x/−2y/9; 2)4x+5.000; 3)22; 5)7x+5; 6)7a−9; 7)6p+15; 8)3m+2n.
+Sumatif: 1) variabel x,y; koefisien 7,−3; konstanta 10; suku 7x,−3y,10. 2)2x+3y. 3)39. 4)7x−5. 5)5a+5. 6)8p−12. 7)4m−2n. 8)4x+14. 9)distributif. 10)salah; 7x, bukan 7x².
+PEDOMAN PENSKORAN & TINDAK LANJUT
+Level
+Rentang contoh
+Makna
+Tindak lanjut
+Sangat berkembang
+86–100
+model, hitung, alasan konsisten
+tantangan HOTS
+Berkembang sesuai harapan
+71–85
+konsep dan aplikasi cukup kuat
+latihan penguatan
+Mulai berkembang
+56–70
+ada konsep tetapi belum konsisten
+remedial terarah
+Perlu pendampingan
+≤55
+kesulitan memodelkan/operasi
+pendampingan bertahap
+Catatan: rentang dapat disesuaikan dengan KKM/KKTP dan kebijakan satuan pendidikan.
+RUBRIK BERPIKIR KRITIS
+Indikator
+4
+3
+2
+1
+Interpretasi masalah
+informasi & tujuan tepat
+sebagian besar tepat
+ada kekeliruan
+tidak teridentifikasi
+Analisis/model
+model tepat + alasan
+model tepat
+model sebagian tepat
+tidak sesuai
+Evaluasi
+uji & membandingkan
+mengecek hasil
+cek terbatas
+tidak mengecek
+Kesimpulan
+logis + bukti
+logis
+kurang kuat
+tanpa alasan
+Komunikasi
+jelas, runtut
+cukup jelas
+kurang runtut
+tidak jelas
+BANK AKTIVITAS DIGITAL YANG DAPAT DITAMBAHKAN
+Video avatar pembuka 45–60 detik untuk setiap misi.
+QR/tautan ke Google Forms untuk kuis otomatis dan umpan balik.
+GeoGebra/Desmos untuk memvisualisasikan nilai variabel dan bentuk ekuivalen.
+Spreadsheet untuk mencoba banyak nilai x dan menemukan pola.
+Drag-and-drop kartu variabel, koefisien, konstanta, dan suku.
+Leaderboard opsional untuk misi HOTS dengan tetap menjaga suasana belajar sehat.
+Portofolio digital: foto poster proyek + rekaman presentasi + refleksi.
+GLOSARIUM
+Aljabar – cara menyatakan hubungan/kuantitas menggunakan bilangan dan simbol.
+Variabel – simbol yang nilainya dapat berubah atau belum diketahui.
+Koefisien – bilangan yang mengalikan variabel.
+Konstanta – bilangan tetap yang tidak memuat variabel.
+Suku – bagian bentuk aljabar yang dipisahkan oleh tanda + atau −.
+Suku sejenis – suku dengan bagian variabel yang sama.
+Substitusi – mengganti variabel dengan nilai tertentu.
+Ekuivalen – dua bentuk yang memiliki nilai sama untuk nilai variabel yang sama.
+Distributif – sifat perkalian terhadap penjumlahan/pengurangan.
+Model matematika – representasi situasi nyata menggunakan simbol, tabel, diagram, atau bentuk matematika.
+CATATAN GURU / PENGEMBANG E-MODUL
+Dokumen ini dirancang sebagai naskah induk Word. Untuk versi digital penuh, setiap “tautan/video/kuis” dapat diberi hyperlink aktif, QR code, atau tombol navigasi pada platform yang digunakan sekolah. Guru dapat menambahkan logo sekolah, foto lingkungan SMP Negeri 1 Bantarkawung, video avatar, dan kuis daring sesuai kebutuhan.
+PESAN PENUTUP
+“Matematika bukan sekadar mencari jawaban. Matematika membantu kita menjelaskan mengapa jawaban itu masuk akal.” — Jadilah Detektif Aljabar!

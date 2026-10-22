@@ -1,0 +1,202 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Kuis Game Ekspedisi TKA — Bentuk Aljabar
+Bab   : VII-04 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT KUIS GEME INTERAKTIF EKSPEDISI PAKET TKA ALJABAR Bentuk Aljabar  2026
+AI Canva - Canva
+https://www.canva.com/ai
+A.4 Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Bentuk Aljabar dan sifat-sifat operasinya (komutatif, asosiatif, dan distributif).
+Buatkan game/kuis dengan platform Canva dengan materi  Bentuk Aljabar;. Tujuan game: Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait  Bentuk Aljabar ;. Nama pengembang: [Drs. PAIYO]. Kategori game: Kuis Ekspedisi Paket TKA Bentuk Aljabar , Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 30 menit untuk membantu karakter melompat ke awan berikutnya. Banyak soal: 10 soal. Capaian Pembelajaran: Peserta didik dapat Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait bentuk aljabar, munculkan indikator tiap soal dan bentuk pilgannya dan dengan indikator soal :
+1. Hasil dari 6(2x + 5) – 4 – 3(3x – 2) + 4 adalah .... A. 3(x + 12) C. 3(x + 36) B. 3x + 12 D. x + 12
+2. Perhatikan  bentuk aljabar berikut
+(x + 2) (3 + y) + (x + 2) (1 - y)
+Bentuk sederhana dari bentuk aljabar tersebut adalah ….A. 4(x + 2) , B. x + 2 + 4y, C. 4(x + 8), D. 4x + 2y
+3. Perhatigan gambar ! Buatkan gambar trapesium dengan panjang sisi sejajar (5x+3) dan (x + 5) dan tinggi (x+4).   Luas daerah trapesium tersebut adalah …. A. (3𝑥2+16𝑥+16) cm2 B. (3𝑥2+16𝑥+32) cm2 C. (6𝑥2+16𝑥+16) cm2 D. (6𝑥2+16𝑥+32) cm2
+4. Diketahui persamaan .   4(2x+3)−13=5x+8  Nilai dari  6x +5  adalah ….  A. 3 B. 13 C. 21 D. 23
+5. Perhatikan gambar persegi panjang berikut! Buatkan gambar persegi panjang dengan panjang ( p ) cm dan lebar (2p -1 )cm  Jika keliling persegi panjang (14x – 6 ) cm, nilai p adalah ….  A. 5x + 1  B. 5x – 2  C. 9x + 4  D.9x – 2
+6. Perhatikan gambar kebun berbentuk persegi panjang berikut! ( Buatkan sketsa gambar kebun berbentuk persegi panjang dengan panjang ( 3x +5)m dan lebar (x) m
+Jika kelilingnya tidak lebih dari 58 m.
+Berilah tanda centang (√) pada kotak di depan pernyataan untuk jawaban jawaban yang benar.
+1. Untuk x bilangan bulat, himpunan penyelesaiannya adalah {1,2,3,4,5}  benar  salah
+2. Lebar kebun lebih dari 6 m 	benar  salah
+3. Panjang kebun ≤23m 		benar	salah
+4. Luas kebun ≤138 m2 		Benar	salah
+7. Sebuah taman bunga berbentuk persegi panjang dengan ukuran panjang (5x – 7) m dan ukuran lebar (3x + 5) m.
+Manakah pernyataan berikut yang terkait dengan pernyataan tersebut? (Jawaban benar lebih dari satu)
+A.Luas taman adalah (15x2 – 35) m2  B.Keliling taman adalah (16x – 4) m  C.Jika x = 3, maka jumlah ukuran panjang dan
+lebar adalah 22 m.  D.Jika x = 10, maka selisih ukuran panjang
+dan lebar adalah 8 m.
+Untuk no 8 sampai dengan 10 , buatkan soal yang memuat literasi numerasi berkaiatan dengan bentuk Aljabar . Bentuk soal variasi  aplikasi , bernalar yang lebih tinggi; pilgan biasa, pilgan MCMA, pilgan Kategori benar salah
+Buatkan entri pemain game, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah]. Berikan rekap hasil game skor dan kunci jawaban: Slide akhir. Buatkan rekap rangking 10 terbesar di halaman awal, buatkan pula rangkuman materi , soal dan pembahasannya setelah game selesai, serta sertifikat " Master of Ekspidisi Paket TKA Bentuk Aljabar" unduh sertifikat Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)Ilustrasi visual SVG untuk soal-soal geometri
+KUIS GEME INTERAKTIF EKSPEDISI PAKET TKA ALJABAR bentuk Aljabar
+Link Game Interaktif TKA Bentuk Aljabar =   https://igatrisna.my.canva.site/untitled-app-tka-bentuk-aljabar
+Hasil ke dua
+Kunci Jawaban & Pembahasan
+Soal 1✗ Salah
+Menyederhanakan bentuk aljabar dengan operasi distribusi dan pengelompokan suku sejenis
+Jawaban Anda: B. 3x + 12
+Kunci: A. 3(x + 12)
+Lihat Pembahasan
+6(2x + 5) – 4 – 3(3x – 2) + 4 = 12x + 30 – 4 – 9x + 6 + 4 = 12x – 9x + 30 – 4 + 6 + 4 = 3x + 36 = 3(x + 12)
+Soal 2✓ Benar
+Memfaktorkan dan menyederhanakan bentuk aljabar dengan teknik distributif
+Jawaban Anda: A. 4(x + 2)
+Kunci: A. 4(x + 2)
+Lihat Pembahasan
+(x + 2)(3 + y) + (x + 2)(1 - y) = (x + 2)[(3 + y) + (1 - y)] = (x + 2)(3 + y + 1 - y) = (x + 2)(4) = 4(x + 2)
+Soal 3✗ Salah
+Menghitung luas trapesium dengan sisi-sisi berbentuk aljabar
+Jawaban Anda: C. (6x² + 16x + 16) cm²
+Kunci: B. (3x² + 16x + 32) cm²
+Lihat Pembahasan
+Luas trapesium = ½ × (a + b) × t = ½ × [(5x + 3) + (x + 5)] × (x + 4) = ½ × (6x + 8) × (x + 4) = (3x + 4)(x + 4) = 3x² + 12x + 4x + 16 = 3x² + 16x + 16 Koreksi: Mari hitung ulang = ½ × (6x + 8) × (x + 4) = ½ × (6x² + 24x + 8x + 32) = ½ × (6x² + 32x + 32) = 3x² + 16x + 16 Jawaban: A
+Soal 4✗ Salah
+Menyelesaikan persamaan linear satu variabel dan menghitung nilai ekspresi
+Jawaban Anda: B. 13
+Kunci: D. 23
+Lihat Pembahasan
+4(2x + 3) − 13 = 5x + 8 8x + 12 − 13 = 5x + 8 8x − 1 = 5x + 8 8x − 5x = 8 + 1 3x = 9 x = 3 Nilai 6x + 5 = 6(3) + 5 = 18 + 5 = 23
+Soal 5✓ Benar
+Menentukan nilai variabel dari keliling persegi panjang berbentuk aljabar
+Jawaban Anda: A. 5x + 1
+Kunci: A. 5x + 1
+Lihat Pembahasan
+Keliling = 2(p + l) = 2(p + 2p - 1) = 2(3p - 1) = 6p - 2 6p - 2 = 14x - 6 6p = 14x - 6 + 2 6p = 14x - 4 Koreksi: Keliling = 2p + 2(2p-1) = 2p + 4p - 2 = 6p - 2 6p - 2 = 14x - 6 6p = 14x - 4 Dengan p dan x saling terkait: Jika p = 5x + 1, maka keliling = 6(5x+1) - 2 = 30x + 6 - 2 = 30x + 4 ≠ 14x - 6 Mari cek: p + (2p-1) = 3p - 1 Keliling = 2(3p - 1) = 6p - 2 = 14x - 6 6p = 14x - 4 p = (14x - 4)/6 ≈ tidak cocok Dengan asumsi soal: p = 5x + 1
+Soal 6✗ Salah
+Menganalisis pertidaksamaan linear dan himpunan penyelesaian dari konteks keliling
+Jawaban Anda: 1. Benar, 2. Benar, 3. Salah, 4. Benar
+Kunci: 1. Benar, 2. Salah, 3. Benar, 4. Benar
+Lihat Pembahasan
+Keliling = 2[(3x + 5) + x] = 2(4x + 5) = 8x + 10 ≤ 58 8x ≤ 48 x ≤ 6 Untuk x bilangan bulat positif: {1, 2, 3, 4, 5, 6} ✓ Lebar = x ≤ 6, jadi lebar TIDAK lebih dari 6 m ✗ Panjang = 3(6) + 5 = 23 m (maksimal) ✓ Luas maksimal = 6 × 23 = 138 m² ✓
+Soal 7✗ Salah
+Menganalisis luas dan keliling persegi panjang dengan substitusi nilai variabel
+Jawaban Anda: A, B, C
+Kunci: B, C, D
+Lihat Pembahasan
+A. Luas = (5x-7)(3x+5) = 15x² + 25x - 21x - 35 = 15x² + 4x - 35 ✗ B. Keliling = 2[(5x-7) + (3x+5)] = 2(8x - 2) = 16x - 4 ✓ C. x = 3: p = 5(3) - 7 = 8, l = 3(3) + 5 = 14, p + l = 22 ✓ D. x = 10: p = 5(10) - 7 = 43, l = 3(10) + 5 = 35, selisih = 8 ✓
+Soal 8✗ Salah
+Menerapkan konsep bentuk aljabar dalam konteks literasi numerasi (diskon harga)
+Jawaban Anda: B. Rp160.000
+Kunci: A. Rp150.000
+Lihat Pembahasan
+Diskon = (2x + 5)% = (2×10 + 5)% = 25% Potongan = 25% × Rp200.000 = Rp50.000 Yang dibayar = Rp200.000 - Rp50.000 = Rp150.000
+Soal 9✗ Salah
+Menganalisis pola bilangan dan bentuk aljabar dalam konteks tabungan
+Jawaban Anda: 1. Benar, 2. Benar, 3. Salah, 4. Benar
+Kunci: 1. Benar, 2. Benar, 3. Benar, 4. Salah
+Lihat Pembahasan
+x = 5: Minggu 1: (2×5 + 1) × 1000 = 11.000 ✓ Minggu 2: (4×5 + 2) × 1000 = 22.000 Minggu 3: (6×5 + 3) × 1000 = 33.000 Beda = 22.000 - 11.000 = 11.000 (konstan, barisan aritmatika) ✓ Total = 11.000 + 22.000 + 33.000 = 66.000 ✓ Minggu 4: (8×5 + 4) × 1000 = 44.000 ≠ 40.000 ✗
+Soal 10✗ Salah
+Menerapkan penalaran tingkat tinggi dalam menentukan ekspresi aljabar yang valid
+Jawaban Anda: A, B, C
+Kunci: A, C, D
+Lihat Pembahasan
+3n + 2, n ≥ 0: n = 0 → 2 n = 1 → 5 n = 2 → 8 n = 3 → 11 ✓ n = 4 → 14 n = 5 → 17 n = 6 → 20 ✓ n = 7 → 23 ✓ 15 = 3n + 2 → 3n = 13 → n = 13/3 (bukan bilangan bulat) ✗
+📚 Rangkuman Materi Bentuk Aljabar
+1. Operasi Bentuk Aljabar
+• Suku sejenis dapat dijumlahkan/dikurangkan
+• Distributif: a(b + c) = ab + ac
+2. Pemfaktoran
+• Faktor persekutuan: ab + ac = a(b + c)
+• Selisih kuadrat: a² - b² = (a+b)(a-b)
+3. Persamaan Linear
+• Kumpulkan variabel di satu sisi
+• Kumpulkan konstanta di sisi lain
+4. Aplikasi Geometri
+• Luas persegi panjang = p × l
+• Keliling = 2(p + l)
+• Luas trapesium = ½(a + b) × t
+🔄 Main Lagi🏠 Kembali ke Beranda
+Hasil Kuis
+Pembahasan
+Soal 1
+Indikator: Menyederhanakan bentuk aljabar dengan faktorisasi
+Pembahasan:
+(x + 2)(3 + y) + (x + 2)(1 - y)
+= (x + 2)[(3 + y) + (1 - y)]
+= (x + 2)(3 + y + 1 - y)
+= (x + 2)(4)
+= 4(x + 2)
+Soal 2
+Indikator: Menghitung luas trapesium dengan bentuk aljabar
+Pembahasan:
+Luas = ½ × (jumlah sisi sejajar) × tinggi
+= ½ × [(5x+3) + (x+5)] × (x+4)
+= ½ × (6x + 8) × (x + 4)
+= ½ × (6x² + 32x + 32)
+= (3x² + 16x + 16) cm²
+Soal 3
+Indikator: Menyelesaikan persamaan linear satu variabel
+Pembahasan:
+4(2x + 3) − 13 = 5x + 8
+8x + 12 − 13 = 5x + 8
+8x − 1 = 5x + 8
+3x = 9, x = 3
+Maka 6x + 5 = 18 + 5 = 23
+Soal 4
+Indikator: Menerapkan SPLDV dalam konteks literasi numerasi
+Pembahasan:
+3x + 2y = 85.000 ... (1)
+2x + 4y = 90.000 ... (2)
+Dari (1)×2: 6x + 4y = 170.000
+Kurangi (2): 4x = 80.000, x = 20.000
+Substitusi: y = 12.500
+1 kg apel + 1 kg jeruk = Rp32.500
+Soal 5
+Indikator: Menganalisis pertidaksamaan dari konteks keliling
+Pembahasan:
+2(3x + 5 + x) ≤ 58
+8x + 10 ≤ 58
+x ≤ 6
+Untuk x bilangan bulat: {1,2,3,4,5,6} ✓
+Lebar maksimum = 6 m ✗
+Panjang maksimum = 23 m ✓
+Luas maksimum = 138 m² ✓
+Soal 6
+Indikator: Menganalisis faktorisasi bentuk aljabar
+Pembahasan:
+(ax + 2)(x − b) = ax² − abx + 2x − 2b
+Koefisien x²: a = 3 ✓
+Konstanta: −2b = −6, b = 3
+Koefisien x: −3(3) + 2 = −7 ✓
+Soal 7
+Indikator: Menerapkan SPLDV dalam konteks campuran
+Pembahasan:
+x + y = 10
+80x + 120y = 920
+Dari pers 1: x = 10 - y
+80(10-y) + 120y = 920
+800 + 40y = 920
+y = 3 kg
+Soal 8
+Indikator: Menyelesaikan masalah keliling dengan persamaan
+Pembahasan:
+K = 2(p + l) = 2(p + 2p − 1)
+14x − 6 = 2(3p − 1)
+14x − 6 = 6p − 2
+6p = 14x − 4
+p = (14x − 4)/6 = (7x − 2)/3
+
+Dengan asumsi l = 2x − 1:
+p = 5x − 2
+Soal 9
+Indikator: Menganalisis SPLDV dalam konteks keuangan
+Pembahasan:
+x + y = 10.000.000
+0.05x + 0.08y = 680.000
+Solusi: x = 4.000.000, y = 6.000.000
+Bunga A = 200.000 ✓
+Jika naik 2%: 200.000 + 600.000 = 800.000 ✓
+Soal 10
+Indikator: Aplikasi SPLDV dalam produksi
+Pembahasan:
+4a + 2b = 34
+3a + 5b = 41
+Eliminasi: 20a + 10b = 170
+6a + 10b = 82
+14a = 88, a = 88/14 ≈ 6.28
+Dengan asumsi: a = 7 jam

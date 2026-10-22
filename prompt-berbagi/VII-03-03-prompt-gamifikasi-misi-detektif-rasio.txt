@@ -1,0 +1,312 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Gamifikasi Misi Detektif — Rasio
+Bab   : VII-03 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT GAMIFIKASI MISI & BADGE 🎮🏆 “MISI HOTS DETEKTIF RASIO”
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA : “ Assalamu'alaikum! Yuk ikut GAMIFIKASI MISI & BADGE 🎮🏆 “MISI HOTS DETEKTIF RASIO”👨‍🏫 Pengembang: Drs. PAIYO! AAAMAT KEREN DIGITAL LEARNING
+Halo teman-teman kelas VII! Ayo asah kemampuan berpikir tingkat tinggi (HOTS) melalui 7 Misi Detektif Matematika seru! Kumpulkan 675 XP dan buka Badge Master Rasio! 🏆👉 Akses aplikasi di sini:
+https://ais-pre-xnj6maolapbl4cgg23cfa4-57322949575.asia-east1.run.app
+Daftar Nilainya :
+Assalamu’alaikum,...Selamat malam, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat “ AAAMAT KEREN ESCAPE ROOM “MISI HOTS DETEKTIF RASIO”
+. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Pada beranda muncul Link “ Share WA” mode ais pre;  “ unduh soal dan pembahasan in word”
+PROMPT GAMIFIKASI MISI & BADGE 🎮🏆
+“MISI HOTS DETEKTIF RASIO”
+Buat sebuah sistem gamifikasi pembelajaran matematika interaktif untuk siswa kelas VII SMP dengan judul:
+“🎮 MISSION HOTS DETEKTIF RASIO 🕵️‍♂️🔎”
+Tema utama: Petualangan Detektif Matematika – Rasio dan Perbandingan
+Tujuan: membuat siswa belajar rasio melalui misi, tantangan HOTS, pengumpulan XP, level, badge, reward, dan progres belajar.
+Gunakan gaya visual:
+Modern, futuristik, edukatif, ceria, dan menarik untuk siswa SMP.
+Nuansa game adventure + detective academy.
+Desain profesional seperti aplikasi game edukasi modern.
+Warna cerah tetapi tetap nyaman dibaca.
+Gunakan kartu digital, ikon, progress bar, badge 3D, efek glow ringan, dan animasi interaktif.
+Branding: “AAAMAT KEREN DIGITAL LEARNING”.
+Bahasa seluruh interface: Bahasa Indonesia.
+🎮 1. DASHBOARD UTAMA
+Buat halaman dashboard dengan:
+Header:
+🔎 MISSION HOTS DETEKTIF RASIO
+Subjudul:
+“Pecahkan kasus. Temukan bukti. Buktikan jawabanmu!”
+Tampilkan:
+👤 Nama siswa
+⭐ Total XP
+🏅 Level
+🏆 Jumlah Badge
+📊 Progress Misi
+🔥 Streak belajar
+Buat tombol besar:
+🚀 MULAI MISI
+🗺️ PETA MISI
+🏆 KOLEKSI BADGE
+📊 PROGRES SAYA
+📖 PETUNJUK
+🗺️ 2. PETA PERJALANAN MISI
+Buat peta perjalanan berbentuk jalur petualangan.
+Tampilkan 7 misi:
+🔎 MISI 1 — DETEKTIF PEMULA
+Tugas:
+“Temukan fakta penting dari sebuah masalah rasio.”
+Reward:
++50 XP
+Badge:
+🥉 DETEKTIF PEMULA
+🧩 MISI 2 — PEMBURU BUKTI
+Tugas:
+“Identifikasi informasi relevan dan tentukan strategi.”
+Reward:
++75 XP
+Badge:
+🔎 PEMBURU BUKTI
+🧠 MISI 3 — DETEKTIF ANALITIS
+Tugas:
+“Selesaikan masalah rasio menggunakan minimal dua strategi.”
+Reward:
++100 XP
+Badge:
+🧠 DETEKTIF ANALITIS
+⚖️ MISI 4 — PENGUJI BUKTI
+Tugas:
+“Temukan kesalahan jawaban dan buktikan secara matematis.”
+Reward:
++125 XP
+Badge:
+⚖️ PENGUJI BUKTI
+🎤 MISI 5 — KOMUNIKATOR RASIO
+Tugas:
+“Presentasikan solusi dan jelaskan alasan matematis.”
+Reward:
++100 XP
+Badge:
+🎤 KOMUNIKATOR RASIO
+🪞 MISI 6 — DETEKTIF REFLEKTIF
+Tugas:
+“Evaluasi proses berpikirmu dan tuliskan refleksi.”
+Reward:
++75 XP
+Badge:
+🪞 DETEKTIF REFLEKTIF
+🏆 FINAL MISSION — MASTER RASIO
+Tugas:
+“Menyelesaikan kasus HOTS tingkat akhir.”
+Reward:
++150 XP
+Badge utama:
+🏆 MASTER RASIO
+⭐ 3. SISTEM XP
+Buat sistem poin pengalaman:
+MISI 1 = 50 XP
+MISI 2 = 75 XP
+MISI 3 = 100 XP
+MISI 4 = 125 XP
+MISI 5 = 100 XP
+MISI 6 = 75 XP
+FINAL MISSION = 150 XP
+Total XP maksimum:
+675 XP
+Tambahkan bonus:
+⭐ Jawaban benar = +5 XP
+🧠 Alasan sangat baik = +10 XP
+🔎 Menemukan kesalahan = +15 XP
+🤝 Kolaborasi baik = +10 XP
+💡 Strategi alternatif = +15 XP
+🏅 4. SISTEM LEVEL
+Buat sistem level otomatis:
+LEVEL 1 — CALON DETEKTIF
+0–99 XP
+LEVEL 2 — DETEKTIF PEMULA
+100–249 XP
+LEVEL 3 — DETEKTIF ANALITIS
+250–399 XP
+LEVEL 4 — PENGUJI BUKTI
+400–549 XP
+LEVEL 5 — MASTER INVESTIGASI
+550–674 XP
+LEVEL 6 — MASTER RASIO 🏆
+675 XP atau lebih
+Tampilkan progress bar menuju level berikutnya.
+Contoh:
+⭐ XP: 325 / 400
+███████████████░░░░
+Menuju Level 4 — Penguji Bukti
+🏆 5. SISTEM BADGE
+Buat koleksi badge dalam bentuk kartu 3D.
+Badge:
+🥉 DETEKTIF PEMULA
+Berhasil menyelesaikan Misi 1–2.
+🔎 PEMBURU BUKTI
+Berhasil menemukan informasi penting.
+🧠 DETEKTIF ANALITIS
+Mampu menggunakan minimal dua strategi.
+⚖️ PENGUJI BUKTI
+Mampu menemukan dan menjelaskan kesalahan.
+🎤 KOMUNIKATOR RASIO
+Mampu menyampaikan solusi dengan alasan logis.
+🪞 DETEKTIF REFLEKTIF
+Mampu mengevaluasi proses berpikir.
+🏆 MASTER RASIO
+Berhasil menyelesaikan seluruh misi.
+Badge yang belum diperoleh harus terlihat terkunci 🔒.
+Badge yang sudah diperoleh berubah menjadi terbuka ✨ dengan animasi penghargaan.
+🔐 6. SISTEM UNLOCK MISI
+Misi berikutnya terkunci sebelum misi sebelumnya selesai.
+Contoh:
+MISI 1 ✅ SELESAI
+↓
+MISI 2 🔓 TERBUKA
+↓
+MISI 3 🔒 TERKUNCI
+Jika siswa menyelesaikan misi:
+Tampilkan animasi:
+🎉 MISI BERHASIL!
+🔎 Bukti ditemukan!
+⭐ +50 XP
+🏅 BADGE BARU TERBUKA!
+Tombol:
+➡️ LANJUTKAN MISI
+💡 7. SISTEM HINT / PETUNJUK
+Setiap misi memiliki maksimal 3 petunjuk.
+HINT 1
+Petunjuk konsep.
+Pengurangan:
+−5 XP
+HINT 2
+Petunjuk strategi.
+Pengurangan:
+−10 XP
+HINT 3
+Petunjuk verifikasi.
+Pengurangan:
+−15 XP
+Tampilkan konfirmasi sebelum siswa menggunakan hint:
+“Yakin menggunakan Petunjuk 2?”
+Kamu akan menggunakan 10 XP.
+Tombol:
+YA, GUNAKAN HINT
+BELUM
+🎯 8. SISTEM SKOR MISI
+Setelah siswa menyelesaikan soal:
+Tampilkan:
+🎯 HASIL MISI
+Jawaban benar: 8/10
+XP diperoleh: +85 XP
+Level: Detektif Analitis
+Badge: 🧠 Detektif Analitis
+Progress: 63%
+Berikan pesan motivasi berdasarkan hasil.
+Jika tinggi:
+🌟 Luar biasa! Analisis matematikamu sangat kuat!
+Jika sedang:
+👍 Bagus! Periksa kembali bukti pada soal yang masih salah.
+Jika rendah:
+💪 Jangan menyerah! Detektif hebat belajar dari kesalahan.
+🎁 9. SISTEM REWARD
+Setelah misi selesai, tampilkan Reward Screen.
+Contoh:
+🎉 CASE SOLVED! 🎉
+Kamu berhasil memecahkan kasus rasio!
+Tampilkan:
+⭐ +100 XP
+🏆 BADGE TERBUKA
+🔥 STREAK +1
+Kemudian tampilkan tombol:
+➡️ MISI BERIKUTNYA
+🕵️ 10. CASE FILE / KARTU KASUS
+Setiap misi memiliki kartu kasus.
+Contoh:
+CASE FILE #001
+🔎 Kasus:
+“Misteri Minuman Pesta Kelas”
+📌 Petunjuk:
+Rasio sirup : air = 2 : 5
+🎯 Misi:
+Tentukan jumlah air jika digunakan 3,5 liter sirup.
+⚠️ Tantangan:
+Buktikan jawabanmu menggunakan alasan matematis.
+Tombol:
+🔍 SELIDIKI KASUS
+🧠 11. UNSUR HOTS
+Jangan hanya memberikan soal hitungan.
+Setiap misi harus mendorong siswa untuk:
+INTERPRETASI → ANALISIS → EVALUASI → INFERENSI → ARGUMENTASI → REFLEKSI
+Contoh pertanyaan:
+“Mengapa jawaban tersebut benar?”
+“Apakah strategi lain dapat digunakan?”
+“Di mana letak kesalahan jawaban tersebut?”
+“Bukti apa yang mendukung kesimpulanmu?”
+“Bagaimana kamu memeriksa kembali jawabanmu?”
+📊 12. HALAMAN PROFIL SISWA
+Buat halaman:
+MY DETECTIVE PROFILE
+Tampilkan:
+👤 Nama siswa
+⭐ Total XP
+🏆 Level
+🔥 Streak
+🎯 Misi selesai
+🏅 Badge diperoleh
+📈 Progress belajar
+Tambahkan:
+KOLEKSI BADGE
+Badge terbuka → berwarna dan bercahaya.
+Badge terkunci → abu-abu + 🔒.
+🎮 13. FITUR INTERAKTIF
+Jika dibuat sebagai aplikasi/web interaktif, implementasikan:
+Tombol navigasi aktif.
+Progress otomatis.
+XP otomatis bertambah.
+Level otomatis berubah.
+Badge otomatis terbuka.
+Misi berikutnya otomatis terbuka setelah syarat terpenuhi.
+Skor tersimpan selama sesi.
+Jawaban salah memberikan feedback.
+Hint dapat digunakan.
+Badge dapat diklik untuk melihat kriterianya.
+Progress bar berubah secara real-time.
+Reward screen muncul setelah misi selesai.
+🎨 14. DESAIN VISUAL
+Gunakan:
+Kartu misi berbentuk rounded card.
+Ikon detektif 🔎.
+Magnifying glass.
+Peta misi.
+Jejak kaki menuju misi berikutnya.
+Badge 3D.
+Bintang XP.
+Progress bar.
+Trophy.
+Lock/unlock.
+Efek glow ringan.
+Animasi confetti ketika badge terbuka.
+Animasi XP bertambah.
+Jaga desain tetap edukatif, bersih, tidak terlalu ramai, dan mudah digunakan siswa SMP.
+🏆 15. FINAL SCREEN
+Setelah seluruh misi selesai tampilkan:
+🎉 MISSION COMPLETE! 🎉
+🏆 MASTER RASIO
+“Selamat! Kamu berhasil menyelesaikan seluruh investigasi rasio.”
+Tampilkan:
+⭐ Total XP: 675 XP
+🏆 Level: MASTER RASIO
+🎖️ Badge: 7/7
+🔥 Streak: MISI SELESAI
+Kemudian tampilkan tombol:
+🏆 LIHAT BADGE
+📊 LIHAT HASIL
+🔄 ULANGI MISI
+📜 SERTIFIKAT
+Tambahkan pesan:
+“Detektif matematika sejati tidak hanya menemukan jawaban, tetapi mampu membuktikan mengapa jawabannya benar.”
+Footer:
+AAAMAT KEREN DIGITAL LEARNING
+MISI HOTS DETEKTIF RASIO
+Terimakasih atas sulusinya yang keren.

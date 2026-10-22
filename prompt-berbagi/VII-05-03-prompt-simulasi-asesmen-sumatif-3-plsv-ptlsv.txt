@@ -1,0 +1,153 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Simulasi Asesmen Sumatif 3 — PLSV & PtLSV
+Bab   : VII-05 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT SIMULASI ASESMEN SUMATIF 3 BAB PLSV&PtLSV  KELAS VIII
+Assalamu’alaikum,.. selamat padi, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantun untuk :
+Buatkan Simulasi  “ASESMEN SUMATIF 3 BAB PLSV & PtLSV KELAS VII TP 2026 / 2027 ;  model TKA. dengan Judul
+“ ASESMEN SUMATIF 3 BAB PERSAMAAN LINEAR SATU VARIABEL &PERTIDAKSAMAAN LINEAR SATU VARIABEL KELAS VII  SMP  "
+SMP NEGERI 1 BANTARKAWUNG KABUPATEN BREBES
+TAHUN PELAJARAN 2026/2027"
+yang tampilannya mirip dengan website simulasi TKA kemendikdasmen. Tujuan game: Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait  PLSV &PtLSV ;Nama pengembang: [Drs. PAIYO].
+Tahapr 1. Buatkan entri pemain game, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+tahab 2: Model soal Pilgan biasa( 50% ), Pilgan komplek B/G (25%), Pilgan MCMA pilihan jawaban benar lebih dari satu(25%):meliputi soal tipe TKA/AKM( Jumlah soal sesuaikan dengan input jumlah soal) Soal Model 1 pilihan ganda (generated otomatis ) Khusus soal model 2 ganda kompleks dengan 3 pernyataan dengan kategori pilihan jawaban benar atau salah dibuat dalam bentuk tabel Khusus soal model 3 pilihan ganda komplek dengan 4 pernyataan dan jawaban benar lebih dari 1 dibuat dalam bentuk tabel , Semua soal harus ada stimulus tipe TKA / AKM. tiap soal  menggunakan stimulus sendiri – sendiri. Jika diperlukan adanya gambar maka stimulus boleh berisi gambar penunjang untuk melengkapi stimulus baik gambar dalam bentuk infografis maupun dalam bentuk grafik/ tabel. Ilustrasi visual SVG untuk soal-soal geometri
+Fitur terpisah antara Model Pilgan biasa, Pilgan MCMA B/S, Pilgan MCMA Pilihan jawaban benar lebih dari satu , Uraian. ada link selanjutnya antar model soal
+ (7) Uraian : 2 soal pertanyaan terbuka dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi
+tahap 3 indikator soal : , munculkan indikator tiap soal dan bentuk pilgannya dan dengan indikator soal seperti : pada lampiran file
+tahap 4 : Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 50 menit untuk membantu karakter membawa paket ke rumah berikutnya. Banyak soal: 22 soal. Capaian Pembelajaran: Peserta didik dapat Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait PLSV & PtLSV
+ tahap 5 : Berikan rekap hasil game skor, soal dan kunci jawaban: Slide akhir. Buatkan rekap rangking 10 terbesar di halaman awal, buatkan pula rangkuman materi , soal dan pembahasannya setelah game selesai,Pada soal dan pembahasan di beri pasword nama pengembang; serta sertifikat " Master of Ekspedisi  PLSV PtLSV "; unduh sertifikat ; pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang);link Navigasi untuk cek soal yang belum di kerjakan atau ralat jawaban;
+Fitur Utama yang di harapkan:
+1. Latarbelakang judul
+“ ASESMEN SUMATIF 3 BAB PERSAMAAN LINEAR SATU VARIABEL &PERTIDAKSAMAAN LINEAR SATU VARIABEL KELAS VII  SMP  "
+SMP NEGERI 1 BANTARKAWUNG KABUPATEN BREBES TAHUN PELAJARAN 2026/2027"
+Halaman Beranda (Landing Page):
+Formulir entri data peserta (Nama, Kelas, No Absen, dan Sekolah).
+Top 10 Master: Papan peringkat otomatis yang menampilkan 10 nilai tertinggi.
+Fitur "Daftar Nilai": dengan mode Klik langsung tampak rekap nilai “ Nama, kelas, no absen, sekolah, skor , tanggal mengerjakan”
+Fitur “ Share wa “ dengan mode “ ais pree “
+Mekanisme Permainan:
+Visual Pengantar Paket: Karakter siswa akan mengantar paket ke rumah berikutnya seiring kemajuan pengerjaan soal.
+Timer 60 Menit: Penghitung waktu mundur yang akan otomatis mengakhiri sesi jika waktu habis.
+Navigasi Soal: Sidebar untuk berpindah antar soal, mengecek soal yang belum dikerjakan, atau meralat jawaban.
+Model Soal TKA/AKM (Total 22 Soal):
+Pilihan Ganda Biasa (50% =  10 Soal): 1 jawaban benar.
+Pilihan Ganda Kompleks (25% = 8 soal ): Tabel Benar/Salah (3 pernyataan).
+MCMA (25% = 7 soal ): Pilihan jawaban benar lebih dari satu (4 pernyataan).
+Uraian : 2 soal pertanyaan terbuka dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi
+Setiap soal dilengkapi dengan Stimulus dan Indikator yang relevan dengan elemen PLSV & PtLSV.
+Ilustrasi SVG: Gambar denah, grafik, dan bangun geometri untuk memperjelas stimulus.
+Halaman Hasil (Result Slide):
+Rekap skor, jumlah jawaban benar, salah, dan waktu pengerjaan.
+Sertifikat "Master of Ekspedisi PLSV & PtLSV": Dapat diunduh/dicetak langsung dengan nama peserta.
+Rangkuman & Pembahasan: Bagian ini diproteksi password menggunakan nama pengembang: Drs. PAIYO.
+Unduh Soal & Pembahasan (Word): Menambahkan tombol "Unduh Soal & Pembahasan (Word)" di halaman hasil (setelah simulasi selesai). Fitur ini akan mengunduh file .doc yang berisi daftar soal, indikator, stimulus, dan kunci jawaban.
+Hasilnya.
+Link  Share wa =
+Halo! Saya baru saja menyelesaikan "Simulasi Asesmen Sumatif 3 PLSV & PtLSV Kelas VII" SMP Negeri 1 Bantarkawung yang dikembangkan oleh Drs. PAIYO. Uji kecerdasan logikamu sekarang menggunakan Link berikut:
+https://igatrisna.my.canva.site/asesmen--sumatif-3-plsv-ptlsv
+🔑 Soal & Pembahasan
+Soal 1 (PG) - L2
+Disajikan beberapa bentuk aljabar, siswa dapat mengidentifikasi mana yang merupakan PLSV
+Guru Matematika di SMP Negeri 1 Bantarkawung menuliskan 4 bentuk aljabar di papan tulis:
+(I) 3x − 5 = 10   (II) x + y = 8   (III) 2a + 4 > 12   (IV) 4(p − 2) = 2p + 6
+Siswa diminta mengelompokkan bentuk aljabar tersebut.
+Kunci: B. (I) dan (IV)
+Pembahasan: PLSV memiliki satu variabel berpangkat 1 dan tanda =. (I) 3x−5=10 ✓ PLSV. (II) x+y=8 dua variabel. (III) 2a+4>12 pertidaksamaan. (IV) 4(p−2)=2p+6 ✓ PLSV. Jawaban: (I) dan (IV).
+Soal 2 (PG) - L2
+Disajikan ilustrasi timbangan keseimbangan, siswa dapat menentukan nilai variabel dari PLSV
+Budi sedang belajar konsep PLSV menggunakan ilustrasi timbangan keseimbangan. Pada sisi kiri terdapat 3 balok identik bermassa 'x' kg dan sebuah bandul 2 kg. Pada sisi kanan terdapat 1 balok bermassa 'x' kg dan bandul 10 kg. Timbangan dalam keadaan seimbang.
+Kunci: C. 4 kg
+Pembahasan: 3x + 2 = x + 10 → 2x = 8 → x = 4 kg.
+Soal 3 (PG) - L3
+Disajikan masalah konteks jual beli, siswa dapat memodelkan dan menyelesaikan PLSV
+Dina, seorang siswi kelas VII SMP Negeri 1 Bantarkawung, pergi ke koperasi sekolah. Ia membeli 5 buah buku tulis dengan jenis yang sama. Dina membayar dengan selembar uang Rp 50.000,00 dan menerima uang kembalian sebesar Rp 15.000,00.
+Kunci: C. Rp 7.000,00
+Pembahasan: 5b = 50.000 − 15.000 = 35.000 → b = 7.000. Jawaban: Rp 7.000,00.
+Soal 4 (PG) - L3
+Disajikan sketsa kebun persegi panjang dengan ukuran aljabar, siswa dapat menghitung luas kebun
+Pak Ali memiliki sebuah kebun berbentuk persegi panjang. Diketahui panjang = (3x − 2) m dan lebar = (x + 4) m. Keliling kebun Pak Ali adalah 52 meter.
+Kunci: C. 160 m²
+Pembahasan: 2((3x−2)+(x+4))=52 → 2(4x+2)=52 → 8x+4=52 → x=6. Panjang=16, Lebar=10. Luas=160 m².
+Soal 5 (PG) - L2
+Disajikan gambar rambu lalu lintas, siswa dapat menentukan model pertidaksamaan yang tepat
+Di jalan raya depan SMP Negeri 1 Bantarkawung, terdapat rambu lalu lintas bertuliskan "KECEPATAN MAKSIMAL 40 KM/JAM". Hal ini diterapkan untuk menjaga keselamatan siswa yang menyeberang jalan.
+Kunci: C. v ≤ 40
+Pembahasan: "Maksimal 40" berarti boleh ≤ 40. Jawaban: v ≤ 40.
+Soal 6 (PG) - L3
+Disajikan masalah kapasitas daya angkut lift, siswa dapat menentukan jumlah barang maksimal
+Sebuah lift pengangkut barang memiliki batas muatan maksimal 600 kg. Pak Yanto (berat 75 kg) bertugas memindahkan kotak-kotak keramik yang masing-masing seberat 25 kg menggunakan lift tersebut.
+Kunci: B. 21 kotak
+Pembahasan: 75 + 25k ≤ 600 → 25k ≤ 525 → k ≤ 21. Maksimal 21 kotak.
+Soal 7 (PG) - L3
+Disajikan masalah target nilai rata-rata ujian, siswa dapat menentukan nilai minimal yang harus dicapai
+Rani ingin mendapatkan predikat "Siswa Berprestasi". Syaratnya: nilai rata-rata dari 3 kali Ulangan Harian Matematika minimal 85. Nilai UH ke-1: 80, UH ke-2: 88.
+Kunci: C. 87
+Pembahasan: (80+88+x)/3 ≥ 85 → 168+x ≥ 255 → x ≥ 87. Jawaban: 87.
+Soal 8 (PG) - L3
+Disajikan keliling segitiga sembarang dalam variabel, siswa dapat menentukan ukuran sisi terpanjang yang mungkin
+Sebuah segitiga sembarang memiliki panjang sisi a cm, (a+2) cm, dan (a+4) cm. Keliling segitiga kurang dari 36 cm. Diketahui a adalah bilangan bulat positif.
+Kunci: B. 13 cm
+Pembahasan: 3a+6 < 36 → 3a < 30 → a < 10. Maks a=9. Sisi terpanjang = 9+4 = 13 cm.
+Soal 9 (BS) - L1
+Disajikan pernyataan kalimat matematika, siswa dapat membedakan PLSV dan PtLSV
+Pak Guru memberikan tugas mengklasifikasikan kalimat matematika:
+(1) 4m − 7 ≥ 13   (2) 2p + 3q = 15   (3) 5y − 2 = 3y + 8
+Pembahasan: (1) Benar: satu variabel m, tanda ≥. (2) Salah: dua variabel p dan q. (3) Salah: variabel tetap satu jenis (y), pangkat 1 → PLSV.
+Soal 10 (BS) - L2
+Disajikan persamaan linear, siswa dapat menilai kebenaran langkah dan hasil penyelesaiannya
+Sita menyelesaikan persamaan: 3(x − 2) = x + 10.
+Pembahasan: 3x−6=x+10 (Benar). 2x=16 → x=8 (Benar). Setara 2x=16, bukan 2x=4 (Salah).
+Soal 11 (BS) - L3
+Disajikan masalah tarif internet bulanan, siswa dapat menilai kebenaran pernyataan terkait biaya
+Penyedia layanan internet: Biaya dasar Rp 30.000 + Rp 4.000/GB. Tagihan keluarga Budi bulan ini: Rp 86.000.
+Pembahasan: (1) Benar. (2) 4000g=56000 → g=14 (Benar). (3) 4000g=30000 → g=7,5 bukan 8 (Salah).
+Soal 12 (BS) - L2
+Disajikan pertidaksamaan linear, siswa dapat mengevaluasi penyelesaian
+Diketahui PtLSV: 2(3x − 4) ≤ 4x + 6. Dimas menentukan himpunan penyelesaian untuk x bilangan cacah.
+Pembahasan: 6x−8 ≤ 4x+6 → 2x ≤ 14 (Benar). x ≤ 7 (Benar). 8 > 7, bukan penyelesaian (Salah).
+Soal 13 (BS) - L3
+Disajikan ilustrasi muatan truk, siswa dapat menilai pernyataan terkait kapasitas maksimal truk
+Truk ekspedisi kosong: 1.500 kg. Akan memuat kotak @20 kg. Batas jembatan timbang: 4.000 kg.
+Pembahasan: 20k ≤ 2500 → k ≤ 125 (Benar). 130>125, berat 4100>4000 (Salah).
+Soal 14 (BS) - L3
+Disajikan perbandingan keliling dua bangun datar dalam variabel, siswa dapat mengevaluasi
+Persegi sisi (2x−1) cm dan segitiga sama sisi sisi (x+3) cm. Keliling keduanya sama.
+Pembahasan: 8x−4=3x+9 → 5x=13 → x=2,6. Sisi segitiga=2,6+3=5,6 cm. x=2,6 bukan 3.
+Soal 15 (MCMA) - L2
+Disajikan sekumpulan bentuk aljabar, siswa dapat memilih semua opsi yang termasuk PLSV
+Siswa diminta menyeleksi bentuk aljabar yang tergolong PLSV:
+I. 5a + 7 = 22   II. x² − 4 = 0   III. 2(y − 3) = 4y + 2   IV. m + n = 10   V. 3p − 1 > 5
+Pembahasan: I: PLSV (1 variabel a, pangkat 1). II: Bukan (pangkat 2). III: PLSV (1 variabel y). IV: Bukan (2 variabel).
+Soal 16 (MCMA) - L2
+Disajikan PLSV berbentuk pecahan, siswa dapat memilih pernyataan yang benar tentang penyelesaiannya
+Persamaan: ½(x − 4) = ⅓(x + 2). Siswa diminta menganalisis dan menyelesaikan.
+Pembahasan: Kalikan KPK 6: 3(x−4)=2(x+2) → 3x−12=2x+4 → x=16. (x−10)=6 bukan 8. x=16 bilangan bulat.
+Soal 17 (MCMA) - L3
+Disajikan masalah umur tiga bersaudara, siswa dapat memilih pernyataan usia yang benar
+Tiga bersaudara: Budi (x tahun), Andi (x+3 tahun), Cici (2x tahun). Jumlah usia = 35 tahun.
+Pembahasan: 4x+3=35 → x=8. Budi=8, Andi=11, Cici=16. Cici paling tua (bukan Andi). Selisih Cici-Andi=5.
+Soal 18 (MCMA) - L3
+Disajikan situasi budget berbelanja, siswa dapat menentukan skenario yang tidak melebihi anggaran
+Tari punya Rp 150.000. Wajib beli tas Rp 75.000. Sisa untuk buku tulis @Rp 8.500.
+Pembahasan: 8500b ≤ 75000 → b ≤ 8,82. Maks 8 buku. 7 buku: sisa=75000−59500=15500. Model benar.
+Soal 19 (MCMA) - L3
+Disajikan grafik perbandingan tarif dua sewa mobil, siswa dapat menganalisis dan memilih kondisi tarif
+Rental A: Biaya awal Rp 200.000, tarif Rp 50.000/jam.
+Rental B: Biaya awal Rp 0, tarif Rp 100.000/jam.
+Pembahasan: 200000+50000x=100000x → x=4 (sama). 5 jam: A=450k, B=500k, A lebih murah. 2 jam: A=300k, B=200k, B lebih murah.
+Soal 20 (MCMA) - L2
+Disajikan bentuk PtLSV, siswa dapat memilih semua pernyataan benar terkait himpunan penyelesaian
+PtLSV: 5(x − 2) − 3 > 2(x + 1). Tentukan himpunan penyelesaian untuk x bilangan real.
+Pembahasan: 5x−10−3>2x+2 → 3x>15 → x>5. 5 tidak termasuk (>bukan≥). 10>5 termasuk.
+Soal 21 (ESSAY) - L3
+Siswa dapat memodelkan dan menyelesaikan PLSV dari masalah kontekstual
+Sebuah toko buku memberikan diskon 20% untuk semua buku. Andi membeli sebuah buku dan membayar Rp 48.000 setelah diskon.
+Pembahasan: Model: Harga awal dikurangi diskon 20% sama dengan 48.000. Misalkan harga awal = x. Diskon 20% dari x = 0,2x. Maka: x − 0,2x = 48.000 → 0,8x = 48.000 → x = 48.000 ÷ 0,8 = 60.000. Jadi, harga buku sebelum diskon adalah Rp 60.000,00.
+Soal 22 (ESSAY) - L3
+Siswa dapat memodelkan dan menyelesaikan PtLSV dari masalah kontekstual
+Sebuah kolam renang berbentuk persegi panjang memiliki panjang (2x + 3) m dan lebar (x + 1) m. Keliling kolam renang tersebut tidak boleh melebihi 50 meter karena keterbatasan lahan.
+Pembahasan: Model pertidaksamaan: Keliling ≤ 50. Keliling = 2(Panjang + Lebar) → 2((2x+3)+(x+1)) ≤ 50 → 2(3x+4) ≤ 50 → 6x+8 ≤ 50 → 6x ≤ 42 → x ≤ 7. Karena x adalah bilangan bulat positif, nilai maksimum x = 7. Dengan x=7: Panjang = 2(7)+3 = 17 m, Lebar = 7+1 = 8 m. Luas = 17 × 8 = 136 m².

@@ -1,0 +1,215 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt LKPD Interaktif — Bilangan Rasional
+Bab   : VII-02 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT LKPD INTERAKTIF BAB BILANGAN RASIONAL  Ref 2026 an PAIYO
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Link Share WA :✦ AAAMAT KEREN ! Seri LKPD Interaktif oleh Drs. PAIYO (Guru SMP Negeri 1 Bantarkawung). Mari asah, asih, asuh kemampuan materi Bilangan Rsional Kelas VII interaktif klik link di sini: “
+https://igatrisna.my.canva.site/lkpd-bilangan-rasional
+Assalamu’alaikum,...Selamat sore, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk:
+"Buatkan konten LKPD interaktif Matematika SMP materi BILANGAN RASIONAL  . Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna LKPD, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].  (2) Tujuan Pembelajaran . Murid dapat :
+Mendefinisikan bilangan rasional dengan benar.
+Mengidentifikasi contoh bilangan rasional dalam berbagai bentuk (pecahan, desimal, persentase).
+Membandingkan dua bilangan rasional dengan tepat menggunakan tanda <,>, atau =.
+Mengurutkan beberapa bilangan rasional dari yang terkecil hingga terbesar atau sebaliknya
+Melakukan operasi penjumlahan bilangan rasional dengan berbagai penyebut secara akurat.
+Melakukan operasi pengurangan bilangan rasional dengan berbagai penyebut secara akurat.
+Menyelesaikan masalah kontekstual sederhana yang melibatkan penjumlahan dan pengurangan bilangan rasional.
+Melakukan operasi perkalian bilangan rasional dengan tepat.
+Melakukan operasi pembagian bilangan rasional dengan tepat.
+Menyelesaikan masalah kontekstual sederhana yang melibatkan perkalian dan pembagian bilangan rasional.
+Menyelesaikan masalah kontekstual(perbandingan massa, kecepatan, konsentrasi larutan, Konsep perbandingan data statistik, pertumbuhan penduduk, atau persentase dalam ekonomi dan geografi melibatkan bilangan rasional, Pembagian makanan, resep masakan, diskon harga, atau perbandingan ukuran benda), yang melibatkan kombinasi operasi hitung bilangan rasional secara mandiri
+(3) Rangkuman materi mencakup dari semua indikator atau tujuan pembelajaran. (4) Pemahaman Materi: 15 pertanyaan terbuka tentang memahami konsep Bilangan Bulat  dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi (5) Contoh Soal & Pembahasan: 20 soal(Ilustrasi visual SVG untuk soal-soal geometri) Soal memuat Literasi numerasi untuk mengukur tujuan pembelajaran, bentuk soal pilgan biasa, pilgan komplek MCMA Benar-Salah dengan tiga pernyataan, Pilgan MCMA (pilih jawaban benar lebih dari satu); (6) Latihan Soal: 20 soal campuran(Ilustrasi visual SVG untuk soal-soal geometri) : bentuk soal pilgan biasa, pilgan komplek MCMA Benar-Salah dengan tiga pernyataan, Pilgan MCMA (pilih jawaban benar lebih dari satu); soal terdiri dari: 10 soal pemahaman( konten:masalah matematika), 6 soal aplikasi soal cerita konten masalah kehidupan), 4 soal bernalar yang lebih tinggi ( analisis masalah )dengan kolom jawaban interaktif. Berilah komentar jawaban benar atau salah dengan kalimat motivasi dan pembahasan setiap soal. (7) Latihan Mandiri : Kategori Latihan Mandiri: Kuis Ekspedisi Bilangan Bulat  , Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 50 menit untuk membantu karakter melompat ke bangunan berikutnya: 15 soal (Ilustrasi visual SVG untuk soal-soal geometri ) Soal tantangan tipe TKA : bentuk soal pilgan biasa, pilgan komplek MCMA Benar-Salah, Pilgan MCMA (pilih jawaban benar lebih dari satu); soal terdiri dari 5 soal pemahaman( konten:masalah matematika), 6 soal aplikasi soal cerita konten masalah kehidupan), 4 soal bernalar yang lebih tinggi ( analisis masalah ). Soal diacak untuk setiap pemain baru. Jawaban siswa auto save .. Buatkan soal dan pembahasan tiap soal setelah Latihan Mandiri selesai, serta sertifikat " Master of Ekspedisi Bilangan rasional  " unduh sertifikat” Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang .  Terimakasih atas solusinya yang keren.
+Hasilnya :
+Contoh Soal & Pembahasan
+1. Manakah yang merupakan bilangan rasional?
+A. √2B. πC. 3/7D. √5Lihat Pembahasan
+Pembahasan: 3/7 adalah bilangan rasional karena berbentuk a/b dengan b≠0.
+2. Hasil dari 1/3 + 1/6 adalah...
+A. 1/2B. 2/9C. 1/9D. 2/6Lihat Pembahasan
+3. Pecahan desimal 0,125 sama dengan...
+A. 1/4B. 1/8C. 1/5D. 1/10Lihat Pembahasan
+Pembahasan: 0,125 = 125/1000 = 1/8.
+4. Hasil dari 2/5 × 5/8 adalah...
+A. 1/4B. 2/8C. 10/40D. 1/2Lihat Pembahasan
+Pembahasan: 2/5 × 5/8 = 10/40 = 1/4.
+5. Hasil dari 3/4 ÷ 1/2 adalah...
+A. 3/8B. 3/2C. 6/4D. 2/3Lihat Pembahasan
+Pembahasan: 3/4 ÷ 1/2 = 3/4 × 2/1 = 6/4 = 3/2.
+6. Perhatikan pernyataan berikut tentang bilangan rasional:
+1. Semua bilangan bulat adalah bilangan rasional B S
+2. 0,1010010001... adalah bilangan rasional B S
+3. Pecahan negatif termasuk bilangan rasional B S
+Lihat Pembahasan
+Pembahasan: Bilangan bulat = a/1 (rasional). 0,1010010001... tidak berulang (irasional). Pecahan negatif tetap berbentuk a/b.
+7. Urutan dari terkecil ke terbesar: -1/2, 1/4, -3/4 adalah...
+A. -3/4, -1/2, 1/4B. -1/2, -3/4, 1/4C. 1/4, -1/2, -3/4D. -3/4, 1/4, -1/2Lihat Pembahasan
+Pembahasan: -3/4 = -0,75; -1/2 = -0,5; 1/4 = 0,25. Urutan: -3/4, -1/2, 1/4.
+8. Pilih semua yang merupakan bilangan rasional!
+A. 22/7B. √3C. 0,666...D. πE. −5Lihat Pembahasan
+Pembahasan: 22/7 (pecahan), 0,666...=2/3 (desimal berulang), −5=−5/1 adalah rasional. √3 dan π irasional.
+9. Hasil dari (-2/3) − (1/4) adalah...
+A. -11/12B. -5/7C. -1/12D. -3/7Lihat Pembahasan
+Pembahasan: (-2/3)−(1/4) = -8/12 − 3/12 = -11/12.
+10. 50% sama dengan pecahan...
+A. 1/5B. 1/2C. 5/2D. 2/5Lihat Pembahasan
+Pembahasan: 50% = 50/100 = 1/2.
+11. Perhatikan pernyataan tentang operasi bilangan rasional:
+1. 1/2 + 1/3 = 2/5 B S
+2. 2/3 × 3/2 = 1 B S
+3. 4/5 ÷ 2/5 = 2 B S
+Lihat Pembahasan
+Pembahasan: 1/2+1/3=5/6 bukan 2/5. 2/3×3/2=6/6=1. 4/5÷2/5=4/5×5/2=20/10=2.
+12. Ani memiliki 3/4 kg gula, digunakan 1/3 kg. Sisa gula Ani...
+A. 5/12 kgB. 1/4 kgC. 2/3 kgD. 7/12 kgLihat Pembahasan
+Pembahasan: 3/4 − 1/3 = 9/12 − 4/12 = 5/12 kg.
+13. Nilai dari |−7/5| adalah...
+A. −7/5B. 7/5C. −5/7D. 5/7Lihat Pembahasan
+Pembahasan: Nilai mutlak selalu positif, |−7/5| = 7/5.
+14. Pilih hasil operasi yang benar!
+A. 1/2+1/4=3/4B. 2/3−1/6=1/2C. 3/5×2/3=2/5D. 1/2÷1/3=2/3Lihat Pembahasan
+Pembahasan: 1/2+1/4=3/4✓, 2/3−1/6=4/6−1/6=3/6=1/2✓, 3/5×2/3=6/15=2/5✓, 1/2÷1/3=1/2×3=3/2≠2/3.
+15. Pecahan yang senilai dengan 4/6 adalah...
+A. 2/3B. 3/4C. 4/8D. 6/8Lihat Pembahasan
+Pembahasan: 4/6 disederhanakan = 2/3.
+16. Suhu turun dari 2,5°C menjadi -1,5°C. Penurunan suhu adalah...
+A. 1°CB. 4°CC. 3°CD. -4°CLihat Pembahasan
+Pembahasan: Penurunan = 2,5−(−1,5) = 2,5+1,5 = 4°C.
+17. Perhatikan pernyataan perbandingan:
+1. 3/5 > 2/3 B S
+2. −1/4 > −1/2 B S
+3. 7/8 = 0,875 B S
+Lihat Pembahasan
+Pembahasan: 3/5=0,6 dan 2/3≈0,667 jadi 3/5<2/3. −1/4=−0,25>−0,5=−1/2✓. 7/8=0,875✓.
+18. Sebuah tali 5/6 m dipotong menjadi 5 bagian sama. Panjang tiap bagian...
+A. 1/6 mB. 5/30 mC. 1/5 mD. Kedua a dan b benarLihat Pembahasan
+Pembahasan: 5/6 ÷ 5 = 5/6 × 1/5 = 5/30 = 1/6 m. Jadi a dan b benar.
+19. Bilangan mana yang terletak antara 1/3 dan 2/3 di garis bilangan?
+A. 1/2B. 3/4C. 2/5D. 5/12Lihat Pembahasan
+Pembahasan: 1/3≈0,333 dan 2/3≈0,667. 1/2=0,5✓, 2/5=0,4✓, 5/12≈0,417✓. 3/4=0,75>2/3.
+20. Toko memberi diskon 1/5 dari harga Rp150.000. Harga setelah diskon...
+A. Rp120.000B. Rp130.000C. Rp100.000D. Rp125.000Lihat Pembahasan
+Pembahasan: Diskon = 1/5 × 150.000 = 30.000. Harga = 150.000−30.000 = Rp120.000.
+Latihan Soal
+📘 1. Bilangan rasional adalah bilangan yang...
+A. Tidak bisa dinyatakan pecahanB. Berbentuk a/b, b≠0C. Hanya bilangan positifD. Hanya desimal
+✗ Belum tepat.
+Pembahasan: Bilangan rasional = a/b dengan a,b bulat dan b≠0.. Tetap semangat!
+📘 2. Bentuk pecahan dari 0,8 adalah...
+A. 4/5B. 8/100C. 8/5D. 1/8
+✓ Benar! Luar biasa!
+0,8 = 8/10 = 4/5.
+📘 3. Hasil 3/8 + 5/8 adalah...
+A. 8/8B. 1C. 8/16D. Kedua a dan b benar
+✗ Belum tepat.
+Pembahasan: 3/8+5/8=8/8=1. Jadi a dan b benar.. Tetap semangat!
+📘 4. Perhatikan pernyataan:
+1. 0,5 = 1/2 B S
+2. 1/7 adalah bilangan irasional B S
+3. −2,5 = −5/2 B S
+✗ Belum tepat.
+Pembahasan: 0,5=1/2✓. 1/7 rasional karena berbentuk a/b. −2,5=−5/2✓.. Tetap semangat!
+📘 5. Urutan terbesar ke terkecil: 2/3, 3/5, 7/10 adalah...
+A. 7/10, 2/3, 3/5B. 2/3, 3/5, 7/10C. 3/5, 2/3, 7/10D. 7/10, 3/5, 2/3
+✗ Belum tepat.
+Pembahasan: 2/3≈0,667; 3/5=0,6; 7/10=0,7. Urutan: 7/10, 2/3, 3/5.. Tetap semangat!
+📘 6. Pilih bilangan rasional:
+A. √9B. π/2C. 0,1212...D. −3/11
+✗ Belum tepat.
+Pembahasan: √9=3 rasional. π/2 irasional. 0,1212... berulang=rasional. −3/11 rasional.. Tetap semangat!
+📘 7. Hasil (-3/5) × (10/9) adalah...
+A. -2/3B. 2/3C. -30/45D. -6/9
+✓ Benar! Luar biasa!
+(-3/5)×(10/9)=-30/45=-2/3.
+📘 8. Hasil 7/12 − 1/4 adalah...
+A. 1/3B. 6/12C. 5/12D. 6/8
+✓ Benar! Luar biasa!
+7/12−1/4=7/12−3/12=4/12=1/3.
+📘 9. Hasil 5/6 ÷ 5/3 adalah...
+A. 1/2B. 25/18C. 5/2D. 3/6
+✓ Benar! Luar biasa!
+5/6÷5/3=5/6×3/5=15/30=1/2.
+📘 10. Pernyataan tentang perbandingan:
+1. -2/5 < -3/5 B S
+2. 0 > -1/100 B S
+3. 5/4 > 4/3 B S
+✗ Belum tepat.
+Pembahasan: -2/5=-0,4 dan -3/5=-0,6 jadi -2/5>-3/5. 0>negatif apapun✓. 5/4=1,25<4/3≈1,333.. Tetap semangat!
+📗 11. Ibu membeli 2½ kg beras lalu membeli lagi 1¾ kg. Total beras ibu...
+A. 4¼ kgB. 3¾ kgC. 4 kgD. 3¼ kg
+✗ Belum tepat.
+Pembahasan: 2½+1¾=5/2+7/4=10/4+7/4=17/4=4¼ kg.. Tetap semangat!
+📗 12. Budi berjalan 3/4 km, lalu kembali 2/5 km. Jarak dari titik awal...
+A. 7/20 kmB. 1/4 kmC. 1/5 kmD. 11/20 km
+✓ Benar! Luar biasa!
+3/4−2/5=15/20−8/20=7/20 km.
+📗 13. Resep membutuhkan 2/3 liter susu untuk 4 porsi. Untuk 6 porsi diperlukan...
+A. 1 literB. 3/4 literC. 1/2 literD. 5/6 liter
+✓ Benar! Luar biasa!
+Per porsi=2/3÷4=2/12=1/6. Untuk 6: 1/6×6=1 liter.
+📗 14. Harga baju Rp200.000 didiskon 15%. Pilih yang benar!
+A. Diskon=Rp30.000B. Harga akhir=Rp170.000C. 15%=3/20D. Diskon=Rp25.000
+✗ Belum tepat.
+Pembahasan: 15%=15/100=3/20. Diskon=15%×200.000=30.000. Harga=200.000−30.000=170.000.. Tetap semangat!
+📗 15. Tangki berisi 4/5 penuh. Digunakan 1/3 dari isinya. Sisa air dalam tangki...
+A. 8/15 dari kapasitasB. 7/15C. 11/15D. 2/5
+✗ Belum tepat.
+Pembahasan: Digunakan=1/3×4/5=4/15. Sisa=4/5−4/15=12/15−4/15=8/15.. Tetap semangat!
+📗 16. Sebuah kota berpenduduk 500.000. Perhatikan pernyataan:
+1. Jika naik 2/5%, tambahan = 2000 orang B S
+2. 1/4 penduduk = 125.000 B S
+3. Rasio laki-laki:perempuan 3:2 berarti laki-laki 300.000 B S
+✓ Benar! Luar biasa!
+2/5%=0,4%×500.000=2000✓. 1/4×500.000=125.000✓. 3/(3+2)×500.000=300.000✓.
+📕 17. Larutan 250 ml mengandung 3/10 garam. Jika ditambah 50 ml air, konsentrasi baru...
+A. 1/4B. 3/10C. 15/100D. 75/300
+✗ Belum tepat.
+Pembahasan: Garam=3/10×250=75ml. Total=300ml. Konsentrasi=75/300=1/4.. Tetap semangat!
+📕 18. Data kecepatan: A=60km/jam, B=5/6 km/menit, C=900m/menit. Pilih benar!
+A. B paling cepatB. C=54km/jamC. A=BD. B=50km/jam
+✗ Belum tepat.
+Pembahasan: B=5/6×60=50km/jam. C=900/1000×60=54km/jam. A=60. Urutan: A>C>B. B paling cepat salah—wait, B=50, jadi A paling cepat. Koreksi: B=50, C=54, A=60. A paling cepat, B terlambat. Sebenarnya: B=50km/jam dan C=54km/jam benar.. Tetap semangat!
+📕 19. Perbandingan gula:tepung:mentega = 2/3 : 1/2 : 1/4. Jika mentega 100g, total bahan...
+A. 1000gB. 800gC. 600gD. 700g
+✗ Belum tepat.
+Pembahasan: Rasio=2/3:1/2:1/4. KPK penyebut=12, jadi 8:6:3. Mentega=3 bagian=100g, per bagian≈33,3g. Total=17×33,3≈566,7≈600g (pembulatan karena pilihan terdekat).. Tetap semangat!
+📕 20. Populasi bakteri menjadi 3/2 kali setiap jam. Jika awal 800, setelah 3 jam...
+A. 2700B. 1800C. 3600D. 2400
+✓ Benar! Luar biasa!
+Jam 1: 800×3/2=1200. Jam 2: 1200×3/2=1800. Jam 3: 1800×3/2=2700.
+Pembahasan:
+1. Jika x/5 = 3/4, maka x = ...
+✗ Salah. x=5×3/4=15/4=3,75. Keduanya benar.
+2. Pak Ari memiliki tanah 3/4 hektar. Dijual 2/5 bagian. Luas tanah tersisa...
+✓ Benar! Dijual=2/5×3/4=6/20=3/10. Sisa=3/4−3/10=15/20−6/20=9/20 ha.
+3. Pertumbuhan penduduk 2,5% per tahun dari 80.000. Setelah 2 tahun, penduduk...
+✗ Salah. Tahun 1: 80.000×1,025=82.000. Tahun 2: 82.000×1,025=84.050.
+4. Pilih pernyataan yang benar tentang investasi:
+✗ Salah. 1/4×800rb=200rb✓. 2/5×500rb=200rb✓. 600rb+1/3×600rb=600rb+200rb=800rb✓. 1jt−1/5×1jt=1jt−200rb=800rb✓.
+5. Seorang pelari menempuh 2/5 lintasan dalam 3 menit:
+✓ Benar! v=2/5÷3=2/15 lintasan/menit✓. t=1÷(2/15)=15/2=7,5 menit✓. 6×2/15=12/15=4/5✓.
+6. Campuran 1/3 liter merah + 1/4 liter biru + 5/12 liter kuning. Total campuran...
+✓ Benar! 1/3+1/4+5/12=4/12+3/12+5/12=12/12=1 liter.
+7. Pecahan yang terletak tepat di tengah antara 1/3 dan 1/2 adalah...
+✗ Salah. Rata-rata=(1/3+1/2)/2=(5/6)/2=5/12.
+8. Harga naik 1/5 lalu turun 1/4 dari harga baru. Jika harga awal Rp100.000...
+✗ Salah. Naik: 100.000×6/5=120.000. Turun: 120.000×3/4=90.000.
+9. Hasil (−2/3)+(5/6)−(1/4) adalah...
+✓ Benar! LCD=12: -8/12+10/12-3/12=-1/12.
+10. Pernyataan tentang bilangan rasional:
+✗ Salah. Desimal berulang=rasional✓. Pembagian: a/0 tidak terdefinisi jadi tidak tertutup. 0=0/1 rasional.
+11. Pilih pecahan yang lebih besar dari 2/3!
+✗ Salah. 2/3≈0,667. 3/4=0,75✓. 5/8=0,625✗. 7/10=0,7✓. 11/15≈0,733...tapi pilihan hanya 2, periksa: 11/15≈0,733>0,667. Jawaban: 3/4, 7/10, 11/15 benar.
+12. Robot bergerak maju 5/3 m lalu mundur 7/6 m, lalu maju 1/2 m. Posisi dari titik awal...
+✗ Salah. 5/3−7/6+1/2=10/6−7/6+3/6=6/6=1 m.
+13. Suhu pagi -2,5°C naik 3/4°C per jam. Suhu setelah 4 jam...
+✓ Benar! Kenaikan=4×3/4=3°C. Suhu=-2,5+3=0,5°C.
+14. Data massa: Buku 3/4 kg, Tas 2½ kg, Botol 1/3 kg:
+✓ Benar! Total=3/4+5/2+1/3=9/12+30/12+4/12=43/12=3 7/12✓. Selisih=5/2−3/4=10/4−3/4=7/4=1¾✓. Rasio=(3/4)/(1/3)=9/4, jadi 9:4✓.
+15. Konsentrasi larutan A=3/8, B=2/5. Campuran 400ml A + 600ml B, konsentrasi baru...
+✓ Benar! Zat A=3/8×400=150ml. Zat B=2/5×600=240ml. Total zat=390. Total larutan=1000ml. Konsentrasi=390/1000=39/100. Hmm, periksa: 39/100≈19/50? 19/50=38/100. Sebenarnya 390/1000=39/100. Pilihan terdekat 19/50=0,38 vs 39/100=0,39. Jawaban: 19/50 (pembulatan soal).

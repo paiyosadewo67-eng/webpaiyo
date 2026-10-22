@@ -1,0 +1,169 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Simulasi Asesmen Sumatif 1 — Bilangan Bulat
+Bab   : VII-01 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT SIMULASI ASESMEN SUMATIF 1 BAB BILANGAN BULAT KELAS VIII
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+Hasilnya.
+Link  Share wa =
+Halo! Saya baru saja menyelesaikan "Simulasi Asesmen Sumatif 1 BAB BILANGAN BULAT Kelas VII" SMP Negeri 1 Bantarkawung yang dikembangkan oleh Drs. PAIYO. Uji kecerdasan kemampuanmu sekarang menggunakan Link berikut:
+https://igatrisna.my.canva.site/asesmen-sumatif-1-bab-bilangan-bulat
+Assalamu’alaikum,.. selamat malam, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantun untuk :
+Buatkan Simulasi  “ASESMEN SUMATIF 1 BAB BILANGAN BULAT KELAS VII TP 2026 / 2027 ;  model TKA. dengan Judul
+“ ASESMEN SUMATIF 1 BAB BILANGAN BULAT KELAS VII  SMP  "
+SMP NEGERI 1 BANTARKAWUNG KABUPATEN BREBES
+TAHUN PELAJARAN 2026/2027"
+yang tampilannya mirip dengan website simulasi TKA kemendikdasmen. Tujuan game: Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait  Bilangan Bulat ;Nama pengembang: [Drs. PAIYO].
+Tahapr 1. Buatkan entri pemain game, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+tahab 2: Model soal Pilgan biasa( 50% ), Pilgan komplek B/G (25%), Pilgan MCMA pilihan jawaban benar lebih dari satu(25%):meliputi soal tipe TKA/AKM( Jumlah soal sesuaikan dengan input jumlah soal) Soal Model 1 pilihan ganda (generated otomatis ) Khusus soal model 2 ganda kompleks dengan 3 pernyataan dengan kategori pilihan jawaban benar atau salah dibuat dalam bentuk tabel Khusus soal model 3 pilihan ganda komplek dengan 4 pernyataan dan jawaban benar lebih dari 1 dibuat dalam bentuk tabel , Semua soal harus ada stimulus tipe TKA / AKM. tiap soal  menggunakan stimulus sendiri – sendiri. Jika diperlukan adanya gambar maka stimulus boleh berisi gambar penunjang untuk melengkapi stimulus baik gambar dalam bentuk infografis maupun dalam bentuk grafik/ tabel. Ilustrasi visual SVG untuk soal-soal geometri
+Fitur terpisah antara Model Pilgan biasa, Pilgan MCMA B/S, Pilgan MCMA Pilihan jawaban benar lebih dari satu , Uraian. ada link selanjutnya antar model soal
+ (7) Uraian : 2 soal pertanyaan terbuka dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi
+tahap 3 indikator soal : , munculkan indikator tiap soal dan bentuk pilgannya dan dengan indikator soal seperti : pada lampiran file
+tahap 4 : Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 50 menit untuk membantu karakter membawa paket ke rumah berikutnya. Banyak soal: 22 soal. Capaian Pembelajaran: Peserta didik dapat Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Bilangan Bulat
+ tahap 5 : Berikan rekap hasil game skor, soal dan kunci jawaban: Slide akhir. Buatkan rekap rangking 10 terbesar di halaman awal, buatkan pula rangkuman materi , soal dan pembahasannya setelah game selesai,Pada soal dan pembahasan di beri pasword nama pengembang; serta sertifikat " Master of Ekspedisi  Bilangan Bulat "; unduh sertifikat ; pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang);link Navigasi untuk cek soal yang belum di kerjakan atau ralat jawaban;
+Fitur Utama yang di harapkan:
+1. Latarbelakang judul
+“ ASESMEN SUMATIF 1 BAB BILANGAN BULAT KELAS VII  SMP  "
+SMP NEGERI 1 BANTARKAWUNG KABUPATEN BREBES TAHUN PELAJARAN 2026/2027"
+Halaman Beranda (Landing Page):
+Formulir entri data peserta (Nama, Kelas, No Absen, dan Sekolah).
+Top 10 Master: Papan peringkat otomatis yang menampilkan 10 nilai tertinggi.
+Fitur "Daftar Nilai": dengan mode Klik langsung tampak rekap nilai “ Nama, kelas, no absen, sekolah, skor , tanggal mengerjakan”
+Fitur “ Share wa “ dengan mode “ ais pree “
+Mekanisme Permainan:
+Visual Pengantar Paket: Karakter siswa akan mengantar paket ke rumah berikutnya seiring kemajuan pengerjaan soal.
+Timer 60 Menit: Penghitung waktu mundur yang akan otomatis mengakhiri sesi jika waktu habis.
+Navigasi Soal: Sidebar untuk berpindah antar soal, mengecek soal yang belum dikerjakan, atau meralat jawaban.
+Model Soal TKA/AKM (Total 22 Soal):
+Pilihan Ganda Biasa (50% =  10 Soal): 1 jawaban benar.
+Pilihan Ganda Kompleks (25% = 8 soal ): Tabel Benar/Salah (3 pernyataan).
+MCMA (25% = 7 soal ): Pilihan jawaban benar lebih dari satu (4 pernyataan).
+Uraian : 2 soal pertanyaan terbuka dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi
+Setiap soal dilengkapi dengan Stimulus dan Indikator yang relevan dengan elemen Bilangan Bulat
+Ilustrasi SVG: Gambar denah, grafik, dan bangun geometri untuk memperjelas stimulus.
+Halaman Hasil (Result Slide):
+Rekap skor, jumlah jawaban benar, salah, dan waktu pengerjaan.
+Sertifikat "Master of Ekspedisi Bilangan Bulat": Dapat diunduh/dicetak langsung dengan nama peserta.
+Rangkuman & Pembahasan: Bagian ini diproteksi password menggunakan nama pengembang: Drs. PAIYO.
+Unduh Soal & Pembahasan (Word): Menambahkan tombol "Unduh Soal & Pembahasan (Word)" di halaman hasil (setelah simulasi selesai). Fitur ini akan mengunduh file .doc yang berisi daftar soal, indikator, stimulus, dan kunci jawaban.
+Hasilnya.
+Link  Share wa =
+Halo! Saya baru saja menyelesaikan "Simulasi Asesmen Sumatif 1 BAB BILANGAN BULAT Kelas VII" SMP Negeri 1 Bantarkawung yang dikembangkan oleh Drs. PAIYO. Uji kecerdasan kemampuanmu sekarang menggunakan Link berikut:
+https://igatrisna.my.canva.site/asesmen-sumatif-1-bab-bilangan-bulat
+Hasil
+Soal dan Pembahasannya
+🔑 Soal & Pembahasan (Dilindungi Password)
+✓ Password benar. Pembahasan terbuka.
+Soal 1 (Bilangan Bulat)
+Disajikan teks tentang perubahan suhu ekstrem, peserta didik dapat menentukan suhu akhir.
+Jawaban Anda: A. -3°C
+Pembahasan: Suhu awal 5°C, turun 8°C → 5 - 8 = -3°C
+Soal 2 (Bilangan Bulat)
+Disajikan teks letak nilai pada garis bilangan, peserta didik dapat mengurutkan nilai dari terkecil ke terbesar.
+Jawaban Anda: A. S, P, Q, R
+Pembahasan: Urutan: -12, -8, -3, 2 → S, P, Q, R
+Soal 3 (KPK dan FPB)
+Disajikan soal cerita jadwal kunjungan perpustakaan, peserta didik dapat menentukan tanggal pertemuan berikutnya.
+Jawaban Anda: B. 12 Maret
+Pembahasan: KPK(4,6) = 12. Tanggal 1 + 12 = 13 Maret
+Soal 4 (Pecahan)
+Disajikan gambar SVG lingkaran yang dibagi dan diarsir, peserta didik dapat menentukan nilai pecahannya.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 8 bagian total, 3 diarsir → 3/8
+Soal 5 (Operasi Bilangan Bulat)
+Disajikan gambar SVG garis bilangan yang merepresentasikan operasi hitung, peserta didik dapat memilih persamaan yang tepat.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: Dari 0 ke -3 (langkah 1), lalu dari -3 ke 4 berarti +7. Jadi -3 + 7 = 4
+Soal 6 (Operasi Perkalian Pecahan)
+Disajikan takaran resep kue, peserta didik dapat menghitung total bahan untuk pesanan tertentu.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1,5 × 3,5 = 5,25 cangkir
+Soal 7 (Penerapan Operasi Campuran)
+Disajikan aturan skor ujian, peserta didik dapat menghitung nilai total.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: Kosong = 40-30-5 = 5. Skor = (30×4)+(5×(-2))+(5×(-1)) = 120-10-5 = 105
+Soal 8 (Penerapan Operasi Campuran)
+Disajikan masalah pergerakan lift, peserta didik dapat menentukan posisi lantai terakhir.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 5 + 8 - 11 = 2. Teknisi di Lantai 2
+Soal 9 (Bilangan Bulat)
+Disajikan masalah nilai mutlak, peserta didik dapat menentukan jarak dua bilangan pada garis bilangan.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: Jarak = |5 - (-7)| = |5+7| = 12
+Soal 10 (Operasi Bilangan Bulat)
+Disajikan masalah pembagian pecahan desimal, peserta didik dapat menghitung hasil bagi.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 7,5 ÷ 1,5 = 5 potongan
+Soal 11 (Bilangan Bulat)
+Disajikan teks posisi kapal selam, penyelam, dan burung, peserta didik dapat mengevaluasi pernyataan Benar/Salah.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar (-50m). 2) Benar (15m < 20m). 3) Salah (|20-(-50)|=70m)
+Soal 12 (Pertidaksamaan Bilangan)
+Disajikan data saldo tabungan, peserta didik dapat mengevaluasi pernyataan pertidaksamaan.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar (-25.000 < -10.000). 2) Salah (-10.000 < 15.000). 3) Benar (15.000 > -25.000)
+Soal 13 (Faktorisasi Prima)
+Disajikan masalah pembagian donat dan faktorisasi prima, peserta didik dapat menentukan Benar/Salah.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar (FPB=4×3=12). 2) Benar. 3) Salah (KPK=2³×3²=72)
+Soal 14 (Jenis dan Perbandingan Pecahan)
+Disajikan nilai pecahan, desimal, persen, peserta didik mengevaluasi perbandingan.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: Anton=0,80; Bima=0,85; Citra=0,75. Urutan: Bima>Anton>Citra
+Soal 15 (Estimasi Hasil Penjumlahan)
+Disajikan daftar harga belanjaan, peserta didik mengevaluasi estimasi total.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar. 2) Benar (15.000+25.000+10.000=50.000). 3) Salah, estimasi cukup akurat
+Soal 16 (Sifat Operasi Hitung)
+Disajikan langkah penyelesaian perkalian, peserta didik mengevaluasi sifat komutatif dan asosiatif.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar (komutatif: a×b=b×a). 2) Benar (asosiatif: pengelompokan). 3) Salah (hasil tetap sama)
+Soal 17 (Pecahan)
+Disajikan permasalahan pecahan campuran, peserta didik mengevaluasi pernyataan konversi.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar (2×4+3=11, jadi 11/4). 2) Benar (11/4+3/2=11/4+6/4=17/4=4¼). 3) Benar (½=0,50)
+Soal 18 (Operasi Bilangan Bulat)
+Disajikan operasi bilangan bulat negatif, peserta didik mengevaluasi hasil operasi.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: Kenaikan=5×3=15°C. Suhu akhir=-18+15=-3°C. -3<0, jadi masih di bawah 0
+Soal 19 (Bilangan Bulat)
+Disajikan data suhu 4 kota, peserta didik memilih pernyataan benar (lebih dari satu).
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar (-12 terkecil). 2) Salah (-5<2). 3) Benar (|2-10|=8). 4) Salah (-5>-12)
+Soal 20 (Faktor dan Kelipatan)
+Disajikan kasus faktor dan kelipatan, peserta didik memilih pernyataan benar.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1,2,4 Benar. 3 Salah (kelipatan ≥ bilangan itu sendiri)
+Soal 21 (Faktorisasi Prima)
+Disajikan masalah interval lampu berkedip, peserta didik memilih pernyataan benar.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar. 2) Benar. 3) Salah (FPB=5). 4) Benar
+Soal 22 (Operasi Pecahan)
+Disajikan data berat bahan kue, peserta didik memilih pernyataan benar tentang konversi.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar (0,75=3/4). 2) Benar (0,5 terkecil). 3) Salah (desimal biasa). 4) Benar (0,75+0,75=1,5)
+Soal 23 (Estimasi Perkalian dan Pembagian)
+Disajikan masalah jarak tempuh dan bensin, peserta didik memilih pernyataan logis.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar. 2) Benar (15×4=60). 3) Salah. 4) Benar (62,16>60)
+Soal 24 (Estimasi Operasi Campuran)
+Disajikan masalah panen dan distribusi, peserta didik memilih pernyataan benar.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar. 2) Benar (300/5=60). 3) Salah (seharusnya (12×24,5)/5). 4) Salah (294/5=58,8>50)
+Soal 25 (Operasi Bilangan Bulat)
+Disajikan masalah operasi campuran bilangan bulat, peserta didik memilih pernyataan benar.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 1) Benar (120-45=75). 2) Benar (120-45+30-80=25). 3) Salah (maks=120). 4) Benar (120+30=150)
+Soal 26 (Penerapan Operasi Campuran)
+Peserta didik dapat merancang solusi operasi campuran bilangan bulat dalam kehidupan sehari-hari.
+Jawaban Anda: (tidak dijawab)
+Pembahasan: 500.000 + 75.000 - 40.000 + 120.000 = 655.000
+Soal 27 (KPK dan FPB)
+Peserta didik dapat menyelesaikan permasalahan KPK dalam konteks kehidupan sehari-hari.
+Jawaban Anda: 07.00
+Pembahasan: KPK(20,30)=60 menit. Jadi pukul 06.00 + 60 menit = 07.00

@@ -1,0 +1,255 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Escape Room — Bilangan Bulat
+Bab   : VII-01 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT GAME INTERAKTIF AAAMAT KEREN ESCAPE ROOM MATEMATIKA BILBUL
+Link Share wa “ GAME ESCAPE ROOM AAAMAT KEREN BILANGAN BULAT “ =
+https://igatrisna.my.canva.site/game-escape-room-aaamat-keren-bilbul
+Escape Room Matematika Bilangan Bulat yang bisa langsung digunakan di Genially, CoSpaces Edu, Construct 3, GDevelop, Wordwall, Scratch, Unity, bahkan dapat dikembangkan menjadi Web HTML5.
+🎮 PROMPT GAME INTERAKTIF
+AAAMAT KEREN
+ESCAPE ROOM MATEMATIKA
+BILANGAN BULAT
+IDENTITAS GAME
+Judul
+🧩 Escape Room Bilangan Bulat
+Subjudul
+Misi HOTS Numerasi
+Tema
+🔷 Futuristic STEM Classroom
+🔷 Hologram Matematika
+🔷 Edugame Modern
+CERITA
+Robot AI sekolah bernama
+🤖 AAMATBOT
+kehilangan seluruh kode energi.
+Seluruh pintu laboratorium terkunci.
+Agar dapat keluar dari Escape Room,
+peserta didik harus menyelesaikan misi Bilangan Bulat.
+Setiap jawaban benar membuka satu pintu digital.
+Target akhir:
+🏆 Menyelamatkan Laboratorium Matematika AAAMAT KEREN.
+DESAIN VISUAL
+Ukuran
+1920 × 1080
+16 : 9
+Ultra HD
+Pixar Animation
+Unreal Engine 5
+Blue Neon
+Orange Glow
+Modern Hologram
+Cyber Classroom Indonesia
+Floating Mathematical Objects
+Volumetric Lighting
+MENU UTAMA
+▶ Mulai Misi
+📖 Petunjuk
+🏆 Leaderboard
+🎵 Musik
+⚙ Pengaturan
+🚪 Keluar
+PETA GAME
+Ada 8 Ruangan.
+START
+↓
+RUANG 1
+Gerbang Bilangan
+↓
+RUANG 2
+Operasi Penjumlahan
+↓
+RUANG 3
+Operasi Pengurangan
+↓
+RUANG 4
+Operasi Campuran
+↓
+RUANG 5
+Perbandingan Bilangan
+↓
+RUANG 6
+Koordinat
+↓
+RUANG 7
+Misi HOTS
+↓
+RUANG 8
+Final Boss
+↓
+EXIT
+RUANG 1
+Gerbang Bilangan
+Robot berkata
+"Temukan pasangan bilangan yang benar."
+Puzzle drag and drop.
+Contoh
+-5 lebih kecil dari -2
+8 lebih besar dari -3
+0 berada di tengah
+Jika benar
+Pintu membuka.
+RUANG 2
+Penjumlahan Bilangan Bulat
+Kode hologram:
+(-8)+(+13)=?
+Pilihan
+3
+4
+5
+6
+Jawaban benar
+5
+Kode digital aktif.
+RUANG 3
+Pengurangan
+Robot laser memberikan soal.
+12−(−8)=
+Timer
+45 detik.
+Jika benar
+Lampu hijau menyala.
+RUANG 4
+Operasi Campuran
+Selesaikan
+(-4)+9−12+7
+Puzzle angka.
+Jawaban membuka laci.
+RUANG 5
+Tantangan Garis Bilangan
+Pemain menyeret karakter.
+Tujuan:
+Berhenti di koordinat benar.
+Contoh
+Mulai di -3
+Maju 8 langkah.
+Berhenti di?
+RUANG 6
+Koordinat
+Karakter harus menuju titik
+(-2)
+(+5)
+(-7)
+melalui lift digital.
+RUANG 7
+MISI HOTS
+Studi Kasus
+Suhu freezer
+Pukul 08.00
+-12°C
+Naik
+9°C
+Kemudian turun
+15°C
+Berapa suhu akhir?
+MCMA
+Pilih semua benar.
+☐ Suhu akhir negatif
+☐ Lebih rendah daripada awal
+☐ Sama dengan -18
+☐ Sama dengan -10
+RUANG 8
+FINAL BOSS
+🤖 Robot AI
+Mengeluarkan
+8 kode matematika.
+Harus diselesaikan dalam
+180 detik.
+Jika benar
+Kode terakhir muncul.
+EXIT terbuka.
+SISTEM SKOR
+Jawaban benar
++100
+Bonus cepat
++50
+Tanpa bantuan
++25
+Combo
++20
+BINTANG
+⭐⭐⭐
+Semua benar
+⭐⭐
+Ada sedikit salah
+⭐
+Berhasil keluar
+HADIAH
+🏆 Medali Digital
+🥇 Gold
+🥈 Silver
+🥉 Bronze
+LEADERBOARD
+Nama
+Nilai
+Waktu
+Akurasi
+Level
+FITUR INTERAKTIF
+✔ Drag and Drop
+✔ Klik Objek
+✔ Timer
+✔ Sound Effect
+✔ Voice Robot
+✔ Efek Cahaya
+✔ Animasi Pintu
+✔ Hologram Bergerak
+✔ Badge
+✔ Unlock Level
+✔ Confetti
+✔ Musik Futuristik
+KARAKTER
+👨‍🏫 Pak Paiyo
+Kemeja panjang biru muda
+Dasi
+Peci hitam
+ID Card Guru
+Sebagai mentor.
+Balon dialog
+"Berpikir kritis dimulai dari memahami konsep. Terus semangat, setiap tantangan pasti ada solusinya!"
+👧 Zulfa
+Memberikan petunjuk.
+👦 Rafly
+Memberi motivasi.
+👧 Anis
+Membaca soal.
+👦 Atta
+Menunjukkan petunjuk.
+🤖 AAMATBOT
+Penjaga Escape Room.
+EFEK VISUAL
+✨ Floating Numbers
+✨ Laser Scanner
+✨ Neon Buttons
+✨ Blue Hologram
+✨ Orange Glow
+✨ Particle Effect
+✨ Digital Lock
+✨ Radar Scan
+✨ Progress Bar
+✨ Animated Portal
+PENUTUP GAME
+Layar berubah menjadi hologram emas.
+🏆
+MISSION COMPLETE
+🎉 SELAMAT!
+ANDA BERHASIL MENYELESAIKAN
+ESCAPE ROOM
+BILANGAN BULAT
+ASAH • ASIH • ASUH MATEMATIKA
+BERPIKIR KRITIS
+BERNALAR LOGIS
+MEMECAHKAN MASALAH
+⭐ AAAMAT KEREN ⭐
+💡 Rekomendasi Platform
+Dari pengalaman Bapak membuat game sebelumnya, saya menyarankan urutan berikut:
+Genially ⭐⭐⭐⭐⭐ — paling cocok untuk Escape Room edukasi dengan tampilan profesional, mudah ditautkan ke QR Code LKPD, dan mendukung navigasi antar-ruangan.
+GDevelop ⭐⭐⭐⭐⭐ — jika ingin game benar-benar interaktif dengan timer, skor, animasi, dan ekspor HTML5 tanpa perlu coding.
+Construct 3 ⭐⭐⭐⭐☆ — sangat baik untuk game bergaya profesional dengan logika visual.
+Scratch ⭐⭐⭐☆☆ — cocok untuk pembelajaran dan mudah dimodifikasi oleh siswa.
+CoSpaces Edu ⭐⭐⭐⭐☆ — pilihan terbaik jika Bapak ingin membuat Escape Room dalam bentuk 3D yang dapat dijelajahi.
+Menurut saya, seri Escape Room Matematika AAAMAT KEREN akan sangat menarik jika dikembangkan untuk setiap bab SMP (Bilangan Bulat, Pecahan, Aljabar, PLSV, PtLSV, SPLDV, Relasi & Fungsi, Transformasi, Lingkaran, Peluang, dan lainnya) sehingga menjadi satu paket media pembelajaran digital yang utuh dan khas karya Bapak. Semoga bermanfaat dan menjadi amal jariyah. Aamiin.

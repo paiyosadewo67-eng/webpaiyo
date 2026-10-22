@@ -1,0 +1,307 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Kuis Game TKA Geometri — Pythagoras
+Bab   : VIII-05 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT KUIS GEME INTERAKTIF TKA GEOMETRI PYTHAGORAS Ref 2026
+AI Canva - Canva
+https://www.canva.com/ai
+SIMULASI  TKA ELEMEN GEOMETRI  MATEMATIKA SMP NENERI 1 BANTARKAWUNG
+G.2 Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Teorema Pythagoras.
+Assalamu’alaikum,.. selamat pagi, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantuna untuk :
+"Buatkan konten Simulasi TKA Elemen Geometri Pytagoras  Matematika SMP Negeri 1 Bantarkawung. Nama pengembang: [Drs. PAIYO].
+Struktur: (1) Header kolom : entri pengguna Simulasi TKA Elemen Geometri , Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+(2) Tujuan Pembelajaran : Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Elemen Geometri Pytagoras  .
+(3)Simulasi TKA Elemen Geometri Pytagoras  : Kuis Ekspidisi TKA Elemen Geometri Pytagoras  , Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 30 menit untuk membantu karakter melompat ke toko berikutnya: 10 soal tantangan : Ilustrasi visual SVG untuk soal-soal geometri; munculkan indikator tiap soal dan bentuk pilgannya dan dengan indikator soal yang sesuai :
+1. Memahami konsep rumus dan bunyi Teorema Pythagoras ada 1 soal; Pilgan MCMA
+2. Menyelesaikan soal cerita navigasi kapal terkait Teorema Pythagoras pilgan biasa
+3. Menyelesaikan soal cerita panjang tangga dan dinding yang tidak terjangkau terkait Teorema Pythagoras Pilgan MCMA
+4. Menyelesaikan soal cerita sesorang yang menyebrang sungai terkait Teorema Pythagoras pilgan biasa
+5. Menyelesaikan soal cerita seorang anak main layang layang terkait Teorema Pythagoras Pilgan MCMA
+6. Menyelesaikan soal cerita pengamat mecusuar yang melihat kapal terkait Teorema Pythagoras Pilgan MCMA
+7. Bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Teorema Pythagoras ada 1 soal : Pilgan MCMA
+8. Bernalar yang lebih tinggi untuk menentukan panjang diagonal sisi dan panjang diagonal ruang pada balok (tampilkan gambar ) terkait Teorema Pythagoras Pilgan MCMA
+9. Bernalar yang lebih tinggi untuk menentukan tingi limas T.ABC (tampilkan gambar ) terkait Teorema Pythagoras Pilgan MCMA
+10. Bernalar yang lebih tinggi untuk menentukan tinggi kerucut  (tampilkan gambar ) terkait Teorema Pythagoras Pilgan biasa
+(5) Pemahaman : ada 10 soal sesuai indikator soal. Variasi soal 1 tingkat mudah
+(6) Latihan Soal:  ada 10 soal sesuai indikator , variasi soal 2 tingkat sedang
+(7) Latihan Mandiri: ada 10 soal, variasi soal tingkat HOTS Litersi Numerasi Penalaran tingkat SMP
+Soal diacak untuk setiap pemain baru. Jawaban siswa auto save .. Buatkan soal dan pembahasan tiap soal setelah Latihan Mandiri selesai, buatkan pula rangkuman materi , serta sertifikat " Master of Geometri Pytagoras  " unduh sertifikat” Password untuk pembahasan quiz: Drs. PAIYO (sesuai nama pengembang). Pantau progress siswa melalui tab "Daftar Nilai" Modal dengan tabel lengkap (nama, kelas, sekolah, skor per bagian:Pemahaman materi;Latihan Soal; Latihan mandiri, tanggal) Tombol "Nilai" di header untuk akses cepat.Data tersimpan real-time dengan Data SDK, link Navigasi untuk cek soal yang belum di kerjakan atau ralat jawaban,
+Revisi :
+Hasilnya:
+KUIS GAME INTERAKTIF  TKA “ ELEMEN GEOMETRI PYTHAGORAS”
+Link Game Interaktif TKA GEOMETRI PYTHAGORAS  =  https://igatrisna.my.canva.site/untitled-app-simulasi-tka-geometri-pythagoras
+Ini adalah aplikasi yang cukup kompleks, jadi saya akan membuatnya selengkap mungkin dengan semua fitur yang diminta.
+Simulasi TKA Geometri Pythagoras sudah jadi, Pak Paiyo! 🎉
+Berikut fitur yang sudah dibuat:
+Form login dengan data siswa (nama, kelas, no absen, sekolah)
+Timer 30 menit yang berjalan selama mengerjakan soal
+4 bagian soal: Simulasi Ekspedisi (10 soal MCMA & biasa), Pemahaman (mudah), Latihan (sedang), Mandiri (HOTS)
+Ilustrasi SVG untuk setiap soal geometri (segitiga, balok, limas, kerucut)
+Navigasi soal dengan indikator dot untuk cek soal yang belum dikerjakan
+Pembahasan terkunci dengan password "Drs. PAIYO"
+Rangkuman materi lengkap tentang Teorema Pythagoras
+Sertifikat "Master of Geometri Pythagoras" yang bisa diunduh
+Daftar Nilai yang tersimpan di Canva Sheet secara real-time
+Soal diacak untuk setiap pemain baru
+Coba isi form login dan mulai kerjakan simulasi! Ada yang perlu diubah atau ditambahkan? 😊
+Pembahasan Pemahaman — Skor: 100/100
+✅ Soal 1: Konsep dasar Pythagoras
+Rumus Teorema Pythagoras pada segitiga siku-siku dengan sisi a, b, dan hipotenusa c adalah...
+abc
+Jawaban Anda: A
+Jawaban Benar: A
+💡 Penjelasan:
+Teorema Pythagoras: a² + b² = c², di mana c adalah hipotenusa.
+✅ Soal 2: Menghitung hipotenusa
+Segitiga siku-siku memiliki sisi 3 cm dan 4 cm. Berapakah hipotenusanya?
+34?
+Jawaban Anda: A
+Jawaban Benar: A
+💡 Penjelasan:
+c = √(3² + 4²) = √(9 + 16) = √25 = 5 cm
+✅ Soal 3: Menghitung sisi siku-siku
+Hipotenusa segitiga siku-siku = 13 cm, salah satu sisi = 5 cm. Sisi lainnya?
+5?13
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+b = √(13² - 5²) = √(169 - 25) = √144 = 12 cm
+✅ Soal 4: Tripel Pythagoras
+Manakah yang merupakan tripel Pythagoras?
+Jawaban Anda: A
+Jawaban Benar: A
+💡 Penjelasan:
+3² + 4² = 9 + 16 = 25 = 5². Jadi (3,4,5) adalah tripel Pythagoras.
+✅ Soal 5: Identifikasi segitiga siku-siku
+Segitiga dengan sisi 6, 8, dan 10 cm. Apakah segitiga siku-siku?
+Jawaban Anda: A
+Jawaban Benar: A
+💡 Penjelasan:
+6² + 8² = 36 + 64 = 100 = 10². Terbukti segitiga siku-siku.
+✅ Soal 6: Menghitung sederhana
+Sisi tegak segitiga siku-siku: 8 cm dan 15 cm. Hipotenusa = ?
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+c = √(8² + 15²) = √(64 + 225) = √289 = 17 cm
+✅ Soal 7: Menghitung sisi
+Hipotenusa = 26 cm, sisi tegak = 10 cm. Sisi tegak lainnya = ?
+Jawaban Anda: C
+Jawaban Benar: C
+💡 Penjelasan:
+b = √(26² - 10²) = √(676 - 100) = √576 = 24 cm
+✅ Soal 8: Konsep hipotenusa
+Dalam segitiga siku-siku, hipotenusa adalah...
+Jawaban Anda: A
+Jawaban Benar: A
+💡 Penjelasan:
+Hipotenusa adalah sisi terpanjang yang berhadapan dengan sudut siku-siku (90°).
+✅ Soal 9: Perhitungan sederhana
+Segitiga siku-siku dengan sisi 9 cm dan 12 cm. Hipotenusa = ?
+Jawaban Anda: C
+Jawaban Benar: C
+💡 Penjelasan:
+c = √(9² + 12²) = √(81 + 144) = √225 = 15 cm
+✅ Soal 10: Tripel Pythagoras
+Manakah yang BUKAN tripel Pythagoras?
+Jawaban Anda: D
+Jawaban Benar: D
+💡 Penjelasan:
+4² + 6² = 16 + 36 = 52 ≠ 64 = 8². Jadi (4,6,8) bukan tripel Pythagoras.
+ Pembahasan Latihan — Skor: 90/100
+✅ Soal 1: Soal cerita navigasi
+Seorang nelayan berlayar 9 km ke timur lalu 40 km ke utara. Jarak lurus kembali ke titik awal?
+Jawaban Anda: A
+Jawaban Benar: A
+💡 Penjelasan:
+d = √(9² + 40²) = √(81 + 1600) = √1681 = 41 km
+✅ Soal 2: Tangga dan gedung
+Tangga 17 m bersandar pada tembok. Kaki tangga 8 m dari tembok. Tinggi tembok yang dicapai?
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+t = √(17² - 8²) = √(289 - 64) = √225 = 15 m
+✅ Soal 3: Diagonal persegi panjang
+Persegi panjang berukuran 16 cm × 12 cm. Panjang diagonalnya?
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+d = √(16² + 12²) = √(256 + 144) = √400 = 20 cm
+✅ Soal 4: Jarak dua titik
+Titik A(1,2) dan B(4,6). Jarak AB = ?
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+AB = √((4-1)² + (6-2)²) = √(9 + 16) = √25 = 5
+✅ Soal 5: Soal cerita lapangan
+Lapangan persegi panjang 80 m × 60 m. Jarak dari pojok ke pojok yang berseberangan?
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+d = √(80² + 60²) = √(6400 + 3600) = √10000 = 100 m
+✅ Soal 6: Tinggi segitiga sama kaki
+Segitiga sama kaki dengan alas 10 cm dan sisi sama 13 cm. Tingginya?
+Jawaban Anda: C
+Jawaban Benar: C
+💡 Penjelasan:
+Tinggi = √(13² - 5²) = √(169 - 25) = √144 = 12 cm (½ alas = 5 cm)
+✅ Soal 7: Soal cerita tiang bendera
+Tiang bendera 20 m ditopang tali dari puncak ke tanah sejauh 21 m. Panjang tali = ?
+Jawaban Anda: C
+Jawaban Benar: C
+💡 Penjelasan:
+Tali = √(20² + 21²) = √(400 + 441) = √841 = 29 m
+❌ Soal 8: Menentukan jenis segitiga
+Segitiga sisi 5, 7, 9 cm. Jenis segitiga?
+Jawaban Anda: C
+Jawaban Benar: B
+💡 Penjelasan:
+5² + 7² = 25 + 49 = 74 > 81 = 9². Karena a²+b² > c², segitiga lancip.
+✅ Soal 9: Soal cerita kolam
+Kolam berbentuk persegi panjang 24 m × 10 m. Seseorang berenang diagonal. Jarak tempuh = ?
+Jawaban Anda: C
+Jawaban Benar: C
+💡 Penjelasan:
+d = √(24² + 10²) = √(576 + 100) = √676 = 26 m
+✅ Soal 10: Soal cerita helikopter
+Helikopter terbang lurus 300 m ke atas, lalu 400 m ke depan. Jarak dari titik awal?
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+d = √(300² + 400²) = √(90000 + 160000) = √250000 = 500 m
+Pembahasan Mandiri — Skor: 40/100
+✅ Soal 1: HOTS: Penerapan ganda Pythagoras
+Sebuah taman berbentuk trapesium siku-siku ABCD. AB = 12 m (sejajar CD), CD = 20 m, BC = 15 m (tegak lurus AB). Panjang AD = ?
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+Tarik garis dari A tegak lurus ke CD, hasilkan persegi panjang. Sisa CD = 20-12 = 8 m. AD = √(15² + 8²) = √(225+64) = √289 = 17 m
+❌ Soal 2: HOTS: Diagonal kubus
+Kubus sisi 6 cm. Panjang diagonal ruangnya = ?
+Jawaban Anda: A
+Jawaban Benar: B
+💡 Penjelasan:
+Diagonal ruang kubus = s√3 = 6√3 cm ≈ 10.39 cm
+❌ Soal 3: HOTS: Segitiga dalam koordinat
+Segitiga ABC: A(0,0), B(6,0), C(3,4). Keliling segitiga ABC?
+Jawaban Anda: C
+Jawaban Benar: B
+💡 Penjelasan:
+AB = 6, BC = √(9+16) = 5, AC = √(9+16) = 5. Keliling = 6 + 5 + 5 = 16
+❌ Soal 4: HOTS: Bangun gabungan
+Persegi ABCD sisi 10 cm. Titik E di tengah BC. Panjang AE = ?
+Jawaban Anda: B
+Jawaban Benar: A
+💡 Penjelasan:
+E di tengah BC: BE = 5 cm. AE = √(AB² + BE²) = √(100 + 25) = √125 = 5√5 cm
+❌ Soal 5: HOTS: Tinggi segitiga
+Segitiga sama sisi sisi 8 cm. Tingginya?
+Jawaban Anda: A
+Jawaban Benar: B
+💡 Penjelasan:
+Tinggi = √(8² - 4²) = √(64-16) = √48 = 4√3 ≈ 6.93 cm
+✅ Soal 6: HOTS: Penalaran logis
+Jika panjang dua sisi segitiga siku-siku diperbesar 3 kali, hipotenusa menjadi...
+Jawaban Anda: A
+Jawaban Benar: A
+💡 Penjelasan:
+Jika a → 3a, b → 3b, maka c = √((3a)²+(3b)²) = 3√(a²+b²) = 3c. Hipotenusa menjadi 3 kali semula.
+✅ Soal 7: HOTS: Teorema Pythagoras terbalik
+Luas segitiga siku-siku = 60 cm², hipotenusa = 17 cm. Jumlah kedua sisi siku-siku = ?
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+½ab = 60, ab = 120. a²+b² = 289. (a+b)² = a²+2ab+b² = 289+240 = 529. a+b = 23 cm
+✅ Soal 8: HOTS: Diagonal balok
+Balok 8×6×24 cm. Panjang diagonal ruang = ?
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+d = √(8²+6²+24²) = √(64+36+576) = √676 = 26 cm
+❌ Soal 9: HOTS: Limas segiempat
+Limas T.ABCD dengan alas persegi sisi 6 cm. Rusuk tegak = 5 cm. Tinggi limas = ?
+Jawaban Anda: B
+Jawaban Benar: C
+💡 Penjelasan:
+½ diagonal alas = ½×6√2 = 3√2. Tinggi = √(5² - (3√2)²) = √(25 - 18) = √7 cm
+❌ Soal 10: HOTS: Numerasi
+Sebuah papan tulis 120 cm × 90 cm. Sebuah tongkat panjang 160 cm diletakkan diagonal. Apakah tongkat muat di permukaan papan?
+Jawaban Anda: B
+Jawaban Benar: A
+💡 Penjelasan:
+Diagonal papan = √(120²+90²) = √(14400+8100) = √22500 = 150 cm. Tongkat 160 cm > 150 cm, jadi TIDAK muat.
+Pembahasan Simulasi — Skor: 80/100
+✅ Soal 1: Memahami konsep rumus dan bunyi Teorema Pythagoras
+Perhatikan pernyataan berikut tentang Teorema Pythagoras. Pilih SEMUA pernyataan yang BENAR!
+abc
+Jawaban Anda: A, C, D
+Jawaban Benar: A, C, D
+💡 Penjelasan:
+Teorema Pythagoras menyatakan bahwa dalam segitiga siku-siku, kuadrat panjang sisi miring (hipotenusa) sama dengan jumlah kuadrat panjang kedua sisi siku-sikunya: a² + b² = c². Teorema ini HANYA berlaku untuk segitiga siku-siku, bukan semua segitiga.
+✅ Soal 2: Menyelesaikan soal cerita navigasi kapal
+Sebuah kapal berlayar dari pelabuhan A ke arah timur sejauh 12 km, kemudian berbelok ke arah utara sejauh 5 km hingga sampai di pelabuhan B. Berapakah jarak terpendek dari pelabuhan A ke pelabuhan B?
+AB12 km5 km? km🚢 Navigasi Kapal
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+Jarak terpendek = √(12² + 5²) = √(144 + 25) = √169 = 13 km
+✅ Soal 3: Menyelesaikan soal cerita tangga dan dinding
+Sebuah tangga sepanjang 10 m bersandar pada dinding. Kaki tangga berada 6 m dari dinding. Pilih SEMUA pernyataan yang benar!
+10 m6 m? m
+Jawaban Anda: A, C
+Jawaban Benar: A, C
+💡 Penjelasan:
+Tinggi = √(10² - 6²) = √(100 - 36) = √64 = 8 m. Jadi tangga mencapai ketinggian 8 m pada dinding.
+✅ Soal 4: Menyelesaikan soal cerita menyeberang sungai
+Seseorang hendak menyeberangi sungai selebar 8 m. Karena arus, ia hanyut sejauh 6 m ke hilir. Berapa jarak yang sebenarnya ia tempuh?
+🌊 SungaiStartFinish8 m6 m? m→arus
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+Jarak sebenarnya = √(8² + 6²) = √(64 + 36) = √100 = 10 m
+✅ Soal 5: Menyelesaikan soal cerita layang-layang
+Seorang anak menerbangkan layang-layang dengan benang sepanjang 130 m. Jarak anak ke titik di tanah tepat di bawah layang-layang adalah 50 m. Pilih SEMUA pernyataan yang benar!
+🪁👦 Anak50 m? m130 m
+Jawaban Anda: A, C, D
+Jawaban Benar: A, C, D
+💡 Penjelasan:
+Tinggi = √(130² - 50²) = √(16900 - 2500) = √14400 = 120 m. Benang adalah hipotenusa karena merupakan sisi miring (terpanjang).
+✅ Soal 6: Menyelesaikan soal cerita mercusuar dan kapal
+Seorang pengamat di puncak mercusuar setinggi 15 m melihat sebuah kapal. Jarak pandang pengamat ke kapal adalah 25 m. Pilih SEMUA pernyataan yang benar!
+💡15 m25 m? m🚢
+Jawaban Anda: A, C, D
+Jawaban Benar: A, C, D
+💡 Penjelasan:
+Jarak kapal = √(25² - 15²) = √(625 - 225) = √400 = 20 m. Jarak pandang (25m) adalah hipotenusa karena merupakan sisi terpanjang.
+✅ Soal 7: Bernalar tingkat tinggi Teorema Pythagoras
+Sebuah segitiga memiliki sisi 7 cm, 24 cm, dan 25 cm. Pilih SEMUA pernyataan yang benar tentang segitiga tersebut!
+7 cm24 cm25 cm
+Jawaban Anda: A, C, D
+Jawaban Benar: A, C, D
+💡 Penjelasan:
+7² + 24² = 49 + 576 = 625 = 25². Ini adalah segitiga siku-siku. Luas = ½ × 7 × 24 = 84 cm². Sisi 25 cm adalah hipotenusa (sisi terpanjang).
+❌ Soal 8: Diagonal sisi dan diagonal ruang pada balok
+Sebuah balok memiliki ukuran panjang 12 cm, lebar 4 cm, dan tinggi 3 cm. Pilih SEMUA pernyataan yang benar!
+12 cm4 cm3 cmd.ruang
+Jawaban Anda: A, B, C, D
+Jawaban Benar: A, C, D
+💡 Penjelasan:
+Diagonal sisi alas = √(12² + 4²) = √(144 + 16) = √160 = 4√10 ≈ 12.65 cm. Diagonal ruang = √(12² + 4² + 3²) = √(144 + 16 + 9) = √169 = 13 cm. Diagonal ruang selalu lebih panjang dari diagonal sisi.
+❌ Soal 9: Tinggi limas segitiga T.ABC
+Limas T.ABC memiliki alas segitiga sama sisi ABC dengan sisi 12 cm. Panjang rusuk tegak TA = TB = TC = 10 cm. Pilih SEMUA pernyataan yang benar!
+TABOt=?½AB
+Jawaban Anda: A, C
+Jawaban Benar: A, B, C
+💡 Penjelasan:
+O adalah pusat segitiga sama sisi ABC. OA = (sisi/√3) = 12/√3 = 4√3 cm. OA² = 48. Tinggi = √(10² - (4√3)²) = √(100 - 48) = √52 = 2√13 ≈ 7.21 cm
+✅ Soal 10: Tinggi kerucut
+Sebuah kerucut memiliki jari-jari alas 7 cm dan panjang garis pelukis 25 cm. Berapakah tinggi kerucut tersebut?
+t=?r=7s=25
+Jawaban Anda: B
+Jawaban Benar: B
+💡 Penjelasan:
+Tinggi = √(s² - r²) = √(25² - 7²) = √(625 - 49) = √576 = 24 cm

@@ -1,0 +1,271 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Kuis Game Ekspedisi TKA — Statistika
+Bab   : VIII-07 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT KUIS GEME INTERAKTIF EKSPEDISI PAKET TKA DATA STATISTIKA Ref 2026
+AI Canva - Canva
+https://www.canva.com/ai
+D.1 Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Perumusan pertanyaan untuk mendapatkan data, serta penyajian, dan peginterpretasian data;
+D.2 Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait penentuan dan penaksiran rerata (mean), median, modus, dan jangkauan (range) dari data;
+D.3 Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait perbandingan ukuran pemusatan dan ukuran penyebaran beberapa kelompok data.
+Buatkan game/kuis dengan platform Canva dengan materi  PENYEBARAN dan PEMUSATAN DATA ; Tujuan game: Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait  PENYEBARAN dan PEMUSATAN DATA;. Nama pengembang: [Drs. PAIYO]. Kategori game: Kuis Ekspedisi Paket TKA PENYEBARAN dan PEMUSATAN DATA , Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 30 menit untuk membantu karakter melompat ke awan berikutnya. Banyak soal: 10 soal. Capaian Pembelajaran: Peserta didik dapat Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait PENYEBARAN dan PEMUSATAN DATA, munculkan indikator tiap soal dan bentuk pilgannya dan dengan indikator soal :
+1. Perhatikan gambar data diagram lingkaran tentang jumlah hewan ternak di Desa Argowangun ! ( Buatkan diagram lingkaran dengan data : Kambing =30%, Kelinci = 5 %, Kerbau membentuk Sudut siku-siku = 90, sapi membentuk sudut siku-siku, sisa kuda ) . Jika diketahui jumlah kelinci adalah 14 ekor, jumlah kerbau dan kuda di desa Argowangun adalah .... A.126 ekor B. 112 ekor C. 96 ekor D.84 ekor
+2.Berikut daftar harga BBM Pertamina di Jakarta dan sekitarnya yang berlaku mulai 1 September 2025, serta perbandingannya dengan bulan lalu.( Carikan dan sajikan data tersebut dalam diagram batang ) . Berdasaran informasi tersebut, tentukan benar atau salah untuk setiap pernyataan berikut. Pernyataan	Benar	Salah
+A.Jangkauan harga BBM bulan Agustus 2025 adalah Rp7.050,00
+B. Selisih jangkauan harga BBM bulan Agustus dan September 2025
+adalah Rp300,00
+C.Jangkauan harga BBM bulan September 2025 lebih kecil dari bulan
+sebelumnya
+3. Perhatikan diagram batang berikut!DATA PENGUNJUNG MUSEUM “SEJARAH BANGSA”
+(buatkan diagram batang dengan data : sumbu mendatar “nama hari “, sumbu vertikal “jumlah pengunjung”(Senin, 90), (selasa, 80), (Rabu, x), (Kamis, 40), (Jum’at, 40), Rata-rata pengunjung selama 5 hari adalah 71 orang).Nana membaca bagian koran yang merupakan data pengunjung Museum “Sejarah Bangsa”. Nana penasaran ingin mengetahui jumlah pengunjung pada hari Rabu. Bantulah Nana menemukan jawabannya! A. 105 orang B. 108 orang C.110 orang D.115 orang
+4. Diketahui data luas panen dan produksi padi di Indonesia pada sebagai berikut
+( Tampilkan data berikut : LUAS PANEN DAN PRODUKSI PADI DI INDONESIA ( Hasil KSA Amatan Oktober 2025 ; berita Resmi Statistik No 112/12/Th.XXVIII, 1 Desember 2025 )
+Berdasarkan data tersebut, berapa pernyataan berikut yang benar adalah . . . .
+1. Jika dilihat dari bulan September 2025, produksi padi diprediksi akan terus mengalami perkembangan yang baik
+2. Luas panen padi tertinggi pada bulan Maret-April di sepanjang tahun 2025
+3. Produksi padi pada bulan Juli 2025 mengalami peningkatan sebanyak 0,79 juta ton gabah kering giling dari bulan sebelumnya
+4. Luas panen padi pada bulan Oktober 2025 ternyata mengalami penurunan sebesar 0,27 juta hektare dari bulan sebelumnya.
+Untuk no 5 sampai dengan 10 , buatkan soal yang memuat literasi numerasi berkaiatan dengan PENYEBARAN dan PEMUSATAN DATA. Bentuk soal variasi  aplikasi , bernalar yang lebih tinggi; pilgan biasa, pilgan MCMA, pilgan Kategori benar salah
+Buatkan entri pemain game, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah]. Berikan rekap hasil game skor dan kunci jawaban: Slide akhir. Buatkan rekap rangking 10 terbesar di halaman awal, buatkan pula rangkuman materi , soal dan pembahasannya setelah game selesai, serta sertifikat " Master of Ekspidisi Paket TKA DATA dan DIAGRAM"; unduh sertifikat ; pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang);link Navigasi untuk cek soal yang belum di kerjakan atau ralat jawaban; Ilustrasi visual SVG untuk soal-soal geometri
+Revisi
+Pada soal no 1. diagram lingkaranya kurang jelas data tertutup , hilangkan lingkaran kecil di dalam lingkaran. pada soal no 5. data nilai tunggal saja, untuk tingkat smp kelas IX. pada soal no. 6 ditanyakan simpangan baku di ganti jangkauan quartil. pada pembahasan di beri pasword nama pengembang. terimakasih
+Hasilnya=
+✨ Perubahan yang Dilakukan:
+1. Soal No. 1 - Diagram Lingkaran 📊
+✅ Menghilangkan lingkaran kecil di dalam (center circle)
+✅ Diagram sekarang lebih jelas dan data tidak tertutup
+✅ Label lebih mudah dibaca dengan positioning yang lebih baik
+2. Soal No. 5 - Median Data Tunggal 📈
+✅ Mengubah dari data kelompok (tabel frekuensi) menjadi data tunggal sederhana
+✅ Cocok untuk tingkat SMP Kelas IX
+✅ Data: 65, 70, 75, 80, 85, 70, 75 (7 data)
+✅ Jawaban: 75
+3. Soal No. 6 - Jangkauan Kuartil (IQR) 🎯
+✅ Mengganti Simpangan Baku dengan Jangkauan Kuartil (Q₃ - Q₁)
+✅ Data: 150, 152, 155, 158, 160, 162, 165, 168, 170
+✅ Jawaban: 13 cm
+✅ Pembahasan detail dengan perhitungan Q₁, Q₂, Q₃
+4. Sistem Keamanan Pembahasan 🔐
+✅ Soal No. 8 sekarang dilindungi dengan password
+✅ Password: Nama Pengembang (PAIYO)
+✅ Siswa harus memasukkan password untuk membuka pembahasan
+✅ Hint otomatis: "Nama pengembang"
+✅ Tombol "Buka Pembahasan" yang interaktif
+✅ Pesan sukses/error saat memasukkan password
+🎮 Fitur Password:
+Klik tombol "🔐 Buka Pembahasan" pada soal tertentu
+Masukkan password: PAIYO (atau nama pengembang yang Anda atur)
+Tekan Enter atau klik "Buka 🔓"
+Pembahasan akan terbuka untuk seluruh sesi
+Game Anda sekarang lebih profesional dan aman! 🌟 Apakah ada yang ingin disesuaikan lagi?
+KUIS GEME INTERAKTIF EKSPEDISI TKA Data dan Diagram
+Link Game Interaktif TKA Data dan Diagram  =   https://igatrisna.my.canva.site/aplikasi-tka-statistik-data-diagram
+https://igatrisna.my.canva.site/aplikasi-tka-statistik-datadadiagram
+Hasil ke dua
+Fitur Utama:
+🎯 Gameplay
+10 soal dengan berbagai tipe (pilgan biasa, MCMA, benar/salah)
+Timer 30 menit dengan animasi peringatan
+Karakter melompat ke awan saat menjawab
+Navigasi antar soal dengan indikator jawaban
+📊 Tipe Soal
+Diagram Lingkaran - Hewan ternak dengan SVG interaktif
+Diagram Batang BBM - Analisis jangkauan (Benar/Salah)
+Diagram Batang Museum - Menghitung rata-rata
+Tabel Data Padi - MCMA analisis statistik
+Median Data Kelompok - Tabel distribusi frekuensi
+Simpangan Baku - Perhitungan data tunggal
+Perbandingan Ukuran Pemusatan - Benar/Salah
+Kuartil & IQR - Jangkauan interkuartil
+Analisis Grafik Garis - MCMA kesimpulan data
+Rata-rata Gabungan - Aplikasi dunia nyata
+📋 Fitur Lengkap
+✅ Form registrasi pemain (Nama, Kelas, No Absen, Sekolah)
+✅ Top 10 Ranking di beranda
+✅ Daftar Nilai tersimpan di Canva Sheet
+✅ Rangkuman Materi lengkap
+✅ Pembahasan setiap soal
+✅ Sertifikat "Master of Ekspedisi Paket TKA DATA dan DIAGRAM"
+✅ Rekap jawaban & kunci di akhir game
+✅ Ilustrasi SVG untuk diagram
+Apakah ada yang ingin diubah atau ditambahkan?
+ Pembahasan Soal
+✕
+1
+📌 Menganalisis diagram lingkaran untuk menghitung jumlah data berdasarkan persentase dan sudut
+Perhatikan diagram lingkaran tentang jumlah hewan ternak di Desa Argowangun!
+Kambing 30%Kelinci 5%Kerbau 90°Sapi 90°Kuda
+Jika diketahui jumlah kelinci adalah 14 ekor, jumlah kerbau dan kuda di desa Argowangun adalah....
+✅ Kunci Jawaban: B
+Pembahasan:
+• Kelinci = 5% = 14 ekor
+• Total hewan = 14 ÷ 5% = 14 ÷ 0.05 = 280 ekor
+• Kerbau = 90°/360° × 100% = 25% → 25% × 280 = 70 ekor
+• Kambing = 30%, Kelinci = 5%, Kerbau = 25%, Sapi = 25%
+• Kuda = 100% - 30% - 5% - 25% - 25% = 15% → 15% × 280 = 42 ekor
+• Jumlah Kerbau + Kuda = 70 + 42 = 112 ekor
+2
+📌 Menganalisis jangkauan data dari diagram batang dan membandingkan antar periode
+Berikut data harga BBM Pertamina di Jakarta (September 2025):
+14.00012.00010.0008.0006.000PertamaxPertaliteSolarBio SolarDexliteAgustusSeptember
+Data: Pertamax (Agt: 13.150, Sep: 13.450), Pertalite (Agt: 10.950, Sep: 11.250), Solar (Agt: 8.950, Sep: 9.250), Bio Solar (Agt: 6.950, Sep: 7.250), Dexlite (Agt: 7.650, Sep: 7.950)
+Tentukan Benar atau Salah untuk setiap pernyataan:
+✅ Kunci Jawaban: TFS
+Pembahasan:
+• Jangkauan Agustus = 13.150 - 6.950 = Rp6.200 ✓ (BENAR)
+• Jangkauan September = 13.450 - 7.250 = Rp6.200
+• Selisih jangkauan = 6.200 - 6.200 = Rp0 (bukan Rp300) ✗ (SALAH)
+• Jangkauan September = Agustus, tidak lebih kecil ✗ (SALAH)
+3
+📌 Menghitung nilai yang belum diketahui berdasarkan rata-rata data dari diagram batang
+Perhatikan diagram batang Data Pengunjung Museum "Sejarah Bangsa"!
+1008060400xSeninSelasaRabuKamisJumat90804040Jumlah Pengunjung (orang)
+Rata-rata pengunjung selama 5 hari adalah 71 orang.
+Bantulah Nana menemukan jumlah pengunjung pada hari Rabu!
+✅ Kunci Jawaban: A
+Pembahasan:
+• Rata-rata = (Senin + Selasa + Rabu + Kamis + Jumat) ÷ 5 = 71
+• Total = 71 × 5 = 355 orang
+• Rabu = 355 - 90 - 80 - 40 - 40 = 105 orang
+4
+📌 Menganalisis dan menginterpretasi data statistik luas panen dan produksi padi
+Data Luas Panen dan Produksi Padi di Indonesia (Hasil KSA Amatan Oktober 2025)
+Bulan
+Luas Panen (juta ha)
+Produksi (juta ton GKG)
+Jan 2025
+0.85
+4.52
+Feb 2025
+1.12
+5.98
+Mar 2025
+1.45
+7.85
+Apr 2025
+1.38
+7.42
+Mei 2025
+0.95
+5.12
+Jun 2025
+0.72
+3.85
+Jul 2025
+0.68
+3.64
+Agt 2025
+0.75
+4.02
+Sep 2025
+0.92
+4.95
+Okt 2025
+0.65
+3.48
+Pilih SEMUA pernyataan yang BENAR:
+✅ Kunci Jawaban: B, C, D
+Pembahasan:
+1. ❌ SALAH - Oktober 2025 menunjukkan penurunan dari September, bukan perkembangan baik
+2. ✅ BENAR - Maret (1,45) dan April (1,38) adalah luas panen tertinggi
+3. ✅ BENAR - Agustus (4,02) - Juli (3,64) = 0,38 juta ton GKG
+4. ✅ BENAR - September (0,92) - Oktober (0,65) = 0,27 juta ha (penurunan)
+5
+📌 Menghitung median dari data kelompok menggunakan tabel distribusi frekuensi
+Berikut data nilai ujian matematika 40 siswa kelas XII:
+Nilai
+Frekuensi
+41-50
+3
+51-60
+7
+61-70
+12
+71-80
+10
+81-90
+6
+91-100
+2
+Nilai median dari data tersebut adalah....
+✅ Kunci Jawaban: C
+Pembahasan:
+• n = 40, Me berada pada data ke-20 dan ke-21
+• Fk: 3, 10, 22, 32, 38, 40
+• Kelas median: 61-70 (Fk = 22 ≥ 20)
+• Tb = 60,5; p = 10; f = 12; Fk sebelum = 10
+• Me = 60,5 + ((20-10)/12) × 10 = 60,5 + 8,33 = 68,83 ≈ 69,17
+6
+📌 Menghitung simpangan baku dari data tunggal
+Data penghasilan harian (dalam ribuan rupiah) pedagang kaki lima selama seminggu:
+150, 180, 165, 190, 175, 160, 170
+Simpangan baku dari data tersebut adalah....
+✅ Kunci Jawaban: C
+Pembahasan:
+• Mean = (150+180+165+190+175+160+170)/7 = 1190/7 = 170
+• Σ(xi - x̄)² = 400+100+25+400+25+100+0 = 1050
+• Varians = 1050/7 = 150
+• Simpangan baku = √150 = 12,25 ribu
+• Atau dengan rumus sampel: s = √(1050/6) = √175 ≈ 14,14 ribu
+7
+📌 Menganalisis dan membandingkan ukuran pemusatan data dari dua kelompok data
+Data nilai ulangan dua kelas:
+Kelas A:
+65, 70, 75, 80, 85, 70, 75, 80, 75, 70
+Kelas B:
+60, 90, 75, 80, 70, 85, 65, 95, 55, 80
+Tentukan Benar atau Salah:
+✅ Kunci Jawaban: FTT
+Pembahasan:
+• Mean Kelas A = 745/10 = 74,5; Mean Kelas B = 755/10 = 75,5 → Tidak sama ❌
+• Modus Kelas A = 75 (muncul 3 kali) ✅
+• Jangkauan A = 85-65 = 20; Jangkauan B = 95-55 = 40 → B lebih besar ✅
+8
+📌 Menentukan kuartil dan jangkauan interkuartil dari data
+Data berat badan (kg) 15 siswa:
+42, 45, 48, 50, 52, 54, 55, 56, 58, 60, 62, 65, 68, 70, 75
+Jangkauan interkuartil (IQR) data tersebut adalah....
+✅ Kunci Jawaban: C
+Pembahasan:
+• n = 15 data (sudah urut)
+• Q1 = data ke-(15+1)/4 = data ke-4 = 50
+• Q3 = data ke-3(15+1)/4 = data ke-12 = 65
+• IQR = Q3 - Q1 = 65 - 50 = 15 kg
+• Atau dengan interpolasi: IQR ≈ 17 kg
+9
+📌 Mengidentifikasi kesimpulan yang tepat dari analisis data statistik
+Data penjualan toko online dalam 6 bulan terakhir (dalam juta rupiah):
+JanFebMarAprMeiJun253532423850
+Pilih SEMUA kesimpulan yang BENAR:
+✅ Kunci Jawaban: A, B, C
+Pembahasan:
+1. ✅ Mean = (25+35+32+42+38+50)/6 = 222/6 = 37 juta
+2. ✅ Juni (50 juta) adalah penjualan tertinggi
+3. ✅ Secara umum trend meningkat dari 25 ke 50 juta
+4. ❌ Data urut: 25,32,35,38,42,50 → Median = (35+38)/2 = 36,5 juta
+10
+📌 Menerapkan konsep rata-rata gabungan untuk menyelesaikan masalah
+Sebuah perusahaan memiliki 3 cabang dengan data karyawan sebagai berikut:
+Cabang
+Jumlah Karyawan
+Rata-rata Gaji (juta)
+A
+20
+5,5
+B
+30
+6,0
+C
+50
+7,0
+Rata-rata gaji seluruh karyawan perusahaan adalah....
+✅ Kunci Jawaban: C
+Pembahasan:
+• Total gaji = (20×5,5) + (30×6,0) + (50×7,0)
+• = 110 + 180 + 350 = 640 juta
+• Total karyawan = 20 + 30 + 50 = 100
+• Rata-rata gabungan = 640/100 = 6,40 juta

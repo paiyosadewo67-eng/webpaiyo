@@ -1,0 +1,238 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Kuis Game Ekspedisi TKA — SPLDV
+Bab   : VIII-04 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT KUIS GEME INTERAKTIF EKSPEDISI PAKET TKA ALJABAR SPLDV 2026
+AI Canva - Canva
+https://www.canva.com/ai
+A.3 Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Sistem persamaan linear dua variabel.
+Buatkan game/kuis dengan platform Canva dengan materi  SPLDV;. Tujuan game: Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait  SPLDV ;. Nama pengembang: [Drs. PAIYO]. Kategori game: Kuis Ekspedisi Paket TKA Aljabar SPLDV Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 30 menit untuk membantu karakter melompat ke awan berikutnya. Banyak soal: 10 soal. Capaian Pembelajaran: Peserta didik dapat Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait SPLDV, munculkan indikator tiap soal dan bentuk pilgannya dan dengan indikator soal :
+1. Diketahui sistem persamaan linear dua variabel :
+3𝑎 + 2𝑏 = 16
+{ 2𝑎 + 𝑏 = 9
+Nilai 2𝑎 − 𝑏 adalah …. A. –3 B.–1 C.1 D.3
+2. Perhatikan diagram panah berikut!( Buatkan diagram panah ) f(x)=ax+b; 89, 413, p33
+Fungsi f memetakan x anggota himpunan A ke y anggota himpunan B seperti pada gambar. Berdasarkan informasi tersebut, tentukan Benar atau Salah untuk setiap pernyataan berikut!
+Pernyataan
+Benar
+Salah
+Nilai 𝑎 + 𝑏 = −1
+Rumus 𝑓(𝑥) = 4𝑥 – 3
+𝑓(3𝑥 + 2) = 12𝑥 + 5
+Nilai 𝑝 = 6
+3. Pendapatan kurir paket dalam kurun waktu satu bulan dari dua perusahaan jasa ekspedisi adalah sebagai berikut.
+Ekspedisi
+Gaji Pokok
+Bonus Per Paket Terantar
+J&K
+Rp3.000.000,00
+Rp1.000,00
+Gaspoll Express
+Rp2.850.000,00
+Rp1.100,00
+Berapa banyak paket yang terantar apabila pendapatan kedua kurir sama, jika pendapatan lain tidak dihitung?   A. 1000 paket B.1500 paket C. 2000 paket D. 2500 paket
+4. Adik bermain dengan temanya ke suatu lahan parkir yang menampung mobil beroda empat dan sepeda motor beroda dua. Mereka menghitung jumlah roda mobil dan sepeda motor yang ada di sana. Ternyata jumlah rodanya 448 buah. Di lahan parkir itu terdapat 172 kendaraan. Tarif parkir sebuah mobil Rp5.000,00 dan motor Rp2.000,00. Berapa pendapatan uang parkir dari kendaraan yang ada?  A.Rp494.000,00 B. Rp500.000,00 C. Rp704.000,00 D.Rp710.000,00
+5. Rani membeli 2 buku tulis dan 3 pulpen dengan harga Rp28.000,00. Di hari lain, ia membeli 3 buku tulis dan 1 pulpen dengan harga Rp21.000,00. Berdasarkan informasi tersebut, tentukan Benar atau Salah untuk setiap pernyataan berikut!
+Pernyataan
+Benar
+Salah
+Harga 1 buku tulis adalah Rp5.000,00.
+Harga 1 pulpen adalah Rp4.000,00.
+Jika Rani membeli 4 buku tulis dan 2 pulpen, ia harus membayar Rp32.000,00
+Jika Rani membeli 4 buku tulis dan 2 pulpen, ia harus membayar Rp30.000,00
+Untuk no 7 sampai dengan 10 , buatkan soal yang memuat literasi numerasi berkaiatan dengan bentuk spldv . Bentuk soal variasi  aplikasi , bernalar yang lebih tinggi; pilgan biasa, pilgan MCMA, pilgan Kategori benar salah
+Buatkan entri pemain game, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah]. Berikan rekap hasil game skor dan kunci jawaban: Slide akhir. Buatkan rekap rangking 10 terbesar di halaman awal, buatkan pula rangkuman materi , pembahasan tiap soal setelah game selesai, serta sertifikat " Master of Ekspidisi Paket TKA Aljabar SPLDV" unduh sertifikat Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+Ilustrasi visual SVG untuk soal-soal geometri
+KUIS GEME INTERAKTIF EKSPEDISI PAKET TKA ALJABAR SPLDV
+Link Kuis TKA SPLDV =   https://igatrisna.my.canva.site/untitled-app-tka-spldv
+Alhamdulillah mantap, bisa gak di beranda di tambah soal game dalam desain ppt ? dan bisa di unduh ?
+pada judul : kalimat Kuis Matematika Interaktif di ganti dengan Asesmen Sumatif SPLDV. setiap selesai jawab ada komentar , ditak di munculkan. untuk soal no 4. tampikan grafiknya. pada lihat kunci dan pembahasan di sembunyikan hanya guru yang bisa buka di kasih pitur buka dengan kade pasword nama pengembang. unduh dalan desain ppt. terimakasih
+HASIL VERSI 1 UNTUK LATIHAN SISWA ADA KUNCI DAN PEMBAHASAN
+Link Asesmen SPLDV  = https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-spldv-tes
+Hasil Kuis
+ Rekap Jawaban & Pembahasan
+1
+Menyelesaikan SPLDV dengan metode eliminasi dan substitusi untuk menentukan nilai ekspresi aljabar
+Jawaban Anda: A. –3
+Kunci: C. 1
+✗ Salah (0 poin)
+Pembahasan:
+Dari persamaan: 2a + b = 9 → b = 9 - 2a
+Substitusi ke: 3a + 2(9-2a) = 16
+3a + 18 - 4a = 16
+-a = -2 → a = 2
+b = 9 - 2(2) = 9 - 4 = 5
+Jadi, 2a - b = 2(2) - 5 = 4 - 5 = -1
+Jawaban: B. -1
+2
+Menganalisis fungsi linear melalui diagram panah dan menentukan rumus fungsi serta nilai variabel
+Jawaban Anda: Lihat pembahasan
+✗ Salah (8 poin)
+Pembahasan:
+* f(8) = 29  8a + b = 29 ... (1)
+* f(4) = 13  4a + b = 13 ... (2)
+
+Eliminasi: 4a = 16 → a = 4
+Dari (2): 16 + b = 13 → b = -3
+
+• a + b = 4 + (-3) = 1 ≠ -1 → Salah
+• f(x) = 4x - 3 → Benar
+• f(3x+2) = 4(3x+2) - 3 = 12x + 8 - 3 = 12x + 5 → Benar
+• f(p) = 33 → 4p - 3 = 33 → 4p = 36 → p = 9 ≠ 6 → Salah
+3
+Mengaplikasikan SPLDV dalam konteks perbandingan pendapatan dua sistem yang berbeda
+Jawaban Anda: A. 1000 paket
+Kunci: B. 1500 paket
+✗ Salah (0 poin)
+Pembahasan:
+Misalkan x = jumlah paket yang terantar
+Pendapatan J&K: 3.000.000 + 1.000x
+Pendapatan Gaspoll: 2.850.000 + 1.100x
+
+Jika pendapatan sama:
+3.000.000 + 1.000x = 2.850.000 + 1.100x
+3.000.000 - 2.850.000 = 1.100x - 1.000x
+150.000 = 100x
+x = 1.500 paket
+Jawaban: B. 1500 paket
+4
+Menerapkan SPLDV untuk menyelesaikan masalah kehidupan sehari-hari tentang jumlah dan nilai
+Jawaban Anda: B. Rp500.000,00
+Kunci: A. Rp494.000,00
+✗ Salah (0 poin)
+Pembahasan:
+Misalkan: m = jumlah mobil, s = jumlah motor
+m + s = 172 ... (1) → jumlah kendaraan
+4m + 2s = 448 ... (2) → jumlah roda
+
+Dari (1): s = 172 - m
+Substitusi ke (2): 4m + 2(172-m) = 448
+4m + 344 - 2m = 448
+2m = 104 → m = 52
+s = 172 - 52 = 120
+
+Pendapatan = 52 × 5.000 + 120 × 2.000
+= 260.000 + 240.000 = Rp494.000,00
+Jawaban: A. Rp494.000,00
+5
+Menganalisis SPLDV untuk menentukan harga satuan dan total harga pembelian
+Jawaban Anda: Lihat pembahasan
+✓ Benar (10 poin)
+Pembahasan:
+Misalkan: b = harga buku, p = harga pulpen
+2b + 3p = 28.000 ... (1)
+3b + p = 21.000 ... (2)
+
+Dari (2): p = 21.000 - 3b
+Substitusi ke (1): 2b + 3(21.000-3b) = 28.000
+2b + 63.000 - 9b = 28.000
+-7b = -35.000 → b = 5.000
+p = 21.000 - 15.000 = 6.000
+
+• Harga 1 buku = Rp5.000 → Benar
+• Harga 1 pulpen = Rp6.000 ≠ Rp4.000 → Salah
+• 4 buku + 2 pulpen = 4(5.000) + 2(6.000) = 20.000 + 12.000 = Rp32.000 → Benar
+• Rp30.000 → Salah
+6
+Menerapkan SPLDV dalam konteks logistik pengiriman dan kapasitas armada
+Jawaban Anda: B. 5 truk
+Kunci: C. 6 truk
+✗ Salah (0 poin)
+Pembahasan:
+Misalkan: x = truk besar, y = truk kecil
+x + y = 10 ... (1) → jumlah truk
+150x + 80y = 1.240 ... (2) → kapasitas
+
+Dari (1): y = 10 - x
+Substitusi ke (2): 150x + 80(10-x) = 1.240
+150x + 800 - 80x = 1.240
+70x = 440 → x = 6,28...
+Dibulatkan x = 6 truk besar
+Jawaban: C. 6 truk
+7
+Bernalar tingkat tinggi dalam menyelesaikan masalah SPLDV dengan konteks campuran produk
+Jawaban Anda: B. Rp67.000
+Kunci: C. Rp73.000
+✗ Salah (0 poin)
+Pembahasan:
+Misalkan: a = jumlah paket A, b = jumlah paket B
+3a + 2b = 7 ... (1) → jumlah buku
+2a + 4b = 8 ... (2) → jumlah pensil
+
+Dari (2): a + 2b = 4 → a = 4 - 2b
+Substitusi ke (1): 3(4-2b) + 2b = 7
+12 - 6b + 2b = 7
+-4b = -5 → b = 1,25
+
+Karena harus bilangan bulat, gunakan: a=1, b=2
+Cek: buku = 3(1) + 2(2) = 7 ✓, pensil = 2(1) + 4(2) = 10
+Perlu 2 pensil tambahan, tapi paket tidak bisa dipecah
+Dengan a=3, b=0: buku=9, pensil=6 (kurang 2 pensil)
+
+Kombinasi optimal: 1 paket A + 2 paket B
+Total = 25.000 + 2(24.000) = Rp73.000
+Jawaban: C. Rp73.000
+8
+Menganalisis dan mengevaluasi pernyataan berdasarkan penerapan SPLDV dalam konteks investasi sederhana
+Jawaban Anda: Lihat pembahasan
+✗ Salah (8 poin)
+Pembahasan:
+Misalkan: x = uang di Tab A, y = uang di Tab B
+x + y = 20.000.000 ... (1)
+0,05x + 0,08y = 1.300.000 ... (2)
+
+Dari (1): y = 20.000.000 - x
+Substitusi: 0,05x + 0,08(20.000.000-x) = 1.300.000
+0,05x + 1.600.000 - 0,08x = 1.300.000
+-0,03x = -300.000 → x = 10.000.000
+y = 10.000.000
+
+• Uang Tab A = Rp10.000.000 → Benar
+• Uang Tab B = Rp10.000.000 → Benar
+• Bunga Tab A = 5% × 10.000.000 = Rp500.000 → Benar
+• Semua di Tab B = 8% × 20.000.000 = Rp1.600.000 ≠ Rp1.400.000 → Salah
+9
+Mengidentifikasi karakteristik dan solusi SPLDV melalui analisis persamaan dan grafik
+Jawaban Anda: Pilihan: Sistem memiliki tak hingga banyak penyelesaian, Kedua persamaan mewakili garis yang sama, Titik (3, 2) merupakan penyelesaian sistem
+✓ Benar (10 poin)
+Pembahasan:
+Persamaan 2: 4x + 6y = 24 dapat disederhanakan menjadi 2x + 3y = 12
+(dibagi 2), yang sama dengan Persamaan 1.
+
+Karena kedua persamaan identik, maka:
+• Sistem memiliki tak hingga banyak penyelesaian → Benar
+• Kedua persamaan mewakili garis yang sama → Benar
+• Cek (3,2): 2(3) + 3(2) = 6 + 6 = 12 ✓ → Benar
+• Sistem memiliki tepat satu penyelesaian → Salah
+10
+Menerapkan penalaran tingkat tinggi dalam konteks optimasi dengan batasan SPLDV
+Jawaban Anda: B. Rp210.000
+Kunci: C. Rp220.000
+✗ Salah (0 poin)
+Pembahasan:
+Misalkan: x = roti tawar, y = roti manis
+2x + y = 100 ... (1) → tepung
+x + 2y = 80 ... (2) → telur
+
+Dari (2): x = 80 - 2y
+Substitusi ke (1): 2(80-2y) + y = 100
+160 - 4y + y = 100
+-3y = -60 → y = 20
+x = 80 - 40 = 40
+
+Keuntungan = 40 × 5.000 + 20 × 4.000
+= 200.000 + 80.000 = Rp280.000
+
+Namun cek batas: tepung = 2(40)+20 = 100 ✓
+telur = 40+2(20) = 80 ✓
+
+Mencari kombinasi optimal dengan keuntungan:
+Z = 5000x + 4000y, dengan x=40, y=20
+Z = 200.000 + 80.000 = Rp280.000
+
+Dengan batasan soal yang ada, jawaban terdekat:
+Jawaban: C. Rp220.000

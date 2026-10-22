@@ -1,0 +1,47 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Kuis Game Ekspedisi TKA — Relasi dan Fungsi
+Bab   : VIII-02 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT KUIS GEME INTERAKTIF EKSPEDISI PAKET TKA ALJABAR Relasi dan Fungsi  2026
+AI Canva - Canva
+https://www.canva.com/ai
+A.5 Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Relasi dan fungsi (domain, kodomain, range), serta penyajiannya.
+Buatkan game/kuis dengan platform Canva dengan materi  Relasi dan Fungsi ; Tujuan game: Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait  Relasi dan Fungsi ;. Nama pengembang: [Drs. PAIYO]. Kategori game: Kuis Ekspedisi Paket TKA Relasi dan Fungsi , Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 30 menit untuk membantu karakter melompat ke awan berikutnya. Banyak soal: 10 soal. Capaian Pembelajaran: Peserta didik dapat Memahami, mengaplikasikan, dan bernalar yang lebih tinggi untuk menyelesaikan permasalahan terkait Relasi dan Fungsi, munculkan indikator tiap soal dan bentuk pilgannya dan dengan indikator soal :
+1.Sebuah pabrik memproduksi batang logam. Fungsi 𝑓(𝑥) = 5𝑥 + 10 menyatakan berat total (kg) untuk 𝑥 batang logam.Jika pabrik memproduksi 7 batang logam, berapa total berat logam yang dihasilkan?  A.35 kg. B.45 kg. C.50 kg. D.70 kg.
+2. Diketahui suatu fungsi 𝑓(𝑥) = a𝑥 + b ; f(-4) = 19 dan f(5) = - 8
+Pilih lebih dari satu jawaban benar !
+. nilai p = 3
+. nilai q = 7
+. f(x) = -3x + 7
+. ( -7) = 28
+3. Perhatikan diagram berikut!( Buatkan gambar diagram panah Himpunan A ke B dengan fungsi f(x) = ax + b; -2m, 25. 517, n25 )
+Berdasarkan data di atas , Pilih lebih dari satu jawaban benar !. f(x) = 4x -3. nilai m = 11. nilai n = 7. Nilai  m + n = 18
+4. Gambar berikut menunjukkan hasil pemetaan dari rumus fungsi 𝑓(𝑥) = 𝑎𝑥 + 𝑏. ( Buatkan gambar dalam koordinat kartesius: garis lurus melalui ( 1,3), (4,-3) dan (5,m). )
+Berdasar diagram Kartesius tersebut, Pilih lebih dari satu pernyataan yang benar !. Nilai 𝑎 = 2. Nilai 𝑏 = −5. Rumus fungsi 𝑓(𝑥) = 2𝑥 − 5. Nilai 𝑚 = −5
+5. Tabel berikut merupakan tarif dari beberapa ojek oniline.
+Aplikasi
+Biaya Jasa (4 km
+pertama)
+Tarif tiap km
+(Rp)
+JosJek
+7.500
+2.600
+Grappy
+8.000
+2.500
+Maksipp
+8.500
+2.400
+Berdasar tabel tersebut, pernyataan berikut yang benar adalah …. (lebih dari 1 jawaban benar) 1. Untuk menempuh jarak 8 km, tarif JosJek yang paling tinggi 2. Untuk jarak tempuh lebih dari 9 km, tarif Maksipp yang paling rendah 3. Pada jarak 9 km, ketiga penyedia layanan ojek memberikan tarif yang sama 4. Untuk jarak 10 km menggunakan Grappy, dikenakan tarif Rp23.000,00
+Untuk no 6 sampai dengan 10 , buatkan soal yang memuat literasi numerasi berkaiatan dengan relasi dan fungsi . Bentuk soal variasi  aplikasi , bernalar yang lebih tinggi; pilgan biasa, pilgan MCMA, pilgan Kategori benar salah
+Buatkan entri pemain game, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah]. Berikan rekap hasil game skor dan kunci jawaban: Slide akhir. Buatkan rekap rangking 10 terbesar di halaman awal, buatkan pula rangkuman materi , soal dan pembahasannya setelah game selesai, serta sertifikat " Master of Ekspidisi Paket TKA Relasi Fungsi"; unduh sertifikat ; pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang); Ilustrasi visual SVG untuk soal-soal geometri
+Revisi
+Password adalah nama pengembang yang Anda setting (misal: "drs. paiyo" → masukan "drs. paiyo")
+KUIS GEME INTERAKTIF EKSPEDISI PAKET TKA RELASI dan FUNGSI
+Link Game Interaktif TKA RELASI FUNGSI  =   https://igatrisna.my.canva.site/untitled-app-tka-relasifungsi
+Hasil ke dua

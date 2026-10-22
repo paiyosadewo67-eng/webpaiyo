@@ -1,0 +1,73 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt LKPD Interaktif — Statistika
+Bab   : VIII-07 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT LKPD INTERAKTIF BAB STATISTIKA  Ref 2026 an PAIYO
+AI Canva - Canva
+https://www.canva.com/ai
+Capaian Pembelajaran (CP) Nomor : 32 Tahun 2024
+Pada akhir fase ini (Fase D), peserta didik dapat:
+Menganalisis data, serta dapat menyajikan dan menginterpretasi data dengan menggunakan tabel, diagram batang, diagram garis, dan diagram lingkaran untuk menyelesaikan masalah kontekstual.
+Menentukan rata-rata (mean), median, modus, dan jangkauan (range) dari suatu kumpulan data.
+TUJUAN PEMBELAJARAN
+1: Pengenalan Data dan Penyajian dalam Bentuk Tabel
+Peserta didik dapat mengidentifikasi berbagai jenis data (kuantitatif dan kualitatif) dari fenomena di sekitar mereka dengan akurat setelah eksplorasi lingkungan sekolah.
+Peserta didik dapat mengumpulkan data sederhana dari lingkungan sekitar mereka melalui wawancara dan observasi dengan bimbingan guru.
+Peserta didik dapat menyajikan data yang telah dikumpulkan ke dalam bentuk tabel frekuensi dengan benar dan rapi.
+2: Diagram Batang dan Diagram Garis
+Peserta didik dapat menyajikan data dari tabel frekuensi ke dalam bentuk diagram batang dengan skala yang tepat dan label yang jelas.
+Peserta didik dapat menyajikan data yang menunjukkan perubahan dari waktu ke waktu ke dalam bentuk diagram garis dengan akurat dan mudah dipahami.
+Peserta didik dapat menginterpretasi informasi yang disajikan dalam diagram batang dan diagram garis dengan kritis.
+3: Diagram Lingkaran dan Interpretasi Data
+Peserta didik dapat menyajikan data proporsional ke dalam bentuk diagram lingkaran dengan perhitungan sudut pusat yang benar.
+Peserta didik dapat menganalisis dan menginterpretasi data yang disajikan dalam berbagai bentuk diagram (tabel, batang, garis, lingkaran) untuk menarik kesimpulan yang relevan.
+Peserta didik dapat mengidentifikasi informasi penting dan tren dari kumpulan data yang disajikan.
+A. Pemusatan Data, B. Penyebaran Data
+CAPAIAN PEMBELAJARAN (CP) NOMOR : 32 TAHUN 2024
+Pada akhir fase D, peserta didik mampu mengumpulkan, mengolah, dan menyajikan data dari berbagai sumber dalam bentuk tabel, diagram batang, diagram lingkaran, serta menentukan ukuran pemusatan (mean, median, modus) dan ukuran penyebaran (jangkauan, kuartil, jangkauan interkuartil) data tunggal dan data kelompok sederhana, serta menginterpretasikannya untuk membuat kesimpulan yang relevan.
+TUJUAN PEMBELAJARAN
+Peserta didik dapat :
+menghitung nilai rata-rata (mean) dari data tunggal dan data kelompok sederhana dengan teliti.
+menginterpretasikan makna rata-rata dalam konteks data nyata (misal: rata-rata nilai ulangan, rata-rata tinggi siswa), serta memahami kapan mean merupakan ukuran pemusatan yang paling tepat digunakan.
+menentukan nilai median (nilai tengah) dan modus (nilai paling sering muncul) dari data tunggal dan data kelompok sederhana .
+membedakan penggunaan mean, median, dan modus berdasarkan karakteristik data dan tujuan analisis, serta memberikan contoh kasus nyata yang tepat untuk masing-masing ukuran pemusatan.
+menghitung jangkauan data (range) dan kuartil (Q1, Q2/median, Q3) dengan tepat dari data tunggal setelah mengurutkannya.
+menginterpretasikan makna jangkauan data sebagai gambaran sebaran data, serta memahami konsep kuartil sebagai pembagian data menjadi empat bagian yang sama besar untuk analisis lebih lanjut.
+menghitung jangkauan interkuartil (IQR) dari data tunggal dengan benar.
+menganalisis sebaran data menggunakan jangkauan interkuartil, serta mengaplikasikan semua konsep statistika (pemusatan dan penyebaran data) untuk menyelesaikan masalah kontekstual yang berkaitan dengan data sehari-hari.
+Assalamu’alaikum,...Selamat malam, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk:
+"Buatkan konten LKPD interaktif Matematika SMP materi Pemusatan Data dan. Penyebaran Data. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna LKPD, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].  (2) Tujuan Pembelajaran : Peserta Didik dapat : .1 menghitung nilai rata-rata (mean) dari data tunggal dan data kelompok sederhana dengan teliti, 2. menginterpretasikan makna rata-rata dalam konteks data nyata (misal: rata-rata nilai ulangan, rata-rata tinggi siswa), serta memahami kapan mean merupakan ukuran pemusatan yang paling tepat digunakan.  3. menentukan nilai median (nilai tengah) dan modus (nilai paling sering muncul) dari data tunggal dan data kelompok sederhana. 4 membedakan penggunaan mean, median, dan modus berdasarkan karakteristik data dan tujuan analisis, serta memberikan contoh kasus nyata yang tepat untuk masing-masing ukuran pemusatan, 5 menghitung jangkauan data (range) dan kuartil (Q1, Q2/median, Q3) dengan tepat dari data tunggal setelah mengurutkannya, 6 menginterpretasikan makna jangkauan data sebagai gambaran sebaran data, serta memahami konsep kuartil sebagai pembagian data menjadi empat bagian yang sama besar untuk analisis lebih lanjut,7 menghitung jangkauan interkuartil (IQR) dari data tunggal dengan benar. 8 menganalisis sebaran data menggunakan jangkauan interkuartil, serta mengaplikasikan semua konsep statistika (pemusatan dan penyebaran data) untuk menyelesaikan masalah kontekstual yang berkaitan dengan data sehari-hari. (3) Rangkuman materi mencakup dari semua indikator atau tujuan pembelajaran. (4) Pemahaman Materi: 8 pertanyaan terbuka tentang memahami konsep Pemusatan Data dan. Penyebaran Data dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi (5) Contoh Soal & Pembahasan: 10 soal Literasi numerasi untuk mengukur tujuan pembelajaran, bentuk soal pilgan biasa, pilgan komplek MCMA Benar-Salah, Pilgan MCMA (pilih jawaban benar lebih dari satu); (6) Latihan Soal: 20 soal campuran : bentuk soal pilgan biasa, pilgan komplek MCMA Benar-Salah, Pilgan MCMA (pilih jawaban benar lebih dari satu); soal terdiri dari: 10 soal pemahaman( konten:masalah matematika), 6 soal aplikasi soal cerita konten masalah kehidupan), 4 soal bernalar yang lebih tinggi ( analisis masalah )dengan kolom jawaban interaktif. Berilah komentar jawaban benar atau salah dengan kalimat motivasi dan pembahasan setiap soal. (7) Latihan Mandiri : Kategori Latihan Mandiri: Kuis Ekspedisi Sensus Penduduk  , Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 30 menit untuk membantu karakter melompat ke bangunan berikutnya: 10 soal tantangan : bentuk soal pilgan biasa, pilgan komplek MCMA Benar-Salah, Pilgan MCMA (pilih jawaban benar lebih dari satu); soal terdiri dari 4soal pemahaman( konten:masalah matematika), 4 soal aplikasi soal cerita konten masalah kehidupan), 2 soal bernalar yang lebih tinggi ( analisis masalah ). Soal diacak untuk setiap pemain baru. Jawaban siswa auto save .. Buatkan soal dan pembahasan tiap soal setelah Latihan Mandiri selesai, serta sertifikat " Master of Ekspedisi Sensus Penduduk " unduh sertifikat” Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang . Ilustrasi visual SVG untuk soal-soal geometri
+Hasil
+LKPD Interaktif BAB STATISTIKA “ Mean Median Modus “ Matematika SMP
+Link LKPD Interaktif “ Mean Median Modus”  = https://igatrisna.my.canva.site/untitled-app-lkpd-statistika-meanmedianmodus-penyebarandata
+Link LKPD Interaktif “ Mean Median Modus 2 “ = https://igatrisna.my.canva.site/aplikasi-lkpd-statistika-pemusatan-penyebarandata
+https://igatrisna.my.canva.site/aplikasi-lkpd-statistika-pemusatan-penyebarandata
+Assalamu’alaikum,...Selamat malam, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk:
+"Buatkan konten LKPD interaktif Matematika SMP materi Data dan Diagram. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna LKPD, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].  (2) Tujuan Pembelajaran : Peserta Didik dapat : .1 mengidentifikasi berbagai jenis data (kuantitatif dan kualitatif) dari fenomena di sekitar mereka dengan akurat setelah eksplorasi lingkungan sekolah, 2. menyajikan data yang telah dikumpulkan ke dalam bentuk tabel frekuensi dengan benar dan rapi.  3. menyajikan data dari tabel frekuensi ke dalam bentuk diagram batang dengan skala yang tepat dan label yang jelas. 4 menyajikan data yang menunjukkan perubahan dari waktu ke waktu ke dalam bentuk diagram garis dengan akurat dan mudah dipahami 5 menginterpretasi informasi yang disajikan dalam diagram batang dan diagram garis dengan kritis. .6 menyajikan data proporsional ke dalam bentuk diagram lingkaran dengan perhitungan sudut pusat yang benar.7 menganalisis dan menginterpretasi data yang disajikan dalam berbagai bentuk diagram (tabel, batang, garis, lingkaran) untuk menarik kesimpulan yang relevan. 8 mengidentifikasi informasi penting dan tren dari kumpulan data yang disajikan. (3) Rangkuman materi mencakup dari semua indikator atau tujuan pembelajaran. (4) Pemahaman Materi: 8 pertanyaan terbuka tentang memahami konsep Data dan Diagram dengan kotak kosong [Jawaban:...] interaktif, setelah mengisis jawaban, ada komen benar salah dan kalimat motivasi (5) Contoh Soal & Pembahasan: 10 soal Literasi numerasi untuk mengukur tujuan pembelajaran, bentuk soal pilgan biasa, pilgan komplek MCMA Benar-Salah, Pilgan MCMA (pilih jawaban benar lebih dari satu); (6) Latihan Soal: 20 soal campuran : bentuk soal pilgan biasa, pilgan komplek MCMA Benar-Salah, Pilgan MCMA (pilih jawaban benar lebih dari satu); soal terdiri dari: 10 soal pemahaman( konten:masalah matematika), 6 soal aplikasi soal cerita konten masalah kehidupan), 4 soal bernalar yang lebih tinggi ( analisis masalah )dengan kolom jawaban interaktif. Berilah komentar jawaban benar atau salah dengan kalimat motivasi dan pembahasan setiap soal. (7) Latihan Mandiri : Kategori Latihan Mandiri: Kuis Ekspedisi Sensus Penduduk  , Cara bermainnya: Pemain memilih jawaban yang benar sebelum waktu habis yaitu 30 menit untuk membantu karakter melompat ke bangunan berikutnya: 10 soal tantangan : bentuk soal pilgan biasa, pilgan komplek MCMA Benar-Salah, Pilgan MCMA (pilih jawaban benar lebih dari satu); soal terdiri dari 4soal pemahaman( konten:masalah matematika), 4 soal aplikasi soal cerita konten masalah kehidupan), 2 soal bernalar yang lebih tinggi ( analisis masalah ). Soal diacak untuk setiap pemain baru. Jawaban siswa auto save .. Buatkan soal dan pembahasan tiap soal setelah Latihan Mandiri selesai, serta sertifikat " Master of Ekspidisi Sensus Penduduk " unduh sertifikat” Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang . Ilustrasi visual SVG untuk soal-soal geometri
+Hasil
+Fitur utama:
+📝 Identitas — Form entri nama, kelas, no. absen, sekolah
+🎯 8 Tujuan Pembelajaran lengkap
+📚 Rangkuman Materi dengan ilustrasi SVG (diagram batang, garis, lingkaran)
+💡 8 Soal Pemahaman terbuka dengan feedback & motivasi
+📖 10 Contoh Soal (Pilgan, B/S, MCMA) dengan pembahasan
+✏️ 20 Latihan Soal bertingkat (10 pemahaman, 6 aplikasi, 4 bernalar tinggi)
+🏙️ Kuis Ekspedisi Sensus Penduduk — 10 soal acak, timer 30 menit, karakter melompat antar bangunan
+📜 Sertifikat yang bisa diunduh
+📊 Daftar Nilai tersimpan di Canva Sheet
+Coba langkah ini: Isi identitas lalu navigasi ke tab "🎮 Kuis" untuk memulai Ekspedisi Sensus Penduduk! Apakah ada soal atau tampilan yang ingin disesuaikan? 😊
+Revisi
+Pada Pemahaman Materi, periksa jawaban di setiap soal . Pada Latihan Soal Ekspedisi tukang kayu. Pembahasan soal di sembunyikan dengan pasword nama pengembang. Terimakasih
+📝 Password untuk pembahasan quiz: Drs. PAIYO (sesuai nama pengembang)
+💾 Semua data nilai siswa tersimpan otomatis di Canva Sheet
+📊 Pantau progress siswa melalui tab "Daftar Nilai"
+Modal dengan tabel lengkap (nama, kelas, sekolah, skor per bagian, tanggal)
+Tombol "Nilai" di header untuk akses cepat
+Data tersimpan real-time dengan Data SDK
+Hasinya
+LKPD Interaktif BAB STATISTIKA “ Data dan Diagram “ Matematika SMP
+Link LKPD Interaktif “ Data dan Diagram”  = https://igatrisna.my.canva.site/untitled-app-lkpd-statistika-data-diagram

@@ -1,0 +1,214 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Poster Komik Edukasi — Bilangan Bulat
+Bab   : VII-01 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT Membuat poster komik edukasi BAB BILANGAN BULAT
+Link Chatgpt dengan “ https://chatgpt.com/c/  “
+Assalamu’alaikum,.. selamat malam, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantun untuk : Materi yang akan diubah menjadi LKPD visual adalah: “Bilangan Bulat & Sifat-sifat Operasinya” dengan tujuan pembelajaran sebagai berikut :
+Peserta didik dapat memahami arti bilangan positif dan negative (bilangan real, pecahan dan decimal) dan secara bersamaan menyadari bahwa kisaran bilangan yang dapat direpresentasikan telah diperluas dengan pengenalan bilangan negative dengan benar.
+Peserta didik dapat membandingkan bilangan bulat positif dan negative dengan mendeskripsikan posisi bilangan bulat pada garis bilangan dan nilai mutlaknya dengan tepat.
+Peserta didik menggunakan pertidaksamaan untuk menyatakan hasil perbandingan bilangan bulat positif dan negatif dengan benar.
+Peserta didik melalui diskusi dapat membedakan antara Faktor dan Kelipatan dengan benar.
+Peserta didik secara individu dapat menggunakan faktor dan kelipatan untuk mencari KPK dan FPB
+Peserta didik dapat menggunakan Faktorisasi Prima sebagai alternatif mencari KPK dan FPB yang lebih logis.
+Peserta didik dengan diberikan beberapa gambar lingkaran yang dibagi dan diasrsir daerahnya dapat menyebutkan nilai pecahan gambar tersebut dengan benar.
+Peserta didik dengan berdiskusi untuk mengenalkan jenis-jenis pecahan diharapkan dapat membedakan antara pecahan biasa dan pecahan campuran, desimal, persen, menyamakan dan menyederhanakan pecahan dan mengurutkan pecahan dengan benar.
+Peserta didik dapat menggunakan garis bilangan untuk menganalisis aturan operasi penjumlahan bilangan bulat positif dan negative (bilangan real, pecahan dan decimal) dengan benar.
+Peserta didik dapat memberikan estimasi hasil operasi penjumlahan bilangan bulat (bilang real, decimal dan pecahan) dengan mengajukan alasan yang logis tanpa menggunakan bantuan garis bilangan dengan tepat.
+Peserta didik dapat memberikan estimasi hasil operasi perkalian dan pembagian bilangan bulat (bilanga real, decimal, dan pecahan) dengan benar.
+Peserta didik dapat memahami sifat-sifat operasi perkalian dengan benar.
+Peserta didik dapat memberikan estimasi hasil operasi campuran (penjumlahan,pengurangan, perkalian dan pembagian) dengan mengajukan alasan dengan tepat.
+Peserta didik dapat merancang solusi untuk menyelesaikan permasalahan dalam kehidupan sehari-hari dengan menggunakan operasi penjumlahan, pengurangan, perkalian dan pembagian bilangan bulat dengan benar.
+Bertindaklah sebagai Desainer Pembelajaran, Ahli Pengembangan LKPD, Ilustrator Pendidikan, dan Editor Tata Letak Profesional. Tugas Anda adalah merancang sebuah LKPD (Lembar Kerja Peserta Didik) yang sangat visual, interaktif, menarik, dan siap cetak berdasarkan materi yang saya berikan. Gaya Visual Gunakan gaya [Kartun Edukasi / Komik Edukasi / Minimalis Modern / Realistis]. Kriteria Desain Format kertas A4. Tata letak profesional dan berwarna. Ramah untuk siswa SMP. Setiap halaman memiliki elemen visual yang mendukung pemahaman konsep. Gunakan kombinasi: Ilustrasi karakter. Ikon edukatif. Infografis sederhana. Komik mini. Balon percakapan. Kotak refleksi. Kotak tantangan. Ruang jawaban yang jelas. Gunakan prinsip desain modern: Hierarki visual yang jelas. Warna konsisten. Tipografi mudah dibaca. Tidak terlalu padat teks. Struktur LKPD yang Harus Dibuat 1. Halaman Sampul Buat desain sampul yang menarik berisi: Judul materi. Ilustrasi utama yang relevan. Nama peserta didik. Kelas. Sekolah. Tahun pelajaran. Tambahkan deskripsi visual rinci agar dapat dibuat menjadi gambar. 2. Petunjuk Penggunaan LKPD Buat dalam bentuk: Ikon langkah-langkah. Checklist kegiatan. Karakter pemandu yang memberi arahan. 3. Peta Konsep Visual Buat peta konsep berbentuk infografis berwarna yang menjelaskan keterkaitan antar konsep utama materi. 4. Apersepsi Buat: Ilustrasi situasi sehari-hari. Pertanyaan pemantik. Komik pendek 2–4 panel yang menghubungkan kehidupan nyata dengan materi. 5. Kegiatan Inti Untuk setiap submateri: A. Ayo Amati Sajikan ilustrasi atau gambar kontekstual. Tambahkan pertanyaan observasi. B. Ayo Temukan Sajikan aktivitas penemuan konsep. Gunakan tabel, diagram, atau gambar pendukung. C. Ayo Diskusi Buat tugas diskusi kelompok. Sertakan ruang menulis hasil diskusi. D. Tantangan Mini Buat soal sederhana bertahap. Tambahkan ikon penghargaan atau level tantangan. E. Catatan Penting Sajikan dalam bentuk infografis ringkas. Berisi rumus, konsep, atau kesimpulan penting. 6. Latihan Mandiri Buat tampilan: Berwarna. Terstruktur. Memiliki ruang jawaban yang cukup. Disertai ikon motivasi pada setiap soal. 7. Refleksi Pembelajaran Buat dalam bentuk: Emoji penilaian diri. Checklist pemahaman. Pertanyaan reflektif. 8. Tantangan Kreatif Buat aktivitas yang mengajak siswa: Menggambar. Membuat cerita. Menyusun komik mini. Membuat poster konsep. 9. Ringkasan Materi Buat dalam bentuk: Infografis satu halaman. Poin-poin penting. Visual yang mudah diingat. Output yang Diinginkan Untuk setiap halaman tampilkan: HALAMAN X Tujuan Halaman Layout Halaman (Jelaskan posisi judul, ilustrasi, kotak aktivitas, dan ruang jawaban) Isi Teks (Tuliskan seluruh isi yang harus muncul pada halaman) Deskripsi Ilustrasi (Jelaskan ilustrasi secara rinci agar dapat dibuat oleh AI gambar atau desainer) Prompt Ilustrasi (Buat prompt siap pakai untuk generator gambar) Catatan Desain (Warna, ikon, tipografi, dan elemen visual yang digunakan) Ketentuan Tambahan Gunakan bahasa yang sesuai dengan tingkat perkembangan siswa SMP. Pastikan visual mendukung pemahaman konsep, bukan hanya dekorasi. Setiap halaman harus terasa hidup, menarik, dan interaktif. Hasil akhir harus terlihat seperti LKPD profesional yang diterbitkan oleh penerbit pendidikan modern. Jika materi yang diberikan adalah matematika, sains, atau materi abstrak lainnya, sertakan visualisasi konsep yang mempermudah pemahaman siswa. Terimakasih Atas solusinya yang AAAMAT KEREN.
+Tahab kedua
+Assalamu’alaikum,.. selamat pagi, saya Drs. PAIYO guru Matematika SMP Negeri 1 Bantarkawung minta tolong Buatkan poster komik edukasi horizontal 16:9 untuk Kelompok 1 dengan tema: “MISI HOTS MENYELESAIKAN SOAL APLIKASI GRADIEN & GARIS LURUS” ASAH • ASIH • ASUH MATEMATIKA "BERPIKIR KRITIS • TELITI MENGANALISIS • AAAMAT KEREN!" ________________________________________ 🎨 PROMPT POSTER KOMIK Poster komik edukasi matematika modern horizontal 16:9, Pixar Disney Education Style, Ultra HD 4K, SMP Negeri 1 Bantarkawung. Di ruang belajar STEM futuristik dengan hologram biru neon dan dashboard digital interaktif. Tokoh utama: • Ibnu (laki-laki ceria, memakai hoodie hijau) • Yasir (laki-laki aktif, jaket biru) • Tari (siswi berhijab krem, cerdas dan teliti) • Dewi (siswi berhijab biru muda, kreatif dan percaya diri) Keempat siswa sedang menjalankan "Misi HOTS Menyelesaikan Soal Gradien & Persamaan Garis Lurus" APLIKASI GRADIEN DAN GARIS LURUS “ Studi Kasus
+🚕 Tarif Taksi
+📈 Harga Smartphone
+🛣 Jalan Menanjak
+🚄 Kecepatan Kereta
+🏢 Lift Gedung
+🌉 Jembatan
+Berikan soal dan penyelesaiannya model soal PG Biasa , MCMA B/S tiga pernyataan, MCMA Komplek empat pernyataan . pilih semua pernyataan benar. Bisa menjadi beberapa panel atau halaman.
+yang diberikan oleh Pak Paiyo. Pak Paiyo tampil pada layar hologram besar memakai pakaian khas guru matematika Indonesia, tersenyum bangga sambil memberi arahan: "Anak-anak, gunakan kemampuan berpikir kritis dan analisis pola untuk menyelesaikan misi ini. Kalian pasti bisa!". Terimakasih atas solusinya yang amat keren.
+Wa'alaikumussalam warahmatullahi wabarakatuh.
+Selamat pagi, Pak Drs. Paiyo. Alhamdulillah, terima kasih atas kepercayaannya. Materi "Bilangan Bulat & Sifat-sifat Operasinya" sangat cocok dijadikan seri Poster Komik Edukasi LKPD Interaktif AAAMAAT KEREN, karena banyak konsep yang dapat divisualisasikan melalui garis bilangan, infografis, komik, dan aktivitas kontekstual.
+Agar konsisten dengan seri-seri sebelumnya (Kekongruenan, Lingkaran, Transformasi, dan BRSL), saya mengusulkan paket 12 poster landscape 16:9 dengan identitas visual yang sama.
+📘 LKPD INTERAKTIF
+BILANGAN BULAT & SIFAT-SIFAT OPERASINYA
+Subjudul
+ASAH • ASIH • ASUH MATEMATIKA
+Tagline
+"Bilangan Membentuk Logika, Logika Membentuk Masa Depan!"
+📚 RANCANGAN 12 POSTER
+🟦 POSTER 1
+Sampul + Petunjuk Penggunaan
+Isi:
+Sampul LKPD Interaktif
+Judul materi
+Ilustrasi kota futuristik dengan papan digital matematika
+Garis bilangan neon
+Karakter Drs. Paiyo, Zulfa, Rafly, Anis, Atta, dan Robot AAAMAAT KEREN
+Checklist penggunaan LKPD
+Tips belajar
+Identitas peserta didik
+🟦 POSTER 2
+Peta Konsep + Apersepsi
+Peta konsep:
+Bilangan Bulat
+Bilangan Positif
+Bilangan Negatif
+Pecahan
+Desimal
+Operasi
+Faktor & Kelipatan
+KPK
+FPB
+Faktorisasi Prima
+Komik 4 panel:
+"Kenapa suhu bisa -5°C?"
+"Bagaimana saldo rekening bisa negatif?"
+🟦 POSTER 3
+Bilangan Positif & Negatif
+Materi:
+Pengertian
+Bilangan real
+Pecahan
+Desimal
+Nilai mutlak
+Garis bilangan digital
+Contoh kehidupan sehari-hari
+Ayo Amati
+Ayo Temukan
+Latihan mini
+🟦 POSTER 4
+Membandingkan Bilangan & Pertidaksamaan
+Materi:
+<
+=
+Nilai mutlak
+Posisi pada garis bilangan
+Infografis
+Komik edukasi
+Diskusi
+Tantangan
+🟦 POSTER 5
+Faktor • Kelipatan • FPB • KPK
+Materi:
+Faktor
+Kelipatan
+Diagram pohon
+Faktorisasi Prima
+Menentukan FPB
+Menentukan KPK
+Infografis langkah cepat
+Contoh soal
+🟦 POSTER 6
+Pecahan
+Materi:
+Pecahan biasa
+Pecahan campuran
+Desimal
+Persen
+Menyederhanakan
+Menyamakan penyebut
+Mengurutkan pecahan
+Gambar lingkaran diarsir
+Batang pecahan
+Pizza
+Diagram
+🟦 POSTER 7
+Penjumlahan & Pengurangan Bilangan Bulat
+Materi:
+Garis bilangan neon
+Aturan operasi
+Positif
+Negatif
+Estimasi
+Komik
+Pembahasan
+🟦 POSTER 8
+Perkalian • Pembagian • Sifat Operasi
+Materi:
+Sifat komutatif
+Asosiatif
+Distributif
+Estimasi
+Bilangan real
+Pecahan
+Desimal
+Infografis
+Tabel aturan tanda
+🟦 POSTER 9
+Operasi Campuran
+Materi:
+Urutan operasi
+Kurung
+Kali/Bagi
+Tambah/Kurang
+Estimasi
+Soal kontekstual
+Pembahasan langkah demi langkah
+🟦 POSTER 10
+Penerapan Bilangan dalam Kehidupan
+Kasus:
+ATM
+Saldo bank
+Suhu
+Lift
+Gunung & laut
+Untung rugi
+Permainan skor
+Kecepatan
+Disertai pembahasan.
+🟦 POSTER 11
+Misi HOTS Numerasi
+Model TKA
+Stimulus:
+Saldo rekening
+Perubahan suhu
+Pendakian gunung
+Kedalaman laut
+Skor pertandingan
+Belanja
+Bentuk soal:
+Pilihan Ganda
+MCMA
+Benar/Salah
+HOTS Penalaran
+Lengkap pembahasan.
+🟦 POSTER 12
+Ringkasan & Aplikasi Akhir
+Berisi:
+Peta konsep ringkas
+Rumus cepat
+Tips belajar
+Kesalahan yang sering terjadi
+7 Kebiasaan Juara Matematika
+Tantangan Akhir
+Refleksi
+QR Code
+Ruang Belajar Mandiri Siswa
+AAAMAAT KEREN
+🎨 GAYA VISUAL (Sama dengan seri sebelumnya)
+✅ Format PowerPoint 16:9 (landscape)
+✅ Papan digital transparan lebih luas (±75–80% area poster) agar materi mudah dibaca
+✅ Efek neon biru, ungu, cyan, dan emas
+✅ Glow hologram pada rumus dan garis bilangan
+✅ Ultra HD 4K
+✅ Gaya Pixar/Disney Edukasi
+✅ Infografis modern dan bersih
+✅ Ikon STEM, kalkulator, garis bilangan, pecahan, diagram pohon, termometer, ATM, gunung, laut, dan saldo digital
+👨‍🏫 Karakter Tetap
+👨‍🏫 Drs. Paiyo (pakaian adat Brebes hitam) sebagai maskot di sudut poster (10–15%)
+👧 Zulfa
+👦 Rafly
+👧 Anis
+👦 Atta
+🤖 Robot AAAMAAT KEREN sebagai pemandu aktivitas
+Saya menyarankan kita mengerjakannya seperti seri-seri sebelumnya, yaitu bertahap satu poster demi satu poster, sehingga setiap poster benar-benar rapi, seimbang, dan siap dijadikan PowerPoint maupun dicetak.
+Insyaallah hasil akhirnya akan menjadi seri kelima LKPD Komik Edukasi AAAMAAT KEREN dengan kualitas visual yang konsisten dan profesional. Saya siap mendampingi Bapak sampai seluruh 12 poster selesai.
+Hasil posternya =
