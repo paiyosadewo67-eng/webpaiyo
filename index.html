@@ -398,6 +398,7 @@
       }
       .sumber-link:hover { border-color: var(--gold); background: var(--surface); }
       .sumber-link svg { flex: none; color: var(--faint); }
+      .sumber-ket { margin: .3rem .15rem 0; font-size: .78rem; line-height: 1.45; color: var(--muted); }
 
       /* ---------- Video pembelajaran (thumbnail dulu, iframe saat diklik) ---------- */
       .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .85rem .75rem; margin-top: .55rem; }
@@ -1459,6 +1460,7 @@
           { bab: "IX-06", grup: "tka", nama: "Pembahasan Soal Simulasi Ayo Coba TKA SMP — Matematika", url: "https://drive.google.com/file/d/1nuSiIx_OMNTTQWWYJY8yfOtUY060r9Fe/view?usp=sharing" },
           { bab: "IX-06", grup: "tka", nama: "Soal dan Pembahasan TKA 2026", url: "https://drive.google.com/file/d/108_scAAfpOK5ckGMgC7HEH0DXtNhdRnF/view?usp=sharing" },
           { bab: "IX-06", grup: "tka", nama: "Soal dan Pembahasan TKA Matematika 2026", url: "https://drive.google.com/file/d/1_kgkt83tSyJCykjScOfxpK5YIncmogUn/view?usp=sharing" },
+          { bab: "IX-06", grup: "tka", nama: "Simulasi TKA Resmi Pusmendik — Matematika SMP (Paket 1)", url: "https://pusmendik.kemendikdasmen.go.id/tka/simulasi_tka", ket: "Simulasi resmi Kemendikdasmen: pilih Jenjang SMP/MTs, lalu Matematika (Paket 1) — 30 soal, 75 menit (16 PG biasa, 7 MCMA, 7 Benar/Salah)" },
           { bab: "IX-06", grup: "prompt", nama: "Prompt Simulasi TKA SMP/MTs Tahun 2026", url: "https://drive.google.com/file/d/1FdwKGGOraL5vrZcXwfnL9PwVJXUviTev/view?usp=sharing" },
           { bab: "VII-01", grup: "prompt", nama: "Prompt Portal Rumah Belajar — Bilangan Bulat", url: "https://drive.google.com/file/d/1zcKqBEO7QNWCRxZHgWFC48QJu8daKJ8-/view?usp=sharing" },
           { bab: "VII-01", grup: "prompt", nama: "Prompt LKPD Interaktif — Bilangan Bulat", url: "https://drive.google.com/file/d/1j8C3EW3Zal9pwWpyLLBoz-q3oViiMk5H/view?usp=sharing" },
@@ -1899,7 +1901,7 @@
         if (s.dari === "eksternal") {
           return (LINK_DB.eksternal || [])
             .filter(function (x) { return x.bab === b.id && x.grup === s.grup; })
-            .map(function (x) { return { nama: x.nama, url: x.url, videodrive: x.videodrive, folder: x.folder }; });
+            .map(function (x) { return { nama: x.nama, url: x.url, videodrive: x.videodrive, folder: x.folder, ket: x.ket }; });
         }
         if (s.dari === "promptberbagi") {
           return (LINK_DB.promptberbagi || [])
@@ -1972,7 +1974,8 @@
               html += '<li><a class="sumber-link" href="' + esc(t.url) + '" target="_blank" rel="noopener"' +
                 (s.grup === "prompt" ? ' data-khusus="prompt"' : '') +
                 (t.unduh ? ' download="' + esc(namaBerkas) + '"' : '') +
-                '><span>' + esc(t.nama) + '</span>' + IKON_BUKA + '</a></li>';
+                '><span>' + esc(t.nama) + '</span>' + IKON_BUKA + '</a>' +
+                (t.ket ? '<p class="sumber-ket">' + esc(t.ket) + '</p>' : '') + '</li>';
             });
             html += '</ul>';
           }
