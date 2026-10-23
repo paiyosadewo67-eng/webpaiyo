@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Kelas Mas YoSad — Asesmen Matematika Kelas 7 • 8 • 9</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #edf0f6;
+        --surface: #ffffff;
+        --surface-2: #f4f6fb;
+        --ink: #16233d;
+        --muted: #5a6a86;
+        --navy: #0b2148;
+        --navy-2: #123064;
+        --gold: #c19a1f;
+        --gold-soft: #f3e5bd;
+        --line: #d7deeb;
+        --ok: #157347;
+        --ok-bg: #e2f3e9;
+        --bad: #b02a2a;
+        --bad-bg: #fbe7e7;
+        --warn: #9a6a00;
+        --warn-bg: #fdf0d3;
+        --shadow: 0 6px 22px rgba(11, 33, 72, 0.10);
+        --radius: 14px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #060f22;
+          --surface: #0e2148;
+          --surface-2: #12305f;
+          --ink: #eef2fb;
+          --muted: #a7b6d4;
+          --navy: #081733;
+          --navy-2: #0e2148;
+          --gold: #dcb545;
+          --gold-soft: #3a2f10;
+          --line: #274069;
+          --ok: #5fd598;
+          --ok-bg: #10382a;
+          --bad: #ff9a9a;
+          --bad-bg: #472020;
+          --warn: #f2c14e;
+          --warn-bg: #3d3010;
+          --shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+        line-height: 1.55;
+      }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px 64px; }
+
+      /* ---------- Masthead ---------- */
+      .masthead {
+        background: linear-gradient(135deg, #081733 0%, #0b2148 55%, #14346e 100%);
+        color: #f5f7fd;
+        border-bottom: 4px solid #c19a1f;
+        margin: 0 -16px 26px;
+        padding: 30px 20px 26px;
+        text-align: center;
+      }
+      .masthead .kicker {
+        font-size: 0.78rem; font-weight: 700; letter-spacing: 0.22em;
+        text-transform: uppercase; color: #dcb545; margin: 0 0 8px;
+      }
+      .masthead h1 {
+        margin: 0; font-size: clamp(1.9rem, 6vw, 2.9rem); font-weight: 800; letter-spacing: 0.01em;
+      }
+      .masthead h1 .gold { color: #e9c95c; }
+      .masthead .sub { margin: 8px 0 0; font-size: clamp(0.92rem, 3vw, 1.05rem); color: #c9d5ee; font-weight: 500; }
+      .masthead .guru { margin: 4px 0 0; font-size: 0.9rem; color: #93a7cf; }
+
+      /* ---------- Navigation helpers ---------- */
+      .crumbs { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 18px; }
+      .btn {
+        appearance: none; border: 1px solid var(--navy-2); cursor: pointer;
+        background: var(--navy-2); color: #fff; font: inherit; font-weight: 700;
+        padding: 10px 18px; border-radius: 10px; text-decoration: none; display: inline-block;
+      }
+      .btn:hover { filter: brightness(1.12); }
+      .btn-gold { background: var(--gold); border-color: var(--gold); color: #221a02; }
+      .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+      .btn-back { background: var(--surface); color: var(--ink); border: 1px solid var(--line); box-shadow: var(--shadow); }
+      .btn[disabled] { opacity: 0.55; cursor: not-allowed; }
+      .btn-big { width: 100%; padding: 14px 18px; font-size: 1.02rem; }
+
+      h2.view-title { font-size: 1.45rem; margin: 4px 0 6px; font-weight: 800; }
+      .view-sub { color: var(--muted); margin: 0 0 20px; }
+
+      /* ---------- Class picker ---------- */
+      .kelas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+      @media (max-width: 640px) { .kelas-grid { grid-template-columns: 1fr; } }
+      .kelas-card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 22px 18px; text-align: left; cursor: pointer; box-shadow: var(--shadow);
+        font: inherit; color: var(--ink); width: 100%;
+      }
+      .kelas-card:hover { border-color: var(--gold); }
+      .kelas-card .num { font-size: 2.6rem; font-weight: 800; color: var(--navy-2); line-height: 1; }
+      @media (prefers-color-scheme: dark) { .kelas-card .num { color: var(--gold); } }
+      .kelas-card .lbl { font-weight: 800; font-size: 1.1rem; margin-top: 6px; }
+      .kelas-card .desc { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+      .kelas-card .go { margin-top: 12px; font-weight: 700; color: var(--gold); font-size: 0.92rem; }
+
+      .howto {
+        margin-top: 26px; background: var(--surface); border: 1px solid var(--line);
+        border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow);
+      }
+      .howto h3 { margin: 0 0 10px; font-size: 1.02rem; }
+      .howto ol { margin: 0; padding-left: 20px; color: var(--muted); }
+      .howto li { margin: 4px 0; }
+      .howto li strong { color: var(--ink); }
+
+      /* ---------- BAB list ---------- */
+      .bab-list { display: grid; gap: 10px; }
+      .bab-row {
+        display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 14px 16px; cursor: pointer; font: inherit; color: var(--ink); box-shadow: var(--shadow);
+      }
+      .bab-row:hover { border-color: var(--gold); }
+      .bab-code {
+        flex: 0 0 auto; background: var(--navy-2); color: #f3d97e; font-weight: 800;
+        border-radius: 8px; padding: 6px 10px; font-size: 0.85rem; letter-spacing: 0.02em;
+      }
+      .bab-name { font-weight: 700; flex: 1 1 auto; }
+      .bab-meta { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
+      .bab-arrow { color: var(--gold); font-weight: 800; }
+
+      /* ---------- Assessment cards ---------- */
+      .group-label { font-size: 0.82rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 26px 0 10px; }
+      .ases-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); gap: 12px; }
+      .ases-card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 16px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 6px;
+      }
+      .ases-card.final { border-color: var(--gold); }
+      .ases-card h3 { margin: 0; font-size: 1.02rem; }
+      .ases-card .meta { color: var(--muted); font-size: 0.88rem; margin: 0; }
+      .ases-card .spacer { flex: 1 1 auto; }
+      .pill {
+        display: inline-block; font-size: 0.75rem; font-weight: 800; padding: 3px 9px;
+        border-radius: 999px; letter-spacing: 0.03em;
+      }
+      .pill-ready { background: var(--ok-bg); color: var(--ok); }
+      .pill-soon { background: var(--surface-2); color: var(--muted); border: 1px dashed var(--line); }
+      .pill-final { background: var(--gold-soft); color: var(--warn); }
+      .ases-card.off { opacity: 0.72; box-shadow: none; }
+      .ases-card .btn { margin-top: 8px; text-align: center; }
+
+      /* ---------- Identity form ---------- */
+      .panel {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 22px; box-shadow: var(--shadow); max-width: 560px; margin: 0 auto;
+      }
+      .panel h2 { margin: 0 0 4px; font-size: 1.3rem; }
+      .panel .view-sub { margin-bottom: 18px; }
+      .field { margin-bottom: 14px; }
+      .field label { display: block; font-weight: 700; font-size: 0.92rem; margin-bottom: 6px; }
+      .field input {
+        width: 100%; font: inherit; padding: 11px 12px; border-radius: 10px;
+        border: 1px solid var(--line); background: var(--surface-2); color: var(--ink);
+      }
+      .field input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+      .form-err {
+        display: none; background: var(--bad-bg); color: var(--bad); border-radius: 10px;
+        padding: 10px 12px; font-weight: 600; font-size: 0.92rem; margin-bottom: 14px;
+      }
+      .info-box {
+        background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px;
+        padding: 12px 14px; font-size: 0.92rem; color: var(--muted); margin-bottom: 18px;
+      }
+      .info-box strong { color: var(--ink); }
+
+      /* ---------- Quiz ---------- */
+      .quiz-bar {
+        position: sticky; top: 0; z-index: 20;
+        background: var(--navy); color: #eef2fb; border-radius: 0 0 var(--radius) var(--radius);
+        padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+        box-shadow: var(--shadow); margin: 0 -4px 18px;
+      }
+      .quiz-bar .who { font-weight: 700; font-size: 0.92rem; }
+      .quiz-bar .who span { color: #aebadb; font-weight: 500; }
+      .timer {
+        margin-left: auto; background: #122c5c; border: 1px solid #2c4a86; color: #f3d97e;
+        font-weight: 800; border-radius: 999px; padding: 5px 14px; font-variant-numeric: tabular-nums;
+      }
+      .timer.low { background: #5c1212; border-color: #8c2b2b; color: #ffb3b3; }
+      .progress-txt { font-size: 0.88rem; color: #c9d5ee; font-weight: 600; }
+      .q-card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 18px; margin-bottom: 14px; box-shadow: var(--shadow);
+      }
+      .q-head { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+      .q-num {
+        background: var(--navy-2); color: #f3d97e; font-weight: 800; border-radius: 8px;
+        padding: 3px 10px; font-size: 0.85rem;
+      }
+      .q-type { font-size: 0.78rem; font-weight: 700; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
+      .q-text { font-size: 1.02rem; font-weight: 600; margin: 0 0 12px; }
+      .q-hint { font-size: 0.88rem; color: var(--muted); margin: -6px 0 12px; }
+      .opts { display: grid; gap: 8px; }
+      .opt {
+        display: flex; gap: 10px; align-items: flex-start; cursor: pointer;
+        border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: var(--surface-2);
+      }
+      .opt:hover { border-color: var(--gold); }
+      .opt input { margin-top: 3px; accent-color: var(--navy-2); width: 18px; height: 18px; flex: 0 0 auto; }
+      .opt .letter { font-weight: 800; color: var(--navy-2); }
+      @media (prefers-color-scheme: dark) { .opt .letter { color: var(--gold); } }
+      .stmt {
+        border: 1px solid var(--line); border-radius: 10px; padding: 12px; background: var(--surface-2); margin-bottom: 8px;
+      }
+      .stmt p { margin: 0 0 10px; font-weight: 600; }
+      .bs-btns { display: flex; gap: 8px; }
+      .bs-btns label {
+        flex: 1 1 0; text-align: center; cursor: pointer; border: 1px solid var(--line);
+        border-radius: 8px; padding: 8px; font-weight: 700; background: var(--surface);
+      }
+      .bs-btns input { position: absolute; opacity: 0; pointer-events: none; }
+      .bs-btns label:has(input:checked) { background: var(--navy-2); color: #fff; border-color: var(--navy-2); }
+      .quiz-foot { margin: 22px 0 8px; }
+
+      /* ---------- Result ---------- */
+      .score-hero {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        box-shadow: var(--shadow); padding: 26px 20px; text-align: center; margin-bottom: 18px;
+      }
+      .score-big { font-size: 3.4rem; font-weight: 800; line-height: 1; color: var(--navy-2); }
+      @media (prefers-color-scheme: dark) { .score-big { color: var(--gold); } }
+      .score-hero .of { color: var(--muted); font-weight: 600; }
+      .status-badge {
+        display: inline-block; margin-top: 12px; font-weight: 800; font-size: 1.05rem;
+        padding: 7px 20px; border-radius: 999px;
+      }
+      .status-badge.tuntas { background: var(--ok-bg); color: var(--ok); }
+      .status-badge.remidi { background: var(--bad-bg); color: var(--bad); }
+      .score-meta { color: var(--muted); margin-top: 12px; font-size: 0.93rem; }
+      .db-note { font-size: 0.85rem; color: var(--muted); margin-top: 8px; }
+      .rev-card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 16px 18px; margin-bottom: 12px; box-shadow: var(--shadow);
+      }
+      .rev-card.ok { border-color: var(--ok); }
+      .rev-card.no { border-color: var(--bad); }
+      .rev-head { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+      .rev-score { margin-left: auto; font-weight: 800; font-size: 0.9rem; padding: 3px 10px; border-radius: 999px; }
+      .rev-score.full { background: var(--ok-bg); color: var(--ok); }
+      .rev-score.part { background: var(--warn-bg); color: var(--warn); }
+      .rev-score.zero { background: var(--bad-bg); color: var(--bad); }
+      .rev-q { font-weight: 600; margin: 0 0 8px; }
+      .rev-line { font-size: 0.94rem; margin: 3px 0; }
+      .rev-line .k { color: var(--muted); font-weight: 600; }
+      .bahas {
+        margin-top: 10px; background: var(--surface-2); border: 1px solid var(--line);
+        border-radius: 10px; padding: 10px 12px; font-size: 0.93rem;
+      }
+      .bahas .k { font-weight: 800; color: var(--navy-2); display: block; margin-bottom: 2px; }
+      @media (prefers-color-scheme: dark) { .bahas .k { color: var(--gold); } }
+      .result-actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0; }
+
+      /* ---------- Modal ---------- */
+      .modal-veil {
+        position: fixed; inset: 0; background: rgba(4, 10, 24, 0.62);
+        display: none; align-items: center; justify-content: center; padding: 18px; z-index: 50;
+      }
+      .modal-veil.open { display: flex; }
+      .modal {
+        background: var(--surface); color: var(--ink); border-radius: var(--radius);
+        max-width: 430px; width: 100%; padding: 22px; box-shadow: var(--shadow);
+      }
+      .modal h3 { margin: 0 0 8px; }
+      .modal p { color: var(--muted); margin: 0 0 16px; }
+      .modal .row { display: flex; gap: 10px; }
+      .modal .row .btn { flex: 1 1 0; text-align: center; }
+
+      footer.foot { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 40px; }
+      .hidden { display: none !important; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="masthead">
+        <p class="kicker">Rumah Belajar Mandiri Siswa AAAMAAT KEREN</p>
+        <h1>KELAS <span class="gold">MAS YOSAD</span></h1>
+        <p class="sub">Asesmen Matematika Kelas 7 • 8 • 9</p>
+        <p class="guru">SMP Negeri 1 Bantarkawung — Guru: Drs. Paiyo</p>
+      </header>
+
+      <main id="app"></main>
+
+      <footer class="foot">
+        Kelas Mas YoSad — Asesmen Matematika SMP Negeri 1 Bantarkawung • KKM 75
+      </footer>
+    </div>
+
+    <!-- Modal konfirmasi kirim -->
+    <div class="modal-veil" id="confirmVeil" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+      <div class="modal">
+        <h3 id="confirmTitle">Kirim jawaban sekarang?</h3>
+        <p id="confirmText">Pastikan semua soal sudah dijawab.</p>
+        <div class="row">
+          <button class="btn btn-ghost" id="confirmCancel" type="button">Periksa lagi</button>
+          <button class="btn btn-gold" id="confirmSend" type="button">Ya, kirim</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      "use strict";
+
+      /* ================================================================
+         KONFIGURASI DATABASE — Supabase milik guru (Drs. Paiyo).
+         Hasil siswa dikirim ke tabel hasil_asesmen.
+         Bila keduanya kosong, aplikasi tetap berjalan penuh dan hasil
+         hanya tampil di layar siswa.
+         ================================================================ */
+      var SUPABASE_URL = "https://vovjeijhxnehhtxjqtkm.supabase.co";
+      var SUPABASE_ANON_KEY = "sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV";
+
+      var KKM = 75;
+
+      /* ================================================================
+         STRUKTUR KELAS & BAB
+         ================================================================ */
+      var KELAS = [
+        { jenjang: "7", label: "Kelas 7", bab: [
+          ["VII-01", "Bilangan Bulat"],
+          ["VII-02", "Bilangan Rasional"],
+          ["VII-03", "Rasio"],
+          ["VII-04", "Bentuk Aljabar"],
+          ["VII-05", "Persamaan dan Pertidaksamaan Linear Satu Variabel"],
+          ["VII-06", "Bangun Ruang Sisi Lengkung"]
+        ]},
+        { jenjang: "8", label: "Kelas 8", bab: [
+          ["VIII-01", "Pola Bilangan"],
+          ["VIII-02", "Relasi dan Fungsi"],
+          ["VIII-03", "Gradien dan Persamaan Garis Lurus"],
+          ["VIII-04", "Sistem Persamaan Linear Dua Variabel"],
+          ["VIII-05", "Teorema Pythagoras"],
+          ["VIII-06", "Bangun Ruang Sisi Datar"],
+          ["VIII-07", "Statistika"]
+        ]},
+        { jenjang: "9", label: "Kelas 9", bab: [
+          ["IX-01", "Bilangan Berpangkat dan Bentuk Akar"],
+          ["IX-02", "Transformasi Geometri"],
+          ["IX-03", "Kekongruenan dan Kesebangunan"],
+          ["IX-04", "Peluang"],
+          ["IX-05", "Bangun Ruang Sisi Lengkung"],
+          ["IX-06", "Pendalaman Materi TKA"]
+        ]}
+      ];
+
+      /* Slot asesmen pada setiap BAB */
+      var SLOT = [
+        { id: "pretes",   nama: "Pretes",                 grup: "awal",  final: false },
+        { id: "formatif-1", nama: "Formatif Pertemuan 1", grup: "formatif", final: false },
+        { id: "formatif-2", nama: "Formatif Pertemuan 2", grup: "formatif", final: false },
+        { id: "formatif-3", nama: "Formatif Pertemuan 3", grup: "formatif", final: false },
+        { id: "formatif-4", nama: "Formatif Pertemuan 4", grup: "formatif", final: false },
+        { id: "formatif-5", nama: "Formatif Pertemuan 5", grup: "formatif", final: false },
+        { id: "formatif-6", nama: "Formatif Pertemuan 6", grup: "formatif", final: false },
+        { id: "formatif-7", nama: "Formatif Pertemuan 7", grup: "formatif", final: false },
+        { id: "formatif-8", nama: "Formatif Pertemuan 8", grup: "formatif", final: false },
+        { id: "sumatif",  nama: "Asesmen Sumatif BAB",    grup: "akhir", final: true },
+        { id: "tka",      nama: "Uji TKA BAB",            grup: "akhir", final: true }
+      ];
+
+      /* ================================================================
+         BANK SOAL — data terstruktur per asesmen.
+         Kunci bank: "<kode BAB>-<id slot>", mis. "IX-03-pretes".
+         Tipe soal:
+           pg   : { tipe:"pg", tanya, opsi:[...], kunci:<indeks>, bahas }
+           bs   : { tipe:"bs", tanya, pernyataan:[{teks, kunci:true/false}], bahas }
+           mcma : { tipe:"mcma", tanya, opsi:[...], kunci:[<indeks>,...], bahas }
+         Bank baru cukup ditambahkan di sini; mesin tidak berubah.
+         ================================================================ */
+      var BANK = {
+
+        "IX-03-pretes": {
+          judul: "Pretes — Kesebangunan pada Dua Segitiga",
+          materi: "Materi prasyarat: kesebangunan pada dua segitiga.",
+          waktuMenit: 10,
+          password: "pretes9",
+          soal: [
+            { tipe: "pg",
+              tanya: "Dua segitiga dikatakan sebangun apabila …",
+              opsi: ["semua sisinya sama panjang",
+                     "sudut-sudut yang bersesuaian sama besar dan sisi-sisi yang bersesuaian sebanding",
+                     "luas kedua segitiga sama",
+                     "keliling kedua segitiga sama"],
+              kunci: 1,
+              bahas: "Syarat dua segitiga sebangun: sudut-sudut bersesuaian sama besar dan sisi-sisi bersesuaian sebanding." },
+            { tipe: "pg",
+              tanya: "Segitiga ABC sebangun dengan segitiga PQR. Panjang AB = 6 cm, BC = 8 cm, dan PQ = 9 cm. Jika sisi QR bersesuaian dengan sisi BC, panjang QR adalah …",
+              opsi: ["10 cm", "12 cm", "14 cm", "16 cm"],
+              kunci: 1,
+              bahas: "AB/PQ = 6/9 = 2/3, maka QR = BC × 3/2 = 8 × 3/2 = 12 cm." },
+            { tipe: "pg",
+              tanya: "Segitiga ABC sebangun dengan segitiga DEF. Besar ∠A = 65° dan ∠B = 55°. Jika ∠A bersesuaian dengan ∠D, besar ∠D adalah …",
+              opsi: ["55°", "60°", "65°", "120°"],
+              kunci: 2,
+              bahas: "Sudut yang bersesuaian pada dua segitiga sebangun besarnya sama, jadi ∠D = ∠A = 65°." },
+            { tipe: "pg",
+              tanya: "Pada saat yang sama, sebuah tongkat setinggi 1,5 m mempunyai bayangan sepanjang 2 m. Perbandingan tinggi tongkat dengan panjang bayangannya adalah …",
+              opsi: ["3 : 4", "4 : 3", "1 : 2", "2 : 1"],
+              kunci: 0,
+              bahas: "1,5 : 2 = 15 : 20 = 3 : 4." },
+            { tipe: "pg",
+              tanya: "Sebuah pohon mempunyai bayangan sepanjang 8 m. Pada saat yang sama, tongkat setinggi 1 m mempunyai bayangan 2 m. Tinggi pohon tersebut adalah …",
+              opsi: ["2 m", "4 m", "8 m", "16 m"],
+              kunci: 1,
+              bahas: "Tinggi pohon/bayangan pohon = 1/2, maka tinggi pohon = 8 × 1/2 = 4 m." }
+          ]
+        },
+
+        "IX-03-formatif-7": {
+          judul: "Formatif Pertemuan 7 — Penerapan Kesebangunan",
+          materi: "Menerapkan kesebangunan untuk menaksir tinggi pohon, menara, tiang bendera, dan gedung.",
+          waktuMenit: 30,
+          password: "formatif9",
+          soal: [
+            { tipe: "pg",
+              tanya: "Tiang bendera di halaman sekolah mempunyai bayangan sepanjang 6 m. Pada saat yang sama, seorang siswa setinggi 150 cm mempunyai bayangan 2 m. Tinggi tiang bendera adalah …",
+              opsi: ["3 m", "4 m", "4,5 m", "9 m"],
+              kunci: 2,
+              bahas: "Tinggi tiang = 6 × (1,5/2) = 6 × 0,75 = 4,5 m." },
+            { tipe: "pg",
+              tanya: "Sebuah menara mempunyai bayangan sepanjang 20 m. Pada saat yang sama, tongkat sepanjang 2 m mempunyai bayangan 2,5 m. Tinggi menara adalah …",
+              opsi: ["12 m", "16 m", "20 m", "25 m"],
+              kunci: 1,
+              bahas: "Tinggi menara = 20 × (2/2,5) = 20 × 0,8 = 16 m." },
+            { tipe: "pg",
+              tanya: "Sebuah gedung mempunyai bayangan sepanjang 15 m. Pada saat yang sama, pohon setinggi 4 m mempunyai bayangan 3 m. Tinggi gedung adalah …",
+              opsi: ["11,25 m", "16 m", "20 m", "24 m"],
+              kunci: 2,
+              bahas: "Tinggi gedung = 15 × (4/3) = 20 m." },
+            { tipe: "pg",
+              tanya: "Seorang siswa menaksir tinggi menara dengan cermin yang diletakkan di tanah. Jarak siswa ke cermin 2 m dan jarak cermin ke kaki menara 18 m. Jika tinggi mata siswa dari tanah 160 cm, tinggi menara adalah …",
+              opsi: ["12,8 m", "14,4 m", "16 m", "28,8 m"],
+              kunci: 1,
+              bahas: "Dengan cermin terbentuk dua segitiga sebangun: tinggi menara = 18 × (1,6/2) = 18 × 0,8 = 14,4 m." },
+            { tipe: "pg",
+              tanya: "Sebuah gedung difoto dengan skala 1 : 500. Jika tinggi gedung pada foto adalah 8 cm, tinggi gedung sebenarnya adalah …",
+              opsi: ["4 m", "40 m", "400 m", "0,4 m"],
+              kunci: 1,
+              bahas: "Tinggi sebenarnya = 8 cm × 500 = 4.000 cm = 40 m." },
+            { tipe: "bs",
+              tanya: "Tentukan Benar atau Salah pernyataan berikut.",
+              pernyataan: [
+                { teks: "Pada saat yang sama, perbandingan antara tinggi benda dan panjang bayangannya adalah sama untuk semua benda.", kunci: true }
+              ],
+              bahas: "Itulah prinsip dasar menaksir tinggi dengan bayangan: sinar matahari datang sejajar pada saat yang sama." },
+            { tipe: "bs",
+              tanya: "Tentukan Benar atau Salah pernyataan berikut.",
+              pernyataan: [
+                { teks: "Sebuah pohon mempunyai bayangan 10 m. Tongkat setinggi 2 m mempunyai bayangan 4 m. Maka tinggi pohon adalah 20 m.", kunci: false }
+              ],
+              bahas: "Tinggi pohon = 10 × (2/4) = 5 m, bukan 20 m." },
+            { tipe: "bs",
+              tanya: "Tentukan Benar atau Salah pernyataan berikut.",
+              pernyataan: [
+                { teks: "Dua segitiga yang dibentuk oleh sebuah benda, bayangannya, dan sinar matahari pada saat yang sama merupakan dua segitiga yang sebangun.", kunci: true }
+              ],
+              bahas: "Sudut di ujung bayangan sama (sinar matahari sejajar) dan sudut di kaki benda sama-sama siku-siku, sehingga kedua segitiga sebangun." },
+            { tipe: "mcma",
+              tanya: "Sebuah pohon mempunyai bayangan sepanjang 12 m dan ditaksir tingginya 9 m. Pasangan data pembanding (tinggi tongkat dan panjang bayangannya) yang tepat digunakan untuk memperoleh taksiran tersebut adalah …",
+              opsi: ["tongkat 3 m dengan bayangan 4 m",
+                     "tongkat 1,5 m dengan bayangan 2 m",
+                     "tongkat 2 m dengan bayangan 3 m",
+                     "tongkat 6 m dengan bayangan 8 m"],
+              kunci: [0, 1, 3],
+              bahas: "Taksiran 9 m dari bayangan 12 m berarti perbandingan tinggi : bayangan = 3 : 4. Pilihan A (3:4), B (1,5:2 = 3:4), dan D (6:8 = 3:4) memenuhi; pilihan C (2:3) menghasilkan taksiran 8 m." },
+            { tipe: "mcma",
+              tanya: "Pernyataan yang benar tentang dua segitiga yang sebangun adalah …",
+              opsi: ["sudut-sudut yang bersesuaian sama besar",
+                     "sisi-sisi yang bersesuaian sebanding",
+                     "semua sisi yang bersesuaian pasti sama panjang",
+                     "perbandingan luasnya sama dengan perbandingan panjang sisinya"],
+              kunci: [0, 1],
+              bahas: "Segitiga sebangun: sudut bersesuaian sama besar dan sisi bersesuaian sebanding. Pilihan C adalah sifat kongruen; pilihan D keliru karena perbandingan luas adalah kuadrat perbandingan sisi." }
+          ]
+        }
+      };
+    </script>
+
+    <script>
+      "use strict";
+
+      var app = document.getElementById("app");
+      var LETTERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
+
+      /* State navigasi & ujian */
+      var nav = { jenjang: null, babKode: null, babNama: null, slotId: null, slotNama: null };
+      var sesi = null; /* { identitas, bankKey, bank, mulai, akhir, timerId, terkirim } */
+
+      function esc(s) {
+        return String(s == null ? "" : s)
+          .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+      function bankKey() { return nav.babKode + "-" + nav.slotId; }
+      function cariKelas(jenjang) {
+        for (var i = 0; i < KELAS.length; i++) if (KELAS[i].jenjang === jenjang) return KELAS[i];
+        return null;
+      }
+      function hitungSiap(babKode) {
+        var n = 0;
+        for (var i = 0; i < SLOT.length; i++) if (BANK[babKode + "-" + SLOT[i].id]) n++;
+        return n;
+      }
+      function scrollTop() { window.scrollTo(0, 0); }
+
+      /* ================= BERANDA ================= */
+      function viewBeranda() {
+        if (sesi && sesi.timerId) clearInterval(sesi.timerId);
+        sesi = null; dbStatusEl = null;
+        nav = { jenjang: null, babKode: null, babNama: null, slotId: null, slotNama: null };
+        var cards = KELAS.map(function (k) {
+          var jmlBab = k.bab.length;
+          return '<button class="kelas-card" type="button" onclick="pilihKelas(\'' + k.jenjang + '\')">' +
+            '<div class="num">' + k.jenjang + '</div>' +
+            '<div class="lbl">' + esc(k.label) + '</div>' +
+            '<div class="desc">' + jmlBab + ' BAB matematika — dari Bilangan hingga materi akhir kelas ' + k.jenjang + '.</div>' +
+            '<div class="go">Lihat daftar BAB →</div></button>';
+        }).join("");
+        app.innerHTML =
+          '<h2 class="view-title">Pilih Kelas</h2>' +
+          '<p class="view-sub">Setiap kelas berisi BAB-BAB matematika. Di dalam setiap BAB tersedia Pretes, asesmen formatif tiap pertemuan, Asesmen Sumatif, dan Uji TKA.</p>' +
+          '<div class="kelas-grid">' + cards + '</div>' +
+          '<section class="howto"><h3>Cara mengerjakan asesmen</h3><ol>' +
+          '<li>Pilih <strong>kelas</strong>, lalu pilih <strong>BAB</strong> yang sedang dipelajari.</li>' +
+          '<li>Pilih asesmen yang ditugaskan guru, isi <strong>nama, kelas, dan nomor absen</strong>, lalu masukkan <strong>password</strong> dari guru.</li>' +
+          '<li>Kerjakan soal sebelum waktu habis. Bentuk soal mengikuti TKA: <strong>Pilihan Ganda Biasa</strong>, <strong>Benar/Salah</strong>, dan <strong>Pilihan Ganda Kompleks (MCMA)</strong>.</li>' +
+          '<li>Setelah terkirim, nilai dan status Tuntas/Remidi langsung tampil. <strong>Ulasan jawaban dan pembahasan</strong> tiap soal dilindungi password guru. Nilai minimal tuntas (KKM) adalah <strong>75</strong>.</li>' +
+          '</ol></section>';
+        scrollTop();
+      }
+
+      /* ================= DAFTAR BAB ================= */
+      function pilihKelas(jenjang) {
+        nav.jenjang = jenjang; nav.babKode = null; nav.babNama = null;
+        var k = cariKelas(jenjang);
+        var rows = k.bab.map(function (b) {
+          var siap = hitungSiap(b[0]);
+          var meta = siap > 0 ? (siap + " asesmen siap") : "asesmen menyusul";
+          return '<button class="bab-row" type="button" onclick="pilihBab(\'' + b[0] + '\')">' +
+            '<span class="bab-code">' + esc(b[0]) + '</span>' +
+            '<span class="bab-name">' + esc(b[1]) + '</span>' +
+            '<span class="bab-meta">' + meta + '</span>' +
+            '<span class="bab-arrow">›</span></button>';
+        }).join("");
+        app.innerHTML =
+          '<div class="crumbs"><button class="btn btn-back" type="button" onclick="viewBeranda()">← Beranda</button></div>' +
+          '<h2 class="view-title">' + esc(k.label) + ' — Daftar BAB</h2>' +
+          '<p class="view-sub">Pilih BAB untuk melihat asesmen di dalamnya.</p>' +
+          '<div class="bab-list">' + rows + '</div>';
+        scrollTop();
+      }
+
+      /* ================= HALAMAN BAB ================= */
+      function pilihBab(kode) {
+        var k = cariKelas(nav.jenjang);
+        for (var i = 0; i < k.bab.length; i++) if (k.bab[i][0] === kode) { nav.babKode = kode; nav.babNama = k.bab[i][1]; }
+        renderBab();
+      }
+      function renderBab() {
+        function card(slot) {
+          var bank = BANK[nav.babKode + "-" + slot.id];
+          if (!bank) {
+            return '<article class="ases-card off"><h3>' + esc(slot.nama) + '</h3>' +
+              '<p class="meta">Bank soal untuk asesmen ini sedang disiapkan guru.</p>' +
+              '<div class="spacer"></div><span class="pill pill-soon">Soal menyusul</span></article>';
+          }
+          var nPg = 0, nBs = 0, nMc = 0;
+          bank.soal.forEach(function (s) { if (s.tipe === "pg") nPg++; else if (s.tipe === "bs") nBs++; else nMc++; });
+          var rincian = [];
+          if (nPg) rincian.push(nPg + " PG");
+          if (nBs) rincian.push(nBs + " B/S");
+          if (nMc) rincian.push(nMc + " MCMA");
+          return '<article class="ases-card' + (slot.final ? " final" : "") + '"><h3>' + esc(slot.nama) + '</h3>' +
+            '<p class="meta">' + esc(bank.judul) + '</p>' +
+            '<p class="meta">' + bank.soal.length + ' soal (' + rincian.join(" • ") + ') — ' + bank.waktuMenit + ' menit</p>' +
+            '<div class="spacer"></div>' +
+            '<span class="pill ' + (slot.final ? "pill-final" : "pill-ready") + '">' + (slot.final ? "Asesmen akhir BAB" : "Siap dikerjakan") + '</span>' +
+            '<button class="btn ' + (slot.final ? "btn-gold" : "") + '" type="button" onclick="mulaiAsesmen(\'' + slot.id + '\')">Mulai</button></article>';
+        }
+        var awal = SLOT.filter(function (s) { return s.grup === "awal"; }).map(card).join("");
+        var formatif = SLOT.filter(function (s) { return s.grup === "formatif"; }).map(card).join("");
+        var akhir = SLOT.filter(function (s) { return s.grup === "akhir"; }).map(card).join("");
+        app.innerHTML =
+          '<div class="crumbs"><button class="btn btn-back" type="button" onclick="viewBeranda()">← Beranda</button>' +
+          '<button class="btn btn-back" type="button" onclick="pilihKelas(\'' + nav.jenjang + '\')">← Kelas ' + nav.jenjang + '</button></div>' +
+          '<h2 class="view-title">' + esc(nav.babKode) + ' — ' + esc(nav.babNama) + '</h2>' +
+          '<p class="view-sub">Kelas ' + nav.jenjang + ' • SMP Negeri 1 Bantarkawung</p>' +
+          '<p class="group-label">Asesmen Awal</p><div class="ases-grid">' + awal + '</div>' +
+          '<p class="group-label">Asesmen Formatif per Pertemuan</p><div class="ases-grid">' + formatif + '</div>' +
+          '<p class="group-label">Asesmen Akhir BAB</p><div class="ases-grid">' + akhir + '</div>';
+        scrollTop();
+      }
+
+      /* ================= FORMULIR IDENTITAS ================= */
+      function mulaiAsesmen(slotId) {
+        for (var i = 0; i < SLOT.length; i++) if (SLOT[i].id === slotId) { nav.slotId = slotId; nav.slotNama = SLOT[i].nama; }
+        var bank = BANK[bankKey()];
+        app.innerHTML =
+          '<div class="crumbs"><button class="btn btn-back" type="button" onclick="renderBab()">← Kembali ke BAB</button></div>' +
+          '<section class="panel">' +
+          '<h2>' + esc(nav.slotNama) + '</h2>' +
+          '<p class="view-sub">' + esc(nav.babKode) + ' — ' + esc(nav.babNama) + '</p>' +
+          '<div class="info-box"><strong>' + esc(bank.judul) + '</strong><br>' + esc(bank.materi) +
+          '<br>Jumlah soal: <strong>' + bank.soal.length + '</strong> • Waktu: <strong>' + bank.waktuMenit + ' menit</strong> • KKM: <strong>' + KKM + '</strong>' +
+          '<br>Waktu berjalan sejak tombol <em>Mulai Mengerjakan</em> ditekan. Jika waktu habis, jawaban terkirim otomatis.</div>' +
+          '<div class="form-err" id="formErr"></div>' +
+          '<form id="formIden" novalidate>' +
+          '<div class="field"><label for="fNama">Nama lengkap</label>' +
+          '<input id="fNama" type="text" autocomplete="name" placeholder="Tulis nama lengkapmu" /></div>' +
+          '<div class="field"><label for="fKelas">Kelas (rombel)</label>' +
+          '<input id="fKelas" type="text" placeholder="Contoh: IX B" /></div>' +
+          '<div class="field"><label for="fAbsen">Nomor absen</label>' +
+          '<input id="fAbsen" type="number" min="1" max="60" inputmode="numeric" placeholder="Contoh: 12" /></div>' +
+          '<div class="field"><label for="fPass">Password asesmen</label>' +
+          '<input id="fPass" type="password" placeholder="Password dari guru" /></div>' +
+          '<button class="btn btn-gold btn-big" type="submit">Mulai Mengerjakan</button>' +
+          '</form></section>';
+        scrollTop();
+        document.getElementById("formIden").addEventListener("submit", function (ev) {
+          ev.preventDefault();
+          var nama = document.getElementById("fNama").value.trim();
+          var kelas = document.getElementById("fKelas").value.trim();
+          var absen = document.getElementById("fAbsen").value.trim();
+          var pass = document.getElementById("fPass").value;
+          var err = document.getElementById("formErr");
+          function gagal(msg) { err.textContent = msg; err.style.display = "block"; err.scrollIntoView({ block: "center", behavior: "smooth" }); }
+          if (!nama) return gagal("Nama lengkap belum diisi.");
+          if (!kelas) return gagal("Kelas (rombel) belum diisi, contoh: IX B.");
+          if (!absen || isNaN(Number(absen))) return gagal("Nomor absen belum diisi dengan benar.");
+          if (pass !== bank.password) return gagal("Password salah. Minta password yang benar kepada guru, lalu coba lagi.");
+          err.style.display = "none";
+          mulaiUjian({ nama: nama, kelas: kelas, noAbsen: Number(absen) });
+        });
+        document.getElementById("fNama").focus();
+      }
+
+      /* ================= UJIAN ================= */
+      function labelTipe(t) {
+        if (t === "pg") return "Pilihan Ganda";
+        if (t === "bs") return "Benar / Salah";
+        return "Pilihan Ganda Kompleks";
+      }
+      function mulaiUjian(identitas) {
+        var bank = BANK[bankKey()];
+        sesi = {
+          identitas: identitas,
+          bankKey: bankKey(),
+          bank: bank,
+          mulai: Date.now(),
+          akhir: Date.now() + bank.waktuMenit * 60 * 1000,
+          timerId: null,
+          terkirim: false
+        };
+        renderUjian();
+        sesi.timerId = setInterval(tickTimer, 250);
+        tickTimer();
+      }
+      function renderUjian() {
+        var bank = sesi.bank;
+        var soalHtml = bank.soal.map(function (s, i) {
+          var head = '<div class="q-head"><span class="q-num">Soal ' + (i + 1) + '</span>' +
+            '<span class="q-type">' + labelTipe(s.tipe) + '</span></div>';
+          var body = "";
+          if (s.tipe === "pg") {
+            body = '<p class="q-text">' + esc(s.tanya) + '</p><div class="opts">' +
+              s.opsi.map(function (o, j) {
+                return '<label class="opt"><input type="radio" name="q' + i + '" value="' + j + '" />' +
+                  '<span><span class="letter">' + LETTERS[j] + '.</span> ' + esc(o) + '</span></label>';
+              }).join("") + '</div>';
+          } else if (s.tipe === "bs") {
+            body = '<p class="q-text">' + esc(s.tanya) + '</p>' +
+              s.pernyataan.map(function (p, j) {
+                return '<div class="stmt"><p>' + esc(p.teks) + '</p><div class="bs-btns">' +
+                  '<label><input type="radio" name="q' + i + 's' + j + '" value="true" />Benar</label>' +
+                  '<label><input type="radio" name="q' + i + 's' + j + '" value="false" />Salah</label>' +
+                  '</div></div>';
+              }).join("");
+          } else { /* mcma */
+            body = '<p class="q-text">' + esc(s.tanya) + '</p>' +
+              '<p class="q-hint">Pilih <strong>semua</strong> pilihan yang benar — boleh lebih dari satu.</p><div class="opts">' +
+              s.opsi.map(function (o, j) {
+                return '<label class="opt"><input type="checkbox" name="q' + i + '" value="' + j + '" />' +
+                  '<span><span class="letter">' + LETTERS[j] + '.</span> ' + esc(o) + '</span></label>';
+              }).join("") + '</div>';
+          }
+          return '<article class="q-card" id="qc' + i + '">' + head + body + '</article>';
+        }).join("");
+        app.innerHTML =
+          '<div class="quiz-bar">' +
+          '<div class="who">' + esc(sesi.bank.judul) + '<br /><span>' + esc(sesi.identitas.nama) + ' • ' + esc(sesi.identitas.kelas) + ' • Absen ' + sesi.identitas.noAbsen + '</span></div>' +
+          '<div class="progress-txt" id="progTxt">Terjawab 0 dari ' + bank.soal.length + '</div>' +
+          '<div class="timer" id="timerChip">--:--</div>' +
+          '</div>' +
+          '<form id="formUjian">' + soalHtml +
+          '<div class="quiz-foot"><button class="btn btn-gold btn-big" type="button" id="btnKirim">Kirim Jawaban</button></div>' +
+          '</form>';
+        scrollTop();
+        document.getElementById("formUjian").addEventListener("change", updateProgress);
+        document.getElementById("btnKirim").addEventListener("click", function () { konfirmasiKirim(false); });
+        updateProgress();
+      }
+      function sisaDetik() { return Math.max(0, Math.round((sesi.akhir - Date.now()) / 1000)); }
+      function fmtWaktu(d) {
+        var m = Math.floor(d / 60), s = d % 60;
+        return (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+      }
+      function tickTimer() {
+        if (!sesi || sesi.terkirim) return;
+        var chip = document.getElementById("timerChip");
+        var sisa = sisaDetik();
+        if (chip) {
+          chip.textContent = "⏱ " + fmtWaktu(sisa);
+          if (sisa <= 60) chip.classList.add("low"); else chip.classList.remove("low");
+        }
+        if (sisa <= 0) { kirimJawaban(true); }
+      }
+      function soalTerjawab(i) {
+        var s = sesi.bank.soal[i];
+        if (s.tipe === "bs") {
+          for (var j = 0; j < s.pernyataan.length; j++) {
+            if (!document.querySelector('input[name="q' + i + 's' + j + '"]:checked')) return false;
+          }
+          return true;
+        }
+        return !!document.querySelector('input[name="q' + i + '"]:checked');
+      }
+      function updateProgress() {
+        if (!sesi) return;
+        var n = 0;
+        for (var i = 0; i < sesi.bank.soal.length; i++) if (soalTerjawab(i)) n++;
+        var el = document.getElementById("progTxt");
+        if (el) el.textContent = "Terjawab " + n + " dari " + sesi.bank.soal.length;
+      }
+
+      /* ================= KONFIRMASI & KIRIM ================= */
+      var veil = document.getElementById("confirmVeil");
+      function konfirmasiKirim(otomatis) {
+        if (otomatis) { kirimJawaban(true); return; }
+        var belum = [];
+        for (var i = 0; i < sesi.bank.soal.length; i++) if (!soalTerjawab(i)) belum.push(i + 1);
+        var txt = document.getElementById("confirmText");
+        txt.textContent = belum.length
+          ? "Masih ada soal yang belum dijawab: nomor " + belum.join(", ") + ". Soal kosong nilainya 0. Tetap kirim sekarang?"
+          : "Semua soal sudah dijawab. Kirim jawaban dan lihat nilaimu?";
+        veil.classList.add("open");
+      }
+      document.getElementById("confirmCancel").addEventListener("click", function () { veil.classList.remove("open"); });
+      document.getElementById("confirmSend").addEventListener("click", function () { veil.classList.remove("open"); kirimJawaban(false); });
+      veil.addEventListener("click", function (e) { if (e.target === veil) veil.classList.remove("open"); });
+
+      function bacaJawaban(i) {
+        var s = sesi.bank.soal[i];
+        if (s.tipe === "pg") {
+          var r = document.querySelector('input[name="q' + i + '"]:checked');
+          return r ? Number(r.value) : null;
+        }
+        if (s.tipe === "bs") {
+          return s.pernyataan.map(function (p, j) {
+            var el = document.querySelector('input[name="q' + i + 's' + j + '"]:checked');
+            return el ? (el.value === "true") : null;
+          });
+        }
+        var boxes = document.querySelectorAll('input[name="q' + i + '"]:checked');
+        var out = [];
+        boxes.forEach(function (b) { out.push(Number(b.value)); });
+        return out.sort(function (a, b) { return a - b; });
+      }
+      function skorSoal(s, jawab) {
+        if (s.tipe === "pg") return (jawab !== null && jawab === s.kunci) ? 1 : 0;
+        if (s.tipe === "bs") {
+          var benar = 0;
+          s.pernyataan.forEach(function (p, j) { if (jawab && jawab[j] === p.kunci) benar++; });
+          return benar / s.pernyataan.length;
+        }
+        /* mcma: skor 1 hanya bila himpunan pilihan persis sama dengan kunci */
+        if (!jawab || jawab.length !== s.kunci.length) return 0;
+        var k = s.kunci.slice().sort(function (a, b) { return a - b; });
+        var j = jawab.slice().sort(function (a, b) { return a - b; });
+        for (var i = 0; i < k.length; i++) if (j[i] !== k[i]) return 0;
+        return 1;
+      }
+      function teksJawabanPG(s, idx) {
+        return idx === null ? "Tidak dijawab" : LETTERS[idx] + ". " + s.opsi[idx];
+      }
+      function teksKunci(s) {
+        if (s.tipe === "pg") return LETTERS[s.kunci] + ". " + s.opsi[s.kunci];
+        if (s.tipe === "mcma") return s.kunci.map(function (j) { return LETTERS[j] + ". " + s.opsi[j]; }).join("  •  ");
+        return s.pernyataan.map(function (p) { return p.kunci ? "Benar" : "Salah"; }).join(", ");
+      }
+      function teksJawaban(s, jawab) {
+        if (s.tipe === "pg") return teksJawabanPG(s, jawab);
+        if (s.tipe === "mcma") {
+          if (!jawab || !jawab.length) return "Tidak dijawab";
+          return jawab.map(function (j) { return LETTERS[j] + ". " + s.opsi[j]; }).join("  •  ");
+        }
+        return s.pernyataan.map(function (p, j) {
+          var v = jawab ? jawab[j] : null;
+          return "Pernyataan " + (j + 1) + ": " + (v === null ? "Tidak dijawab" : (v ? "Benar" : "Salah"));
+        }).join("  •  ");
+      }
+      function fmtSkor(x) {
+        var v = Math.round(x * 100) / 100;
+        return (v % 1 === 0) ? String(v) : String(v).replace(".", ",");
+      }
+
+      function kirimJawaban(otomatis) {
+        if (!sesi || sesi.terkirim) return;
+        sesi.terkirim = true;
+        if (sesi.timerId) clearInterval(sesi.timerId);
+        var bank = sesi.bank;
+        var durasi = Math.round((Date.now() - sesi.mulai) / 1000);
+        var total = 0;
+        var rincian = bank.soal.map(function (s, i) {
+          var jawab = bacaJawaban(i);
+          var skor = skorSoal(s, jawab);
+          total += skor;
+          return { nomor: i + 1, soal: s, jawab: jawab, skor: skor };
+        });
+        var nilai = Math.round((total / bank.soal.length) * 1000) / 10;
+        var status = nilai >= KKM ? "Tuntas" : "Remidi";
+        var hasil = { rincian: rincian, total: total, nilai: nilai, status: status, durasi: durasi, otomatis: otomatis };
+        kirimKeDatabase(hasil);
+        renderHasil(hasil);
+      }
+
+      /* ================= DATABASE SUPABASE ================= */
+      var dbStatusEl = null;
+      function kirimKeDatabase(hasil) {
+        if (!SUPABASE_URL || !SUPABASE_ANON_KEY) { hasil.db = "nonaktif"; return; }
+        hasil.db = "mengirim";
+        var jawabanDetail = hasil.rincian.map(function (r) {
+          return {
+            nomor: r.nomor,
+            tipe: r.soal.tipe,
+            skor: Math.round(r.skor * 100) / 100,
+            jawaban_siswa: teksJawaban(r.soal, r.jawab),
+            kunci: teksKunci(r.soal)
+          };
+        });
+        var kodeVerifikasi = "KY-" + Math.random().toString(36).slice(2, 8).toUpperCase();
+        var body = {
+          nama: sesi.identitas.nama,
+          kelas: sesi.identitas.kelas,
+          absen: sesi.identitas.noAbsen,
+          no_absen: sesi.identitas.noAbsen,
+          jenjang: nav.jenjang,
+          bab: nav.babKode + " " + nav.babNama,
+          asesmen: nav.slotNama,
+          nilai: hasil.nilai,
+          status: hasil.status,
+          jumlah_soal: sesi.bank.soal.length,
+          jawaban: jawabanDetail,
+          durasi_detik: hasil.durasi,
+          kode_verifikasi: kodeVerifikasi,
+          tanggal: new Date().toISOString().slice(0, 10)
+        };
+        fetch(SUPABASE_URL.replace(/\/+$/, "") + "/rest/v1/hasil_asesmen", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "apikey": SUPABASE_ANON_KEY,
+            "Authorization": "Bearer " + SUPABASE_ANON_KEY,
+            "Prefer": "return=minimal"
+          },
+          body: JSON.stringify(body)
+        }).then(function (res) {
+          hasil.db = res.ok ? "tersimpan" : "gagal";
+          updateDbNote(hasil);
+        }).catch(function () {
+          hasil.db = "gagal";
+          updateDbNote(hasil);
+        });
+      }
+      function teksDbNote(hasil) {
+        if (hasil.db === "tersimpan") return "Hasilmu sudah tersimpan di database nilai guru.";
+        if (hasil.db === "mengirim") return "Menyimpan hasil ke database nilai guru…";
+        if (hasil.db === "gagal") return "Penyimpanan ke database belum berhasil — sampaikan hasil layarmu kepada guru.";
+        return "";
+      }
+      function updateDbNote(hasil) {
+        if (dbStatusEl) dbStatusEl.textContent = teksDbNote(hasil);
+      }
+
+      /* ================= HASIL ================= */
+      /* Password guru untuk membuka ulasan jawaban & pembahasan.
+         Berlaku sama untuk semua asesmen (Pretes, Formatif, Sumatif, Uji TKA). */
+      var PASSWORD_ULASAN = "yosad67";
+      function bukaUlasan() {
+        var inp = document.getElementById("fPassUlasan");
+        var err = document.getElementById("ulasanErr");
+        if (!inp || !err) return;
+        if (inp.value === PASSWORD_ULASAN) {
+          var gate = document.getElementById("ulasanGate");
+          var isi = document.getElementById("ulasanIsi");
+          err.style.display = "none";
+          if (gate) gate.classList.add("hidden");
+          if (isi) isi.classList.remove("hidden");
+          window.scrollTo(0, gate ? gate.offsetTop : 0);
+        } else {
+          err.textContent = "Password salah. Ulasan jawaban hanya dapat dibuka dengan password guru — coba lagi.";
+          err.style.display = "block";
+          inp.value = "";
+          inp.focus();
+        }
+      }
+      function renderHasil(hasil) {
+        var bank = sesi.bank;
+        var rev = hasil.rincian.map(function (r) {
+          var s = r.soal;
+          var cls = r.skor === 1 ? "ok" : "no";
+          var sCls = r.skor === 1 ? "full" : (r.skor > 0 ? "part" : "zero");
+          var head = '<div class="rev-head"><span class="q-num">Soal ' + r.nomor + '</span>' +
+            '<span class="q-type">' + labelTipe(s.tipe) + '</span>' +
+            '<span class="rev-score ' + sCls + '">Skor ' + fmtSkor(r.skor) + ' / 1</span></div>';
+          var q = '<p class="rev-q">' + esc(s.tanya) + '</p>';
+          if (s.tipe === "bs") {
+            q += s.pernyataan.map(function (p) { return '<p class="rev-q">“' + esc(p.teks) + '”</p>'; }).join("");
+          }
+          return '<article class="rev-card ' + cls + '">' + head + q +
+            '<p class="rev-line"><span class="k">Jawabanmu:</span> ' + esc(teksJawaban(s, r.jawab)) + '</p>' +
+            '<p class="rev-line"><span class="k">Kunci jawaban:</span> ' + esc(teksKunci(s)) + '</p>' +
+            '<div class="bahas"><span class="k">Pembahasan</span>' + esc(s.bahas) + '</div></article>';
+        }).join("");
+        var menit = Math.floor(hasil.durasi / 60), detik = hasil.durasi % 60;
+        app.innerHTML =
+          '<section class="score-hero">' +
+          '<div class="score-big">' + String(hasil.nilai).replace(".", ",") + '</div>' +
+          '<div class="of">dari 100 — total skor ' + fmtSkor(hasil.total) + ' dari ' + bank.soal.length + ' soal</div>' +
+          '<div><span class="status-badge ' + (hasil.status === "Tuntas" ? "tuntas" : "remidi") + '">' +
+            (hasil.status === "Tuntas" ? "✓ TUNTAS" : "REMIDI — belum mencapai KKM " + KKM) + '</span></div>' +
+          '<p class="score-meta">' + esc(sesi.identitas.nama) + ' • ' + esc(sesi.identitas.kelas) + ' • Absen ' + sesi.identitas.noAbsen +
+          '<br />' + esc(nav.slotNama) + ' — ' + esc(nav.babKode) + ' ' + esc(nav.babNama) +
+          '<br />Waktu pengerjaan: ' + menit + ' menit ' + detik + ' detik' + (hasil.otomatis ? ' (terkirim otomatis — waktu habis)' : '') + '</p>' +
+          '<p class="db-note" id="dbNote">' + esc(teksDbNote(hasil)) + '</p>' +
+          '</section>' +
+          '<h2 class="view-title">Ulasan Jawaban &amp; Pembahasan</h2>' +
+          '<section class="panel" id="ulasanGate">' +
+          '<p style="margin:0 0 14px">Ulasan jawaban — kunci jawaban dan pembahasan tiap soal — dilindungi <strong>password guru</strong> agar tidak dibuka langsung oleh siswa. Nilai dan statusmu di atas tetap dapat dilihat tanpa password.</p>' +
+          '<div class="form-err" id="ulasanErr"></div>' +
+          '<form id="formUlasan" novalidate>' +
+          '<div class="field"><label for="fPassUlasan">Password guru</label>' +
+          '<input id="fPassUlasan" type="password" placeholder="Masukkan password guru" autocomplete="off" /></div>' +
+          '<button class="btn btn-gold btn-big" type="submit">Buka Ulasan Jawaban</button>' +
+          '</form></section>' +
+          '<div id="ulasanIsi" class="hidden">' + rev + '</div>' +
+          '<div class="result-actions">' +
+          '<button class="btn" type="button" onclick="selesaiKeBab()">Kembali ke BAB ' + esc(nav.babKode) + '</button>' +
+          '<button class="btn btn-ghost" type="button" onclick="viewBeranda()">Ke Beranda</button>' +
+          '</div>';
+        dbStatusEl = document.getElementById("dbNote");
+        updateDbNote(hasil);
+        document.getElementById("formUlasan").addEventListener("submit", function (ev) {
+          ev.preventDefault();
+          bukaUlasan();
+        });
+        scrollTop();
+      }
+      function selesaiKeBab() { sesi = null; dbStatusEl = null; renderBab(); }
+
+      viewBeranda();
+    </script>
+  </body>
+</html>
