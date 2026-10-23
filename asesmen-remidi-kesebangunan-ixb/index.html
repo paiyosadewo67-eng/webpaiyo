@@ -85,7 +85,7 @@
     <div class="info">
       <b>Petunjuk:</b> 20 soal pilihan ganda • Waktu 60 menit • Setiap soal bernilai 5 •
       KKM/KKTP <b>75</b>. Kerjakan dengan jujur dan mandiri. Setelah menekan tombol
-      <i>Kumpulkan</i>, nilaimu langsung tersimpan dan kamu bisa melihat ulasan jawaban.
+      <i>Kumpulkan</i>, nilaimu langsung tersimpan dan ulasan jawaban dapat dibuka dengan password dari guru.
     </div>
     <button class="btn" onclick="mulai()">Mulai Mengerjakan →</button>
     <button class="btn abu" onclick="bukaPanelGuru()">📊 Daftar Nilai &amp; Analisis Guru</button>
@@ -114,7 +114,13 @@
     <p style="font-size:14px;color:#456;">Kode verifikasi: <b id="kodeVerif"></b></p>
     <p class="status-simpan" id="statusSimpan"></p>
     <button class="btn abu sembunyi" id="btnSimpanUlang" onclick="simpanUlang()">↻ Coba Simpan Lagi</button>
-    <div class="ulasan" id="ulasan"></div>
+    <div id="gerbangUlasan" style="margin-top:16px;">
+      <div class="info">🔒 <b>Ulasan jawaban dilindungi password.</b> Tanyakan password-nya kepada gurumu untuk membuka kunci jawaban dan pembahasan.</div>
+      <input type="password" id="sandiUlasan" placeholder="Masukkan password ulasan" style="margin-top:8px;">
+      <button class="btn abu" onclick="bukaUlasan()">🔓 Buka Ulasan Jawaban</button>
+      <p id="sandiSalah" class="sembunyi" style="color:#d6453d;font-size:14px;margin-top:6px;">Password salah — coba lagi.</p>
+    </div>
+    <div class="ulasan sembunyi" id="ulasan"></div>
     <button class="btn" onclick="location.reload()">Selesai</button>
   </section>
 
@@ -331,6 +337,16 @@ function kumpulkan(otomatis = false) {
   }).join('');
   window.scrollTo(0, 0);
   simpanHasil();
+}
+
+function bukaUlasan() {
+  const v = document.getElementById('sandiUlasan').value.trim();
+  if (v === 'yosad67') {
+    document.getElementById('gerbangUlasan').classList.add('sembunyi');
+    document.getElementById('ulasan').classList.remove('sembunyi');
+  } else {
+    document.getElementById('sandiSalah').classList.remove('sembunyi');
+  }
 }
 
 async function simpanHasil() {
