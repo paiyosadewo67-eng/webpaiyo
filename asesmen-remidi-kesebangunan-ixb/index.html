@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asesmen Remidi Kesebangunan Kelas IX — AAAMAAT KEREN</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, Arial, sans-serif; background: #0b2748; color: #123; min-height: 100vh; }
+  .bungkus { max-width: 860px; margin: 0 auto; padding: 18px 14px 60px; }
+  header.merek { text-align: center; color: #fff; padding: 22px 10px 8px; }
+  header.merek .kecil { color: #e8b84b; letter-spacing: 2px; font-size: 12px; font-weight: 700; }
+  header.merek h1 { font-size: 27px; margin: 6px 0 2px; }
+  header.merek h2 { font-size: 19px; color: #ffd970; font-weight: 700; }
+  header.merek p { color: #cfe0f2; font-size: 14px; margin-top: 4px; }
+  .kartu { background: #fff; border-radius: 16px; padding: 22px; margin-top: 16px; box-shadow: 0 8px 28px rgba(0,0,0,.35); }
+  label { display: block; font-weight: 600; margin: 14px 0 6px; font-size: 15px; }
+  input[type=text], input[type=number], select { width: 100%; padding: 12px; border: 2px solid #c9d6e8; border-radius: 10px; font-size: 16px; }
+  input:focus, select:focus { outline: none; border-color: #2f5597; }
+  .btn { display: inline-block; background: #2f5597; color: #fff; border: none; padding: 13px 26px; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; margin-top: 18px; }
+  .btn:hover { background: #24457c; }
+  .btn.emas { background: #e8b84b; color: #402d00; }
+  .btn.abu { background: #e7edf5; color: #23406e; }
+  .btn:disabled { opacity: .55; cursor: not-allowed; }
+  .info { background: #eef4fc; border-left: 5px solid #2f5597; padding: 12px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; margin-top: 14px; }
+  .timerbar { position: sticky; top: 0; z-index: 20; background: #0b2748; color: #fff; padding: 10px 14px; border-radius: 0 0 14px 14px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 14px rgba(0,0,0,.3); }
+  .timerbar .waktu { font-size: 20px; font-weight: 800; color: #ffd970; }
+  .timerbar .waktu.kritis { color: #ff7b72; }
+  .soal { border: 1px solid #dbe5f2; border-radius: 12px; padding: 16px; margin-top: 14px; }
+  .soal .no { display: inline-block; background: #2f5597; color: #fff; font-weight: 700; border-radius: 8px; padding: 2px 10px; font-size: 13px; margin-bottom: 8px; }
+  .soal p.teks { font-size: 16px; line-height: 1.6; }
+  .soal figure { text-align: center; margin: 10px 0; }
+  .opsi { display: block; border: 2px solid #d5e0ef; border-radius: 10px; padding: 11px 13px; margin-top: 9px; cursor: pointer; font-size: 15.5px; line-height: 1.45; }
+  .opsi:hover { border-color: #2f5597; }
+  .opsi input { margin-right: 9px; transform: scale(1.15); }
+  .opsi.terpilih { border-color: #2f5597; background: #eef4fc; }
+  .hasil { text-align: center; }
+  .hasil .nilai { font-size: 74px; font-weight: 800; color: #2f5597; line-height: 1.05; }
+  .lencana { display: inline-block; padding: 7px 20px; border-radius: 999px; font-weight: 800; font-size: 17px; margin-top: 8px; }
+  .lencana.tuntas { background: #d9f2e2; color: #11622e; }
+  .lencana.belum { background: #fde3e1; color: #8c1f16; }
+  .ulasan { text-align: left; margin-top: 10px; }
+  .ulasan .item { border: 1px solid #dbe5f2; border-radius: 10px; padding: 12px 14px; margin-top: 10px; font-size: 14.5px; line-height: 1.55; }
+  .ulasan .item.benar { border-left: 6px solid #2e9e56; }
+  .ulasan .item.salah { border-left: 6px solid #d6453d; }
+  .ulasan .bahas { background: #f6f9fd; border-radius: 8px; padding: 8px 10px; margin-top: 7px; color: #274; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
+  th { background: #2f5597; color: #fff; padding: 9px 7px; text-align: left; }
+  td { border-bottom: 1px solid #e2eaf4; padding: 8px 7px; }
+  .sembunyi { display: none; }
+  .tengah { text-align: center; }
+  .status-simpan { font-size: 14.5px; margin-top: 10px; font-weight: 600; }
+  .ok { color: #11622e; } .gagal { color: #8c1f16; }
+  footer { text-align: center; color: #9db8d8; font-size: 12.5px; margin-top: 26px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="bungkus">
+  <header class="merek">
+    <div class="kecil">RUMAH BELAJAR MANDIRI SISWA • AAAMAAT KEREN</div>
+    <h1>Asesmen Remidi — Sumatif 3</h1>
+    <h2>Bab Kesebangunan • Kelas IX</h2>
+    <p>SMP Negeri 1 Bantarkawung • Guru: Drs. Paiyo</p>
+  </header>
+
+  <!-- ============ LAYAR IDENTITAS ============ -->
+  <section id="layarMulai" class="kartu">
+    <h3>📝 Data Peserta</h3>
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" placeholder="Tulis nama lengkapmu" autocomplete="name">
+    <label for="kelas">Kelas</label>
+    <select id="kelas">
+      <option>IX A</option>
+      <option selected>IX B</option>
+      <option>IX C</option>
+      <option>IX D</option>
+      <option>IX E</option>
+      <option>IX F</option>
+      <option>IX G</option>
+      <option>IX H</option>
+      <option>IX I</option>
+    </select>
+    <label for="absen">Nomor Absen</label>
+    <input type="number" id="absen" min="1" max="40" placeholder="Contoh: 12">
+    <div class="info">
+      <b>Petunjuk:</b> 20 soal pilihan ganda • Waktu 60 menit • Setiap soal bernilai 5 •
+      KKM/KKTP <b>75</b>. Kerjakan dengan jujur dan mandiri. Setelah menekan tombol
+      <i>Kumpulkan</i>, nilaimu langsung tersimpan dan kamu bisa melihat ulasan jawaban.
+    </div>
+    <button class="btn" onclick="mulai()">Mulai Mengerjakan →</button>
+    <button class="btn abu" onclick="bukaPanelGuru()">📊 Daftar Nilai &amp; Analisis Guru</button>
+  </section>
+
+  <!-- ============ LAYAR SOAL ============ -->
+  <section id="layarSoal" class="sembunyi">
+    <div class="timerbar">
+      <div>⏱️ Sisa waktu: <span class="waktu" id="sisaWaktu">60:00</span></div>
+      <div>Terjawab: <b id="jmlJawab">0</b>/20</div>
+    </div>
+    <div class="kartu" style="margin-top:10px;">
+      <div style="font-size:14.5px;">Peserta: <b id="infoPeserta"></b></div>
+      <div id="daftarSoal"></div>
+      <button class="btn emas" id="btnKumpul" onclick="kumpulkan()">✔ Kumpulkan Jawaban</button>
+      <p style="font-size:13px;color:#667;margin-top:8px;">Periksa kembali jawabanmu sebelum mengumpulkan. Waktu habis = jawaban terkumpul otomatis.</p>
+    </div>
+  </section>
+
+  <!-- ============ LAYAR HASIL ============ -->
+  <section id="layarHasil" class="kartu hasil sembunyi">
+    <h3>Hasil Asesmenmu</h3>
+    <div class="nilai" id="nilaiAkhir">0</div>
+    <div><span class="lencana" id="lencanaStatus"></span></div>
+    <p style="margin-top:10px;" id="ringkasHasil"></p>
+    <p style="font-size:14px;color:#456;">Kode verifikasi: <b id="kodeVerif"></b></p>
+    <p class="status-simpan" id="statusSimpan"></p>
+    <button class="btn abu sembunyi" id="btnSimpanUlang" onclick="simpanUlang()">↻ Coba Simpan Lagi</button>
+    <div class="ulasan" id="ulasan"></div>
+    <button class="btn" onclick="location.reload()">Selesai</button>
+  </section>
+
+  <!-- ============ PANEL GURU ============ -->
+  <section id="layarGuru" class="kartu sembunyi">
+    <h3>📊 Daftar Nilai &amp; Analisis Asesmen Guru</h3>
+    <p style="font-size:14px;color:#456;margin-top:4px;">Data dibaca langsung dari database sentral (Supabase). KKM/KKTP: 75.</p>
+    <div class="info" id="statGuru">Memuat data…</div>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead><tr><th>No</th><th>Nama Siswa</th><th>Kelas</th><th>Absen</th><th>Nilai</th><th>Status</th><th>Kode</th><th>Waktu</th></tr></thead>
+        <tbody id="isiTabelGuru"></tbody>
+      </table>
+    </div>
+    <button class="btn abu" onclick="muatNilaiGuru()">↻ Muat Ulang</button>
+    <button class="btn" onclick="tutupPanelGuru()">← Kembali</button>
+  </section>
+
+  <footer>
+    Portal Rumah Belajar Mandiri Siswa AAAMAAT KEREN<br>
+    paiyosadewo67-eng.github.io/webpaiyo
+  </footer>
+</div>
+
+<script>
+/* ================= KONFIGURASI DATABASE (Supabase) ================= */
+const SB_URL = 'https://vovjeijhxnehhtxjqtkm.supabase.co';
+const SB_KEY = 'sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV'; // kunci Publishable Supabase Pak Paiyo
+const KKM = 75;
+
+/* ================= GAMBAR (SVG) ================= */
+const SVG_Q2 = `<svg width="330" height="150" viewBox="0 0 330 150">
+  <polygon points="60,20 20,125 110,125" fill="#eef4fc" stroke="#2f5597" stroke-width="2"/>
+  <text x="52" y="14" font-size="13" font-weight="bold">A</text><text x="8" y="140" font-size="13" font-weight="bold">B</text><text x="112" y="140" font-size="13" font-weight="bold">C</text>
+  <text x="18" y="80" font-size="12">6</text><text x="58" y="142" font-size="12">9</text><text x="92" y="72" font-size="12">12</text>
+  <polygon points="240,45 215,125 285,125" fill="#fdf3d8" stroke="#b07800" stroke-width="2"/>
+  <text x="233" y="38" font-size="13" font-weight="bold">D</text><text x="203" y="140" font-size="13" font-weight="bold">E</text><text x="288" y="140" font-size="13" font-weight="bold">F</text>
+  <text x="205" y="92" font-size="12">4</text><text x="242" y="142" font-size="12">?</text><text x="268" y="88" font-size="12">x</text>
+</svg>`;
+const SVG_Q3 = `<svg width="240" height="190" viewBox="0 0 240 190">
+  <polygon points="120,15 40,170 200,170" fill="#eef4fc" stroke="#2f5597" stroke-width="2"/>
+  <line x1="84" y1="105" x2="156" y2="105" stroke="#d6453d" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="112" y="12" font-size="13" font-weight="bold">P</text><text x="26" y="185" font-size="13" font-weight="bold">Q</text><text x="204" y="185" font-size="13" font-weight="bold">R</text>
+  <text x="66" y="100" font-size="13" font-weight="bold">S</text><text x="160" y="100" font-size="13" font-weight="bold">T</text>
+  <text x="82" y="62" font-size="12">4</text><text x="52" y="140" font-size="12">6</text><text x="150" y="62" font-size="12">6</text><text x="172" y="140" font-size="12">?</text>
+</svg>`;
+const SVG_Q8 = `<svg width="280" height="180" viewBox="0 0 280 180">
+  <polygon points="70,25 70,155 245,155" fill="#eef4fc" stroke="#2f5597" stroke-width="2"/>
+  <line x1="70" y1="25" x2="70" y2="155" stroke="#2f5597" stroke-width="2"/>
+  <polyline points="70,140 85,140 85,155" fill="none" stroke="#2f5597" stroke-width="1.5"/>
+  <text x="58" y="20" font-size="13" font-weight="bold">A</text><text x="52" y="172" font-size="13" font-weight="bold">B</text><text x="248" y="172" font-size="13" font-weight="bold">C</text>
+  <text x="66" y="172" font-size="13" font-weight="bold">D</text>
+  <text x="52" y="95" font-size="12">?</text><text x="88" y="150" font-size="12">BD = 4</text><text x="170" y="150" font-size="12">DC = 9</text>
+</svg>`;
+const SVG_Q10 = `<svg width="300" height="170" viewBox="0 0 300 170">
+  <polygon points="90,25 210,25 265,145 35,145" fill="#eef4fc" stroke="#2f5597" stroke-width="2"/>
+  <line x1="66" y1="92" x2="234" y2="92" stroke="#d6453d" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="82" y="18" font-size="13" font-weight="bold">A</text><text x="212" y="18" font-size="13" font-weight="bold">B</text><text x="268" y="160" font-size="13" font-weight="bold">C</text><text x="22" y="160" font-size="13" font-weight="bold">D</text>
+  <text x="48" y="88" font-size="13" font-weight="bold">E</text><text x="238" y="88" font-size="13" font-weight="bold">F</text>
+  <text x="52" y="55" font-size="12">3</text><text x="38" y="125" font-size="12">5</text><text x="238" y="60" font-size="12">6</text><text x="248" y="125" font-size="12">?</text>
+</svg>`;
+
+/* ================= BANK SOAL ================= */
+const SOAL = [
+ { t: "Dua segitiga pasti sebangun apabila …",
+   o: ["dua pasang sudut yang bersesuaian sama besar", "ketiga pasang sisinya sama panjang", "keliling kedua segitiga sama besar", "semua sisinya berbanding 3 : 1"], k: 0,
+   b: "Syarat sudut–sudut: dua pasang sudut yang bersesuaian sama besar sudah menjamin dua segitiga sebangun. Sisi-sisi sama panjang adalah syarat kongruen, bukan sebangun." },
+ { t: "Segitiga ABC sebangun dengan segitiga DEF. Diketahui AB = 6 cm, BC = 9 cm, AC = 12 cm, dan DE = 4 cm. Panjang EF adalah …", g: SVG_Q2,
+   o: ["5 cm", "6 cm", "7,5 cm", "13,5 cm"], k: 1,
+   b: "Perbandingan sisi AB : DE = 6 : 4 = 3 : 2. EF bersesuaian dengan BC, jadi EF = 9 × 4/6 = 6 cm." },
+ { t: "Pada segitiga PQR, titik S terletak pada PQ dan titik T pada PR sehingga ST sejajar QR. Jika PS = 4 cm, SQ = 6 cm, dan PT = 6 cm, panjang TR adalah …", g: SVG_Q3,
+   o: ["3 cm", "6 cm", "9 cm", "12 cm"], k: 2,
+   b: "Garis sejajar di dalam segitiga membagi dua sisi secara sebanding: PS/SQ = PT/TR → 4/6 = 6/TR → TR = 36/4 = 9 cm." },
+ { t: "Jarak dua kota sebenarnya 8 km. Pada denah, jarak kedua kota itu 4 cm. Skala denah tersebut adalah …",
+   o: ["1 : 20.000", "1 : 50.000", "1 : 100.000", "1 : 200.000"], k: 3,
+   b: "8 km = 800.000 cm. Skala = 4 : 800.000 = 1 : 200.000." },
+ { t: "Sebuah foto berukuran 10 cm × 15 cm diperbesar sehingga sisi yang panjangnya 15 cm menjadi 45 cm. Ukuran foto hasil perbesaran adalah …",
+   o: ["20 cm × 45 cm", "25 cm × 45 cm", "30 cm × 45 cm", "45 cm × 45 cm"], k: 2,
+   b: "Faktor perbesaran = 45 : 15 = 3. Sisi lainnya menjadi 10 × 3 = 30 cm, jadi ukurannya 30 cm × 45 cm." },
+ { t: "Sebuah tongkat setinggi 1,5 m mempunyai bayangan 2 m. Pada saat yang sama, bayangan sebuah pohon adalah 12 m. Tinggi pohon tersebut adalah …",
+   o: ["6 m", "9 m", "12 m", "16 m"], k: 1,
+   b: "Perbandingan tinggi dan bayangan selalu sama: 1,5/2 = t/12 → t = 1,5 × 12/2 = 9 m." },
+ { t: "Sebuah cermin diletakkan mendatar di tanah untuk mengukur tinggi gedung. Jarak cermin dari seorang siswa adalah 2 m dan jarak cermin dari gedung 18 m. Jika tinggi siswa sampai mata 1,6 m, tinggi gedung adalah …",
+   o: ["12,4 m", "16 m", "14,4 m", "28,8 m"], k: 2,
+   b: "Pantulan cermin membentuk dua segitiga sebangun: 1,6/2 = t/18 → t = 1,6 × 18/2 = 14,4 m." },
+ { t: "Segitiga ABC siku-siku di A. AD adalah garis tinggi dari titik A ke sisi BC. Jika BD = 4 cm dan DC = 9 cm, panjang AD adalah …", g: SVG_Q8,
+   o: ["5 cm", "6 cm", "6,5 cm", "13 cm"], k: 1,
+   b: "Pada segitiga siku-siku berlaku AD² = BD × DC = 4 × 9 = 36, sehingga AD = 6 cm." },
+ { t: "Persegi panjang berukuran 12 cm × 8 cm sebangun dengan persegi panjang yang lebarnya 6 cm. Panjang persegi panjang kedua adalah …",
+   o: ["9 cm", "10 cm", "14 cm", "16 cm"], k: 0,
+   b: "Perbandingan panjang dan lebar tetap: 12/8 = p/6 → p = 12 × 6/8 = 9 cm." },
+ { t: "Pada trapesium ABCD dengan AB sejajar CD, titik E terletak pada AD dan titik F pada BC sehingga EF sejajar AB. Jika AE = 3 cm, ED = 5 cm, dan BF = 6 cm, panjang FC adalah …", g: SVG_Q10,
+   o: ["8 cm", "9 cm", "10 cm", "12 cm"], k: 2,
+   b: "Garis sejajar pada trapesium membagi kedua kaki secara sebanding: AE/ED = BF/FC → 3/5 = 6/FC → FC = 30/3 = 10 cm." },
+ { t: "Pada segitiga ABC, titik D terletak pada AB dan titik E pada AC sehingga DE sejajar BC. Jika AD = 6 cm, AB = 15 cm, dan DE = 8 cm, panjang BC adalah …",
+   o: ["20 cm", "24 cm", "16 cm", "18 cm"], k: 0,
+   b: "Segitiga ADE sebangun dengan ABC: AD/AB = DE/BC → 6/15 = 8/BC → BC = 15 × 8/6 = 20 cm." },
+ { t: "Pernyataan yang benar tentang bangun kongruen dan sebangun adalah …",
+   o: ["Dua bangun yang sebangun pasti kongruen", "Dua bangun yang kongruen pasti sebangun", "Bangun yang sebangun bentuknya boleh berbeda", "Bangun yang kongruen ukurannya boleh berbeda"], k: 1,
+   b: "Kongruen adalah kesebangunan khusus dengan perbandingan 1 : 1, jadi bangun kongruen pasti sebangun. Sebaliknya, bangun sebangun belum tentu kongruen karena ukurannya boleh berbeda." },
+ { t: "Sebuah model mobil dibuat dengan skala 1 : 24. Jika panjang model 18 cm, panjang mobil sebenarnya adalah …",
+   o: ["4,32 m", "3,42 m", "5,28 m", "43,2 m"], k: 0,
+   b: "Panjang sebenarnya = 18 × 24 = 432 cm = 4,32 m." },
+ { t: "Untuk mengukur lebar sungai dibuat dua segitiga sebangun. Pada segitiga kecil, jarak dua patok 6 m dan garis ukurnya 8 m. Pada segitiga besar, jarak patok yang bersesuaian adalah 24 m. Lebar sungai tersebut adalah …",
+   o: ["24 m", "28 m", "32 m", "36 m"], k: 2,
+   b: "Perbandingan segitiga besar dan kecil = 24 : 6 = 4. Lebar sungai = 8 × 4 = 32 m." },
+ { t: "Perbandingan sisi dua bangun sebangun adalah 2 : 3. Perbandingan luas kedua bangun tersebut adalah …",
+   o: ["2 : 3", "4 : 6", "8 : 27", "4 : 9"], k: 3,
+   b: "Perbandingan luas adalah kuadrat perbandingan sisi: 2² : 3² = 4 : 9." },
+ { t: "Dua segitiga sebangun mempunyai perbandingan sisi 3 : 5. Jika keliling segitiga yang kecil 24 cm, keliling segitiga yang besar adalah …",
+   o: ["36 cm", "39 cm", "45 cm", "40 cm"], k: 3,
+   b: "Keliling berbanding lurus dengan sisi: keliling besar = 24 × 5/3 = 40 cm." },
+ { t: "Segitiga ABC mempunyai sudut A = 55° dan sudut B = 65°. Segitiga PQR mempunyai sudut P = 55° dan sudut R = 60°. Agar kedua segitiga itu sebangun, besar sudut Q harus …",
+   o: ["55°", "60°", "65°", "70°"], k: 2,
+   b: "Sudut C = 180° − 55° − 65° = 60°. Sudut Q = 180° − 55° − 60° = 65°, bersesuaian dengan sudut B." },
+ { t: "Tiang bendera setinggi 8 m mempunyai bayangan 6 m. Pada saat yang sama, sebuah gedung mempunyai bayangan 21 m. Tinggi gedung tersebut adalah …",
+   o: ["21 m", "24 m", "30 m", "28 m"], k: 3,
+   b: "8/6 = t/21 → t = 8 × 21/6 = 28 m." },
+ { t: "Pada segitiga KLM, titik N terletak pada KL dan titik O pada KM sehingga NO sejajar LM. Jika KN = 8 cm, NL = 4 cm, dan KO = 10 cm, panjang OM adalah …",
+   o: ["4 cm", "5 cm", "8 cm", "20 cm"], k: 1,
+   b: "KN/NL = KO/OM → 8/4 = 10/OM → OM = 40/8 = 5 cm." },
+ { t: "Tinggi sebuah menara masjid diukur dengan tongkat setinggi 2 m yang bayangannya 1,6 m. Jika bayangan menara 20 m, tinggi menara tersebut adalah …",
+   o: ["16 m", "20 m", "40 m", "25 m"], k: 3,
+   b: "2/1,6 = t/20 → t = 2 × 20/1,6 = 25 m." }
+];
+
+/* ================= LOGIKA APLIKASI ================= */
+let peserta = {}, jawaban = {}, sisaDetik = 3600, pengatur = null, payloadHasil = null;
+
+function esc(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function mulai() {
+  const nama = document.getElementById('nama').value.trim();
+  const kelas = document.getElementById('kelas').value;
+  const absen = parseInt(document.getElementById('absen').value, 10);
+  if (!nama) { alert('Nama lengkap belum diisi.'); return; }
+  if (!absen || absen < 1 || absen > 40) { alert('Nomor absen belum benar (isi 1–40).'); return; }
+  peserta = { nama, kelas, absen };
+  document.getElementById('infoPeserta').textContent = nama + ' • ' + kelas + ' • Absen ' + absen;
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarSoal').classList.remove('sembunyi');
+  gambarSoal();
+  mulaiTimer();
+  window.scrollTo(0, 0);
+}
+
+function gambarSoal() {
+  const wadah = document.getElementById('daftarSoal');
+  wadah.innerHTML = SOAL.map((s, i) => `
+    <div class="soal" id="soal${i}">
+      <span class="no">Soal ${i + 1}</span>
+      <p class="teks">${s.t}</p>
+      ${s.g ? `<figure>${s.g}</figure>` : ''}
+      ${s.o.map((opsi, j) => `
+        <label class="opsi" id="opsi${i}_${j}">
+          <input type="radio" name="jwb${i}" value="${j}" onchange="pilih(${i}, ${j})">
+          <b>${'ABCD'[j]}.</b> ${opsi}
+        </label>`).join('')}
+    </div>`).join('');
+}
+
+function pilih(i, j) {
+  jawaban[i] = j;
+  SOAL[i].o.forEach((_, k) => document.getElementById(`opsi${i}_${k}`).classList.toggle('terpilih', k === j));
+  document.getElementById('jmlJawab').textContent = Object.keys(jawaban).length;
+}
+
+function mulaiTimer() {
+  const el = document.getElementById('sisaWaktu');
+  pengatur = setInterval(() => {
+    sisaDetik--;
+    const m = String(Math.floor(sisaDetik / 60)).padStart(2, '0');
+    const d = String(sisaDetik % 60).padStart(2, '0');
+    el.textContent = m + ':' + d;
+    el.classList.toggle('kritis', sisaDetik <= 300);
+    if (sisaDetik <= 0) { clearInterval(pengatur); alert('Waktu habis! Jawabanmu dikumpulkan otomatis.'); kumpulkan(true); }
+  }, 1000);
+}
+
+function kumpulkan(otomatis = false) {
+  const belum = SOAL.length - Object.keys(jawaban).length;
+  if (!otomatis && belum > 0 && !confirm(`Masih ada ${belum} soal belum dijawab. Tetap kumpulkan?`)) return;
+  clearInterval(pengatur);
+  let benar = 0;
+  SOAL.forEach((s, i) => { if (jawaban[i] === s.k) benar++; });
+  const nilai = benar * 5;
+  const status = nilai >= KKM ? 'Tuntas' : 'Belum Tuntas';
+  const acak = Math.random().toString(36).slice(2, 6).toUpperCase();
+  const kode = `REM-${peserta.kelas.replace(' ', '')}-${String(peserta.absen).padStart(2, '0')}-${nilai}-${acak}`;
+  payloadHasil = {
+    nama: peserta.nama, kelas: peserta.kelas, absen: peserta.absen,
+    nilai: nilai, status: status, kode_verifikasi: kode,
+    tanggal: new Date().toISOString().slice(0, 10)
+  };
+  document.getElementById('layarSoal').classList.add('sembunyi');
+  const lh = document.getElementById('layarHasil');
+  lh.classList.remove('sembunyi');
+  document.getElementById('nilaiAkhir').textContent = nilai;
+  const lencana = document.getElementById('lencanaStatus');
+  lencana.textContent = status === 'Tuntas' ? '✅ TUNTAS' : '🔁 BELUM TUNTAS — IKUT REMIDI';
+  lencana.className = 'lencana ' + (status === 'Tuntas' ? 'tuntas' : 'belum');
+  document.getElementById('ringkasHasil').innerHTML =
+    `<b>${esc(peserta.nama)}</b> • ${peserta.kelas} • Absen ${peserta.absen}<br>Jawaban benar: ${benar} dari ${SOAL.length} soal`;
+  document.getElementById('kodeVerif').textContent = kode;
+  document.getElementById('ulasan').innerHTML = '<h4 style="margin-top:16px;">Ulasan Jawaban</h4>' + SOAL.map((s, i) => {
+    const j = jawaban[i];
+    const benarItem = j === s.k;
+    return `<div class="item ${benarItem ? 'benar' : 'salah'}">
+      <b>Soal ${i + 1}.</b> ${s.t}<br>
+      Jawabanmu: <b>${j === undefined ? '(tidak dijawab)' : 'ABCD'[j] + '. ' + s.o[j]}</b> ${benarItem ? '✔ Benar' : '✘ Salah'}<br>
+      ${benarItem ? '' : `Kunci: <b>${'ABCD'[s.k]}. ${s.o[s.k]}</b><br>`}
+      <div class="bahas">💡 ${s.b}</div>
+    </div>`;
+  }).join('');
+  window.scrollTo(0, 0);
+  simpanHasil();
+}
+
+async function simpanHasil() {
+  const el = document.getElementById('statusSimpan');
+  const btn = document.getElementById('btnSimpanUlang');
+  el.textContent = 'Menyimpan nilai ke database…';
+  el.className = 'status-simpan';
+  btn.classList.add('sembunyi');
+  try {
+    if (SB_KEY === '__SUPABASE_KEY__') throw new Error('belum-terhubung');
+    const r = await fetch(SB_URL + '/rest/v1/hasil_asesmen', {
+      method: 'POST',
+      headers: { 'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+      body: JSON.stringify(payloadHasil)
+    });
+    if (!r.ok) throw new Error('gagal-' + r.status);
+    el.textContent = '✔ Nilaimu sudah tersimpan di database guru.';
+    el.classList.add('ok');
+  } catch (e) {
+    el.textContent = '⚠ Nilai belum tersimpan ke database. Tunjukkan layar ini (beserta kode verifikasinya) kepada gurumu.';
+    el.classList.add('gagal');
+    btn.classList.remove('sembunyi');
+  }
+}
+function simpanUlang() { simpanHasil(); }
+
+/* ================= PANEL GURU ================= */
+function bukaPanelGuru() {
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarGuru').classList.remove('sembunyi');
+  muatNilaiGuru();
+  window.scrollTo(0, 0);
+}
+function tutupPanelGuru() {
+  document.getElementById('layarGuru').classList.add('sembunyi');
+  document.getElementById('layarMulai').classList.remove('sembunyi');
+}
+async function muatNilaiGuru() {
+  const stat = document.getElementById('statGuru');
+  const isi = document.getElementById('isiTabelGuru');
+  stat.textContent = 'Memuat data…';
+  isi.innerHTML = '';
+  try {
+    if (SB_KEY === '__SUPABASE_KEY__') throw new Error('belum-terhubung');
+    const r = await fetch(SB_URL + '/rest/v1/hasil_asesmen?select=*&order=created_at.desc', {
+      headers: { 'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY }
+    });
+    if (!r.ok) throw new Error('gagal-' + r.status);
+    const data = await r.json();
+    if (!data.length) { stat.textContent = 'Belum ada data nilai yang masuk.'; return; }
+    const tuntas = data.filter(d => d.nilai >= KKM).length;
+    const rata = (data.reduce((a, d) => a + (d.nilai || 0), 0) / data.length).toFixed(1);
+    stat.innerHTML = `Total data masuk: <b>${data.length}</b> • Rata-rata: <b>${rata}</b> • Tuntas: <b>${tuntas}</b> • Belum tuntas: <b>${data.length - tuntas}</b>`;
+    isi.innerHTML = data.map((d, i) => `<tr>
+      <td>${i + 1}</td><td>${esc(d.nama || '')}</td><td>${esc(d.kelas || '')}</td><td>${d.absen ?? ''}</td>
+      <td><b>${d.nilai ?? ''}</b></td><td>${esc(d.status || '')}</td><td style="font-size:12px;">${esc(d.kode_verifikasi || '')}</td>
+      <td style="font-size:12.5px;">${d.created_at ? new Date(d.created_at).toLocaleString('id-ID') : esc(d.tanggal || '')}</td></tr>`).join('');
+  } catch (e) {
+    stat.textContent = 'Data belum dapat dibaca (database belum terhubung). Coba muat ulang sebentar lagi.';
+  }
+}
+</script>
+</body>
+</html>
