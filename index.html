@@ -606,6 +606,154 @@
         border: 1.5px solid var(--line-strong);
       }
       .akses-batal:hover { color: var(--ink); border-color: var(--muted); }
+
+      /* ---------- Multi-halaman (navigasi berbasis hash) ---------- */
+      .halaman { display: none; }
+      .halaman.aktif { display: block; }
+      body { font-size: 16px; overflow-x: clip; }
+      section[id] { scroll-margin-top: 128px; }
+      @media (max-width: 900px) { section[id] { scroll-margin-top: 158px; } }
+      .brand { margin-right: 0; }
+      .halaman-atas { padding-top: 1.15rem; }
+      .halaman-atas + section { padding-top: 1.7rem; }
+      .btn-kembali {
+        display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+        padding: .6rem 1.1rem; border-radius: 11px; border: 1.5px solid var(--line-strong);
+        background: var(--surface); color: var(--ink); font-weight: 700; font-size: .93rem;
+        text-decoration: none; box-shadow: var(--shadow-sm);
+      }
+      .btn-kembali:hover { border-color: var(--gold); }
+
+      /* ---------- Pencarian di header ---------- */
+      .nav-search { position: relative; flex: 1 1 auto; max-width: 540px; min-width: 0; margin-inline: auto; }
+      .nav-search-ic { position: absolute; left: .85rem; top: 50%; transform: translateY(-50%); color: #93A5C9; pointer-events: none; }
+      .nav-search input {
+        width: 100%; font: inherit; font-size: 1rem; min-height: 44px;
+        padding: .6rem 1rem .6rem 2.5rem; border-radius: 999px;
+        border: 1.5px solid rgba(233,196,76,.5); background: rgba(255,255,255,.08); color: #fff;
+      }
+      .nav-search input::placeholder { color: #93A5C9; }
+      .nav-search input:focus { outline: 2.5px solid var(--gold-2); outline-offset: 1px; background: rgba(255,255,255,.13); }
+      .cari-hasil {
+        position: absolute; top: calc(100% + .5rem); left: 0; right: 0; z-index: 90;
+        background: var(--surface); color: var(--ink); border: 1px solid var(--line-strong);
+        border-radius: 14px; box-shadow: var(--shadow); max-height: min(62vh, 430px);
+        overflow-y: auto; padding: .35rem;
+      }
+      .cari-hasil[hidden] { display: none; }
+      .cari-item {
+        display: flex; flex-direction: column; gap: .08rem; width: 100%; text-align: left;
+        background: none; border: 0; border-bottom: 1px solid var(--line);
+        padding: .6rem .7rem; cursor: pointer; font: inherit; min-height: 44px; color: var(--ink);
+      }
+      .cari-item:last-child { border-bottom: 0; }
+      .cari-item:hover, .cari-item:focus-visible { background: var(--surface-2); }
+      .cari-item b { font-size: .93rem; line-height: 1.35; }
+      .cari-item span { font-size: .78rem; color: var(--muted); }
+      .cari-kosong { padding: .85rem .7rem; font-size: .9rem; color: var(--muted); }
+      .nav-links { border-top: 1px solid rgba(233,196,76,.22); }
+      .nav-links a { min-height: 44px; display: inline-flex; align-items: center; }
+      .nav-links a.aktif { background: rgba(233,196,76,.18); color: #fff; }
+      @media (min-width: 901px) { .nav-links { padding-top: .3rem; padding-bottom: .55rem; flex-wrap: wrap; } }
+      @media (max-width: 900px) {
+        .nav-links { width: auto; border-top: 0; }
+        .nav-in { flex-wrap: wrap; }
+        .nav-search { order: 3; flex-basis: 100%; max-width: none; margin: .3rem 0 .1rem; }
+        .akses-btn { font-size: .8rem; padding: .45rem .75rem; margin-left: auto; }
+        .nav-toggle { margin-left: .5rem; }
+      }
+      @media (max-width: 480px) { .brand small { display: none; } }
+
+      /* ---------- Bilah navigasi bawah (khusus HP) ---------- */
+      .nav-bawah { display: none; }
+      @media (max-width: 900px) {
+        .nav-bawah {
+          display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;
+          background: var(--navy-900); border-top: 1px solid rgba(233,196,76,.45);
+          padding: .3rem .3rem calc(.3rem + env(safe-area-inset-bottom)); justify-content: space-around;
+        }
+        .nav-bawah a {
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          gap: .12rem; min-width: 58px; min-height: 50px; padding: .3rem .35rem;
+          border-radius: 10px; color: #B9C6E2; text-decoration: none; font-size: .68rem; font-weight: 700;
+        }
+        .nav-bawah a.aktif { color: var(--gold-2); background: rgba(233,196,76,.13); }
+        body { padding-bottom: 68px; }
+      }
+
+      /* ---------- Ringkasan kelas di Beranda ---------- */
+      .ringkasan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+      @media (max-width: 960px) { .ringkasan-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 600px) { .ringkasan-grid { grid-template-columns: 1fr; } }
+      .kelas-ring {
+        background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        padding: 1.5rem 1.4rem 1.4rem; box-shadow: var(--shadow-sm);
+        display: flex; flex-direction: column; gap: .6rem; position: relative; overflow: hidden;
+      }
+      .kelas-ring::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: var(--kc); }
+      .kelas-ring .kelas-chip { align-self: flex-start; }
+      .kelas-ring h3 { font-size: 1.35rem; }
+      .kelas-ring .ring-bab { font-size: .9rem; color: var(--muted); flex: 1; }
+      .kelas-ring .btn { align-self: flex-start; min-height: 44px; }
+
+      /* ---------- Halaman agregat (Materi, Video, LKPD, Latihan Soal) ---------- */
+      .agregat-group { margin-bottom: 2.4rem; }
+      .agregat-group .sumber-group { margin-bottom: 1.05rem; }
+      .agregat-head { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+      .agregat-head h3 { font-size: 1.35rem; }
+      .agregat-kelas { font-size: .76rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+      .agregat-link {
+        margin-left: auto; display: inline-flex; align-items: center; min-height: 44px;
+        font-size: .9rem; font-weight: 700; color: var(--viii); text-decoration: none;
+      }
+      .agregat-link:hover { text-decoration: underline; }
+      .yosad-card {
+        background: linear-gradient(150deg, var(--navy-700), var(--navy-950)); color: #E7ECF8;
+        border: 1.5px solid rgba(233,196,76,.55); border-radius: 20px;
+        padding: 2rem; margin-bottom: 2.6rem; box-shadow: var(--shadow);
+      }
+      .yosad-card h3 { color: #fff; font-size: clamp(1.5rem, 3vw, 1.9rem); margin-bottom: .6rem; }
+      .yosad-card p { color: #C3CEE6; max-width: 44rem; }
+      .yosad-card .btn { margin-top: 1.2rem; min-height: 44px; }
+
+      /* ---------- Progres belajar (tanda "Sudah dipelajari") ---------- */
+      .entri-row { display: flex; gap: .45rem; align-items: center; }
+      .entri-row .sumber-link { flex: 1; min-width: 0; }
+      .cek-btn {
+        display: inline-flex; align-items: center; gap: .4rem; flex: none; min-height: 44px;
+        padding: .5rem .8rem; border-radius: 10px; border: 1.5px solid var(--line-strong);
+        background: var(--surface); color: var(--muted); font: inherit; font-size: .8rem;
+        font-weight: 700; cursor: pointer;
+        transition: background .18s ease, color .18s ease, border-color .18s ease;
+      }
+      .cek-btn:hover { border-color: var(--gold); }
+      .cek-btn.sudah { background: var(--badge-live-bg); border-color: var(--badge-live-line); color: var(--badge-live-ink); }
+      @media (max-width: 520px) { .cek-btn span { display: none; } .cek-btn { padding: .5rem .65rem; } }
+      /* Di dalam panel kartu bab (kolom sempit) tombol centang cukup
+         ikon saja agar judul entri tetap lega dibaca; teksnya tetap
+         tersedia lewat aria-label dan title. */
+      .bab-sumber .cek-btn span { display: none; }
+      .bab-sumber .cek-btn { padding: .5rem .65rem; }
+      .drive-li { display: flex; gap: .45rem; align-items: center; }
+      .drive-li .drive-item { flex: 1; min-width: 0; }
+      .bab-progres { font-size: .86rem; font-weight: 700; color: var(--kc); border-top: 1px dashed var(--line); padding-top: .65rem; }
+      .sumber-link { min-height: 44px; font-size: .92rem; }
+      .drive-item { min-height: 44px; font-size: .88rem; }
+      .bab-toggle { min-height: 44px; }
+      .yt-title { font-size: .85rem; }
+      .sumber-ket { font-size: .82rem; }
+
+      /* ---------- Halaman Kontak ---------- */
+      @media (min-width: 821px) { .kontak-grid-2 { grid-template-columns: repeat(2, 1fr); } }
+      .btn-wa { background: #1FA855; color: #fff; }
+      .btn-wa:hover { background: #178A44; }
+      .kontak-card a.btn-wa { color: #fff; text-decoration: none; }
+      .kontak-ajakan {
+        margin-top: 1.2rem; background: var(--surface); border: 1px solid var(--line);
+        border-radius: var(--radius); padding: 1.6rem; box-shadow: var(--shadow-sm);
+      }
+      .kontak-ajakan h3 { font-family: "Plus Jakarta Sans", sans-serif; font-size: 1.08rem; margin-bottom: .4rem; }
+      .kontak-ajakan p { font-size: .93rem; color: var(--muted); max-width: 46rem; }
     </style>
   </head>
   <body>
@@ -618,22 +766,32 @@
           </span>
           <span><b>AAAMAAT KEREN</b><small>Rumah Belajar Mandiri Siswa</small></span>
         </a>
+        <div class="nav-search">
+          <svg class="nav-search-ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>
+          <input id="inputCari" type="search" placeholder="Cari materi… mis. kesebangunan, SPLDV, bangun ruang" aria-label="Cari materi, bab, atau topik" autocomplete="off" />
+          <div class="cari-hasil" id="cariHasil" hidden></div>
+        </div>
+        <button type="button" class="akses-btn" id="aksesBtn">🔒 Masuk dengan Kode</button>
         <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
-        <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
-          <a href="#beranda">Beranda</a>
-          <a href="#menu-utama">Menu Utama</a>
-          <a href="#kelas-vii">Kelas VII</a>
-          <a href="#kelas-viii">Kelas VIII</a>
-          <a href="#kelas-ix">Kelas IX</a>
-          <a href="#profil-guru">Profil Guru</a>
-          <a href="profil-guru-drs-paiyo/" class="cta">Tentang Guru</a>
-          <button type="button" class="akses-btn" id="aksesBtn">🔒 Masuk dengan Kode</button>
-        </nav>
       </div>
+      <nav class="nav-links wrap" id="navLinks" aria-label="Navigasi halaman">
+        <a href="#beranda" data-rute="beranda">Beranda</a>
+        <a href="#kelas-vii" data-rute="kelas-vii">Kelas VII</a>
+        <a href="#kelas-viii" data-rute="kelas-viii">Kelas VIII</a>
+        <a href="#kelas-ix" data-rute="kelas-ix">Kelas IX</a>
+        <a href="#materi" data-rute="materi">Materi</a>
+        <a href="#video" data-rute="video">Video</a>
+        <a href="#lkpd" data-rute="lkpd">LKPD</a>
+        <a href="#latihan-soal" data-rute="latihan-soal">Latihan Soal</a>
+        <a href="#kontak" data-rute="kontak">Kontak</a>
+        <a href="profil-guru-drs-paiyo/" class="cta">Tentang Guru</a>
+      </nav>
     </header>
 
+    <!-- ================= HALAMAN BERANDA ================= -->
+    <div class="halaman aktif" id="hal-beranda" data-halaman="beranda">
     <!-- ================= HERO ================= -->
     <div class="hero" id="beranda">
       <div class="wrap hero-in">
@@ -655,7 +813,7 @@
           <div class="hero-stats">
             <div><b>3</b><span>Kelas · VII–IX</span></div>
             <div><b>18</b><span>Bab Disiapkan</span></div>
-            <div><b>12</b><span>Menu &amp; Fitur</span></div>
+            <div><b>14</b><span>Menu &amp; Fitur</span></div>
             <div><b>5</b><span>Pilar KEREN</span></div>
           </div>
         </div>
@@ -793,6 +951,47 @@
       </div>
     </section>
 
+    <!-- ================= PILIH KELAS (RINGKASAN DI BERANDA) ================= -->
+    <section id="pilih-kelas">
+      <div class="wrap">
+        <div class="sec-head center">
+          <span class="kicker">Pilih Kelas</span>
+          <h2>Belajar Sesuai Jenjangmu</h2>
+          <p>Tiga jenjang, delapan belas bab. Buka halaman kelasmu untuk melihat semua bab beserta panel sumber belajarnya.</p>
+        </div>
+        <div class="ringkasan-grid">
+          <article class="kelas-ring" style="--kc: var(--vii)">
+            <span class="kelas-chip" style="background: var(--vii)">Kelas VII · 6 Bab</span>
+            <h3>Fondasi Berpikir Matematika</h3>
+            <p class="ring-bab">Bilangan Bulat · Bilangan Rasional / Pecahan · Rasio · Bentuk Aljabar · PLSV &amp; PtLSV · BRSL.</p>
+            <a class="btn" style="background: var(--vii); color: #fff" href="#kelas-vii">Buka Halaman Kelas VII
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <article class="kelas-ring" style="--kc: var(--viii)">
+            <span class="kelas-chip" style="background: var(--viii)">Kelas VIII · 7 Bab</span>
+            <h3>Melangkah ke Aljabar &amp; Geometri</h3>
+            <p class="ring-bab">Pola Bilangan · Relasi &amp; Fungsi · Gradien &amp; Persamaan Garis Lurus · SPLDV · Teorema Pythagoras · Bangun Ruang Sisi Datar · Statistika.</p>
+            <a class="btn" style="background: var(--viii); color: #fff" href="#kelas-viii">Buka Halaman Kelas VIII
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <article class="kelas-ring" style="--kc: var(--ix)">
+            <span class="kelas-chip" style="background: var(--ix)">Kelas IX · 6 Bab</span>
+            <h3>Pemantapan Menuju Jenjang Berikutnya</h3>
+            <p class="ring-bab">Bilangan Berpangkat &amp; Bentuk Akar · Transformasi · Kekongruenan &amp; Kesebangunan · Peluang · Bangun Ruang Sisi Lengkung · Pendalaman Materi TKA.</p>
+            <a class="btn" style="background: var(--ix); color: #fff" href="#kelas-ix">Buka Halaman Kelas IX
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    </div><!-- /halaman beranda (bagian 1) -->
+
+    <!-- ================= HALAMAN KELAS VII ================= -->
+    <div class="halaman" id="hal-kelas-vii" data-halaman="kelas-vii">
+      <div class="wrap halaman-atas"><a class="btn-kembali" href="#beranda">← Kembali ke Beranda</a></div>
     <!-- ================= KELAS VII ================= -->
     <section id="kelas-vii" style="--kc: var(--vii)">
       <div class="wrap">
@@ -811,6 +1010,11 @@
       </div>
     </section>
 
+    </div><!-- /halaman kelas-vii -->
+
+    <!-- ================= HALAMAN KELAS VIII ================= -->
+    <div class="halaman" id="hal-kelas-viii" data-halaman="kelas-viii">
+      <div class="wrap halaman-atas"><a class="btn-kembali" href="#beranda">← Kembali ke Beranda</a></div>
     <!-- ================= KELAS VIII ================= -->
     <section class="band" id="kelas-viii" style="--kc: var(--viii)">
       <div class="wrap">
@@ -829,6 +1033,11 @@
       </div>
     </section>
 
+    </div><!-- /halaman kelas-viii -->
+
+    <!-- ================= HALAMAN KELAS IX ================= -->
+    <div class="halaman" id="hal-kelas-ix" data-halaman="kelas-ix">
+      <div class="wrap halaman-atas"><a class="btn-kembali" href="#beranda">← Kembali ke Beranda</a></div>
     <!-- ================= KELAS IX ================= -->
     <section id="kelas-ix" style="--kc: var(--ix)">
       <div class="wrap">
@@ -847,6 +1056,10 @@
       </div>
     </section>
 
+    </div><!-- /halaman kelas-ix -->
+
+    <!-- ================= HALAMAN BERANDA (LANJUTAN) ================= -->
+    <div class="halaman" data-halaman="beranda">
     <!-- ================= DOWNLOAD ================= -->
     <section id="download">
       <div class="wrap">
@@ -960,6 +1173,124 @@
       </div>
     </section>
 
+    </div><!-- /halaman beranda (bagian 2) -->
+
+    <!-- ================= HALAMAN MATERI ================= -->
+    <div class="halaman" id="hal-materi" data-halaman="materi">
+      <section id="materi">
+        <div class="wrap">
+          <a class="btn-kembali" href="#beranda">← Kembali ke Beranda</a>
+          <div class="sec-head" style="margin-top:1.8rem">
+            <span class="kicker">Halaman Materi</span>
+            <h2>Semua Materi &amp; E-Modul</h2>
+            <p>Seluruh entri Materi dan E-Modul dari bab Kelas VII, VIII, dan IX dikumpulkan di halaman ini. Klik judul untuk membukanya, dan tandai yang sudah kamu pelajari dengan tombol “Sudah dipelajari” — tandamu tersimpan di perangkat ini.</p>
+          </div>
+          <div id="agregatMateri"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= HALAMAN VIDEO ================= -->
+    <div class="halaman" id="hal-video" data-halaman="video">
+      <section class="band" id="video">
+        <div class="wrap">
+          <a class="btn-kembali" href="#beranda">← Kembali ke Beranda</a>
+          <div class="sec-head" style="margin-top:1.8rem">
+            <span class="kicker">Halaman Video</span>
+            <h2>Semua Video Pembelajaran</h2>
+            <p>Seluruh video pembelajaran dari semua bab — klik sampulnya untuk menonton langsung di halaman ini, tanpa berpindah situs.</p>
+          </div>
+          <div id="agregatVideo" class="agregat-video"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= HALAMAN LKPD ================= -->
+    <div class="halaman" id="hal-lkpd" data-halaman="lkpd">
+      <section id="lkpd">
+        <div class="wrap">
+          <a class="btn-kembali" href="#beranda">← Kembali ke Beranda</a>
+          <div class="sec-head" style="margin-top:1.8rem">
+            <span class="kicker">Halaman LKPD</span>
+            <h2>Semua LKPD</h2>
+            <p>Seluruh lembar kerja peserta didik (LKPD) digital dan berkas LKPD dari semua bab dikumpulkan di halaman ini.</p>
+          </div>
+          <div id="agregatLkpd"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= HALAMAN LATIHAN SOAL ================= -->
+    <div class="halaman" id="hal-latihan" data-halaman="latihan-soal">
+      <section class="band" id="latihan-soal">
+        <div class="wrap">
+          <a class="btn-kembali" href="#beranda">← Kembali ke Beranda</a>
+          <div class="sec-head" style="margin-top:1.8rem">
+            <span class="kicker">Halaman Latihan Soal</span>
+            <h2>Latihan Soal, Asesmen &amp; Game</h2>
+            <p>Seluruh asesmen, kuis, dan game edukasi dari semua bab — plus ruang tes Kelas Mas YoSad tempat nilaimu tersimpan otomatis.</p>
+          </div>
+          <article class="yosad-card">
+            <span class="kicker">Ruang Tes &amp; Bank Soal</span>
+            <h3>Kelas Mas YoSad — Ruang Tes &amp; Bank Soal</h3>
+            <p>Ruang kelas tes dengan bank soal per bab untuk Kelas VII, VIII, dan IX. Kerjakan latihan dan tes di sana — nilai latihanmu tersimpan otomatis di database, sehingga hasil belajarmu tercatat rapi dan dapat dipantau perkembangannya.</p>
+            <a class="btn btn-gold" href="https://paiyosadewo67-eng.github.io/webpaiyo/kelas-mas-yosad/" target="_blank" rel="noopener">Masuk Kelas Mas YoSad
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+          <div id="agregatLatihan"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= HALAMAN KONTAK ================= -->
+    <div class="halaman" id="hal-kontak" data-halaman="kontak">
+      <section id="kontak-detail">
+        <div class="wrap">
+          <a class="btn-kembali" href="#beranda">← Kembali ke Beranda</a>
+          <div class="sec-head" style="margin-top:1.8rem">
+            <span class="kicker">Kontak</span>
+            <h2>Hubungi Rumah Belajar AAAMAAT KEREN</h2>
+            <p>Informasi pengelola portal, tujuan, alamat Rumah Belajar, dan kontak yang dapat dihubungi.</p>
+          </div>
+          <div class="kontak-grid kontak-grid-2">
+            <article class="kontak-card" style="--ac: var(--viii)">
+              <span class="menu-ic">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+              </span>
+              <h3>Pengelola</h3>
+              <p><b>Drs. Paiyo</b> — Guru Matematika SMP Negeri 1 Bantarkawung.</p>
+            </article>
+            <article class="kontak-card" style="--ac: var(--gold)">
+              <span class="menu-ic">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>
+              </span>
+              <h3>Tujuan Portal</h3>
+              <p>Portal Rumah Belajar Mandiri Siswa AAAMAAT KEREN — tempat belajar matematika Kelas VII–IX kapan saja, di mana saja.</p>
+            </article>
+            <article class="kontak-card" style="--ac: var(--vii)">
+              <span class="menu-ic">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>
+              </span>
+              <h3>Alamat Rumah Belajar</h3>
+              <p>Buaran RT 11 RW 01, Desa Pangebatan, Kecamatan Bantarkawung, Kabupaten Brebes, Jawa Tengah.</p>
+            </article>
+            <article class="kontak-card" style="--ac: #1FA855">
+              <span class="menu-ic">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+              </span>
+              <h3>Kontak Admin / Info</h3>
+              <p>0823-2556-4220 — dapat dihubungi lewat telepon dan WhatsApp.</p>
+              <p style="margin-top:.8rem"><a class="btn btn-wa" href="https://wa.me/6282325564220" target="_blank" rel="noopener">Chat via WhatsApp</a></p>
+            </article>
+          </div>
+          <div class="kontak-ajakan">
+            <h3>Punya Masukan atau Masih Bingung?</h3>
+            <p>Untuk para siswa: jangan ragu menyampaikan masukan, pertanyaan, atau bagian materi yang masih membingungkan lewat WhatsApp Admin/Info di atas. Setiap masukan kalian membantu portal ini menjadi tempat belajar yang lebih baik.</p>
+          </div>
+        </div>
+      </section>
+
     <!-- ================= TENTANG & KONTAK ================= -->
     <section id="tentang">
       <div class="wrap">
@@ -994,6 +1325,8 @@
         </div>
       </div>
     </section>
+
+    </div><!-- /halaman kontak -->
 
     <!-- ================= FOOTER ================= -->
     <footer>
@@ -1031,6 +1364,30 @@
         </div>
       </div>
     </footer>
+
+    <!-- ================= NAVIGASI BAWAH (HP) ================= -->
+    <nav class="nav-bawah" aria-label="Navigasi bawah">
+      <a href="#beranda" data-bawah="beranda">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5L12 3l9 8.5"/><path d="M5.5 10v10.5h13V10"/></svg>
+        Beranda
+      </a>
+      <a href="#pilih-kelas" data-bawah="kelas">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+        Kelas
+      </a>
+      <a href="#materi" data-bawah="materi">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 16h6"/></svg>
+        Materi
+      </a>
+      <a href="#video" data-bawah="video">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3"/></svg>
+        Video
+      </a>
+      <a href="#kontak" data-bawah="kontak">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+        Kontak
+      </a>
+    </nav>
 
     <!-- ================= MODAL KODE AKSES ================= -->
     <div class="akses-overlay" id="modalAkses" hidden>
@@ -1821,6 +2178,15 @@
       /* Ikon untuk bagian video Drive di panel — juga dideklarasikan
          sebelum renderFitur karena bagianVideoDrive() dipanggil dari
          panelSumber() saat kartu fitur dirender. */
+      /* Tombol centang progres belajar "Sudah dipelajari" — dipakai
+         panelSumber() di bawah dan halaman agregat (Materi, Video,
+         LKPD, Latihan Soal). Statusnya disimpan di localStorage
+         perangkat siswa oleh skrip progres di akhir berkas. */
+      var IKON_CEK = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
+      function tombolCekHtml(kunci) {
+        return '<button type="button" class="cek-btn" data-progres="' + esc(kunci) + '" aria-pressed="false" aria-label="Sudah dipelajari" title="Tandai entri ini sudah dipelajari">' + IKON_CEK + '<span>Sudah dipelajari</span></button>';
+      }
+
       var IKON_PUTAR_KECIL = '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z"/></svg>';
       var IKON_PANAH = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
 
@@ -1933,8 +2299,9 @@
         html += '<p class="drive-now" hidden>Sedang diputar: <span class="drive-now-title"></span></p>';
         html += '<ul class="drive-list">';
         daftar.forEach(function (v) {
-          html += '<li><button type="button" class="drive-item" data-gd="' + esc(v.gd) + '" data-judul="' + esc(v.judul) + '">' +
-            IKON_PUTAR_KECIL + '<span>' + esc(v.judul) + '</span></button></li>';
+          html += '<li class="drive-li"><button type="button" class="drive-item" data-gd="' + esc(v.gd) + '" data-judul="' + esc(v.judul) + '">' +
+            IKON_PUTAR_KECIL + '<span>' + esc(v.judul) + '</span></button>' +
+            tombolCekHtml(b.id + '::gd:' + v.gd) + '</li>';
         });
         html += '</ul>';
         if (t.folder) {
@@ -1960,6 +2327,7 @@
                   '</button>' +
                 '</div>' +
                 '<p class="yt-title">' + esc(t.nama) + '</p>' +
+                tombolCekHtml(b.id + '::yt:' + t.yt) +
               '</div>';
             });
             html += '</div>';
@@ -1971,10 +2339,12 @@
                 return;
               }
               var namaBerkas = t.unduh ? t.url.split("/").pop() : "";
-              html += '<li><a class="sumber-link" href="' + esc(t.url) + '" target="_blank" rel="noopener"' +
+              html += '<li><div class="entri-row"><a class="sumber-link" href="' + esc(t.url) + '" target="_blank" rel="noopener"' +
                 (s.grup === "prompt" ? ' data-khusus="prompt"' : '') +
                 (t.unduh ? ' download="' + esc(namaBerkas) + '"' : '') +
                 '><span>' + esc(t.nama) + '</span>' + IKON_BUKA + '</a>' +
+                (s.grup === "prompt" ? '' : tombolCekHtml(b.id + '::' + t.url)) +
+                '</div>' +
                 (t.ket ? '<p class="sumber-ket">' + esc(t.ket) + '</p>' : '') + '</li>';
             });
             html += '</ul>';
@@ -2002,7 +2372,8 @@
               '<span class="bab-ic">' + svgIkon(b.ikon, 40) + '</span>' +
               '<h3>' + esc(b.nama) + '</h3>' +
               '<p class="bab-desc">' + esc(b.deskripsi) + '</p>' +
-              '<p class="bab-url">' + esc(LINK_DB.domain + b.slug) + '</p>';
+              '<p class="bab-url">' + esc(LINK_DB.domain + b.slug) + '</p>' +
+              '<p class="bab-progres" data-ringkasan-bab="' + esc(b.id) + '" hidden></p>';
             if (b.sumber && b.sumber.length) {
               html += '<article class="bab-card">' + isi +
                 '<button type="button" class="bab-toggle" aria-expanded="false" aria-controls="sumber-' + esc(b.id) + '">' +
@@ -2389,9 +2760,10 @@
                Menutup panel yang sudah terbuka dibiarkan bebas. */
             dikunci = el.getAttribute("aria-expanded") !== "true";
           } else if (el.classList.contains("yt-btn")) {
-            /* Video di dalam panel materi bab dikunci; video pembuka
-               di bagian perkenalan tetap bebas diputar. */
-            dikunci = !!el.closest(".bab-sumber");
+            /* Video di dalam panel materi bab dan di halaman Video
+               dikunci; video pembuka di bagian perkenalan tetap bebas
+               diputar. */
+            dikunci = !!el.closest(".bab-sumber, .agregat-video");
           } else if (el.tagName === "A") {
             var href = el.getAttribute("href") || "";
             dikunci = /^https?:\/\//i.test(href)
@@ -2449,6 +2821,332 @@
         });
 
         perbaruiTombolStatus();
+      })();
+    </script>
+
+    <script>
+      /* ============================================================
+         MULTI-HALAMAN, AGREGAT, PENCARIAN & PROGRES — AAAMAAT KEREN
+         - Ruter berbasis hash membagi portal menjadi halaman
+           Beranda, Kelas VII, Kelas VIII, Kelas IX, Materi, Video,
+           LKPD, Latihan Soal, dan Kontak dalam satu berkas. Hash
+           lama yang menunjuk id bagian (mis. #menu-utama, #quiz,
+           #tentang) tetap bekerja: halaman pemilik bagian itu
+           ditampilkan lalu digulir ke bagiannya.
+         - Halaman Materi, Video, LKPD, dan Latihan Soal adalah
+           agregasi entri LINK_DB yang sama dengan panel bab —
+           tidak ada tautan yang ditulis ulang di sini.
+         - Pencarian menelusuri judul entri, nama bab, dan kata
+           kunci topik; hasil menuju panel bab terkait.
+         - Progres "Sudah dipelajari" (tombol .cek-btn) tersimpan
+           di localStorage perangkat siswa, kunci "aaamatProgres",
+           sesuai rancangan portal: progres bersifat lokal per
+           perangkat, tanpa akun dan tanpa server.
+         ============================================================ */
+      (function fiturHalaman() {
+        function halamanUntukBab(babId) {
+          if (babId.indexOf("VII-") === 0) return "kelas-vii";
+          if (babId.indexOf("VIII-") === 0) return "kelas-viii";
+          if (babId.indexOf("IX-") === 0) return "kelas-ix";
+          return "beranda";
+        }
+        function tujuPanel(babId) {
+          var hal = halamanUntukBab(babId);
+          function lakukan() {
+            var panel = document.getElementById("sumber-" + babId);
+            if (!panel) return;
+            if (panel.hidden) {
+              var t = document.querySelector('.bab-toggle[aria-controls="sumber-' + babId + '"]');
+              if (t) t.click();
+            }
+            setTimeout(function () { panel.scrollIntoView({ block: "start" }); }, 50);
+          }
+          if ((location.hash || "") === "#" + hal) setTimeout(lakukan, 60);
+          else { location.hash = hal; setTimeout(lakukan, 180); }
+        }
+
+        /* ---------- Render halaman agregat dari LINK_DB ---------- */
+        function kepalaGrup(b) {
+          return '<div class="agregat-head"><span class="bab-id">' + esc(b.id) + '</span><h3>' + esc(b.nama) + '</h3>' +
+            '<span class="agregat-kelas">Kelas ' + esc(b.kelas) + '</span>' +
+            '<a class="agregat-link" href="#' + halamanUntukBab(b.id) + '" data-panel="' + esc(b.id) + '">Buka panel bab →</a></div>';
+        }
+        function barisEntri(nama, url, kunci, unduh) {
+          return '<li><div class="entri-row"><a class="sumber-link" href="' + esc(url) + '" target="_blank" rel="noopener"' +
+            (unduh ? ' download="' + esc(url.split("/").pop()) + '"' : '') +
+            '><span>' + esc(nama) + '</span>' + IKON_BUKA + '</a>' + tombolCekHtml(kunci) + '</div></li>';
+        }
+        function grupList(judul, emoji, isiHtml) {
+          if (!isiHtml) return "";
+          return '<div class="sumber-group"><h4><span aria-hidden="true">' + emoji + '</span>' + esc(judul) + '</h4><ul class="sumber-list">' + isiHtml + '</ul></div>';
+        }
+        function renderMateri() {
+          var el = document.getElementById("agregatMateri");
+          if (!el) return;
+          var html = "";
+          LINK_DB.bab.forEach(function (b) {
+            var materi = (LINK_DB.eksternal || []).filter(function (x) { return x.bab === b.id && x.grup === "materi"; });
+            var emodul = (LINK_DB.eksternal || []).filter(function (x) { return x.bab === b.id && x.grup === "emodul"; });
+            var modul = (LINK_DB.unduhan || []).filter(function (d) { return d.bab === b.id && d.grup === "modul" && d.status === "aktif" && d.url; });
+            if (!materi.length && !emodul.length && !modul.length) return;
+            var isiEmodul = "", isiMateri = "";
+            emodul.forEach(function (x) { isiEmodul += barisEntri(x.nama, x.url, b.id + "::" + x.url, false); });
+            modul.forEach(function (d) { var u = d.urlLihat || d.url; isiEmodul += barisEntri(d.nama, u, b.id + "::" + u, !d.urlLihat); });
+            materi.forEach(function (x) { isiMateri += barisEntri(x.nama, x.url, b.id + "::" + x.url, false); });
+            html += '<div class="agregat-group">' + kepalaGrup(b) + grupList("E-Modul", "📖", isiEmodul) + grupList("Materi", "📚", isiMateri) + '</div>';
+          });
+          el.innerHTML = html;
+        }
+        function blokVideo(nama, yt, kunci) {
+          return '<div class="yt"><div class="yt-frame">' +
+            '<button type="button" class="yt-btn" data-yt="' + esc(yt) + '" aria-label="Putar video: ' + esc(nama) + '">' +
+            '<img src="https://i.ytimg.com/vi/' + esc(yt) + '/hqdefault.jpg" alt="" loading="lazy" />' +
+            '<span class="yt-play" aria-hidden="true">' + IKON_PUTAR + '</span></button></div>' +
+            '<p class="yt-title">' + esc(nama) + '</p>' + (kunci ? tombolCekHtml(kunci) : '') + '</div>';
+        }
+        function renderVideo() {
+          var el = document.getElementById("agregatVideo");
+          if (!el) return;
+          var html = '<div class="agregat-group"><div class="agregat-head"><span class="bab-id">Pembuka</span><h3>Video Pembuka</h3></div>' +
+            '<div class="video-grid">' + blokVideo("Video Pembuka — Sapaan Pak Paiyo dan Perkenalan Portal AAAMAAT KEREN", "6pxwab3NQ-w", null) + '</div></div>';
+          LINK_DB.bab.forEach(function (b) {
+            var kunciDb = "video_" + b.id.toLowerCase().replace(/-/g, "");
+            var daftar = LINK_DB[kunciDb] || [];
+            if (!daftar.length) return;
+            html += '<div class="agregat-group">' + kepalaGrup(b) + '<div class="video-grid">';
+            daftar.forEach(function (v) { html += blokVideo(v.judul, v.yt, b.id + "::yt:" + v.yt); });
+            html += '</div></div>';
+          });
+          el.innerHTML = html;
+        }
+        function renderLkpd() {
+          var el = document.getElementById("agregatLkpd");
+          if (!el) return;
+          var html = "";
+          LINK_DB.bab.forEach(function (b) {
+            var digital = (LINK_DB.interaktif || []).filter(function (it) { return it.bab === b.id && it.grup === "lkpd"; });
+            var berkas = (LINK_DB.unduhan || []).filter(function (d) { return d.bab === b.id && d.grup === "lkpd" && d.status === "aktif" && d.url; });
+            if (!digital.length && !berkas.length) return;
+            var isi = "";
+            digital.forEach(function (it) { isi += barisEntri(it.nama, it.url, b.id + "::" + it.url, false); });
+            berkas.forEach(function (d) { isi += barisEntri(d.nama, d.url, b.id + "::" + d.url, true); });
+            html += '<div class="agregat-group">' + kepalaGrup(b) + grupList("LKPD", "📝", isi) + '</div>';
+          });
+          el.innerHTML = html;
+        }
+        function renderLatihan() {
+          var el = document.getElementById("agregatLatihan");
+          if (!el) return;
+          var html = "";
+          LINK_DB.bab.forEach(function (b) {
+            var quiz = (LINK_DB.interaktif || []).filter(function (it) { return it.bab === b.id && it.grup === "quiz"; });
+            var game = (LINK_DB.interaktif || []).filter(function (it) { return it.bab === b.id && it.grup === "game"; });
+            if (!quiz.length && !game.length) return;
+            var isiQuiz = "", isiGame = "";
+            quiz.forEach(function (it) { isiQuiz += barisEntri(it.nama, it.url, b.id + "::" + it.url, false); });
+            game.forEach(function (it) { isiGame += barisEntri(it.nama, it.url, b.id + "::" + it.url, false); });
+            html += '<div class="agregat-group">' + kepalaGrup(b) + grupList("Asesmen & Kuis", "📊", isiQuiz) + grupList("Game", "🎮", isiGame) + '</div>';
+          });
+          el.innerHTML = html;
+        }
+        renderMateri();
+        renderVideo();
+        renderLkpd();
+        renderLatihan();
+
+        /* Tautan "Buka panel bab" di halaman agregat */
+        document.addEventListener("click", function (e) {
+          var a = e.target.closest("[data-panel]");
+          if (!a) return;
+          e.preventDefault();
+          tujuPanel(a.getAttribute("data-panel"));
+        });
+
+        /* ---------- Ruter halaman (hash) ---------- */
+        var RUTE = ["beranda", "kelas-vii", "kelas-viii", "kelas-ix", "materi", "video", "lkpd", "latihan-soal", "kontak"];
+        var halamanEls = document.querySelectorAll(".halaman");
+        function terapkanRute() {
+          var h = (location.hash || "").replace(/^#/, "");
+          var nama = "beranda", target = null;
+          if (h && RUTE.indexOf(h) >= 0) {
+            nama = h;
+          } else if (h) {
+            var el = document.getElementById(h);
+            if (el) {
+              var w = el.closest(".halaman");
+              if (w) { nama = w.getAttribute("data-halaman"); target = el; }
+            }
+          }
+          halamanEls.forEach(function (el) {
+            el.classList.toggle("aktif", el.getAttribute("data-halaman") === nama);
+          });
+          document.querySelectorAll(".nav-links a[data-rute]").forEach(function (a) {
+            a.classList.toggle("aktif", a.getAttribute("data-rute") === nama);
+          });
+          var bawah = nama.indexOf("kelas-") === 0 ? "kelas" : nama;
+          if (h === "pilih-kelas") bawah = "kelas";
+          document.querySelectorAll(".nav-bawah a[data-bawah]").forEach(function (a) {
+            a.classList.toggle("aktif", a.getAttribute("data-bawah") === bawah);
+          });
+          if (target) setTimeout(function () { target.scrollIntoView(); }, 30);
+          else window.scrollTo(0, 0);
+        }
+        window.addEventListener("hashchange", terapkanRute);
+        terapkanRute();
+
+        /* ---------- Pencarian materi ---------- */
+        var KATA_KUNCI = {
+          "VII-01": "bilangan bulat operasi hitung garis bilangan perbandingan tka elemen bilangan",
+          "VII-02": "pecahan desimal persen bilangan rasional",
+          "VII-03": "rasio perbandingan skala laju senilai berbalik nilai",
+          "VII-04": "bentuk aljabar variabel suku koefisien konstanta",
+          "VII-05": "persamaan linear pertidaksamaan linear satu variabel plsv ptlsv",
+          "VII-06": "bangun ruang brsl bangun ruang sisi lengkung",
+          "VIII-01": "pola bilangan barisan deret aritmatika geometri suku",
+          "VIII-02": "relasi fungsi himpunan korespondensi grafik fungsi",
+          "VIII-03": "gradien persamaan garis lurus persamaan linear kemiringan garis",
+          "VIII-04": "spldv persamaan linear sistem persamaan dua variabel substitusi eliminasi grafik",
+          "VIII-05": "pythagoras pitagoras segitiga siku-siku triple",
+          "VIII-06": "bangun ruang sisi datar kubus balok prisma limas brsd jaring-jaring volume",
+          "VIII-07": "statistika mean median modus penyajian data penyebaran data",
+          "IX-01": "bilangan berpangkat bentuk akar eksponen pangkat akar notasi ilmiah bentuk baku",
+          "IX-02": "transformasi refleksi translasi rotasi dilatasi pencerminan pergeseran perputaran perbesaran",
+          "IX-03": "kekongruenan kesebangunan kongruen sebangun segitiga bangun datar",
+          "IX-04": "peluang ruang sampel titik sampel frekuensi harapan kejadian",
+          "IX-05": "bangun ruang sisi lengkung tabung kerucut bola brsl takerbol volume luas permukaan",
+          "IX-06": "tka tes kemampuan akademik pendalaman simulasi ujian",
+          "F-13": "jurnal sholat shalat ibadah harian",
+          "F-14": "kajian pedoman hidup islami fiqh sholat ustadz adi hidayat agama"
+        };
+        var LABEL_GRUP = {
+          materi: "Materi", emodul: "E-Modul", tka: "Materi TKA", aplikasi: "Aplikasi",
+          video: "Video", folder: "Folder Drive", arsip: "Arsip Kajian",
+          lkpd: "LKPD", game: "Game", quiz: "Asesmen & Kuis", modul: "E-Modul"
+        };
+        var babById = {};
+        LINK_DB.bab.forEach(function (b) { babById[b.id] = b; });
+        LINK_DB.fitur.forEach(function (f) { if (f.sumber) babById[f.id] = f; });
+        var indeks = [];
+        function tambahIndeks(judul, babId, label, ekstra) {
+          var b = babById[babId];
+          if (!b) return;
+          var namaBab = b.nama || babId;
+          indeks.push({
+            judul: judul, bab: babId,
+            meta: babId + " · " + namaBab + (label ? " · " + label : ""),
+            cari: (judul + " " + namaBab + " " + (label || "") + " " + (KATA_KUNCI[babId] || "") + " " + (ekstra || "")).toLowerCase()
+          });
+        }
+        LINK_DB.bab.forEach(function (b) { tambahIndeks(b.nama, b.id, "Bab Kelas " + b.kelas, b.deskripsi); });
+        (LINK_DB.eksternal || []).forEach(function (x) {
+          if (x.grup === "prompt") return; /* Penyimpanan Prompt tidak diindeks */
+          tambahIndeks(x.nama, x.bab, LABEL_GRUP[x.grup] || x.grup);
+        });
+        (LINK_DB.interaktif || []).forEach(function (it) { tambahIndeks(it.nama, it.bab, LABEL_GRUP[it.grup] || it.grup, it.deskripsi); });
+        (LINK_DB.unduhan || []).forEach(function (d) { if (d.status === "aktif") tambahIndeks(d.nama, d.bab, LABEL_GRUP[d.grup] || "Unduhan", d.deskripsi); });
+        (LINK_DB.poster || []).forEach(function (p) { tambahIndeks(p.nama, p.bab, "Poster Komik", p.deskripsi); });
+        (LINK_DB.promptberbagi || []).forEach(function (x) { tambahIndeks(x.nama, x.bab, "Prompt Berbagi"); });
+        LINK_DB.bab.forEach(function (b) {
+          var kunciDb = "video_" + b.id.toLowerCase().replace(/-/g, "");
+          (LINK_DB[kunciDb] || []).forEach(function (v) { tambahIndeks(v.judul, b.id, "Video Pembelajaran"); });
+        });
+        (LINK_DB.video_f14 || []).forEach(function (v) { tambahIndeks(v.judul, "F-14", "Video Kajian Fiqh Sholat"); });
+
+        var inputCari = document.getElementById("inputCari");
+        var kotakHasil = document.getElementById("cariHasil");
+        var hasilTerakhir = [];
+        function cari(qMentah) {
+          var q = (qMentah || "").toLowerCase().replace(/\s+/g, " ").replace(/^\s+|\s+$/g, "");
+          if (q.length < 2) return [];
+          var ketemu = [];
+          indeks.forEach(function (it) {
+            var skor = -1;
+            if (it.judul.toLowerCase().indexOf(q) >= 0) skor = 0;
+            else if (it.cari.indexOf(q) >= 0) skor = 1;
+            else {
+              var kata = q.split(" "), semua = true;
+              for (var i = 0; i < kata.length; i++) {
+                if (it.cari.indexOf(kata[i]) < 0) { semua = false; break; }
+              }
+              if (semua) skor = 2;
+            }
+            if (skor >= 0) ketemu.push({ it: it, skor: skor });
+          });
+          ketemu.sort(function (a, b) { return a.skor - b.skor; });
+          return ketemu.slice(0, 12).map(function (k) { return k.it; });
+        }
+        function pilihHasil(it) {
+          kotakHasil.hidden = true;
+          inputCari.value = "";
+          if (document.activeElement === inputCari) inputCari.blur();
+          tujuPanel(it.bab);
+        }
+        function tampilkanHasil() {
+          var q = inputCari.value || "";
+          if (q.replace(/\s+/g, "").length < 2) { kotakHasil.hidden = true; kotakHasil.innerHTML = ""; hasilTerakhir = []; return; }
+          var hasil = cari(q);
+          hasilTerakhir = hasil;
+          if (!hasil.length) {
+            kotakHasil.innerHTML = '<p class="cari-kosong">Tidak ditemukan untuk “' + esc(q) + '”. Coba kata kunci lain, misalnya “persamaan linear”, “bangun ruang”, atau “kesebangunan”.</p>';
+            kotakHasil.hidden = false;
+            return;
+          }
+          var html = "";
+          hasil.forEach(function (it, i) {
+            html += '<button type="button" class="cari-item" data-cari-idx="' + i + '"><b>' + esc(it.judul) + '</b><span>' + esc(it.meta) + '</span></button>';
+          });
+          kotakHasil.innerHTML = html;
+          kotakHasil.hidden = false;
+        }
+        if (inputCari && kotakHasil) {
+          inputCari.addEventListener("input", tampilkanHasil);
+          inputCari.addEventListener("focus", tampilkanHasil);
+          inputCari.addEventListener("keydown", function (e) {
+            if (e.key === "Enter") { e.preventDefault(); if (hasilTerakhir.length) pilihHasil(hasilTerakhir[0]); }
+            if (e.key === "Escape") kotakHasil.hidden = true;
+          });
+          kotakHasil.addEventListener("click", function (e) {
+            var btn = e.target.closest(".cari-item");
+            if (!btn) return;
+            var it = hasilTerakhir[parseInt(btn.getAttribute("data-cari-idx"), 10)];
+            if (it) pilihHasil(it);
+          });
+          document.addEventListener("click", function (e) {
+            if (!e.target.closest(".nav-search")) kotakHasil.hidden = true;
+          });
+        }
+
+        /* ---------- Progres belajar lokal ---------- */
+        var KUNCI_PROGRES = "aaamatProgres";
+        var progres = {};
+        try { progres = JSON.parse(localStorage.getItem(KUNCI_PROGRES) || "{}") || {}; } catch (e) { progres = {}; }
+        function segarkanProgres() {
+          document.querySelectorAll("[data-progres]").forEach(function (btn) {
+            var on = !!progres[btn.getAttribute("data-progres")];
+            btn.classList.toggle("sudah", on);
+            btn.setAttribute("aria-pressed", on ? "true" : "false");
+          });
+          document.querySelectorAll("[data-ringkasan-bab]").forEach(function (el) {
+            var panel = document.getElementById("sumber-" + el.getAttribute("data-ringkasan-bab"));
+            if (!panel) return;
+            var btns = panel.querySelectorAll("[data-progres]");
+            var selesai = 0;
+            btns.forEach(function (b2) { if (progres[b2.getAttribute("data-progres")]) selesai++; });
+            if (btns.length) {
+              el.hidden = false;
+              el.textContent = "Progres belajar: " + selesai + "/" + btns.length + " sudah dipelajari";
+            }
+          });
+        }
+        document.addEventListener("click", function (e) {
+          var btn = e.target.closest(".cek-btn");
+          if (!btn) return;
+          var k = btn.getAttribute("data-progres");
+          if (progres[k]) delete progres[k]; else progres[k] = true;
+          try { localStorage.setItem(KUNCI_PROGRES, JSON.stringify(progres)); } catch (err) {}
+          segarkanProgres();
+        });
+        segarkanProgres();
       })();
     </script>
   </body>
