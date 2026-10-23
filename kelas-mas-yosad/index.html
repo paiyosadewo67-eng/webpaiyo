@@ -82,6 +82,24 @@
       .masthead .sub { margin: 8px 0 0; font-size: clamp(0.92rem, 3vw, 1.05rem); color: #c9d5ee; font-weight: 500; }
       .masthead .guru { margin: 4px 0 0; font-size: 0.9rem; color: #93a7cf; }
 
+      /* ---------- Tautan kembali ke portal induk ---------- */
+      .btn-portal {
+        display: inline-flex; align-items: center; justify-content: center;
+        min-height: 44px; padding: 10px 20px; border-radius: 10px;
+        font-weight: 800; font-size: 0.98rem; text-decoration: none; line-height: 1.3;
+      }
+      .btn-portal-top {
+        margin-top: 16px; background: transparent; color: #f3d97e;
+        border: 2px solid #c19a1f;
+      }
+      .btn-portal-top:hover { background: rgba(193, 154, 31, 0.18); }
+      .portal-back-bottom { text-align: center; margin-top: 44px; }
+      .btn-portal-bottom {
+        background: var(--gold); border: 1px solid var(--gold); color: #221a02;
+        width: 100%; max-width: 560px;
+      }
+      .btn-portal-bottom:hover { filter: brightness(1.07); }
+
       /* ---------- Navigation helpers ---------- */
       .crumbs { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 18px; }
       .btn {
@@ -297,9 +315,14 @@
         <h1>KELAS <span class="gold">MAS YOSAD</span></h1>
         <p class="sub">Asesmen Matematika Kelas 7 • 8 • 9</p>
         <p class="guru">SMP Negeri 1 Bantarkawung — Guru: Drs. Paiyo</p>
+        <a class="btn-portal btn-portal-top" href="https://paiyosadewo67-eng.github.io/webpaiyo/">← Kembali ke Beranda Portal AAAMAAT KEREN</a>
       </header>
 
       <main id="app"></main>
+
+      <div class="portal-back-bottom">
+        <a class="btn-portal btn-portal-bottom" href="https://paiyosadewo67-eng.github.io/webpaiyo/">← Kembali ke Beranda Portal AAAMAAT KEREN</a>
+      </div>
 
       <footer class="foot">
         Kelas Mas YoSad — Asesmen Matematika SMP Negeri 1 Bantarkawung • KKM 75
@@ -600,254 +623,7 @@
               kunci: [0, 1, 2],
               bahas: "Kartu As ada 4 sehingga peluangnya 4/52 = 1/13; kartu merah ada 26 sehingga peluangnya 1/2; kartu bergambar ada 12 sehingga peluangnya 12/52 = 3/13; kartu hati ada 13 sehingga peluangnya 13/52 = 1/4, bukan 1/2." }
           ]
-        },
-        "IX-04-formatif-2": {
-          judul: "Formatif Pertemuan 2 — Peluang Kejadian Majemuk",
-          materi: "Peluang kejadian majemuk: peluang dua kejadian sekaligus, pengambilan dengan dan tanpa pengembalian, kejadian saling lepas, serta peluang gabungan.",
-          waktuMenit: 30,
-          password: "formatif2-peluang9",
-          soal: [
-            { tipe: "pg", /* [L2] jumlah dua dadu */
-              tanya: "Dua dadu bersisi enam dilempar bersama satu kali. Peluang jumlah kedua mata dadu 9 adalah …",
-              opsi: ["1/12", "1/9", "1/6", "1/3"],
-              kunci: 1,
-              bahas: "Pasangan berjumlah 9 adalah (3,6), (4,5), (5,4), (6,3), ada 4 dari 36 titik sampel, jadi P = 4/36 = 1/9." },
-            { tipe: "pg", /* [L2] tepat satu angka dari dua koin */
-              tanya: "Dua uang logam dilempar bersama satu kali. Peluang muncul tepat satu sisi angka adalah …",
-              opsi: ["1/4", "1/2", "3/4", "1"],
-              kunci: 1,
-              bahas: "Titik sampelnya AA, AG, GA, GG; yang memuat tepat satu angka adalah AG dan GA, jadi P = 2/4 = 1/2." },
-            { tipe: "pg", /* [L2] tanpa pengembalian */
-              tanya: "Sebuah kotak berisi 6 bola merah dan 4 bola putih. Dua bola diambil satu per satu tanpa pengembalian. Peluang kedua bola yang terambil berwarna merah adalah …",
-              opsi: ["1/3", "3/10", "3/5", "2/5"],
-              kunci: 0,
-              bahas: "P(merah pertama) = 6/10 = 3/5; setelah satu merah terambil tersisa 5 merah dari 9 bola, jadi P = 3/5 × 5/9 = 15/45 = 1/3." },
-            { tipe: "pg", /* [L2] saling lepas */
-              tanya: "Sebuah dadu dilempar satu kali. Peluang muncul mata dadu ganjil atau mata dadu 4 adalah …",
-              opsi: ["1/2", "2/3", "5/6", "1/3"],
-              kunci: 1,
-              bahas: "Mata ganjil adalah 1, 3, 5 (3 dari 6) dan mata 4 ada 1; keduanya tidak tumpang tindih, jadi P = 3/6 + 1/6 = 4/6 = 2/3." },
-            { tipe: "pg", /* [L3] frekuensi harapan */
-              tanya: "Peluang muncul kartu As dari satu set kartu remi adalah 1/13. Jika kartu diambil satu per satu dengan pengembalian sebanyak 156 kali, frekuensi harapan muncul kartu As adalah …",
-              opsi: ["10 kali", "12 kali", "13 kali", "26 kali"],
-              kunci: 1,
-              bahas: "Frekuensi harapan = peluang × banyak percobaan = 1/13 × 156 = 12 kali." },
-            { tipe: "bs",
-              tanya: "Dua dadu bersisi enam dilempar bersama satu kali. Tentukan Benar atau Salah pernyataan berikut.",
-              pernyataan: [
-                { teks: "Banyak titik sampelnya adalah 36.", kunci: true },
-                { teks: "Peluang jumlah kedua mata dadu 7 adalah 1/6.", kunci: true },
-                { teks: "Peluang jumlah kedua mata dadu kurang dari 2 adalah 1/36.", kunci: false }
-              ],
-              bahas: "Jumlah 7 diperoleh dari 6 pasangan (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) sehingga peluangnya 6/36 = 1/6; jumlah kurang dari 2 tidak mungkin terjadi sehingga peluangnya 0, bukan 1/36." },
-            { tipe: "bs",
-              tanya: "Sebuah kantong berisi 4 kelereng merah dan 6 kelereng biru. Dua kelereng diambil satu per satu dengan pengembalian. Tentukan Benar atau Salah pernyataan berikut.",
-              pernyataan: [
-                { teks: "Peluang terambil dua-duanya merah adalah 2/5 × 2/5.", kunci: true },
-                { teks: "Peluang terambil merah lalu biru adalah 3/5 × 3/5.", kunci: false },
-                { teks: "Peluang terambil dua-duanya biru adalah 9/25.", kunci: true }
-              ],
-              bahas: "P(merah) = 4/10 = 2/5 dan P(biru) = 6/10 = 3/5; karena dengan pengembalian, peluang tiap pengambilan tetap, jadi P(merah lalu biru) = 2/5 × 3/5 = 6/25, bukan 9/25." },
-            { tipe: "bs",
-              tanya: "Tentukan Benar atau Salah pernyataan berikut tentang peluang suatu kejadian.",
-              pernyataan: [
-                { teks: "Jika peluang hujan hari ini 0,4 maka peluang tidak hujan adalah 0,6.", kunci: true },
-                { teks: "Peluang kejadian yang mustahil terjadi adalah 1.", kunci: false },
-                { teks: "Peluang suatu kejadian tidak mungkin lebih dari 1.", kunci: true }
-              ],
-              bahas: "Tidak hujan adalah komplemen hujan sehingga P = 1 − 0,4 = 0,6; kejadian mustahil berpeluang 0 sedangkan kejadian pasti berpeluang 1; nilai peluang selalu di antara 0 dan 1." },
-            { tipe: "mcma",
-              tanya: "Sebuah dadu dilempar dua kali. Pernyataan yang benar adalah …",
-              opsi: ["Peluang kedua lemparan muncul mata 6 adalah 1/36.",
-                     "Peluang kedua lemparan muncul mata genap adalah 1/4.",
-                     "Peluang kedua lemparan muncul mata yang sama adalah 1/6.",
-                     "Peluang jumlah kedua mata dadu 12 adalah 2/36."],
-              kunci: [0, 1, 2],
-              bahas: "P(6 lalu 6) = 1/6 × 1/6 = 1/36; P(genap lalu genap) = 1/2 × 1/2 = 1/4; mata yang sama ada 6 pasangan dari 36 sehingga peluangnya 6/36 = 1/6; jumlah 12 hanya dari (6,6) sehingga peluangnya 1/36, bukan 2/36." },
-            { tipe: "mcma",
-              tanya: "Sebuah papan lingkaran dibagi 8 juring sama besar: 3 merah, 3 biru, dan 2 hijau. Jarum diputar dua kali. Pernyataan yang benar adalah …",
-              opsi: ["Peluang jarum berhenti di merah pada kedua putaran adalah 9/64.",
-                     "Peluang jarum berhenti di hijau pada kedua putaran adalah 1/16.",
-                     "Peluang jarum berhenti di merah lalu biru adalah 9/64.",
-                     "Peluang jarum berhenti di dua warna yang berbeda adalah 1/2."],
-              kunci: [0, 1, 2],
-              bahas: "P(merah) = 3/8 dan P(hijau) = 2/8 = 1/4; P(merah, merah) = 3/8 × 3/8 = 9/64; P(hijau, hijau) = 1/4 × 1/4 = 1/16; P(merah lalu biru) = 3/8 × 3/8 = 9/64; pasangan sewarna ada 3² + 3² + 2² = 22 dari 64, sehingga peluang dua warna berbeda = 42/64 = 21/32, bukan 1/2." }
-          ]
-        },
-
-        "IX-04-sumatif": {
-          judul: "Asesmen Sumatif — Bab Peluang",
-          materi: "Rangkuman Bab Peluang: ruang sampel, peluang kejadian sederhana dan majemuk, komplemen, frekuensi relatif dan frekuensi harapan, serta peluang empirik.",
-          waktuMenit: 60,
-          password: "sumatif-peluang9",
-          soal: [
-            { tipe: "pg", /* [L2] ruang sampel 3 koin */
-              tanya: "Sebuah uang logam dilempar tiga kali. Banyak titik sampelnya adalah …",
-              opsi: ["4", "6", "8", "12"],
-              kunci: 2,
-              bahas: "Setiap lemparan ada 2 kemungkinan, jadi banyak titik sampel = 2 × 2 × 2 = 8." },
-            { tipe: "pg", /* [L2] kartu remi */
-              tanya: "Satu kartu diambil secara acak dari satu set kartu remi berisi 52 kartu. Peluang terambil kartu King adalah …",
-              opsi: ["1/52", "1/13", "4/13", "1/4"],
-              kunci: 1,
-              bahas: "Kartu King ada 4 dari 52, jadi P = 4/52 = 1/13." },
-            { tipe: "pg", /* [L2] jumlah dua dadu 10 */
-              tanya: "Dua dadu bersisi enam dilempar bersama satu kali. Peluang jumlah kedua mata dadu 10 adalah …",
-              opsi: ["1/12", "1/9", "1/6", "1/4"],
-              kunci: 0,
-              bahas: "Pasangan berjumlah 10 adalah (4,6), (5,5), (6,4), ada 3 dari 36 titik sampel, jadi P = 3/36 = 1/12." },
-            { tipe: "pg", /* [L2] tanpa pengembalian */
-              tanya: "Sebuah kotak berisi 4 bola merah dan 6 bola biru. Dua bola diambil satu per satu tanpa pengembalian. Peluang kedua bola yang terambil berwarna biru adalah …",
-              opsi: ["1/3", "1/4", "2/5", "1/2"],
-              kunci: 0,
-              bahas: "P(biru pertama) = 6/10 = 3/5; tersisa 5 biru dari 9 bola, jadi P = 3/5 × 5/9 = 15/45 = 1/3." },
-            { tipe: "pg", /* [L2] komplemen */
-              tanya: "Peluang Andi lulus ujian matematika adalah 0,85. Peluang Andi tidak lulus ujian adalah …",
-              opsi: ["0,15", "0,25", "0,5", "0,85"],
-              kunci: 0,
-              bahas: "Tidak lulus adalah komplemen dari lulus, jadi P = 1 − 0,85 = 0,15." },
-            { tipe: "pg", /* [L3] frekuensi harapan */
-              tanya: "Sebuah dadu dilempar 240 kali. Frekuensi harapan muncul mata dadu lebih dari 4 adalah …",
-              opsi: ["40 kali", "60 kali", "80 kali", "120 kali"],
-              kunci: 2,
-              bahas: "Mata lebih dari 4 adalah 5 dan 6, peluangnya 2/6 = 1/3; frekuensi harapan = 1/3 × 240 = 80 kali." },
-            { tipe: "pg", /* [L2] tiga koin */
-              tanya: "Tiga uang logam dilempar bersama satu kali. Peluang muncul dua sisi angka dan satu sisi gambar adalah …",
-              opsi: ["1/8", "3/8", "1/2", "5/8"],
-              kunci: 1,
-              bahas: "Hasil yang memuat dua angka dan satu gambar adalah AAG, AGA, GAA, ada 3 dari 8 titik sampel, jadi P = 3/8." },
-            { tipe: "pg", /* [L3] peluang empirik */
-              tanya: "Dalam sebuah survei terhadap 50 siswa, 20 siswa gemar sepak bola. Jika seorang siswa dipilih secara acak, peluang empirik terpilihnya siswa yang gemar sepak bola adalah …",
-              opsi: ["1/5", "2/5", "1/2", "3/5"],
-              kunci: 1,
-              bahas: "Peluang empirik = kejadian teramati / seluruh percobaan = 20/50 = 2/5." },
-            { tipe: "pg", /* [L2] faktor */
-              tanya: "Sebuah dadu dilempar satu kali. Peluang muncul mata dadu yang merupakan faktor dari 12 adalah …",
-              opsi: ["1/2", "2/3", "5/6", "1"],
-              kunci: 2,
-              bahas: "Faktor dari 12 yang muncul pada dadu adalah 1, 2, 3, 4, 6 (ada 5), jadi P = 5/6." },
-            { tipe: "pg", /* [L3] kartu bernomor tanpa pengembalian */
-              tanya: "Dua kartu diambil dari kartu bernomor 1 sampai 10 satu per satu tanpa pengembalian. Peluang kedua kartu yang terambil bernomor genap adalah …",
-              opsi: ["1/4", "2/9", "1/5", "1/9"],
-              kunci: 1,
-              bahas: "Kartu genap ada 5 dari 10, jadi P(genap pertama) = 5/10 = 1/2; tersisa 4 genap dari 9 kartu, jadi P = 1/2 × 4/9 = 4/18 = 2/9." },
-            { tipe: "bs",
-              tanya: "Sebuah spinner dibagi 6 juring sama besar bernomor 1 sampai 6. Tentukan Benar atau Salah pernyataan berikut.",
-              pernyataan: [
-                { teks: "Peluang jarum berhenti di nomor prima adalah 1/2.", kunci: true },
-                { teks: "Peluang jarum berhenti di nomor lebih dari 4 adalah 1/3.", kunci: true },
-                { teks: "Peluang jarum berhenti di nomor genap adalah 2/3.", kunci: false }
-              ],
-              bahas: "Nomor prima adalah 2, 3, 5 (3 dari 6) sehingga peluangnya 3/6 = 1/2; nomor lebih dari 4 adalah 5 dan 6 sehingga peluangnya 2/6 = 1/3; nomor genap adalah 2, 4, 6 (3 dari 6) sehingga peluangnya 1/2, bukan 2/3." },
-            { tipe: "bs",
-              tanya: "Sekeping uang logam dilempar 200 kali dan sisi gambar muncul 96 kali. Tentukan Benar atau Salah pernyataan berikut.",
-              pernyataan: [
-                { teks: "Frekuensi relatif muncul sisi gambar adalah 12/25.", kunci: true },
-                { teks: "Frekuensi harapan muncul sisi gambar pada 200 kali lemparan adalah 100 kali.", kunci: true },
-                { teks: "Peluang teoretis muncul sisi gambar adalah 96/200.", kunci: false }
-              ],
-              bahas: "Frekuensi relatif = 96/200 = 12/25; frekuensi harapan = 1/2 × 200 = 100; peluang teoretis sisi gambar adalah 1/2, sedangkan 96/200 adalah frekuensi relatif hasil percobaan." },
-            { tipe: "bs",
-              tanya: "Sebuah kotak berisi 3 bola merah, 4 bola biru, dan 5 bola hijau. Satu bola diambil secara acak. Tentukan Benar atau Salah pernyataan berikut.",
-              pernyataan: [
-                { teks: "Peluang terambil bola merah adalah 1/4.", kunci: true },
-                { teks: "Peluang terambil bola bukan hijau adalah 7/12.", kunci: true },
-                { teks: "Peluang terambil bola kuning adalah 1/12.", kunci: false }
-              ],
-              bahas: "Jumlah bola 12; P(merah) = 3/12 = 1/4; bola bukan hijau ada 3 + 4 = 7 sehingga peluangnya 7/12; di dalam kotak tidak ada bola kuning sehingga peluangnya 0." },
-            { tipe: "mcma",
-              tanya: "Sebuah kotak berisi 5 kelereng merah, 3 kelereng biru, dan 2 kelereng hijau. Satu kelereng diambil secara acak. Pernyataan yang benar adalah …",
-              opsi: ["Peluang terambil kelereng merah adalah 1/2.",
-                     "Peluang terambil kelereng biru adalah 3/10.",
-                     "Peluang terambil kelereng bukan hijau adalah 4/5.",
-                     "Peluang terambil kelereng kuning adalah 1/10."],
-              kunci: [0, 1, 2],
-              bahas: "Jumlah kelereng 10; P(merah) = 5/10 = 1/2; P(biru) = 3/10; kelereng bukan hijau ada 5 + 3 = 8 sehingga peluangnya 8/10 = 4/5; di dalam kotak tidak ada kelereng kuning sehingga peluangnya 0." },
-            { tipe: "mcma",
-              tanya: "Sebuah dadu dan sekeping uang logam dilempar bersama satu kali. Pernyataan yang benar adalah …",
-              opsi: ["Banyak titik sampelnya adalah 12.",
-                     "Peluang muncul mata 6 dan sisi angka adalah 1/12.",
-                     "Peluang muncul mata genap dan sisi gambar adalah 1/4.",
-                     "Peluang muncul mata ganjil dan sisi angka adalah 1/2."],
-              kunci: [0, 1, 2],
-              bahas: "Titik sampel dadu ada 6 dan uang logam ada 2, jadi banyaknya 6 × 2 = 12; P(mata 6 dan angka) = 1/6 × 1/2 = 1/12; P(mata genap dan gambar) = 3/6 × 1/2 = 1/4; P(mata ganjil dan angka) = 3/6 × 1/2 = 1/4, bukan 1/2." }
-          ]
-        },
-
-        "IX-04-tka": {
-          judul: "Uji TKA — Bab Peluang",
-          materi: "Uji TKA Bab Peluang: soal-soal penalaran kontekstual setara TKA.",
-          waktuMenit: 30,
-          password: "tka-peluang9",
-          soal: [
-            { tipe: "pg", /* [L3] kombinasi: 1 merah 1 putih */
-              tanya: "Sebuah kantong berisi 3 bola merah, 2 bola putih, dan 5 bola hitam. Jika diambil 2 bola sekaligus, peluang terambil 1 bola merah dan 1 bola putih adalah …",
-              opsi: ["1/15", "2/15", "1/5", "4/15"],
-              kunci: 1,
-              bahas: "Cara mengambil 1 merah dan 1 putih = 3 × 2 = 6; seluruh cara mengambil 2 bola dari 10 = C(10,2) = 45; jadi P = 6/45 = 2/15." },
-            { tipe: "pg", /* [L3] gambar lebih banyak */
-              tanya: "Tiga keping uang logam dilempar bersama satu kali. Peluang muncul sisi gambar lebih banyak daripada sisi angka adalah …",
-              opsi: ["1/4", "3/8", "1/2", "5/8"],
-              kunci: 2,
-              bahas: "Hasil dengan gambar lebih banyak adalah GGG, GGA, GAG, AGG, ada 4 dari 8 titik sampel, jadi P = 4/8 = 1/2." },
-            { tipe: "pg", /* [L2] jumlah prima dua dadu */
-              tanya: "Dua dadu bersisi enam dilempar bersama satu kali. Peluang jumlah kedua mata dadu merupakan bilangan prima adalah …",
-              opsi: ["5/36", "1/4", "5/12", "1/2"],
-              kunci: 2,
-              bahas: "Jumlah prima yang mungkin: 2 (1 pasangan), 3 (2), 5 (4), 7 (6), 11 (2), total 15 dari 36, jadi P = 15/36 = 5/12." },
-            { tipe: "pg", /* [L2] saling bebas */
-              tanya: "Peluang kejadian A adalah 0,6 dan peluang kejadian B adalah 0,5. Jika A dan B saling bebas, peluang A dan B terjadi bersama adalah …",
-              opsi: ["0,1", "0,25", "0,3", "1,1"],
-              kunci: 2,
-              bahas: "Untuk kejadian saling bebas, P(A dan B) = P(A) × P(B) = 0,6 × 0,5 = 0,3." },
-            { tipe: "pg", /* [L2] arisan */
-              tanya: "Dalam arisan 25 orang, setiap orang menyetor satu nama. Peluang nama Sinta keluar pada putaran pertama adalah …",
-              opsi: ["1/25", "1/24", "1/5", "1/2"],
-              kunci: 0,
-              bahas: "Hanya ada 1 nama Sinta dari 25 nama, jadi P = 1/25." },
-            { tipe: "bs",
-              tanya: "Sebuah dadu dan sekeping uang logam dilempar bersama satu kali. Tentukan Benar atau Salah pernyataan berikut.",
-              pernyataan: [
-                { teks: "Banyak titik sampelnya adalah 12.", kunci: true },
-                { teks: "Peluang muncul mata 6 dan sisi gambar adalah 1/12.", kunci: true },
-                { teks: "Peluang muncul mata prima dan sisi angka adalah 1/2.", kunci: false }
-              ],
-              bahas: "Banyak titik sampel = 6 × 2 = 12; P(6 dan gambar) = 1/6 × 1/2 = 1/12; mata prima ada 3 sehingga P(prima dan angka) = 3/6 × 1/2 = 1/4, bukan 1/2." },
-            { tipe: "bs",
-              tanya: "Kotak A berisi 2 bola merah dan 3 bola putih; kotak B berisi 4 bola merah dan 1 bola putih. Satu bola diambil dari masing-masing kotak. Tentukan Benar atau Salah pernyataan berikut.",
-              pernyataan: [
-                { teks: "Peluang terambil merah dari kotak A adalah 2/5.", kunci: true },
-                { teks: "Peluang terambil merah dari kedua kotak adalah 8/25.", kunci: true },
-                { teks: "Peluang terambil merah dari kotak A dan putih dari kotak B adalah 8/25.", kunci: false }
-              ],
-              bahas: "P(merah A) = 2/5; P(merah A dan merah B) = 2/5 × 4/5 = 8/25; P(merah A dan putih B) = 2/5 × 1/5 = 2/25, bukan 8/25." },
-            { tipe: "bs",
-              tanya: "Dua kartu diambil dari kartu bernomor 1 sampai 8 satu per satu dengan pengembalian. Tentukan Benar atau Salah pernyataan berikut.",
-              pernyataan: [
-                { teks: "Peluang kedua kartu bernomor ganjil adalah 1/4.", kunci: true },
-                { teks: "Peluang kedua kartu bernomor genap adalah 1/2.", kunci: false },
-                { teks: "Peluang kartu pertama ganjil dan kartu kedua genap adalah 1/4.", kunci: true }
-              ],
-              bahas: "Kartu ganjil ada 4 dari 8; karena dengan pengembalian, peluang tiap pengambilan tetap 1/2, jadi P(ganjil, ganjil) = 1/2 × 1/2 = 1/4; demikian juga P(genap, genap) = 1/4, bukan 1/2; P(ganjil lalu genap) = 1/2 × 1/2 = 1/4." },
-            { tipe: "mcma",
-              tanya: "Sebuah kantong berisi 6 kelereng merah dan 4 kelereng biru. Dua kelereng diambil satu per satu tanpa pengembalian. Pernyataan yang benar adalah …",
-              opsi: ["Peluang terambil merah lalu biru adalah 4/15.",
-                     "Peluang terambil biru lalu merah adalah 4/15.",
-                     "Peluang terambil dua-duanya merah adalah 1/3.",
-                     "Peluang terambil dua-duanya biru adalah 1/5."],
-              kunci: [0, 1, 2],
-              bahas: "P(merah lalu biru) = 6/10 × 4/9 = 24/90 = 4/15; P(biru lalu merah) = 4/10 × 6/9 = 24/90 = 4/15; P(merah, merah) = 6/10 × 5/9 = 30/90 = 1/3; P(biru, biru) = 4/10 × 3/9 = 12/90 = 2/15, bukan 1/5." },
-            { tipe: "mcma",
-              tanya: "Hasil pelemparan dua dadu bersisi enam dicatat. Pernyataan yang benar tentang pelemparan tersebut adalah …",
-              opsi: ["Peluang jumlah kedua mata dadu 8 adalah 5/36.",
-                     "Peluang jumlah kedua mata dadu 11 adalah 1/18.",
-                     "Peluang kedua mata dadu sama adalah 1/6.",
-                     "Peluang selisih kedua mata dadu 5 adalah 1/9."],
-              kunci: [0, 1, 2],
-              bahas: "Jumlah 8 ada 5 pasangan dari 36 sehingga peluangnya 5/36; jumlah 11 ada 2 pasangan sehingga peluangnya 2/36 = 1/18; mata sama ada 6 pasangan sehingga peluangnya 6/36 = 1/6; selisih 5 hanya dari (1,6) dan (6,1) sehingga peluangnya 2/36 = 1/18, bukan 1/9." }
-          ]
         }
-
       };
     </script>
 
