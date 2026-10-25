@@ -1,0 +1,427 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt E-Modul Digital — Rasio
+Bab   : VII-03 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT_E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS VII SMP
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+
+Link Share WA : Halo Sahabat Belajar Matematika! 📐✨Yuk akses “MENGUNGKAP RAHASIA PERBANDINGAN: SENILAI & BERBALIK NILAI” E-Modul Digital Berbasis Problem Based Learning (PBL) yang interaktif, seru, dan membimbing berpikir kritis: 📱 Buka modul interaktif di sini:
+🔗 https://ais-pre-emj5dpgfuuwefzcvdhvivc-253889415088.asia-east1.run.app/
+Slogan: "Belajar Matematika jadi Mudah, Modern, dan... AAAMAT KEREN!" 🚀
+
+Assalamu’alaikum,.. selamat malam, saya Drs. PAIYO guru matematika SMP Negeri 1 Bantarkawung. Minta bantun untuk :
+Buat ilustrasi edukasi matematika 3D bergaya diorama mini ultra detail dengan nuansa pembelajaran interaktif modern SMP Indonesia. Komposisi persegi rasio 1:1, kualitas ultra HD 4K, cinematic lighting hangat, warna cerah kontras tinggi, sangat tajam, gaya Pixar Animation + Unreal Engine 5 render, suasana ruang belajar digital futuristik namun tetap realistis, edukatif, elegan dan inspiratif.
+
+TOKOH UTAMA:
+1. Guru matematika laki-laki Indonesia memakai pakaian khas Brebesan seperti foto referensi, lengkap tanda pengenal guru, blangkon batik , wajah ramah berwibawa, duduk di meja digital modern di rumah sambil mengoperasikan papan pembelajaran hologram interaktif.
+Ekspresi inspiratif, hangat, profesional, seperti guru kreatif modern Indonesia.
+
+WAJIB menggunakan wajah guru sesuai foto referensi yang diupload:
+- wajah asli Indonesia
+- senyum ramah
+- kumis dan jenggot tipis
+- blangkon brebesan 
+- seragam pakaian khas brebesan , blangkon  elegan
+- memakai ID card guru
+PROFIL GURU:
+Nama : Drs. PAIYO
+NIP : 19670713 199512 1 002
+Pangkat/Gol : Pembina Utama Muda / IV C
+Status : Guru SMP Negeri 1 Bantarkawung
+
+Buatlah sebuah E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS VII SMP yang menarik, modern, kontekstual, dan mudah digunakan siswa dengan judul:
+“MENGUNGKAP RAHASIA PERBANDINGAN: SENILAI & BERBALIK NILAI”
+E-modul dirancang berbasis Problem Based Learning (PBL) untuk meningkatkan kemampuan berpikir kritis siswa kelas VII SMP pada materi Perbandingan Senilai dan Perbandingan Berbalik Nilai.
+A. KARAKTERISTIK E-MODUL
+Buat e-modul dengan ketentuan:
+Sasaran: Siswa kelas VII SMP/MTs.
+Alokasi: 5 kali pertemuan.
+Setiap pertemuan dirancang untuk pembelajaran sekitar 2 × 40 menit.
+Pendekatan utama: Problem Based Learning (PBL).
+Fokus kemampuan: berpikir kritis.
+Gunakan bahasa Indonesia yang sederhana, komunikatif, dan sesuai perkembangan siswa SMP.
+Materi disajikan secara bertahap dari konkret menuju abstrak.
+Gunakan permasalahan kehidupan sehari-hari sebagai konteks utama.
+Hindari pembelajaran yang hanya berisi definisi dan rumus.
+Siswa harus aktif mengamati masalah, mengidentifikasi informasi, membuat dugaan, melakukan perhitungan, memberikan alasan, mengevaluasi strategi, dan menarik kesimpulan.
+Sertakan aktivitas interaktif, kuis, pertanyaan HOTS, refleksi, dan evaluasi.
+Gunakan desain visual modern dengan kombinasi warna biru, hijau, putih, dan oranye.
+Gunakan ikon matematika, ilustrasi kehidupan sehari-hari, diagram, tabel, kartu aktivitas, infografis, dan elemen visual yang menarik.
+Pastikan tampilan tidak terlalu padat sehingga nyaman dibaca melalui smartphone, tablet, maupun laptop.
+B. TUJUAN PEMBELAJARAN
+Setelah menyelesaikan e-modul, siswa diharapkan mampu:
+Menjelaskan konsep perbandingan menggunakan bahasa sendiri.
+Membedakan perbandingan senilai dan berbalik nilai.
+Menentukan hubungan antara dua besaran berdasarkan data atau situasi kontekstual.
+Menyelesaikan masalah perbandingan senilai dan berbalik nilai.
+Menggunakan tabel, diagram, grafik, atau representasi matematika untuk menganalisis masalah.
+Memilih strategi penyelesaian yang tepat dan menjelaskan alasannya.
+Memeriksa kebenaran hasil penyelesaian.
+Membandingkan beberapa strategi penyelesaian.
+Memberikan argumen berdasarkan data dan bukti.
+Menarik kesimpulan secara logis.
+C. INDIKATOR KEMAMPUAN BERPIKIR KRITIS
+Integrasikan indikator berpikir kritis pada setiap kegiatan:
+Interpretasi: memahami dan menjelaskan informasi dari masalah.
+Analisis: mengidentifikasi hubungan antarbesaran dan informasi penting.
+Evaluasi: menilai ketepatan strategi, data, dan jawaban.
+Inferensi: menarik kesimpulan berdasarkan informasi yang tersedia.
+Eksplanasi: menjelaskan proses dan alasan penyelesaian.
+Self-regulation: memeriksa kembali proses dan hasil pekerjaan.
+Berikan label kecil pada aktivitas, misalnya:
+🔎 INTERPRETASI
+🧠 ANALISIS
+⚖️ EVALUASI
+💡 INFERENSI
+🗣️ EKSPLANASI
+🔄 REFLEKSI DIRI
+D. STRUKTUR E-MODUL
+Susun e-modul sekitar 25–35 halaman/layar digital, dengan struktur:
+Cover
+Identitas e-modul
+Kata pengantar singkat
+Petunjuk penggunaan e-modul
+Kompetensi awal
+Tujuan pembelajaran
+Peta konsep
+Apersepsi
+Pre-test/asesmen diagnostik
+Pertemuan 1
+Pertemuan 2
+Pertemuan 3
+Pertemuan 4
+Pertemuan 5
+Evaluasi akhir
+Refleksi siswa
+Rangkuman
+Glosarium
+Daftar pustaka
+E. POLA SETIAP PERTEMUAN
+Setiap pertemuan wajib mengikuti sintaks Problem Based Learning:
+Tahap 1 – Orientasi Siswa pada Masalah
+Sajikan masalah nyata melalui cerita, ilustrasi, foto, tabel, atau video pendek.
+Masalah harus dekat dengan kehidupan siswa.
+Jangan langsung memberikan rumus.
+Tahap 2 – Mengorganisasi Siswa untuk Belajar
+Berikan pertanyaan: “Apa yang diketahui?”, “Apa yang ditanyakan?”, “Informasi apa yang diperlukan?”
+Siswa mengidentifikasi fakta dan variabel.
+Tahap 3 – Membimbing Penyelidikan
+Siswa mengeksplorasi pola.
+Gunakan tabel, diagram, simulasi sederhana, atau manipulasi data.
+Berikan pertanyaan bertingkat dari LOTS menuju HOTS.
+Dorong siswa menemukan konsep sendiri.
+Tahap 4 – Mengembangkan dan Menyajikan Solusi
+Siswa menyusun strategi penyelesaian.
+Siswa menuliskan langkah dan alasan.
+Siswa membandingkan strategi dengan strategi lain.
+Sediakan aktivitas “Jelaskan alasanmu!”
+Tahap 5 – Menganalisis dan Mengevaluasi Proses Pemecahan Masalah
+Siswa memeriksa jawaban.
+Siswa menemukan kemungkinan kesalahan.
+Siswa menjawab: “Apakah jawabanmu masuk akal? Mengapa?”
+Siswa menarik kesimpulan.
+F. RANCANGAN 5 PERTEMUAN
+PERTEMUAN 1 – MEMAHAMI KONSEP PERBANDINGAN
+Fokus:
+Pengertian perbandingan.
+Membandingkan dua besaran.
+Menyederhanakan perbandingan.
+Representasi perbandingan dalam bentuk tabel dan gambar.
+Masalah kontekstual:
+“Dua kelompok siswa membuat minuman dengan campuran sirup dan air. Kelompok A menggunakan 2 gelas sirup dan 6 gelas air, sedangkan kelompok B menggunakan 3 gelas sirup dan 9 gelas air. Apakah kedua minuman memiliki rasa yang sama?”
+Aktivitas:
+Mengidentifikasi informasi.
+Menuliskan perbandingan.
+Membandingkan rasio.
+Menemukan pola.
+Menjelaskan alasan.
+Berikan latihan berpikir kritis:
+“Apakah dua perbandingan yang berbeda angkanya selalu menunjukkan hubungan yang berbeda? Jelaskan.”
+PERTEMUAN 2 – PERBANDINGAN SENILAI
+Fokus:
+Konsep perbandingan senilai.
+Ciri-ciri perbandingan senilai.
+Tabel perbandingan senilai.
+Menentukan nilai yang belum diketahui.
+Penerapan dalam kehidupan sehari-hari.
+Masalah kontekstual:
+“Di sebuah toko, 2 buku tulis berharga Rp12.000. Jika harga setiap buku sama, berapa harga 5, 8, dan 12 buku?”
+Buat tabel interaktif:
+Jumlah buku | Harga
+Kemudian berikan pertanyaan:
+Apa yang terjadi pada harga ketika jumlah buku bertambah?
+Apakah perubahannya tetap?
+Bagaimana cara membuktikannya?
+Apakah hubungan tersebut selalu berlaku?
+Tambahkan aktivitas grafik untuk menunjukkan hubungan perbandingan senilai.
+PERTEMUAN 3 – MEMAHAMI PERBANDINGAN BERBALIK NILAI
+Fokus:
+Konsep perbandingan berbalik nilai.
+Hubungan dua besaran.
+Ciri-ciri perbandingan berbalik nilai.
+Tabel dan representasi grafik.
+Masalah kontekstual:
+“Enam siswa dapat membersihkan sebuah ruang kelas dalam waktu 30 menit. Jika jumlah siswa yang bekerja menjadi 10 orang dan kemampuan setiap siswa dianggap sama, apakah waktu yang diperlukan akan semakin lama atau semakin cepat?”
+Arahkan siswa untuk menemukan:
+Ketika jumlah pekerja bertambah, waktu berkurang.
+Hasil kali kedua besaran tetap.
+Hubungan tersebut merupakan perbandingan berbalik nilai.
+Tambahkan pertanyaan kritis:
+“Apakah semakin banyak pekerja selalu membuat pekerjaan selesai lebih cepat? Kondisi apa yang harus dipenuhi agar pernyataan tersebut benar?”
+PERTEMUAN 4 – MEMBEDAKAN SENILAI DAN BERBALIK NILAI
+Buat aktivitas “DETEKTIF PERBANDINGAN”.
+Sajikan minimal 6 kasus:
+Jumlah barang dan harga total.
+Kecepatan kendaraan dan waktu perjalanan untuk jarak tetap.
+Jumlah pekerja dan waktu menyelesaikan pekerjaan.
+Jumlah bahan dan jumlah produk yang dibuat.
+Jumlah siswa dan kebutuhan konsumsi.
+Kecepatan mengetik dan waktu menyelesaikan teks dengan jumlah karakter tetap.
+Siswa harus:
+Menentukan jenis hubungan.
+Menjelaskan alasan.
+Menentukan data yang relevan.
+Membuat tabel.
+Menentukan strategi.
+Memeriksa jawaban.
+Tambahkan aktivitas “Benar atau Salah?” yang berisi pernyataan mengecoh.
+Contoh:
+“Jika jumlah pekerja bertambah dua kali lipat, waktu pengerjaan pasti menjadi setengahnya.”
+Siswa tidak cukup memilih benar/salah, tetapi wajib memberikan alasan matematis.
+PERTEMUAN 5 – PROYEK PEMECAHAN MASALAH
+Buat proyek PBL berjudul:
+“MISI MATEMATIKA: MERENCANAKAN KEGIATAN KELAS”
+Sajikan sebuah masalah kompleks.
+Contoh:
+“Kelas VII akan mengadakan kegiatan kelas. Siswa harus menentukan kebutuhan minuman, makanan, waktu persiapan, dan pembagian tenaga kerja dengan anggaran tertentu.”
+Siswa diberikan data:
+Jumlah siswa.
+Harga barang.
+Jumlah kebutuhan.
+Jumlah pekerja.
+Waktu yang tersedia.
+Anggaran.
+Siswa harus:
+Mengidentifikasi masalah.
+Memilah informasi penting.
+Menentukan hubungan senilai atau berbalik nilai.
+Membuat model matematika.
+Menentukan strategi.
+Menghitung.
+Membandingkan alternatif.
+Mengevaluasi hasil.
+Memberikan rekomendasi.
+Menyajikan solusi.
+Produk akhir dapat berupa:
+Poster digital.
+Infografis.
+Tabel perencanaan.
+Presentasi singkat.
+G. AKTIVITAS INTERAKTIF
+Tambahkan elemen:
+Tombol “Klik untuk Menemukan”.
+Drag and drop.
+Pilihan ganda dengan feedback otomatis.
+Benar/salah dengan alasan.
+Isian jawaban.
+Mencocokkan konsep.
+Simulasi perubahan nilai.
+Tabel interaktif.
+Grafik sederhana.
+Kartu tantangan.
+“Petunjuk” yang dapat dibuka jika siswa mengalami kesulitan.
+Sistem skor sederhana.
+Setiap jawaban salah harus memberikan feedback pembelajaran, bukan sekadar “salah”.
+Contoh:
+“Belum tepat. Coba perhatikan hubungan antara jumlah pekerja dan waktu. Ketika jumlah pekerja bertambah, apakah waktu juga bertambah atau justru berkurang?”
+H. FITUR “THINK CRITICALLY”
+Buat kotak khusus pada setiap pertemuan:
+🧠 THINK CRITICALLY
+Berisi pertanyaan seperti:
+Mengapa?
+Bagaimana kamu tahu?
+Apa buktinya?
+Apakah ada cara lain?
+Apakah hasilmu masuk akal?
+Apa yang terjadi jika salah satu nilai diubah?
+Apakah kesimpulanmu selalu berlaku?
+Bagaimana kamu membuktikannya?
+Apa asumsi yang digunakan?
+Strategi mana yang paling efisien? Jelaskan.
+I. LATIHAN HOTS
+Pada setiap pertemuan berikan minimal:
+3 soal pemahaman konsep.
+2 soal aplikasi.
+2 soal HOTS.
+1 soal terbuka yang meminta alasan/argumentasi.
+Soal HOTS harus menuntut siswa menganalisis, mengevaluasi, dan memberikan alasan, bukan hanya memasukkan angka ke rumus.
+J. ASESMEN
+Buat:
+Asesmen diagnostik/pre-test.
+Asesmen formatif setiap pertemuan.
+Asesmen aktivitas PBL.
+Asesmen kemampuan berpikir kritis.
+Post-test/evaluasi akhir.
+Buat instrumen penilaian kemampuan berpikir kritis dengan rubrik skala 1–4 berdasarkan:
+Interpretasi.
+Analisis.
+Evaluasi.
+Inferensi.
+Eksplanasi.
+Refleksi/self-regulation.
+K. POST-TEST
+Buat minimal 15 soal yang mencakup:
+Perbandingan.
+Perbandingan senilai.
+Perbandingan berbalik nilai.
+Identifikasi jenis hubungan.
+Masalah kontekstual.
+Analisis tabel.
+Analisis grafik.
+Soal HOTS.
+Soal yang meminta alasan.
+Soal pemecahan masalah kompleks.
+Sertakan:
+Kunci jawaban.
+Pembahasan.
+Indikator berpikir kritis setiap soal.
+Pedoman penskoran.
+L. REFLEKSI SISWA
+Buat halaman refleksi interaktif dengan pertanyaan:
+Konsep apa yang paling saya pahami?
+Konsep apa yang masih membingungkan?
+Bagaimana saya menentukan suatu masalah termasuk senilai atau berbalik nilai?
+Strategi apa yang paling membantu saya?
+Apakah saya sudah memeriksa kembali jawaban saya?
+Bagaimana saya menggunakan bukti untuk mendukung jawaban?
+Apa yang akan saya lakukan agar kemampuan matematika saya lebih baik?
+M. RANGKUMAN
+Buat rangkuman visual dalam bentuk:
+Mind map.
+Tabel perbedaan perbandingan senilai dan berbalik nilai.
+Contoh sederhana.
+Ciri-ciri utama.
+Strategi penyelesaian.
+N. DESAIN VISUAL
+Gunakan desain:
+Modern.
+Minimalis.
+Ramah siswa SMP.
+Banyak visual.
+Tidak terlalu banyak teks dalam satu halaman.
+Gunakan ilustrasi kehidupan nyata.
+Gunakan ikon yang konsisten.
+Gunakan tipografi yang jelas.
+Berikan ruang kosong yang cukup.
+Gunakan kartu informasi untuk konsep penting.
+Gunakan warna berbeda untuk membedakan “senilai” dan “berbalik nilai”.
+Gunakan elemen visual:
+📊 tabel
+📈 grafik
+🧩 puzzle
+🔎 investigasi
+💡 ide
+🧠 berpikir kritis
+🎯 tantangan
+✅ evaluasi
+🔄 refleksi
+O. NAVIGASI DIGITAL
+Buat tombol:
+HOME | PETUNJUK | TUJUAN | MATERI | AKTIVITAS | KUIS | REFLEKSI | EVALUASI
+Setiap tombol harus memiliki fungsi navigasi yang jelas.
+P. HASIL AKHIR
+Hasilkan e-modul yang terasa seperti aplikasi pembelajaran digital, bukan sekadar buku PDF.
+Prioritaskan:
+Masalah nyata → Investigasi → Diskusi → Menemukan konsep → Menerapkan → Mengevaluasi → Refleksi.
+Pastikan seluruh kegiatan selama 5 pertemuan saling terhubung dan tingkat kesulitannya meningkat secara bertahap.
+Gunakan konteks yang dekat dengan kehidupan siswa kelas VII seperti:
+Belanja.
+Uang saku.
+Makanan dan minuman.
+Kegiatan kelas.
+Perjalanan.
+Kecepatan kendaraan.
+Pembagian tugas.
+Waktu kerja.
+Permainan.
+Kegiatan sekolah.
+Jangan memberikan rumus di awal sebelum siswa memperoleh kesempatan untuk menemukan pola dari masalah.
+Pada akhir e-modul, tampilkan pesan motivasi:
+“Matematika bukan hanya tentang menemukan jawaban, tetapi tentang menemukan alasan mengapa jawaban itu benar.”
+
+🔊 AUDIO PEMBELAJARAN “ ICE BREAKING
+Berikan musik klasik yang menenangkan tuk konsentrasi  berpikir positif bisa rileks
+ISI RAPOR DIGITAL:
+- nilai game edukasi
+- nilai kuis
+- nilai asesmen
+- progress belajar siswa
+- grafik perkembangan belajar
+- badge penghargaan digital
+
+FITUR KHUSUS WAJIB MUNCUL:
+- Tombol “DAFTAR KUNJUNGAN” di kiri atas bawah logo sekolah
+- Tombol “SHARE WA” di kanan layar
+- Tombol “PROFIL GURU” di kanan atas
+- QR Code mini elegan di kanan bawah
+- Sticky floating button modern
+
+PROFIL GURU:
+Nama : Drs. PAIYO
+NIP : 19670713 199512 1 002
+Pangkat/Gol : Pembina Utama Muda / IV C
+Status : Guru SMP Negeri 1 Bantarkawung
+
+LATAR SUASANA:
+- rumah modern edukatif
+- meja digital hologram
+- nuansa belajar mandiri futuristik
+- lampu warm cinematic
+- rak buku modern
+- ornamen matematika digital
+- suasana nyaman, inspiratif, kreatif
+- teknologi pendidikan masa depan
+
+TAMPILKAN:
+- hologram “RASIO” yang keren 
+- rumus rumus RASIO - animasi matematika bercahaya
+- ikon AI belajar RASIO
+- robot edukasi lucu futuristik
+- dashboard pembelajaran online
+
+SLOGAN PENUTUP BESAR:
+“BELAJAR MATEMATIKA JADI MUDAH, MODERN, dan… AAAMAT KEREN!”
+“MATEMATIKA…!” → “AAAMAT KEREN!”
+“ASAH… ASIH… ASUH… MATEMATIKA”
+
+STYLE VISUAL:
+Pixar animation style, Unreal Engine 5 render, cinematic educational diorama, ultra detail miniature scene, glowing holographic UI, Indonesia modern smart classroom, highly detailed character expression, depth of field, realistic material texture, warm ambient light, inspirational atmosphere, premium educational poster design.
+
+NEGATIVE PROMPT:
+blur, low quality, extra fingers, distorted face, dark board, unreadable text, messy layout, horror style, gloomy atmosphere, duplicated objects, low contrast, flat lighting, cropped body, unrealistic anatomy, dull color, low resolution, watermark, broken hands, asymmetrical eyes
+
+Tampilan yang di harapkan
+1. 📺 Papan Tulis Digital Pintar & Resolusi Visual Perbagian
+Di dalam tab Video Pembelajaran, kini telah tersedia Cinema Smart Board Pembelajaran Drs. Paiyo yang interaktif:
+Pemutar Langsung di Papan: Bila siswa mengeklik video, video tersebut akan langsung diputar di tempat melalui bingkai papan tulis digital yang ditenagai oleh pemutar YouTube aman (embedded iframe).
+Resolusi Visual Bagian demi Bagian (Part-by-Part): Fitur visual cerdas ini menyajikan tinjauan representasi geometris interaktif (dilengkapi ilustrasi SVG presisi tinggi) untuk setiap segmen pelajaran (Bagian 1, Bagian 2, dan Bagian 3). Desain gambar penampang dimensi ini disesuaikan secara dinamis menurut subbab video agar siswa dapat langsung mencocokkan rumus teoretis dengan pemaparan guru.
+Akses YouTube Mandiri: Tombol tautan luar resmi "Buka Link Luar YouTube Resmi" maupun pintasan cepat "YT↗" tetap dipertahankan bagi siswa yang ingin menonton langsung di aplikasi YouTube eksternal.
+Auto-Focus Pintar: Saat tombol video materi di bawah diklik, portal akan secara otomatis mengarahkan fokus layar secara mulus (smooth scrolling) ke pemutar utama di atas.
+2. ⚡ Tampilan Catatan Performa Diorama Hologram 3D
+Pada komponen Diorama Utama Drs. Paiyo, telah disisipkan lencana informasi yang berbunyi:
+"Resolusi Gambar Diorama Hologram: Layout visual hologram 3D Drs. Paiyo telah dimigrasi dari referensi path dinamis ke modul import statis yang andal, jaminan tampil lancar dan stabil di HP maupun di laptop."
+Perubahan ini memastikan transparansi performa aplikasi kepada murid dan guru, serta mengukuhkan fondasi portal yang cepat dan hemat kuota internet.
+3. 🔗 Transformasi Otomatis Tautan Berbagi ke "ais-pre" (Pre-Production)
+Fungsi Berbagi ke WhatsApp (handleShareWa) telah disesuaikan agar secara dinamis mendeteksi tautan saat ini. Jika diakses melalui server development (ais-dev-), sistem akan otomatis memigrasi dan meresolusi alamat tersebut ke domain prapeluncuran utama "ais-pre" yang andal dan stabil sebelum dikirimkan lewat pesan.
+
+sebuah Papan Digital target pembelajaran yang interaktif dan futuristik.
+Sisi Kiri: Menyajikan daftar 10 Tujuan Belajar Drs. PAIYO secara responsif yang kini dapat diklik oleh pengguna.
+Sisi Kanan (Papan Digital Aktif): Ketika salah satu tujuan di klik, papan digital dengan desain ala hologram amber (bg-[#0f131d] dengan border kayu estetik, garis pemindai dinamis, dan status SLATE LIVE ACTIVE) akan menyala dan menampilkan:
+Rumus Emas (Golden Formula): Rumus penting utama yang mewakili sub-bab tujuan tersebut (seperti , hingga rumus gabungan).
+Hal Penting (Key Concept): Panduan tips ringkasan/trik cerdas dari Drs. PAIYO untuk membantu murid mengingat materi ujian secara instan.
+Detail Deskripsi Pembelajaran: Narasi yang mengaitkan target kompetensi dengan aksi nyata siswa.
