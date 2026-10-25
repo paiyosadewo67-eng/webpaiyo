@@ -185,8 +185,14 @@
         border: 1.5px solid rgba(233,196,76,.35); border-radius: 26px;
       }
       @media (max-width: 900px) {
-        .hero-in { grid-template-columns: 1fr; gap: 2.2rem; padding: 3rem 0 3.4rem; }
+        .hero-in { grid-template-columns: 1fr; gap: 2.2rem; padding: 1.5rem 0 3.4rem; }
         .hero-figure img { height: clamp(180px, 50vw, 250px); }
+        /* Ruang vertikal hero dirapatkan di HP supaya baris tombol
+           (Mulai Belajar + Profil Guru) tampil utuh di atas bilah
+           navigasi bawah yang tetap (fixed). */
+        .hero-eyebrow { margin-bottom: .9rem; }
+        .hero-lead { margin-top: 1.05rem; }
+        .hero-btns { margin-top: 1.35rem; }
       }
 
       /* ---------- Bagian umum ---------- */
@@ -556,20 +562,7 @@
       .foot-slogan { font-family: "Playfair Display", serif; font-style: italic; color: var(--gold-soft); font-size: 1.05rem; margin-top: .6rem; }
       .foot-bottom { border-top: 1px solid rgba(255,255,255,.12); padding-top: 1.4rem; font-size: .82rem; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
 
-      /* ---------- Kunci kode akses ---------- */
-      .akses-btn {
-        font: inherit; font-size: .88rem; font-weight: 700; cursor: pointer; white-space: nowrap;
-        color: var(--gold-soft); background: rgba(233,196,76,.1);
-        border: 1.5px solid rgba(233,196,76,.55); border-radius: 999px;
-        padding: .5rem 1rem; margin-left: .5rem;
-        transition: background .18s ease, color .18s ease, border-color .18s ease;
-      }
-      .akses-btn:hover { background: rgba(233,196,76,.22); color: #fff; }
-      .akses-btn.terbuka { color: #A9E8BC; border-color: rgba(127,215,154,.55); background: rgba(28,107,50,.28); cursor: default; }
-      .akses-btn.terbuka:hover { background: rgba(28,107,50,.28); color: #A9E8BC; }
-      @media (max-width: 900px) {
-        .nav-links .akses-btn { margin-left: 0; margin-top: .4rem; text-align: center; }
-      }
+      /* ---------- Modal kode khusus prompt ---------- */
       .akses-overlay {
         position: fixed; inset: 0; z-index: 200; display: grid; place-items: center;
         padding: 1.1rem; background: rgba(4, 9, 24, .66);
@@ -659,8 +652,7 @@
         .nav-links { width: auto; border-top: 0; }
         .nav-in { flex-wrap: wrap; }
         .nav-search { order: 3; flex-basis: 100%; max-width: none; margin: .3rem 0 .1rem; }
-        .akses-btn { font-size: .8rem; padding: .45rem .75rem; margin-left: auto; }
-        .nav-toggle { margin-left: .5rem; }
+        .nav-toggle { margin-left: auto; }
       }
       @media (max-width: 480px) { .brand small { display: none; } }
 
@@ -771,7 +763,6 @@
           <input id="inputCari" type="search" placeholder="Cari materi… mis. kesebangunan, SPLDV, bangun ruang" aria-label="Cari materi, bab, atau topik" autocomplete="off" />
           <div class="cari-hasil" id="cariHasil" hidden></div>
         </div>
-        <button type="button" class="akses-btn" id="aksesBtn">🔒 Masuk dengan Kode</button>
         <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
@@ -1233,7 +1224,7 @@
           <article class="yosad-card">
             <span class="kicker">Ruang Tes &amp; Bank Soal</span>
             <h3>Kelas Mas YoSad — Ruang Tes &amp; Bank Soal</h3>
-            <p>Ruang kelas tes dengan bank soal per bab untuk Kelas VII, VIII, dan IX. Kerjakan latihan dan tes di sana — nilai latihanmu tersimpan otomatis di database, sehingga hasil belajarmu tercatat rapi dan dapat dipantau perkembangannya.</p>
+            <p>Ruang kelas tes dengan bank soal per bab untuk Kelas VII, VIII, dan IX. Saat tes dibagikan, buka tautannya: isi data dirimu, masukkan token tes dari gurumu, dan soal langsung tampil untuk dikerjakan. Selesai mengerjakan, nilaimu tersimpan otomatis di database, sehingga hasil belajarmu tercatat rapi dan dapat dipantau perkembangannya.</p>
             <a class="btn btn-gold" href="https://paiyosadewo67-eng.github.io/webpaiyo/kelas-mas-yosad/" target="_blank" rel="noopener">Masuk Kelas Mas YoSad
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
@@ -1389,21 +1380,21 @@
       </a>
     </nav>
 
-    <!-- ================= MODAL KODE AKSES ================= -->
+    <!-- ================= MODAL KODE KHUSUS PROMPT ================= -->
     <div class="akses-overlay" id="modalAkses" hidden>
       <div class="akses-card" role="dialog" aria-modal="true" aria-labelledby="aksesJudul">
         <span class="akses-ic" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
         </span>
-        <h3 id="aksesJudul">Kode Akses</h3>
-        <p id="aksesKeterangan">Masukkan kode akses dari Drs. Paiyo untuk membuka materi belajar.</p>
+        <h3 id="aksesJudul">Kode Khusus Prompt</h3>
+        <p id="aksesKeterangan">Penyimpanan Prompt dilindungi kode khusus guru. Masukkan kode khusus dari Drs. Paiyo untuk membukanya.</p>
         <form class="akses-form" id="formAkses">
-          <label for="inputKode">Kode Akses</label>
-          <input id="inputKode" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Ketik kode akses di sini" />
+          <label for="inputKode">Kode Khusus</label>
+          <input id="inputKode" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Ketik kode khusus di sini" />
           <p class="akses-error" id="aksesError" role="alert" hidden>Kode salah, silakan coba lagi.</p>
           <div class="akses-btns">
             <button type="button" class="btn akses-batal" id="aksesBatal">Batal</button>
-            <button type="submit" class="btn btn-gold">Buka Akses</button>
+            <button type="submit" class="btn btn-gold">Buka Prompt</button>
           </div>
         </form>
       </div>
@@ -2392,8 +2383,9 @@
             '</div>';
           if (punyaPanel) {
             /* Kartu dengan panel "Lihat Sumber Belajar" — pola yang sama
-               seperti kartu bab: tombolnya melewati gerbang kode akses
-               yang sama dan panelnya dibangun oleh panelSumber(). */
+               seperti kartu bab: panelnya dibangun oleh panelSumber()
+               dan terbuka bebas (portal tanpa kode akses sejak
+               25 Okt 2026). */
             html += '<article class="menu-card" style="--ac:' + f.warna + '">' + isi +
               '<button type="button" class="bab-toggle" aria-expanded="false" aria-controls="sumber-' + esc(f.id) + '">' +
                 '<span class="bab-toggle-label">Lihat Sumber Belajar</span>' +
@@ -2766,77 +2758,42 @@
 
     <script>
       /* ============================================================
-         KUNCI KODE AKSES — AAAMAAT KEREN
-         Halaman tetap bebas dilihat (hero, berita, menu, kartu bab,
-         profil guru, tentang, kontak). Yang dikunci hanyalah aksi
-         MASUK ke materi belajar:
-           1. Tombol portal utama pada kartu bab (tautan aplikasi AIS).
-           2. Tombol "Lihat Sumber Belajar" (membuka panel materi).
-           3. Item tautan di ruang fitur global (Ruang Portal, E-Modul,
-              Game Edukasi, Quiz/Asesmen, LKPD Visual, Video, Materi).
-           4. Semua tombol unduh di bagian Unduhan.
-           5. Tautan eksternal ke aplikasi AIS, Canva, Google
-              Docs/Drive, dan video YouTube di dalam panel materi bab.
-         Kode diperiksa dengan SHA-256 (crypto.subtle.digest) — di
-         halaman ini hanya HASH kodenya yang disimpan, bukan kodenya.
-         Setelah berhasil, status terbuka disimpan di localStorage
-         perangkat pengunjung (kunci "aaamatAkses") supaya perangkat
-         yang sama tidak ditanya lagi pada kunjungan berikutnya.
-         Klik yang tertunda dilanjutkan otomatis setelah kode benar.
-         LAPIS KEDUA — KODE KHUSUS PROMPT: tautan pada kelompok
-         "Penyimpanan Prompt" di panel bab (atribut data-khusus=
-         "prompt") dikunci satu lapis lagi dengan kode khusus guru,
-         di atas kode umum. Hash kodenya HASH_KHUSUS; status terbukanya
-         disimpan terpisah di localStorage (kunci "aaamatPrompt").
-         Alurnya berantai: klik tautan prompt saat semua terkunci →
-         modal kode umum dulu → setelah benar, klik diteruskan dan
-         modal kode khusus muncul → setelah benar, tautan terbuka.
+         KODE KHUSUS PROMPT — AAAMAAT KEREN
+         Sejak 25 Okt 2026 portal TERBUKA PENUH tanpa kode akses:
+         kode umum (KEREN2026) dilepas atas permintaan Drs. Paiyo
+         supaya siswa dan tamu tidak sungkan masuk — semua materi,
+         panel bab, video, unduhan, dan tautan aplikasi bebas dibuka
+         langsung. Yang TETAP terkunci hanyalah:
+           1. Kelompok "Penyimpanan Prompt" di panel bab (tautan
+              data-khusus="prompt") dengan kode khusus guru —
+              hash-nya HASH_KHUSUS, status terbukanya disimpan di
+              localStorage (kunci "aaamatPrompt").
+           2. Ruang tes Kelas Mas YoSad — situs tersendiri dengan
+              token tesnya sendiri, tidak diatur dari halaman ini.
+         Kode khusus diperiksa dengan SHA-256 (crypto.subtle.digest)
+         — di halaman ini hanya HASH kodenya yang disimpan, bukan
+         kodenya. Klik tautan prompt yang tertunda dilanjutkan
+         otomatis setelah kode khusus benar.
          ============================================================ */
       (function kunciAkses() {
-        var HASH_AKSES = "55d6684c4d630cc9316a201813397c2a35021c66f31d8184d0627a5895a53c7b";
-        var KUNCI_LS = "aaamatAkses";
         var HASH_KHUSUS = "fa864c89fd4730323d445a16b806ba536622dc1e6d577288ed782cfea0ad333b";
         var KUNCI_LS_KHUSUS = "aaamatPrompt";
-        var terbukaMemori = false;
         var khususMemori = false;
-        var modeKhusus = false;
         var aksiTertunda = null;
 
-        var btnStatus = document.getElementById("aksesBtn");
         var modal = document.getElementById("modalAkses");
         var form = document.getElementById("formAkses");
         var input = document.getElementById("inputKode");
         var pesanSalah = document.getElementById("aksesError");
         var btnBatal = document.getElementById("aksesBatal");
-        var judulEl = document.getElementById("aksesJudul");
-        var ketEl = document.getElementById("aksesKeterangan");
-        if (!btnStatus || !modal || !form || !input) return;
+        if (!modal || !form || !input) return;
 
-        function aksesTerbuka() {
-          if (terbukaMemori) return true;
-          try { return localStorage.getItem(KUNCI_LS) === HASH_AKSES; }
-          catch (e) { return false; }
-        }
         function khususTerbuka() {
           if (khususMemori) return true;
           try { return localStorage.getItem(KUNCI_LS_KHUSUS) === HASH_KHUSUS; }
           catch (e) { return false; }
         }
-        function perbaruiTombolStatus() {
-          if (aksesTerbuka()) {
-            btnStatus.textContent = "🔓 Akses Terbuka";
-            btnStatus.classList.add("terbuka");
-          } else {
-            btnStatus.textContent = "🔒 Masuk dengan Kode";
-            btnStatus.classList.remove("terbuka");
-          }
-        }
-        function tampilkanModal(khusus) {
-          modeKhusus = !!khusus;
-          if (judulEl) judulEl.textContent = modeKhusus ? "Kode Khusus Prompt" : "Kode Akses";
-          if (ketEl) ketEl.textContent = modeKhusus
-            ? "Penyimpanan Prompt dilindungi kode khusus guru. Masukkan kode khusus dari Drs. Paiyo untuk membukanya."
-            : "Masukkan kode akses dari Drs. Paiyo untuk membuka materi belajar.";
+        function tampilkanModal() {
           pesanSalah.hidden = true;
           input.value = "";
           modal.hidden = false;
@@ -2849,7 +2806,6 @@
         }
         function batalkanModal() {
           aksiTertunda = null;
-          modeKhusus = false;
           sembunyikanModal();
         }
 
@@ -2922,72 +2878,31 @@
           return Promise.resolve(sha256js(unescape(encodeURIComponent(kode))));
         }
 
-        /* ---------- Gerbang klik: tahan aksi masuk materi saat terkunci ---------- */
+        /* ---------- Gerbang klik: hanya tautan Penyimpanan Prompt
+           (data-khusus="prompt") yang ditahan sampai kode khusus
+           dimasukkan; semua klik lain bebas lewat. ---------- */
         document.addEventListener("click", function (e) {
-          if (e.target.closest("#modalAkses") || e.target.closest("#aksesBtn")) return;
-          if (aksesTerbuka()) {
-            /* Lapis kedua: tautan Penyimpanan Prompt (data-khusus=
-               "prompt") tetap terkunci sampai kode khusus dimasukkan. */
-            if (khususTerbuka()) return;
-            var elK = e.target.closest('a[data-khusus="prompt"]');
-            if (!elK) return;
-            e.preventDefault();
-            e.stopPropagation();
-            aksiTertunda = elK;
-            tampilkanModal(true);
-            return;
-          }
-          var el = e.target.closest(".bab-toggle, .yt-btn, a");
-          if (!el) return;
-          var dikunci = false;
-          if (el.classList.contains("bab-toggle")) {
-            /* Membuka panel sumber belajar = masuk materi.
-               Menutup panel yang sudah terbuka dibiarkan bebas. */
-            dikunci = el.getAttribute("aria-expanded") !== "true";
-          } else if (el.classList.contains("yt-btn")) {
-            /* Video di dalam panel materi bab dan di halaman Video
-               dikunci; video pembuka di bagian perkenalan tetap bebas
-               diputar. */
-            dikunci = !!el.closest(".bab-sumber, .agregat-video");
-          } else if (el.tagName === "A") {
-            var href = el.getAttribute("href") || "";
-            dikunci = /^https?:\/\//i.test(href)
-              || el.hasAttribute("download")
-              || el.getAttribute("target") === "_blank";
-          }
-          if (!dikunci) return;
+          if (e.target.closest("#modalAkses")) return;
+          if (khususTerbuka()) return;
+          var elK = e.target.closest('a[data-khusus="prompt"]');
+          if (!elK) return;
           e.preventDefault();
           e.stopPropagation();
-          aksiTertunda = el;
+          aksiTertunda = elK;
           tampilkanModal();
         }, true);
 
-        /* ---------- Tombol status di menu ---------- */
-        btnStatus.addEventListener("click", function () {
-          if (aksesTerbuka()) return;
-          aksiTertunda = null;
-          tampilkanModal();
-        });
-
-        /* ---------- Periksa kode ---------- */
+        /* ---------- Periksa kode khusus ---------- */
         form.addEventListener("submit", function (e) {
           e.preventDefault();
           var kode = input.value.replace(/^\s+|\s+$/g, "");
           if (!kode) { pesanSalah.hidden = false; input.focus(); return; }
-          var targetHash = modeKhusus ? HASH_KHUSUS : HASH_AKSES;
           hashKode(kode).then(function (hex) {
-            if (hex === targetHash) {
-              if (modeKhusus) {
-                khususMemori = true;
-                try { localStorage.setItem(KUNCI_LS_KHUSUS, HASH_KHUSUS); } catch (err) {}
-              } else {
-                terbukaMemori = true;
-                try { localStorage.setItem(KUNCI_LS, HASH_AKSES); } catch (err) {}
-                perbaruiTombolStatus();
-              }
+            if (hex === HASH_KHUSUS) {
+              khususMemori = true;
+              try { localStorage.setItem(KUNCI_LS_KHUSUS, HASH_KHUSUS); } catch (err) {}
               var aksi = aksiTertunda;
               aksiTertunda = null;
-              modeKhusus = false;
               sembunyikanModal();
               if (aksi) aksi.click(); /* lanjutkan klik yang tertunda */
             } else {
@@ -3004,8 +2919,6 @@
         document.addEventListener("keydown", function (e) {
           if (e.key === "Escape" && !modal.hidden) batalkanModal();
         });
-
-        perbaruiTombolStatus();
       })();
     </script>
 
