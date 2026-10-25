@@ -1,0 +1,296 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Interaktif Petualangan Perkalian Dasar
+Bab   : VII-01 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT AAAMAT KEREN GAME INTERAKTIF PETUALANGAN PERKALIAN DASAR
+
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+
+Link Share wa “ GAME AAAMAT KEREN PETUALANGAN PERKALIAN DASAR “ =
+https://igatrisna.my.canva.site/aaamat-keren-petualangan-perkalian-dasar
+
+Link 2 Share wa “ GAME AAAMAT KEREN PETUALANGAN PERKALIAN DASAR “ =
+https://igatrisna.my.canva.site/aaamat-keren-petualangan-perkalian-dasar
+
+Assalamu’alaikum,...Selamat pagi, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat “ AAAMAT KEREN GAME INTERAKTIF PETUALANGAN PERKALIAN DASAR”. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+
+PROMPT
+Bertindaklah sebagai Game Developer Senior, Guru SD Indonesia, Pakar Gamifikasi Pendidikan, UI/UX Designer, Animator Pixar Disney, Frontend Developer HTML5, JavaScript Expert, serta Instructional Designer.
+Buatkan sebuah Game Interaktif Perkalian Dasar berbasis HTML5, CSS3, dan JavaScript yang dapat dimainkan secara offline di Laptop, Chromebook, Android maupun LCD kelas.
+Game dibuat seperti permainan petualangan modern yang sangat menarik untuk siswa SD.
+
+JUDUL
+🎮
+AAAMAT KEREN
+PETUALANGAN PERKALIAN DASAR
+"MENYELAMATKAN KERAJAAN ANGKA"
+
+TARGET
+Siswa
+Kelas 2
+Kelas 3
+Kelas 4 SD
+
+TUJUAN
+Membantu siswa menguasai
+✔ Perkalian 1–10
+✔ Penjumlahan Berulang
+✔ Fakta Dasar Perkalian
+✔ Kebalikan Perkalian
+✔ Isian Kosong
+✔ Perkalian Acak
+✔ Kecepatan Menghitung
+sesuai urutan latihan pada modul AAAMAT.
+
+CERITA
+Robot AAAMAT KEREN datang membawa kabar.
+Seluruh angka di Kerajaan Matematika telah hilang.
+Monster "Si Lupa Perkalian"
+mengacak semua hasil perkalian.
+Hanya anak-anak hebat yang dapat mengembalikan angka tersebut.
+Untuk membuka gerbang terakhir,
+siswa harus memperoleh
+10 Kunci Perkalian.
+
+TOKOH
+👨‍🏫 Pak Guru Drs. Paiyo
+sebagai mentor.
+🤖 Robot AAAMAT KEREN
+sebagai pemandu.
+👧 Zulfa
+👦 Rafly
+👦 Ibnu
+👧 Tari
+👦 Yasir
+👧 Dewi
+👧 Anis
+👦 Junada
+bergaya Pixar Disney 3D.
+
+TEMA
+Glassmorphism
+Blue Neon
+Gold
+Dark Space
+Animasi Ceria
+Musik Edukatif
+Efek Klik
+Efek Bintang
+Konfeti
+
+MENU
+🏠 Home
+▶ Mulai Bermain
+📖 Belajar
+🎮 Adventure
+🏆 Skor
+🥇 Badge
+📜 Sertifikat
+⚙ Pengaturan
+
+LEVEL 1
+BELAJAR PENJUMLAHAN BERULANG
+Contoh
+4
+↓
+4
+
+4
+↓
+2 × 4
+↓
+8
+Animasi
+Balok
+Apel
+Permen
+Bintang
+bermunculan satu per satu hingga siswa memahami konsep perkalian sebagai penjumlahan berulang.
+
+LEVEL 2
+HAFALKAN
+Muncul tabel
+1×4
+2×4
+3×4
+...
+10×4
+Siswa menekan tombol
+"Hafal"
+setelah selesai.
+Robot memberikan tepuk tangan.
+
+LEVEL 3
+KUIS CEPAT
+Soal muncul acak.
+Misalnya
+7 × 4 = ?
+5 × 4 = ?
+9 × 4 = ?
+Jawaban dipilih dalam 4 pilihan.
+Timer 10 detik.
+
+LEVEL 4
+ISIAN KOSONG
+Contoh
+□ × 4 = 16
+4 × □ = 28
+□ × □ = 36
+Persis seperti latihan pada modul AAAMAT sehingga siswa berlatih mengenali hubungan antar fakta perkalian.
+
+LEVEL 5
+DRAG AND DROP
+Seret jawaban
+ke soal yang benar.
+Contoh
+24
+↓
+6×4
+32
+↓
+8×4
+40
+↓
+10×4
+
+LEVEL 6
+PASANGKAN
+Hubungkan
+Perkalian
+dengan
+Hasilnya
+menggunakan garis.
+
+LEVEL 7
+RODA KEBERUNTUNGAN
+Spinner memilih
+angka
+4
+5
+6
+7
+8
+9
+Siswa menjawab
+perkalian sesuai angka yang keluar.
+
+LEVEL 8
+TEMBAK METEOR
+Meteor membawa soal.
+Contoh
+8×7
+Klik meteor dengan jawaban benar.
+Jika salah,
+meteor pecah.
+
+LEVEL 9
+LABIRIN PERKALIAN
+Siswa hanya boleh melewati jalan
+yang memiliki hasil perkalian benar.
+
+LEVEL 10
+BOSS
+Monster
+"LUPA PERKALIAN"
+Harus dikalahkan dengan
+20 soal campuran.
+Semakin banyak benar,
+energi monster berkurang.
+Jika salah,
+energi siswa berkurang.
+
+SISTEM LEVEL
+Perkalian
+2
+3
+4
+5
+6
+7
+8
+9
+10
+masing-masing mempunyai dunia sendiri, mengikuti pola latihan bertingkat dari modul AAAMAT.
+
+FITUR
+✅ Drag and Drop
+✅ Klik Jawaban
+✅ Input Angka
+✅ Timer
+✅ XP
+✅ Nyawa
+❤️❤️❤️
+✅ Hint
+✅ Musik
+✅ Animasi
+✅ Leaderboard
+✅ Local Storage
+✅ Dark Mode
+✅ Full Screen
+
+BADGE
+🥉 Ahli Perkalian
+🥈 Master Perkalian
+🥇 Raja Perkalian
+👑 Legend AAAMAT
+⭐ Super Cepat
+⚡ Kilat Matematika
+🚀 Genius Hitung
+
+SISTEM PENILAIAN
+Jawaban benar
++100 XP
+Jawaban salah
+−20 XP
+Bonus waktu
++50 XP
+Combo benar
++25 XP
+Tanpa salah
++100 XP
+
+SERTIFIKAT
+Jika selesai
+muncul
+📜
+SERTIFIKAT DIGITAL
+AAAMAT KEREN
+Nama Siswa
+Level
+Nilai
+Skor
+Waktu
+Badge
+QR Code
+Tanda tangan digital
+Drs. Paiyo
+Guru Matematika
+
+DESAIN
+Style
+Pixar Animation
+Disney Style
+Unreal Engine 5
+Ultra HD 4K
+Modern Classroom
+Blue Neon
+Gold Glow
+Glassmorphism
+Friendly Robot
+High Quality
+Professional Educational Game
+
+OUTPUT YANG DIINGINKAN
+Buatkan aplikasi lengkap berbasis HTML5 + CSS3 + JavaScript dalam satu file yang dapat dijalankan secara offline, responsif di laptop, tablet, dan smartphone. Sertakan animasi ringan, efek suara (dengan fallback jika audio tidak tersedia), penyimpanan progres menggunakan Local Storage, serta kode yang rapi, diberi komentar, dan mudah dimodifikasi oleh guru.
+
+🌟 Fitur Eksklusif "AAAMAT KEREN"
+🤖 Robot AAAMAT KEREN memandu setiap tahap pembelajaran.
+👨‍🏫 Drs. Paiyo hadir sebagai mentor dengan motivasi di awal dan akhir permainan.
+📚 Materi mengikuti tahapan modul: penjumlahan berulang → hafalan → latihan acak → isian → melengkapi perkalian → evaluasi, sehingga selaras dengan metode belajar pada buku AAAMAT.
+🎯 Setiap dunia mewakili satu bilangan perkalian (2 sampai 10) sehingga siswa dapat belajar secara bertahap.
+🏆 Setelah seluruh dunia selesai, muncul Hall of Fame AAAMAT KEREN, lengkap dengan skor, badge, sertifikat digital, dan animasi kemenangan.

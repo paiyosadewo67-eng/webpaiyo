@@ -1,0 +1,269 @@
+PROMPT BERBAGI — AAAMAAT KEREN
+Judul : Prompt Game Interaktif Petualangan Pembagian Dasar
+Bab   : VII-01 • Karya Drs. Paiyo — SMP Negeri 1 Bantarkawung
+Catatan: Ini versi berbagi. Tautan dapur dan tautan edit milik
+pengembang sudah dihapus dari salinan ini. Silakan salin,
+pelajari, dan sesuaikan dengan kebutuhan kelas Anda.
+================================================================
+
+PROMPT AAAMAT KEREN GAME INTERAKTIF PETUALANGAN PEMBAGIAN DASAR
+
+Link aistudio gemini = https://aistudio.google.com/apps/
+Link Canva AI code = https://www.canva.com/ai/code/
+
+Link Share wa “ GAME AAAMAT KEREN PETUALANGAN PEMBAGIAN DASAR “ =
+https://igatrisna.my.canva.site/aaamat-keren-petualangan-pembagian-dasar
+
+Assalamu’alaikum,...Selamat pagi, saya Drs. PAIYO guru SMP Negeri 1 Bantarkawung minta bantuan untuk: membuat “ AAAMAT KEREN GAME INTERAKTIF PETUALANGAN PEMBAGIAN DASAR”. Nama pengembang: [Drs. PAIYO].  Struktur: (1) Header kolom : entri pengguna Game, Nama, kelas, no absen, sekolah: [Nama, Kelas, No Absen, Sekolah].
+Pada beranda munculkan, Fitur “Daftar Nilai “ Data Daftar nilai Canva Sheet(yang bisa di akses pengembang)
+
+PROMPT
+Bertindaklah sebagai Senior Educational Game Developer, Guru SD Indonesia, Instructional Designer, Frontend Developer HTML5, JavaScript Expert, Animator Pixar Disney, UI/UX Designer, dan Pakar Gamifikasi Pembelajaran.
+Buatkan sebuah Game Interaktif Pembagian Dasar berbasis HTML5 + CSS3 + JavaScript yang dapat dimainkan secara offline, responsif pada laptop, Chromebook, tablet, Android, dan layar LCD kelas.
+Game harus memiliki animasi menarik, karakter lucu, suara interaktif, serta pengalaman belajar seperti permainan petualangan modern.
+
+🎮 JUDUL GAME
+AAAMAT KEREN
+PETUALANGAN PEMBAGIAN DASAR
+"MISI MENYELAMATKAN KOTA ANGKA"
+
+TARGET
+👦 SD Kelas 2
+👧 SD Kelas 3
+👦 SD Kelas 4
+
+TUJUAN PEMBELAJARAN
+Siswa mampu
+✅ memahami pembagian sebagai kebalikan perkalian
+✅ menghitung pembagian dasar
+✅ mengenali hubungan perkalian dan pembagian
+✅ menyelesaikan pembagian campuran
+✅ menyelesaikan pembagian dengan sisa
+✅ menghitung cepat
+sesuai tahapan latihan pada modul AAAMAT.
+
+CERITA
+Robot AAAMAT KEREN datang membawa berita.
+Monster "Si Pembagi Jahil"
+telah mengunci semua angka di Kerajaan Matematika.
+Gerbang hanya dapat dibuka apabila siswa berhasil mengumpulkan
+🔑 10 Kristal Pembagian.
+Setiap kristal diperoleh setelah menyelesaikan satu level.
+
+KARAKTER
+👨‍🏫 Drs. Paiyo
+Mentor utama.
+🤖 Robot AAAMAT KEREN
+Pemandu permainan.
+👧 Zulfa
+👦 Rafly
+👦 Ibnu
+👧 Tari
+👦 Yasir
+👧 Dewi
+👧 Anis
+👦 Junada
+Semua bergaya Pixar Disney 3D.
+
+DESAIN
+Glassmorphism
+Blue Neon
+Gold Glow
+Dark Space
+Friendly Cartoon
+Particle Effect
+Confetti
+Animated Background
+Modern Educational Game
+
+MENU
+🏠 Home
+▶ Mulai Bermain
+📚 Belajar
+🎮 Adventure
+🏆 Papan Skor
+🥇 Badge
+📜 Sertifikat
+⚙ Pengaturan
+🔊 Musik
+🌙 Dark Mode
+
+LEVEL 1
+MEMBAGI BENDA
+Animasi
+🍎🍎🍎🍎
+dibagi
+2 anak
+↓
+Setiap anak mendapat
+2 apel
+Siswa memahami bahwa pembagian adalah proses membagi sama banyak.
+
+LEVEL 2
+PASANGAN PERKALIAN DAN PEMBAGIAN
+Contoh
+4 × 5 = 20
+↓
+20 ÷ 5 = 4
+↓
+20 ÷ 4 = 5
+Animasi panah dua arah sehingga siswa memahami hubungan kedua operasi tersebut.
+
+LEVEL 3
+KUIS CEPAT
+Contoh soal
+24 ÷ 6 = ?
+56 ÷ 8 = ?
+72 ÷ 9 = ?
+100 ÷ 10 = ?
+Soal disajikan acak dengan batas waktu.
+Latihan mengikuti pola pembagian cepat pada modul AAAMAT.
+
+LEVEL 4
+DRAG AND DROP
+Seret jawaban
+ke kotak soal.
+Misal
+48 ÷ 6
+↓
+8
+72 ÷ 8
+↓
+9
+
+LEVEL 5
+PASANGKAN
+Hubungkan
+soal
+dengan
+jawaban
+menggunakan garis.
+
+LEVEL 6
+RODA PEMBAGIAN
+Spinner memilih
+÷2
+÷3
+÷4
+÷5
+÷6
+÷7
+÷8
+÷9
+÷10
+Siswa harus menjawab sebelum waktu habis.
+
+LEVEL 7
+TEMBAK METEOR
+Meteor membawa soal.
+Misalnya
+63 ÷ 9
+Klik meteor dengan jawaban benar.
+Jika salah,
+meteor pecah.
+
+LEVEL 8
+LABIRIN PEMBAGIAN
+Siswa hanya boleh melewati jalur dengan hasil pembagian yang benar.
+
+LEVEL 9
+PEMBAGIAN DENGAN SISA
+Animasi
+🍬🍬🍬🍬🍬
+dibagi
+2 anak
+↓
+Masing-masing mendapat
+2
+tersisa
+1
+Konsep divisualisasikan agar mudah dipahami.
+Latihan mengacu pada materi pembagian dengan sisa dalam modul AAAMAT.
+
+LEVEL 10
+BOSS
+👾 Monster
+SI PEMBAGI JAHIL
+Harus dikalahkan dengan
+20 soal campuran
+meliputi
+✔ Pembagian biasa
+✔ Hubungan perkalian-pembagian
+✔ Pembagian dengan sisa
+Setiap jawaban benar mengurangi energi monster.
+
+FITUR
+✅ Drag and Drop
+✅ Klik Jawaban
+✅ Input Angka
+✅ Timer
+✅ Hint
+✅ XP
+✅ Nyawa ❤️❤️❤️
+✅ Combo Score
+✅ Local Storage
+✅ Leaderboard
+✅ Musik
+✅ Full Screen
+✅ Dark Mode
+
+BADGE
+🥉 Ahli Pembagian
+🥈 Master Pembagian
+🥇 Raja Pembagian
+👑 Legend AAAMAT
+⚡ Super Cepat
+🚀 Genius Hitung
+
+SISTEM PENILAIAN
+Jawaban benar
++100 XP
+Jawaban salah
+−20 XP
+Bonus waktu
++50 XP
+Combo benar
++25 XP
+Tanpa salah
++100 XP
+
+SERTIFIKAT DIGITAL
+Jika seluruh level selesai,
+muncul
+📜
+SERTIFIKAT
+AAAMAT KEREN
+Nama Siswa
+Level
+Nilai
+Skor
+XP
+Badge
+QR Code
+Tanda tangan digital
+Drs. Paiyo
+Guru Matematika
+
+DESAIN VISUAL
+Style
+Pixar Animation
+Disney Style
+Unreal Engine 5
+Ultra HD 4K
+Modern Classroom
+Blue Neon
+Purple Glow
+Glassmorphism
+Friendly Robot
+Interactive Dashboard
+Professional Educational Game
+
+OUTPUT YANG DIINGINKAN
+Buatkan aplikasi lengkap berbasis HTML5 + CSS3 + JavaScript dalam satu file yang dapat dijalankan secara offline, tanpa instalasi tambahan. Sertakan kode yang rapi, diberi komentar, mudah dimodifikasi guru, menggunakan Local Storage untuk menyimpan progres dan skor, menyediakan animasi ringan, efek suara (dengan fallback jika audio tidak tersedia), serta mendukung pencetakan sertifikat digital.
+
+🌟 FITUR KHAS "AAAMAT KEREN"
+🤖 Robot AAAMAT KEREN menjadi pemandu di setiap level dan memberikan motivasi belajar.
+👨‍🏫 Drs. Paiyo hadir sebagai mentor yang menjelaskan konsep pembagian dengan bahasa sederhana.
+📖 Alur belajar mengikuti metode AAAMAT, yaitu: memahami konsep → menghubungkan dengan perkalian → latihan cepat → permainan interaktif → pembagian dengan sisa → evaluasi akhir, sehingga tetap selaras dengan modul pembelajaran yang Bapak susun.
+🏆 Setiap level memberikan XP, Badge, dan Kristal Pembagian sebagai penghargaan.
+🎉 Setelah seluruh misi selesai, muncul Hall of Fame AAAMAT KEREN yang menampilkan skor akhir, badge yang diperoleh, waktu penyelesaian, sertifikat digital, serta animasi kemenangan yang meriah.
