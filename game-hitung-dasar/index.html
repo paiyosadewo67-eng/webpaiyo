@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misi Hitung Dasar — Game Perkalian & Pembagian | AAAMAAT KEREN</title>
+<style>
+  :root{
+    --biru:#123a6d; --teal:#0e7c86; --emas:#f2b134; --hijau:#2e9e5b; --merah:#d64545;
+    --bg:#0d1b2e; --kartu:#ffffff; --teks:#1c2733; --abu:#5b6b7d;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Segoe UI',system-ui,Arial,sans-serif; background:linear-gradient(160deg,#0d1b2e,#123a6d 55%,#0e7c86); color:var(--teks); min-height:100vh; padding:14px;}
+  .wrap{max-width:560px; margin:0 auto;}
+  .kartu{background:var(--kartu); border-radius:18px; padding:20px 18px; box-shadow:0 10px 30px rgba(0,0,0,.35); margin-bottom:14px;}
+  h1{font-size:24px; color:var(--biru); text-align:center; line-height:1.25;}
+  h2{font-size:18px; color:var(--biru); margin-bottom:8px;}
+  .sub{text-align:center; color:var(--abu); font-size:13.5px; margin-top:4px;}
+  .badge{display:inline-block; background:var(--emas); color:#4a3200; font-weight:700; border-radius:999px; padding:3px 12px; font-size:12.5px;}
+  label{display:block; font-weight:600; font-size:13.5px; margin:12px 0 5px; color:var(--biru);}
+  input[type=text], input[type=number], select{width:100%; padding:12px; font-size:16px; border:2px solid #cfd9e3; border-radius:12px; outline:none;}
+  input:focus, select:focus{border-color:var(--teal);}
+  .pilihan{display:grid; grid-template-columns:repeat(3,1fr); gap:8px;}
+  .pilihan2{display:grid; grid-template-columns:repeat(3,1fr); gap:8px;}
+  .opt{border:2px solid #cfd9e3; border-radius:12px; padding:10px 4px; text-align:center; font-weight:700; font-size:14px; cursor:pointer; background:#f4f8fc; user-select:none;}
+  .opt small{display:block; font-weight:500; font-size:11px; color:var(--abu); margin-top:2px;}
+  .opt.aktif{border-color:var(--teal); background:#e2f4f5; color:var(--teal);}
+  .btn{display:block; width:100%; padding:14px; border:none; border-radius:14px; font-size:17px; font-weight:800; cursor:pointer; margin-top:16px;}
+  .btn-utama{background:var(--emas); color:#4a3200; box-shadow:0 4px 0 #c78f1d;}
+  .btn-utama:active{transform:translateY(2px); box-shadow:none;}
+  .btn-kedua{background:#e8eef5; color:var(--biru);}
+  .hidden{display:none !important;}
+  .bar-luar{background:#e3eaf2; border-radius:999px; height:12px; overflow:hidden;}
+  .bar-dalam{background:linear-gradient(90deg,var(--teal),var(--hijau)); height:100%; width:0%; transition:width .3s;}
+  .info-baris{display:flex; justify-content:space-between; font-size:13.5px; font-weight:700; color:var(--biru); margin-bottom:6px;}
+  .soal-besar{font-size:52px; font-weight:900; text-align:center; color:var(--biru); letter-spacing:1px; margin:18px 0 6px;}
+  .umpan{text-align:center; min-height:30px; font-size:17px; font-weight:800; margin-top:10px;}
+  .umpan.benar{color:var(--hijau);} .umpan.salah{color:var(--merah);}
+  .nilai-besar{font-size:64px; font-weight:900; text-align:center; color:var(--biru);}
+  .grid-stat{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; text-align:center; margin:10px 0;}
+  .stat{background:#f4f8fc; border-radius:12px; padding:10px 4px;}
+  .stat b{display:block; font-size:19px; color:var(--biru);}
+  .stat span{font-size:11.5px; color:var(--abu); font-weight:600;}
+  .keluarga{margin:7px 0;}
+  .keluarga .ket{display:flex; justify-content:space-between; font-size:13px; font-weight:600; color:var(--teks); margin-bottom:3px;}
+  table{border-collapse:collapse; width:100%; font-size:12.5px;}
+  th,td{border:1px solid #d5dee8; padding:6px 5px; text-align:left;}
+  th{background:#eef4fa; color:var(--biru);}
+  .kecil{font-size:12.5px; color:var(--abu);}
+  a.kembali{color:#cfe6ff; font-size:13.5px; text-decoration:none; display:inline-block; margin-bottom:10px;}
+  .guru-link{text-align:center; margin-top:12px;}
+  .guru-link button{background:none; border:none; color:var(--abu); font-size:13px; cursor:pointer; text-decoration:underline;}
+  .err{color:var(--merah); font-size:13px; font-weight:600; min-height:18px; text-align:center;}
+  .tabel-geser{overflow-x:auto;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="kembali" href="../index.html">← Kembali ke Beranda Portal AAAMAAT KEREN</a>
+
+  <!-- LAYAR AWAL -->
+  <div class="kartu" id="layarAwal">
+    <div style="text-align:center"><span class="badge">🎮 GAME LATIHAN • KELAS IX</span></div>
+    <h1 style="margin-top:10px">MISI HITUNG DASAR</h1>
+    <p class="sub">Latihan perkalian &amp; pembagian dasar 1–9.<br>Main di HP, hasilmu tercatat untuk dipantau gurumu. Semangat, anak KEREN!</p>
+
+    <label for="inNama">Nama lengkap</label>
+    <input type="text" id="inNama" placeholder="Tulis namamu" autocomplete="name">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+      <div>
+        <label for="inKelas">Kelas</label>
+        <select id="inKelas">
+          <option value="">— Pilih —</option>
+          <option>9A</option><option>9B</option><option>9C</option><option>9D</option><option>9E</option>
+          <option>8</option><option>7</option>
+        </select>
+      </div>
+      <div>
+        <label for="inAbsen">No. absen</label>
+        <input type="number" id="inAbsen" min="1" max="40" inputmode="numeric" placeholder="cth. 12">
+      </div>
+    </div>
+
+    <label>Mode permainan</label>
+    <div class="pilihan" id="pilMode">
+      <div class="opt aktif" data-mode="kali">✖️ Perkalian</div>
+      <div class="opt" data-mode="bagi">➗ Pembagian</div>
+      <div class="opt" data-mode="campur">🔀 Campuran</div>
+    </div>
+
+    <label>Level fakta</label>
+    <div class="pilihan2" id="pilLevel">
+      <div class="opt" data-level="pemanasan">Pemanasan<small>faktor 2–5</small></div>
+      <div class="opt aktif" data-level="inti">Fokus Inti<small>faktor 6–9</small></div>
+      <div class="opt" data-level="semua">Semua<small>faktor 2–9</small></div>
+    </div>
+
+    <div class="err" id="errAwal"></div>
+    <button class="btn btn-utama" id="btnMulai">▶ MULAI MISI (20 SOAL)</button>
+    <p class="kecil" style="text-align:center; margin-top:10px">Tanpa kalkulator ya. Jawab sejujur-jujurnya — ini latihan untuk memetakan kemampuanmu, bukan ujian.</p>
+
+    <div class="guru-link"><button id="btnBukaGuru" type="button">🔒 Panel Guru / Laporan Perkembangan</button></div>
+  </div>
+
+  <!-- LAYAR MAIN -->
+  <div class="kartu hidden" id="layarMain">
+    <div class="info-baris"><span id="infoSoal">Soal 1/20</span><span id="infoSkor">Skor: 0</span><span id="infoStreak">🔥 0</span></div>
+    <div class="bar-luar"><div class="bar-dalam" id="barProgres"></div></div>
+    <div class="soal-besar" id="soalBesar">7 × 8 = ?</div>
+    <input type="number" id="inJawaban" inputmode="numeric" placeholder="Ketik jawabanmu" style="text-align:center; font-size:22px; font-weight:800;">
+    <button class="btn btn-utama" id="btnJawab">JAWAB ✓</button>
+    <div class="umpan" id="umpan"></div>
+  </div>
+
+  <!-- LAYAR HASIL -->
+  <div class="kartu hidden" id="layarHasil">
+    <h2 style="text-align:center">🎉 Misi Selesai!</h2>
+    <div class="nilai-besar" id="hasilNilai">0</div>
+    <p class="sub" id="hasilStatus"></p>
+    <div class="grid-stat">
+      <div class="stat"><b id="hasilBenar">0/20</b><span>Jawaban benar</span></div>
+      <div class="stat"><b id="hasilDurasi">0 dtk</b><span>Lama bermain</span></div>
+      <div class="stat"><b id="hasilStreak">0</b><span>Rentetan terbaik</span></div>
+    </div>
+    <h2 style="font-size:15px; margin-top:8px">Peta kekuatan fakta hitungmu</h2>
+    <div id="hasilKeluarga"></div>
+    <p class="kecil" id="hasilDb" style="margin-top:10px"></p>
+    <button class="btn btn-utama" id="btnLagi">🔁 MAIN LAGI</button>
+    <button class="btn btn-kedua" id="btnGanti">Ganti Mode / Level</button>
+  </div>
+
+  <!-- PANEL GURU -->
+  <div class="kartu hidden" id="layarGuru">
+    <h2>🔒 Panel Guru — Laporan Perkembangan</h2>
+    <div id="guruGate">
+      <label for="inPassGuru">Kata sandi guru</label>
+      <input type="text" id="inPassGuru" placeholder="Kata sandi khusus guru">
+      <div class="err" id="errGuru"></div>
+      <button class="btn btn-utama" id="btnMasukGuru">BUKA LAPORAN</button>
+    </div>
+    <div id="guruIsi" class="hidden">
+      <label for="filKelas">Saring kelas</label>
+      <select id="filKelas">
+        <option value="">Semua kelas</option>
+        <option>9A</option><option>9B</option><option>9C</option><option>9D</option><option>9E</option>
+      </select>
+      <p class="kecil" id="guruRingkasan" style="margin:8px 0"></p>
+      <div class="tabel-geser">
+        <table id="tabelGuru">
+          <thead><tr><th>Nama</th><th>Kelas</th><th>Sesi</th><th>Terakhir</th><th>Terbaik</th><th>Rata-rata</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <button class="btn btn-kedua" id="btnMuatUlang">↻ Muat Ulang Data</button>
+    </div>
+    <button class="btn btn-kedua" id="btnTutupGuru">← Kembali</button>
+  </div>
+</div>
+
+<script>
+"use strict";
+var SUPABASE_URL = "https://vovjeijhxnehhtxjqtkm.supabase.co";
+var SUPABASE_ANON_KEY = "sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV";
+var PASSWORD_GURU = "yosad67";
+var JUMLAH_SOAL = 20;
+
+var state = {
+  mode: "kali", level: "inti",
+  nama: "", kelas: "", absen: "",
+  soal: [], idx: 0, benar: 0, streak: 0, streakMax: 0,
+  mulai: 0, kunciSekarang: null, terkunci: false,
+  perKeluarga: {}
+};
+
+function $(id){ return document.getElementById(id); }
+function acak(min, max){ return Math.floor(Math.random() * (max - min + 1)) + min; }
+
+function poolFaktor(){
+  if (state.level === "pemanasan") return [2,3,4,5];
+  if (state.level === "inti") return [6,7,8,9];
+  return [2,3,4,5,6,7,8,9];
+}
+
+function buatSoal(){
+  var pool = poolFaktor();
+  var daftar = [], dipakai = {};
+  while (daftar.length < JUMLAH_SOAL){
+    var mode = state.mode;
+    if (mode === "campur") mode = Math.random() < 0.5 ? "kali" : "bagi";
+    var a = pool[acak(0, pool.length - 1)];
+    var b = acak(2, 9);
+    var kunci, teks, keluarga;
+    if (mode === "kali"){
+      kunci = a * b; teks = a + " × " + b + " = ?"; keluarga = Math.max(a, b);
+    } else {
+      var hasil = a * b;
+      teks = hasil + " ÷ " + a + " = ?"; kunci = b; keluarga = a;
+    }
+    var idUnik = teks;
+    if (dipakai[idUnik]) continue;
+    dipakai[idUnik] = true;
+    daftar.push({ teks: teks, kunci: kunci, keluarga: keluarga, mode: mode });
+  }
+  return daftar;
+}
+
+function pilihGrup(id, attr, kunciState){
+  $(id).addEventListener("click", function(e){
+    var t = e.target.closest(".opt"); if (!t) return;
+    var anak = $(id).querySelectorAll(".opt");
+    for (var i = 0; i < anak.length; i++) anak[i].classList.remove("aktif");
+    t.classList.add("aktif");
+    state[kunciState] = t.getAttribute(attr);
+  });
+}
+pilihGrup("pilMode", "data-mode", "mode");
+pilihGrup("pilLevel", "data-level", "level");
+
+function namaMode(){
+  if (state.mode === "kali") return "Perkalian";
+  if (state.mode === "bagi") return "Pembagian";
+  return "Campuran";
+}
+function namaLevel(){
+  if (state.level === "pemanasan") return "Pemanasan 2–5";
+  if (state.level === "inti") return "Fokus Inti 6–9";
+  return "Semua 2–9";
+}
+
+function mulai(){
+  var nama = $("inNama").value.trim();
+  var kelas = $("inKelas").value;
+  var absen = $("inAbsen").value.trim();
+  if (!nama || !kelas || !absen){
+    $("errAwal").textContent = "Isi nama, kelas, dan no. absen dulu ya.";
+    return;
+  }
+  $("errAwal").textContent = "";
+  state.nama = nama; state.kelas = kelas; state.absen = absen;
+  try {
+    localStorage.setItem("hitungDasarIdentitas", JSON.stringify({ nama: nama, kelas: kelas, absen: absen }));
+  } catch (e) {}
+  state.soal = buatSoal();
+  state.idx = 0; state.benar = 0; state.streak = 0; state.streakMax = 0;
+  state.perKeluarga = {};
+  state.mulai = Date.now();
+  $("layarAwal").classList.add("hidden");
+  $("layarHasil").classList.add("hidden");
+  $("layarGuru").classList.add("hidden");
+  $("layarMain").classList.remove("hidden");
+  tampilSoal();
+}
+
+function tampilSoal(){
+  var s = state.soal[state.idx];
+  state.kunciSekarang = s;
+  state.terkunci = false;
+  $("infoSoal").textContent = "Soal " + (state.idx + 1) + "/" + JUMLAH_SOAL;
+  $("infoSkor").textContent = "Benar: " + state.benar;
+  $("infoStreak").textContent = "🔥 " + state.streak;
+  $("barProgres").style.width = (state.idx / JUMLAH_SOAL * 100) + "%";
+  $("soalBesar").textContent = s.teks;
+  $("inJawaban").value = "";
+  $("umpan").textContent = "";
+  $("umpan").className = "umpan";
+  $("inJawaban").focus();
+}
+
+function jawab(){
+  if (state.terkunci) return;
+  var mentah = $("inJawaban").value.trim();
+  if (mentah === ""){ $("umpan").textContent = "Isi dulu jawabanmu ya."; $("umpan").className = "umpan salah"; return; }
+  var nilaiSiswa = parseInt(mentah, 10);
+  var s = state.kunciSekarang;
+  var benar = (nilaiSiswa === s.kunci);
+  if (!state.perKeluarga[s.keluarga]) state.perKeluarga[s.keluarga] = { benar: 0, total: 0 };
+  state.perKeluarga[s.keluarga].total++;
+  if (benar){
+    state.benar++; state.streak++;
+    if (state.streak > state.streakMax) state.streakMax = state.streak;
+    state.perKeluarga[s.keluarga].benar++;
+    $("umpan").textContent = "✅ Benar! Hebat!";
+    $("umpan").className = "umpan benar";
+  } else {
+    state.streak = 0;
+    $("umpan").textContent = "❌ Belum tepat. Jawabannya: " + s.kunci;
+    $("umpan").className = "umpan salah";
+  }
+  s.jawabanSiswa = nilaiSiswa; s.benar = benar;
+  $("infoSkor").textContent = "Benar: " + state.benar;
+  $("infoStreak").textContent = "🔥 " + state.streak;
+  state.terkunci = true;
+  setTimeout(function(){
+    state.idx++;
+    if (state.idx >= JUMLAH_SOAL) selesai(); else tampilSoal();
+  }, benar ? 650 : 1300);
+}
+
+function selesai(){
+  var durasi = Math.round((Date.now() - state.mulai) / 1000);
+  var nilai = Math.round(state.benar / JUMLAH_SOAL * 100);
+  $("layarMain").classList.add("hidden");
+  $("layarHasil").classList.remove("hidden");
+  $("hasilNilai").textContent = nilai;
+  $("hasilStatus").textContent = nilai >= 75
+    ? "🌟 Luar biasa! Fakta hitungmu kuat. Pertahankan!"
+    : (nilai >= 50 ? "💪 Bagus, terus berlatih — sedikit lagi lancar!" : " 🌱 Tidak apa-apa, ini awal. Latihan sedikit demi sedikit tiap hari ya!");
+  $("hasilBenar").textContent = state.benar + "/" + JUMLAH_SOAL;
+  $("hasilDurasi").textContent = durasi + " dtk";
+  $("hasilStreak").textContent = "🔥 " + state.streakMax;
+  var wadah = $("hasilKeluarga"); wadah.innerHTML = "";
+  var kunciK = Object.keys(state.perKeluarga).sort();
+  kunciK.forEach(function(k){
+    var d = state.perKeluarga[k];
+    var persen = Math.round(d.benar / d.total * 100);
+    var div = document.createElement("div"); div.className = "keluarga";
+    div.innerHTML = '<div class="ket"><span>Keluarga fakta ' + k + '</span><span>' + d.benar + '/' + d.total + ' (' + persen + '%)</span></div>' +
+      '<div class="bar-luar"><div class="bar-dalam" style="width:' + persen + '%"></div></div>';
+    wadah.appendChild(div);
+  });
+  kirimKeDatabase(nilai, durasi);
+}
+
+function kirimKeDatabase(nilai, durasi){
+  $("hasilDb").textContent = "Menyimpan hasil ke catatan guru…";
+  var rincian = state.soal.map(function(s, i){
+    return { nomor: i + 1, soal: s.teks.replace(" = ?", ""), jawaban_siswa: (s.jawabanSiswa == null ? "" : s.jawabanSiswa), kunci: s.kunci, benar: !!s.benar, keluarga: s.keluarga };
+  });
+  var body = {
+    nama: state.nama,
+    kelas: state.kelas,
+    absen: state.absen,
+    no_absen: state.absen,
+    jenjang: "IX",
+    bab: "HITUNG DASAR",
+    asesmen: "Game — " + namaMode() + " • " + namaLevel(),
+    nilai: nilai,
+    status: nilai >= 75 ? "Tuntas" : "Belum Tuntas",
+    jumlah_soal: JUMLAH_SOAL,
+    jawaban: rincian,
+    durasi_detik: durasi,
+    kode_verifikasi: "GAME-" + Math.random().toString(36).slice(2, 8).toUpperCase(),
+    tanggal: new Date().toISOString().slice(0, 10)
+  };
+  fetch(SUPABASE_URL + "/rest/v1/hasil_asesmen", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "apikey": SUPABASE_ANON_KEY,
+      "Authorization": "Bearer " + SUPABASE_ANON_KEY,
+      "Prefer": "return=minimal"
+    },
+    body: JSON.stringify(body)
+  }).then(function(res){
+    $("hasilDb").textContent = res.ok ? "✅ Hasilmu sudah tersimpan dan bisa dilihat gurumu." : "Penyimpanan belum berhasil — tunjukkan layar hasil ini kepada gurumu.";
+  }).catch(function(){
+    $("hasilDb").textContent = "Penyimpanan belum berhasil (jaringan) — tunjukkan layar hasil ini kepada gurumu.";
+  });
+}
+
+/* ============ PANEL GURU ============ */
+var dataGuru = [];
+function muatDataGuru(){
+  $("guruRingkasan").textContent = "Memuat data…";
+  fetch(SUPABASE_URL + "/rest/v1/hasil_asesmen?bab=eq.HITUNG%20DASAR&select=nama,kelas,nilai,created_at,asesmen&order=created_at.desc&limit=500", {
+    headers: { "apikey": SUPABASE_ANON_KEY, "Authorization": "Bearer " + SUPABASE_ANON_KEY }
+  }).then(function(res){ return res.json(); }).then(function(rows){
+    dataGuru = Array.isArray(rows) ? rows : [];
+    gambarTabelGuru();
+  }).catch(function(){
+    $("guruRingkasan").textContent = "Gagal memuat data (jaringan). Coba muat ulang.";
+  });
+}
+function gambarTabelGuru(){
+  var saring = $("filKelas").value;
+  var peta = {};
+  dataGuru.forEach(function(r){
+    if (saring && r.kelas !== saring) return;
+    var kunci = (r.nama || "") + "|" + (r.kelas || "");
+    if (!peta[kunci]) peta[kunci] = { nama: r.nama, kelas: r.kelas, sesi: 0, jumlah: 0, terbaik: 0, terakhir: null, tglTerakhir: "" };
+    var p = peta[kunci];
+    p.sesi++; p.jumlah += (r.nilai || 0);
+    if ((r.nilai || 0) > p.terbaik) p.terbaik = r.nilai;
+    if (!p.terakhir || r.created_at > p.terakhir){ p.terakhir = r.created_at; p.nilaiTerakhir = r.nilai; p.tglTerakhir = (r.created_at || "").slice(0, 10); }
+  });
+  var daftar = Object.keys(peta).map(function(k){ return peta[k]; });
+  daftar.sort(function(a, b){ return b.terbaik - a.terbaik; });
+  var tb = $("tabelGuru").querySelector("tbody");
+  tb.innerHTML = "";
+  daftar.forEach(function(p){
+    var tr = document.createElement("tr");
+    var rata = p.sesi ? Math.round(p.jumlah / p.sesi) : 0;
+    tr.innerHTML = "<td>" + p.nama + "</td><td>" + p.kelas + "</td><td>" + p.sesi + "</td><td>" + (p.nilaiTerakhir != null ? p.nilaiTerakhir : "-") + "</td><td>" + p.terbaik + "</td><td>" + rata + "</td>";
+    tb.appendChild(tr);
+  });
+  $("guruRingkasan").textContent = daftar.length
+    ? daftar.length + " siswa tercatat • total " + dataGuru.length + " sesi permainan (500 sesi terakhir)."
+    : "Belum ada data permainan yang tercatat.";
+}
+
+$("btnMulai").addEventListener("click", mulai);
+$("btnJawab").addEventListener("click", jawab);
+$("inJawaban").addEventListener("keydown", function(e){ if (e.key === "Enter") jawab(); });
+$("btnLagi").addEventListener("click", mulai);
+$("btnGanti").addEventListener("click", function(){
+  $("layarHasil").classList.add("hidden");
+  $("layarAwal").classList.remove("hidden");
+});
+$("btnBukaGuru").addEventListener("click", function(){
+  $("layarAwal").classList.add("hidden");
+  $("layarGuru").classList.remove("hidden");
+});
+$("btnTutupGuru").addEventListener("click", function(){
+  $("layarGuru").classList.add("hidden");
+  $("layarAwal").classList.remove("hidden");
+});
+$("btnMasukGuru").addEventListener("click", function(){
+  if ($("inPassGuru").value === PASSWORD_GURU){
+    $("errGuru").textContent = "";
+    $("guruGate").classList.add("hidden");
+    $("guruIsi").classList.remove("hidden");
+    muatDataGuru();
+  } else {
+    $("errGuru").textContent = "Kata sandi tidak cocok.";
+  }
+});
+$("btnMuatUlang").addEventListener("click", muatDataGuru);
+$("filKelas").addEventListener("change", gambarTabelGuru);
+
+try {
+  var tersimpan = JSON.parse(localStorage.getItem("hitungDasarIdentitas") || "null");
+  if (tersimpan){
+    $("inNama").value = tersimpan.nama || "";
+    $("inKelas").value = tersimpan.kelas || "";
+    $("inAbsen").value = tersimpan.absen || "";
+  }
+} catch (e) {}
+</script>
+</body>
+</html>
