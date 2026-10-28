@@ -62,18 +62,28 @@
   <div class="kartu" id="layarAwal">
     <div style="text-align:center"><span class="badge">🎮 GAME LATIHAN • KELAS IX</span></div>
     <h1 style="margin-top:10px">MISI HITUNG DASAR</h1>
-    <p class="sub">Latihan perkalian &amp; pembagian dasar 1–9.<br>Main di HP, hasilmu tercatat untuk dipantau gurumu. Semangat, anak KEREN!</p>
+    <p class="sub">Latihan perkalian &amp; pembagian dasar 1–9.<br>Main di HP, hasilmu tercatat untuk dipantau gurumu. Terbuka untuk siswa dari sekolah mana pun — isi nama sekolahmu ya. Semangat, anak KEREN!</p>
 
     <label for="inNama">Nama lengkap</label>
     <input type="text" id="inNama" placeholder="Tulis namamu" autocomplete="name">
+    <label for="inSekolah">Nama sekolah</label>
+    <input type="text" id="inSekolah" placeholder="Tulis nama sekolahmu" value="SMP Negeri 1 Bantarkawung" list="daftarSekolah" autocomplete="organization">
+    <datalist id="daftarSekolah">
+      <option value="SMP Negeri 1 Bantarkawung"></option>
+      <option value="SMP Negeri 2 Bantarkawung"></option>
+      <option value="SMP Negeri 1 Bumiayu"></option>
+      <option value="SMP Negeri 2 Bumiayu"></option>
+      <option value="SMP Negeri 1 Brebes"></option>
+      <option value="MTs Negeri 2 Brebes"></option>
+    </datalist>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
       <div>
         <label for="inKelas">Kelas</label>
-        <select id="inKelas">
-          <option value="">— Pilih —</option>
-          <option>9A</option><option>9B</option><option>9C</option><option>9D</option><option>9E</option>
-          <option>8</option><option>7</option>
-        </select>
+        <input type="text" id="inKelas" placeholder="cth. 9C" list="daftarKelas">
+        <datalist id="daftarKelas">
+          <option value="9A"></option><option value="9B"></option><option value="9C"></option><option value="9D"></option><option value="9E"></option>
+          <option value="8"></option><option value="7"></option>
+        </datalist>
       </div>
       <div>
         <label for="inAbsen">No. absen</label>
@@ -147,7 +157,7 @@
       <p class="kecil" id="guruRingkasan" style="margin:8px 0"></p>
       <div class="tabel-geser">
         <table id="tabelGuru">
-          <thead><tr><th>Nama</th><th>Kelas</th><th>Sesi</th><th>Terakhir</th><th>Terbaik</th><th>Rata-rata</th></tr></thead>
+          <thead><tr><th>Nama</th><th>Kelas</th><th>Sekolah</th><th>Sesi</th><th>Terakhir</th><th>Terbaik</th><th>Rata-rata</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
@@ -166,7 +176,7 @@ var JUMLAH_SOAL = 20;
 
 var state = {
   mode: "kali", level: "inti",
-  nama: "", kelas: "", absen: "",
+  nama: "", kelas: "", absen: "", sekolah: "",
   soal: [], idx: 0, benar: 0, streak: 0, streakMax: 0,
   mulai: 0, kunciSekarang: null, terkunci: false,
   perKeluarga: {}
@@ -229,16 +239,17 @@ function namaLevel(){
 
 function mulai(){
   var nama = $("inNama").value.trim();
-  var kelas = $("inKelas").value;
+  var kelas = $("inKelas").value.trim();
   var absen = $("inAbsen").value.trim();
-  if (!nama || !kelas || !absen){
-    $("errAwal").textContent = "Isi nama, kelas, dan no. absen dulu ya.";
+  var sekolah = $("inSekolah").value.trim();
+  if (!nama || !kelas || !absen || !sekolah){
+    $("errAwal").textContent = "Isi nama, sekolah, kelas, dan no. absen dulu ya.";
     return;
   }
   $("errAwal").textContent = "";
-  state.nama = nama; state.kelas = kelas; state.absen = absen;
+  state.nama = nama; state.kelas = kelas; state.absen = absen; state.sekolah = sekolah;
   try {
-    localStorage.setItem("hitungDasarIdentitas", JSON.stringify({ nama: nama, kelas: kelas, absen: absen }));
+    localStorage.setItem("hitungDasarIdentitas", JSON.stringify({ nama: nama, kelas: kelas, absen: absen, sekolah: sekolah }));
   } catch (e) {}
   state.soal = buatSoal();
   state.idx = 0; state.benar = 0; state.streak = 0; state.streakMax = 0;
@@ -337,7 +348,7 @@ function kirimKeDatabase(nilai, durasi){
     nilai: nilai,
     status: nilai >= 75 ? "Tuntas" : "Belum Tuntas",
     jumlah_soal: JUMLAH_SOAL,
-    jawaban: rincian,
+    jawaban: { sekolah: state.sekolah, rincian: rincian },
     durasi_detik: durasi,
     kode_verifikasi: "GAME-" + Math.random().toString(36).slice(2, 8).toUpperCase(),
     tanggal: new Date().toISOString().slice(0, 10)
@@ -362,7 +373,7 @@ function kirimKeDatabase(nilai, durasi){
 var dataGuru = [];
 function muatDataGuru(){
   $("guruRingkasan").textContent = "Memuat data…";
-  fetch(SUPABASE_URL + "/rest/v1/hasil_asesmen?bab=eq.HITUNG%20DASAR&select=nama,kelas,nilai,created_at,asesmen&order=created_at.desc&limit=500", {
+  fetch(SUPABASE_URL + "/rest/v1/hasil_asesmen?bab=eq.HITUNG%20DASAR&select=nama,kelas,nilai,created_at,asesmen,jawaban&order=created_at.desc&limit=500", {
     headers: { "apikey": SUPABASE_ANON_KEY, "Authorization": "Bearer " + SUPABASE_ANON_KEY }
   }).then(function(res){ return res.json(); }).then(function(rows){
     dataGuru = Array.isArray(rows) ? rows : [];
@@ -376,8 +387,9 @@ function gambarTabelGuru(){
   var peta = {};
   dataGuru.forEach(function(r){
     if (saring && r.kelas !== saring) return;
-    var kunci = (r.nama || "") + "|" + (r.kelas || "");
-    if (!peta[kunci]) peta[kunci] = { nama: r.nama, kelas: r.kelas, sesi: 0, jumlah: 0, terbaik: 0, terakhir: null, tglTerakhir: "" };
+    var sekolah = (r.jawaban && !Array.isArray(r.jawaban) && r.jawaban.sekolah) ? r.jawaban.sekolah : "SMP Negeri 1 Bantarkawung";
+    var kunci = (r.nama || "") + "|" + (r.kelas || "") + "|" + sekolah;
+    if (!peta[kunci]) peta[kunci] = { nama: r.nama, kelas: r.kelas, sekolah: sekolah, sesi: 0, jumlah: 0, terbaik: 0, terakhir: null, tglTerakhir: "" };
     var p = peta[kunci];
     p.sesi++; p.jumlah += (r.nilai || 0);
     if ((r.nilai || 0) > p.terbaik) p.terbaik = r.nilai;
@@ -390,7 +402,7 @@ function gambarTabelGuru(){
   daftar.forEach(function(p){
     var tr = document.createElement("tr");
     var rata = p.sesi ? Math.round(p.jumlah / p.sesi) : 0;
-    tr.innerHTML = "<td>" + p.nama + "</td><td>" + p.kelas + "</td><td>" + p.sesi + "</td><td>" + (p.nilaiTerakhir != null ? p.nilaiTerakhir : "-") + "</td><td>" + p.terbaik + "</td><td>" + rata + "</td>";
+    tr.innerHTML = "<td>" + p.nama + "</td><td>" + p.kelas + "</td><td>" + p.sekolah + "</td><td>" + p.sesi + "</td><td>" + (p.nilaiTerakhir != null ? p.nilaiTerakhir : "-") + "</td><td>" + p.terbaik + "</td><td>" + rata + "</td>";
     tb.appendChild(tr);
   });
   $("guruRingkasan").textContent = daftar.length
@@ -433,6 +445,7 @@ try {
     $("inNama").value = tersimpan.nama || "";
     $("inKelas").value = tersimpan.kelas || "";
     $("inAbsen").value = tersimpan.absen || "";
+    if (tersimpan.sekolah) $("inSekolah").value = tersimpan.sekolah;
   }
 } catch (e) {}
 </script>
