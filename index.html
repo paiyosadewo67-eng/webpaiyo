@@ -804,7 +804,7 @@
           <div class="hero-stats">
             <div><b>3</b><span>Kelas · VII–IX</span></div>
             <div><b>18</b><span>Bab Disiapkan</span></div>
-            <div><b>18</b><span>Menu &amp; Fitur</span></div>
+            <div><b>19</b><span>Menu &amp; Fitur</span></div>
             <div><b>5</b><span>Pilar KEREN</span></div>
           </div>
         </div>
@@ -1494,6 +1494,10 @@
               { judul: "Literasi & Numerasi", emoji: "📚", dari: "eksternal", grup: "literasinumerasi" },
               { judul: "Modul & LKPD Contoh", emoji: "📝", dari: "eksternal", grup: "modul" },
               { judul: "Dokumen Administrasi Sekolah", emoji: "🗂️", dari: "eksternal", grup: "prompt" }
+            ] },
+          { id: "F-19", nama: "Masjid Al-Hikmah Buaran", ikon: "hati", warna: "#0E7A5F",        url: "https://drive.google.com/drive/folders/1WnDH1tJ8Vw3G5is8Y-eJ68zmOwfEJfHm?usp=sharing", status: "aktif",  deskripsi: "Ruang Takmir Masjid Al-Hikmah Buaran — arsip Buku Kas Umum dan dokumen bendahara takmir masjid lingkungan rumah Drs. Paiyo. Kelompok di dalamnya khusus dan terkunci kata sandi tersendiri.",
+            sumber: [
+              { judul: "Arsip Takmir & Buku Kas", emoji: "🕌", dari: "eksternal", grup: "masjid" }
             ] }
         ],
         bab: [
@@ -2076,7 +2080,12 @@
           { bab: "F-18", grup: "prompt", nama: "RKT Peningkatan Kemampuan Literasi 2026", url: "https://drive.google.com/file/d/1l3gJJp0Thz0EsnkNkFv3za6nSYrNA9Kq/view?usp=sharing" },
           { bab: "F-18", grup: "prompt", nama: "RKT Peningkatan Kemampuan Numerasi 2026", url: "https://drive.google.com/file/d/1s3H_kI8iFeIw9I-LblH2omBlWMsK6hwe/view?usp=sharing" },
           { bab: "F-18", grup: "prompt", nama: "RKT Peningkatan Kualitas Pembelajaran", url: "https://drive.google.com/file/d/1HZ4nTNrR107JcioqlVe2PxrTCdrzuU9s/view?usp=sharing" },
-          { bab: "F-18", grup: "prompt", nama: "Prestasi Akademik Lulusan SMPN Bantarkawung 2025/2026", url: "https://drive.google.com/file/d/1zXSl3uFsgnq7jqAiV-XCQ72udZfZk-fm/view?usp=sharing" }
+          { bab: "F-18", grup: "prompt", nama: "Prestasi Akademik Lulusan SMPN Bantarkawung 2025/2026", url: "https://drive.google.com/file/d/1zXSl3uFsgnq7jqAiV-XCQ72udZfZk-fm/view?usp=sharing" },
+          /* ---------- Masjid Al-Hikmah Buaran (fitur F-19, panel di Menu Utama) — terkunci kata sandi khusus tersendiri (grup "masjid") ---------- */
+          { bab: "F-19", grup: "masjid", nama: "Folder Takmir Masjid Al-Hikmah Buaran 2026", url: "https://drive.google.com/drive/folders/1WnDH1tJ8Vw3G5is8Y-eJ68zmOwfEJfHm?usp=sharing" },
+          { bab: "F-19", grup: "masjid", nama: "Buku Kas Umum Bendahara Takmir Masjid Al-Hikmah Buaran 2026 (Excel)", url: "https://drive.google.com/file/d/1YNnvSzClKQQuITnwpZC6VJMpIJHjbqLi/view?usp=sharing" },
+          { bab: "F-19", grup: "masjid", nama: "Buku Kas Umum Bendahara Takmir Masjid Al-Hikmah Buaran — September 2026 (PDF)", url: "https://drive.google.com/file/d/1oD2QRD6pFjQp3mFUP0sijwZCtpbm0h0e/view?usp=sharing" },
+          { bab: "F-19", grup: "masjid", nama: "Buku Kas Umum Bendahara Takmir Masjid Al-Hikmah Buaran 2026 (PDF)", url: "https://drive.google.com/file/d/1lk6XmMdiKJr10xfT7Lhz1MAvLgFtFPPM/view?usp=sharing" }
         ],
         /* ---------- Materi interaktif yang bisa dimainkan (grup: "lkpd" | "game" | "quiz") ---------- */
         interaktif: [
@@ -2592,7 +2601,7 @@
         b.sumber.forEach(function (s) {
           var tautan = tautanSumber(b, s);
           if (!tautan.length) return;
-          html += '<div class="sumber-group"><h4><span aria-hidden="true">' + s.emoji + '</span>' + esc(s.judul) + (s.grup === "prompt" ? ' <span class="prompt-badge">🔐 Kode Khusus</span>' : '') + '</h4>';
+          html += '<div class="sumber-group"><h4><span aria-hidden="true">' + s.emoji + '</span>' + esc(s.judul) + (s.grup === "prompt" ? ' <span class="prompt-badge">🔐 Kode Khusus</span>' : s.grup === "masjid" ? ' <span class="prompt-badge">🔐 Kata Sandi Khusus</span>' : '') + '</h4>';
           if (s.dari === "video") {
             html += '<div class="video-grid">';
             tautan.forEach(function (t) {
@@ -2617,10 +2626,10 @@
               }
               var namaBerkas = t.unduh ? t.url.split("/").pop() : "";
               html += '<li><div class="entri-row"><a class="sumber-link" href="' + esc(t.url) + '" target="_blank" rel="noopener"' +
-                (s.grup === "prompt" ? ' data-khusus="prompt"' : '') +
+                (s.grup === "prompt" ? ' data-khusus="prompt"' : s.grup === "masjid" ? ' data-khusus="masjid"' : '') +
                 (t.unduh ? ' download="' + esc(namaBerkas) + '"' : '') +
                 '><span>' + esc(t.nama) + '</span>' + IKON_BUKA + '</a>' +
-                (s.grup === "prompt" ? '' : tombolCekHtml(b.id + '::' + t.url)) +
+                ((s.grup === "prompt" || s.grup === "masjid") ? '' : tombolCekHtml(b.id + '::' + t.url)) +
                 '</div>' +
                 (t.ket ? '<p class="sumber-ket">' + esc(t.ket) + '</p>' : '') + '</li>';
             });
@@ -2868,7 +2877,12 @@
               data-khusus="prompt") dengan kode khusus guru —
               hash-nya HASH_KHUSUS, status terbukanya disimpan di
               localStorage (kunci "aaamatPrompt").
-           2. Ruang tes Kelas Mas YoSad — situs tersendiri dengan
+           2. Kelompok "Arsip Takmir & Buku Kas" di panel Masjid
+              Al-Hikmah Buaran (F-19, tautan data-khusus="masjid")
+              dengan kata sandi khusus tersendiri — hash-nya
+              HASH_MASJID, status terbukanya disimpan di
+              localStorage (kunci "aaamatMasjid").
+           3. Ruang tes Kelas Mas YoSad — situs tersendiri dengan
               token tesnya sendiri, tidak diatur dari halaman ini.
          Kode khusus diperiksa dengan SHA-256 (crypto.subtle.digest)
          — di halaman ini hanya HASH kodenya yang disimpan, bukan
@@ -2878,7 +2892,11 @@
       (function kunciAkses() {
         var HASH_KHUSUS = "fa864c89fd4730323d445a16b806ba536622dc1e6d577288ed782cfea0ad333b";
         var KUNCI_LS_KHUSUS = "aaamatPrompt";
+        var HASH_MASJID = "d978da373cb49857ec554071c4821174280b7af5172debd510ff1c0ed8eea2d0";
+        var KUNCI_LS_MASJID = "aaamatMasjid";
         var khususMemori = false;
+        var masjidMemori = false;
+        var modeAktif = "prompt";
         var aksiTertunda = null;
 
         var modal = document.getElementById("modalAkses");
@@ -2886,6 +2904,9 @@
         var input = document.getElementById("inputKode");
         var pesanSalah = document.getElementById("aksesError");
         var btnBatal = document.getElementById("aksesBatal");
+        var judulModal = document.getElementById("aksesJudul");
+        var ketModal = document.getElementById("aksesKeterangan");
+        var btnKirim = form.querySelector('button[type="submit"]');
         if (!modal || !form || !input) return;
 
         function khususTerbuka() {
@@ -2893,7 +2914,16 @@
           try { return localStorage.getItem(KUNCI_LS_KHUSUS) === HASH_KHUSUS; }
           catch (e) { return false; }
         }
-        function tampilkanModal() {
+        function masjidTerbuka() {
+          if (masjidMemori) return true;
+          try { return localStorage.getItem(KUNCI_LS_MASJID) === HASH_MASJID; }
+          catch (e) { return false; }
+        }
+        function tampilkanModal(mode) {
+          modeAktif = (mode === "masjid") ? "masjid" : "prompt";
+          if (judulModal) judulModal.textContent = (modeAktif === "masjid") ? "Kata Sandi Masjid Al-Hikmah" : "Kode Khusus Prompt";
+          if (ketModal) ketModal.textContent = (modeAktif === "masjid") ? "Bagian ini khusus Takmir Masjid Al-Hikmah Buaran dan dilindungi kata sandi tersendiri. Masukkan kata sandinya untuk membuka." : "Bagian ini dilindungi kode khusus guru. Masukkan kode khusus dari Drs. Paiyo untuk membukanya.";
+          if (btnKirim) btnKirim.textContent = (modeAktif === "masjid") ? "Buka Arsip" : "Buka Prompt";
           pesanSalah.hidden = true;
           input.value = "";
           modal.hidden = false;
@@ -2983,13 +3013,21 @@
            dimasukkan; semua klik lain bebas lewat. ---------- */
         document.addEventListener("click", function (e) {
           if (e.target.closest("#modalAkses")) return;
+          var elM = e.target.closest('a[data-khusus="masjid"]');
+          if (elM && !masjidTerbuka()) {
+            e.preventDefault();
+            e.stopPropagation();
+            aksiTertunda = elM;
+            tampilkanModal("masjid");
+            return;
+          }
           if (khususTerbuka()) return;
           var elK = e.target.closest('a[data-khusus="prompt"]');
           if (!elK) return;
           e.preventDefault();
           e.stopPropagation();
           aksiTertunda = elK;
-          tampilkanModal();
+          tampilkanModal("prompt");
         }, true);
 
         /* ---------- Periksa kode khusus ---------- */
@@ -2998,9 +3036,15 @@
           var kode = input.value.replace(/^\s+|\s+$/g, "");
           if (!kode) { pesanSalah.hidden = false; input.focus(); return; }
           hashKode(kode).then(function (hex) {
-            if (hex === HASH_KHUSUS) {
-              khususMemori = true;
-              try { localStorage.setItem(KUNCI_LS_KHUSUS, HASH_KHUSUS); } catch (err) {}
+            var cocok = (modeAktif === "masjid") ? (hex === HASH_MASJID) : (hex === HASH_KHUSUS);
+            if (cocok) {
+              if (modeAktif === "masjid") {
+                masjidMemori = true;
+                try { localStorage.setItem(KUNCI_LS_MASJID, HASH_MASJID); } catch (err) {}
+              } else {
+                khususMemori = true;
+                try { localStorage.setItem(KUNCI_LS_KHUSUS, HASH_KHUSUS); } catch (err) {}
+              }
               var aksi = aksiTertunda;
               aksiTertunda = null;
               sembunyikanModal();
@@ -3242,7 +3286,7 @@
         }
         LINK_DB.bab.forEach(function (b) { tambahIndeks(b.nama, b.id, "Bab Kelas " + b.kelas, b.deskripsi); });
         (LINK_DB.eksternal || []).forEach(function (x) {
-          if (x.grup === "prompt") return; /* Penyimpanan Prompt tidak diindeks */
+          if (x.grup === "prompt" || x.grup === "masjid") return; /* kelompok terkunci tidak diindeks */
           tambahIndeks(x.nama, x.bab, LABEL_GRUP[x.grup] || x.grup);
         });
         (LINK_DB.interaktif || []).forEach(function (it) { tambahIndeks(it.nama, it.bab, LABEL_GRUP[it.grup] || it.grup, it.deskripsi); });
