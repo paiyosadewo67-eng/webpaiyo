@@ -274,14 +274,14 @@ function selesai(otomatis){
   if (terkirim) return; terkirim = true;
   clearInterval(timerId);
   const {poin, rincian} = hitungSkor();
-  const nilai = Math.round((poin/TOTAL_POIN)*1000)/10;
+  const nilai = Math.round((poin/TOTAL_POIN)*100);
   const status = nilai >= KKM ? 'TUNTAS' : 'BELUM TUNTAS';
   const kode = 'SIMTO-' + Array.from({length:6},()=>'ABCDEFGHJKMNPQRSTUVWXYZ23456789'[Math.floor(Math.random()*31)]).join('');
   const durasi = Math.round((Date.now()-mulaiPada)/1000);
   payloadHasil = {
     nama: siswa.nama, kelas: siswa.kelas, absen: parseInt(siswa.absen)||null, no_absen: String(siswa.absen),
     nilai, status, kode_verifikasi: kode,
-    tanggal: new Date().toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'}),
+    tanggal: new Date().toISOString().slice(0, 10),
     jenjang: 'SMP', bab: 'TKA', asesmen: ASESMEN, jumlah_soal: SOAL.length,
     jawaban: {sekolah: siswa.sekolah, poin, total_poin: TOTAL_POIN, rincian, jawaban_siswa: jawaban},
     durasi_detik: durasi
