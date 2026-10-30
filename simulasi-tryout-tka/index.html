@@ -245,7 +245,7 @@ function tampilSoal(){
       <button class="${v===true?'sel-b':''}" onclick="jawabBS(${i},true)">BENAR</button>
       <button class="${v===false?'sel-s':''}" onclick="jawabBS(${i},false)">SALAH</button>
       </div></div>`;
-    }).join('');
+    }).join('') + '<p><small>Tentukan BENAR atau SALAH untuk setiap pernyataan (ada 3 pernyataan). Setiap pernyataan dinilai sendiri.</small></p>';
   } else {
     isi.innerHTML = '<div class="opsi">' + s.pernyataan.map((t,i)=>{
       const sel = jawaban[idx][i]===true ? ' terpilih' : '';
