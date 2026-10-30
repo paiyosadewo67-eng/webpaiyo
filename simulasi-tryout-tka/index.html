@@ -182,7 +182,7 @@ function mulai(){
   if (!absen) return salah('No. absen wajib diisi.');
   err.classList.add('sembunyi');
   siswa = {nama, kelas, absen, sekolah};
-  jawaban = SOAL.map(s => s.tipe==='PG' ? -1 : s.pernyataan.map(()=> null));
+  jawaban = SOAL.map(s => s.tipe==='PG' ? -1 : s.pernyataan.map(()=> s.tipe==='MCMA' ? false : null));
   idx = 0; mulaiPada = Date.now();
   document.getElementById('layarMulai').classList.add('sembunyi');
   document.getElementById('layarUjian').classList.remove('sembunyi');
