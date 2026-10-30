@@ -81,15 +81,19 @@ small{color:var(--abu)}
 <label for="inNama">NAMA LENGKAP *</label>
 <input type="text" id="inNama" placeholder="Nama lengkapmu">
 <label for="inKelas">KELAS *</label>
-<select id="inKelas">
-<option value="">— Pilih kelas —</option>
-<option>IX A</option><option>IX B</option><option>IX C</option><option>IX D</option><option>IX E</option>
-<option>VIII</option><option>VII</option><option>Lainnya</option>
-</select>
+<input type="text" id="inKelas" list="dlKelas" placeholder="Pilih atau ketik kelasmu, mis. IX A" autocomplete="off">
+<datalist id="dlKelas">
+<option value="IX A"></option><option value="IX B"></option><option value="IX C"></option><option value="IX D"></option><option value="IX E"></option>
+<option value="IX"></option><option value="VIII"></option><option value="VII"></option>
+</datalist>
 <label for="inAbsen">NO. ABSEN *</label>
 <input type="text" id="inAbsen" inputmode="numeric" placeholder="Nomor absen">
-<label for="inSekolah">NAMA SEKOLAH</label>
-<input type="text" id="inSekolah" value="SMP Negeri 1 Bantarkawung">
+<label for="inSekolah">NAMA SEKOLAH *</label>
+<input type="text" id="inSekolah" list="dlSekolah" value="SMP Negeri 1 Bantarkawung" autocomplete="off">
+<datalist id="dlSekolah">
+<option value="SMP Negeri 1 Bantarkawung"></option>
+</datalist>
+<p style="margin:4px 0 0"><small>Siswa dari sekolah lain: ganti nama sekolah di atas dengan nama sekolahmu sendiri.</small></p>
 <p id="errMulai" class="salah sembunyi"></p>
 <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
 <button class="btn" onclick="mulai()">▶ Mulai Simulasi (75 Menit)</button>
@@ -142,6 +146,8 @@ small{color:var(--abu)}
 <!-- LAYAR GURU -->
 <div id="layarGuru" class="kartu sembunyi">
 <h2 style="margin-top:0">Panel Guru — Simulasi Try Out TKA 1</h2>
+<label for="filterSekolah">SARING SEKOLAH</label>
+<select id="filterSekolah" onchange="gambarTabelGuru()"><option value="">— Semua Sekolah —</option></select>
 <p id="statGuru">Memuat data…</p>
 <div class="scroll-x"><table>
 <thead><tr><th>No</th><th>Nama</th><th>Kelas</th><th>Absen</th><th>Sekolah</th><th>Nilai</th><th>Status</th><th>Kode</th><th>Waktu</th></tr></thead>
@@ -171,14 +177,14 @@ function huruf(i){return 'ABCD'[i]}
 function mulai(){
   const token = document.getElementById('inToken').value.trim().toUpperCase();
   const nama = document.getElementById('inNama').value.trim();
-  const kelas = document.getElementById('inKelas').value;
+  const kelas = document.getElementById('inKelas').value.trim();
   const absen = document.getElementById('inAbsen').value.trim();
   const sekolah = document.getElementById('inSekolah').value.trim() || 'SMP Negeri 1 Bantarkawung';
   const err = document.getElementById('errMulai');
   const salah = m => { err.textContent = m; err.classList.remove('sembunyi'); };
   if (token !== TOKEN_SESI) return salah('Token sesi salah. Minta token yang benar kepada gurumu.');
   if (!nama) return salah('Nama lengkap wajib diisi.');
-  if (!kelas) return salah('Kelas wajib dipilih.');
+  if (!kelas) return salah('Kelas wajib diisi.');
   if (!absen) return salah('No. absen wajib diisi.');
   err.classList.add('sembunyi');
   siswa = {nama, kelas, absen, sekolah};
@@ -362,6 +368,7 @@ function tutupPanelGuru(){
   document.getElementById('layarGuru').classList.add('sembunyi');
   document.getElementById('layarMulai').classList.remove('sembunyi');
 }
+let dataGuru = [];
 async function muatNilaiGuru(){
   const stat = document.getElementById('statGuru');
   const isi = document.getElementById('isiTabelGuru');
@@ -372,20 +379,33 @@ async function muatNilaiGuru(){
     });
     if (!r.ok) throw new Error('gagal-' + r.status);
     const semua = await r.json();
-    const data = semua.filter(d => d.asesmen === ASESMEN);
-    if (!data.length){ stat.textContent = 'Belum ada nilai Simulasi Try Out TKA 1 yang masuk.'; return; }
-    const tuntas = data.filter(d => (d.nilai||0) >= KKM).length;
-    const rata = (data.reduce((a,d)=>a+(d.nilai||0),0)/data.length).toFixed(1);
-    stat.innerHTML = `Total peserta: <b>${data.length}</b> • Rata-rata: <b>${rata}</b> • Tuntas (≥${KKM}): <b>${tuntas}</b> • Belum tuntas: <b>${data.length-tuntas}</b>`;
-    isi.innerHTML = data.map((d,i)=>`<tr>
-      <td>${i+1}</td><td>${esc(d.nama||'')}</td><td>${esc(d.kelas||'')}</td><td>${d.absen ?? esc(d.no_absen||'')}</td>
-      <td>${esc((d.jawaban && d.jawaban.sekolah) || '')}</td>
-      <td><b>${d.nilai ?? ''}</b></td><td>${esc(d.status||'')}</td>
-      <td style="font-size:12px">${esc(d.kode_verifikasi||'')}</td>
-      <td style="font-size:12.5px">${d.created_at ? new Date(d.created_at).toLocaleString('id-ID') : esc(d.tanggal||'')}</td></tr>`).join('');
+    dataGuru = semua.filter(d => d.asesmen === ASESMEN);
+    const sel = document.getElementById('filterSekolah');
+    const terpilih = sel.value;
+    const daftarSekolah = [...new Set(dataGuru.map(d => (d.jawaban && d.jawaban.sekolah) || '').filter(Boolean))].sort();
+    sel.innerHTML = '<option value="">— Semua Sekolah —</option>' + daftarSekolah.map(s => `<option value="${esc(s)}">${esc(s)}</option>`).join('');
+    sel.value = daftarSekolah.includes(terpilih) ? terpilih : '';
+    gambarTabelGuru();
   } catch(e) {
     stat.textContent = 'Data belum dapat dibaca. Coba muat ulang sebentar lagi.';
   }
+}
+function gambarTabelGuru(){
+  const stat = document.getElementById('statGuru');
+  const isi = document.getElementById('isiTabelGuru');
+  const saring = document.getElementById('filterSekolah').value;
+  const data = saring ? dataGuru.filter(d => ((d.jawaban && d.jawaban.sekolah) || '') === saring) : dataGuru;
+  if (!dataGuru.length){ stat.textContent = 'Belum ada nilai Simulasi Try Out TKA 1 yang masuk.'; isi.innerHTML=''; return; }
+  if (!data.length){ stat.textContent = 'Tidak ada nilai dari sekolah ini.'; isi.innerHTML=''; return; }
+  const tuntas = data.filter(d => (d.nilai||0) >= KKM).length;
+  const rata = (data.reduce((a,d)=>a+(d.nilai||0),0)/data.length).toFixed(1);
+  stat.innerHTML = `Total peserta${saring ? ' (' + esc(saring) + ')' : ''}: <b>${data.length}</b> • Rata-rata: <b>${rata}</b> • Tuntas (≥${KKM}): <b>${tuntas}</b> • Belum tuntas: <b>${data.length-tuntas}</b>`;
+  isi.innerHTML = data.map((d,i)=>`<tr>
+    <td>${i+1}</td><td>${esc(d.nama||'')}</td><td>${esc(d.kelas||'')}</td><td>${d.absen ?? esc(d.no_absen||'')}</td>
+    <td>${esc((d.jawaban && d.jawaban.sekolah) || '')}</td>
+    <td><b>${d.nilai ?? ''}</b></td><td>${esc(d.status||'')}</td>
+    <td style="font-size:12px">${esc(d.kode_verifikasi||'')}</td>
+    <td style="font-size:12.5px">${d.created_at ? new Date(d.created_at).toLocaleString('id-ID') : esc(d.tanggal||'')}</td></tr>`).join('');
 }
 </script>
 </body>
