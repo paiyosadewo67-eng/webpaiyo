@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulasi TKA IPS — Uang dan Bank Kelas 9</title>
+<style>
+:root{--biru:#0b3d66;--teal:#0e7a5f;--emas:#c9a227;--bg:#eef4f7;--kartu:#ffffff;--teks:#173042;--abu:#5b7183;--merah:#b3261e;--hijau:#137333}
+*{box-sizing:border-box}body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--teks)}
+header{background:linear-gradient(135deg,var(--biru),var(--teal));color:#fff;padding:22px 16px;text-align:center}
+header h1{margin:0 0 6px;font-size:22px;letter-spacing:.4px}
+header p{margin:2px 0;opacity:.92;font-size:14px}
+.emas{color:var(--emas);font-weight:700}
+.wrap{max-width:820px;margin:0 auto;padding:18px 14px 40px}
+.kartu{background:var(--kartu);border-radius:14px;box-shadow:0 2px 10px rgba(11,61,102,.10);padding:20px;margin-bottom:16px}
+label{display:block;font-weight:600;margin:12px 0 5px;font-size:14px}
+input[type=text],select{width:100%;padding:11px 12px;border:1.5px solid #c4d3dd;border-radius:9px;font-size:16px}
+.btn{display:inline-block;border:none;cursor:pointer;border-radius:10px;padding:12px 22px;font-size:16px;font-weight:700;background:var(--teal);color:#fff}
+.btn:hover{filter:brightness(1.07)}
+.btn.biru{background:var(--biru)} .btn.abu{background:var(--abu)} .btn.emas{background:var(--emas);color:#231a00}
+.btn:disabled{opacity:.55;cursor:wait}
+.sembunyi{display:none!important}
+.info{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.chip{background:#e7f0f5;border-radius:999px;padding:6px 13px;font-size:13.5px;font-weight:600}
+.bar{position:sticky;top:0;z-index:5;background:var(--kartu);border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.10);padding:10px 14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+#timer{font-size:20px;font-weight:800;color:var(--biru)} #timer.kritis{color:var(--merah)}
+.soal h3{margin:0 0 4px;font-size:15px;color:var(--teal)}
+.soal .iteks{font-size:16.5px;line-height:1.55;margin:6px 0 14px}
+.opsi{display:flex;flex-direction:column;gap:9px}
+.opsi label{font-weight:500;margin:0;display:flex;gap:10px;align-items:flex-start;background:#f4f8fa;border:1.5px solid #d5e1e9;border-radius:10px;padding:11px 12px;cursor:pointer;font-size:15.5px}
+.opsi label.terpilih{border-color:var(--teal);background:#e6f4ee}
+.opsi input{margin-top:3px;transform:scale(1.25)}
+.pernyataan{border:1.5px solid #d5e1e9;border-radius:10px;padding:11px 12px;margin-bottom:9px;background:#f4f8fa}
+.pernyataan .p-teks{font-size:15.5px;margin-bottom:9px}
+.bs-pilihan{display:flex;gap:9px}
+.bs-pilihan button{flex:1;padding:9px;border-radius:8px;border:1.5px solid #b9ccd8;background:#fff;font-weight:700;cursor:pointer;font-size:15px}
+.bs-pilihan button.sel-b{background:var(--teal);color:#fff;border-color:var(--teal)}
+.bs-pilihan button.sel-s{background:var(--merah);color:#fff;border-color:var(--merah)}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+.palet{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.palet button{width:38px;height:38px;border-radius:9px;border:1.5px solid #b9ccd8;background:#fff;font-weight:700;cursor:pointer}
+.palet button.isi{background:var(--teal);color:#fff;border-color:var(--teal)}
+.palet button.aktif{outline:3px solid var(--emas)}
+.nilai-besar{font-size:56px;font-weight:800;text-align:center;color:var(--biru);margin:8px 0 0}
+.status{text-align:center;font-size:19px;font-weight:800;margin:4px 0}
+.status.tuntas{color:var(--hijau)} .status.belum{color:var(--merah)}
+.tengah{text-align:center}
+.status-simpan{text-align:center;font-size:14px;margin-top:10px}
+.status-simpan.ok{color:var(--hijau);font-weight:600}
+.status-simpan.gagal{color:var(--merah);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{border-bottom:1px solid #e1e9ee;padding:7px 6px;text-align:left}
+th{background:#e7f0f5}
+.ulasan-item{border-top:1px solid #e1e9ee;padding:12px 0}
+.ulasan-item h4{margin:0 0 5px;font-size:15px}
+.ulasan-item p{margin:3px 0;font-size:14.5px;line-height:1.5}
+.kunci-jawaban{color:var(--hijau);font-weight:700}
+.salah{color:var(--merah);font-weight:700}
+small{color:var(--abu)}
+.scroll-x{overflow-x:auto}
+</style>
+</head>
+<body>
+<header>
+<h1>SIMULASI TKA IPS — UANG DAN BANK</h1>
+<p>SMP/MTs • Tahun Pelajaran 2026/2027 • SMP Negeri 1 Bantarkawung</p>
+<p>IPS Kelas 9 • Soal: Ibu Giyah Sugiyati, Guru IPS SMPN 1 Bantarkawung • Aplikasi oleh Mas Yosad — Portal AAAMAAT KEREN</p>
+</header>
+<div class="wrap">
+
+<!-- LAYAR MULAI -->
+<div id="layarMulai" class="kartu">
+<h2 style="margin-top:0">Selamat Datang, Pejuang TKA IPS!</h2>
+<p>Isi data dirimu dengan benar, masukkan <b>token sesi</b> dari gurumu, lalu klik <b>Mulai Simulasi</b>.</p>
+<div class="info">
+<span class="chip">10 Soal</span><span class="chip">Waktu 25 Menit</span>
+<span class="chip">5 PG • 2 Benar/Salah • 3 MCMA</span><span class="chip">KKM 75</span>
+</div>
+<label for="inToken">TOKEN SESI *</label>
+<input type="text" id="inToken" placeholder="Masukkan token dari gurumu" autocomplete="off">
+<label for="inNama">NAMA LENGKAP *</label>
+<input type="text" id="inNama" placeholder="Nama lengkapmu">
+<label for="inKelas">KELAS *</label>
+<input type="text" id="inKelas" list="dlKelas" placeholder="Pilih atau ketik kelasmu, mis. IX A" autocomplete="off">
+<datalist id="dlKelas">
+<option value="IX A"></option><option value="IX B"></option><option value="IX C"></option><option value="IX D"></option><option value="IX E"></option>
+<option value="IX"></option><option value="VIII"></option><option value="VII"></option>
+</datalist>
+<label for="inAbsen">NO. ABSEN *</label>
+<input type="text" id="inAbsen" inputmode="numeric" placeholder="Nomor absen">
+<label for="inSekolah">NAMA SEKOLAH *</label>
+<input type="text" id="inSekolah" list="dlSekolah" value="SMP Negeri 1 Bantarkawung" autocomplete="off">
+<datalist id="dlSekolah">
+<option value="SMP Negeri 1 Bantarkawung"></option>
+</datalist>
+<p style="margin:4px 0 0"><small>Siswa dari sekolah lain: ganti nama sekolah di atas dengan nama sekolahmu sendiri.</small></p>
+<p id="errMulai" class="salah sembunyi"></p>
+<div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+<button class="btn" onclick="mulai()">▶ Mulai Simulasi (25 Menit)</button>
+<button class="btn biru" onclick="bukaPanelGuru()">Panel Guru</button>
+</div>
+<p><small>Nilai langsung tampil setelah selesai dan otomatis tersimpan ke database guru. Kerjakan dengan jujur — Aku Bisa, Jujur, Bahagia!</small></p>
+</div>
+
+<!-- LAYAR UJIAN -->
+<div id="layarUjian" class="sembunyi">
+<div class="bar"><div><b id="barNama"></b><br><small id="barKelas"></small></div><div id="timer">25:00</div></div>
+<div class="kartu soal">
+<h3 id="soalLabel"></h3>
+<div class="iteks" id="soalTeks"></div>
+<div id="soalIsi"></div>
+<div class="nav">
+<button class="btn abu" id="btnPrev" onclick="geser(-1)">← Sebelumnya</button>
+<button class="btn biru" id="btnNext" onclick="geser(1)">Berikutnya →</button>
+</div>
+<div class="palet" id="palet"></div>
+<hr style="border:none;border-top:1px solid #e1e9ee;margin:18px 0">
+<button class="btn emas" style="width:100%" onclick="konfirmasiSelesai()">✔ Selesai &amp; Kirim Jawaban</button>
+</div>
+</div>
+
+<!-- LAYAR HASIL -->
+<div id="layarHasil" class="sembunyi">
+<div class="kartu">
+<h2 class="tengah" style="margin-bottom:0">Hasil Simulasimu</h2>
+<div class="nilai-besar" id="nilaiBesar">0</div>
+<div class="status" id="statusHasil"></div>
+<p class="tengah" id="ringkasHasil"></p>
+<p class="tengah"><small>Kode verifikasi: <b id="kodeVerif"></b></small></p>
+<p class="status-simpan" id="statusSimpan"></p>
+<p class="tengah"><button class="btn abu sembunyi" id="btnSimpanUlang" onclick="simpanHasil()">Simpan Ulang</button></p>
+</div>
+<div class="kartu" id="kartuUlasan">
+<h3 style="margin-top:0">Ulasan Jawaban (Kunci &amp; Pembahasan)</h3>
+<div id="gerbangUlasan">
+<p>Masukkan kata sandi guru untuk membuka kunci dan pembahasan.</p>
+<input type="text" id="sandiUlasan" placeholder="Kata sandi guru" autocomplete="off">
+<p id="sandiSalah" class="salah sembunyi">Kata sandi salah.</p>
+<button class="btn biru" style="margin-top:10px" onclick="bukaUlasan()">Buka Ulasan</button>
+</div>
+<div id="ulasan" class="sembunyi"></div>
+</div>
+<div class="tengah"><button class="btn" onclick="location.reload()">Kembali ke Awal</button></div>
+</div>
+
+<!-- LAYAR GURU -->
+<div id="layarGuru" class="kartu sembunyi">
+<h2 style="margin-top:0">Panel Guru — Simulasi TKA IPS Uang dan Bank</h2>
+<label for="filterSekolah">SARING SEKOLAH</label>
+<select id="filterSekolah" onchange="gambarTabelGuru()"><option value="">— Semua Sekolah —</option></select>
+<p id="statGuru">Memuat data…</p>
+<div class="scroll-x"><table>
+<thead><tr><th>No</th><th>Nama</th><th>Kelas</th><th>Absen</th><th>Sekolah</th><th>Nilai</th><th>Status</th><th>Kode</th><th>Waktu</th></tr></thead>
+<tbody id="isiTabelGuru"></tbody></table></div>
+<div style="margin-top:14px;display:flex;gap:10px">
+<button class="btn biru" onclick="muatNilaiGuru()">Muat Ulang</button>
+<button class="btn abu" onclick="tutupPanelGuru()">Tutup</button>
+</div>
+</div>
+
+</div>
+<script>
+const SB_URL = 'https://vovjeijhxnehhtxjqtkm.supabase.co';
+const SB_KEY = 'sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV';
+const TOKEN_SESI = 'IPS9';
+const SANDI_ULASAN = 'yosad67';
+const KKM = 75;
+const ASESMEN = 'SIMULASI TKA IPS - UANG DAN BANK';
+const SOAL = [{"tipe": "PG", "soal": "Di kantin sekolah, Sinta menyerahkan uang Rp10.000,00 kepada penjual dan menerima sebungkus nasi beserta teh hangat. Peristiwa tersebut menunjukkan fungsi asli uang sebagai …", "opsi": ["satuan hitung", "alat tukar", "penimbun kekayaan", "alat pembayaran utang"], "kunci": 1, "bahas": "Uang dipakai untuk menukarkan barang secara langsung — itulah fungsi asli uang sebagai alat tukar."}, {"tipe": "PG", "soal": "Sebuah toko memasang label harga: tas Rp250.000,00, sepatu Rp300.000,00, dan topi Rp75.000,00. Dengan label itu pembeli dapat membandingkan mahal-murahnya barang. Dalam hal ini uang berfungsi sebagai …", "opsi": ["alat tukar", "alat pemindah kekayaan", "satuan hitung (alat pengukur nilai)", "pendorong kegiatan ekonomi"], "kunci": 2, "bahas": "Harga menjadi ukuran nilai barang yang dapat dibandingkan — fungsi uang sebagai satuan hitung."}, {"tipe": "PG", "soal": "Berikut ini yang termasuk uang giral adalah …", "opsi": ["uang kertas Rp50.000,00", "uang logam Rp1.000,00", "cek dan simpanan giro di bank", "uang mainan pada permainan monopoli"], "kunci": 2, "bahas": "Uang giral adalah simpanan di bank yang dapat digunakan dengan cek/giro. Uang kertas dan uang logam adalah uang kartal."}, {"tipe": "PG", "soal": "Lembaga yang bertugas menetapkan dan melaksanakan kebijakan moneter serta menjaga kestabilan nilai rupiah di Indonesia adalah …", "opsi": ["bank umum", "Bank Perkreditan Rakyat", "Bank Indonesia", "Otoritas Jasa Keuangan"], "kunci": 2, "bahas": "Bank Indonesia adalah bank sentral Indonesia. OJK bertugas mengawasi lembaga jasa keuangan."}, {"tipe": "PG", "soal": "Pak Danu menyimpan uangnya di bank dalam bentuk simpanan yang hanya dapat diambil setelah 6 bulan, dengan bunga lebih tinggi dari tabungan biasa. Produk simpanan yang dipilih Pak Danu adalah …", "opsi": ["giro", "tabungan", "deposito berjangka", "safe deposit box"], "kunci": 2, "bahas": "Deposito berjangka terikat jangka waktu tertentu dan bunganya relatif lebih tinggi dari tabungan."}, {"tipe": "BS", "soal": "Tentukan Benar atau Salah untuk setiap pernyataan tentang fungsi turunan uang berikut.", "pernyataan": ["Menabung di bank untuk biaya sekolah anak kelak menunjukkan uang sebagai penimbun kekayaan.", "Membayar cicilan motor setiap bulan menunjukkan uang sebagai alat pembayaran utang.", "Selembar uang kertas Rp100.000,00 memiliki nilai intrinsik (nilai bahan) yang sama dengan nilai nominalnya."], "kunci": [true, true, false], "bahas": "(1) Benar — menabung adalah fungsi penimbun kekayaan. (2) Benar — membayar cicilan adalah fungsi alat pembayaran utang. (3) Salah — nilai bahan kertasnya jauh lebih kecil dari nominalnya; uang kertas termasuk uang bernilai tidak penuh."}, {"tipe": "BS", "soal": "Tentukan Benar atau Salah untuk setiap pernyataan tentang bank berikut.", "pernyataan": ["Bank umum dapat menciptakan uang giral.", "BPR boleh menerima simpanan giro dan melayani lalu lintas pembayaran seperti bank umum.", "Deposito hanya dapat dicairkan setelah jangka waktu yang disepakati."], "kunci": [true, false, true], "bahas": "(1) Benar. (2) Salah — BPR tidak boleh menerima giro dan tidak ikut lalu lintas pembayaran. (3) Benar."}, {"tipe": "MCMA", "soal": "Syarat suatu benda dapat dijadikan uang adalah … (pilih semua yang benar)", "pernyataan": ["diterima secara umum oleh masyarakat", "mudah rusak agar cepat diganti yang baru", "tahan lama dan tidak mudah rusak", "mudah dibagi menjadi nilai-nilai kecil dan nilainya relatif stabil"], "kunci": [0, 2, 3], "bahas": "Syarat uang: diterima umum, tahan lama, mudah dibagi, nilai relatif stabil. Benda yang mudah rusak justru tidak memenuhi syarat uang."}, {"tipe": "MCMA", "soal": "Jasa dan layanan yang diberikan bank umum kepada masyarakat adalah … (pilih semua yang benar)", "pernyataan": ["transfer uang antarbank", "mencetak dan mengedarkan uang kartal", "penyewaan safe deposit box (kotak penyimpanan barang berharga)", "layanan ATM dan kartu debit"], "kunci": [0, 2, 3], "bahas": "Mencetak dan mengedarkan uang kartal adalah wewenang Bank Indonesia, bukan bank umum."}, {"tipe": "MCMA", "soal": "Pernyataan yang benar tentang pembayaran nontunai adalah … (pilih semua yang benar)", "pernyataan": ["dompet digital (e-wallet) termasuk alat pembayaran nontunai", "QRIS adalah standar kode QR pembayaran yang ditetapkan Bank Indonesia", "uang elektronik dapat diterbitkan siapa saja tanpa izin", "pembayaran nontunai mengurangi kebutuhan membawa uang tunai dalam jumlah besar"], "kunci": [0, 1, 3], "bahas": "Penerbit uang elektronik wajib berizin dan diawasi Bank Indonesia, jadi pernyataan (3) salah."}];
+const TOTAL_POIN = SOAL.reduce((a,s)=> a + (s.tipe==='PG'?1:s.pernyataan.length), 0);
+
+let siswa = null, jawaban = [], idx = 0, sisaDetik = 25*60, timerId = null, mulaiPada = null, payloadHasil = null, terkirim = false;
+
+function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function huruf(i){return 'ABCD'[i]}
+
+function mulai(){
+  const token = document.getElementById('inToken').value.trim().toUpperCase();
+  const nama = document.getElementById('inNama').value.trim();
+  const kelas = document.getElementById('inKelas').value.trim();
+  const absen = document.getElementById('inAbsen').value.trim();
+  const sekolah = document.getElementById('inSekolah').value.trim() || 'SMP Negeri 1 Bantarkawung';
+  const err = document.getElementById('errMulai');
+  const salah = m => { err.textContent = m; err.classList.remove('sembunyi'); };
+  if (token !== TOKEN_SESI) return salah('Token sesi salah. Minta token yang benar kepada gurumu.');
+  if (!nama) return salah('Nama lengkap wajib diisi.');
+  if (!kelas) return salah('Kelas wajib diisi.');
+  if (!absen) return salah('No. absen wajib diisi.');
+  err.classList.add('sembunyi');
+  siswa = {nama, kelas, absen, sekolah};
+  jawaban = SOAL.map(s => s.tipe==='PG' ? -1 : s.pernyataan.map(()=> s.tipe==='MCMA' ? false : null));
+  idx = 0; mulaiPada = Date.now();
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarUjian').classList.remove('sembunyi');
+  document.getElementById('barNama').textContent = nama;
+  document.getElementById('barKelas').textContent = kelas + ' • Absen ' + absen + ' • ' + sekolah;
+  bangunPalet(); tampilSoal();
+  timerId = setInterval(tikTimer, 1000);
+  window.scrollTo(0,0);
+}
+function tikTimer(){
+  sisaDetik--;
+  const m = Math.floor(sisaDetik/60), d = sisaDetik%60;
+  const el = document.getElementById('timer');
+  el.textContent = String(m).padStart(2,'0')+':'+String(d).padStart(2,'0');
+  if (sisaDetik <= 300) el.classList.add('kritis');
+  if (sisaDetik <= 0){ clearInterval(timerId); selesai(true); }
+}
+function bangunPalet(){
+  const p = document.getElementById('palet');
+  p.innerHTML = SOAL.map((s,i)=>`<button id="pal${i}" onclick="loncat(${i})">${i+1}</button>`).join('');
+  segarPalet();
+}
+function sudahIsi(i){
+  const j = jawaban[i], s = SOAL[i];
+  if (s.tipe==='PG') return j !== -1;
+  return j.every(v => v !== null);
+}
+function segarPalet(){
+  SOAL.forEach((s,i)=>{
+    const b = document.getElementById('pal'+i);
+    if (!b) return;
+    b.classList.toggle('isi', sudahIsi(i));
+    b.classList.toggle('aktif', i === idx);
+  });
+}
+function loncat(i){ idx = i; tampilSoal(); }
+function geser(a){ idx = Math.min(SOAL.length-1, Math.max(0, idx+a)); tampilSoal(); }
+function tampilSoal(){
+  const s = SOAL[idx];
+  const namaTipe = s.tipe==='PG' ? 'Pilihan Ganda' : (s.tipe==='BS' ? 'Pilihan Ganda Kompleks — Benar/Salah' : 'MCMA — Pilih Semua yang Benar');
+  document.getElementById('soalLabel').textContent = `Soal ${idx+1} dari ${SOAL.length} • ${namaTipe}`;
+  document.getElementById('soalTeks').textContent = s.soal;
+  const isi = document.getElementById('soalIsi');
+  if (s.tipe==='PG'){
+    isi.innerHTML = '<div class="opsi">' + s.opsi.map((o,i)=>{
+      const sel = jawaban[idx]===i ? ' terpilih' : '';
+      return `<label class="${sel}"><input type="radio" name="pg" ${jawaban[idx]===i?'checked':''} onchange="jawabPG(${i})"><span><b>${huruf(i)}.</b> ${esc(o)}</span></label>`;
+    }).join('') + '</div>';
+  } else if (s.tipe==='BS'){
+    isi.innerHTML = s.pernyataan.map((t,i)=>{
+      const v = jawaban[idx][i];
+      return `<div class="pernyataan"><div class="p-teks"><b>${i+1}.</b> ${esc(t)}</div>
+      <div class="bs-pilihan">
+      <button class="${v===true?'sel-b':''}" onclick="jawabBS(${i},true)">BENAR</button>
+      <button class="${v===false?'sel-s':''}" onclick="jawabBS(${i},false)">SALAH</button>
+      </div></div>`;
+    }).join('') + '<p><small>Tentukan BENAR atau SALAH untuk setiap pernyataan (ada 3 pernyataan). Setiap pernyataan dinilai sendiri.</small></p>';
+  } else {
+    isi.innerHTML = '<div class="opsi">' + s.pernyataan.map((t,i)=>{
+      const sel = jawaban[idx][i]===true ? ' terpilih' : '';
+      return `<label class="${sel}"><input type="checkbox" ${jawaban[idx][i]===true?'checked':''} onchange="jawabMCMA(${i},this.checked)"><span><b>${i+1}.</b> ${esc(t)}</span></label>`;
+    }).join('') + '</div><p><small>Centang semua pernyataan yang menurutmu BENAR. Setiap pernyataan dinilai sendiri.</small></p>';
+  }
+  document.getElementById('btnPrev').disabled = idx===0;
+  document.getElementById('btnNext').disabled = idx===SOAL.length-1;
+  segarPalet();
+}
+function jawabPG(i){ jawaban[idx]=i; tampilSoal(); }
+function jawabBS(i,v){ jawaban[idx][i]=v; tampilSoal(); }
+function jawabMCMA(i,v){ jawaban[idx][i]=v; tampilSoal(); }
+
+function hitungSkor(){
+  let poin = 0; const rincian = [];
+  SOAL.forEach((s,i)=>{
+    let p = 0;
+    if (s.tipe==='PG'){ p = jawaban[i]===s.kunci ? 1 : 0; }
+    else if (s.tipe==='BS'){ s.pernyataan.forEach((t,j)=>{ if (jawaban[i][j]===s.kunci[j]) p++; }); }
+    else { s.pernyataan.forEach((t,j)=>{ const harus = s.kunci.includes(j); const dipilih = jawaban[i][j]===true; if (harus===dipilih) p++; }); }
+    poin += p; rincian.push({no:i+1, tipe:s.tipe, poin:p});
+  });
+  return {poin, rincian};
+}
+function konfirmasiSelesai(){
+  const kosong = SOAL.map((s,i)=>i).filter(i=>!sudahIsi(i));
+  if (kosong.length && !confirm(`Masih ada ${kosong.length} soal yang belum lengkap dijawab (nomor: ${kosong.map(i=>i+1).join(', ')}). Tetap kirim sekarang?`)) return;
+  selesai(false);
+}
+function selesai(otomatis){
+  if (terkirim) return; terkirim = true;
+  clearInterval(timerId);
+  const {poin, rincian} = hitungSkor();
+  const nilai = Math.round((poin/TOTAL_POIN)*100);
+  const status = nilai >= KKM ? 'TUNTAS' : 'BELUM TUNTAS';
+  const kode = 'SIPS-' + Array.from({length:6},()=>'ABCDEFGHJKMNPQRSTUVWXYZ23456789'[Math.floor(Math.random()*31)]).join('');
+  const durasi = Math.round((Date.now()-mulaiPada)/1000);
+  payloadHasil = {
+    nama: siswa.nama, kelas: siswa.kelas, absen: parseInt(siswa.absen)||null, no_absen: String(siswa.absen),
+    nilai, status, kode_verifikasi: kode,
+    tanggal: new Date().toISOString().slice(0, 10),
+    jenjang: 'SMP', bab: 'UANG DAN BANK', asesmen: ASESMEN, jumlah_soal: SOAL.length,
+    jawaban: {sekolah: siswa.sekolah, poin, total_poin: TOTAL_POIN, rincian, jawaban_siswa: jawaban},
+    durasi_detik: durasi
+  };
+  document.getElementById('layarUjian').classList.add('sembunyi');
+  document.getElementById('layarHasil').classList.remove('sembunyi');
+  document.getElementById('nilaiBesar').textContent = nilai;
+  const st = document.getElementById('statusHasil');
+  st.textContent = status + (otomatis ? ' (waktu habis)' : '');
+  st.className = 'status ' + (nilai>=KKM ? 'tuntas' : 'belum');
+  const benarPG = rincian.filter(r=>r.tipe==='PG').reduce((a,r)=>a+r.poin,0);
+  document.getElementById('ringkasHasil').textContent = `${siswa.nama} • ${siswa.kelas} • Absen ${siswa.absen} — Poin ${poin} dari ${TOTAL_POIN} (PG benar ${benarPG} dari 16)`;
+  document.getElementById('kodeVerif').textContent = kode;
+  bangunUlasan(rincian);
+  simpanHasil();
+  window.scrollTo(0,0);
+}
+function deskJawaban(i){
+  const s = SOAL[i], j = jawaban[i];
+  if (s.tipe==='PG') return j===-1 ? '(tidak dijawab)' : huruf(j)+'. '+s.opsi[j];
+  if (s.tipe==='BS') return s.pernyataan.map((t,k)=>`${k+1}. ${j[k]===null?'(kosong)':(j[k]?'Benar':'Salah')}`).join(' | ');
+  const pil = s.pernyataan.map((t,k)=> j[k]===true ? (k+1) : null).filter(x=>x!==null);
+  return pil.length ? 'Memilih pernyataan nomor ' + pil.join(', ') : '(tidak memilih satu pun)';
+}
+function deskKunci(i){
+  const s = SOAL[i];
+  if (s.tipe==='PG') return huruf(s.kunci)+'. '+s.opsi[s.kunci];
+  if (s.tipe==='BS') return s.pernyataan.map((t,k)=>`${k+1}. ${s.kunci[k]?'Benar':'Salah'}`).join(' | ');
+  return 'Yang benar: pernyataan nomor ' + s.kunci.map(k=>k+1).join(', ');
+}
+function bangunUlasan(rincian){
+  document.getElementById('ulasan').innerHTML = SOAL.map((s,i)=>{
+    const maks = s.tipe==='PG' ? 1 : s.pernyataan.length;
+    return `<div class="ulasan-item"><h4>Soal ${i+1} (${s.tipe}) — Poinmu: ${rincian[i].poin}/${maks}</h4>
+    <p>${esc(s.soal)}</p>
+    <p>Jawabanmu: ${esc(deskJawaban(i))}</p>
+    <p class="kunci-jawaban">Kunci: ${esc(deskKunci(i))}</p>
+    <p><b>Pembahasan:</b> ${esc(s.bahas)}</p></div>`;
+  }).join('');
+}
+function bukaUlasan(){
+  const v = document.getElementById('sandiUlasan').value.trim();
+  if (v === SANDI_ULASAN){
+    document.getElementById('gerbangUlasan').classList.add('sembunyi');
+    document.getElementById('ulasan').classList.remove('sembunyi');
+  } else {
+    document.getElementById('sandiSalah').classList.remove('sembunyi');
+  }
+}
+async function simpanHasil(){
+  const el = document.getElementById('statusSimpan');
+  const btn = document.getElementById('btnSimpanUlang');
+  el.textContent = 'Menyimpan nilai ke database…'; el.className = 'status-simpan';
+  btn.classList.add('sembunyi');
+  try {
+    const r = await fetch(SB_URL + '/rest/v1/hasil_asesmen', {
+      method: 'POST',
+      headers: {'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
+      body: JSON.stringify(payloadHasil)
+    });
+    if (!r.ok) throw new Error('gagal-' + r.status);
+    el.textContent = '✔ Nilaimu sudah tersimpan di database guru.';
+    el.classList.add('ok');
+  } catch(e) {
+    el.textContent = '⚠ Nilai belum tersimpan ke database. Tunjukkan layar ini (beserta kode verifikasinya) kepada gurumu.';
+    el.classList.add('gagal');
+    btn.classList.remove('sembunyi');
+  }
+}
+
+/* ============ PANEL GURU ============ */
+function bukaPanelGuru(){
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarGuru').classList.remove('sembunyi');
+  muatNilaiGuru(); window.scrollTo(0,0);
+}
+function tutupPanelGuru(){
+  document.getElementById('layarGuru').classList.add('sembunyi');
+  document.getElementById('layarMulai').classList.remove('sembunyi');
+}
+let dataGuru = [];
+async function muatNilaiGuru(){
+  const stat = document.getElementById('statGuru');
+  const isi = document.getElementById('isiTabelGuru');
+  stat.textContent = 'Memuat data…'; isi.innerHTML = '';
+  try {
+    const r = await fetch(SB_URL + '/rest/v1/hasil_asesmen?select=*&order=created_at.desc', {
+      headers: {'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY}
+    });
+    if (!r.ok) throw new Error('gagal-' + r.status);
+    const semua = await r.json();
+    dataGuru = semua.filter(d => d.asesmen === ASESMEN);
+    const sel = document.getElementById('filterSekolah');
+    const terpilih = sel.value;
+    const daftarSekolah = [...new Set(dataGuru.map(d => (d.jawaban && d.jawaban.sekolah) || '').filter(Boolean))].sort();
+    sel.innerHTML = '<option value="">— Semua Sekolah —</option>' + daftarSekolah.map(s => `<option value="${esc(s)}">${esc(s)}</option>`).join('');
+    sel.value = daftarSekolah.includes(terpilih) ? terpilih : '';
+    gambarTabelGuru();
+  } catch(e) {
+    stat.textContent = 'Data belum dapat dibaca. Coba muat ulang sebentar lagi.';
+  }
+}
+function gambarTabelGuru(){
+  const stat = document.getElementById('statGuru');
+  const isi = document.getElementById('isiTabelGuru');
+  const saring = document.getElementById('filterSekolah').value;
+  const data = saring ? dataGuru.filter(d => ((d.jawaban && d.jawaban.sekolah) || '') === saring) : dataGuru;
+  if (!dataGuru.length){ stat.textContent = 'Belum ada nilai Simulasi TKA IPS - Uang dan Bank yang masuk.'; isi.innerHTML=''; return; }
+  if (!data.length){ stat.textContent = 'Tidak ada nilai dari sekolah ini.'; isi.innerHTML=''; return; }
+  const tuntas = data.filter(d => (d.nilai||0) >= KKM).length;
+  const rata = (data.reduce((a,d)=>a+(d.nilai||0),0)/data.length).toFixed(1);
+  stat.innerHTML = `Total peserta${saring ? ' (' + esc(saring) + ')' : ''}: <b>${data.length}</b> • Rata-rata: <b>${rata}</b> • Tuntas (≥${KKM}): <b>${tuntas}</b> • Belum tuntas: <b>${data.length-tuntas}</b>`;
+  isi.innerHTML = data.map((d,i)=>`<tr>
+    <td>${i+1}</td><td>${esc(d.nama||'')}</td><td>${esc(d.kelas||'')}</td><td>${d.absen ?? esc(d.no_absen||'')}</td>
+    <td>${esc((d.jawaban && d.jawaban.sekolah) || '')}</td>
+    <td><b>${d.nilai ?? ''}</b></td><td>${esc(d.status||'')}</td>
+    <td style="font-size:12px">${esc(d.kode_verifikasi||'')}</td>
+    <td style="font-size:12.5px">${d.created_at ? new Date(d.created_at).toLocaleString('id-ID') : esc(d.tanggal||'')}</td></tr>`).join('');
+}
+</script>
+</body>
+</html>

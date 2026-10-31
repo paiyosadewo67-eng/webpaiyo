@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Misi Koin Emas — Uang dan Bank • IPS Kelas 9</title>
+<style>
+:root{--emas:#c9930a;--emas2:#f3c969;--teal:#0e6e6e;--gelap:#12303a;--merah:#c0392b;--hijau:#1e8449;--bg:#fdf6e0}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Segoe UI',system-ui,sans-serif;background:linear-gradient(160deg,#fdf6e0,#e8f4f1);color:var(--gelap);min-height:100vh}
+header{background:linear-gradient(90deg,#0b3d4a,#0e6e6e);color:#fff;padding:18px 14px;text-align:center;border-bottom:4px solid var(--emas2)}
+header h1{margin:0;font-size:22px}
+header p{margin:4px 0 0;font-size:13px;opacity:.92}
+.wrap{max-width:640px;margin:0 auto;padding:16px}
+.kartu{background:#fff;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.10);padding:20px;margin-bottom:16px}
+label{font-weight:700;font-size:13px;display:block;margin:12px 0 5px}
+input,select{width:100%;padding:11px;border:1.5px solid #cfd8dc;border-radius:10px;font-size:15px}
+.btn{background:linear-gradient(90deg,var(--emas),#e0aa12);color:#fff;border:none;border-radius:12px;padding:13px 22px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:16px}
+.btn:disabled{opacity:.55}
+.btn.teal{background:linear-gradient(90deg,#0e6e6e,#128080)}
+.hud{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 3px 10px rgba(0,0,0,.08);margin-bottom:14px;font-weight:700}
+.koin{color:var(--emas);font-size:18px}
+.nyawa{color:var(--merah);letter-spacing:2px;font-size:17px}
+.soal{font-size:17px;line-height:1.5;margin:6px 0 14px}
+.konteks{font-size:13.5px;color:#567;background:#eef6f4;border-radius:8px;padding:8px 11px;margin-bottom:10px}
+.opsi{display:block;width:100%;text-align:left;background:#f4f8fa;border:1.5px solid #d5e1e9;border-radius:11px;padding:12px 14px;margin-bottom:9px;font-size:15.5px;cursor:pointer}
+.opsi:hover{border-color:var(--teal)}
+.opsi.benar{background:#e8f8ee;border-color:var(--hijau);font-weight:700}
+.opsi.salah{background:#fdecea;border-color:var(--merah)}
+.umpan{border-radius:11px;padding:12px 14px;font-size:14.5px;line-height:1.5;margin-top:6px}
+.umpan.ok{background:#e8f8ee;border:1.5px solid var(--hijau)}
+.umpan.no{background:#fdecea;border:1.5px solid var(--merah)}
+.besar{font-size:52px;text-align:center;margin:6px 0}
+.bintang{font-size:34px;text-align:center;color:var(--emas);letter-spacing:4px}
+.tengah{text-align:center}
+small{color:#678}
+.prog{height:9px;background:#e3e8ea;border-radius:99px;overflow:hidden;margin-bottom:12px}
+.prog div{height:100%;background:linear-gradient(90deg,var(--emas),var(--emas2));width:0%}
+</style>
+</head>
+<body>
+<header>
+<h1>🪙 GAME MISI KOIN EMAS</h1>
+<p>Uang dan Bank • IPS Kelas 9 • Soal: Ibu Giyah Sugiyati, Guru IPS SMPN 1 Bantarkawung • Aplikasi oleh Mas Yosad — Portal AAAMAAT KEREN</p>
+</header>
+<div class="wrap">
+
+<div id="layarMulai" class="kartu">
+<h2 style="margin-top:0">Selamat Datang di Misi Koin Emas!</h2>
+<p>Jawab kartu-kartu soal tentang <b>Uang dan Bank</b>. Setiap jawaban benar bernilai <b>100 koin 🪙</b>. Jawaban salah mengurangi 1 nyawa ❤ — kamu punya 3 nyawa. Selesaikan semua 23 kartu dan kumpulkan koin sebanyak-banyaknya!</p>
+<label for="inNama">Nama Lengkap *</label>
+<input type="text" id="inNama" placeholder="Nama kamu" autocomplete="off">
+<label for="inKelas">Kelas *</label>
+<input type="text" id="inKelas" list="dlKelas" placeholder="Contoh: 9A" autocomplete="off">
+<datalist id="dlKelas"><option value="9A"></option><option value="9B"></option><option value="9C"></option><option value="9D"></option><option value="9E"></option></datalist>
+<label for="inSekolah">Nama Sekolah *</label>
+<input type="text" id="inSekolah" list="dlSekolah" value="SMP Negeri 1 Bantarkawung" autocomplete="off">
+<datalist id="dlSekolah"><option value="SMP Negeri 1 Bantarkawung"></option></datalist>
+<button class="btn" onclick="mulai()">▶ Mulai Misi</button>
+<p><small>Hasil permainanmu tersimpan otomatis. Main dengan jujur ya: Aku Bisa, Jujur, Bahagia.</small></p>
+</div>
+
+<div id="layarMain" style="display:none">
+<div class="hud"><span id="hudKartu">Kartu 1/23</span><span class="koin">🪙 <span id="hudKoin">0</span></span><span class="nyawa" id="hudNyawa">❤❤❤</span></div>
+<div class="prog"><div id="hudProg"></div></div>
+<div class="kartu">
+<div class="konteks" id="kotKonteks" style="display:none"></div>
+<div class="soal" id="kotSoal"></div>
+<div id="kotOpsi"></div>
+<div id="kotUmpan"></div>
+<button class="btn teal" id="btnLanjut" style="display:none" onclick="lanjut()">Lanjut ▶</button>
+</div>
+</div>
+
+<div id="layarAkhir" class="kartu tengah" style="display:none">
+<div class="besar" id="akhirEmoji">🏆</div>
+<h2 id="akhirJudul" style="margin:4px 0">Misi Selesai!</h2>
+<div class="bintang" id="akhirBintang">★★★</div>
+<p id="akhirRinci" style="font-size:16px"></p>
+<p id="akhirKode"></p>
+<p id="akhirSimpan"><small>Menyimpan hasil…</small></p>
+<button class="btn" onclick="location.reload()">↻ Main Lagi</button>
+</div>
+
+</div>
+<script>
+const SUPA_URL = 'https://vovjeijhxnehhtxjqtkm.supabase.co';
+const SUPA_KEY = 'sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV';
+const ASESMEN = 'GAME UANG DAN BANK';
+
+const SOAL = [
+{t:'PG',s:"Di kantin sekolah, Sinta menyerahkan uang Rp10.000,00 kepada penjual dan menerima sebungkus nasi beserta teh hangat. Peristiwa tersebut menunjukkan fungsi asli uang sebagai …",o:["satuan hitung","alat tukar","penimbun kekayaan","alat pembayaran utang"],k:1,b:"Uang dipakai menukarkan barang secara langsung — fungsi asli uang sebagai alat tukar."},
+{t:'PG',s:"Sebuah toko memasang label harga: tas Rp250.000,00, sepatu Rp300.000,00, dan topi Rp75.000,00. Dengan label itu pembeli dapat membandingkan mahal-murahnya barang. Dalam hal ini uang berfungsi sebagai …",o:["alat tukar","alat pemindah kekayaan","satuan hitung (alat pengukur nilai)","pendorong kegiatan ekonomi"],k:2,b:"Harga adalah ukuran nilai barang — fungsi uang sebagai satuan hitung."},
+{t:'PG',s:"Berikut ini yang termasuk uang giral adalah …",o:["uang kertas Rp50.000,00","uang logam Rp1.000,00","cek dan simpanan giro di bank","uang mainan pada permainan monopoli"],k:2,b:"Uang giral adalah simpanan di bank yang dipakai dengan cek/giro. Uang kertas dan logam adalah uang kartal."},
+{t:'PG',s:"Lembaga yang bertugas menetapkan dan melaksanakan kebijakan moneter serta menjaga kestabilan nilai rupiah di Indonesia adalah …",o:["bank umum","Bank Perkreditan Rakyat","Bank Indonesia","Otoritas Jasa Keuangan"],k:2,b:"Bank Indonesia adalah bank sentral Indonesia."},
+{t:'PG',s:"Pak Danu menyimpan uangnya di bank dalam bentuk simpanan yang hanya dapat diambil setelah 6 bulan, dengan bunga lebih tinggi dari tabungan biasa. Produk simpanan yang dipilih Pak Danu adalah …",o:["giro","tabungan","deposito berjangka","safe deposit box"],k:2,b:"Deposito berjangka terikat jangka waktu dan bunganya lebih tinggi dari tabungan."},
+{t:'BS',s:"Fungsi turunan uang",p:["Menabung di bank untuk biaya sekolah anak kelak menunjukkan uang sebagai penimbun kekayaan.","Membayar cicilan motor setiap bulan menunjukkan uang sebagai alat pembayaran utang.","Selembar uang kertas Rp100.000,00 memiliki nilai intrinsik (nilai bahan) yang sama dengan nilai nominalnya."],k:[true,true,false],j:["Benar — menabung adalah fungsi penimbun kekayaan.","Benar — membayar cicilan adalah fungsi alat pembayaran utang.","Salah — nilai bahan kertas jauh lebih kecil dari nominalnya; uang kertas bernilai tidak penuh."]},
+{t:'BS',s:"Tentang bank",p:["Bank umum dapat menciptakan uang giral.","BPR boleh menerima simpanan giro dan melayani lalu lintas pembayaran seperti bank umum.","Deposito hanya dapat dicairkan setelah jangka waktu yang disepakati."],k:[true,false,true],j:["Benar — bank umum dapat menciptakan uang giral.","Salah — BPR tidak boleh menerima giro dan tidak ikut lalu lintas pembayaran.","Benar — deposito terikat jangka waktu."]},
+{t:'MC',s:"Syarat suatu benda dapat dijadikan uang",p:["diterima secara umum oleh masyarakat","mudah rusak agar cepat diganti yang baru","tahan lama dan tidak mudah rusak","mudah dibagi menjadi nilai-nilai kecil dan nilainya relatif stabil"],k:[true,false,true,true],j:["Benar — syarat utama uang: diterima umum.","Salah — uang justru harus tahan lama.","Benar — uang harus tahan lama.","Benar — uang harus mudah dibagi dan nilainya relatif stabil."]},
+{t:'MC',s:"Jasa dan layanan bank umum",p:["transfer uang antarbank","mencetak dan mengedarkan uang kartal","penyewaan safe deposit box (kotak penyimpanan barang berharga)","layanan ATM dan kartu debit"],k:[true,false,true,true],j:["Benar — transfer adalah jasa bank umum.","Salah — mencetak uang kartal adalah wewenang Bank Indonesia.","Benar — safe deposit box adalah jasa bank umum.","Benar — ATM dan kartu debit adalah layanan bank umum."]},
+{t:'MC',s:"Pembayaran nontunai",p:["dompet digital (e-wallet) termasuk alat pembayaran nontunai","QRIS adalah standar kode QR pembayaran yang ditetapkan Bank Indonesia","uang elektronik dapat diterbitkan siapa saja tanpa izin","pembayaran nontunai mengurangi kebutuhan membawa uang tunai dalam jumlah besar"],k:[true,true,false,true],j:["Benar — e-wallet adalah alat pembayaran nontunai.","Benar — QRIS ditetapkan oleh Bank Indonesia.","Salah — penerbit uang elektronik wajib berizin dan diawasi Bank Indonesia.","Benar — nontunai lebih praktis dan aman."]}
+];
+
+let kartu = [], idx = 0, koin = 0, nyawa = 3, benar = 0, pemain = null, mulaiPada = null, terjawab = false;
+
+function bangunKartu(){
+  kartu = [];
+  SOAL.forEach(q=>{
+    if (q.t==='PG') kartu.push({jenis:'PG', soal:q.s, opsi:q.o, kunci:q.k, jelas:q.b});
+    else q.p.forEach((p,i)=> kartu.push({jenis:q.t, konteks:q.s, soal:p, kunci:q.k[i], jelas:q.j[i]}));
+  });
+  for (let i=kartu.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [kartu[i],kartu[j]]=[kartu[j],kartu[i]]; }
+}
+function esc(s){ const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+function mulai(){
+  const nama = document.getElementById('inNama').value.trim();
+  const kelas = document.getElementById('inKelas').value.trim();
+  const sekolah = document.getElementById('inSekolah').value.trim();
+  if (!nama || !kelas || !sekolah){ alert('Isi dulu nama, kelas, dan sekolahnya ya.'); return; }
+  pemain = {nama, kelas, sekolah};
+  bangunKartu(); mulaiPada = Date.now();
+  document.getElementById('layarMulai').style.display='none';
+  document.getElementById('layarMain').style.display='block';
+  tampil();
+}
+function segarHud(){
+  document.getElementById('hudKartu').textContent = 'Kartu ' + Math.min(idx+1, kartu.length) + '/' + kartu.length;
+  document.getElementById('hudKoin').textContent = koin;
+  document.getElementById('hudNyawa').textContent = '❤'.repeat(nyawa) + '🖤'.repeat(3-nyawa);
+  document.getElementById('hudProg').style.width = (idx/kartu.length*100) + '%';
+}
+function tampil(){
+  terjawab = false; segarHud();
+  const c = kartu[idx];
+  const kk = document.getElementById('kotKonteks');
+  if (c.konteks){ kk.style.display='block'; kk.textContent = 'Topik: ' + c.konteks; } else kk.style.display='none';
+  document.getElementById('kotSoal').innerHTML = c.jenis==='PG' ? esc(c.soal) : ('<b>Apakah pernyataan ini BENAR?</b><br>“' + esc(c.soal) + '”');
+  const ko = document.getElementById('kotOpsi'); ko.innerHTML='';
+  document.getElementById('kotUmpan').innerHTML='';
+  document.getElementById('btnLanjut').style.display='none';
+  if (c.jenis==='PG'){
+    c.opsi.forEach((o,i)=>{ const b=document.createElement('button'); b.className='opsi'; b.innerHTML='<b>' + 'ABCD'[i] + '.</b> ' + esc(o); b.onclick=()=>jawabPG(i,b); ko.appendChild(b); });
+  } else {
+    [['BENAR',true],['SALAH',false]].forEach(([label,v])=>{ const b=document.createElement('button'); b.className='opsi'; b.textContent=label; b.onclick=()=>jawabBS(v,b); ko.appendChild(b); });
+  }
+}
+function kunciOpsi(){ document.querySelectorAll('.opsi').forEach(b=>b.disabled=true); }
+function umpan(ok, c){
+  const u = document.getElementById('kotUmpan');
+  u.innerHTML = '<div class="umpan ' + (ok?'ok':'no') + '">' + (ok ? '✅ <b>Benar! +100 koin 🪙</b><br>' : '❌ <b>Kurang tepat.</b> Nyawa berkurang 1.<br>') + esc(c.jelas) + '</div>';
+  document.getElementById('btnLanjut').style.display='block';
+  segarHud();
+}
+function jawabPG(i, btn){
+  if (terjawab) return; terjawab = true; kunciOpsi();
+  const c = kartu[idx], ok = i===c.kunci;
+  document.querySelectorAll('.opsi')[c.kunci].classList.add('benar');
+  if (!ok) btn.classList.add('salah');
+  if (ok){ koin += 100; benar++; } else nyawa--;
+  umpan(ok, c);
+}
+function jawabBS(v, btn){
+  if (terjawab) return; terjawab = true; kunciOpsi();
+  const c = kartu[idx], ok = v===c.kunci;
+  document.querySelectorAll('.opsi')[c.kunci?0:1].classList.add('benar');
+  if (!ok) btn.classList.add('salah');
+  if (ok){ koin += 100; benar++; } else nyawa--;
+  umpan(ok, c);
+}
+function lanjut(){
+  idx++;
+  if (nyawa<=0) return selesai(false);
+  if (idx>=kartu.length) return selesai(true);
+  tampil();
+}
+async function selesai(tamat){
+  document.getElementById('layarMain').style.display='none';
+  const L = document.getElementById('layarAkhir'); L.style.display='block';
+  const total = kartu.length;
+  const nilai = Math.round(benar/total*100);
+  document.getElementById('akhirEmoji').textContent = tamat ? (nilai>=75?'🏆':'🎖️') : '💔';
+  document.getElementById('akhirJudul').textContent = tamat ? 'Misi Selesai!' : 'Nyawa Habis — Misi Berhenti';
+  document.getElementById('akhirBintang').textContent = nilai>=90?'★★★':(nilai>=75?'★★☆':(nilai>=50?'★☆☆':'☆☆☆'));
+  document.getElementById('akhirRinci').innerHTML = 'Koin terkumpul: <b>' + koin + ' 🪙</b><br>Jawaban benar: <b>' + benar + ' dari ' + total + ' kartu</b><br>Nilai: <b>' + nilai + '</b> — ' + (nilai>=75?'<b style="color:var(--hijau)">TUNTAS</b>':'<b style="color:var(--merah)">BELUM TUNTAS</b>') + '<br><small>' + esc(pemain.nama) + ' • ' + esc(pemain.kelas) + ' • ' + esc(pemain.sekolah) + '</small>';
+  const kode = 'GMUB-' + Array.from({length:6},()=>'ABCDEFGHJKMNPQRSTUVWXYZ23456789'[Math.floor(Math.random()*31)]).join('');
+  document.getElementById('akhirKode').innerHTML = 'Kode verifikasi: <b>' + kode + '</b>';
+  const simpan = document.getElementById('akhirSimpan');
+  const payload = { nama: pemain.nama, kelas: pemain.kelas, absen: null, no_absen: '', nilai: nilai,
+    status: nilai>=75?'TUNTAS':'BELUM TUNTAS', kode_verifikasi: kode,
+    tanggal: new Date().toISOString().slice(0,10), jenjang: 'SMP', bab: 'UANG DAN BANK', asesmen: ASESMEN,
+    jumlah_soal: total, jawaban: { sekolah: pemain.sekolah, koin: koin, benar: benar, total_kartu: total, tamat: tamat },
+    durasi_detik: Math.round((Date.now()-mulaiPada)/1000) };
+  try {
+    const r = await fetch(SUPA_URL + '/rest/v1/hasil_asesmen', { method:'POST', headers:{ 'apikey': SUPA_KEY, 'Authorization': 'Bearer ' + SUPA_KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' }, body: JSON.stringify(payload) });
+    simpan.innerHTML = r.ok ? '<small>✔ Hasilmu sudah tersimpan. Tunjukkan layar ini kepada gurumu.</small>' : '<small>⚠ Hasil belum tersimpan. Tunjukkan kode verifikasi di atas kepada gurumu.</small>';
+  } catch(e){ simpan.innerHTML = '<small>⚠ Hasil belum tersimpan. Tunjukkan kode verifikasi di atas kepada gurumu.</small>'; }
+}
+</script>
+</body>
+</html>
