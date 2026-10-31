@@ -185,7 +185,7 @@ async function selesai(tamat){
   const kode = 'GMUB-' + Array.from({length:6},()=>'ABCDEFGHJKMNPQRSTUVWXYZ23456789'[Math.floor(Math.random()*31)]).join('');
   document.getElementById('akhirKode').innerHTML = 'Kode verifikasi: <b>' + kode + '</b>';
   const simpan = document.getElementById('akhirSimpan');
-  const payload = { nama: pemain.nama, kelas: pemain.kelas, absen: null, no_absen: '', nilai: nilai,
+  const payload = { nama: pemain.nama, kelas: pemain.kelas, absen: 0, no_absen: 0, nilai: nilai,
     status: nilai>=75?'TUNTAS':'BELUM TUNTAS', kode_verifikasi: kode,
     tanggal: new Date().toISOString().slice(0,10), jenjang: 'SMP', bab: 'UANG DAN BANK', asesmen: ASESMEN,
     jumlah_soal: total, jawaban: { sekolah: pemain.sekolah, koin: koin, benar: benar, total_kartu: total, tamat: tamat },
