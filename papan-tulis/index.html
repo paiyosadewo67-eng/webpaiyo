@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Papan Tulis AAAMAAT KEREN — Papan Coretan Digital</title>
+<style>
+  :root {
+    --navy: #0B2447; --navy2: #123058; --teal: #0E7C7B; --gold: #E9C44C; --gold2: #F5D76E;
+    --ink: #16283F; --muted: #5B6B7F; --line: #D8E1EC; --bg: #EEF3F8; --surface: #FFFFFF;
+    --ungu: #7C3AED;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: "Segoe UI", "Plus Jakarta Sans", system-ui, sans-serif;
+    background: var(--bg); color: var(--ink);
+    display: flex; flex-direction: column; height: 100dvh; overflow: hidden;
+  }
+  header {
+    background: linear-gradient(120deg, var(--navy), var(--navy2) 55%, var(--teal));
+    color: #fff; padding: .55rem .9rem; display: flex; align-items: center; gap: .8rem; flex-wrap: wrap;
+  }
+  header h1 { font-size: 1.12rem; font-weight: 800; letter-spacing: .01em; }
+  header h1 .emas { color: var(--gold2); }
+  header .status { font-size: .8rem; color: #CFE0F2; margin-left: auto; font-style: italic; }
+  .toolbar {
+    background: var(--surface); border-bottom: 1.5px solid var(--line);
+    padding: .5rem .7rem; display: flex; flex-wrap: wrap; gap: .45rem .9rem; align-items: center;
+  }
+  .grup { display: flex; align-items: center; gap: .32rem; flex-wrap: wrap; }
+  .grup .label { font-size: .68rem; font-weight: 800; letter-spacing: .07em; color: var(--muted); text-transform: uppercase; margin-right: .1rem; }
+  .btn {
+    font: inherit; font-size: .86rem; font-weight: 700; cursor: pointer;
+    border: 1.5px solid var(--line); background: #F7FAFC; color: var(--ink);
+    border-radius: 10px; padding: .42rem .65rem; min-height: 38px;
+    display: inline-flex; align-items: center; gap: .3rem; user-select: none; -webkit-user-select: none;
+  }
+  .btn:hover { border-color: var(--gold); }
+  .btn.aktif { background: var(--ungu); border-color: var(--ungu); color: #fff; }
+  .btn:disabled { opacity: .38; cursor: default; }
+  .btn.bahaya:hover { border-color: #DC2626; color: #DC2626; }
+  .btn.emas { background: var(--gold); border-color: var(--gold); color: #3A2E05; }
+  .warna {
+    width: 30px; height: 30px; border-radius: 50%; border: 2.5px solid #fff;
+    box-shadow: 0 0 0 1.5px var(--line); cursor: pointer; padding: 0;
+  }
+  .warna.aktif { box-shadow: 0 0 0 2.5px var(--ungu); }
+  input[type="color"] { width: 38px; height: 34px; border: 1.5px solid var(--line); border-radius: 9px; background: #F7FAFC; padding: 2px; cursor: pointer; }
+  input[type="range"] { width: 110px; accent-color: var(--ungu); }
+  select {
+    font: inherit; font-size: .86rem; font-weight: 700; padding: .4rem .5rem; min-height: 38px;
+    border: 1.5px solid var(--line); border-radius: 10px; background: #F7FAFC; color: var(--ink); cursor: pointer;
+  }
+  .tebal-info { font-size: .82rem; font-weight: 700; color: var(--muted); min-width: 52px; }
+  .hal-info { font-size: .86rem; font-weight: 800; min-width: 108px; text-align: center; }
+  #panggung { position: relative; flex: 1; margin: .6rem; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(11,36,71,.18); background: #fff; }
+  canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  #cvGambar { touch-action: none; cursor: crosshair; }
+  #teksInput {
+    position: absolute; z-index: 5; display: none; font-family: inherit; font-weight: 700;
+    background: rgba(255,255,255,.92); border: 2px dashed var(--ungu); border-radius: 8px;
+    padding: .3rem .45rem; min-width: 180px; outline: none; resize: both;
+  }
+  footer {
+    padding: .35rem .9rem .5rem; font-size: .74rem; color: var(--muted);
+    display: flex; gap: .5rem; flex-wrap: wrap; justify-content: space-between;
+  }
+  @media (max-width: 640px) {
+    header h1 { font-size: 1rem; }
+    header .status { margin-left: 0; width: 100%; }
+    .btn { font-size: .8rem; padding: .38rem .5rem; }
+    input[type="range"] { width: 80px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>✏️ Papan Tulis <span class="emas">AAAMAAT KEREN</span></h1>
+  <span class="status" id="status">Siap menggambar.</span>
+</header>
+
+<div class="toolbar" id="toolbar">
+  <div class="grup">
+    <span class="label">Alat</span>
+    <button class="btn alat aktif" data-alat="pena">🖊️ Pena</button>
+    <button class="btn alat" data-alat="stabilo">🖍️ Stabilo</button>
+    <button class="btn alat" data-alat="penghapus">🧽 Penghapus</button>
+    <button class="btn alat" data-alat="teks">🔤 Teks</button>
+    <button class="btn alat" data-alat="garis">╱ Garis</button>
+    <button class="btn alat" data-alat="persegi">▭ Persegi</button>
+    <button class="btn alat" data-alat="lingkaran">◯ Lingkaran</button>
+    <button class="btn alat" data-alat="segitiga">△ Segitiga</button>
+    <button class="btn alat" data-alat="panah">➚ Panah</button>
+  </div>
+  <div class="grup">
+    <span class="label">Warna</span>
+    <button class="warna aktif" data-warna="#1F2937" style="background:#1F2937" aria-label="Hitam"></button>
+    <button class="warna" data-warna="#DC2626" style="background:#DC2626" aria-label="Merah"></button>
+    <button class="warna" data-warna="#2563EB" style="background:#2563EB" aria-label="Biru"></button>
+    <button class="warna" data-warna="#16A34A" style="background:#16A34A" aria-label="Hijau"></button>
+    <button class="warna" data-warna="#7C3AED" style="background:#7C3AED" aria-label="Ungu"></button>
+    <button class="warna" data-warna="#EA580C" style="background:#EA580C" aria-label="Oranye"></button>
+    <input type="color" id="warnaBebas" value="#1F2937" title="Warna bebas" />
+  </div>
+  <div class="grup">
+    <span class="label">Tebal</span>
+    <input type="range" id="tebal" min="1" max="40" value="4" />
+    <span class="tebal-info" id="tebalInfo">4 px</span>
+  </div>
+  <div class="grup">
+    <span class="label">Latar</span>
+    <select id="latar">
+      <option value="kotak" selected>Kotak-kotak</option>
+      <option value="polos">Polos</option>
+      <option value="bergaris">Bergaris</option>
+      <option value="titik">Titik-titik</option>
+    </select>
+  </div>
+  <div class="grup">
+    <span class="label">Riwayat</span>
+    <button class="btn" id="btnUndo">↩️ Urungkan</button>
+    <button class="btn" id="btnRedo">↪️ Ulangi</button>
+    <button class="btn bahaya" id="btnHapusPapan">🗑️ Hapus Papan</button>
+  </div>
+  <div class="grup">
+    <span class="label">Halaman</span>
+    <button class="btn" id="btnPrev">◀</button>
+    <span class="hal-info" id="halInfo">Halaman 1 dari 1</span>
+    <button class="btn" id="btnNext">▶</button>
+    <button class="btn" id="btnTambahHal">+ Halaman</button>
+    <button class="btn bahaya" id="btnHapusHal">🗑️ Hapus Halaman</button>
+  </div>
+  <div class="grup">
+    <button class="btn emas" id="btnPNG">⬇️ Simpan PNG</button>
+    <button class="btn" id="btnLayar">⛶ Layar Penuh</button>
+  </div>
+</div>
+
+<div id="panggung">
+  <canvas id="cvLatar"></canvas>
+  <canvas id="cvGambar"></canvas>
+  <textarea id="teksInput" rows="1" placeholder="Ketik teks, lalu tekan Enter"></textarea>
+</div>
+
+<footer>
+  <span>Coret bebas pakai jari, mouse, atau stylus — tersimpan otomatis di perangkat ini.</span>
+  <span>Rumah Belajar Mandiri Siswa AAAMAAT KEREN • SMP Negeri 1 Bantarkawung • Pengembang: Drs. Paiyo</span>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var cvL = document.getElementById("cvLatar"), cvG = document.getElementById("cvGambar");
+  var panggung = document.getElementById("panggung");
+  var ctxL = cvL.getContext("2d"), ctxG = cvG.getContext("2d");
+  var statusEl = document.getElementById("status");
+  var teksInput = document.getElementById("teksInput");
+
+  var alat = "pena", warna = "#1F2937", tebal = 4, latar = "kotak";
+  var halaman = [""], idx = 0;
+  var undoStack = [], redoStack = [];
+  var menggambar = false, titikAwal = null, titikAkhir = null, potretBentuk = null;
+  var titikTeks = null;
+
+  function setStatus(t) { statusEl.textContent = t; }
+  function dpr() { return Math.min(window.devicePixelRatio || 1, 2); }
+
+  /* ---------- Ukuran kanvas ---------- */
+  function sesuaikanUkuran(jagaIsi) {
+    var r = panggung.getBoundingClientRect(), d = dpr();
+    var potret = null;
+    if (jagaIsi && cvG.width > 0) { potret = document.createElement("canvas"); potret.width = cvG.width; potret.height = cvG.height; potret.getContext("2d").drawImage(cvG, 0, 0); }
+    [cvL, cvG].forEach(function (cv) { cv.width = Math.max(2, Math.round(r.width * d)); cv.height = Math.max(2, Math.round(r.height * d)); });
+    gambarLatar();
+    if (potret) ctxG.drawImage(potret, 0, 0, cvG.width, cvG.height);
+  }
+
+  /* ---------- Latar ---------- */
+  function gambarLatar() {
+    var w = cvL.width, h = cvL.height, d = dpr();
+    ctxL.save();
+    ctxL.clearRect(0, 0, w, h);
+    ctxL.fillStyle = "#FFFFFF"; ctxL.fillRect(0, 0, w, h);
+    var jarak = 28 * d;
+    if (latar === "kotak") {
+      ctxL.strokeStyle = "#DCE6F2"; ctxL.lineWidth = 1;
+      ctxL.beginPath();
+      for (var x = jarak; x < w; x += jarak) { ctxL.moveTo(x, 0); ctxL.lineTo(x, h); }
+      for (var y = jarak; y < h; y += jarak) { ctxL.moveTo(0, y); ctxL.lineTo(w, y); }
+      ctxL.stroke();
+    } else if (latar === "bergaris") {
+      var j2 = 36 * d;
+      ctxL.strokeStyle = "#DCE6F2"; ctxL.lineWidth = 1;
+      ctxL.beginPath();
+      for (var y2 = j2; y2 < h; y2 += j2) { ctxL.moveTo(0, y2); ctxL.lineTo(w, y2); }
+      ctxL.stroke();
+    } else if (latar === "titik") {
+      ctxL.fillStyle = "#C4D3E4";
+      for (var x2 = jarak; x2 < w; x2 += jarak) for (var y3 = jarak; y3 < h; y3 += jarak) {
+        ctxL.beginPath(); ctxL.arc(x2, y3, 1.6 * d, 0, Math.PI * 2); ctxL.fill();
+      }
+    }
+    ctxL.restore();
+  }
+
+  /* ---------- Riwayat (undo/redo) ---------- */
+  function potret() { return cvG.toDataURL("image/png"); }
+  function terapkanPotret(data, selesai) {
+    if (!data) { ctxG.clearRect(0, 0, cvG.width, cvG.height); if (selesai) selesai(); return; }
+    var img = new Image();
+    img.onload = function () { ctxG.clearRect(0, 0, cvG.width, cvG.height); ctxG.drawImage(img, 0, 0, cvG.width, cvG.height); if (selesai) selesai(); };
+    img.src = data;
+  }
+  function dorongUndo() {
+    undoStack.push(halaman[idx] || "");
+    if (undoStack.length > 40) undoStack.shift();
+    redoStack = [];
+    segarkanTombolRiwayat();
+  }
+  function segarkanTombolRiwayat() {
+    document.getElementById("btnUndo").disabled = undoStack.length === 0;
+    document.getElementById("btnRedo").disabled = redoStack.length === 0;
+  }
+  function commitCoretan() {
+    halaman[idx] = potret();
+    simpanOtomatis();
+  }
+
+  /* ---------- Simpan otomatis (localStorage) ---------- */
+  var timerSimpan = null;
+  function simpanOtomatis() {
+    clearTimeout(timerSimpan);
+    timerSimpan = setTimeout(function () {
+      try {
+        localStorage.setItem("papanTulisAAK", JSON.stringify({ halaman: halaman, idx: idx, latar: latar, warna: warna, tebal: tebal }));
+        setStatus("Tersimpan otomatis ✓");
+      } catch (e) {
+        setStatus("Penyimpanan perangkat penuh — ekspor PNG untuk cadangan ya.");
+      }
+    }, 350);
+  }
+  function muatTersimpan() {
+    try {
+      var s = JSON.parse(localStorage.getItem("papanTulisAAK") || "null");
+      if (s && s.halaman && s.halaman.length) {
+        halaman = s.halaman; idx = Math.min(s.idx || 0, halaman.length - 1);
+        latar = s.latar || "kotak"; warna = s.warna || "#1F2937"; tebal = s.tebal || 4;
+        document.getElementById("latar").value = latar;
+        document.getElementById("tebal").value = tebal;
+        document.getElementById("tebalInfo").textContent = tebal + " px";
+        document.getElementById("warnaBebas").value = warna;
+        document.querySelectorAll(".warna").forEach(function (b) { b.classList.toggle("aktif", b.getAttribute("data-warna") === warna); });
+      }
+    } catch (e) {}
+  }
+
+  /* ---------- Koordinat ---------- */
+  function posisi(e) {
+    var r = cvG.getBoundingClientRect();
+    return { x: (e.clientX - r.left) * (cvG.width / r.width), y: (e.clientY - r.top) * (cvG.height / r.height) };
+  }
+  function siapkanKuas() {
+    ctxG.lineCap = "round"; ctxG.lineJoin = "round";
+    ctxG.globalCompositeOperation = "source-over"; ctxG.globalAlpha = 1;
+    if (alat === "pena") { ctxG.strokeStyle = warna; ctxG.lineWidth = tebal * dpr(); }
+    else if (alat === "stabilo") { ctxG.strokeStyle = warna; ctxG.lineWidth = tebal * 3 * dpr(); ctxG.globalAlpha = 0.35; }
+    else if (alat === "penghapus") { ctxG.globalCompositeOperation = "destination-out"; ctxG.lineWidth = tebal * 3 * dpr(); }
+  }
+  function adalahBentuk(a) { return a === "garis" || a === "persegi" || a === "lingkaran" || a === "segitiga" || a === "panah"; }
+  function gambarBentuk(x1, y1, x2, y2) {
+    ctxG.save();
+    ctxG.strokeStyle = warna; ctxG.lineWidth = tebal * dpr(); ctxG.lineCap = "round"; ctxG.lineJoin = "round";
+    ctxG.beginPath();
+    if (alat === "garis") { ctxG.moveTo(x1, y1); ctxG.lineTo(x2, y2); }
+    else if (alat === "persegi") { ctxG.rect(Math.min(x1, x2), Math.min(y1, y2), Math.abs(x2 - x1), Math.abs(y2 - y1)); }
+    else if (alat === "lingkaran") { ctxG.ellipse((x1 + x2) / 2, (y1 + y2) / 2, Math.abs(x2 - x1) / 2, Math.abs(y2 - y1) / 2, 0, 0, Math.PI * 2); }
+    else if (alat === "segitiga") { ctxG.moveTo((x1 + x2) / 2, Math.min(y1, y2)); ctxG.lineTo(Math.min(x1, x2), Math.max(y1, y2)); ctxG.lineTo(Math.max(x1, x2), Math.max(y1, y2)); ctxG.closePath(); }
+    else if (alat === "panah") {
+      ctxG.moveTo(x1, y1); ctxG.lineTo(x2, y2);
+      var sudut = Math.atan2(y2 - y1, x2 - x1), p = Math.max(14 * dpr(), tebal * 3.2 * dpr());
+      ctxG.moveTo(x2, y2); ctxG.lineTo(x2 - p * Math.cos(sudut - 0.45), y2 - p * Math.sin(sudut - 0.45));
+      ctxG.moveTo(x2, y2); ctxG.lineTo(x2 - p * Math.cos(sudut + 0.45), y2 - p * Math.sin(sudut + 0.45));
+    }
+    ctxG.stroke();
+    ctxG.restore();
+  }
+
+  /* ---------- Peristiwa menggambar ---------- */
+  cvG.addEventListener("pointerdown", function (e) {
+    e.preventDefault();
+    cvG.setPointerCapture(e.pointerId);
+    var p = posisi(e);
+    if (alat === "teks") { bukaInputTeks(p, e); return; }
+    dorongUndo();
+    menggambar = true; titikAwal = p; titikAkhir = p;
+    if (adalahBentuk(alat)) {
+      potretBentuk = potret();
+    } else {
+      siapkanKuas();
+      ctxG.beginPath(); ctxG.moveTo(p.x, p.y); ctxG.lineTo(p.x + 0.01, p.y + 0.01); ctxG.stroke();
+    }
+  });
+  cvG.addEventListener("pointermove", function (e) {
+    if (!menggambar) return;
+    var p = posisi(e);
+    if (adalahBentuk(alat)) {
+      var img = new Image();
+      img.onload = function () {
+        ctxG.clearRect(0, 0, cvG.width, cvG.height);
+        ctxG.drawImage(img, 0, 0, cvG.width, cvG.height);
+        gambarBentuk(titikAwal.x, titikAwal.y, p.x, p.y);
+      };
+      img.src = potretBentuk;
+    } else {
+      ctxG.beginPath(); ctxG.moveTo(titikAkhir.x, titikAkhir.y); ctxG.lineTo(p.x, p.y); ctxG.stroke();
+    }
+    titikAkhir = p;
+  });
+  function akhiriGambar() {
+    if (!menggambar) return;
+    menggambar = false;
+    ctxG.globalAlpha = 1; ctxG.globalCompositeOperation = "source-over";
+    commitCoretan();
+  }
+  cvG.addEventListener("pointerup", akhiriGambar);
+  cvG.addEventListener("pointercancel", akhiriGambar);
+
+  /* ---------- Alat teks ---------- */
+  function bukaInputTeks(p, e) {
+    titikTeks = p;
+    var r = cvG.getBoundingClientRect(), pr = panggung.getBoundingClientRect();
+    var ukuran = Math.max(16, (10 + tebal * 2)) ;
+    teksInput.style.left = (r.left - pr.left + (p.x / cvG.width) * r.width) + "px";
+    teksInput.style.top = (r.top - pr.top + (p.y / cvG.height) * r.height) + "px";
+    teksInput.style.fontSize = ukuran + "px";
+    teksInput.style.color = warna;
+    teksInput.value = "";
+    teksInput.style.display = "block";
+    setTimeout(function () { teksInput.focus(); }, 20);
+  }
+  function tulisTeks() {
+    var isi = teksInput.value.replace(/\s+$/, "");
+    teksInput.style.display = "none";
+    if (!isi || !titikTeks) return;
+    dorongUndo();
+    var ukuranPx = Math.max(16, (10 + tebal * 2)) * dpr();
+    ctxG.save();
+    ctxG.fillStyle = warna;
+    ctxG.font = "700 " + ukuranPx + "px 'Segoe UI', sans-serif";
+    ctxG.textBaseline = "top";
+    isi.split("\n").forEach(function (baris, i) { ctxG.fillText(baris, titikTeks.x, titikTeks.y + i * ukuranPx * 1.25); });
+    ctxG.restore();
+    commitCoretan();
+  }
+  teksInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); tulisTeks(); }
+    if (e.key === "Escape") { teksInput.style.display = "none"; }
+    e.stopPropagation();
+  });
+  teksInput.addEventListener("pointerdown", function (e) { e.stopPropagation(); });
+
+  /* ---------- Toolbar ---------- */
+  document.querySelectorAll(".alat").forEach(function (b) {
+    b.addEventListener("click", function () {
+      alat = b.getAttribute("data-alat");
+      document.querySelectorAll(".alat").forEach(function (x) { x.classList.toggle("aktif", x === b); });
+      setStatus("Alat: " + b.textContent.trim());
+    });
+  });
+  document.querySelectorAll(".warna").forEach(function (b) {
+    b.addEventListener("click", function () {
+      warna = b.getAttribute("data-warna");
+      document.getElementById("warnaBebas").value = warna;
+      document.querySelectorAll(".warna").forEach(function (x) { x.classList.toggle("aktif", x === b); });
+      simpanOtomatis();
+    });
+  });
+  document.getElementById("warnaBebas").addEventListener("input", function (e) {
+    warna = e.target.value;
+    document.querySelectorAll(".warna").forEach(function (x) { x.classList.remove("aktif"); });
+    simpanOtomatis();
+  });
+  document.getElementById("tebal").addEventListener("input", function (e) {
+    tebal = parseInt(e.target.value, 10) || 4;
+    document.getElementById("tebalInfo").textContent = tebal + " px";
+    simpanOtomatis();
+  });
+  document.getElementById("latar").addEventListener("change", function (e) {
+    latar = e.target.value; gambarLatar(); simpanOtomatis();
+  });
+
+  /* ---------- Urungkan / Ulangi ---------- */
+  document.getElementById("btnUndo").addEventListener("click", function () {
+    if (!undoStack.length) return;
+    redoStack.push(halaman[idx] || "");
+    var sbl = undoStack.pop();
+    halaman[idx] = sbl;
+    terapkanPotret(sbl, function () { simpanOtomatis(); });
+    segarkanTombolRiwayat();
+  });
+  document.getElementById("btnRedo").addEventListener("click", function () {
+    if (!redoStack.length) return;
+    undoStack.push(halaman[idx] || "");
+    var ssd = redoStack.pop();
+    halaman[idx] = ssd;
+    terapkanPotret(ssd, function () { simpanOtomatis(); });
+    segarkanTombolRiwayat();
+  });
+  document.addEventListener("keydown", function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); (e.shiftKey ? document.getElementById("btnRedo") : document.getElementById("btnUndo")).click(); }
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "y") { e.preventDefault(); document.getElementById("btnRedo").click(); }
+  });
+
+  /* ---------- Hapus papan (dengan konfirmasi) ---------- */
+  document.getElementById("btnHapusPapan").addEventListener("click", function () {
+    if (!confirm("Hapus semua coretan di halaman ini? Masih bisa diurungkan setelahnya.")) return;
+    dorongUndo();
+    ctxG.clearRect(0, 0, cvG.width, cvG.height);
+    commitCoretan();
+    setStatus("Papan halaman " + (idx + 1) + " dibersihkan.");
+  });
+
+  /* ---------- Halaman ---------- */
+  function segarkanInfoHalaman() {
+    document.getElementById("halInfo").textContent = "Halaman " + (idx + 1) + " dari " + halaman.length;
+    document.getElementById("btnPrev").disabled = idx === 0;
+    document.getElementById("btnNext").disabled = idx === halaman.length - 1;
+  }
+  function pindahHalaman(tujuan) {
+    if (tujuan < 0 || tujuan >= halaman.length) return;
+    halaman[idx] = potret();
+    idx = tujuan;
+    undoStack = []; redoStack = []; segarkanTombolRiwayat();
+    terapkanPotret(halaman[idx], function () { segarkanInfoHalaman(); simpanOtomatis(); });
+    segarkanInfoHalaman();
+  }
+  document.getElementById("btnPrev").addEventListener("click", function () { pindahHalaman(idx - 1); });
+  document.getElementById("btnNext").addEventListener("click", function () { pindahHalaman(idx + 1); });
+  document.getElementById("btnTambahHal").addEventListener("click", function () {
+    halaman[idx] = potret();
+    halaman.push("");
+    idx = halaman.length - 1;
+    undoStack = []; redoStack = []; segarkanTombolRiwayat();
+    ctxG.clearRect(0, 0, cvG.width, cvG.height);
+    segarkanInfoHalaman(); simpanOtomatis();
+    setStatus("Halaman " + (idx + 1) + " baru dibuat.");
+  });
+  document.getElementById("btnHapusHal").addEventListener("click", function () {
+    if (halaman.length === 1) {
+      if (!confirm("Ini satu-satunya halaman. Isinya akan dibersihkan. Lanjutkan?")) return;
+      dorongUndo(); ctxG.clearRect(0, 0, cvG.width, cvG.height); commitCoretan(); return;
+    }
+    if (!confirm("Hapus halaman " + (idx + 1) + "? Tindakan ini tidak bisa diurungkan.")) return;
+    halaman.splice(idx, 1);
+    if (idx >= halaman.length) idx = halaman.length - 1;
+    undoStack = []; redoStack = []; segarkanTombolRiwayat();
+    terapkanPotret(halaman[idx], function () { segarkanInfoHalaman(); simpanOtomatis(); });
+    segarkanInfoHalaman();
+  });
+
+  /* ---------- Ekspor PNG ---------- */
+  document.getElementById("btnPNG").addEventListener("click", function () {
+    var gab = document.createElement("canvas");
+    gab.width = cvG.width; gab.height = cvG.height;
+    var g = gab.getContext("2d");
+    g.drawImage(cvL, 0, 0); g.drawImage(cvG, 0, 0);
+    var a = document.createElement("a");
+    a.download = "papan-tulis-aaamaat-keren-halaman-" + (idx + 1) + ".png";
+    a.href = gab.toDataURL("image/png");
+    a.click();
+    setStatus("PNG Halaman " + (idx + 1) + " diunduh.");
+  });
+
+  /* ---------- Layar penuh ---------- */
+  document.getElementById("btnLayar").addEventListener("click", function () {
+    if (document.fullscreenElement) document.exitFullscreen();
+    else document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
+  });
+  document.addEventListener("fullscreenchange", function () { setTimeout(function () { sesuaikanUkuran(true); }, 80); });
+
+  /* ---------- Mulai ---------- */
+  var tundaResize = null;
+  window.addEventListener("resize", function () {
+    clearTimeout(tundaResize);
+    tundaResize = setTimeout(function () { sesuaikanUkuran(true); }, 120);
+  });
+  muatTersimpan();
+  sesuaikanUkuran(false);
+  terapkanPotret(halaman[idx], function () {});
+  segarkanInfoHalaman();
+  segarkanTombolRiwayat();
+})();
+</script>
+</body>
+</html>
