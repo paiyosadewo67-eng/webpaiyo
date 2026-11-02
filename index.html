@@ -785,6 +785,17 @@
   }
   .share-melayang:hover { background: #178a45; color: #fff; }
   @media (min-width: 821px) { .share-melayang { bottom: 22px; } }
+
+  /* Perbaikan gulir modal di HP: kartu tidak boleh melebihi tinggi layar;
+     bila isinya panjang, kartu bisa digulir dari dalam. */
+  .akses-overlay { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  #modalAkses .akses-card { max-height: calc(100vh - 2.2rem); max-height: calc(100dvh - 2.2rem); overflow-y: auto; }
+  #modalTamu .akses-card {
+    width: min(430px, 100%); text-align: left;
+    max-height: calc(100vh - 2.2rem); max-height: calc(100dvh - 2.2rem);
+    overflow-y: auto; -webkit-overflow-scrolling: touch;
+  }
+  #modalTamu .akses-card h3, #modalTamu .akses-card > p { text-align: center; }
 </style>
 </head>
   <body>
