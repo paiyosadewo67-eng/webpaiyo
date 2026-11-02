@@ -747,7 +747,46 @@
       .kontak-ajakan h3 { font-family: "Plus Jakarta Sans", sans-serif; font-size: 1.08rem; margin-bottom: .4rem; }
       .kontak-ajakan p { font-size: .93rem; color: var(--muted); max-width: 46rem; }
     </style>
-  </head>
+  <style>
+  /* ---------- Buku Kunjungan (F-20) & Share WA ---------- */
+  .btn-wa { background: #1FA855; color: #fff; border: none; }
+  .btn-wa:hover { background: #178a45; color: #fff; }
+  .bk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; align-items: start; }
+  @media (max-width: 900px) { .bk-grid { grid-template-columns: 1fr; } }
+  .bk-card { background: #fff; border: 1px solid #e6ecf2; border-top: 5px solid #0E7490; border-radius: 16px; padding: 1.35rem; box-shadow: 0 10px 26px rgba(15, 42, 67, .07); }
+  .bk-card h3 { font-family: "Plus Jakarta Sans", sans-serif; font-size: 1.12rem; margin-bottom: .9rem; }
+  .bk-form label { display: block; font-size: .83rem; font-weight: 700; letter-spacing: .03em; margin: .75rem 0 .35rem; }
+  .bk-form input, .bk-form select, .bk-form textarea {
+    width: 100%; font: inherit; font-size: .95rem; padding: .68rem .8rem;
+    border: 1.5px solid #d3dde6; border-radius: 10px; background: #fbfdff; color: var(--ink);
+  }
+  .bk-form input:focus, .bk-form select:focus, .bk-form textarea:focus { outline: 2.5px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
+  .bk-form input:disabled, .bk-form select:disabled { background: #eef2f6; color: #94a3b8; }
+  .bk-duo { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+  .bk-kirim { width: 100%; justify-content: center; margin-top: 1.05rem; cursor: pointer; font-family: inherit; border: none; }
+  .bk-status { margin-top: .85rem; font-weight: 700; color: #15803d; font-size: .94rem; }
+  .bk-err { color: #dc2626; font-weight: 700; font-size: .9rem; margin-top: .5rem; }
+  .bk-mut { color: var(--muted); font-size: .92rem; }
+  .tamu-list { display: flex; flex-direction: column; gap: .7rem; max-height: 440px; overflow: auto; padding-right: .2rem; }
+  .tamu-item { border: 1px solid #e8edf2; border-left: 4px solid #0E7490; border-radius: 10px; padding: .7rem .9rem; background: #fbfdff; }
+  .tamu-item .nm { font-weight: 800; }
+  .tamu-item .mt { font-size: .79rem; color: var(--muted); margin-top: .15rem; }
+  .tamu-item .ks { font-size: .93rem; margin-top: .35rem; white-space: pre-wrap; line-height: 1.5; }
+  .badge-peran { display: inline-block; background: #e0f2fe; color: #075985; border-radius: 999px; padding: .08rem .55rem; font-size: .7rem; font-weight: 800; letter-spacing: .04em; vertical-align: 2px; }
+  .badge-peran.guru { background: #fef3c7; color: #92400e; }
+  .bk-tabel-scroll { overflow: auto; max-height: 430px; margin-top: .7rem; border: 1px solid #e6ecf2; border-radius: 10px; }
+  .bk-tabel { width: 100%; border-collapse: collapse; font-size: .84rem; min-width: 560px; }
+  .bk-tabel th, .bk-tabel td { border-bottom: 1px solid #edf1f5; padding: .45rem .55rem; text-align: left; vertical-align: top; }
+  .bk-tabel th { background: #f1f5f9; position: sticky; top: 0; }
+  .share-melayang {
+    position: fixed; right: 16px; bottom: 88px; z-index: 60; background: #1FA855; color: #fff;
+    font-weight: 800; font-size: .92rem; padding: .72rem 1.1rem; border-radius: 999px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.3); text-decoration: none; display: inline-flex; align-items: center; gap: .45rem;
+  }
+  .share-melayang:hover { background: #178a45; color: #fff; }
+  @media (min-width: 821px) { .share-melayang { bottom: 22px; } }
+</style>
+</head>
   <body>
     <!-- ================= NAVIGASI ================= -->
     <header class="nav">
@@ -800,11 +839,12 @@
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
             <a class="btn btn-ghost" href="profil-guru-drs-paiyo/">Profil Guru — Drs. Paiyo</a>
+            <a class="btn btn-wa" href="https://wa.me/?text=Yuk%20belajar%20matematika%20di%20Rumah%20Belajar%20Mandiri%20Siswa%20AAAMAAT%20KEREN%20%F0%9F%93%9A%20Kelas%20VII%E2%80%93IX%3A%20video%20pembelajaran%2C%20LKPD%2C%20game%20edukasi%2C%20kuis%2C%20dan%20simulasi%20%E2%80%94%20gratis%21%20Kunjungi%3A%20https%3A//paiyosadewo67-eng.github.io/webpaiyo/" target="_blank" rel="noopener">📤 Bagikan via WhatsApp</a>
           </div>
           <div class="hero-stats">
             <div><b>3</b><span>Kelas · VII–IX</span></div>
             <div><b>18</b><span>Bab Disiapkan</span></div>
-            <div><b>19</b><span>Menu &amp; Fitur</span></div>
+            <div><b>20</b><span>Menu &amp; Fitur</span></div>
             <div><b>5</b><span>Pilar KEREN</span></div>
           </div>
         </div>
@@ -1319,6 +1359,77 @@
 
     </div><!-- /halaman kontak -->
 
+    <!-- ================= BUKU KUNJUNGAN (F-20) ================= -->
+    <div class="halaman" id="hal-buku-kunjungan" data-halaman="buku-kunjungan">
+      <section id="buku-kunjungan-detail">
+        <div class="wrap">
+          <a class="btn-kembali" href="#beranda">← Kembali ke Beranda</a>
+          <div class="sec-head" style="margin-top:1.8rem">
+            <span class="kicker">Buku Kunjungan</span>
+            <h2>Selamat Datang di Rumah Belajar AAAMAAT KEREN</h2>
+            <p>Sudah <b id="bkTotal">…</b> tamu menulis di buku kunjungan ini. Silakan tulis nama dan kesan-pesanmu — Pak Paiyo ingin tahu siapa saja yang sudah berkunjung dan belajar di sini. Melihat-lihat semua fitur tetap bebas, buku kunjungan ini cukup diisi sekali saja.</p>
+          </div>
+          <div class="bk-grid">
+            <article class="bk-card">
+              <h3>✍️ Isi Buku Kunjungan</h3>
+              <form class="bk-form" id="bkForm">
+                <label for="bkNama">Nama Lengkap *</label>
+                <input id="bkNama" type="text" maxlength="60" placeholder="Tulis namamu" autocomplete="name" required />
+                <label for="bkPeran">Saya seorang *</label>
+                <select id="bkPeran">
+                  <option value="siswa">Siswa</option>
+                  <option value="guru">Guru</option>
+                </select>
+                <div class="bk-duo">
+                  <div>
+                    <label for="bkAbsen">No. Absen (siswa)</label>
+                    <input id="bkAbsen" type="number" min="0" max="99" placeholder="mis. 12" />
+                  </div>
+                  <div>
+                    <label for="bkKelas">Kelas (siswa)</label>
+                    <input id="bkKelas" type="text" maxlength="12" placeholder="mis. 9B" list="bkDaftarKelas" />
+                    <datalist id="bkDaftarKelas">
+                      <option value="VII"></option><option value="VIII"></option><option value="IX"></option>
+                      <option value="9A"></option><option value="9B"></option><option value="9C"></option>
+                      <option value="9D"></option><option value="9E"></option>
+                    </datalist>
+                  </div>
+                </div>
+                <label for="bkSekolah" id="bkLabelSekolah">Sekolah *</label>
+                <input id="bkSekolah" type="text" maxlength="80" placeholder="mis. SMP Negeri 1 Bantarkawung" required />
+                <label for="bkKesan">Kesan &amp; Pesan *</label>
+                <textarea id="bkKesan" rows="4" maxlength="500" placeholder="Tulis kesan dan pesanmu untuk Pak Paiyo dan teman-teman…" required></textarea>
+                <button type="submit" class="btn btn-gold bk-kirim" id="bkKirim">✍️ Tulis di Buku Kunjungan</button>
+                <p class="bk-status" id="bkStatus" hidden></p>
+                <p class="bk-err" id="bkErr" hidden></p>
+              </form>
+            </article>
+            <article class="bk-card">
+              <h3>💌 Kesan &amp; Pesan Pengunjung</h3>
+              <div class="tamu-list" id="bkDinding"><p class="bk-mut">Sedang memuat kesan pengunjung…</p></div>
+              <div style="margin-top:1rem; display:flex; gap:.6rem; flex-wrap:wrap;">
+                <a class="btn btn-wa" href="https://wa.me/?text=Yuk%20belajar%20matematika%20di%20Rumah%20Belajar%20Mandiri%20Siswa%20AAAMAAT%20KEREN%20%F0%9F%93%9A%20Kelas%20VII%E2%80%93IX%3A%20video%20pembelajaran%2C%20LKPD%2C%20game%20edukasi%2C%20kuis%2C%20dan%20simulasi%20%E2%80%94%20gratis%21%20Kunjungi%3A%20https%3A//paiyosadewo67-eng.github.io/webpaiyo/" target="_blank" rel="noopener">📤 Bagikan via WhatsApp</a>
+                <button type="button" class="btn" id="bkPanelBtn" style="cursor:pointer; font-family:inherit;">🔐 Panel Guru</button>
+              </div>
+              <div id="bkPanel" hidden>
+                <form class="bk-form" id="bkSandiForm">
+                  <label for="bkSandi">Kode Khusus Guru — daftar semua kunjungan</label>
+                  <input id="bkSandi" type="password" placeholder="Masukkan kode khusus guru" autocomplete="off" />
+                  <p class="bk-err" id="bkSandiErr" hidden>Kode salah, silakan coba lagi.</p>
+                  <button type="submit" class="btn btn-gold bk-kirim">Buka Daftar Kunjungan</button>
+                </form>
+                <div id="bkTabelWrap" hidden>
+                  <p class="bk-mut" id="bkTabelInfo" style="margin-top:1rem;"></p>
+                  <div class="bk-tabel-scroll"><table class="bk-tabel" id="bkTabel"></table></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div><!-- /halaman buku kunjungan -->
+
+
     <!-- ================= FOOTER ================= -->
     <footer>
       <div class="wrap">
@@ -1395,6 +1506,47 @@
           <div class="akses-btns">
             <button type="button" class="btn akses-batal" id="aksesBatal">Batal</button>
             <button type="submit" class="btn btn-gold">Buka Prompt</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Tombol bagikan melayang (Share WA) -->
+    <a class="share-melayang" href="https://wa.me/?text=Yuk%20belajar%20matematika%20di%20Rumah%20Belajar%20Mandiri%20Siswa%20AAAMAAT%20KEREN%20%F0%9F%93%9A%20Kelas%20VII%E2%80%93IX%3A%20video%20pembelajaran%2C%20LKPD%2C%20game%20edukasi%2C%20kuis%2C%20dan%20simulasi%20%E2%80%94%20gratis%21%20Kunjungi%3A%20https%3A//paiyosadewo67-eng.github.io/webpaiyo/" target="_blank" rel="noopener" aria-label="Bagikan portal AAAMAAT KEREN via WhatsApp">📤 Bagikan</a>
+
+    <!-- Modal ajakan mengisi Buku Kunjungan saat pertama masuk fitur -->
+    <div class="akses-overlay" id="modalTamu" hidden>
+      <div class="akses-card" role="dialog" aria-modal="true" aria-labelledby="tamuJudul">
+        <span class="akses-ic" aria-hidden="true">📖</span>
+        <h3 id="tamuJudul">Isi Buku Kunjungan Dulu Yuk</h3>
+        <p>Sebelum masuk ke fitur, kenalan dulu dengan Pak Paiyo lewat buku kunjungan: tulis nama, kelas, sekolah, dan kesanmu. Cukup sekali saja — setelah ini bebas melihat-lihat semua fitur.</p>
+        <form class="akses-form bk-form" id="tamuForm">
+          <label for="tamuNama">Nama Lengkap *</label>
+          <input id="tamuNama" type="text" maxlength="60" placeholder="Tulis namamu" required />
+          <label for="tamuPeran">Saya seorang *</label>
+          <select id="tamuPeran">
+            <option value="siswa">Siswa</option>
+            <option value="guru">Guru</option>
+          </select>
+          <div class="bk-duo">
+            <div>
+              <label for="tamuAbsen">No. Absen</label>
+              <input id="tamuAbsen" type="number" min="0" max="99" placeholder="mis. 12" />
+            </div>
+            <div>
+              <label for="tamuKelas">Kelas</label>
+              <input id="tamuKelas" type="text" maxlength="12" placeholder="mis. 9B" />
+            </div>
+          </div>
+          <label for="tamuSekolah" id="tamuLabelSekolah">Sekolah *</label>
+          <input id="tamuSekolah" type="text" maxlength="80" placeholder="mis. SMP Negeri 1 Bantarkawung" required />
+          <label for="tamuKesan">Kesan &amp; Pesan</label>
+          <textarea id="tamuKesan" rows="2" maxlength="500" placeholder="Boleh singkat saja…"></textarea>
+          <p class="bk-err" id="tamuErr" hidden></p>
+          <div class="akses-btns">
+            <button type="button" class="btn akses-batal" id="tamuLewati">Lewati Dulu</button>
+            <button type="submit" class="btn btn-gold" id="tamuKirim">Kirim &amp; Masuk</button>
           </div>
         </form>
       </div>
@@ -1498,7 +1650,8 @@
           { id: "F-19", nama: "Masjid Al-Hikmah Buaran", ikon: "hati", warna: "#0E7A5F",        url: "https://drive.google.com/drive/folders/1WnDH1tJ8Vw3G5is8Y-eJ68zmOwfEJfHm?usp=sharing", status: "aktif",  deskripsi: "Ruang Takmir Masjid Al-Hikmah Buaran — arsip Buku Kas Umum dan dokumen bendahara takmir masjid lingkungan rumah Drs. Paiyo. Kelompok di dalamnya khusus dan terkunci kata sandi tersendiri.",
             sumber: [
               { judul: "Arsip Takmir & Buku Kas", emoji: "🕌", dari: "eksternal", grup: "masjid" }
-            ] }
+            ] },
+          { id: "F-20", nama: "Buku Kunjungan", ikon: "buku", warna: "#0E7490", url: "#buku-kunjungan", status: "aktif", deskripsi: "Buku tamu portal AAAMAAT KEREN — tulis nama, no. absen, kelas, sekolah, dan kesan-pesanmu. Pak Paiyo ingin tahu siapa saja yang sudah berkunjung dan belajar di sini." }
         ],
         bab: [
           /* ---------- KELAS VII ---------- */
@@ -3205,7 +3358,7 @@
         });
 
         /* ---------- Ruter halaman (hash) ---------- */
-        var RUTE = ["beranda", "kelas-vii", "kelas-viii", "kelas-ix", "materi", "video", "lkpd", "latihan-soal", "kontak"];
+        var RUTE = ["beranda", "kelas-vii", "kelas-viii", "kelas-ix", "materi", "video", "lkpd", "latihan-soal", "kontak", "buku-kunjungan"];
         var halamanEls = document.querySelectorAll(".halaman");
         function terapkanRute() {
           var h = (location.hash || "").replace(/^#/, "");
@@ -3396,5 +3549,203 @@
         segarkanProgres();
       })();
     </script>
+
+    <script>
+      /* ============================================================
+         BUKU KUNJUNGAN (F-20) — AAAMAAT KEREN
+         Kunjungan tersimpan ke Supabase yang sama dengan aplikasi
+         asesmen Pak Paiyo (tabel hasil_asesmen, asesmen
+         "BUKU KUNJUNGAN", status "TAMU"). Dinding kesan tampil
+         terbuka; daftar lengkap hanya untuk guru (kode khusus
+         portal — hash yang sama dengan gerbang Prompt, HASH_KHUSUS).
+         Ajakan mengisi muncul SATU KALI saat pengunjung pertama
+         kali masuk salah satu fitur dari kartu menu (localStorage
+         "aaamatTamu"); melihat-lihat tetap bebas, boleh dilewati.
+         ============================================================ */
+      (function bukuKunjungan() {
+        var SB_URL = "https://vovjeijhxnehhtxjqtkm.supabase.co/rest/v1/hasil_asesmen";
+        var SB_KEY = "sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV";
+        var HASH_GURU = "fa864c89fd4730323d445a16b806ba536622dc1e6d577288ed782cfea0ad333b";
+        var LS_TAMU = "aaamatTamu";
+        var KEPALA = { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY, "Content-Type": "application/json" };
+
+        function el(id) { return document.getElementById(id); }
+        function escBk(s) {
+          return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+            return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+          });
+        }
+        function hariIni() {
+          var d = new Date(), m = String(d.getMonth() + 1).padStart(2, "0"), t = String(d.getDate()).padStart(2, "0");
+          return d.getFullYear() + "-" + m + "-" + t;
+        }
+        function kodeKun() { return "KUNJ-" + Math.random().toString(36).slice(2, 8).toUpperCase(); }
+        function bangunPayload(f) {
+          var guru = f.peran === "guru";
+          return {
+            nama: f.nama, kelas: guru ? "-" : (f.kelas || "-"),
+            absen: guru ? 0 : (parseInt(f.absen, 10) || 0), no_absen: guru ? 0 : (parseInt(f.absen, 10) || 0),
+            nilai: 0, status: "TAMU", kode_verifikasi: kodeKun(), tanggal: hariIni(),
+            jenjang: "SMP", bab: "PORTAL", asesmen: "BUKU KUNJUNGAN", jumlah_soal: 0,
+            jawaban: { peran: f.peran, sekolah: f.sekolah || "", kesan: f.kesan || "" }, durasi_detik: 0
+          };
+        }
+        function kirimKunjungan(f) {
+          return fetch(SB_URL, { method: "POST", headers: KEPALA, body: JSON.stringify(bangunPayload(f)) })
+            .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); });
+        }
+        function ambilKunjungan() {
+          var q = "?asesmen=eq.BUKU%20KUNJUNGAN&select=nama,kelas,absen,tanggal,jawaban,created_at&order=created_at.desc&limit=300";
+          return fetch(SB_URL + q, { headers: { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY } })
+            .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+            .then(function (rows) { return rows.filter(function (x) { return !/^TES/i.test(x.nama || ""); }); });
+        }
+        function tandaiSudah() { try { localStorage.setItem(LS_TAMU, "1"); } catch (e) {} }
+        function sudahIsi() { try { return !!localStorage.getItem(LS_TAMU); } catch (e) { return false; } }
+        function pasangPeran(sel, absen, kelas, labelSekolah) {
+          function segar() {
+            var guru = sel.value === "guru";
+            if (absen) absen.disabled = guru;
+            if (kelas) kelas.disabled = guru;
+            if (labelSekolah) labelSekolah.textContent = guru ? "SMP Tempat Mengajar *" : "Sekolah *";
+          }
+          sel.addEventListener("change", segar); segar();
+        }
+        function bacaForm(prefix) {
+          return {
+            nama: el(prefix + "Nama").value.trim(),
+            peran: el(prefix + "Peran").value,
+            absen: el(prefix + "Absen").value,
+            kelas: el(prefix + "Kelas").value.trim(),
+            sekolah: el(prefix + "Sekolah").value.trim(),
+            kesan: el(prefix + "Kesan").value.trim()
+          };
+        }
+
+        /* ---------- Dinding kesan & hitungan ---------- */
+        var dinding = el("bkDinding"), totalEl = el("bkTotal");
+        function muatDinding() {
+          if (!dinding) return;
+          ambilKunjungan().then(function (rows) {
+            if (totalEl) totalEl.textContent = rows.length;
+            if (!rows.length) { dinding.innerHTML = '<p class="bk-mut">Belum ada kesan. Jadilah yang pertama menulis di buku kunjungan ini!</p>'; return; }
+            dinding.innerHTML = rows.slice(0, 12).map(function (x) {
+              var j = x.jawaban || {}, guru = j.peran === "guru";
+              var meta = guru ? (j.sekolah || "") : ((x.kelas && x.kelas !== "-" ? "Kelas " + x.kelas + " · " : "") + (j.sekolah || ""));
+              return '<div class="tamu-item"><span class="nm">' + escBk(x.nama) + '</span> ' +
+                '<span class="badge-peran' + (guru ? " guru" : "") + '">' + (guru ? "Guru" : "Siswa") + "</span>" +
+                '<div class="mt">' + escBk(meta) + (x.tanggal ? " · " + escBk(x.tanggal) : "") + "</div>" +
+                '<p class="ks">' + escBk(j.kesan || "") + "</p></div>";
+            }).join("");
+          }).catch(function () {
+            dinding.innerHTML = '<p class="bk-mut">Daftar kesan belum bisa dimuat saat ini. Silakan coba lagi nanti.</p>';
+          });
+        }
+        muatDinding();
+
+        /* ---------- Formulir di halaman Buku Kunjungan ---------- */
+        var form = el("bkForm");
+        if (form) {
+          pasangPeran(el("bkPeran"), el("bkAbsen"), el("bkKelas"), el("bkLabelSekolah"));
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var f = bacaForm("bk"), err = el("bkErr"), ok = el("bkStatus"), btn = el("bkKirim");
+            err.hidden = true; ok.hidden = true;
+            if (!f.nama || !f.sekolah || !f.kesan) { err.textContent = "Nama, sekolah, dan kesan & pesan wajib diisi ya."; err.hidden = false; return; }
+            btn.disabled = true; btn.textContent = "Sedang menyimpan…";
+            kirimKunjungan(f).then(function () {
+              tandaiSudah();
+              ok.textContent = "Terima kasih, " + f.nama + "! Kesanmu sudah tercatat di Buku Kunjungan. Selamat belajar di AAAMAAT KEREN.";
+              ok.hidden = false; form.reset();
+              pasangPeran(el("bkPeran"), el("bkAbsen"), el("bkKelas"), el("bkLabelSekolah"));
+              muatDinding();
+            }).catch(function () {
+              err.textContent = "Maaf, kesanmu belum tersimpan. Periksa koneksi internet lalu coba lagi ya.";
+              err.hidden = false;
+            }).finally(function () { btn.disabled = false; btn.textContent = "✍️ Tulis di Buku Kunjungan"; });
+          });
+        }
+
+        /* ---------- Panel guru: daftar lengkap ---------- */
+        var panelBtn = el("bkPanelBtn"), panel = el("bkPanel");
+        if (panelBtn && panel) {
+          panelBtn.addEventListener("click", function () { panel.hidden = !panel.hidden; if (!panel.hidden) el("bkSandi").focus(); });
+          el("bkSandiForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var v = el("bkSandi").value.trim(), err = el("bkSandiErr");
+            err.hidden = true;
+            var selesai = function (hex) {
+              if (hex !== HASH_GURU) { err.hidden = false; return; }
+              el("bkSandiForm").hidden = true;
+              var wrap = el("bkTabelWrap"); wrap.hidden = false;
+              el("bkTabelInfo").textContent = "Sedang memuat daftar kunjungan…";
+              ambilKunjungan().then(function (rows) {
+                el("bkTabelInfo").textContent = "Total " + rows.length + " kunjungan tercatat (terbaru di atas).";
+                var h = "<tr><th>Tanggal</th><th>Nama</th><th>Peran</th><th>Kelas</th><th>Absen</th><th>Sekolah</th><th>Kesan &amp; Pesan</th></tr>";
+                rows.forEach(function (x) {
+                  var j = x.jawaban || {};
+                  h += "<tr><td>" + escBk(x.tanggal || "") + "</td><td>" + escBk(x.nama) + "</td><td>" + (j.peran === "guru" ? "Guru" : "Siswa") + "</td><td>" + escBk(x.kelas || "-") + "</td><td>" + (x.absen ? x.absen : "-") + "</td><td>" + escBk(j.sekolah || "") + "</td><td>" + escBk(j.kesan || "") + "</td></tr>";
+                });
+                el("bkTabel").innerHTML = h;
+              }).catch(function () { el("bkTabelInfo").textContent = "Daftar kunjungan belum bisa dimuat. Coba lagi nanti."; });
+            };
+            if (window.crypto && crypto.subtle && crypto.subtle.digest) {
+              crypto.subtle.digest("SHA-256", new TextEncoder().encode(v)).then(function (buf) {
+                var hex = Array.prototype.map.call(new Uint8Array(buf), function (b) { return b.toString(16).padStart(2, "0"); }).join("");
+                selesai(hex);
+              }).catch(function () { err.hidden = false; });
+            } else { err.hidden = false; }
+          });
+        }
+
+        /* ---------- Ajakan sekali saat pertama masuk fitur ---------- */
+        var modal = el("modalTamu"), pending = null, diteruskan = false;
+        if (modal) {
+          pasangPeran(el("tamuPeran"), el("tamuAbsen"), el("tamuKelas"), el("tamuLabelSekolah"));
+          function bukaModal() { modal.hidden = false; document.body.style.overflow = "hidden"; setTimeout(function () { el("tamuNama").focus(); }, 30); }
+          function tutupModal() {
+            modal.hidden = true; document.body.style.overflow = "";
+            if (pending) { var p = pending; pending = null; p(); }
+          }
+          document.addEventListener("click", function (e) {
+            if (diteruskan || sudahIsi()) return;
+            if (e.target.closest("#modalTamu") || e.target.closest("#modalAkses")) return;
+            if (location.hash.indexOf("buku-kunjungan") >= 0) return;
+            var tgl = e.target.closest(".bab-toggle");
+            var kartu = e.target.closest(".menu-card");
+            if (!tgl && !kartu) return;
+            e.preventDefault(); e.stopPropagation();
+            if (tgl) {
+              pending = function () { diteruskan = true; tgl.click(); };
+            } else if (kartu && kartu.tagName === "A") {
+              var href = kartu.getAttribute("href");
+              pending = function () { if (href) location.href = href; };
+            } else if (kartu) {
+              var b2 = kartu.querySelector(".bab-toggle");
+              if (!b2) return;
+              pending = function () { diteruskan = true; b2.click(); };
+            } else return;
+            bukaModal();
+          }, true);
+          el("tamuLewati").addEventListener("click", function () { tandaiSudah(); tutupModal(); });
+          el("tamuForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var f = bacaForm("tamu"), err = el("tamuErr"), btn = el("tamuKirim");
+            err.hidden = true;
+            if (!f.nama || !f.sekolah) { err.textContent = "Nama dan sekolah wajib diisi ya."; err.hidden = false; return; }
+            btn.disabled = true; btn.textContent = "Menyimpan…";
+            kirimKunjungan(f).then(function () {
+              tandaiSudah(); btn.disabled = false; btn.textContent = "Kirim & Masuk";
+              muatDinding(); tutupModal();
+            }).catch(function () {
+              btn.disabled = false; btn.textContent = "Kirim & Masuk";
+              err.textContent = "Belum tersimpan — periksa koneksi, atau pilih Lewati Dulu untuk tetap masuk.";
+              err.hidden = false;
+            });
+          });
+        }
+      })();
+    </script>
+
   </body>
 </html>
