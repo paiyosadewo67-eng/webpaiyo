@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulasi Hologram Ruang Sampel — Peluang Kelas IX</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", system-ui, Arial, sans-serif;
+    background: radial-gradient(1200px 700px at 50% -10%, #0b3552 0%, #061a2c 55%, #030d18 100%);
+    color: #e8f6ff; min-height: 100vh; padding: 18px 14px 40px;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 14px; }
+  header .label { color: #f5c451; letter-spacing: 3px; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+  header h1 {
+    font-size: clamp(24px, 4.5vw, 40px); line-height: 1.15; margin: 6px 0 4px;
+    color: #aee9ff; text-shadow: 0 0 18px rgba(34,211,238,.65), 0 0 42px rgba(34,211,238,.3);
+  }
+  header p { color: #bcd9ea; font-size: clamp(13px, 2vw, 16px); }
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 16px 0; }
+  .tab {
+    border: 1px solid rgba(34,211,238,.55); background: rgba(8,47,73,.65); color: #cffafe;
+    padding: 10px 16px; border-radius: 999px; font-size: 15px; font-weight: 700; cursor: pointer;
+    transition: all .15s ease;
+  }
+  .tab:hover { box-shadow: 0 0 14px rgba(34,211,238,.45); }
+  .tab.aktif { background: #0e7490; color: #fff; box-shadow: 0 0 18px rgba(34,211,238,.6); border-color: #67e8f9; }
+  .grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 16px; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+  .panel {
+    background: linear-gradient(180deg, rgba(10,52,82,.72), rgba(4,24,42,.85));
+    border: 1px solid rgba(103,232,249,.35); border-radius: 18px; padding: 18px;
+    box-shadow: inset 0 0 34px rgba(34,211,238,.07), 0 10px 30px rgba(0,0,0,.35);
+  }
+  .panel h2 { font-size: 18px; color: #7dd3fc; margin-bottom: 10px; letter-spacing: .4px; }
+  /* Panggung hologram */
+  .panggung {
+    position: relative; min-height: 250px; border-radius: 14px; overflow: hidden;
+    background:
+      radial-gradient(ellipse 70% 42% at 50% 88%, rgba(34,211,238,.35), transparent 70%),
+      linear-gradient(180deg, rgba(2,12,22,.4), rgba(2,12,22,.75));
+    border: 1px solid rgba(103,232,249,.25);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 22px 10px 16px;
+  }
+  .panggung::after {
+    content: ""; position: absolute; left: 6%; right: 6%; bottom: 14px; height: 54px;
+    background:
+      repeating-linear-gradient(90deg, rgba(103,232,249,.28) 0 1px, transparent 1px 44px),
+      repeating-linear-gradient(0deg, rgba(103,232,249,.28) 0 1px, transparent 1px 12px);
+    transform: perspective(240px) rotateX(58deg); transform-origin: bottom; border-radius: 50%;
+    pointer-events: none;
+  }
+  .alat { display: flex; gap: 26px; align-items: center; justify-content: center; flex-wrap: wrap; z-index: 2; min-height: 128px; }
+  /* Koin */
+  .koin {
+    width: 118px; height: 118px; border-radius: 50%; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; font-weight: 800; color: #713f12;
+    background: radial-gradient(circle at 32% 30%, #fde68a, #f59e0b 58%, #b45309);
+    border: 5px dashed rgba(120,53,15,.55); box-shadow: 0 0 26px rgba(245,197,66,.55), inset 0 0 18px rgba(120,53,15,.35);
+    text-shadow: 0 1px 0 rgba(255,255,255,.4);
+  }
+  .koin .besar { font-size: 44px; line-height: 1; }
+  .koin .kecil { font-size: 13px; letter-spacing: 2px; }
+  .koin.berputar { animation: putarKoin .75s ease-in-out; }
+  @keyframes putarKoin { 0% { transform: rotateY(0) scale(1);} 45% { transform: rotateY(720deg) scale(1.12);} 100% { transform: rotateY(1440deg) scale(1);} }
+  /* Dadu */
+  .dadu {
+    width: 112px; height: 112px; background: linear-gradient(145deg, #ffffff, #dbeafe);
+    border-radius: 20px; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);
+    padding: 14px; gap: 2px; box-shadow: 0 0 24px rgba(147,197,253,.65), inset 0 0 12px rgba(30,64,175,.25);
+  }
+  .dadu i { display: flex; align-items: center; justify-content: center; }
+  .dadu i::before { content: ""; width: 19px; height: 19px; border-radius: 50%; background: transparent; }
+  .dadu i.on::before { background: #1e3a8a; box-shadow: inset 0 2px 3px rgba(0,0,0,.4); }
+  .dadu.berputar { animation: kocok .6s ease-in-out; }
+  @keyframes kocok { 0%{transform:rotate(0) translate(0,0);} 25%{transform:rotate(-14deg) translate(-7px,-9px);} 55%{transform:rotate(11deg) translate(8px,-4px);} 80%{transform:rotate(-6deg) translate(-4px,3px);} 100%{transform:rotate(0) translate(0,0);} }
+  /* Kartu */
+  .kartu {
+    width: 118px; height: 164px; border-radius: 12px; background: linear-gradient(150deg, #ffffff, #e2e8f0);
+    color: #0f172a; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    box-shadow: 0 0 24px rgba(147,197,253,.6); border: 2px solid #cbd5e1; position: relative;
+  }
+  .kartu .rank { font-size: 46px; font-weight: 800; line-height: 1; }
+  .kartu .suit { font-size: 44px; line-height: 1.05; }
+  .kartu .nama { font-size: 12px; font-weight: 700; letter-spacing: 1px; margin-top: 4px; color: #334155; }
+  .kartu.merah { color: #b91c1c; } .kartu.merah .nama { color: #b91c1c; }
+  .kartu.balik { background: repeating-linear-gradient(45deg, #0e7490 0 10px, #155e75 10px 20px); border-color: #67e8f9; }
+  .kartu.berputar { animation: putarKartu .6s ease-in-out; }
+  @keyframes putarKartu { 0%{transform:rotateY(0);} 50%{transform:rotateY(90deg) scale(1.06);} 100%{transform:rotateY(0);} }
+  .hasil { z-index: 2; text-align: center; }
+  .hasil .judul { font-size: 13px; letter-spacing: 2px; color: #93c5fd; text-transform: uppercase; }
+  .hasil .isi { font-size: clamp(20px, 3.4vw, 28px); font-weight: 800; color: #fef9c3; text-shadow: 0 0 14px rgba(245,197,66,.5); min-height: 34px; }
+  .tombol { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 14px; }
+  button.aksi {
+    border: none; cursor: pointer; font-weight: 800; font-size: 16px; border-radius: 12px; padding: 13px 22px;
+    background: linear-gradient(180deg, #fbbf24, #d97706); color: #451a03; box-shadow: 0 6px 18px rgba(217,119,6,.45);
+  }
+  button.aksi:hover { filter: brightness(1.07); }
+  button.aksi:disabled { opacity: .55; cursor: wait; }
+  button.kedua {
+    background: rgba(8,47,73,.8); color: #a5f3fc; border: 1px solid rgba(103,232,249,.5);
+    box-shadow: none; font-size: 14px; padding: 12px 16px;
+  }
+  .info { text-align: center; color: #bcd9ea; font-size: 14px; margin-top: 10px; }
+  .info b { color: #fef08a; }
+  /* Ruang sampel */
+  .rumus { background: rgba(2,16,30,.65); border: 1px dashed rgba(103,232,249,.45); border-radius: 12px; padding: 12px 14px; font-size: 16px; line-height: 1.55; }
+  .rumus .ns { color: #f5c451; font-weight: 800; font-size: 20px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+  .chip { background: rgba(14,116,144,.5); border: 1px solid rgba(103,232,249,.5); padding: 6px 11px; border-radius: 999px; font-weight: 700; font-size: 14px; }
+  .chip.sorot { background: #b45309; border-color: #fbbf24; color: #fff7ed; box-shadow: 0 0 12px rgba(245,158,11,.7); }
+  table.pasangan { border-collapse: collapse; margin-top: 12px; width: 100%; font-size: 13px; }
+  table.pasangan th, table.pasangan td { border: 1px solid rgba(103,232,249,.35); padding: 5px 3px; text-align: center; }
+  table.pasangan th { background: rgba(14,116,144,.55); color: #cffafe; }
+  table.pasangan td.sorot { background: #b45309; color: #fff; font-weight: 800; }
+  .dek { margin-top: 10px; }
+  .dek .baris { display: flex; align-items: center; gap: 6px; margin-top: 6px; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; }
+  .dek .simbol { font-size: 20px; width: 26px; text-align: center; flex: 0 0 auto; }
+  .mini {
+    flex: 0 0 auto; min-width: 34px; text-align: center; background: #f8fafc; color: #0f172a; border-radius: 6px;
+    font-weight: 800; font-size: 12.5px; padding: 5px 3px; border: 1.5px solid #cbd5e1;
+  }
+  .mini.merah { color: #b91c1c; }
+  .mini.sorot { background: #fbbf24; border-color: #b45309; box-shadow: 0 0 10px rgba(245,158,11,.8); }
+  /* Frekuensi */
+  .freq { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 6px; }
+  .freq .f { background: rgba(2,16,30,.65); border: 1px solid rgba(147,197,253,.4); border-radius: 10px; padding: 7px 11px; font-size: 14px; }
+  .freq .f b { color: #7dd3fc; }
+  /* Tantangan */
+  .tantangan { margin-top: 16px; background: rgba(120,53,15,.28); border: 1px solid rgba(245,197,66,.5); }
+  .tantangan h2 { color: #fcd34d; }
+  .tantangan p { font-size: 16px; line-height: 1.55; }
+  .jawaban { display: none; margin-top: 10px; background: rgba(2,16,30,.6); border-radius: 10px; padding: 10px 12px; font-weight: 700; color: #fef9c3; }
+  footer { text-align: center; color: #8fb8d1; font-size: 13px; margin-top: 20px; line-height: 1.6; }
+  footer b { color: #f5c451; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="label">✦ Simulasi Hologram ✦ Matematika Kelas IX — Bab Peluang</div>
+    <h1>Ruang Sampel &amp; Titik Sampel</h1>
+    <p>Pilih alat percobaannya, lempar, lalu amati: apa saja <b>titik sampelnya</b>, bagaimana <b>ruang sampelnya</b>, dan berapa <b>banyak anggotanya — n(S)</b>.</p>
+  </header>
+
+  <nav class="tabs" id="tabs"></nav>
+
+  <div class="grid">
+    <section class="panel">
+      <h2 id="judulAlat">Alat Percobaan</h2>
+      <div class="panggung">
+        <div class="alat" id="alat"></div>
+        <div class="hasil">
+          <div class="judul">Hasil lemparan terakhir</div>
+          <div class="isi" id="hasil">— belum dilempar —</div>
+        </div>
+      </div>
+      <div class="tombol">
+        <button class="aksi" id="btnLempar">🎲 LEMPAR 1×</button>
+        <button class="aksi kedua" id="btnSepuluh">Lempar 10×</button>
+        <button class="aksi kedua" id="btnReset">↺ Ulangi dari Awal</button>
+      </div>
+      <p class="info">Jumlah percobaan: <b id="jmlPercobaan">0</b> kali</p>
+      <h2 style="margin-top:14px;">Hasil yang Muncul</h2>
+      <div class="freq" id="freq"><span style="color:#8fb8d1;">Belum ada hasil. Silakan lempar dulu.</span></div>
+    </section>
+
+    <section class="panel">
+      <h2>🔍 Ruang Sampelnya</h2>
+      <div class="rumus" id="rumus"></div>
+      <div id="daftarSampel"></div>
+      <div class="panel tantangan">
+        <h2>⭐ Tantangan</h2>
+        <p id="soalTantangan"></p>
+        <div class="tombol" style="justify-content:flex-start;">
+          <button class="aksi kedua" id="btnJawaban">Lihat Jawaban</button>
+        </div>
+        <div class="jawaban" id="jawabanTantangan"></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    Simulasi Hologram Ruang Sampel — Rumah Belajar Mandiri Siswa <b>AAAMAAT KEREN</b><br>
+    SMP Negeri 1 Bantarkawung • Pengembang: Drs. Paiyo
+  </footer>
+</div>
+
+<script>
+"use strict";
+/* ---------- Util ---------- */
+const $ = (id) => document.getElementById(id);
+const acak = (n) => Math.floor(Math.random() * n); // 0..n-1
+const SUITS = [
+  { sym: "♠", nama: "Sekop", merah: false },
+  { sym: "♥", nama: "Hati", merah: true },
+  { sym: "♣", nama: "Keriting", merah: false },
+  { sym: "♦", nama: "Wajik", merah: true }
+];
+const RANKS = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
+const PIPS = {1:[4],2:[0,8],3:[0,4,8],4:[0,2,6,8],5:[0,2,4,6,8],6:[0,2,3,5,6,8]};
+
+function elKoin(muka) {
+  const d = document.createElement("div");
+  d.className = "koin";
+  d.innerHTML = muka === "A"
+    ? '<div class="besar">A</div><div class="kecil">ANGKA</div>'
+    : '<div class="besar">G</div><div class="kecil">GAMBAR</div>';
+  return d;
+}
+function elDadu(nilai) {
+  const d = document.createElement("div");
+  d.className = "dadu";
+  for (let i = 0; i < 9; i++) {
+    const c = document.createElement("i");
+    if (PIPS[nilai].includes(i)) c.className = "on";
+    d.appendChild(c);
+  }
+  return d;
+}
+function elKartu(rank, suit, balik) {
+  const d = document.createElement("div");
+  if (balik) { d.className = "kartu balik"; return d; }
+  d.className = "kartu" + (suit.merah ? " merah" : "");
+  d.innerHTML = '<div class="rank">' + rank + '</div><div class="suit">' + suit.sym + '</div><div class="nama">' + suit.nama.toUpperCase() + '</div>';
+  return d;
+}
+
+/* ---------- Definisi mode ---------- */
+const MODES = {
+  koin1: {
+    tab: "🪙 Satu Koin", judul: "Satu Koin — dilempar sekali",
+    nS: 2,
+    rumusHTML: 'S = { Angka, Gambar }<br>Banyak anggota ruang sampel: <span class="ns">n(S) = 2</span>',
+    tantangan: "Sebuah koin dilempar satu kali. Tentukan ruang sampel dan banyak anggotanya!",
+    jawaban: "S = {Angka, Gambar}, jadi n(S) = 2. Titik sampelnya: Angka dan Gambar.",
+    lempar() {
+      const muka = Math.random() < 0.5 ? "A" : "G";
+      return {
+        visual: [elKoin(muka)],
+        teks: muka === "A" ? "Angka (A)" : "Gambar (G)",
+        kunciFreq: muka === "A" ? "Angka" : "Gambar",
+        sorot: muka === "A" ? "Angka" : "Gambar"
+      };
+    },
+    daftarHTML() {
+      return '<div class="chips"><span class="chip" data-s="Angka">Angka</span><span class="chip" data-s="Gambar">Gambar</span></div>' +
+        '<p style="margin-top:10px;color:#bcd9ea;font-size:14.5px;line-height:1.55;">Setiap hasil yang mungkin muncul disebut <b style="color:#fef08a;">titik sampel</b>. Kumpulan semua titik sampel disebut <b style="color:#fef08a;">ruang sampel (S)</b>.</p>';
+    },
+    urutanFreq: ["Angka", "Gambar"]
+  },
+  koin2: {
+    tab: "🪙🪙 Dua Koin", judul: "Dua Koin — dilempar bersamaan",
+    nS: 4,
+    rumusHTML: 'S = { AA, AG, GA, GG }<br>Banyak anggota ruang sampel: <span class="ns">n(S) = 2 × 2 = 4</span>',
+    tantangan: "Dua koin dilempar bersamaan. Mengapa AG dan GA dihitung sebagai dua titik sampel yang berbeda?",
+    jawaban: "Karena koin pertama dan koin kedua berbeda tempatnya: AG artinya koin I = Angka, koin II = Gambar; GA sebaliknya. Jadi S = {AA, AG, GA, GG} dan n(S) = 4.",
+    lempar() {
+      const a = Math.random() < 0.5 ? "A" : "G";
+      const b = Math.random() < 0.5 ? "A" : "G";
+      const kode = a + b;
+      const nama = {AA:"Angka – Angka", AG:"Angka – Gambar", GA:"Gambar – Angka", GG:"Gambar – Gambar"}[kode];
+      return { visual: [elKoin(a), elKoin(b)], teks: kode + "  (" + nama + ")", kunciFreq: kode, sorot: kode };
+    },
+    daftarHTML() {
+      let h = '<table class="pasangan"><tr><th>Koin I \\ Koin II</th><th>Angka (A)</th><th>Gambar (G)</th></tr>';
+      const pasangan = [["A","A"],["A","G"],["G","A"],["G","G"]];
+      h += '<tr><th>Angka (A)</th><td data-s="AA">AA</td><td data-s="AG">AG</td></tr>';
+      h += '<tr><th>Gambar (G)</th><td data-s="GA">GA</td><td data-s="GG">GG</td></tr></table>';
+      h += '<p style="margin-top:10px;color:#bcd9ea;font-size:14.5px;line-height:1.55;">Tabel pasangan membantu kita mendaftar <b style="color:#fef08a;">semua</b> titik sampel tanpa ada yang terlewat: 2 × 2 = 4 titik sampel.</p>';
+      return h;
+    },
+    urutanFreq: ["AA", "AG", "GA", "GG"]
+  },
+  dadu1: {
+    tab: "🎲 Satu Dadu", judul: "Satu Dadu — dilempar sekali",
+    nS: 6,
+    rumusHTML: 'S = { 1, 2, 3, 4, 5, 6 }<br>Banyak anggota ruang sampel: <span class="ns">n(S) = 6</span>',
+    tantangan: "Sebuah dadu dilempar satu kali. Berapa banyak titik sampel yang merupakan mata dadu genap?",
+    jawaban: "Mata dadu genap: 2, 4, dan 6 → ada 3 titik sampel, dari ruang sampel S = {1, 2, 3, 4, 5, 6} dengan n(S) = 6.",
+    lempar() {
+      const v = acak(6) + 1;
+      return { visual: [elDadu(v)], teks: "Mata dadu " + v, kunciFreq: "Mata " + v, sorot: String(v) };
+    },
+    daftarHTML() {
+      let h = '<div class="chips">';
+      for (let i = 1; i <= 6; i++) h += '<span class="chip" data-s="' + i + '">Mata ' + i + '</span>';
+      return h + '</div><p style="margin-top:10px;color:#bcd9ea;font-size:14.5px;line-height:1.55;">Dadu bersisi enam, jadi ada <b style="color:#fef08a;">6 titik sampel</b> yang mungkin muncul.</p>';
+    },
+    urutanFreq: ["Mata 1","Mata 2","Mata 3","Mata 4","Mata 5","Mata 6"]
+  },
+  dadu2: {
+    tab: "🎲🎲 Dua Dadu", judul: "Dua Dadu — dilempar bersamaan",
+    nS: 36,
+    rumusHTML: 'S = { (1,1), (1,2), … , (6,6) }<br>Banyak anggota ruang sampel: <span class="ns">n(S) = 6 × 6 = 36</span>',
+    tantangan: "Dua dadu dilempar bersamaan. Berapa banyak titik sampel yang jumlah kedua mata dadunya 7?",
+    jawaban: "Pasangan berjumlah 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) → ada 6 titik sampel, dari n(S) = 36.",
+    lempar() {
+      const a = acak(6) + 1, b = acak(6) + 1;
+      return {
+        visual: [elDadu(a), elDadu(b)],
+        teks: "(" + a + ", " + b + ") — jumlah " + (a + b),
+        kunciFreq: "Jumlah " + (a + b),
+        sorot: a + "," + b
+      };
+    },
+    daftarHTML() {
+      let h = '<table class="pasangan"><tr><th>I \\ II</th>';
+      for (let j = 1; j <= 6; j++) h += "<th>" + j + "</th>";
+      h += "</tr>";
+      for (let i = 1; i <= 6; i++) {
+        h += "<tr><th>" + i + "</th>";
+        for (let j = 1; j <= 6; j++) h += '<td data-s="' + i + "," + j + '">(' + i + "," + j + ")</td>";
+        h += "</tr>";
+      }
+      h += '</table><p style="margin-top:10px;color:#bcd9ea;font-size:14.5px;line-height:1.55;">Tabel 6 × 6 ini memuat <b style="color:#fef08a;">36 titik sampel</b>. Jumlah kedua mata dadu berkisar dari 2 sampai 12.</p>';
+      return h;
+    },
+    urutanFreq: ["Jumlah 2","Jumlah 3","Jumlah 4","Jumlah 5","Jumlah 6","Jumlah 7","Jumlah 8","Jumlah 9","Jumlah 10","Jumlah 11","Jumlah 12"]
+  },
+  kartu: {
+    tab: "🃏 Kartu Bridge", judul: "Satu Set Kartu Bridge — diambil satu kartu",
+    nS: 52,
+    rumusHTML: 'S = { semua kartu bridge }<br>Banyak anggota ruang sampel: <span class="ns">n(S) = 4 jenis × 13 kartu = 52</span>',
+    tantangan: "Satu set kartu bridge terdiri atas 4 jenis (Sekop ♠, Hati ♥, Keriting ♣, Wajik ♦), masing-masing 13 kartu (A, 2–10, J, Q, K). Berapa banyak titik sampel kartu Hati?",
+    jawaban: "Kartu Hati ada 13 titik sampel (A♥ sampai K♥), dari seluruh ruang sampel n(S) = 52 kartu.",
+    lempar() {
+      const s = SUITS[acak(4)], r = RANKS[acak(13)];
+      return {
+        visual: [elKartu(r, s, false)],
+        teks: r + " " + s.sym + " — kartu " + s.nama,
+        kunciFreq: s.nama,
+        sorot: r + s.sym
+      };
+    },
+    daftarHTML() {
+      let h = '<div class="dek">';
+      SUITS.forEach((s) => {
+        h += '<div class="baris"><span class="simbol" style="color:' + (s.merah ? "#f87171" : "#e2e8f0") + '">' + s.sym + "</span>";
+        RANKS.forEach((r) => { h += '<span class="mini' + (s.merah ? " merah" : "") + '" data-s="' + r + s.sym + '">' + r + s.sym + "</span>"; });
+        h += "</div>";
+      });
+      h += '</div><p style="margin-top:10px;color:#bcd9ea;font-size:14.5px;line-height:1.55;">Satu set kartu bridge <b style="color:#fef08a;">tanpa joker</b>: 4 jenis × 13 kartu = <b style="color:#fef08a;">52 titik sampel</b>. Kartu bergambar (J, Q, K) ada 12 kartu.</p>';
+      return h;
+    },
+    urutanFreq: ["Sekop", "Hati", "Keriting", "Wajik"]
+  }
+};
+
+/* ---------- State ---------- */
+let modeAktif = "koin1";
+const state = {};
+Object.keys(MODES).forEach((k) => { state[k] = { n: 0, freq: {} }; });
+
+/* ---------- Render ---------- */
+function buatTabs() {
+  const nav = $("tabs");
+  nav.innerHTML = "";
+  Object.keys(MODES).forEach((k) => {
+    const b = document.createElement("button");
+    b.className = "tab" + (k === modeAktif ? " aktif" : "");
+    b.textContent = MODES[k].tab;
+    b.onclick = () => { modeAktif = k; tampilMode(); };
+    nav.appendChild(b);
+  });
+}
+function tampilMode() {
+  buatTabs();
+  const m = MODES[modeAktif];
+  $("judulAlat").textContent = m.judul;
+  $("rumus").innerHTML = m.rumusHTML;
+  $("daftarSampel").innerHTML = m.daftarHTML();
+  $("soalTantangan").textContent = m.tantangan;
+  $("jawabanTantangan").style.display = "none";
+  $("jawabanTantangan").textContent = m.jawaban;
+  $("btnJawaban").textContent = "Lihat Jawaban";
+  // panggung awal per mode
+  const alat = $("alat");
+  alat.innerHTML = "";
+  if (modeAktif === "koin1") alat.appendChild(elKoin("A"));
+  else if (modeAktif === "koin2") { alat.appendChild(elKoin("A")); alat.appendChild(elKoin("G")); }
+  else if (modeAktif === "dadu1") alat.appendChild(elDadu(6));
+  else if (modeAktif === "dadu2") { alat.appendChild(elDadu(3)); alat.appendChild(elDadu(4)); }
+  else if (modeAktif === "kartu") alat.appendChild(elKartu("A", SUITS[0], false));
+  $("hasil").textContent = "— belum dilempar —";
+  gambarUlangInfo();
+}
+function gambarUlangInfo() {
+  const st = state[modeAktif], m = MODES[modeAktif];
+  $("jmlPercobaan").textContent = st.n;
+  const f = $("freq");
+  if (st.n === 0) { f.innerHTML = '<span style="color:#8fb8d1;">Belum ada hasil. Silakan lempar dulu.</span>'; return; }
+  f.innerHTML = "";
+  m.urutanFreq.forEach((k) => {
+    const c = st.freq[k] || 0;
+    if (c > 0 || st.n > 0) {
+      const s = document.createElement("span");
+      s.className = "f";
+      s.innerHTML = k + ": <b>" + c + "×</b>";
+      f.appendChild(s);
+    }
+  });
+}
+function sorotHasil(kunci) {
+  document.querySelectorAll("[data-s]").forEach((e) => {
+    e.classList.toggle("sorot", e.getAttribute("data-s") === kunci);
+  });
+}
+function lakukanLempar() {
+  const m = MODES[modeAktif], st = state[modeAktif];
+  const h = m.lempar();
+  const alat = $("alat");
+  alat.innerHTML = "";
+  h.visual.forEach((v) => { v.classList.add("berputar"); alat.appendChild(v); });
+  $("btnLempar").disabled = true;
+  setTimeout(() => {
+    $("hasil").textContent = h.teks;
+    st.n += 1;
+    st.freq[h.kunciFreq] = (st.freq[h.kunciFreq] || 0) + 1;
+    gambarUlangInfo();
+    sorotHasil(h.sorot);
+    $("btnLempar").disabled = false;
+  }, 480);
+}
+$("btnLempar").onclick = lakukanLempar;
+$("btnSepuluh").onclick = () => {
+  const m = MODES[modeAktif], st = state[modeAktif];
+  let terakhir = null;
+  for (let i = 0; i < 10; i++) {
+    terakhir = m.lempar();
+    st.n += 1;
+    st.freq[terakhir.kunciFreq] = (st.freq[terakhir.kunciFreq] || 0) + 1;
+  }
+  const alat = $("alat");
+  alat.innerHTML = "";
+  terakhir.visual.forEach((v) => alat.appendChild(v));
+  $("hasil").textContent = terakhir.teks + "  (lemparan ke-" + st.n + ")";
+  gambarUlangInfo();
+  sorotHasil(terakhir.sorot);
+};
+$("btnReset").onclick = () => {
+  state[modeAktif] = { n: 0, freq: {} };
+  sorotHasil("__tidak_ada__");
+  tampilMode();
+};
+$("btnJawaban").onclick = () => {
+  const j = $("jawabanTantangan");
+  const tampil = j.style.display !== "block";
+  j.style.display = tampil ? "block" : "none";
+  $("btnJawaban").textContent = tampil ? "Sembunyikan Jawaban" : "Lihat Jawaban";
+};
+tampilMode();
+</script>
+</body>
+</html>
