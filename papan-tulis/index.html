@@ -72,6 +72,14 @@
     .btn { font-size: .8rem; padding: .38rem .5rem; }
     input[type="range"] { width: 80px; }
   }
+
+  .yakin { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; background: rgba(4,9,24,.55); padding: 1rem; }
+  .yakin[hidden] { display: none; }
+  .yakin-card { background: #fff; border-radius: 16px; padding: 1.3rem 1.4rem; max-width: 360px; width: 100%; text-align: center; box-shadow: 0 18px 40px rgba(0,0,0,.3); }
+  .yakin-card p { font-weight: 700; margin-bottom: 1rem; line-height: 1.55; }
+  .yakin-btns { display: flex; gap: .6rem; }
+  .yakin-btns .btn { flex: 1; justify-content: center; }
+  .btn.merah { background: #DC2626; border-color: #DC2626; color: #fff; }
 </style>
 </head>
 <body>
@@ -147,6 +155,16 @@
   <span>Coret bebas pakai jari, mouse, atau stylus — tersimpan otomatis di perangkat ini.</span>
   <span>Rumah Belajar Mandiri Siswa AAAMAAT KEREN • SMP Negeri 1 Bantarkawung • Pengembang: Drs. Paiyo</span>
 </footer>
+
+<div class="yakin" id="modalYakin" hidden>
+  <div class="yakin-card" role="alertdialog" aria-modal="true" aria-labelledby="yakinPesan">
+    <p id="yakinPesan"></p>
+    <div class="yakin-btns">
+      <button class="btn" id="yakinBatal" type="button">Batal</button>
+      <button class="btn merah" id="yakinYa" type="button">Ya, Lanjutkan</button>
+    </div>
+  </div>
+</div>
 
 <script>
 (function () {
@@ -412,13 +430,30 @@
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "y") { e.preventDefault(); document.getElementById("btnRedo").click(); }
   });
 
+  /* ---------- Konfirmasi modal (pengganti confirm bawaan) ---------- */
+  var yakinCb = null;
+  function tanyaYakin(pesan, cb) {
+    yakinCb = cb;
+    document.getElementById("yakinPesan").textContent = pesan;
+    document.getElementById("modalYakin").hidden = false;
+  }
+  document.getElementById("yakinYa").addEventListener("click", function () {
+    document.getElementById("modalYakin").hidden = true;
+    if (yakinCb) { var c = yakinCb; yakinCb = null; c(); }
+  });
+  document.getElementById("yakinBatal").addEventListener("click", function () {
+    document.getElementById("modalYakin").hidden = true;
+    yakinCb = null;
+  });
+
   /* ---------- Hapus papan (dengan konfirmasi) ---------- */
   document.getElementById("btnHapusPapan").addEventListener("click", function () {
-    if (!confirm("Hapus semua coretan di halaman ini? Masih bisa diurungkan setelahnya.")) return;
-    dorongUndo();
-    ctxG.clearRect(0, 0, cvG.width, cvG.height);
-    commitCoretan();
-    setStatus("Papan halaman " + (idx + 1) + " dibersihkan.");
+    tanyaYakin("Hapus semua coretan di halaman ini? Masih bisa diurungkan setelahnya.", function () {
+      dorongUndo();
+      ctxG.clearRect(0, 0, cvG.width, cvG.height);
+      commitCoretan();
+      setStatus("Papan halaman " + (idx + 1) + " dibersihkan.");
+    });
   });
 
   /* ---------- Halaman ---------- */
@@ -448,15 +483,18 @@
   });
   document.getElementById("btnHapusHal").addEventListener("click", function () {
     if (halaman.length === 1) {
-      if (!confirm("Ini satu-satunya halaman. Isinya akan dibersihkan. Lanjutkan?")) return;
-      dorongUndo(); ctxG.clearRect(0, 0, cvG.width, cvG.height); commitCoretan(); return;
+      tanyaYakin("Ini satu-satunya halaman. Isinya akan dibersihkan. Lanjutkan?", function () {
+        dorongUndo(); ctxG.clearRect(0, 0, cvG.width, cvG.height); commitCoretan();
+      });
+      return;
     }
-    if (!confirm("Hapus halaman " + (idx + 1) + "? Tindakan ini tidak bisa diurungkan.")) return;
-    halaman.splice(idx, 1);
-    if (idx >= halaman.length) idx = halaman.length - 1;
-    undoStack = []; redoStack = []; segarkanTombolRiwayat();
-    terapkanPotret(halaman[idx], function () { segarkanInfoHalaman(); simpanOtomatis(); });
-    segarkanInfoHalaman();
+    tanyaYakin("Hapus halaman " + (idx + 1) + "? Tindakan ini tidak bisa diurungkan.", function () {
+      halaman.splice(idx, 1);
+      if (idx >= halaman.length) idx = halaman.length - 1;
+      undoStack = []; redoStack = []; segarkanTombolRiwayat();
+      terapkanPotret(halaman[idx], function () { segarkanInfoHalaman(); simpanOtomatis(); });
+      segarkanInfoHalaman();
+    });
   });
 
   /* ---------- Ekspor PNG ---------- */
