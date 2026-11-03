@@ -246,6 +246,7 @@ function sudahIsi(i){
   const j = jawaban[i], s = SOAL[i];
   if (s.tipe==='PG') return j !== -1;
   if (s.tipe==='URAIAN') return String(j||'').trim() !== '';
+  if (s.tipe==='MCMA') return j.some(v => v === true);
   return j.every(v => v !== null);
 }
 function segarPalet(){
