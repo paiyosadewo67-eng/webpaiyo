@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duel Sampel — Lomba Titik Sampel, Ruang Sampel &amp; Frekuensi Relatif | AAAMAAT KEREN</title>
+<style>
+:root{--navy:#0d2b45;--navy2:#081c30;--teal:#0e7a5f;--teald:#0a5c48;--gold:#c9a227;--paper:#fdfbf6;--ink:#24313d;--red:#c0392b;--a:#0e7a5f;--b:#7c3aed}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+header{background:linear-gradient(150deg,var(--navy2),var(--navy) 55%,var(--teald) 130%);color:#f4efe3;text-align:center;padding:20px 14px 16px;border-bottom:4px solid var(--gold)}
+header .eyebrow{letter-spacing:.2em;font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase}
+header h1{font-family:Georgia,serif;font-size:clamp(24px,4.5vw,38px);margin:8px 0 4px}
+header p{margin:0;font-size:clamp(13px,2.2vw,16px);color:#cfd9de}
+main{max-width:1180px;margin:0 auto;padding:18px 14px 40px}
+.kartu{background:#fff;border:1px solid rgba(13,43,69,.14);border-radius:16px;padding:22px;box-shadow:0 2px 8px rgba(13,43,69,.06)}
+.tengah{text-align:center}
+button{font-family:inherit;cursor:pointer}
+.btn{display:inline-block;border:none;border-radius:999px;padding:14px 30px;font-size:18px;font-weight:700;margin:6px;transition:transform .06s}
+.btn:active{transform:scale(.97)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-ungu{background:var(--b);color:#fff}
+.btn-emas{background:var(--gold);color:#231a02}
+.btn-garis{background:#fff;border:2px solid var(--navy);color:var(--navy)}
+.aturan{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:16px 0;text-align:left}
+.aturan div{background:rgba(14,122,95,.07);border:1px solid rgba(14,122,95,.25);border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.55}
+.lintasan{background:#fff;border:1px solid rgba(13,43,69,.14);border-radius:14px;padding:12px 16px 8px;margin-bottom:14px}
+.jalur{margin:8px 0 12px}
+.jalur .label{font-weight:700;font-size:14px;margin-bottom:4px}
+.rel{position:relative;height:22px;background:repeating-linear-gradient(90deg,#eef1f3 0 34px,#e2e8ec 34px 36px);border-radius:999px;border:1px solid rgba(13,43,69,.18)}
+.isi{position:absolute;left:0;top:0;bottom:0;border-radius:999px;width:0%;transition:width .4s}
+.isi.a{background:rgba(14,122,95,.45)} .isi.b{background:rgba(124,58,237,.45)}
+.kuda{position:absolute;top:-7px;font-size:24px;transition:left .4s;transform:translateX(-50%)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+.panel{border-radius:16px;padding:18px;border:2px solid;background:#fff;box-shadow:0 2px 8px rgba(13,43,69,.06)}
+.panel.A{border-color:var(--a)} .panel.B{border-color:var(--b)}
+.panel .kepala{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.nama-tim{font-weight:800;font-size:19px}
+.panel.A .nama-tim{color:var(--teald)} .panel.B .nama-tim{color:var(--b)}
+.skor{font-weight:800;font-size:19px;background:rgba(201,162,39,.16);border:1px solid var(--gold);border-radius:999px;padding:2px 14px}
+.progres{font-size:13.5px;color:#5c6b78;font-weight:600}
+.waktu{height:12px;background:#eceff1;border-radius:999px;overflow:hidden;margin:10px 0 4px}
+.waktu>div{height:100%;background:var(--teal);width:100%}
+.det{font-size:13px;color:#5c6b78;text-align:right;font-weight:600}
+.soal{font-size:clamp(18px,2.6vw,23px);line-height:1.5;font-weight:600;margin:12px 0 14px;min-height:3.2em}
+.opsi{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:480px){.opsi{grid-template-columns:1fr}}
+.opsi button{border:2px solid rgba(13,43,69,.25);background:#fff;border-radius:12px;padding:14px 12px;font-size:clamp(16px,2.4vw,20px);font-weight:600;text-align:left;min-height:58px}
+.opsi button:hover:not(:disabled){border-color:var(--navy);background:rgba(13,43,69,.04)}
+.opsi button.benar{background:#e3f4ec;border-color:var(--teal);color:var(--teald)}
+.opsi button.salah{background:#fbe7e3;border-color:var(--red);color:var(--red)}
+.opsi button:disabled{opacity:.85;cursor:default}
+.status{margin-top:12px;font-weight:700;font-size:16px;min-height:1.4em;text-align:center}
+.panel.selesai{opacity:.75}
+table.hasil{border-collapse:collapse;margin:14px auto;font-size:17px}
+table.hasil th,table.hasil td{border:1px solid rgba(13,43,69,.25);padding:8px 18px;text-align:center}
+table.hasil th{background:rgba(13,43,69,.06)}
+.pemenang{font-size:clamp(22px,4vw,32px);font-weight:800;color:var(--teald);margin:8px 0}
+footer{text-align:center;color:#5c6b78;font-size:13px;padding:0 14px 26px}
+.sembunyi{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Matematika Kelas IX • Bab Peluang • AAAMAAT KEREN</div>
+  <h1>🏁 Duel Sampel</h1>
+  <p>Lomba cepat-cepatan: Titik Sampel • Ruang Sampel • Frekuensi Relatif — 10 soal pilihan ganda</p>
+</header>
+<main>
+
+  <!-- ============ LAYAR MULAI ============ -->
+  <section id="layar-mulai" class="kartu tengah">
+    <h2 style="margin-top:0">Pilih Cara Bermain</h2>
+    <div class="aturan">
+      <div>🎯 <strong>10 soal</strong> untuk tiap pemain/kelompok. Soal A dan Soal B <strong>setipe</strong> — kemampuan yang sama, angka dan cerita berbeda, urutan pilihan diacak.</div>
+      <div>⏱️ Tiap soal <strong>30 detik</strong>. Jawaban benar = <strong>100 poin</strong> + bonus kecepatan sampai <strong>60 poin</strong>. Makin cepat dan tepat, makin tinggi nilainya!</div>
+      <div>👥 <strong>Mode Duel:</strong> dua kelompok bermain bersamaan di PID — satu siswa di depan menekan jawaban, anggota lain membantu menghitung. Yang di garis akhir duluan dan nilainya tertinggi, dialah juaranya!</div>
+      <div>📱 <strong>Mode Sendiri:</strong> latihan mandiri di HP — kejar nilai tertinggi dan waktu tercepatmu.</div>
+    </div>
+    <button class="btn btn-teal" id="btn-solo">📱 Main Sendiri</button>
+    <button class="btn btn-ungu" id="btn-duel">👥 Duel 2 Kelompok (PID)</button>
+    <p style="color:#5c6b78;font-size:14px;margin-bottom:0">Dikembangkan oleh Drs. Paiyo • Rumah Belajar Mandiri AAAMAAT KEREN • SMP Negeri 1 Bantarkawung</p>
+  </section>
+
+  <!-- ============ LAYAR MAIN ============ -->
+  <section id="layar-main" class="sembunyi">
+    <div class="lintasan" id="kotak-lintasan">
+      <div class="jalur" id="jalur-A">
+        <div class="label" style="color:var(--teald)">🏃 Kelompok A — Soal A</div>
+        <div class="rel"><div class="isi a"></div><div class="kuda" style="left:0%">🏃</div></div>
+      </div>
+      <div class="jalur" id="jalur-B">
+        <div class="label" style="color:var(--b)">🏃 Kelompok B — Soal B</div>
+        <div class="rel"><div class="isi b"></div><div class="kuda" style="left:0%">🏃</div></div>
+      </div>
+    </div>
+    <div class="grid2" id="kotak-panel"></div>
+    <p class="tengah" style="margin-top:16px"><button class="btn btn-garis" id="btn-ulang-main">↩ Kembali ke Menu</button></p>
+  </section>
+
+  <!-- ============ LAYAR HASIL ============ -->
+  <section id="layar-hasil" class="kartu tengah sembunyi">
+    <div style="font-size:44px">🏆</div>
+    <div class="pemenang" id="teks-pemenang"></div>
+    <div id="kotak-tabel-hasil"></div>
+    <p id="teks-hasil-solo" style="font-size:17px"></p>
+    <button class="btn btn-emas" id="btn-lagi">🔁 Main Lagi</button>
+    <button class="btn btn-garis" id="btn-menu">Menu Utama</button>
+  </section>
+
+</main>
+<footer>Game Duel Sampel — latihan titik sampel, ruang sampel, dan frekuensi relatif • Portal Rumah Belajar AAAMAAT KEREN</footer>
+
+<script>
+"use strict";
+/* Bank soal: 10 tipe. Tiap tipe punya varian A dan B (setipe, angka/cerita berbeda).
+   Format: [teks soal, [opsi benar, pengecoh1, pengecoh2, pengecoh3]] — opsi diacak saat main. */
+const BANK = [
+  { a:["Dua keping koin dilempar bersamaan satu kali. Banyak titik sampelnya adalah …",["4","2","6","8"]],
+    b:["Tiga keping koin dilempar bersamaan satu kali. Banyak titik sampelnya adalah …",["8","4","6","12"]] },
+  { a:["Sebuah dadu dan sebuah koin dilempar bersamaan satu kali. Banyak titik sampelnya adalah …",["12","8","24","36"]],
+    b:["Dua buah dadu dilempar bersamaan satu kali. Banyak titik sampelnya adalah …",["36","12","24","72"]] },
+  { a:["Sebuah koin dilempar 20 kali. Sisi angka muncul 9 kali. Frekuensi relatif muncul sisi angka adalah …",["0,45","0,25","0,55","0,90"]],
+    b:["Sebuah koin dilempar 40 kali. Sisi gambar muncul 18 kali. Frekuensi relatif muncul sisi gambar adalah …",["0,45","0,18","0,40","0,60"]] },
+  { a:["Frekuensi relatif muncul mata dadu 5 adalah 0,3. Jika dadu dilempar 50 kali, mata 5 diperkirakan muncul … kali.",["15","5","10","30"]],
+    b:["Frekuensi relatif terambilnya bola merah adalah 0,25. Jika pengambilan dilakukan 80 kali, bola merah diperkirakan terambil … kali.",["20","10","25","40"]] },
+  { a:["Satu kartu diambil secara acak dari setumpuk kartu bridge lengkap. Banyak titik sampelnya adalah …",["52","13","26","54"]],
+    b:["Satu kartu diambil secara acak dari kartu bernomor 1 sampai 20. Banyak titik sampelnya adalah …",["20","10","19","21"]] },
+  { a:["Nadia mempunyai 4 baju dan 3 celana. Banyak pasangan baju–celana yang dapat dibentuk adalah …",["12","7","15","24"]],
+    b:["Bima mempunyai 3 baju dan 5 celana. Banyak pasangan baju–celana yang dapat dibentuk adalah …",["15","8","12","20"]] },
+  { a:["Dua dadu dilempar bersamaan. Banyak titik sampel dengan jumlah mata dadu 7 adalah …",["6","4","5","7"]],
+    b:["Dua dadu dilempar bersamaan. Banyak titik sampel dengan jumlah mata dadu 5 adalah …",["4","3","5","6"]] },
+  { a:["Sebuah dadu dilempar 60 kali. Mata 3 muncul 12 kali. Frekuensi relatif muncul mata 3 adalah …",["0,20","0,10","0,30","0,60"]],
+    b:["Sebuah dadu dilempar 50 kali. Mata 6 muncul 5 kali. Frekuensi relatif muncul mata 6 adalah …",["0,10","0,05","0,20","0,50"]] },
+  { a:["Frekuensi relatif muncul sisi angka pada pelemparan sebuah koin adalah 0,6. Frekuensi relatif muncul sisi gambar adalah …",["0,4","0,2","0,3","0,6"]],
+    b:["Frekuensi relatif sebuah tim menang adalah 0,35. Frekuensi relatif tim tersebut tidak menang adalah …",["0,65","0,35","0,55","0,75"]] },
+  { a:["Dua koin dilempar bersamaan. Banyak titik sampel dengan tepat satu sisi angka adalah …",["2","1","3","4"]],
+    b:["Tiga koin dilempar bersamaan. Banyak titik sampel dengan tepat dua sisi gambar adalah …",["3","1","2","6"]] }
+];
+const BATAS = 30; // detik per soal
+
+function acak(arr){ const a = arr.slice(); for(let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]] = [a[j],a[i]]; } return a; }
+
+let mode = "duel";        // "duel" | "solo"
+let panels = {};          // {A: {...}, B: {...}}
+let timerGlobal = null;
+
+const $ = id => document.getElementById(id);
+
+function buatPanel(sisi, setSoal){
+  const div = document.createElement("div");
+  div.className = "panel " + sisi;
+  div.id = "panel-" + sisi;
+  div.innerHTML =
+    '<div class="kepala"><span class="nama-tim">' + (sisi === "A" ? "🟢 Kelompok A — Soal A" : "🟣 Kelompok B — Soal B") + '</span>' +
+    '<span class="skor">Skor: <span id="skor-' + sisi + '">0</span></span></div>' +
+    '<div class="progres" id="prog-' + sisi + '">Soal 1 dari 10</div>' +
+    '<div class="waktu"><div id="bar-' + sisi + '"></div></div>' +
+    '<div class="det"><span id="det-' + sisi + '">' + BATAS + '</span> detik</div>' +
+    '<div class="soal" id="soal-' + sisi + '"></div>' +
+    '<div class="opsi" id="opsi-' + sisi + '"></div>' +
+    '<div class="status" id="status-' + sisi + '"></div>';
+  $("kotak-panel").appendChild(div);
+  panels[sisi] = { sisi, set: setSoal, idx: 0, skor: 0, benar: 0, sisa: BATAS, kunci: false, selesai: false, waktuTotal: 0 };
+}
+
+function tampilSoal(P){
+  const data = BANK[P.idx][P.set === "A" ? "a" : "b"];
+  const teks = data[0];
+  const opsi = acak(data[1].map((t,i)=>({t, ok: i === 0})));
+  $("soal-" + P.sisi).textContent = (P.idx + 1) + ". " + teks;
+  $("prog-" + P.sisi).textContent = "Soal " + (P.idx + 1) + " dari 10 • Benar: " + P.benar;
+  const wadah = $("opsi-" + P.sisi);
+  wadah.innerHTML = "";
+  const huruf = ["A","B","C","D"];
+  opsi.forEach((o,i)=>{
+    const b = document.createElement("button");
+    b.textContent = huruf[i] + ". " + o.t;
+    b.addEventListener("click", ()=> jawab(P, o.ok, b));
+    wadah.appendChild(b);
+  });
+  P.sisa = BATAS; P.kunci = false;
+  $("status-" + P.sisi).textContent = "";
+  perbaruiBar(P);
+}
+
+function perbaruiBar(P){
+  $("bar-" + P.sisi).style.width = (P.sisa / BATAS * 100) + "%";
+  $("bar-" + P.sisi).style.background = P.sisa <= 8 ? "#c0392b" : "#0e7a5f";
+  $("det-" + P.sisi).textContent = Math.max(0, Math.ceil(P.sisa));
+}
+
+function gerakLintasan(P){
+  const persen = (P.idx) / 10 * 100;
+  const jalur = $("jalur-" + P.sisi);
+  if(!jalur) return;
+  jalur.querySelector(".isi").style.width = persen + "%";
+  jalur.querySelector(".kuda").style.left = persen + "%";
+}
+
+function jawab(P, ok, tombol){
+  if(P.kunci || P.selesai) return;
+  P.kunci = true;
+  const tombolSemua = $("opsi-" + P.sisi).querySelectorAll("button");
+  tombolSemua.forEach(b=>{ b.disabled = true; });
+  if(tombol){
+    // tandai jawaban benar agar terlihat
+    const data = BANK[P.idx][P.set === "A" ? "a" : "b"];
+    tombolSemua.forEach(b=>{ if(b.textContent.slice(3) === data[1][0]) b.classList.add("benar"); });
+  }
+  if(ok){
+    const bonus = Math.round(2 * Math.max(0, P.sisa));
+    P.skor += 100 + bonus;
+    P.benar++;
+    $("status-" + P.sisi).textContent = "✅ Benar! +100" + (bonus ? " + bonus " + bonus : "");
+    $("status-" + P.sisi).style.color = "#0a5c48";
+  } else {
+    if(tombol) tombol.classList.add("salah");
+    $("status-" + P.sisi).textContent = tombol ? "❌ Belum tepat — jawaban benar ditandai hijau." : "⏰ Waktu habis! Jawaban benar ditandai hijau.";
+    $("status-" + P.sisi).style.color = "#c0392b";
+  }
+  $("skor-" + P.sisi).textContent = P.skor;
+  P.waktuTotal += (BATAS - P.sisa);
+  P.idx++;
+  gerakLintasan(P);
+  setTimeout(()=> lanjut(P), 1000);
+}
+
+function lanjut(P){
+  if(P.idx >= 10){
+    P.selesai = true;
+    $("panel-" + P.sisi).classList.add("selesai");
+    $("soal-" + P.sisi).textContent = "🏁 Selesai! Skor akhir: " + P.skor + " • Benar " + P.benar + " dari 10";
+    $("opsi-" + P.sisi).innerHTML = "";
+    $("prog-" + P.sisi).textContent = "Selesai — 10 soal terjawab";
+    $("status-" + P.sisi).textContent = "";
+    cekSemuaSelesai();
+    return;
+  }
+  tampilSoal(P);
+}
+
+function cekSemuaSelesai(){
+  const semua = Object.values(panels).every(P=>P.selesai);
+  if(!semua) return;
+  clearInterval(timerGlobal);
+  setTimeout(tampilHasil, 700);
+}
+
+function fmtWaktu(detik){ return detik.toFixed(1).replace(".", ",") + " dtk"; }
+
+function tampilHasil(){
+  $("layar-main").classList.add("sembunyi");
+  $("layar-hasil").classList.remove("sembunyi");
+  if(mode === "solo"){
+    const P = panels.A;
+    $("teks-pemenang").textContent = "Permainan Selesai!";
+    $("kotak-tabel-hasil").innerHTML = "";
+    $("teks-hasil-solo").innerHTML = "Skor kamu: <strong>" + P.skor + "</strong> • Benar <strong>" + P.benar + " dari 10</strong> • Total waktu menjawab: <strong>" + fmtWaktu(P.waktuTotal) + "</strong><br>" +
+      (P.benar >= 9 ? "Luar biasa! Kamu sudah menguasai titik sampel, ruang sampel, dan frekuensi relatif. 🌟" :
+       P.benar >= 7 ? "Hebat! Sedikit lagi menuju sempurna — coba lagi untuk mengejar 10 benar. 💪" :
+       P.benar >= 5 ? "Bagus! Ulangi sekali lagi sambil mengingat cara menghitung n(S) dan frekuensi relatif. 📚" :
+                      "Tidak apa-apa — ini latihan. Pelajari lagi titik sampel & ruang sampel, lalu coba lagi ya! 🌱");
+    return;
+  }
+  const A = panels.A, B = panels.B;
+  let pemenang;
+  if(A.skor !== B.skor) pemenang = A.skor > B.skor ? "A" : "B";
+  else if(Math.abs(A.waktuTotal - B.waktuTotal) > 0.05) pemenang = A.waktuTotal < B.waktuTotal ? "A" : "B";
+  else pemenang = "SERI";
+  $("teks-pemenang").textContent = pemenang === "SERI" ? "🤝 SERI! Kedua kelompok sama hebatnya!" :
+    (pemenang === "A" ? "🏆 Juara: Kelompok A!" : "🏆 Juara: Kelompok B!");
+  $("teks-hasil-solo").textContent = "";
+  $("kotak-tabel-hasil").innerHTML =
+    '<table class="hasil"><tr><th></th><th>🟢 Kelompok A</th><th>🟣 Kelompok B</th></tr>' +
+    "<tr><td>Skor</td><td><strong>" + A.skor + "</strong></td><td><strong>" + B.skor + "</strong></td></tr>" +
+    "<tr><td>Jawaban benar</td><td>" + A.benar + " / 10</td><td>" + B.benar + " / 10</td></tr>" +
+    "<tr><td>Total waktu menjawab</td><td>" + fmtWaktu(A.waktuTotal) + "</td><td>" + fmtWaktu(B.waktuTotal) + "</td></tr></table>" +
+    '<p style="color:#5c6b78;font-size:14px">Skor sama? Pemenang ditentukan dari total waktu menjawab yang lebih cepat.</p>';
+}
+
+function mulai(m){
+  mode = m;
+  panels = {};
+  $("kotak-panel").innerHTML = "";
+  $("layar-mulai").classList.add("sembunyi");
+  $("layar-hasil").classList.add("sembunyi");
+  $("layar-main").classList.remove("sembunyi");
+  if(mode === "duel"){
+    $("kotak-lintasan").classList.remove("sembunyi");
+    $("kotak-panel").className = "grid2";
+    buatPanel("A", "A"); buatPanel("B", "B");
+  } else {
+    $("kotak-lintasan").classList.add("sembunyi");
+    $("kotak-panel").className = "";
+    $("kotak-panel").style.maxWidth = "640px";
+    $("kotak-panel").style.margin = "0 auto";
+    buatPanel("A", Math.random() < 0.5 ? "A" : "B");
+    panels.A.sisiLabel = "Solo";
+    document.querySelector("#panel-A .nama-tim").textContent = "📱 Kamu — Soal " + panels.A.set;
+  }
+  if(mode === "duel"){ $("kotak-panel").style.maxWidth = ""; $("kotak-panel").style.margin = ""; }
+  Object.values(panels).forEach(P=>{ tampilSoal(P); gerakLintasan(P); });
+  clearInterval(timerGlobal);
+  timerGlobal = setInterval(()=>{
+    Object.values(panels).forEach(P=>{
+      if(P.selesai || P.kunci) return;
+      P.sisa -= 0.1;
+      perbaruiBar(P);
+      if(P.sisa <= 0) jawab(P, false, null);
+    });
+  }, 100);
+}
+
+function keMenu(){
+  clearInterval(timerGlobal);
+  $("layar-main").classList.add("sembunyi");
+  $("layar-hasil").classList.add("sembunyi");
+  $("layar-mulai").classList.remove("sembunyi");
+}
+
+$("btn-solo").addEventListener("click", ()=> mulai("solo"));
+$("btn-duel").addEventListener("click", ()=> mulai("duel"));
+$("btn-ulang-main").addEventListener("click", keMenu);
+$("btn-menu").addEventListener("click", keMenu);
+$("btn-lagi").addEventListener("click", ()=> mulai(mode));
+</script>
+</body>
+</html>
