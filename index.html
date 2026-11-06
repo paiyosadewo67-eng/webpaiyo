@@ -185,14 +185,17 @@
         border: 1.5px solid rgba(233,196,76,.35); border-radius: 26px;
       }
       @media (max-width: 900px) {
-        .hero-in { grid-template-columns: 1fr; gap: 2.2rem; padding: 1.5rem 0 3.4rem; }
+        .hero-in { grid-template-columns: 1fr; gap: 2.2rem; padding: 1rem 0 3.4rem; }
         .hero-figure img { height: clamp(180px, 50vw, 250px); }
         /* Ruang vertikal hero dirapatkan di HP supaya baris tombol
            (Mulai Belajar + Profil Guru) tampil utuh di atas bilah
            navigasi bawah yang tetap (fixed). */
-        .hero-eyebrow { margin-bottom: .9rem; }
-        .hero-lead { margin-top: 1.05rem; }
-        .hero-btns { margin-top: 1.35rem; }
+        .hero-eyebrow { margin-bottom: .8rem; font-size: .64rem; letter-spacing: .14em; padding: .38rem .8rem; }
+        .hero h1 { font-size: 2.15rem; }
+        .hero-slogan-1 { margin-top: .65rem; font-size: 1.18rem; }
+        .hero-slogan-2 { margin-top: .75rem; font-size: .76rem; letter-spacing: .18em; }
+        .hero-lead { margin-top: .85rem; font-size: .97rem; line-height: 1.55; }
+        .hero-btns { margin-top: 1.1rem; }
       }
 
       /* ---------- Bagian umum ---------- */
@@ -1700,9 +1703,14 @@
               { judul: "Penyimpanan Prompt", emoji: "🗂️", dari: "eksternal", grup: "prompt" },
               { judul: "Prompt Berbagi", emoji: "🤝", dari: "promptberbagi" }
             ] },
-          { id: "VII-05", kelas: "VII", nama: "PLSV & PtLSV",                      slug: "/plsv",               url: "", status: "segera", ikon: "plsv",    deskripsi: "Persamaan dan pertidaksamaan linear satu variabel.",
+          { id: "VII-05", kelas: "VII", nama: "PLSV & PtLSV",                      slug: "/plsv",               url: "", status: "aktif", ikon: "plsv",    deskripsi: "Persamaan dan pertidaksamaan linear satu variabel.",
             sumber: [
+              { judul: "LKPD",                 emoji: "📝", dari: "lkpd" },
+              { judul: "Game",                 emoji: "🎮", dari: "interaktif", grup: "game" },
+              { judul: "Asesmen & Kuis",        emoji: "📊", dari: "interaktif", grup: "quiz" },
+              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" },
               { judul: "Video Pembelajaran",   emoji: "🎬", dari: "video" },
+              { judul: "Video Avatar",         emoji: "🎭", dari: "eksternal", grup: "avatar" },
               { judul: "Penyimpanan Prompt", emoji: "🗂️", dari: "eksternal", grup: "prompt" },
               { judul: "Prompt Berbagi", emoji: "🤝", dari: "promptberbagi" }
             ] },
@@ -2105,6 +2113,10 @@
           { bab: "VII-05", grup: "prompt", nama: "Prompt Simulasi Asesmen Sumatif 3 — PLSV & PtLSV", url: "https://drive.google.com/file/d/11qdmanWXkC22N2-OHAu3rmnkaaT6f2Lc/view?usp=sharing" },
           { bab: "VII-05", grup: "prompt", nama: "Prompt Video Avatar Misi HOTS — PLSV & PtLSV", url: "https://drive.google.com/file/d/1Lm45dj0ZOv_GFYMib5wn6Xn6nyvkmiPP/view?usp=sharing" },
           { bab: "VII-05", grup: "prompt", nama: "Prompt Poster Komik Edukasi — PLSV & PtLSV", url: "https://drive.google.com/file/d/1r5HtdkgiK3thlr7a2FIEoZhRUSqb4qCM/view?usp=sharing" },
+          { bab: "VII-05", grup: "materi", nama: "LKPD A1 — PLSV dan PtLSV Elemen Aljabar TKA (Dokumen)", url: "https://drive.google.com/file/d/1SAPjq35-3oXCrxazT6mYK_9wMjdskzxL/view?usp=sharing" },
+          { bab: "VII-05", grup: "materi", nama: "Naskah Asesmen Sumatif 3 Bab PLSV & PtLSV Kelas VII (PDF)", url: "https://drive.google.com/file/d/1PHmgAgefSmYiljtuFNKs2fhgLCgAn6QM/view?usp=sharing" },
+          { bab: "VII-05", grup: "materi", nama: "Poster Komik Edukasi — Seri LKPD Interaktif Bab PLSV & PtLSV (PPT)", url: "https://drive.google.com/file/d/12iayMalelY9yxcZXQH4l2C9KxjBlAfeT/view?usp=sharing" },
+          { bab: "VII-05", grup: "avatar", nama: "Video Avatar — Pembuka Misi HOTS PLSV & PtLSV", url: "video-avatar/Video-Avatar-Pembuka-Misi-HOTS-PLSV-PtLSV.mp4" },
           { bab: "VIII-02", grup: "prompt", nama: "Prompt Kuis Game Ekspedisi TKA — Relasi dan Fungsi", url: "https://drive.google.com/file/d/1gf3eOM516-KavddAzduQ3__c249RtY-_/view?usp=sharing" },
           { bab: "VIII-04", grup: "prompt", nama: "Prompt Portal Rumah Belajar — SPLDV", url: "https://drive.google.com/file/d/1-tWGjipBNyepkXMEYLhfIEi6G7f6LVlu/view?usp=sharing" },
           { bab: "VIII-04", grup: "prompt", nama: "Prompt Kuis Game Ekspedisi TKA — SPLDV", url: "https://drive.google.com/file/d/1F47uDlu_kQRR_MTvHnJrTfGEvar1Lgji/view?usp=sharing" },
@@ -2359,7 +2371,10 @@
           { grup: "game", bab: "VII-03", ikon: "game", nama: "Game Interaktif Escape Room AAAMAT KEREN Rasio", label: "Game Edukasi · Bab VII-03", url: "https://igatrisna.my.canva.site/game-interaktif-escape-room-aaamat-keren-rasio", deskripsi: "Escape room seru untuk menguasai rasio — pecahkan tantangan perbandingannya untuk meloloskan diri." },
           { grup: "game", bab: "VII-03", ikon: "game", nama: "Ekspedisi TKA Rasio (B.5)", label: "Game Edukasi · Bab VII-03", url: "https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-tes-rasio", deskripsi: "Game ekspedisi paket TKA elemen bilangan — uji rasio." },
           { grup: "game", bab: "VII-03", ikon: "game", nama: "Ekspedisi TKA Perbandingan Senilai & Berbalik Nilai (B.6)", label: "Game Edukasi · Bab VII-03", url: "https://igatrisna.my.canva.site/kuis-ekspedisi-paket-tka-tes-seniali-berbaliknilai", deskripsi: "Game ekspedisi paket TKA elemen bilangan — uji perbandingan senilai dan berbalik nilai." },
-          { grup: "quiz", bab: "VII-03", ikon: "quiz", nama: "Simulasi Asesmen Sumatif 3 Bab Rasio", label: "Quiz · Bab VII-03", url: "https://igatrisna.my.canva.site/simulasi-asesmen-sumatif-3-bab-rasio", deskripsi: "Simulasi asesmen sumatif 3 untuk mengukur penguasaan bab Rasio kelas VII SMPN 1 Bantarkawung." }
+          { grup: "quiz", bab: "VII-03", ikon: "quiz", nama: "Simulasi Asesmen Sumatif 3 Bab Rasio", label: "Quiz · Bab VII-03", url: "https://igatrisna.my.canva.site/simulasi-asesmen-sumatif-3-bab-rasio", deskripsi: "Simulasi asesmen sumatif 3 untuk mengukur penguasaan bab Rasio kelas VII SMPN 1 Bantarkawung." },
+          { grup: "lkpd", bab: "VII-05", ikon: "lkpd", nama: "LKPD Interaktif Bab PLSV & PtLSV", label: "LKPD Visual · Bab VII-05", tombol: "Buka LKPD", url: "https://igatrisna.my.canva.site/lkpd-interaktif-plsv-ptlsv", deskripsi: "LKPD interaktif berbasis Canva untuk berlatih persamaan dan pertidaksamaan linear satu variabel selangkah demi selangkah." },
+          { grup: "game", bab: "VII-05", ikon: "game", nama: "Game Interaktif Escape Room Matematika PLSV & PtLSV", label: "Game Edukasi · Bab VII-05", url: "https://igatrisna.my.canva.site/game-escape-room-plsv-ptlsv", deskripsi: "Escape room seru untuk menguasai PLSV dan PtLSV — pecahkan tantangan persamaannya untuk meloloskan diri." },
+          { grup: "quiz", bab: "VII-05", ikon: "quiz", nama: "Simulasi Asesmen Sumatif 3 Bab PLSV & PtLSV", label: "Quiz · Bab VII-05", url: "https://igatrisna.my.canva.site/asesmen--sumatif-3-plsv-ptlsv", deskripsi: "Simulasi asesmen sumatif 3 untuk mengukur penguasaan bab PLSV & PtLSV kelas VII SMPN 1 Bantarkawung." }
         ],
         /* ---------- Video pembelajaran per bab (YouTube, diputar langsung di situs) ----------
            Kunci mengikuti pola "video_" + id bab huruf kecil tanpa tanda hubung
