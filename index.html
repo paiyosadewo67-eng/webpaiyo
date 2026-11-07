@@ -1698,8 +1698,13 @@
               { judul: "Penyimpanan Prompt", emoji: "🗂️", dari: "eksternal", grup: "prompt" },
               { judul: "Prompt Berbagi", emoji: "🤝", dari: "promptberbagi" }
             ] },
-          { id: "VII-04", kelas: "VII", nama: "Bentuk Aljabar",                    slug: "/bentukaljabar",      url: "", status: "segera", ikon: "aljabar", deskripsi: "Unsur-unsur aljabar, suku sejenis, dan operasi hitung bentuk aljabar.",
+          { id: "VII-04", kelas: "VII", nama: "Bentuk Aljabar",                    slug: "/bentukaljabar",      url: "", status: "aktif", ikon: "aljabar", deskripsi: "Unsur-unsur aljabar, suku sejenis, dan operasi hitung bentuk aljabar.",
             sumber: [
+              { judul: "E-Modul",              emoji: "📖", dari: "eksternal", grup: "emodul" },
+              { judul: "LKPD",                 emoji: "📝", dari: "lkpd" },
+              { judul: "Game",                 emoji: "🎮", dari: "interaktif", grup: "game" },
+              { judul: "Materi",               emoji: "📚", dari: "eksternal", grup: "materi" },
+              { judul: "Video Avatar",         emoji: "🎭", dari: "eksternal", grup: "avatar" },
               { judul: "Penyimpanan Prompt", emoji: "🗂️", dari: "eksternal", grup: "prompt" },
               { judul: "Prompt Berbagi", emoji: "🤝", dari: "promptberbagi" }
             ] },
@@ -1942,6 +1947,7 @@
         /* ---------- Sumber daring per bab (dibuka di tab baru, bukan unduhan) ----------
            Grup yang dikenal: "emodul" (aplikasi E-Modul), "materi"
            (dokumen Google Docs: PPT, naskah soal, LKPD Word, PPM),
+           "avatar" (Video Avatar per bab, berkas MP4 di folder video-avatar),
            "prompt" (Penyimpanan Prompt, terkunci kode khusus), "tka",
            serta grup khusus fitur F-13 Jurnal Sholatku: "aplikasi",
            "video", dan "folder" (tautan Drive), dan grup khusus fitur
@@ -2108,6 +2114,12 @@
           { bab: "VII-04", grup: "prompt", nama: "Prompt Simulasi Asesmen Sumatif 3 — Bentuk Aljabar", url: "https://drive.google.com/file/d/1tpePOBPV-RJACgCeNCF3MKmwl_FhkQ0X/view?usp=sharing" },
           { bab: "VII-04", grup: "prompt", nama: "Prompt Poster Komik Edukasi — Bentuk Aljabar", url: "https://drive.google.com/file/d/1fgrh-ghXdCroed9pj9EuBL24JE5t9BIV/view?usp=sharing" },
           { bab: "VII-04", grup: "prompt", nama: "Prompt Kuis Game Ekspedisi TKA — Bentuk Aljabar", url: "https://drive.google.com/file/d/1TzyyMniLuMOY7eJuneWD8_vqWR09nQCn/view?usp=sharing" },
+          { bab: "VII-04", grup: "emodul", nama: "E-Modul Digital Interaktif — Bentuk Aljabar: Mengubah Masalah Nyata dalam Bentuk Aljabar", url: "https://ais-pre-hxpyziqzjklw7d7rd22t7a-57322949575.asia-east1.run.app" },
+          { bab: "VII-04", grup: "materi", nama: "E-Modul Bentuk Aljabar Kelas VII (Dokumen)", url: "https://drive.google.com/file/d/1HIr6t3jWV-RWNbkXUvuo6lHiKeJj_YQS/view?usp=sharing" },
+          { bab: "VII-04", grup: "materi", nama: "Materi Bab Bentuk Aljabar (PPT)", url: "https://drive.google.com/file/d/14VnxEywDZmc5ZuWHzAggNnJB2r4Q8HRB/view?usp=sharing" },
+          { bab: "VII-04", grup: "materi", nama: "Misi HOTS — Soal Bentuk Aljabar Model TKA (Dokumen)", url: "https://drive.google.com/file/d/1__dnHPv_9Z0X4g-Hax30zNfwDV3Ng0OS/view?usp=sharing" },
+          { bab: "VII-04", grup: "materi", nama: "Naskah Asesmen Sumatif 4 BAB Bentuk Aljabar Model TKA (Dokumen)", url: "https://drive.google.com/file/d/1yGhUMOyTFHErHiA0b5_cbHakfF9jsA3O/view?usp=sharing" },
+          { bab: "VII-04", grup: "avatar", nama: "Video Avatar — Misi HOTS Soal Bentuk Aljabar", url: "video-avatar/Video-Misi-HOTS-Bentuk-Aljabar.mp4" },
           { bab: "VII-05", grup: "prompt", nama: "Prompt LKPD Interaktif — PLSV & PtLSV", url: "https://drive.google.com/file/d/1nGXntGeXAbZthgBqiRAXGfzi5BkRILKq/view?usp=sharing" },
           { bab: "VII-05", grup: "prompt", nama: "Prompt Game Escape Room — PLSV", url: "https://drive.google.com/file/d/1NxZyDhFRkxXdCmRJPXDFopOmHONLEKRP/view?usp=sharing" },
           { bab: "VII-05", grup: "prompt", nama: "Prompt Simulasi Asesmen Sumatif 3 — PLSV & PtLSV", url: "https://drive.google.com/file/d/11qdmanWXkC22N2-OHAu3rmnkaaT6f2Lc/view?usp=sharing" },
@@ -2374,7 +2386,9 @@
           { grup: "quiz", bab: "VII-03", ikon: "quiz", nama: "Simulasi Asesmen Sumatif 3 Bab Rasio", label: "Quiz · Bab VII-03", url: "https://igatrisna.my.canva.site/simulasi-asesmen-sumatif-3-bab-rasio", deskripsi: "Simulasi asesmen sumatif 3 untuk mengukur penguasaan bab Rasio kelas VII SMPN 1 Bantarkawung." },
           { grup: "lkpd", bab: "VII-05", ikon: "lkpd", nama: "LKPD Interaktif Bab PLSV & PtLSV", label: "LKPD Visual · Bab VII-05", tombol: "Buka LKPD", url: "https://igatrisna.my.canva.site/lkpd-interaktif-plsv-ptlsv", deskripsi: "LKPD interaktif berbasis Canva untuk berlatih persamaan dan pertidaksamaan linear satu variabel selangkah demi selangkah." },
           { grup: "game", bab: "VII-05", ikon: "game", nama: "Game Interaktif Escape Room Matematika PLSV & PtLSV", label: "Game Edukasi · Bab VII-05", url: "https://igatrisna.my.canva.site/game-escape-room-plsv-ptlsv", deskripsi: "Escape room seru untuk menguasai PLSV dan PtLSV — pecahkan tantangan persamaannya untuk meloloskan diri." },
-          { grup: "quiz", bab: "VII-05", ikon: "quiz", nama: "Simulasi Asesmen Sumatif 3 Bab PLSV & PtLSV", label: "Quiz · Bab VII-05", url: "https://igatrisna.my.canva.site/asesmen--sumatif-3-plsv-ptlsv", deskripsi: "Simulasi asesmen sumatif 3 untuk mengukur penguasaan bab PLSV & PtLSV kelas VII SMPN 1 Bantarkawung." }
+          { grup: "quiz", bab: "VII-05", ikon: "quiz", nama: "Simulasi Asesmen Sumatif 3 Bab PLSV & PtLSV", label: "Quiz · Bab VII-05", url: "https://igatrisna.my.canva.site/asesmen--sumatif-3-plsv-ptlsv", deskripsi: "Simulasi asesmen sumatif 3 untuk mengukur penguasaan bab PLSV & PtLSV kelas VII SMPN 1 Bantarkawung." },
+          { grup: "lkpd", bab: "VII-04", ikon: "lkpd", nama: "LKM Interaktif Bentuk Aljabar", label: "LKPD Visual · Bab VII-04", tombol: "Buka LKPD", url: "https://igatrisna.my.canva.site/lkm-interaktif-rasio", deskripsi: "Lembar Kerja Mandiri (LKM) interaktif berbasis Canva untuk berlatih unsur-unsur bentuk aljabar, suku sejenis, dan operasi hitung bentuk aljabar." },
+          { grup: "game", bab: "VII-04", ikon: "game", nama: "Kuis Game Ekspedisi Paket TKA Bentuk Aljabar", label: "Game Edukasi · Bab VII-04", url: "https://igatrisna.my.canva.site/untitled-app-tka-bentuk-aljabar", deskripsi: "Game ekspedisi paket TKA elemen aljabar — 10 soal pilihan ganda dalam 30 menit, bantu karakter melompat dari awan ke awan dengan menjawab soal bentuk aljabar dengan benar." }
         ],
         /* ---------- Video pembelajaran per bab (YouTube, diputar langsung di situs) ----------
            Kunci mengikuti pola "video_" + id bab huruf kecil tanpa tanda hubung
