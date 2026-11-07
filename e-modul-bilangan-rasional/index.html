@@ -143,6 +143,13 @@ code.k{background:var(--surface2);border:1px solid var(--line);border-radius:6px
 .markbtn.done{background:var(--good)}
 .rangkuman{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:16px}
 .rangkuman h4{margin-bottom:6px;font-size:1rem}
+.download-wrap{max-width:1180px;margin:0 auto;padding:0 16px 6px}
+.download-actions{display:flex;flex-wrap:wrap;gap:18px;margin-top:16px}
+.download-item{flex:1 1 280px;min-width:0}
+.download-item .btn{width:100%;text-align:center}
+.btn.navy{background:var(--navy)}
+.btn.navy:hover{background:var(--navy2)}
+.download-note{font-size:.88rem;color:var(--muted);margin-top:8px;line-height:1.5}
 footer{max-width:1180px;margin:0 auto;padding:0 20px 34px;color:var(--muted);font-size:.88rem;text-align:center}
 
 @media (max-width:860px){
@@ -609,11 +616,39 @@ footer{max-width:1180px;margin:0 auto;padding:0 20px 34px;color:var(--muted);fon
   </main>
 </div>
 
+<div class="download-wrap">
+  <section class="card" aria-label="Unduh Bank Soal">
+    <span class="tag">Bank Soal</span>
+    <h2 style="margin-top:8px">📥 Unduh Bank Soal (Word)</h2>
+    <p class="lede">Seluruh 39 soal e-modul ini — Diagnostik Awal, Latihan Pertemuan 1–6, dan Cek Penguasaan Bab — tersedia sebagai dokumen Word yang bisa dicetak dan dibagikan.</p>
+    <div class="download-actions">
+      <div class="download-item">
+        <a class="btn" href="bank-soal/Bank-Soal-Bilangan-Rasional-Versi-Siswa.docx" download>Unduh Versi Siswa (Word)</a>
+        <p class="download-note">Berisi soal saja, dilengkapi kolom nama/kelas dan petunjuk pengerjaan.</p>
+      </div>
+      <div class="download-item">
+        <button class="btn gold" type="button" id="btnUnduhGuru">Unduh Versi Guru — Kunci &amp; Pembahasan (Word)</button>
+        <p class="download-note">Khusus guru — digerbang kata sandi.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
 <footer>
   E-Modul Bilangan Rasional · Matematika Kelas VII · Drs. PAIYO — SMP Negeri 1 Bantarkawung · Portal Rumah Belajar Mandiri Siswa AAAMAAT KEREN<br>
   <a href="https://paiyosadewo67-eng.github.io/webpaiyo/">← Kembali ke Portal Utama AAAMAAT KEREN</a>
 </footer>
 
+<script>
+document.getElementById('btnUnduhGuru').addEventListener('click', function(){
+  var pw = prompt('Masukkan kata sandi khusus guru:');
+  if(pw === 'yosad67'){
+    window.open('bank-soal/Bank-Soal-Bilangan-Rasional-Versi-Guru-2a776f79.docx', '_blank');
+  } else {
+    alert('Kata sandi salah — unduhan versi guru dibatalkan.');
+  }
+});
+</script>
 <script>
 function F(a,b){return '<span class="frac"><span class="top">'+a+'</span><span class="bot">'+b+'</span></span>';}
 function FM(w,a,b){return w+'<span class="frac sm"><span class="top">'+a+'</span><span class="bot">'+b+'</span></span>';}
