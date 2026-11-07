@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>E-Modul Peluang — Kelas IX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2a4a; --navy2:#163a63; --teal:#0e7c7b; --teal-d:#0a5e5d;
+  --gold:#d9a51f; --gold-soft:#fdf3d7;
+  --bg:#f4f7fa; --surface:#ffffff; --surface2:#eef3f6;
+  --ink:#1a2b3c; --muted:#52657a; --line:#d7e1ea;
+  --good:#177245; --good-bg:#e3f4e9; --bad:#b3362b; --bad-bg:#fbe9e6;
+  --radius:14px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --navy:#0b1e36; --navy2:#122c4e; --teal:#2aa5a3; --teal-d:#7fd1cf;
+    --gold:#e3b83c; --gold-soft:#3a3115;
+    --bg:#0d1622; --surface:#16222f; --surface2:#1c2c3d;
+    --ink:#e8eef4; --muted:#a7b8c8; --line:#2c4055;
+    --good:#5fd598; --good-bg:#143527; --bad:#ff9a8f; --bad-bg:#40201c;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Nunito",system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.65}
+h1,h2,h3,h4{font-family:"Plus Jakarta Sans",system-ui,sans-serif;line-height:1.25;margin:0}
+button{font-family:inherit;cursor:pointer}
+a{color:var(--teal-d)}
+.hero{background:var(--navy);color:#fff;padding:30px 20px 26px;border-bottom:5px solid var(--gold)}
+.hero-inner{max-width:1180px;margin:0 auto}
+.hero .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#ffd968}
+.hero .brand .dot{width:34px;height:34px;border-radius:9px;background:var(--teal);display:grid;place-items:center;font-size:1.05rem;color:#fff;letter-spacing:0}
+.hero h1{font-size:clamp(1.45rem,4.2vw,2.5rem);font-weight:800;margin:14px 0 6px}
+.hero h1 .accent{color:#ffd968}
+.hero p.sub{font-size:clamp(1rem,2.4vw,1.22rem);margin:0 0 12px;color:#dbe7f3;max-width:720px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.95rem;color:#c6d6e6}
+.hero .meta b{color:#fff}
+.slogan{margin-top:16px;background:var(--navy2);border:1px solid #2b507c;border-radius:12px;padding:12px 16px;max-width:820px}
+.slogan .big{font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;color:#ffd968;font-size:1.05rem;letter-spacing:.03em}
+.slogan .small{font-size:.88rem;color:#c6d6e6}
+.layout{max-width:1180px;margin:0 auto;display:flex;gap:22px;padding:20px 16px 60px;align-items:flex-start}
+.sidebar{width:262px;flex:0 0 262px;position:sticky;top:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px}
+.sidebar h3{font-size:.8rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:2px 4px 10px}
+.navbtn{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:transparent;border:1px solid transparent;border-radius:10px;padding:10px 10px;font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.navbtn:hover{background:var(--surface2)}
+.navbtn.active{background:var(--navy);color:#fff}
+.navbtn .num{flex:0 0 28px;width:28px;height:28px;border-radius:8px;background:var(--surface2);color:var(--teal-d);display:grid;place-items:center;font-size:.85rem;font-weight:800}
+.navbtn.active .num{background:var(--gold);color:#231a00}
+.navbtn .chk{margin-left:auto;font-size:.8rem;color:var(--good);font-weight:800;white-space:nowrap}
+.progress-wrap{margin:12px 4px 4px}
+.progress-label{font-size:.83rem;color:var(--muted);font-weight:700;display:flex;justify-content:space-between}
+.progress-bar{height:10px;border-radius:99px;background:var(--surface2);overflow:hidden;margin-top:5px}
+.progress-fill{height:100%;background:var(--teal);width:0%;transition:width .4s ease}
+main{flex:1;min-width:0}
+.view{display:none}
+.view.active{display:block}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:18px}
+.card h2{font-size:1.45rem;margin-bottom:6px}
+.card h3.sec{font-size:1.12rem;margin:20px 0 8px;display:flex;align-items:center;gap:8px}
+.card h3.sec:first-of-type{margin-top:6px}
+.tag{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:3px 10px;border-radius:99px;background:var(--gold-soft);color:#7a5c00;border:1px solid var(--gold)}
+@media (prefers-color-scheme: dark){.tag{color:#ffd968}}
+.lede{color:var(--muted);font-size:1.02rem}
+ul.tight{margin:6px 0 6px 20px;padding:0}
+ul.tight li{margin-bottom:4px}
+.frac{display:inline-flex;flex-direction:column;text-align:center;vertical-align:middle;margin:0 2px;line-height:1.15;font-weight:800}
+.frac .top{border-bottom:2px solid currentColor;padding:0 5px}
+.frac .bot{padding:0 5px}
+.frac.sm{font-size:.86em}
+code.k{background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-family:inherit;font-weight:800}
+.callout{border-radius:12px;padding:14px 16px;margin:14px 0;font-size:.98rem}
+.callout.gold{background:var(--gold-soft);border:1px solid var(--gold)}
+.callout.teal{background:var(--surface2);border:1px solid var(--teal)}
+.callout b{font-family:"Plus Jakarta Sans",sans-serif}
+.figbox{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;text-align:center;overflow-x:auto}
+.figbox .cap{font-size:.9rem;color:var(--muted);margin-top:8px}
+.figbox svg{max-width:100%;height:auto}
+table.data{border-collapse:collapse;margin:10px auto;font-size:.95rem;min-width:280px}
+table.data th,table.data td{border:1.5px solid var(--line);padding:6px 10px;text-align:center;background:var(--surface)}
+table.data th{background:var(--navy);color:#fff;font-family:"Plus Jakarta Sans",sans-serif}
+table.data td.hl{background:var(--gold-soft);font-weight:800;color:#7a5c00}
+@media (prefers-color-scheme: dark){table.data td.hl{color:#ffd968}}
+.contoh{border:1.5px dashed var(--teal);border-radius:12px;padding:16px 18px;margin:14px 0;background:var(--surface)}
+.contoh .ch{font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;color:var(--teal-d);margin-bottom:6px}
+.contoh dl{margin:8px 0}
+.contoh dt{font-weight:800;font-family:"Plus Jakarta Sans",sans-serif;font-size:.92rem}
+.contoh dd{margin:0 0 8px 0}
+.step{margin:4px 0}
+.kesimpulan{background:var(--good-bg);border-radius:8px;padding:8px 12px;font-weight:700;margin-top:8px}
+.meet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:14px}
+.meet-card{border:1px solid var(--line);border-top:6px solid var(--teal);border-radius:12px;padding:16px;background:var(--surface);text-align:left;width:100%;color:var(--ink);font-family:inherit}
+.meet-card:hover{border-color:var(--teal)}
+.meet-card .mn{font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.meet-card h4{font-size:1.05rem;margin:5px 0 6px}
+.meet-card p{margin:0;font-size:.9rem;color:var(--muted)}
+.meet-card .done{margin-top:10px;font-size:.83rem;font-weight:800;color:var(--good)}
+.meet-card .todo{margin-top:10px;font-size:.83rem;font-weight:800;color:var(--muted)}
+.c1{border-top-color:#0e7c7b}.c2{border-top-color:#2b7fb8}.c3{border-top-color:#7a5fc0}.c4{border-top-color:#c96a1e}.c5{border-top-color:#b3362b}.c6{border-top-color:#177245}
+.quiz-head{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.score-pill{background:var(--navy);color:#fff;border-radius:99px;padding:5px 14px;font-weight:800;font-size:.9rem}
+.score-pill .g{color:#ffd968}
+.qitem{border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;background:var(--surface)}
+.qitem .qtext{font-weight:700;margin-bottom:10px}
+.qitem .qtext .qn{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:8px;background:var(--navy);color:#fff;font-size:.85rem;margin-right:8px;vertical-align:2px}
+.opts{display:grid;gap:8px}
+.opt{display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;background:var(--surface2);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;font-size:1rem;font-weight:600;color:var(--ink)}
+.opt .ol{flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:var(--surface);border:1.5px solid var(--line);display:grid;place-items:center;font-weight:800;font-size:.85rem}
+.opt:hover:not(:disabled){border-color:var(--teal)}
+.opt:disabled{cursor:default;opacity:.92}
+.opt.correct{border-color:var(--good);background:var(--good-bg)}
+.opt.correct .ol{background:var(--good);color:#fff;border-color:var(--good)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt.wrong .ol{background:var(--bad);color:#fff;border-color:var(--bad)}
+.feedback{display:none;margin-top:12px;border-radius:10px;padding:11px 13px;font-size:.95rem}
+.feedback.show{display:block}
+.feedback.ok{background:var(--good-bg);border:1px solid var(--good)}
+.feedback.no{background:var(--bad-bg);border:1px solid var(--bad)}
+.quiz-result{display:none;margin-top:14px;border-radius:12px;padding:16px;background:var(--gold-soft);border:1px solid var(--gold);font-size:1rem}
+.quiz-result.show{display:block}
+.btn{display:inline-block;border:none;border-radius:10px;padding:11px 20px;font-size:1rem;font-weight:800;background:var(--teal);color:#fff;text-decoration:none;font-family:inherit}
+.btn:hover{background:var(--teal-d)}
+.btn.gold{background:var(--gold);color:#231a00}
+.btn.ghost{background:transparent;color:var(--teal-d);border:1.5px solid var(--teal)}
+.btn.navy{background:var(--navy)}
+.btn.navy:hover{background:var(--navy2)}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;justify-content:space-between}
+.markbtn.done{background:var(--good)}
+.rangkuman{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:16px}
+.rangkuman h4{margin-bottom:6px;font-size:1rem}
+.download-wrap{max-width:1180px;margin:0 auto;padding:0 16px 6px}
+.download-actions{display:flex;flex-wrap:wrap;gap:18px;margin-top:16px}
+.download-item{flex:1 1 280px;min-width:0}
+.download-item .btn{width:100%;text-align:center}
+.download-note{font-size:.88rem;color:var(--muted);margin-top:8px;line-height:1.5}
+footer{max-width:1180px;margin:0 auto;padding:0 20px 34px;color:var(--muted);font-size:.88rem;text-align:center}
+@media (max-width:860px){
+  .layout{flex-direction:column;padding-top:14px}
+  .sidebar{width:100%;flex:none;position:static;display:block}
+  .sidebar .navlist{display:flex;flex-wrap:wrap;gap:6px}
+  .navbtn{width:auto;flex:1 1 44%}
+  .navbtn .chk{display:none}
+  .progress-wrap{display:none}
+  .card{padding:17px}
+  body{font-size:16px}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .progress-fill{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand"><span class="dot">🎲</span> Portal Rumah Belajar Mandiri Siswa · AAAMAAT KEREN</div>
+    <h1>E-MODUL DIGITAL INTERAKTIF MATEMATIKA KELAS IX — <span class="accent">PELUANG</span></h1>
+    <p class="sub">Menebak dengan Ilmu: dari Percobaan Nyata menuju Peluang Teoretik</p>
+    <div class="meta">
+      <span>Penyusun: <b>Drs. PAIYO</b></span>
+      <span>SMP Negeri 1 Bantarkawung</span>
+      <span>Kelas IX · Bab Peluang</span>
+    </div>
+    <div class="slogan">
+      <div class="big">AAAMAAT KEREN</div>
+      <div class="small">Asah Asih Asuh Matematika — Kreatif, Eksploratif, Representatif, Ekslen, No Drop</div>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" aria-label="Daftar isi modul">
+    <h3>Daftar Isi</h3>
+    <div class="navlist" id="navlist">
+      <button class="navbtn active" data-view="beranda"><span class="num">⌂</span> Beranda Modul</button>
+      <button class="navbtn" data-view="diagnostik"><span class="num">✎</span> Diagnostik Awal</button>
+      <button class="navbtn" data-view="p1"><span class="num">1</span> Peluang Empirik <span class="chk" data-chk="p1"></span></button>
+      <button class="navbtn" data-view="p2"><span class="num">2</span> Ruang Sampel <span class="chk" data-chk="p2"></span></button>
+      <button class="navbtn" data-view="p3"><span class="num">3</span> Peluang Teoretik <span class="chk" data-chk="p3"></span></button>
+      <button class="navbtn" data-view="p4"><span class="num">4</span> Komplemen <span class="chk" data-chk="p4"></span></button>
+      <button class="navbtn" data-view="p5"><span class="num">5</span> Frekuensi Harapan <span class="chk" data-chk="p5"></span></button>
+      <button class="navbtn" data-view="p6"><span class="num">6</span> Penerapan <span class="chk" data-chk="p6"></span></button>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progres belajarmu</span><span id="progressText">0 dari 6</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+  </aside>
+
+  <main id="main">
+
+  <!-- ================= BERANDA ================= -->
+  <section class="view active" id="view-beranda">
+    <div class="card">
+      <span class="tag">Selamat Datang</span>
+      <h2 style="margin-top:8px">Halo, Pejuang Matematika! 👋</h2>
+      <p class="lede">“Besok hujan atau tidak?” “Siapa yang menang undian?” “Keluar mata dadu berapa ya?” Hidup kita penuh kejadian yang belum pasti — dan matematika punya cara ilmiah untuk mengukurnya: <b>peluang</b>. Di modul ini kamu belajar menebak <i>dengan ilmu</i>: mulai dari percobaan nyata, menyusun ruang sampel, sampai menghitung peluang secara teoretik.</p>
+      <h3 class="sec">📖 Petunjuk Penggunaan</h3>
+      <ul class="tight">
+        <li>Mulailah dari <b>Diagnostik Awal</b> untuk memeriksa kesiapanmu — hanya 5 soal prasyarat, langsung ketahuan benar atau salahnya.</li>
+        <li>Pelajari <b>Pertemuan 1 sampai 6</b> secara berurutan, mengikuti alur: percobaan nyata → ruang sampel → rumus peluang → penerapan.</li>
+        <li>Setiap pertemuan berisi tujuan, materi bergambar, contoh soal berpembahasan, dan latihan 4 soal yang langsung diperiksa.</li>
+        <li>Setelah membaca pembahasan latihan, tekan <b>“Tandai Sudah Dipelajari”</b> — progresmu tersimpan di perangkat ini.</li>
+        <li>Tutup bab ini dengan <b>Cek Penguasaan Bab</b> (10 soal) di Pertemuan 6.</li>
+      </ul>
+      <div class="callout gold"><b>Semangat AAAMAAT KEREN:</b> dalam peluang, “mungkin” pun bisa dihitung. Salah menjawab itu wajar — yang penting paham sebabnya, lalu coba lagi. <i>No Drop!</i></div>
+      <h3 class="sec">🗂️ Enam Pertemuan dalam Bab Ini</h3>
+      <div class="meet-grid" id="meetGrid"></div>
+      <div class="btnrow">
+        <span></span>
+        <button class="btn" data-goto="diagnostik">Mulai dari Diagnostik Awal →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIAGNOSTIK ================= -->
+  <section class="view" id="view-diagnostik">
+    <div class="card">
+      <span class="tag">Sebelum Belajar</span>
+      <h2 style="margin-top:8px">Diagnostik Awal</h2>
+      <p class="lede">Lima soal singkat tentang bekal yang akan kamu pakai terus di bab ini: pecahan sederhana, perbandingan, persen, dan membaca tabel data. Jawab dengan jujur — hasilnya hanya untuk mengetahui kesiapanmu, bukan nilai rapor.</p>
+      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">5 soal · pilihan ganda</span><span class="score-pill">Skor: <span class="g" id="score-diagnostik">0 / 5</span></span></div>
+      <div id="quiz-diagnostik"></div>
+      <div class="quiz-result" id="result-diagnostik"></div>
+      <div class="btnrow">
+        <button class="btn ghost" data-goto="beranda">← Beranda</button>
+        <button class="btn" data-goto="p1">Lanjut ke Pertemuan 1 →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PERTEMUAN 1 ================= -->
+  <section class="view" id="view-p1">
+    <div class="card">
+      <span class="tag">Pertemuan 1</span>
+      <h2 style="margin-top:8px">Peluang Empirik (Frekuensi Relatif)</h2>
+      <h3 class="sec">🎯 Tujuan Pembelajaran</h3>
+      <ul class="tight">
+        <li>Melakukan dan mencatat percobaan sederhana: melempar koin, melempar dadu, dan mengambil kelereng.</li>
+        <li>Menghitung frekuensi relatif suatu kejadian dari data percobaan.</li>
+        <li>Menjelaskan bahwa frekuensi relatif mendekati peluang teoretik bila percobaan dilakukan sangat banyak kali.</li>
+      </ul>
+      <h3 class="sec">📚 Materi</h3>
+      <p>Sebelum ada rumus, para matematikawan mempelajari peluang dari <b>percobaan nyata</b>. Lemparlah sebuah koin uang logam berkali-kali dan catat berapa kali muncul sisi Angka (A) dan sisi Gambar (G). Hasil pengamatan seperti ini disebut <b>peluang empirik</b>.</p>
+      <p>Ukuran yang dipakai adalah <b>frekuensi relatif</b> suatu kejadian:</p>
+      <div class="callout teal" style="text-align:center;font-size:1.05rem"><b>Frekuensi relatif kejadian A = <span class="frac"><span class="top">banyak kejadian A terjadi</span><span class="bot">banyak seluruh percobaan</span></span></b></div>
+      <p>Perhatikan hasil pelemparan satu koin berikut. Semakin banyak lemparan, frekuensi relatif munculnya Angka semakin <b>stabil di sekitar 0,5</b>:</p>
+      <div class="figbox">
+        <table class="data">
+          <tr><th>Banyak lemparan</th><th>10</th><th>20</th><th>50</th><th>100</th><th>1.000</th></tr>
+          <tr><td><b>Angka muncul</b></td><td>6</td><td>9</td><td>26</td><td>49</td><td>503</td></tr>
+          <tr><td><b>Frekuensi relatif</b></td><td>0,60</td><td>0,45</td><td>0,52</td><td>0,49</td><td>0,503</td></tr>
+        </table>
+        <div class="cap">Data contoh pelemparan koin: 6/10 = 0,60; 9/20 = 0,45; 26/50 = 0,52; 49/100 = 0,49; 503/1.000 = 0,503 — makin mendekati ½.</div>
+      </div>
+      <p>Hal yang sama berlaku untuk percobaan lain: melempar dadu dan mencatat mata yang muncul, atau mengambil satu kelereng dari kantong berisi kelereng aneka warna lalu mengembalikannya. Kuncinya selalu sama — <b>bandingkan banyak kejadian yang diamati dengan banyak seluruh percobaan</b>.</p>
+      <div class="figbox">
+        <svg width="300" height="190" viewBox="0 0 300 190" role="img" aria-label="Kantong berisi kelereng merah, biru, dan kuning">
+          <path d="M95 55 L205 55 L225 175 Q226 186 215 186 L85 186 Q74 186 75 175 Z" fill="var(--surface)" stroke="var(--navy)" stroke-width="2.5"/>
+          <rect x="88" y="38" width="124" height="18" rx="8" fill="var(--gold)" stroke="var(--navy)" stroke-width="2"/>
+          <circle cx="118" cy="95" r="16" fill="#c0392b" stroke="var(--navy)" stroke-width="1.6"/>
+          <circle cx="158" cy="88" r="16" fill="#2b7fb8" stroke="var(--navy)" stroke-width="1.6"/>
+          <circle cx="192" cy="98" r="16" fill="#e3b83c" stroke="var(--navy)" stroke-width="1.6"/>
+          <circle cx="132" cy="130" r="16" fill="#2b7fb8" stroke="var(--navy)" stroke-width="1.6"/>
+          <circle cx="172" cy="132" r="16" fill="#c0392b" stroke="var(--navy)" stroke-width="1.6"/>
+          <circle cx="150" cy="162" r="16" fill="#e3b83c" stroke="var(--navy)" stroke-width="1.6"/>
+          <circle cx="105" cy="152" r="16" fill="#c0392b" stroke="var(--navy)" stroke-width="1.6"/>
+          <circle cx="198" cy="152" r="16" fill="#2b7fb8" stroke="var(--navy)" stroke-width="1.6"/>
+          <text x="150" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--ink)">Kantong kelereng</text>
+        </svg>
+        <div class="cap">Percobaan mengambil kelereng: ambil satu, catat warnanya, lalu kembalikan. Ulangi berkali-kali dan hitung frekuensi relatif setiap warna.</div>
+      </div>
+      <div class="contoh">
+        <div class="ch">✍️ Contoh Soal</div>
+        <p style="margin:0">Sebuah dadu dilempar sebanyak 30 kali. Mata dadu 6 muncul sebanyak 6 kali. Tentukan frekuensi relatif munculnya mata dadu 6!</p>
+        <dl>
+          <dt>Diketahui</dt><dd>Banyak percobaan = 30 kali; mata dadu 6 muncul 6 kali.</dd>
+          <dt>Ditanyakan</dt><dd>Frekuensi relatif munculnya mata dadu 6.</dd>
+          <dt>Penyelesaian</dt>
+          <dd class="step">Rumus: frekuensi relatif = <span class="frac"><span class="top">banyak kejadian</span><span class="bot">banyak percobaan</span></span></dd>
+          <dd class="step">Substitusi: frekuensi relatif = <span class="frac"><span class="top">6</span><span class="bot">30</span></span></dd>
+          <dd class="step">Hitungan: <span class="frac"><span class="top">6</span><span class="bot">30</span></span> disederhanakan (dibagi 6) = <span class="frac"><span class="top">1</span><span class="bot">5</span></span> = 0,2.</dd>
+          <dd class="kesimpulan">Kesimpulan: frekuensi relatif munculnya mata dadu 6 dari percobaan itu adalah 1/5 atau 0,2.</dd>
+        </dl>
+      </div>
+      <h3 class="sec">📝 Latihan Pertemuan 1</h3>
+      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">4 soal · kunci &amp; pembahasan muncul setelah menjawab</span><span class="score-pill">Skor: <span class="g" id="score-p1">0 / 4</span></span></div>
+      <div id="quiz-p1"></div>
+      <div class="quiz-result" id="result-p1"></div>
+      <div class="rangkuman"><h4>📌 Rangkuman</h4><p style="margin:0">Peluang empirik diperoleh dari percobaan nyata. Frekuensi relatif = banyak kejadian ÷ banyak seluruh percobaan. Bila percobaan diulang sangat banyak kali, frekuensi relatif suatu kejadian akan mendekati satu nilai tetap — nilai itulah yang nanti kita hitung sebagai peluang teoretik.</p></div>
+      <div class="btnrow">
+        <button class="btn ghost" data-goto="diagnostik">← Diagnostik</button>
+        <span style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn gold markbtn" data-mark="p1">✓ Tandai Sudah Dipelajari</button><button class="btn" data-goto="p2">Pertemuan 2 →</button></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PERTEMUAN 2 ================= -->
+  <section class="view" id="view-p2">
+    <div class="card">
+      <span class="tag">Pertemuan 2</span>
+      <h2 style="margin-top:8px">Ruang Sampel dan Titik Sampel</h2>
+      <h3 class="sec">🎯 Tujuan Pembelajaran</h3>
+      <ul class="tight">
+        <li>Menjelaskan pengertian ruang sampel, titik sampel, dan kejadian.</li>
+        <li>Menentukan ruang sampel suatu percobaan dengan cara daftar, tabel, dan diagram pohon.</li>
+        <li>Menentukan n(S) dan n(A) untuk berbagai percobaan.</li>
+      </ul>
+      <h3 class="sec">📚 Materi</h3>
+      <p><b>Ruang sampel</b> adalah himpunan semua hasil yang mungkin dari suatu percobaan, dilambangkan <code class="k">S</code>. Setiap hasil yang mungkin disebut <b>titik sampel</b>. Banyaknya anggota ruang sampel ditulis <code class="k">n(S)</code>.</p>
+      <ul class="tight">
+        <li>Satu koin: S = {A, G}, n(S) = 2.</li>
+        <li>Satu dadu: S = {1, 2, 3, 4, 5, 6}, n(S) = 6.</li>
+        <li>Pengambilan kelereng dari kantong berisi 1 merah, 1 biru, 1 kuning: S = {M, B, K}, n(S) = 3.</li>
+      </ul>
+      <p>Sebuah <b>kejadian</b> adalah himpunan bagian dari ruang sampel — kumpulan hasil tertentu yang kita perhatikan. Banyaknya anggota kejadian A ditulis <code class="k">n(A)</code>. Contoh: pada pelemparan satu dadu, kejadian muncul mata genap adalah A = {2, 4, 6} sehingga n(A) = 3.</p>
+      <p><b>Cara 1 — Daftar (untuk dua koin).</b> Lempar dua koin sekaligus. Hasilnya memperhatikan koin pertama dan kedua: S = {AA, AG, GA, GG}, jadi n(S) = 2 × 2 = 4. Perhatikan: AG dan GA adalah dua titik sampel yang <b>berbeda</b>.</p>
+      <p><b>Cara 2 — Diagram pohon (dua koin).</b> Cabang pertama untuk koin I, cabang kedua untuk koin II; ujung cabangnya adalah titik sampel:</p>
+      <div class="figbox">
+        <svg width="520" height="220" viewBox="0 0 520 220" role="img" aria-label="Diagram pohon pelemparan dua koin menghasilkan AA, AG, GA, GG">
+          <g stroke="var(--teal-d)" stroke-width="2">
+            <line x1="95" y1="110" x2="215" y2="55"/><line x1="95" y1="110" x2="215" y2="165"/>
+            <line x1="245" y1="55" x2="375" y2="28"/><line x1="245" y1="55" x2="375" y2="82"/>
+            <line x1="245" y1="165" x2="375" y2="138"/><line x1="245" y1="165" x2="375" y2="192"/>
+          </g>
+          <circle cx="80" cy="110" r="15" fill="var(--navy)"/>
+          <g font-size="14" fill="var(--ink)">
+            <text x="150" y="68" font-weight="bold">A (koin I)</text>
+            <text x="150" y="172" font-weight="bold">G (koin I)</text>
+            <text x="288" y="34">A (koin II)</text><text x="288" y="88">G (koin II)</text>
+            <text x="288" y="144">A (koin II)</text><text x="288" y="198">G (koin II)</text>
+          </g>
+          <g font-size="16" font-weight="bold" fill="var(--teal-d)">
+            <text x="420" y="33">→ AA</text><text x="420" y="87">→ AG</text>
+            <text x="420" y="143">→ GA</text><text x="420" y="197">→ GG</text>
+          </g>
+          <text x="80" y="146" text-anchor="middle" font-size="12.5" fill="var(--muted)">mulai</text>
+        </svg>
+        <div class="cap">Diagram pohon dua koin: 2 cabang × 2 cabang = 4 titik sampel: AA, AG, GA, GG.</div>
+      </div>
+      <p><b>Cara 3 — Tabel (untuk dua dadu).</b> Baris untuk dadu pertama, kolom untuk dadu kedua. Setiap sel adalah satu titik sampel, jadi n(S) = 6 × 6 = <b>36</b>. Tabel di bawah menampilkan <i>jumlah</i> kedua mata dadu di setiap sel:</p>
+      <div class="figbox">
+        <table class="data" aria-label="Tabel jumlah mata dua dadu">
+          <tr><th>+</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr>
+          <tr><th>1</th><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="hl">7</td></tr>
+          <tr><th>2</th><td>3</td><td>4</td><td>5</td><td>6</td><td class="hl">7</td><td>8</td></tr>
+          <tr><th>3</th><td>4</td><td>5</td><td>6</td><td class="hl">7</td><td>8</td><td>9</td></tr>
+          <tr><th>4</th><td>5</td><td>6</td><td class="hl">7</td><td>8</td><td>9</td><td>10</td></tr>
+          <tr><th>5</th><td>6</td><td class="hl">7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+          <tr><th>6</th><td class="hl">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+        </table>
+        <div class="cap">36 sel = 36 titik sampel. Sel emas adalah pasangan berjumlah 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) — ada 6 titik sampel. Kita pakai lagi di Pertemuan 3!</div>
+      </div>
+      <div class="callout gold"><b>Kunci menghitung n(S):</b> untuk percobaan bertahap, kalikan banyak hasil setiap tahap. Dua koin: 2 × 2 = 4. Koin + dadu: 2 × 6 = 12. Tiga koin: 2 × 2 × 2 = 8. Kesalahan yang sering terjadi adalah <i>menjumlahkan</i> (2 + 2 = 4 kebetulan sama untuk dua koin, tetapi dua dadu bukan 6 + 6 = 12 — melainkan 36!).</div>
+      <div class="contoh">
+        <div class="ch">✍️ Contoh Soal</div>
+        <p style="margin:0">Dua keping uang logam dilempar bersamaan. Tentukan ruang sampelnya dan banyak titik sampel untuk kejadian muncul tepat satu sisi Angka!</p>
+        <dl>
+          <dt>Diketahui</dt><dd>Percobaan melempar dua koin; setiap koin mempunyai sisi Angka (A) dan Gambar (G).</dd>
+          <dt>Ditanyakan</dt><dd>Ruang sampel S dan n(A) untuk kejadian tepat satu Angka.</dd>
+          <dt>Penyelesaian</dt>
+          <dd class="step">Cara: susun semua pasangan berurutan (koin I, koin II) dengan daftar/diagram pohon.</dd>
+          <dd class="step">Ruang sampel: S = {AA, AG, GA, GG}, sehingga n(S) = 4.</dd>
+          <dd class="step">Kejadian tepat satu Angka: A = {AG, GA}, sehingga n(A) = 2.</dd>
+          <dd class="kesimpulan">Kesimpulan: S = {AA, AG, GA, GG} dengan n(S) = 4, dan banyak titik sampel kejadian tepat satu Angka adalah n(A) = 2.</dd>
+        </dl>
+      </div>
+      <h3 class="sec">📝 Latihan Pertemuan 2</h3>
+      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">4 soal · kunci &amp; pembahasan muncul setelah menjawab</span><span class="score-pill">Skor: <span class="g" id="score-p2">0 / 4</span></span></div>
+      <div id="quiz-p2"></div>
+      <div class="quiz-result" id="result-p2"></div>
+      <div class="rangkuman"><h4>📌 Rangkuman</h4><p style="margin:0">Ruang sampel S adalah himpunan semua hasil yang mungkin; anggotanya disebut titik sampel. n(S) untuk percobaan bertahap dihitung dengan mengalikan banyak hasil tiap tahap: dua koin 4, dua dadu 36, tiga koin 8. Kejadian adalah himpunan bagian S dengan banyak anggota n(A). Ruang sampel dapat disusun dengan daftar, tabel, atau diagram pohon.</p></div>
+      <div class="btnrow">
+        <button class="btn ghost" data-goto="p1">← Pertemuan 1</button>
+        <span style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn gold markbtn" data-mark="p2">✓ Tandai Sudah Dipelajari</button><button class="btn" data-goto="p3">Pertemuan 3 →</button></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PERTEMUAN 3 ================= -->
+  <section class="view" id="view-p3">
+    <div class="card">
+      <span class="tag">Pertemuan 3</span>
+      <h2 style="margin-top:8px">Peluang Teoretik</h2>
+      <h3 class="sec">🎯 Tujuan Pembelajaran</h3>
+      <ul class="tight">
+        <li>Menjelaskan rumus peluang teoretik P(A) = n(A)/n(S).</li>
+        <li>Menghitung peluang kejadian pada pelemparan dadu, koin, pengambilan kartu, dan kelereng.</li>
+        <li>Menyebutkan rentang nilai peluang dan artinya.</li>
+      </ul>
+      <h3 class="sec">📚 Materi</h3>
+      <p>Di Pertemuan 1 kita melihat frekuensi relatif mendekati nilai tetap bila percobaan dilakukan sangat banyak kali. Nilai tetap itu dapat dihitung <i>tanpa</i> melakukan percobaan, asalkan setiap titik sampel berpeluang sama besar. Inilah <b>peluang teoretik</b>:</p>
+      <div class="callout teal" style="text-align:center;font-size:1.08rem"><b>P(A) = <span class="frac"><span class="top">n(A)</span><span class="bot">n(S)</span></span> = <span class="frac"><span class="top">banyak titik sampel kejadian A</span><span class="bot">banyak seluruh titik sampel</span></span></b></div>
+      <p>Langkah-langkahnya: <b>(1)</b> tentukan ruang sampel dan n(S); <b>(2)</b> tentukan kejadian A dan n(A); <b>(3)</b> bagi, lalu sederhanakan. Nilai peluang selalu berada di antara 0 dan 1: <code class="k">0 ≤ P(A) ≤ 1</code>. Semakin dekat ke 1, semakin besar kemungkinan kejadian itu terjadi.</p>
+      <div class="figbox">
+        <svg width="300" height="230" viewBox="0 0 300 230" role="img" aria-label="Roda putar dengan delapan bagian sama besar bernomor 1 sampai 8">
+          <g stroke="var(--navy)" stroke-width="1.6">
+            <path d="M150 110 L240 110 A90 90 0 0 1 213.6 173.6 Z" fill="#0e7c7b"/>
+            <path d="M150 110 L213.6 173.6 A90 90 0 0 1 150 200 Z" fill="var(--surface)"/>
+            <path d="M150 110 L150 200 A90 90 0 0 1 86.4 173.6 Z" fill="#2b7fb8"/>
+            <path d="M150 110 L86.4 173.6 A90 90 0 0 1 60 110 Z" fill="var(--surface)"/>
+            <path d="M150 110 L60 110 A90 90 0 0 1 86.4 46.4 Z" fill="#e3b83c"/>
+            <path d="M150 110 L86.4 46.4 A90 90 0 0 1 150 20 Z" fill="var(--surface)"/>
+            <path d="M150 110 L150 20 A90 90 0 0 1 213.6 46.4 Z" fill="#7a5fc0"/>
+            <path d="M150 110 L213.6 46.4 A90 90 0 0 1 240 110 Z" fill="var(--surface)"/>
+          </g>
+          <circle cx="150" cy="110" r="10" fill="var(--navy)"/>
+          <polygon points="150,2 141,18 159,18" fill="#b3362b"/>
+          <g font-size="15" font-weight="bold" fill="var(--ink)" text-anchor="middle">
+            <text x="196" y="116">1</text><text x="182" y="158">2</text><text x="144" y="170">3</text><text x="104" y="158">4</text>
+            <text x="90" y="116">5</text><text x="104" y="72">6</text><text x="144" y="56">7</text><text x="182" y="72">8</text>
+          </g>
+          <text x="150" y="224" text-anchor="middle" font-size="13.5" fill="var(--muted)">8 bagian sama besar → setiap nomor berpeluang 1/8</text>
+        </svg>
+        <div class="cap">Roda putar (spinner) dengan 8 bagian sama besar: n(S) = 8. Misalnya kejadian mendapat nomor genap: n(A) = 4 (nomor 2, 4, 6, 8), jadi P(genap) = 4/8 = ½.</div>
+      </div>
+      <p><b>Contoh cepat di berbagai percobaan:</b></p>
+      <ul class="tight">
+        <li><b>Dadu:</b> peluang mata prima {2, 3, 5} adalah 3/6 = ½.</li>
+        <li><b>Koin:</b> peluang muncul Gambar adalah 1/2.</li>
+        <li><b>Kartu:</b> sekotak kartu bernomor 1–10, peluang terambil kartu 7 adalah 1/10. Pada kartu remi, peluang terambil kartu As adalah 4/52 = 1/13 (ada 4 As dari 52 kartu).</li>
+        <li><b>Kelereng:</b> kantong berisi 4 kelereng merah dan 6 biru (total 10): peluang terambil merah = 4/10 = 2/5.</li>
+      </ul>
+      <div class="contoh">
+        <div class="ch">✍️ Contoh Soal</div>
+        <p style="margin:0">Dua buah dadu dilempar bersamaan. Tentukan peluang munculnya mata dadu berjumlah 7!</p>
+        <dl>
+          <dt>Diketahui</dt><dd>Dua dadu dilempar bersamaan, n(S) = 6 × 6 = 36 (lihat tabel di Pertemuan 2).</dd>
+          <dt>Ditanyakan</dt><dd>Peluang mata dadu berjumlah 7.</dd>
+          <dt>Penyelesaian</dt>
+          <dd class="step">Rumus: P(A) = <span class="frac"><span class="top">n(A)</span><span class="bot">n(S)</span></span></dd>
+          <dd class="step">Kejadian berjumlah 7: A = {(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)}, sehingga n(A) = 6.</dd>
+          <dd class="step">Substitusi &amp; hitungan: P(A) = <span class="frac"><span class="top">6</span><span class="bot">36</span></span> = <span class="frac"><span class="top">1</span><span class="bot">6</span></span>.</dd>
+          <dd class="kesimpulan">Kesimpulan: peluang muncul mata dadu berjumlah 7 adalah 1/6.</dd>
+        </dl>
+      </div>
+      <h3 class="sec">📝 Latihan Pertemuan 3</h3>
+      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">4 soal · kunci &amp; pembahasan muncul setelah menjawab</span><span class="score-pill">Skor: <span class="g" id="score-p3">0 / 4</span></span></div>
+      <div id="quiz-p3"></div>
+      <div class="quiz-result" id="result-p3"></div>
+      <div class="rangkuman"><h4>📌 Rangkuman</h4><p style="margin:0">Peluang teoretik: P(A) = n(A)/n(S), berlaku bila semua titik sampel berpeluang sama. Nilainya selalu antara 0 dan 1. Kunci ketepatannya ada pada n(S) dan n(A) yang benar — terutama pada percobaan ganda (dua dadu n(S) = 36, bukan 12).</p></div>
+      <div class="btnrow">
+        <button class="btn ghost" data-goto="p2">← Pertemuan 2</button>
+        <span style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn gold markbtn" data-mark="p3">✓ Tandai Sudah Dipelajari</button><button class="btn" data-goto="p4">Pertemuan 4 →</button></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PERTEMUAN 4 ================= -->
+  <section class="view" id="view-p4">
+    <div class="card">
+      <span class="tag">Pertemuan 4</span>
+      <h2 style="margin-top:8px">Peluang Komplemen</h2>
+      <h3 class="sec">🎯 Tujuan Pembelajaran</h3>
+      <ul class="tight">
+        <li>Menentukan peluang kejadian pasti (P = 1) dan kejadian mustahil (P = 0).</li>
+        <li>Menghitung peluang komplemen dengan rumus P(A′) = 1 − P(A).</li>
+        <li>Menyelesaikan soal cerita dengan strategi komplemen.</li>
+      </ul>
+      <h3 class="sec">📚 Materi</h3>
+      <p>Bayangkan garis peluang berikut. Di ujung kiri ada kejadian <b>mustahil</b> — tidak mungkin terjadi, peluangnya 0. Di ujung kanan ada kejadian <b>pasti</b> — selalu terjadi, peluangnya 1. Semua kejadian lain berada di antaranya.</p>
+      <div class="figbox">
+        <svg width="520" height="96" viewBox="0 0 520 96" role="img" aria-label="Garis peluang dari 0 mustahil sampai 1 pasti">
+          <defs><linearGradient id="pg" x1="0" x2="1"><stop offset="0" stop-color="#b3362b"/><stop offset=".5" stop-color="#e3b83c"/><stop offset="1" stop-color="#177245"/></linearGradient></defs>
+          <rect x="40" y="34" width="440" height="14" rx="7" fill="url(#pg)"/>
+          <g font-size="14" fill="var(--ink)" text-anchor="middle">
+            <text x="40" y="24" font-weight="bold">0</text><text x="40" y="70">mustahil</text>
+            <text x="260" y="24" font-weight="bold">1/2</text><text x="260" y="70">mungkin ya, mungkin tidak</text>
+            <text x="480" y="24" font-weight="bold">1</text><text x="480" y="70">pasti</text>
+          </g>
+        </svg>
+        <div class="cap">Contoh mustahil: muncul mata dadu 7 pada satu dadu biasa (P = 0/6 = 0). Contoh pasti: muncul mata dadu kurang dari 7 (P = 6/6 = 1).</div>
+      </div>
+      <p><b>Komplemen</b> suatu kejadian A, ditulis A′, adalah kejadian “A <i>tidak</i> terjadi” — semua titik sampel di luar A. Karena A dan A′ bersama-sama menghabiskan seluruh ruang sampel, berlaku:</p>
+      <div class="callout teal" style="text-align:center;font-size:1.08rem"><b>P(A′) = 1 − P(A)</b> &nbsp;atau&nbsp; <b>P(A) + P(A′) = 1</b></div>
+      <p>Strategi komplemen sangat menolong bila kejadian yang ditanya punya banyak titik sampel, sedangkan lawannya sedikit. Contoh: peluang muncul mata dadu <i>bukan</i> 6 lebih cepat dihitung sebagai 1 − 1/6 = 5/6 daripada menghitung {1, 2, 3, 4, 5} satu per satu — hasilnya sama!</p>
+      <div class="contoh">
+        <div class="ch">✍️ Contoh Soal (Soal Cerita)</div>
+        <p style="margin:0">Berdasarkan prakiraan cuaca, peluang hujan hari ini adalah 0,3. Berapa peluang hari ini <b>tidak</b> hujan?</p>
+        <dl>
+          <dt>Diketahui</dt><dd>P(hujan) = 0,3.</dd>
+          <dt>Ditanyakan</dt><dd>P(tidak hujan).</dd>
+          <dt>Penyelesaian</dt>
+          <dd class="step">Rumus: “tidak hujan” adalah komplemen dari “hujan”, jadi P(tidak hujan) = 1 − P(hujan).</dd>
+          <dd class="step">Substitusi: P(tidak hujan) = 1 − 0,3.</dd>
+          <dd class="step">Hitungan: 1 − 0,3 = 0,7.</dd>
+          <dd class="kesimpulan">Kesimpulan: peluang hari ini tidak hujan adalah 0,7 (lebih besar daripada peluang hujan — payung boleh dibawa untuk jaga-jaga, tetapi kemungkinan besar hari cerah).</dd>
+        </dl>
+      </div>
+      <h3 class="sec">📝 Latihan Pertemuan 4</h3>
+      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">4 soal · kunci &amp; pembahasan muncul setelah menjawab</span><span class="score-pill">Skor: <span class="g" id="score-p4">0 / 4</span></span></div>
+      <div id="quiz-p4"></div>
+      <div class="quiz-result" id="result-p4"></div>
+      <div class="rangkuman"><h4>📌 Rangkuman</h4><p style="margin:0">Kejadian mustahil berpeluang 0 dan kejadian pasti berpeluang 1. Komplemen A′ adalah kejadian “A tidak terjadi”, dengan P(A′) = 1 − P(A). Waspadai jebakan tertukar: bacalah baik-baik apakah soal menanyakan kejadiannya atau lawannya.</p></div>
+      <div class="btnrow">
+        <button class="btn ghost" data-goto="p3">← Pertemuan 3</button>
+        <span style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn gold markbtn" data-mark="p4">✓ Tandai Sudah Dipelajari</button><button class="btn" data-goto="p5">Pertemuan 5 →</button></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PERTEMUAN 5 ================= -->
+  <section class="view" id="view-p5">
+    <div class="card">
+      <span class="tag">Pertemuan 5</span>
+      <h2 style="margin-top:8px">Frekuensi Harapan</h2>
+      <h3 class="sec">🎯 Tujuan Pembelajaran</h3>
+      <ul class="tight">
+        <li>Menjelaskan pengertian frekuensi harapan suatu kejadian.</li>
+        <li>Menghitung frekuensi harapan dengan rumus Fh = P(A) × banyak percobaan.</li>
+        <li>Menduga banyak kemunculan suatu kejadian dalam percobaan berulang dan soal undian.</li>
+      </ul>
+      <h3 class="sec">📚 Materi</h3>
+      <p>Dari Pertemuan 1 kita tahu frekuensi relatif mendekati peluang teoretik. Akibatnya, kita dapat <b>menduga</b> berapa kali suatu kejadian akan muncul bila percobaan diulang banyak kali. Dugaan ini disebut <b>frekuensi harapan</b>:</p>
+      <div class="callout teal" style="text-align:center;font-size:1.08rem"><b>Fh(A) = P(A) × banyak percobaan</b></div>
+      <p>Ingat: frekuensi harapan adalah <b>dugaan rata-rata</b>, bukan kepastian. Melempar koin 10 kali tidak menjamin Angka muncul tepat 5 kali — bisa 4, 6, atau lainnya. Semakin banyak percobaan, hasil nyata cenderung semakin dekat dengan frekuensi harapannya.</p>
+      <div class="figbox">
+        <svg width="460" height="150" viewBox="0 0 460 150" role="img" aria-label="Batang perbandingan frekuensi harapan muncul angka pada 60 lemparan koin">
+          <rect x="60" y="30" width="160" height="34" fill="#0e7c7b"/>
+          <rect x="60" y="84" width="160" height="34" fill="#2b7fb8"/>
+          <g font-size="14.5" fill="var(--ink)">
+            <text x="60" y="20">60 lemparan koin</text>
+            <text x="228" y="52" font-weight="bold">Angka: Fh = 30</text>
+            <text x="228" y="106" font-weight="bold">Gambar: Fh = 30</text>
+            <text x="60" y="142">P(Angka) = P(Gambar) = 1/2 → masing-masing diduga muncul 1/2 × 60 = 30 kali</text>
+          </g>
+        </svg>
+        <div class="cap">Dua batang sama panjang: pada koin seimbang, frekuensi harapan Angka dan Gambar sama besar.</div>
+      </div>
+      <div class="contoh">
+        <div class="ch">✍️ Contoh Soal</div>
+        <p style="margin:0">Sebuah koin dilempar sebanyak 60 kali. Tentukan frekuensi harapan munculnya sisi Angka!</p>
+        <dl>
+          <dt>Diketahui</dt><dd>Satu koin seimbang, P(Angka) = 1/2; banyak pelemparan = 60 kali.</dd>
+          <dt>Ditanyakan</dt><dd>Frekuensi harapan muncul sisi Angka.</dd>
+          <dt>Penyelesaian</dt>
+          <dd class="step">Rumus: Fh = P(A) × banyak percobaan.</dd>
+          <dd class="step">Substitusi: Fh = <span class="frac"><span class="top">1</span><span class="bot">2</span></span> × 60.</dd>
+          <dd class="step">Hitungan: <span class="frac"><span class="top">60</span><span class="bot">2</span></span> = 30.</dd>
+          <dd class="kesimpulan">Kesimpulan: frekuensi harapan munculnya sisi Angka adalah 30 kali.</dd>
+        </dl>
+      </div>
+      <h3 class="sec">📝 Latihan Pertemuan 5</h3>
+      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">4 soal · kunci &amp; pembahasan muncul setelah menjawab</span><span class="score-pill">Skor: <span class="g" id="score-p5">0 / 4</span></span></div>
+      <div id="quiz-p5"></div>
+      <div class="quiz-result" id="result-p5"></div>
+      <div class="rangkuman"><h4>📌 Rangkuman</h4><p style="margin:0">Frekuensi harapan = peluang teoretik × banyak percobaan: Fh(A) = P(A) × n. Ia adalah dugaan kemunculan rata-rata — hasil percobaan yang sebenarnya boleh sedikit berbeda, tetapi akan mendekatinya bila percobaan sangat banyak.</p></div>
+      <div class="btnrow">
+        <button class="btn ghost" data-goto="p4">← Pertemuan 4</button>
+        <span style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn gold markbtn" data-mark="p5">✓ Tandai Sudah Dipelajari</button><button class="btn" data-goto="p6">Pertemuan 6 →</button></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PERTEMUAN 6 ================= -->
+  <section class="view" id="view-p6">
+    <div class="card">
+      <span class="tag">Pertemuan 6</span>
+      <h2 style="margin-top:8px">Penerapan Peluang</h2>
+      <h3 class="sec">🎯 Tujuan Pembelajaran</h3>
+      <ul class="tight">
+        <li>Menilai suatu permainan bersifat adil atau tidak adil berdasarkan peluang menang setiap pemain.</li>
+        <li>Mengambil keputusan sederhana berdasarkan perbandingan peluang.</li>
+        <li>Menyelesaikan masalah nyata campuran dari seluruh materi bab.</li>
+      </ul>
+      <h3 class="sec">📚 Materi</h3>
+      <p>Sebuah permainan disebut <b>adil</b> bila semua pemain mempunyai peluang menang yang <b>sama besar</b>. Bila peluangnya timpang, permainan itu <b>tidak adil</b> bagi pemain yang peluangnya lebih kecil — dan peluanglah alat kita untuk membuktikannya, bukan perasaan.</p>
+      <ul class="tight">
+        <li><b>Adil:</b> Andi menang bila dadu menunjukkan mata ganjil, Budi menang bila mata genap. P(Andi) = 3/6 = ½ dan P(Budi) = 3/6 = ½ — sama besar, permainan adil.</li>
+        <li><b>Tidak adil:</b> Andi menang bila mata dadu 1 saja, Budi menang bila mata dadu selain 1. P(Andi) = 1/6, sedangkan P(Budi) = 5/6 — Budi jauh lebih diuntungkan.</li>
+      </ul>
+      <p><b>Keputusan berdasarkan peluang</b> juga dipakai di luar permainan: memilih membawa payung dari prakiraan hujan, menaksir hasil panen, sampai menilai apakah sebuah undian layak diikuti. Prinsipnya satu: hitung atau bandingkan peluangnya, lalu putuskan dengan kepala dingin.</p>
+      <div class="figbox">
+        <svg width="460" height="140" viewBox="0 0 460 140" role="img" aria-label="Timbangan seimbang melambangkan permainan yang adil">
+          <line x1="230" y1="25" x2="230" y2="95" stroke="var(--navy)" stroke-width="4"/>
+          <line x1="90" y1="40" x2="370" y2="40" stroke="var(--navy)" stroke-width="4"/>
+          <polygon points="230,95 205,118 255,118" fill="var(--navy)"/>
+          <rect x="185" y="118" width="90" height="8" fill="var(--navy)"/>
+          <g stroke="var(--navy)" stroke-width="2"><line x1="90" y1="40" x2="62" y2="78"/><line x1="90" y1="40" x2="118" y2="78"/></g>
+          <path d="M58 78 A32 12 0 0 0 122 78 Z" fill="#0e7c7b"/>
+          <g stroke="var(--navy)" stroke-width="2"><line x1="370" y1="40" x2="342" y2="78"/><line x1="370" y1="40" x2="398" y2="78"/></g>
+          <path d="M338 78 A32 12 0 0 0 402 78 Z" fill="#0e7c7b"/>
+          <g font-size="14" fill="var(--ink)" text-anchor="middle" font-weight="bold">
+            <text x="90" y="66">P = 1/2</text><text x="370" y="66">P = 1/2</text>
+          </g>
+        </svg>
+        <div class="cap">Permainan adil ibarat timbangan yang seimbang: peluang menang kedua pihak sama besar.</div>
+      </div>
+      <div class="contoh">
+        <div class="ch">✍️ Contoh Soal</div>
+        <p style="margin:0">Dina dan Sari bermain dengan satu dadu. Dina menang bila muncul mata dadu prima, Sari menang bila muncul mata dadu bukan prima. Adilkah permainan ini?</p>
+        <dl>
+          <dt>Diketahui</dt><dd>Satu dadu: S = {1, 2, 3, 4, 5, 6}, n(S) = 6. Mata prima = {2, 3, 5}; mata bukan prima = {1, 4, 6}.</dd>
+          <dt>Ditanyakan</dt><dd>Apakah permainan adil bagi kedua pemain?</dd>
+          <dt>Penyelesaian</dt>
+          <dd class="step">Cara: bandingkan peluang menang masing-masing pemain.</dd>
+          <dd class="step">Substitusi: P(Dina) = n(prima)/n(S) = 3/6; P(Sari) = n(bukan prima)/n(S) = 3/6.</dd>
+          <dd class="step">Hitungan: P(Dina) = 3/6 = 1/2 dan P(Sari) = 3/6 = 1/2 — kedua peluang sama besar.</dd>
+          <dd class="kesimpulan">Kesimpulan: permainan ini <b>adil</b>, karena peluang menang Dina dan Sari sama, yaitu 1/2. (Hati-hati: 1 bukan bilangan prima, tetapi juga bukan bilangan komposit — ia masuk kelompok “bukan prima” bersama 4 dan 6.)</dd>
+        </dl>
+      </div>
+      <h3 class="sec">📝 Latihan Pertemuan 6</h3>
+      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">4 soal · kunci &amp; pembahasan muncul setelah menjawab</span><span class="score-pill">Skor: <span class="g" id="score-p6">0 / 4</span></span></div>
+      <div id="quiz-p6"></div>
+      <div class="quiz-result" id="result-p6"></div>
+      <div class="rangkuman"><h4>📌 Rangkuman Bab — Peluang</h4>
+        <ul class="tight" style="margin-bottom:0">
+          <li><b>Peluang empirik:</b> frekuensi relatif = banyak kejadian ÷ banyak percobaan; makin banyak percobaan, nilainya makin stabil mendekati peluang teoretik.</li>
+          <li><b>Ruang sampel:</b> S memuat semua hasil yang mungkin; n(S) percobaan bertahap dihitung dengan mengalikan (dua koin 4, dua dadu 36); gunakan daftar, tabel, atau diagram pohon.</li>
+          <li><b>Peluang teoretik:</b> P(A) = n(A)/n(S), dengan 0 ≤ P(A) ≤ 1.</li>
+          <li><b>Komplemen:</b> P(A′) = 1 − P(A); kejadian pasti berpeluang 1 dan kejadian mustahil berpeluang 0.</li>
+          <li><b>Frekuensi harapan:</b> Fh(A) = P(A) × banyak percobaan — dugaan kemunculan rata-rata.</li>
+          <li><b>Penerapan:</b> permainan adil bila peluang menang semua pemain sama besar; keputusan yang baik membandingkan peluang lebih dahulu.</li>
+        </ul>
+      </div>
+      <h3 class="sec">🏆 Cek Penguasaan Bab</h3>
+      <p class="lede">Sepuluh soal campuran dari seluruh pertemuan. Kerjakan dengan tenang dan jujur — di akhir akan muncul skor dan saran pertemuan mana yang perlu kamu ulangi bila perlu.</p>
+      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">10 soal · seluruh bab</span><span class="score-pill">Skor: <span class="g" id="score-final">0 / 10</span></span></div>
+      <div id="quiz-final"></div>
+      <div class="quiz-result" id="result-final"></div>
+      <div class="btnrow">
+        <button class="btn ghost" data-goto="p5">← Pertemuan 5</button>
+        <span style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn gold markbtn" data-mark="p6">✓ Tandai Sudah Dipelajari</button><button class="btn" data-goto="beranda">Kembali ke Beranda</button></span>
+      </div>
+    </div>
+  </section>
+
+  </main>
+</div>
+
+<div class="download-wrap">
+  <section class="card" aria-label="Unduh Bank Soal">
+    <span class="tag">Bank Soal</span>
+    <h2 style="margin-top:8px">📥 Unduh Bank Soal (Word)</h2>
+    <p class="lede">Seluruh 39 soal e-modul ini — Diagnostik Awal (5 soal), Latihan Pertemuan 1–6 (24 soal), dan Cek Penguasaan Bab (10 soal) — tersedia sebagai dokumen Word yang bisa dicetak dan dibagikan.</p>
+    <div class="download-actions">
+      <div class="download-item">
+        <a class="btn" href="bank-soal/Bank-Soal-Peluang-Versi-Siswa.docx" download>Unduh Versi Siswa (Word)</a>
+        <p class="download-note">Berisi soal saja, dilengkapi kolom nama/kelas dan petunjuk pengerjaan.</p>
+      </div>
+      <div class="download-item">
+        <button class="btn navy" type="button" id="btnUnduhGuru">Unduh Versi Guru — Kunci &amp; Pembahasan (Word)</button>
+        <p class="download-note">Khusus guru — digerbang kata sandi.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  E-Modul Peluang · Matematika Kelas IX · Drs. PAIYO — SMP Negeri 1 Bantarkawung · Portal Rumah Belajar Mandiri Siswa AAAMAAT KEREN<br>
+  <a href="https://paiyosadewo67-eng.github.io/webpaiyo/">← Kembali ke Portal Utama AAAMAAT KEREN</a>
+</footer>
+
+<script>
+document.getElementById('btnUnduhGuru').addEventListener('click', function(){
+  var pw = prompt('Masukkan kata sandi khusus guru:');
+  if(pw === 'yosad67'){
+    window.open('bank-soal/Bank-Soal-Peluang-Versi-Guru-85f89ac1.docx', '_blank');
+  } else {
+    alert('Kata sandi salah — unduhan versi guru dibatalkan.');
+  }
+});
+</script>
+<script>
+function F(a,b){return '<span class="frac"><span class="top">'+a+'</span><span class="bot">'+b+'</span></span>';}
+
+var MEETINGS = [
+  {id:'p1', cls:'c1', title:'Peluang Empirik (Frekuensi Relatif)', desc:'Percobaan nyata koin, dadu, dan kelereng; frekuensi relatif mendekati peluang.'},
+  {id:'p2', cls:'c2', title:'Ruang Sampel dan Titik Sampel', desc:'S, n(S), dan n(A) dengan daftar, tabel dua dadu, dan diagram pohon.'},
+  {id:'p3', cls:'c3', title:'Peluang Teoretik', desc:'Rumus P(A) = n(A)/n(S) pada dadu, koin, kartu, kelereng, dan roda putar.'},
+  {id:'p4', cls:'c4', title:'Peluang Komplemen', desc:'Kejadian pasti dan mustahil, serta P(A′) = 1 − P(A).'},
+  {id:'p5', cls:'c5', title:'Frekuensi Harapan', desc:'Fh = P(A) × banyak percobaan untuk menduga kemunculan kejadian.'},
+  {id:'p6', cls:'c6', title:'Penerapan Peluang', desc:'Permainan adil/tidak adil dan keputusan berdasarkan peluang, plus Cek Penguasaan Bab.'}
+];
+
+var QUIZZES = {
+diagnostik: [
+  {q:'Nilai dari '+F(2,3)+' dari 12 adalah …',
+   opts:['4','6','8','18'], a:2,
+   fb:'Hitung bertahap: 12 ÷ 3 = 4, lalu 4 × 2 = 8. Jadi 2/3 dari 12 adalah 8.'},
+  {q:'Perbandingan banyak kelereng merah dan biru adalah 3 : 5. Jika seluruh kelereng ada 40 butir, banyak kelereng merah adalah …',
+   opts:['15 butir','20 butir','24 butir','25 butir'], a:0,
+   fb:'Jumlah perbandingan = 3 + 5 = 8. Kelereng merah = 3/8 × 40 = 15 butir. (25 butir adalah banyak kelereng birunya.)'},
+  {q:'Tabel warna favorit siswa: Merah 8 siswa, Biru 12 siswa, Hijau 5 siswa, Kuning 15 siswa. Jumlah seluruh siswa pada tabel adalah …',
+   opts:['35 siswa','38 siswa','40 siswa','45 siswa'], a:2,
+   fb:'Jumlahkan semua frekuensi: 8 + 12 + 5 + 15 = 40 siswa.'},
+  {q:'Bentuk paling sederhana dari '+F(6,8)+' adalah …',
+   opts:[F(3,4), F(6,4), F(2,3), F(4,5)], a:0,
+   fb:'Bagi pembilang dan penyebut dengan FPB-nya, yaitu 2: 6/8 = 3/4.'},
+  {q:'25% dari 200 adalah …',
+   opts:['25','50','75','100'], a:1,
+   fb:'25% × 200 = 25/100 × 200 = 50. Ingat, 25% itu sama dengan 1/4, dan 1/4 dari 200 memang 50.'}
+],
+p1: [
+  {q:'Sebuah koin dilempar 20 kali. Sisi Angka muncul 8 kali. Frekuensi relatif munculnya sisi Angka adalah …',
+   opts:[F(1,2), F(3,5), F(2,5), F(4,5)], a:2,
+   fb:'Frekuensi relatif = 8/20, disederhanakan (dibagi 4) menjadi 2/5. Pilihan 3/5 adalah frekuensi relatif sisi Gambar (12/20) — komplemennya, hati-hati tertukar!'},
+  {q:'Sebuah dadu dilempar 60 kali dan mata dadu 3 muncul 12 kali. Frekuensi relatif munculnya mata dadu 3 adalah …',
+   opts:[F(1,6), F(1,5), F(1,4), F(12,50)], a:1,
+   fb:'Frekuensi relatif = 12/60 = 1/5. Pilihan 1/6 adalah peluang teoretiknya — soal ini menanyakan hasil percobaan (empirik), bukan teoretik.'},
+  {q:'Dari 50 kali pengambilan kelereng (dengan pengembalian), kelereng merah terambil 20 kali. Frekuensi relatif terambilnya kelereng merah adalah …',
+   opts:[F(1,5), F(3,5), F(1,2), F(2,5)], a:3,
+   fb:'Frekuensi relatif = 20/50 = 2/5. Pilihan 3/5 adalah frekuensi relatif warna selain merah (30/50).'},
+  {q:'Sebuah koin dilempar semakin banyak — 10, 100, lalu 10.000 kali. Yang terjadi pada frekuensi relatif munculnya Angka adalah …',
+   opts:['Semakin mendekati 1','Semakin mendekati 1/2','Selalu tepat 1/2 sejak awal','Semakin menjauhi 1/2'], a:1,
+   fb:'Betul: semakin banyak percobaan, frekuensi relatif semakin stabil mendekati peluang teoretiknya, yaitu 1/2. Pada percobaan sedikit, nilainya masih berfluktuasi dan belum tentu tepat 1/2.'}
+],
+p2: [
+  {q:'Banyak titik sampel pada pelemparan sebuah dadu adalah …',
+   opts:['1','3','6','36'], a:2,
+   fb:'Satu dadu mempunyai 6 sisi: S = {1, 2, 3, 4, 5, 6}, jadi n(S) = 6. Nilai 36 adalah n(S) untuk dua dadu.'},
+  {q:'Banyak titik sampel pada pelemparan dua keping uang logam adalah …',
+   opts:['2','4','6','8'], a:1,
+   fb:'Kalikan banyak hasil tiap koin: 2 × 2 = 4, yaitu {AA, AG, GA, GG}. Pilihan 2 berasal dari menganggap satu koin saja; 8 adalah n(S) tiga koin.'},
+  {q:'Banyak titik sampel pada pelemparan dua buah dadu bersamaan adalah …',
+   opts:['12','24','30','36'], a:3,
+   fb:'n(S) = 6 × 6 = 36. Kesalahan yang sangat umum adalah menjumlahkan 6 + 6 = 12 — ruang sampel percobaan bertahap dikalikan, bukan dijumlahkan.'},
+  {q:'Pada pelemparan sebuah dadu, kejadian A adalah muncul mata dadu genap. Nilai n(A) adalah …',
+   opts:['2','3','4','6'], a:1,
+   fb:'Mata genap pada dadu adalah {2, 4, 6}, jadi n(A) = 3. Nilai 6 adalah n(S), bukan n(A).'}
+],
+p3: [
+  {q:'Sebuah dadu dilempar sekali. Peluang muncul mata dadu prima adalah …',
+   opts:[F(1,3), F(1,2), F(2,3), F(1,6)], a:1,
+   fb:'Mata prima = {2, 3, 5}, n(A) = 3. P(A) = 3/6 = 1/2. Pilihan 1/6 hanya menghitung satu mata prima saja.'},
+  {q:'Sebuah kantong berisi 4 kelereng merah dan 6 kelereng biru. Diambil satu kelereng secara acak. Peluang terambil kelereng merah adalah …',
+   opts:[F(4,6), F(3,5), F(2,5), F(1,4)], a:2,
+   fb:'n(S) = 4 + 6 = 10 dan n(merah) = 4, jadi P = 4/10 = 2/5. Pilihan 3/5 adalah peluang terambil biru; 4/6 keliru karena memakai 6 sebagai n(S).'},
+  {q:'Roda putar dibagi menjadi 8 bagian sama besar bernomor 1 sampai 8. Peluang jarum berhenti pada nomor lebih dari 6 adalah …',
+   opts:[F(1,8), F(1,4), F(3,8), F(6,8)], a:1,
+   fb:'Nomor lebih dari 6 adalah {7, 8}, n(A) = 2. P = 2/8 = 1/4. Pilihan 6/8 menghitung nomor 1–6, yaitu komplemennya.'},
+  {q:'Dua keping uang logam dilempar bersamaan. Peluang muncul kedua-duanya Angka adalah …',
+   opts:[F(1,2), F(3,4), F(1,4), '1'], a:2,
+   fb:'S = {AA, AG, GA, GG}, n(S) = 4. Kejadian kedua-duanya Angka hanya {AA}, n(A) = 1, jadi P = 1/4. Pilihan 1/2 hanya benar untuk satu koin.'}
+],
+p4: [
+  {q:'Sebuah dadu dilempar sekali. Peluang muncul mata dadu <b>bukan</b> 1 adalah …',
+   opts:[F(1,6), F(5,6), F(1,2), '1'], a:1,
+   fb:'Gunakan komplemen: P(bukan 1) = 1 − P(1) = 1 − 1/6 = 5/6. Pilihan 1/6 adalah peluang muncul mata 1 itu sendiri.'},
+  {q:'Diketahui peluang suatu kejadian A adalah '+F(3,8)+'. Peluang komplemen A (kejadian A tidak terjadi) adalah …',
+   opts:[F(3,8), F(8,3), F(5,8), F(1,8)], a:2,
+   fb:'P(A′) = 1 − P(A) = 1 − 3/8 = 5/8. Nilai peluang tidak pernah lebih dari 1, jadi 8/3 pasti bukan jawaban yang masuk akal.'},
+  {q:'Berikut ini yang merupakan kejadian <b>pasti</b> adalah …',
+   opts:['Muncul mata dadu 6 pada satu kali lemparan','Muncul mata dadu kurang dari 7 pada satu kali lemparan','Muncul mata dadu 7 pada satu kali lemparan','Terambil kelereng merah dari kantong berisi kelereng biru semua'], a:1,
+   fb:'Semua mata dadu (1–6) kurang dari 7, jadi kejadiannya pasti: P = 6/6 = 1. Pilihan mata 7 dan kelereng merah dari kantong serba biru adalah kejadian mustahil (P = 0).'},
+  {q:'Sebuah kantong berisi 3 kelereng merah dan 7 kelereng hijau. Diambil satu kelereng secara acak. Peluang terambil kelereng <b>bukan</b> merah adalah …',
+   opts:[F(3,10), F(7,3), F(3,7), F(7,10)], a:3,
+   fb:'Cara 1: bukan merah berarti hijau, P = 7/10. Cara 2 (komplemen): 1 − 3/10 = 7/10. Pilihan 3/10 adalah peluang terambil merah — tertukar dengan komplemennya.'}
+],
+p5: [
+  {q:'Sebuah dadu dilempar 120 kali. Frekuensi harapan muncul mata dadu 5 adalah …',
+   opts:['10 kali','20 kali','24 kali','60 kali'], a:1,
+   fb:'P(mata 5) = 1/6. Fh = 1/6 × 120 = 20 kali. Pilihan 60 kali berasal dari peluang yang keliru 1/2.'},
+  {q:'Frekuensi harapan muncul mata dadu genap pada 90 kali pelemparan sebuah dadu adalah …',
+   opts:['15 kali','30 kali','45 kali','90 kali'], a:2,
+   fb:'Mata genap {2, 4, 6}: P = 3/6 = 1/2. Fh = 1/2 × 90 = 45 kali.'},
+  {q:'Dalam sebuah undian, peluang seorang peserta memenangkan hadiah adalah '+F(1,50)+'. Jika kesempatan serupa terulang 200 kali, frekuensi harapan memperoleh hadiah adalah …',
+   opts:['2 kali','4 kali','10 kali','50 kali'], a:1,
+   fb:'Fh = P × banyak kesempatan = 1/50 × 200 = 200/50 = 4 kali.'},
+  {q:'Sebuah kantong berisi 2 kelereng merah dan 3 kelereng biru. Satu kelereng diambil lalu dikembalikan, diulang 50 kali. Frekuensi harapan terambil kelereng merah adalah …',
+   opts:['10 kali','20 kali','25 kali','30 kali'], a:1,
+   fb:'P(merah) = 2/(2+3) = 2/5. Fh = 2/5 × 50 = 20 kali. Pilihan 30 kali adalah frekuensi harapan kelereng biru (komplemennya).'}
+],
+p6: [
+  {q:'Sebuah permainan dikatakan <b>adil</b> apabila …',
+   opts:['Pemain yang lebih tua selalu menang','Setiap pemain mempunyai peluang menang yang sama besar','Hadiahnya dibagi dua sama rata','Permainannya menggunakan dadu'], a:1,
+   fb:'Adil dalam peluang artinya peluang menang semua pemain sama besar — bukan soal usia, hadiah, atau alat permainannya.'},
+  {q:'Rudi menang bila sebuah dadu menunjukkan mata 6, sedangkan Tono menang bila dadu menunjukkan mata selain 6. Penilaian yang tepat adalah …',
+   opts:['Adil, karena keduanya memakai dadu yang sama','Tidak adil, karena peluang Tono (5/6) jauh lebih besar daripada peluang Rudi (1/6)','Tidak adil, karena peluang Rudi lebih besar','Adil, karena jumlah peluang keduanya 1'], a:1,
+   fb:'P(Rudi) = 1/6, sedangkan P(Tono) = 5/6. Peluangnya timpang, jadi permainan tidak adil dan menguntungkan Tono.'},
+  {q:'Dua dadu dilempar bersamaan. Peluang muncul mata dadu berjumlah 7 adalah …',
+   opts:[F(7,36), F(1,6), F(6,12), F(1,7)], a:1,
+   fb:'Pasangan berjumlah 7 ada 6: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). P = 6/36 = 1/6. Pilihan 6/12 keliru karena memakai n(S) = 12 (harusnya 36).'},
+  {q:'Kantong A berisi 1 kelereng merah dan 3 biru. Kantong B berisi 2 kelereng merah dan 2 biru. Jika ingin peluang terbesar mengambil kelereng merah, pilihan terbaik adalah …',
+   opts:['Kantong A, karena birunya lebih banyak','Kantong B, karena P(merah) = 1/2 lebih besar dari 1/4','Keduanya sama saja','Tidak bisa ditentukan'], a:1,
+   fb:'P(merah di A) = 1/4 = 0,25; P(merah di B) = 2/4 = 1/2 = 0,5. Peluang B lebih besar, jadi pilih kantong B. Keputusan diambil dengan membandingkan peluang, bukan menebak.'}
+],
+final: [
+  {q:'Sebuah dadu dilempar 40 kali. Mata dadu 2 muncul 5 kali. Frekuensi relatif munculnya mata dadu 2 adalah …',
+   opts:[F(1,8), F(1,4), F(2,5), F(5,6)], a:0,
+   fb:'Frekuensi relatif = 5/40 = 1/8. (Pertemuan 1)'},
+  {q:'Banyak titik sampel pada pelemparan tiga keping uang logam adalah …',
+   opts:['3','6','8','9'], a:2,
+   fb:'n(S) = 2 × 2 × 2 = 8. Menjumlahkan 2 + 2 + 2 = 6 adalah jebakan yang umum. (Pertemuan 2)'},
+  {q:'Pada pelemparan sebuah dadu, n(A) untuk kejadian muncul mata dadu kurang dari 4 adalah …',
+   opts:['2','3','4','6'], a:1,
+   fb:'Mata kurang dari 4 adalah {1, 2, 3}, jadi n(A) = 3. (Pertemuan 2)'},
+  {q:'Sebuah dadu dilempar sekali. Peluang muncul mata dadu ganjil adalah …',
+   opts:[F(1,6), F(1,3), F(2,3), F(1,2)], a:3,
+   fb:'Mata ganjil = {1, 3, 5}, n(A) = 3. P = 3/6 = 1/2. (Pertemuan 3)'},
+  {q:'Sekotak kartu bernomor 1 sampai 10 diambil satu kartu secara acak. Peluang terambil kartu bernomor 7 adalah …',
+   opts:[F(7,10), F(1,10), F(1,7), F(3,10)], a:1,
+   fb:'Hanya ada satu kartu bernomor 7 dari 10 kartu: P = 1/10. Angka 7 adalah nomor kartunya, bukan banyak kejadiannya. (Pertemuan 3)'},
+  {q:'Peluang seorang siswa lulus ujian adalah 0,85. Peluang siswa tersebut <b>tidak</b> lulus adalah …',
+   opts:['0,85','0,25','0,15','1,85'], a:2,
+   fb:'Komplemen: 1 − 0,85 = 0,15. Nilai peluang tidak mungkin lebih dari 1, jadi 1,85 mustahil. (Pertemuan 4)'},
+  {q:'Berikut ini yang merupakan kejadian <b>mustahil</b> adalah …',
+   opts:['Muncul sisi Gambar pada pelemparan sebuah koin','Muncul mata dadu 8 pada pelemparan sebuah dadu','Terambil kelereng biru dari kantong berisi kelereng biru dan merah','Muncul mata dadu genap pada pelemparan sebuah dadu'], a:1,
+   fb:'Dadu biasa hanya bermata 1–6, jadi mata 8 tidak mungkin muncul: P = 0. (Pertemuan 4)'},
+  {q:'Sebuah koin dilempar 80 kali. Frekuensi harapan muncul sisi Gambar adalah …',
+   opts:['20 kali','40 kali','60 kali','80 kali'], a:1,
+   fb:'Fh = P(Gambar) × 80 = 1/2 × 80 = 40 kali. (Pertemuan 5)'},
+  {q:'Frekuensi harapan muncul mata dadu 6 pada 180 kali pelemparan sebuah dadu adalah …',
+   opts:['6 kali','18 kali','30 kali','60 kali'], a:2,
+   fb:'P(mata 6) = 1/6. Fh = 1/6 × 180 = 30 kali. (Pertemuan 5)'},
+  {q:'Dua pemain melempar satu koin: Sinta menang bila muncul Angka, Rina menang bila muncul Gambar. Penilaian yang tepat adalah …',
+   opts:['Tidak adil, Sinta lebih diuntungkan','Adil, karena peluang keduanya sama, yaitu 1/2','Tidak adil, Rina lebih diuntungkan','Tidak bisa dinilai tanpa percobaan'], a:1,
+   fb:'P(Angka) = P(Gambar) = 1/2 — peluang sama besar berarti permainan adil. (Pertemuan 6)'}
+]};
+
+var state = {};
+function renderQuiz(id){
+  var box = document.getElementById('quiz-'+id);
+  if(!box) return;
+  state[id] = {answered:0, correct:0};
+  box.innerHTML = '';
+  QUIZZES[id].forEach(function(item, qi){
+    var div = document.createElement('div'); div.className='qitem';
+    var letters = ['A','B','C','D'];
+    var html = '<div class="qtext"><span class="qn">'+(qi+1)+'</span>'+item.q+'</div><div class="opts">';
+    item.opts.forEach(function(opt, oi){
+      html += '<button class="opt" data-q="'+qi+'" data-o="'+oi+'"><span class="ol">'+letters[oi]+'</span><span>'+opt+'</span></button>';
+    });
+    html += '</div><div class="feedback" id="fb-'+id+'-'+qi+'"></div>';
+    div.innerHTML = html;
+    box.appendChild(div);
+  });
+  box.querySelectorAll('.opt').forEach(function(btn){
+    btn.addEventListener('click', function(){ answer(id, btn); });
+  });
+}
+function answer(id, btn){
+  var qi = parseInt(btn.getAttribute('data-q'),10), oi = parseInt(btn.getAttribute('data-o'),10);
+  var item = QUIZZES[id][qi];
+  var qitem = btn.closest('.qitem');
+  var opts = qitem.querySelectorAll('.opt');
+  opts.forEach(function(o){ o.disabled = true; });
+  opts[item.a].classList.add('correct');
+  var fb = document.getElementById('fb-'+id+'-'+qi);
+  state[id].answered++;
+  if(oi === item.a){
+    state[id].correct++;
+    fb.className = 'feedback show ok';
+    fb.innerHTML = '<b>✅ Benar!</b> ' + item.fb;
+  } else {
+    btn.classList.add('wrong');
+    fb.className = 'feedback show no';
+    fb.innerHTML = '<b>Belum tepat.</b> Jawaban yang benar ditandai hijau. ' + item.fb;
+  }
+  document.getElementById('score-'+id).textContent = state[id].correct + ' / ' + QUIZZES[id].length;
+  if(state[id].answered === QUIZZES[id].length){ showResult(id); }
+}
+function showResult(id){
+  var el = document.getElementById('result-'+id);
+  var c = state[id].correct, n = QUIZZES[id].length;
+  var msg = '';
+  if(id === 'diagnostik'){
+    if(c === 5) msg = '<b>🌟 Luar biasa, kamu siap penuh!</b> Semua bekal prasyarat — pecahan, perbandingan, persen, dan membaca tabel — sudah kamu kuasai. Silakan lanjut ke Pertemuan 1 dan melaju terus sampai Cek Penguasaan Bab.';
+    else if(c >= 3) msg = '<b>👍 Bekalmu cukup baik ('+c+' dari 5).</b> Kamu siap mulai Pertemuan 1. Untuk soal yang masih salah, pembahasannya sudah tersedia di setiap soal di atas — baca sebentar, lalu lanjut belajar.';
+    else msg = '<b>💪 Jangan berkecil hati ('+c+' dari 5).</b> Bab peluang sangat bertumpu pada pecahan: baca kembali pembahasan soal yang salah di atas, lalu mulai Pertemuan 1 dengan perlahan — di sana frekuensi relatif dibangun dari percobaan nyata. Kamu pasti bisa!';
+  } else if(id === 'final'){
+    if(c >= 9) msg = '<b>🏆 Hebat! Skor '+c+' dari 10.</b> Kamu telah menguasai Bab Peluang — dari percobaan empirik sampai penerapan. Pertahankan dan bantu temanmu yang masih berlatih, ya.';
+    else if(c >= 7) msg = '<b>👍 Bagus! Skor '+c+' dari 10.</b> Sedikit lagi menuju tuntas. Cermati pembahasan soal yang masih salah — perhatikan pertemuan asalnya di akhir pembahasan — lalu coba kerjakan kembali setelah istirahat.';
+    else if(c >= 5) msg = '<b>📚 Skor '+c+' dari 10 — kamu sudah di tengah jalan.</b> Ulangi Pertemuan 2 (Ruang Sampel) dan Pertemuan 3 (Peluang Teoretik), karena hampir semua soal bab ini bertumpu pada n(S), n(A), dan rumus P(A) = n(A)/n(S), lalu coba lagi.';
+    else msg = '<b>🌱 Skor '+c+' dari 10 — tidak apa-apa, ini awal belajar.</b> Kembali ke Pertemuan 1 untuk memahami frekuensi relatif dari percobaan nyata, lanjutkan berurutan sampai Pertemuan 6, lalu kerjakan cek ini lagi. Semangat, No Drop!';
+  } else {
+    var name = {p1:'Pertemuan 1',p2:'Pertemuan 2',p3:'Pertemuan 3',p4:'Pertemuan 4',p5:'Pertemuan 5',p6:'Pertemuan 6'}[id];
+    if(c === 4) msg = '<b>🌟 Sempurna! Skor 4 dari 4 di '+name+'.</b> Tandai pertemuan ini sebagai “Sudah Dipelajari” lalu lanjutkan ke pertemuan berikutnya.';
+    else if(c >= 3) msg = '<b>👍 Bagus! Skor '+c+' dari 4 di '+name+'.</b> Baca kembali pembahasan soal yang terlewat, tandai sudah dipelajari, dan lanjutkan perjalananmu.';
+    else msg = '<b>📖 Skor '+c+' dari 4 di '+name+'.</b> Sebaiknya baca ulang materi dan contoh soal pertemuan ini sekali lagi, lalu muat ulang halaman untuk mencoba latihannya dari awal. Kamu bisa!';
+  }
+  el.innerHTML = msg; el.classList.add('show');
+}
+
+function showView(id){
+  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
+  var t = document.getElementById('view-'+id);
+  if(t) t.classList.add('active');
+  document.querySelectorAll('.navbtn').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-view')===id); });
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+document.querySelectorAll('[data-goto]').forEach(function(b){
+  b.addEventListener('click', function(){ showView(b.getAttribute('data-goto')); });
+});
+document.querySelectorAll('.navbtn').forEach(function(b){
+  b.addEventListener('click', function(){ showView(b.getAttribute('data-view')); });
+});
+
+var grid = document.getElementById('meetGrid');
+MEETINGS.forEach(function(m, i){
+  var b = document.createElement('button');
+  b.className = 'meet-card ' + m.cls;
+  b.innerHTML = '<div class="mn">Pertemuan '+(i+1)+'</div><h4>'+m.title+'</h4><p>'+m.desc+'</p><div class="todo" data-meet-status="'+m.id+'">○ Belum dipelajari</div>';
+  b.addEventListener('click', function(){ showView(m.id); });
+  grid.appendChild(b);
+});
+
+var LSKEY = 'emodul-peluang-progress';
+function loadDone(){ try { return JSON.parse(localStorage.getItem(LSKEY)) || {}; } catch(e){ return {}; } }
+function saveDone(d){ try { localStorage.setItem(LSKEY, JSON.stringify(d)); } catch(e){} }
+var done = loadDone();
+function refreshProgress(){
+  var count = 0;
+  MEETINGS.forEach(function(m){
+    var isDone = !!done[m.id];
+    if(isDone) count++;
+    var chk = document.querySelector('[data-chk="'+m.id+'"]');
+    if(chk) chk.textContent = isDone ? '✓' : '';
+    var st = document.querySelector('[data-meet-status="'+m.id+'"]');
+    if(st){ st.textContent = isDone ? '✓ Sudah dipelajari' : '○ Belum dipelajari'; st.className = isDone ? 'done' : 'todo'; }
+    var mb = document.querySelector('.markbtn[data-mark="'+m.id+'"]');
+    if(mb){ mb.textContent = isDone ? '✓ Sudah Dipelajari — ketuk untuk membatalkan' : '✓ Tandai Sudah Dipelajari'; mb.classList.toggle('done', isDone); }
+  });
+  document.getElementById('progressText').textContent = count + ' dari 6';
+  document.getElementById('progressFill').style.width = (count/6*100) + '%';
+}
+document.querySelectorAll('.markbtn').forEach(function(b){
+  b.addEventListener('click', function(){
+    var id = b.getAttribute('data-mark');
+    done[id] = !done[id];
+    if(!done[id]) delete done[id];
+    saveDone(done); refreshProgress();
+  });
+});
+
+['diagnostik','p1','p2','p3','p4','p5','p6','final'].forEach(renderQuiz);
+refreshProgress();
+</script>
+</body>
+</html>
