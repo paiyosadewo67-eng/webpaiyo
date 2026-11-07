@@ -642,8 +642,16 @@ footer{max-width:1180px;margin:0 auto;padding:0 20px 34px;color:var(--muted);fon
 <script>
 document.getElementById('btnUnduhGuru').addEventListener('click', function(){
   var pw = prompt('Masukkan kata sandi khusus guru:');
+  if(pw === null){
+    return;
+  }
   if(pw === 'yosad67'){
-    window.open('bank-soal/Bank-Soal-Bilangan-Rasional-Versi-Guru-2a776f79.docx', '_blank');
+    var a = document.createElement('a');
+    a.href = 'bank-soal/Bank-Soal-Bilangan-Rasional-Versi-Guru-2a776f79.docx';
+    a.setAttribute('download', 'Bank-Soal-Bilangan-Rasional-Versi-Guru.docx');
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
   } else {
     alert('Kata sandi salah — unduhan versi guru dibatalkan.');
   }
