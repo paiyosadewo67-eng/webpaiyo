@@ -126,6 +126,17 @@ table.data td.hl{background:var(--gold-soft);font-weight:800;color:#7a5c00}
 .feedback.no{background:var(--bad-bg);border:1px solid var(--bad)}
 .quiz-result{display:none;margin-top:14px;border-radius:12px;padding:16px;background:var(--gold-soft);border:1px solid var(--gold);font-size:1rem}
 .quiz-result.show{display:block}
+.idpanel{margin:14px 0;border:1.5px dashed var(--teal);border-radius:12px;padding:14px 16px;background:var(--surface2)}
+.idpanel h4{margin:0 0 4px;font-size:1rem}
+.idpanel p{margin:0 0 10px;font-size:.88rem;color:var(--muted)}
+.idgrid{display:flex;gap:10px;flex-wrap:wrap}
+.idgrid label{flex:1 1 150px;font-size:.85rem;font-weight:700;color:var(--muted);display:block}
+.idgrid input{width:100%;margin-top:4px;padding:10px;border:1.5px solid var(--line);border-radius:9px;font:inherit;font-size:1rem;background:var(--surface);color:var(--ink)}
+.report-box{display:none;margin-top:12px;border-radius:12px;padding:13px 16px;background:var(--surface2);border:1px solid var(--line);font-size:.95rem}
+.report-box.show{display:block}
+.report-box .ok{color:var(--good);font-weight:700}
+.report-box .gagal{color:var(--bad);font-weight:700}
+
 .btn{display:inline-block;border:none;border-radius:10px;padding:11px 20px;font-size:1rem;font-weight:800;background:var(--teal);color:#fff;text-decoration:none;font-family:inherit}
 .btn:hover{background:var(--teal-d)}
 .btn.gold{background:var(--gold);color:#231a00}
@@ -624,9 +635,19 @@ footer{max-width:1180px;margin:0 auto;padding:0 20px 34px;color:var(--muted);fon
       </div>
       <h3 class="sec">🏆 Cek Penguasaan Bab</h3>
       <p class="lede">Sepuluh soal campuran dari seluruh pertemuan. Kerjakan dengan tenang dan jujur — di akhir akan muncul skor dan saran pertemuan mana yang perlu kamu ulangi bila perlu.</p>
+      <div class="idpanel" id="idPanel">
+        <h4>📋 Identitas — agar hasilmu tercatat oleh guru</h4>
+        <p>Isi sekali saja; tersimpan otomatis di perangkat ini. Hasil Cek Penguasaanmu akan terkirim ke guru setelah selesai. Bila tidak diisi, hasilmu tidak tercatat (tetap bisa belajar seperti biasa).</p>
+        <div class="idgrid">
+          <label>Nama lengkap<input id="idNama" type="text" autocomplete="name" placeholder="mis. Fakhri Al Hifdzi"></label>
+          <label>Kelas<input id="idKelas" type="text" placeholder="mis. IX C" list="kelasList"><datalist id="kelasList"><option value="IX A"></option><option value="IX B"></option><option value="IX C"></option><option value="IX D"></option><option value="IX E"></option></datalist></label>
+          <label>No. Absen<input id="idAbsen" type="number" min="1" max="40" inputmode="numeric" placeholder="mis. 11"></label>
+        </div>
+      </div>
       <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">10 soal · seluruh bab</span><span class="score-pill">Skor: <span class="g" id="score-final">0 / 10</span></span></div>
       <div id="quiz-final"></div>
       <div class="quiz-result" id="result-final"></div>
+      <div class="report-box" id="reportBox"><span id="reportStatus">Hasilmu sedang disiapkan…</span> <button class="btn ghost" id="btnKirimHasil" style="display:none;padding:7px 14px;font-size:.9rem">📤 Kirim Hasil ke Guru</button></div>
       <div class="btnrow">
         <button class="btn ghost" data-goto="p5">← Pertemuan 5</button>
         <span style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn gold markbtn" data-mark="p6">✓ Tandai Sudah Dipelajari</button><button class="btn" data-goto="beranda">Kembali ke Beranda</button></span>
@@ -829,7 +850,7 @@ var state = {};
 function renderQuiz(id){
   var box = document.getElementById('quiz-'+id);
   if(!box) return;
-  state[id] = {answered:0, correct:0};
+  state[id] = {answered:0, correct:0, picks:{}};
   box.innerHTML = '';
   QUIZZES[id].forEach(function(item, qi){
     var div = document.createElement('div'); div.className='qitem';
@@ -849,6 +870,8 @@ function renderQuiz(id){
 function answer(id, btn){
   var qi = parseInt(btn.getAttribute('data-q'),10), oi = parseInt(btn.getAttribute('data-o'),10);
   var item = QUIZZES[id][qi];
+  state[id].picks[qi] = (oi === item.a);
+  if(id === 'final' && !state[id].startedAt) state[id].startedAt = Date.now();
   var qitem = btn.closest('.qitem');
   var opts = qitem.querySelectorAll('.opt');
   opts.forEach(function(o){ o.disabled = true; });
@@ -887,6 +910,7 @@ function showResult(id){
     else msg = '<b>📖 Skor '+c+' dari 4 di '+name+'.</b> Sebaiknya baca ulang materi dan contoh soal pertemuan ini sekali lagi, lalu muat ulang halaman untuk mencoba latihannya dari awal. Kamu bisa!';
   }
   el.innerHTML = msg; el.classList.add('show');
+  if(id === 'final'){ siapkanLaporanFinal(); }
 }
 
 function showView(id){
@@ -939,6 +963,112 @@ document.querySelectorAll('.markbtn').forEach(function(b){
     saveDone(done); refreshProgress();
   });
 });
+
+
+/* ================= LAPOR HASIL KE GURU (Supabase) ================= */
+var SB_URL_EMP = 'https://vovjeijhxnehhtxjqtkm.supabase.co';
+var SB_KEY_EMP = 'sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV';
+var ASESMEN_EMP = 'E-MODUL PELUANG - CEK PENGUASAAN';
+var IDKEY_EMP = 'emodul-peluang-identitas';
+var empPayload = null, empTerkirim = false, empMengirim = false;
+
+function loadIdentitas(){
+  try { return JSON.parse(localStorage.getItem(IDKEY_EMP)) || {}; } catch(e){ return {}; }
+}
+function simpanIdentitas(){
+  var d = {
+    nama: document.getElementById('idNama').value.trim(),
+    kelas: document.getElementById('idKelas').value.trim(),
+    absen: document.getElementById('idAbsen').value.trim()
+  };
+  try { localStorage.setItem(IDKEY_EMP, JSON.stringify(d)); } catch(e){}
+  return d;
+}
+function identitasValid(d){
+  var a = parseInt(d.absen, 10);
+  return d.nama.length >= 3 && d.kelas.length >= 2 && !isNaN(a) && a >= 1 && a <= 40;
+}
+function kkmUntuk(kelas){
+  var k = (kelas || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+  if(/(^|IX|9)(C|D|E)$/.test(k) && /(IX|9)/.test(k)) return 60;
+  return 75;
+}
+function kodeEMP(){
+  var chars = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789', out = '';
+  for(var i = 0; i < 6; i++) out += chars[Math.floor(Math.random() * chars.length)];
+  return 'EMP-' + out;
+}
+function tanggalLokal(){
+  var d = new Date(), p = function(n){ return String(n).padStart(2, '0'); };
+  return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate());
+}
+function skorQuiz(id){
+  var st = state[id];
+  if(!st || st.answered !== QUIZZES[id].length) return null;
+  return st.correct;
+}
+function siapkanLaporanFinal(){
+  var box = document.getElementById('reportBox');
+  box.classList.add('show');
+  var d = simpanIdentitas();
+  if(!identitasValid(d)){
+    document.getElementById('reportStatus').innerHTML = '📝 Hasilmu <b>belum tercatat</b>: isi dulu <b>Nama, Kelas, dan No. Absen</b> pada panel identitas di atas Cek Penguasaan ini, lalu ketuk tombol di kanan.';
+    document.getElementById('btnKirimHasil').style.display = '';
+    return;
+  }
+  kirimHasilFinal();
+}
+async function kirimHasilFinal(){
+  if(empTerkirim || empMengirim) return;
+  var d = simpanIdentitas();
+  if(!identitasValid(d)){ siapkanLaporanFinal(); document.getElementById('idPanel').scrollIntoView({behavior:'smooth', block:'center'}); return; }
+  var st = state['final'];
+  var benar = st.correct, total = QUIZZES['final'].length;
+  var nilai = Math.round(benar / total * 100);
+  var kkm = kkmUntuk(d.kelas);
+  var status = nilai >= kkm ? 'TUNTAS' : 'BELUM TUNTAS';
+  var rincian = QUIZZES['final'].map(function(_, i){ return { no: i + 1, benar: !!st.picks[i] }; });
+  var durasi = st.startedAt ? Math.round((Date.now() - st.startedAt) / 1000) : 0;
+  empPayload = {
+    nama: d.nama, kelas: d.kelas.toUpperCase(), absen: parseInt(d.absen, 10), no_absen: parseInt(d.absen, 10),
+    nilai: nilai, status: status, kode_verifikasi: kodeEMP(),
+    tanggal: tanggalLokal(),
+    jenjang: 'SMP', bab: 'IX-04 PELUANG', asesmen: ASESMEN_EMP, jumlah_soal: total,
+    jawaban: {
+      rincian: rincian, benar: benar, total: total, kkm: kkm,
+      skor_diagnostik: skorQuiz('diagnostik'),
+      skor_latihan: { p1: skorQuiz('p1'), p2: skorQuiz('p2'), p3: skorQuiz('p3'), p4: skorQuiz('p4'), p5: skorQuiz('p5'), p6: skorQuiz('p6') }
+    },
+    durasi_detik: durasi
+  };
+  var el = document.getElementById('reportStatus');
+  var btn = document.getElementById('btnKirimHasil');
+  empMengirim = true; btn.style.display = 'none';
+  el.textContent = 'Mengirim hasilmu ke guru…';
+  try {
+    var r = await fetch(SB_URL_EMP + '/rest/v1/hasil_asesmen', {
+      method: 'POST',
+      headers: { 'apikey': SB_KEY_EMP, 'Authorization': 'Bearer ' + SB_KEY_EMP, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+      body: JSON.stringify(empPayload)
+    });
+    if(!r.ok) throw new Error('gagal-' + r.status);
+    empTerkirim = true;
+    el.innerHTML = '<span class="ok">✔ Hasilmu sudah tercatat</span> oleh guru — nilai ' + nilai + ' (' + status + ', KKM ' + kkm + '). Kode: ' + empPayload.kode_verifikasi;
+  } catch(e) {
+    el.innerHTML = '<span class="gagal">⚠ Hasilmu belum terkirim</span> (mungkin sedang offline). Nilaimu tetap ' + nilai + ' — tunjukkan layar ini kepada gurumu, atau ketuk tombol kirim lagi saat ada sinyal.';
+    btn.style.display = '';
+  } finally { empMengirim = false; }
+}
+(function initIdentitas(){
+  var d = loadIdentitas();
+  if(d.nama) document.getElementById('idNama').value = d.nama;
+  if(d.kelas) document.getElementById('idKelas').value = d.kelas;
+  if(d.absen) document.getElementById('idAbsen').value = d.absen;
+  ['idNama','idKelas','idAbsen'].forEach(function(i){
+    document.getElementById(i).addEventListener('input', simpanIdentitas);
+  });
+  document.getElementById('btnKirimHasil').addEventListener('click', kirimHasilFinal);
+})();
 
 ['diagnostik','p1','p2','p3','p4','p5','p6','final'].forEach(renderQuiz);
 refreshProgress();
