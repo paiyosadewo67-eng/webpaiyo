@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game Peluang &amp; Frekuensi Harapan — Duel Kelompok / Sendiri | AAAMAAT KEREN</title>
+<style>
+:root{--navy:#0d2b45;--navy2:#081c30;--teal:#0e7a5f;--teald:#0a5c48;--gold:#c9a227;--paper:#fdfbf6;--ink:#24313d;--red:#c0392b;--a:#0e7a5f;--b:#7c3aed}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+header{background:linear-gradient(150deg,var(--navy2),var(--navy) 55%,var(--teald) 130%);color:#f4efe3;text-align:center;padding:20px 14px 16px;border-bottom:4px solid var(--gold)}
+header .eyebrow{letter-spacing:.2em;font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase}
+header h1{font-family:Georgia,serif;font-size:clamp(24px,4.5vw,38px);margin:8px 0 4px}
+header p{margin:0;font-size:clamp(13px,2.2vw,16px);color:#cfd9de}
+main{max-width:1180px;margin:0 auto;padding:18px 14px 40px}
+.kartu{background:#fff;border:1px solid rgba(13,43,69,.14);border-radius:16px;padding:22px;box-shadow:0 2px 8px rgba(13,43,69,.06)}
+.tengah{text-align:center}
+button{font-family:inherit;cursor:pointer}
+.btn{display:inline-block;border:none;border-radius:999px;padding:14px 30px;font-size:18px;font-weight:700;margin:6px;transition:transform .06s}
+.btn:active{transform:scale(.97)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-ungu{background:var(--b);color:#fff}
+.btn-emas{background:var(--gold);color:#231a02}
+.btn-garis{background:#fff;border:2px solid var(--navy);color:var(--navy)}
+.aturan{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:16px 0;text-align:left}
+.aturan div{background:rgba(14,122,95,.07);border:1px solid rgba(14,122,95,.25);border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.55}
+.mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+@media (max-width:760px){.mode-grid{grid-template-columns:1fr}}
+.mode-card{border:2px solid;border-radius:16px;padding:18px;text-align:left;background:#fff}
+.mode-card.duel{border-color:var(--b)} .mode-card.solo{border-color:var(--a)}
+.mode-card h3{margin:0 0 6px;font-size:19px}
+.mode-card.duel h3{color:var(--b)} .mode-card.solo h3{color:var(--teald)}
+.masukan{display:grid;gap:6px;margin:10px 0}
+.masukan label{font-size:13.5px;font-weight:700;color:#40536a}
+.masukan input,.masukan select{padding:11px 12px;border:2px solid rgba(13,43,69,.25);border-radius:10px;font-size:16px;width:100%;font-family:inherit;background:#fff}
+.galat{color:var(--red);font-weight:700;font-size:14px;min-height:1.2em;margin:4px 0}
+.lintasan{background:#fff;border:1px solid rgba(13,43,69,.14);border-radius:14px;padding:12px 16px 8px;margin-bottom:14px}
+.jalur{margin:8px 0 12px}
+.jalur .label{font-weight:700;font-size:14px;margin-bottom:4px}
+.rel{position:relative;height:22px;background:repeating-linear-gradient(90deg,#eef1f3 0 34px,#e2e8ec 34px 36px);border-radius:999px;border:1px solid rgba(13,43,69,.18)}
+.isi{position:absolute;left:0;top:0;bottom:0;border-radius:999px;width:0%;transition:width .4s}
+.isi.a{background:rgba(14,122,95,.45)} .isi.b{background:rgba(124,58,237,.45)}
+.kuda{position:absolute;top:-7px;font-size:24px;transition:left .4s;transform:translateX(-50%)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+.panel{border-radius:16px;padding:18px;border:2px solid;background:#fff;box-shadow:0 2px 8px rgba(13,43,69,.06)}
+.panel.A{border-color:var(--a)} .panel.B{border-color:var(--b)}
+.panel .kepala{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.nama-tim{font-weight:800;font-size:18px}
+.panel.A .nama-tim{color:var(--teald)} .panel.B .nama-tim{color:var(--b)}
+.skor{font-weight:800;font-size:19px;background:rgba(201,162,39,.16);border:1px solid var(--gold);border-radius:999px;padding:2px 14px}
+.progres{font-size:13.5px;color:#5c6b78;font-weight:600;margin-top:6px}
+.indikator{font-size:12.5px;color:#7a6a1e;background:rgba(201,162,39,.12);border:1px dashed rgba(201,162,39,.7);border-radius:8px;padding:6px 9px;margin-top:8px;line-height:1.45}
+.waktu{height:12px;background:#eceff1;border-radius:999px;overflow:hidden;margin:10px 0 4px}
+.waktu>div{height:100%;background:var(--teal);width:100%}
+.det{font-size:13px;color:#5c6b78;text-align:right;font-weight:600}
+.soal{font-size:clamp(17px,2.4vw,21px);line-height:1.5;font-weight:600;margin:12px 0 14px}
+.opsi{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:480px){.opsi{grid-template-columns:1fr}}
+.opsi button{border:2px solid rgba(13,43,69,.25);background:#fff;border-radius:12px;padding:14px 12px;font-size:clamp(16px,2.4vw,20px);font-weight:600;text-align:left;min-height:58px}
+.opsi button:hover:not(:disabled){border-color:var(--navy);background:rgba(13,43,69,.04)}
+.opsi button.benar{background:#e3f4ec;border-color:var(--teal);color:var(--teald)}
+.opsi button.salah{background:#fbe7e3;border-color:var(--red);color:var(--red)}
+.opsi button:disabled{opacity:.85;cursor:default}
+.nyataan{border:2px solid rgba(13,43,69,.22);border-radius:12px;padding:12px 14px;margin-bottom:10px;background:#fff}
+.nyataan .teks{font-size:clamp(15.5px,2.2vw,18.5px);font-weight:600;line-height:1.5;margin-bottom:10px}
+.nyataan.benar{border-color:var(--teal);background:#e3f4ec}
+.nyataan.salah{border-color:var(--red);background:#fbe7e3}
+.pil-baris{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pil{border:2px solid rgba(13,43,69,.3);background:#fff;border-radius:999px;padding:8px 20px;font-size:16px;font-weight:700}
+.pil:hover:not(:disabled){border-color:var(--navy)}
+.pil.dipilih{background:var(--navy);color:#fff;border-color:var(--navy)}
+.pil:disabled{opacity:.75;cursor:default}
+.kunci-badge{font-size:13px;font-weight:800;margin-left:6px}
+.aksi{text-align:center;margin-top:6px}
+.status{margin-top:12px;font-weight:700;font-size:16px;min-height:1.4em;text-align:center;line-height:1.45}
+.panel.selesai{opacity:.75}
+table.hasil{border-collapse:collapse;margin:14px auto;font-size:17px}
+table.hasil th,table.hasil td{border:1px solid rgba(13,43,69,.25);padding:8px 18px;text-align:center}
+table.hasil th{background:rgba(13,43,69,.06)}
+.pemenang{font-size:clamp(22px,4vw,32px);font-weight:800;color:var(--teald);margin:8px 0}
+footer{text-align:center;color:#5c6b78;font-size:13px;padding:0 14px 26px}
+.sembunyi{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Matematika Kelas IX • Bab Peluang • Sesuai Kisi-kisi ASAS 1 • AAAMAAT KEREN</div>
+  <h1>🎲 Duel Peluang &amp; Frekuensi Harapan</h1>
+  <p>Lomba seru peluang empirik &amp; teoretik, komplemen, dan frekuensi harapan — 10 soal: 5 PG • 3 Benar/Salah • 2 Pilihan Ganda Kompleks</p>
+</header>
+<main>
+
+  <!-- ============ LAYAR MULAI ============ -->
+  <section id="layar-mulai" class="kartu">
+    <h2 style="margin-top:0" class="tengah">Pilih Cara Bermain</h2>
+    <div class="aturan">
+      <div>🎯 <strong>10 soal</strong> untuk tiap pemain/kelompok: 5 pilihan ganda, 3 Benar/Salah (3 pernyataan), dan 2 pilihan ganda kompleks (4 pernyataan). Soal A dan Soal B <strong>setipe</strong> — kemampuan yang sama, angka dan cerita berbeda.</div>
+      <div>⏱️ Waktu tiap soal: PG <strong>60 detik</strong>, Benar/Salah &amp; MCMA <strong>90 detik</strong>. Jawaban tepat semua = <strong>100 poin</strong> + bonus kecepatan sampai <strong>60 poin</strong>. Soal pernyataan dinilai <strong>per pernyataan</strong> — sebagian tepat tetap dapat poin!</div>
+      <div>👥 <strong>Mode Duel:</strong> dua kelompok bermain bersamaan di PID. Isi nama <strong>ketua kelompok</strong> dan kelasnya. Satu siswa di depan menekan jawaban, anggota lain membantu menghitung.</div>
+      <div>📱 <strong>Mode Sendiri:</strong> latihan mandiri di HP. Isi <strong>nama, nomor absen, dan kelas</strong> — kejar nilai tertinggi dan waktu tercepatmu.</div>
+    </div>
+    <div class="mode-grid">
+      <div class="mode-card duel">
+        <h3>👥 Duel 2 Kelompok (PID)</h3>
+        <div class="masukan">
+          <label for="ketuaA">Nama Ketua Kelompok A</label>
+          <input id="ketuaA" type="text" placeholder="mis. Fakhri" autocomplete="off">
+          <label for="kelasA">Kelas Kelompok A</label>
+          <select id="kelasA" class="kelas"></select>
+          <label for="ketuaB">Nama Ketua Kelompok B</label>
+          <input id="ketuaB" type="text" placeholder="mis. Nizam" autocomplete="off">
+          <label for="kelasB">Kelas Kelompok B</label>
+          <select id="kelasB" class="kelas"></select>
+        </div>
+        <p class="galat" id="galat-duel"></p>
+        <button class="btn btn-ungu" id="btn-duel">👥 Mulai Duel</button>
+      </div>
+      <div class="mode-card solo">
+        <h3>📱 Main Sendiri</h3>
+        <div class="masukan">
+          <label for="namaSolo">Nama Lengkap</label>
+          <input id="namaSolo" type="text" placeholder="Nama kamu" autocomplete="off">
+          <label for="absenSolo">No. Absen</label>
+          <input id="absenSolo" type="number" min="1" max="40" placeholder="mis. 12">
+          <label for="kelasSolo">Kelas</label>
+          <select id="kelasSolo" class="kelas"></select>
+        </div>
+        <p class="galat" id="galat-solo"></p>
+        <button class="btn btn-teal" id="btn-solo">📱 Mulai Main Sendiri</button>
+      </div>
+    </div>
+    <p class="tengah" style="color:#5c6b78;font-size:14px;margin-bottom:0">Dikembangkan oleh Drs. Paiyo • Rumah Belajar Mandiri AAAMAAT KEREN • SMP Negeri 1 Bantarkawung</p>
+  </section>
+
+  <!-- ============ LAYAR MAIN ============ -->
+  <section id="layar-main" class="sembunyi">
+    <div class="lintasan" id="kotak-lintasan">
+      <div class="jalur" id="jalur-A">
+        <div class="label" id="label-jalur-A" style="color:var(--teald)">🏃 Kelompok A</div>
+        <div class="rel"><div class="isi a"></div><div class="kuda" style="left:0%">🏃</div></div>
+      </div>
+      <div class="jalur" id="jalur-B">
+        <div class="label" id="label-jalur-B" style="color:var(--b)">🏃 Kelompok B</div>
+        <div class="rel"><div class="isi b"></div><div class="kuda" style="left:0%">🏃</div></div>
+      </div>
+    </div>
+    <div class="grid2" id="kotak-panel"></div>
+    <p class="tengah" style="margin-top:16px"><button class="btn btn-garis" id="btn-ulang-main">↩ Kembali ke Menu</button></p>
+  </section>
+
+  <!-- ============ LAYAR HASIL ============ -->
+  <section id="layar-hasil" class="kartu tengah sembunyi">
+    <div style="font-size:44px">🏆</div>
+    <div class="pemenang" id="teks-pemenang"></div>
+    <div id="kotak-tabel-hasil"></div>
+    <p id="teks-hasil-solo" style="font-size:17px;line-height:1.6"></p>
+    <button class="btn btn-emas" id="btn-lagi">🔁 Main Lagi</button>
+    <button class="btn btn-garis" id="btn-menu">Menu Utama</button>
+  </section>
+
+</main>
+<footer>Game Peluang &amp; Frekuensi Harapan — disusun sesuai kisi-kisi ASAS 1 Kabupaten Brebes (Bab IV Peluang) • Portal Rumah Belajar AAAMAAT KEREN</footer>
+
+<script>
+"use strict";
+/* Bank soal: 10 soal sesuai kisi-kisi ASAS 1 Kelas IX Bab Peluang.
+   Tiap soal punya varian A dan B (setipe, angka/cerita berbeda).
+   PG: opsi[0] = jawaban benar (diacak saat tampil).
+   BS/MCMA: pernyataan = [teks, nilaiBenar]. */
+const BANK = [
+  { jenis:"PG", lvl:"L1",
+    a:{ ind:"Murid dapat menghitung peluang empirik dari suatu kejadian pada percobaan yang diketahui. (ASAS 1 No. 12)",
+        soal:"Dalam percobaan melempar sebuah dadu sebanyak 60 kali, mata dadu 4 muncul sebanyak 12 kali. Peluang empirik muncul mata dadu 4 adalah …",
+        opsi:["1/5","1/6","1/4","2/5"] },
+    b:{ ind:"Murid dapat menghitung peluang empirik dari suatu kejadian pada percobaan yang diketahui. (ASAS 1 No. 12)",
+        soal:"Sebuah koin dilempar sebanyak 40 kali. Sisi gambar muncul sebanyak 22 kali. Peluang empirik muncul sisi gambar adalah …",
+        opsi:["11/20","1/2","9/20","11/40"] } },
+  { jenis:"PG", lvl:"L2",
+    a:{ ind:"Disajikan informasi tentang banyaknya kupon undian dengan beberapa gambar berbeda dan setiap kupon memiliki peluang yang sama, peserta didik dapat menentukan peluang terambilnya kupon dengan gambar tertentu. (ASAS 1 No. 13)",
+        soal:"Dalam sebuah undian terdapat 40 kupon: 8 kupon bergambar bintang, 12 kupon bergambar bulan, dan sisanya bergambar matahari. Jika satu kupon diambil secara acak, peluang terambil kupon bergambar matahari adalah …",
+        opsi:["1/2","1/5","3/10","1/4"] },
+    b:{ ind:"Disajikan informasi tentang banyaknya kupon undian dengan beberapa gambar berbeda dan setiap kupon memiliki peluang yang sama, peserta didik dapat menentukan peluang terambilnya kupon dengan gambar tertentu. (ASAS 1 No. 13)",
+        soal:"Sebuah kotak undian berisi 45 kupon: 9 kupon bergambar ikan, 12 kupon bergambar burung, dan sisanya bergambar bunga. Jika satu kupon diambil secara acak, peluang terambil kupon bergambar bunga adalah …",
+        opsi:["8/15","1/5","4/15","3/5"] } },
+  { jenis:"PG", lvl:"L2",
+    a:{ ind:"Disajikan sejumlah koin di dalam kantong, jika koin diambil satu secara acak, murid dapat menentukan peluang terambilnya koin tertentu. (ASAS 1 No. 29)",
+        soal:"Di dalam sebuah kantong terdapat 3 koin Rp200, 5 koin Rp500, dan 4 koin Rp1.000. Jika diambil satu koin secara acak, peluang terambil koin Rp500 adalah …",
+        opsi:["5/12","1/4","1/3","7/12"] },
+    b:{ ind:"Disajikan sejumlah kelereng di dalam kantong, jika kelereng diambil satu secara acak, murid dapat menentukan peluang terambilnya kelereng tertentu. (setipe ASAS 1 No. 29)",
+        soal:"Sebuah kantong berisi 6 kelereng merah, 4 kelereng biru, dan 5 kelereng hijau. Jika diambil satu kelereng secara acak, peluang terambil kelereng biru adalah …",
+        opsi:["4/15","2/5","1/3","11/15"] } },
+  { jenis:"PG", lvl:"L2",
+    a:{ ind:"Disajikan gambar roda putar/spin wheel, murid dapat menentukan frekuensi harapan munculnya nomor tertentu jika diputar n kali. (ASAS 1 No. 15)",
+        soal:"Sebuah roda putar dibagi menjadi 8 bagian sama besar yang diberi nomor 1 sampai 8. Jika roda diputar sebanyak 120 kali, frekuensi harapan muncul nomor 5 adalah … kali.",
+        opsi:["15","8","12","20"] },
+    b:{ ind:"Disajikan gambar roda putar/spin wheel, murid dapat menentukan frekuensi harapan munculnya nomor tertentu jika diputar n kali. (ASAS 1 No. 15)",
+        soal:"Sebuah roda putar dibagi menjadi 6 bagian sama besar yang diberi nomor 1 sampai 6. Jika roda diputar sebanyak 150 kali, frekuensi harapan muncul nomor 2 adalah … kali.",
+        opsi:["25","15","30","20"] } },
+  { jenis:"PG", lvl:"L2",
+    a:{ ind:"Diberikan frekuensi harapan dan peluang suatu kejadian, murid dapat menentukan banyak percobaan yang dilakukan (soal kebalikan frekuensi harapan).",
+        soal:"Frekuensi harapan muncul mata dadu 6 adalah 30 kali. Jika peluang muncul mata dadu 6 adalah 1/6, banyak pelemparan dadu yang dilakukan adalah … kali.",
+        opsi:["180","120","150","210"] },
+    b:{ ind:"Diberikan frekuensi harapan dan peluang suatu kejadian, murid dapat menentukan banyak percobaan yang dilakukan (soal kebalikan frekuensi harapan).",
+        soal:"Frekuensi harapan terambilnya bola putih dari sebuah kantong adalah 24 kali. Jika peluang terambil bola putih adalah 2/5, banyak pengambilan yang dilakukan adalah … kali.",
+        opsi:["60","48","72","40"] } },
+  { jenis:"BS", lvl:"L2",
+    a:{ ind:"Murid dapat menentukan peluang teoretik dan peluang komplemen suatu kejadian dari suatu percobaan sederhana. (Capaian Pembelajaran Peluang butir 2–3)",
+        soal:"Sebuah dadu seimbang dilempar satu kali. Tentukan Benar atau Salah setiap pernyataan berikut!",
+        pernyataan:[["Peluang muncul mata dadu genap adalah 1/2.", true],
+                    ["Peluang muncul mata dadu bukan 5 adalah 4/6.", false],
+                    ["Peluang muncul mata dadu kurang dari 7 adalah 1.", true]] },
+    b:{ ind:"Murid dapat menentukan peluang teoretik dan peluang komplemen suatu kejadian dari suatu percobaan sederhana. (Capaian Pembelajaran Peluang butir 2–3)",
+        soal:"Satu kartu diambil secara acak dari setumpuk kartu bridge lengkap (52 kartu). Tentukan Benar atau Salah setiap pernyataan berikut!",
+        pernyataan:[["Peluang terambil kartu As adalah 4/52.", true],
+                    ["Peluang terambil kartu hati adalah 13/52.", true],
+                    ["Peluang terambil kartu King adalah 8/52.", false]] } },
+  { jenis:"BS", lvl:"L3",
+    a:{ ind:"Disajikan informasi tentang banyak kupon undian yang terkumpul dalam suatu kegiatan, setiap kupon memiliki peluang yang sama, murid dapat menganalisis kebenaran pernyataan tentang peluang. (ASAS 1 No. 20)",
+        soal:"Panitia lomba mengumpulkan 60 kupon undian: 12 kupon merah, 18 kupon kuning, dan 30 kupon hijau. Satu kupon diambil secara acak dan setiap kupon mempunyai peluang yang sama untuk terambil. Tentukan Benar atau Salah setiap pernyataan berikut!",
+        pernyataan:[["Peluang terambil kupon merah adalah 1/5.", true],
+                    ["Peluang terambil kupon kuning lebih besar daripada peluang terambil kupon hijau.", false],
+                    ["Peluang terambil kupon bukan hijau adalah 1/2.", true]] },
+    b:{ ind:"Disajikan informasi tentang banyak kupon undian yang terkumpul dalam suatu kegiatan, setiap kupon memiliki peluang yang sama, murid dapat menganalisis kebenaran pernyataan tentang peluang. (ASAS 1 No. 20)",
+        soal:"Dalam sebuah kotak terdapat 80 kupon undian: 20 kupon bergambar bintang, 24 kupon bergambar bulan, dan 36 kupon bergambar matahari. Satu kupon diambil secara acak. Tentukan Benar atau Salah setiap pernyataan berikut!",
+        pernyataan:[["Peluang terambil kupon bergambar bulan adalah 3/10.", true],
+                    ["Peluang terambil kupon bergambar bintang adalah 1/5.", false],
+                    ["Peluang terambil kupon bukan matahari adalah 36/80.", false]] } },
+  { jenis:"BS", lvl:"L2",
+    a:{ ind:"Murid dapat menentukan frekuensi harapan suatu kejadian dari suatu percobaan sederhana. (Capaian Pembelajaran Peluang butir 4)",
+        soal:"Sebuah dadu dilempar sebanyak 90 kali. Tentukan Benar atau Salah setiap pernyataan tentang frekuensi harapannya!",
+        pernyataan:[["Frekuensi harapan muncul mata dadu prima adalah 45 kali.", true],
+                    ["Frekuensi harapan muncul mata dadu 1 adalah 15 kali.", true],
+                    ["Frekuensi harapan muncul mata dadu lebih dari 4 adalah 45 kali.", false]] },
+    b:{ ind:"Murid dapat menentukan frekuensi harapan suatu kejadian dari suatu percobaan sederhana. (Capaian Pembelajaran Peluang butir 4)",
+        soal:"Dua keping koin dilempar bersamaan sebanyak 60 kali. Tentukan Benar atau Salah setiap pernyataan tentang frekuensi harapannya!",
+        pernyataan:[["Frekuensi harapan muncul dua sisi angka adalah 15 kali.", true],
+                    ["Frekuensi harapan muncul tepat satu sisi angka adalah 20 kali.", false],
+                    ["Frekuensi harapan muncul dua sisi gambar adalah 15 kali.", true]] } },
+  { jenis:"MCMA", lvl:"L3",
+    a:{ ind:"Disajikan infografis tentang prakiraan cuaca, murid dapat mengidentifikasi pernyataan yang benar tentang peluang suatu kejadian. (ASAS 1 No. 25)",
+        soal:"Infografis prakiraan cuaca di suatu kota menyebutkan: peluang hujan besok 30%, peluang berawan 45%, dan peluang cerah 25%. Pilihlah semua pernyataan yang BENAR!",
+        pernyataan:[["Peluang besok tidak hujan adalah 70%.", true],
+                    ["Kejadian yang paling mungkin terjadi besok adalah berawan.", true],
+                    ["Peluang hujan lebih besar daripada peluang cerah.", true],
+                    ["Peluang hujan atau cerah adalah 65%.", false]] },
+    b:{ ind:"Disajikan infografis tentang prakiraan cuaca, murid dapat mengidentifikasi pernyataan yang benar tentang peluang suatu kejadian. (ASAS 1 No. 25)",
+        soal:"Infografis prakiraan cuaca di sebuah kota menyebutkan: peluang hujan 20%, peluang mendung 35%, dan peluang cerah 45%. Pilihlah semua pernyataan yang BENAR!",
+        pernyataan:[["Peluang besok tidak cerah adalah 55%.", true],
+                    ["Peluang hujan atau mendung adalah 60%.", false],
+                    ["Kejadian yang paling mungkin terjadi adalah cerah.", true],
+                    ["Peluang mendung lebih kecil daripada peluang hujan.", false]] } },
+  { jenis:"MCMA", lvl:"L3",
+    a:{ ind:"Disajikan data banyaknya murid keseluruhan dan hasil survei tentang dua kegiatan yang disukai, murid dapat menentukan peluang murid yang menyukai kedua kegiatan sekaligus. (ASAS 1 No. 30)",
+        soal:"Di kelas IX terdapat 40 siswa. Hasil survei: 18 siswa menyukai sepak bola, 12 siswa menyukai voli, dan 6 siswa menyukai keduanya. Seorang siswa dipilih secara acak. Pilihlah semua pernyataan yang BENAR!",
+        pernyataan:[["Peluang siswa terpilih menyukai sepak bola adalah 9/20.", true],
+                    ["Peluang siswa terpilih menyukai voli adalah 3/10.", true],
+                    ["Peluang siswa terpilih menyukai keduanya adalah 3/20.", true],
+                    ["Banyak siswa yang menyukai sepak bola atau voli adalah 36 siswa.", false]] },
+    b:{ ind:"Diketahui peluang kerusakan selama pengiriman suatu barang, murid dapat memprediksi banyaknya barang yang tidak rusak dalam suatu proses pengiriman dengan jumlah tertentu. (ASAS 1 No. 14)",
+        soal:"Sebuah toko akan mengirim 200 mainan. Peluang sebuah mainan rusak selama pengiriman adalah 0,05. Pilihlah semua pernyataan yang BENAR!",
+        pernyataan:[["Diperkirakan ada 10 mainan yang rusak selama pengiriman.", true],
+                    ["Peluang sebuah mainan tidak rusak adalah 0,95.", true],
+                    ["Diperkirakan ada 180 mainan yang tidak rusak.", false],
+                    ["Jika dikirim 400 mainan, diperkirakan ada 20 mainan yang rusak.", true]] } }
+];
+const WAKTU = { PG: 60, BS: 90, MCMA: 90 };   // detik per soal
+const LABEL_JENIS = { PG: "Pilihan Ganda", BS: "Benar/Salah", MCMA: "Pilihan Ganda Kompleks" };
+
+function acak(arr){ const a = arr.slice(); for(let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]] = [a[j],a[i]]; } return a; }
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+
+let mode = "duel";        // "duel" | "solo"
+let panels = {};          // {A: {...}, B: {...}}
+let timerGlobal = null;
+let ID = {};              // identitas pemain
+
+const $ = id => document.getElementById(id);
+
+/* ---------- isi pilihan kelas ---------- */
+(function(){
+  const daftar = ["IX A","IX B","IX C","IX D","IX E","IX F","IX G","IX H","IX I","Lainnya"];
+  document.querySelectorAll("select.kelas").forEach(sel=>{
+    sel.innerHTML = daftar.map(k=>'<option value="' + k + '">' + k + "</option>").join("");
+  });
+  $("kelasA").value = "IX A"; $("kelasB").value = "IX B"; $("kelasSolo").value = "IX A";
+})();
+
+function buatPanel(sisi, setSoal, labelNama){
+  const div = document.createElement("div");
+  div.className = "panel " + sisi;
+  div.id = "panel-" + sisi;
+  div.innerHTML =
+    '<div class="kepala"><span class="nama-tim">' + esc(labelNama) + '</span>' +
+    '<span class="skor">Skor: <span id="skor-' + sisi + '">0</span></span></div>' +
+    '<div class="progres" id="prog-' + sisi + '">Soal 1 dari 10</div>' +
+    '<div class="indikator" id="ind-' + sisi + '"></div>' +
+    '<div class="waktu"><div id="bar-' + sisi + '"></div></div>' +
+    '<div class="det"><span id="det-' + sisi + '">60</span> detik</div>' +
+    '<div class="soal" id="soal-' + sisi + '"></div>' +
+    '<div id="isi-' + sisi + '"></div>' +
+    '<div class="aksi" id="aksi-' + sisi + '"></div>' +
+    '<div class="status" id="status-' + sisi + '"></div>';
+  $("kotak-panel").appendChild(div);
+  panels[sisi] = { sisi, set: setSoal, idx: 0, skor: 0, tepat: 0, sisa: 60, batas: 60, kunci: false, selesai: false, waktuTotal: 0, jawBS: [], jawMC: [] };
+}
+
+function dataSoal(P){ return BANK[P.idx][P.set === "A" ? "a" : "b"]; }
+
+function tampilSoal(P){
+  const soal = BANK[P.idx];
+  const data = dataSoal(P);
+  P.batas = WAKTU[soal.jenis];
+  P.sisa = P.batas; P.kunci = false;
+  $("soal-" + P.sisi).textContent = (P.idx + 1) + ". " + data.soal;
+  $("prog-" + P.sisi).textContent = "Soal " + (P.idx + 1) + " dari 10 • " + LABEL_JENIS[soal.jenis] + " • Tepat penuh: " + P.tepat;
+  $("ind-" + P.sisi).textContent = "Indikator (" + soal.lvl + "): " + data.ind;
+  $("status-" + P.sisi).textContent = "";
+  $("aksi-" + P.sisi).innerHTML = "";
+  const wadah = $("isi-" + P.sisi);
+  wadah.innerHTML = "";
+  if(soal.jenis === "PG"){
+    wadah.className = "opsi";
+    const opsi = acak(data.opsi.map((t,i)=>({t, ok: i === 0})));
+    const huruf = ["A","B","C","D"];
+    opsi.forEach((o,i)=>{
+      const b = document.createElement("button");
+      b.textContent = huruf[i] + ". " + o.t;
+      b.addEventListener("click", ()=> jawabPG(P, o.ok, b));
+      wadah.appendChild(b);
+    });
+  } else if(soal.jenis === "BS"){
+    wadah.className = "";
+    P.jawBS = data.pernyataan.map(()=> null);
+    data.pernyataan.forEach((pr, i)=>{
+      const row = document.createElement("div");
+      row.className = "nyataan"; row.id = "ny-" + P.sisi + "-" + i;
+      row.innerHTML = '<div class="teks">' + (i + 1) + ". " + esc(pr[0]) + "</div>" +
+        '<div class="pil-baris">' +
+        '<button class="pil" data-v="1">Benar</button>' +
+        '<button class="pil" data-v="0">Salah</button>' +
+        '<span class="kunci-badge" id="badge-' + P.sisi + "-" + i + '"></span></div>';
+      const tombol = row.querySelectorAll(".pil");
+      tombol.forEach(tb=>{
+        tb.addEventListener("click", ()=>{
+          if(P.kunci) return;
+          P.jawBS[i] = tb.dataset.v === "1";
+          tombol.forEach(x=> x.classList.toggle("dipilih", x === tb));
+        });
+      });
+      wadah.appendChild(row);
+    });
+    buatTombolKunci(P);
+  } else { // MCMA
+    wadah.className = "";
+    P.jawMC = data.pernyataan.map(()=> false);
+    data.pernyataan.forEach((pr, i)=>{
+      const row = document.createElement("div");
+      row.className = "nyataan"; row.id = "ny-" + P.sisi + "-" + i;
+      row.innerHTML = '<div class="teks">' + (i + 1) + ". " + esc(pr[0]) + "</div>" +
+        '<div class="pil-baris">' +
+        '<button class="pil" data-v="1">☐ Pilih pernyataan ini</button>' +
+        '<span class="kunci-badge" id="badge-' + P.sisi + "-" + i + '"></span></div>';
+      const tb = row.querySelector(".pil");
+      tb.addEventListener("click", ()=>{
+        if(P.kunci) return;
+        P.jawMC[i] = !P.jawMC[i];
+        tb.classList.toggle("dipilih", P.jawMC[i]);
+        tb.textContent = P.jawMC[i] ? "☑ Dipilih — pernyataan benar" : "☐ Pilih pernyataan ini";
+      });
+      wadah.appendChild(row);
+    });
+    buatTombolKunci(P);
+  }
+  perbaruiBar(P);
+}
+
+function buatTombolKunci(P){
+  const b = document.createElement("button");
+  b.className = "btn btn-emas";
+  b.textContent = "🔒 Kunci Jawaban";
+  b.addEventListener("click", ()=> kunciPernyataan(P, false));
+  $("aksi-" + P.sisi).appendChild(b);
+}
+
+function perbaruiBar(P){
+  $("bar-" + P.sisi).style.width = Math.max(0, P.sisa / P.batas * 100) + "%";
+  $("bar-" + P.sisi).style.background = P.sisa <= 10 ? "#c0392b" : "#0e7a5f";
+  $("det-" + P.sisi).textContent = Math.max(0, Math.ceil(P.sisa));
+}
+
+function gerakLintasan(P){
+  const persen = (P.idx) / 10 * 100;
+  const jalur = $("jalur-" + P.sisi);
+  if(!jalur) return;
+  jalur.querySelector(".isi").style.width = persen + "%";
+  jalur.querySelector(".kuda").style.left = persen + "%";
+}
+
+function catatWaktu(P){ P.waktuTotal += (P.batas - Math.max(0, P.sisa)); }
+
+function jawabPG(P, ok, tombol){
+  if(P.kunci || P.selesai) return;
+  P.kunci = true;
+  const data = dataSoal(P);
+  const tombolSemua = $("isi-" + P.sisi).querySelectorAll("button");
+  tombolSemua.forEach(b=>{ b.disabled = true; if(b.textContent.slice(3) === data.opsi[0]) b.classList.add("benar"); });
+  if(ok){
+    const bonus = Math.round(60 * Math.max(0, P.sisa) / P.batas);
+    P.skor += 100 + bonus; P.tepat++;
+    $("status-" + P.sisi).textContent = "✅ Benar! +100" + (bonus ? " + bonus kecepatan " + bonus : "");
+    $("status-" + P.sisi).style.color = "#0a5c48";
+  } else {
+    if(tombol) tombol.classList.add("salah");
+    $("status-" + P.sisi).textContent = tombol ? "❌ Belum tepat — jawaban benar ditandai hijau." : "⏰ Waktu habis! Jawaban benar ditandai hijau.";
+    $("status-" + P.sisi).style.color = "#c0392b";
+  }
+  selesaiSoal(P, 1400);
+}
+
+function kunciPernyataan(P, habis){
+  if(P.kunci || P.selesai) return;
+  const soal = BANK[P.idx];
+  const data = dataSoal(P);
+  if(!habis){
+    if(soal.jenis === "BS" && P.jawBS.some(v=> v === null)){
+      $("status-" + P.sisi).textContent = "👆 Pilih Benar atau Salah untuk semua pernyataan dulu ya!";
+      $("status-" + P.sisi).style.color = "#c0392b";
+      return;
+    }
+    if(soal.jenis === "MCMA" && !P.jawMC.some(v=> v)){
+      $("status-" + P.sisi).textContent = "👆 Pilih minimal satu pernyataan yang menurutmu benar ya!";
+      $("status-" + P.sisi).style.color = "#c0392b";
+      return;
+    }
+  }
+  P.kunci = true;
+  const n = data.pernyataan.length;
+  let benarCount = 0;
+  data.pernyataan.forEach((pr, i)=>{
+    const jawab = soal.jenis === "BS" ? P.jawBS[i] : !!P.jawMC[i];
+    const tepat = jawab === pr[1];
+    if(tepat) benarCount++;
+    const row = $("ny-" + P.sisi + "-" + i);
+    if(row){
+      row.classList.add(tepat ? "benar" : "salah");
+      row.querySelectorAll(".pil").forEach(x=>{ x.disabled = true; });
+      $("badge-" + P.sisi + "-" + i).textContent = pr[1] ? "Kunci: BENAR" : "Kunci: SALAH";
+      $("badge-" + P.sisi + "-" + i).style.color = pr[1] ? "#0a5c48" : "#c0392b";
+    }
+  });
+  $("aksi-" + P.sisi).innerHTML = "";
+  const dasar = Math.round(100 * benarCount / n);
+  const penuh = benarCount === n;
+  const bonus = penuh ? Math.round(60 * Math.max(0, P.sisa) / P.batas) : 0;
+  P.skor += dasar + bonus;
+  if(penuh) P.tepat++;
+  const awalan = habis ? "⏰ Waktu habis! " : "";
+  if(penuh){
+    $("status-" + P.sisi).textContent = awalan + "✅ Tepat semua! +" + (dasar + bonus) + " poin" + (bonus ? " (100 + bonus kecepatan " + bonus + ")" : "");
+    $("status-" + P.sisi).style.color = "#0a5c48";
+  } else if(dasar > 0){
+    $("status-" + P.sisi).textContent = awalan + "🟨 Sebagian tepat: " + benarCount + " dari " + n + " pernyataan benar → +" + dasar + " poin. Perhatikan kunci berwarna hijau.";
+    $("status-" + P.sisi).style.color = "#8a6d00";
+  } else {
+    $("status-" + P.sisi).textContent = awalan + "❌ Belum tepat → +0 poin. Perhatikan kunci berwarna hijau.";
+    $("status-" + P.sisi).style.color = "#c0392b";
+  }
+  selesaiSoal(P, 3200);
+}
+
+function selesaiSoal(P, jeda){
+  $("skor-" + P.sisi).textContent = P.skor;
+  catatWaktu(P);
+  P.idx++;
+  gerakLintasan(P);
+  setTimeout(()=> lanjut(P), jeda);
+}
+
+function lanjut(P){
+  if(P.idx >= 10){
+    P.selesai = true;
+    $("panel-" + P.sisi).classList.add("selesai");
+    $("soal-" + P.sisi).textContent = "🏁 Selesai! Skor akhir: " + P.skor + " • Tepat penuh " + P.tepat + " dari 10 soal";
+    $("isi-" + P.sisi).innerHTML = "";
+    $("aksi-" + P.sisi).innerHTML = "";
+    $("ind-" + P.sisi).textContent = "";
+    $("prog-" + P.sisi).textContent = "Selesai — 10 soal terjawab";
+    $("status-" + P.sisi).textContent = "";
+    cekSemuaSelesai();
+    return;
+  }
+  tampilSoal(P);
+}
+
+function cekSemuaSelesai(){
+  const semua = Object.values(panels).every(P=>P.selesai);
+  if(!semua) return;
+  clearInterval(timerGlobal);
+  setTimeout(tampilHasil, 700);
+}
+
+function fmtWaktu(detik){ return detik.toFixed(1).replace(".", ",") + " dtk"; }
+
+function tampilHasil(){
+  $("layar-main").classList.add("sembunyi");
+  $("layar-hasil").classList.remove("sembunyi");
+  if(mode === "solo"){
+    const P = panels.A;
+    $("teks-pemenang").textContent = "Permainan Selesai!";
+    $("kotak-tabel-hasil").innerHTML = "";
+    $("teks-hasil-solo").innerHTML = esc(ID.nama) + " • " + esc(ID.kelas) + " • No. Absen " + esc(ID.absen) + "<br>" +
+      "Skor kamu: <strong>" + P.skor + "</strong> • Jawaban tepat penuh <strong>" + P.tepat + " dari 10</strong> • Total waktu menjawab: <strong>" + fmtWaktu(P.waktuTotal) + "</strong><br>" +
+      (P.tepat >= 9 ? "Luar biasa! Kamu sudah menguasai peluang dan frekuensi harapan. Siap menghadapi ASAS 1! 🌟" :
+       P.tepat >= 7 ? "Hebat! Sedikit lagi menuju sempurna — coba lagi untuk mengejar 10 tepat penuh. 💪" :
+       P.tepat >= 5 ? "Bagus! Ulangi sekali lagi sambil mengingat rumus peluang dan frekuensi harapan = peluang × banyak percobaan. 📚" :
+                      "Tidak apa-apa — ini latihan. Pelajari lagi peluang empirik, teoretik, dan frekuensi harapan, lalu coba lagi ya! 🌱");
+    return;
+  }
+  const A = panels.A, B = panels.B;
+  let pemenang;
+  if(A.skor !== B.skor) pemenang = A.skor > B.skor ? "A" : "B";
+  else if(Math.abs(A.waktuTotal - B.waktuTotal) > 0.05) pemenang = A.waktuTotal < B.waktuTotal ? "A" : "B";
+  else pemenang = "SERI";
+  $("teks-pemenang").textContent = pemenang === "SERI" ? "🤝 SERI! Kedua kelompok sama hebatnya!" :
+    (pemenang === "A" ? "🏆 Juara: Kelompok A — " + ID.ketuaA + "!" : "🏆 Juara: Kelompok B — " + ID.ketuaB + "!");
+  $("teks-hasil-solo").textContent = "";
+  $("kotak-tabel-hasil").innerHTML =
+    '<table class="hasil"><tr><th></th><th>🟢 Kelompok A<br><span style="font-weight:600;font-size:14px">' + esc(ID.ketuaA) + " • " + esc(ID.kelasA) + '</span></th><th>🟣 Kelompok B<br><span style="font-weight:600;font-size:14px">' + esc(ID.ketuaB) + " • " + esc(ID.kelasB) + "</span></th></tr>" +
+    "<tr><td>Skor</td><td><strong>" + A.skor + "</strong></td><td><strong>" + B.skor + "</strong></td></tr>" +
+    "<tr><td>Jawaban tepat penuh</td><td>" + A.tepat + " / 10</td><td>" + B.tepat + " / 10</td></tr>" +
+    "<tr><td>Total waktu menjawab</td><td>" + fmtWaktu(A.waktuTotal) + "</td><td>" + fmtWaktu(B.waktuTotal) + "</td></tr></table>" +
+    '<p style="color:#5c6b78;font-size:14px">Skor sama? Pemenang ditentukan dari total waktu menjawab yang lebih cepat.</p>';
+}
+
+function mulai(m){
+  mode = m;
+  panels = {};
+  $("kotak-panel").innerHTML = "";
+  $("layar-mulai").classList.add("sembunyi");
+  $("layar-hasil").classList.add("sembunyi");
+  $("layar-main").classList.remove("sembunyi");
+  if(mode === "duel"){
+    $("kotak-lintasan").classList.remove("sembunyi");
+    $("kotak-panel").className = "grid2";
+    $("kotak-panel").style.maxWidth = ""; $("kotak-panel").style.margin = "";
+    $("label-jalur-A").textContent = "🏃 Kelompok A — " + ID.ketuaA + " (" + ID.kelasA + ")";
+    $("label-jalur-B").textContent = "🏃 Kelompok B — " + ID.ketuaB + " (" + ID.kelasB + ")";
+    buatPanel("A", "A", "🟢 Kelompok A — " + ID.ketuaA + " • " + ID.kelasA);
+    buatPanel("B", "B", "🟣 Kelompok B — " + ID.ketuaB + " • " + ID.kelasB);
+  } else {
+    $("kotak-lintasan").classList.add("sembunyi");
+    $("kotak-panel").className = "";
+    $("kotak-panel").style.maxWidth = "680px";
+    $("kotak-panel").style.margin = "0 auto";
+    buatPanel("A", Math.random() < 0.5 ? "A" : "B", "📱 " + ID.nama + " • " + ID.kelas + " • Absen " + ID.absen);
+  }
+  Object.values(panels).forEach(P=>{ tampilSoal(P); gerakLintasan(P); });
+  clearInterval(timerGlobal);
+  timerGlobal = setInterval(()=>{
+    Object.values(panels).forEach(P=>{
+      if(P.selesai || P.kunci) return;
+      P.sisa -= 0.1;
+      perbaruiBar(P);
+      if(P.sisa <= 0){
+        if(BANK[P.idx].jenis === "PG") jawabPG(P, false, null);
+        else kunciPernyataan(P, true);
+      }
+    });
+  }, 100);
+}
+
+function keMenu(){
+  clearInterval(timerGlobal);
+  $("layar-main").classList.add("sembunyi");
+  $("layar-hasil").classList.add("sembunyi");
+  $("layar-mulai").classList.remove("sembunyi");
+}
+
+$("btn-duel").addEventListener("click", ()=>{
+  const ketuaA = $("ketuaA").value.trim(), ketuaB = $("ketuaB").value.trim();
+  if(!ketuaA || !ketuaB){
+    $("galat-duel").textContent = "Isi dulu nama ketua Kelompok A dan Kelompok B ya!";
+    return;
+  }
+  $("galat-duel").textContent = "";
+  ID = { ketuaA, kelasA: $("kelasA").value, ketuaB, kelasB: $("kelasB").value };
+  mulai("duel");
+});
+$("btn-solo").addEventListener("click", ()=>{
+  const nama = $("namaSolo").value.trim(), absen = $("absenSolo").value.trim();
+  if(!nama || !absen){
+    $("galat-solo").textContent = "Isi dulu nama lengkap dan nomor absenmu ya!";
+    return;
+  }
+  $("galat-solo").textContent = "";
+  ID = { nama, absen, kelas: $("kelasSolo").value };
+  mulai("solo");
+});
+$("btn-ulang-main").addEventListener("click", keMenu);
+$("btn-menu").addEventListener("click", keMenu);
+$("btn-lagi").addEventListener("click", ()=> mulai(mode));
+</script>
+</body>
+</html>
