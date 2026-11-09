@@ -37,7 +37,7 @@
 <body>
 <div id="gate" class="card">
   <h2 style="margin-top:0">🔐 Panel Guru — Simulasi TKA SMP Negeri 4 Palu</h2>
-  <p class="small">Masukkan kode khusus guru (kode yang sama dengan kode khusus portal) untuk melihat nilai yang masuk ke database sentral.</p>
+  <p class="small">Masukkan kode khusus guru untuk melihat nilai yang masuk ke database sentral.</p>
   <input type="password" id="kode" placeholder="Kode khusus guru" autocomplete="off">
   <button onclick="buka()">Buka Panel</button>
   <p id="gateMsg" class="err"></p>
@@ -87,7 +87,7 @@
 const SB = "https://vovjeijhxnehhtxjqtkm.supabase.co";
 const KEY = "sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV";
 const LABEL = "SIMULASI TKA SMPN 4 PALU";
-const HASH_KHUSUS = "fa864c89fd4730323d445a16b806ba536622dc1e6d577288ed782cfea0ad333b";
+const HASH_KHUSUS = "e8e405672efae05591d7842265f3ff19acc139adf14861d36dce887a9af64055"; // SHA-256 kode khusus guru aplikasi ini (khusus SMPN 4 Palu)
 let DATA = [];
 
 async function sha256(teks){
@@ -97,7 +97,7 @@ async function sha256(teks){
 async function buka(){
   const v = document.getElementById("kode").value.trim();
   if(await sha256(v) === HASH_KHUSUS){
-    sessionStorage.setItem("panelPaluOK","1");
+    sessionStorage.setItem("panelPalu26OK","1");
     tampil();
   } else {
     document.getElementById("gateMsg").textContent = "Kode tidak cocok. Coba lagi.";
@@ -109,7 +109,7 @@ function tampil(){
   muat(true);
   setInterval(()=>muat(false), 30000);
 }
-if(sessionStorage.getItem("panelPaluOK")==="1"){ tampil(); }
+if(sessionStorage.getItem("panelPalu26OK")==="1"){ tampil(); }
 
 function fmtWaktu(iso){
   const d = new Date(iso);
