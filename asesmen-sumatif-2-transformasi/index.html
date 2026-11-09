@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asesmen Sumatif 2 — Transformasi Geometri | Kelas IX</title>
+<style>
+:root{--biru:#0b3d66;--teal:#0e7a5f;--emas:#c9a227;--bg:#eef4f7;--kartu:#ffffff;--teks:#173042;--abu:#5b7183;--merah:#b3261e;--hijau:#137333}
+*{box-sizing:border-box}body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--teks)}
+header{background:linear-gradient(135deg,var(--biru),var(--teal));color:#fff;padding:22px 16px;text-align:center}
+header h1{margin:0 0 6px;font-size:22px;letter-spacing:.4px}
+header p{margin:2px 0;opacity:.92;font-size:14px}
+.emas{color:var(--emas);font-weight:700}
+.wrap{max-width:820px;margin:0 auto;padding:18px 14px 40px}
+.kartu{background:var(--kartu);border-radius:14px;box-shadow:0 2px 10px rgba(11,61,102,.10);padding:20px;margin-bottom:16px}
+label{display:block;font-weight:600;margin:12px 0 5px;font-size:14px}
+input[type=text],select{width:100%;padding:11px 12px;border:1.5px solid #c4d3dd;border-radius:9px;font-size:16px}
+.btn{display:inline-block;border:none;cursor:pointer;border-radius:10px;padding:12px 22px;font-size:16px;font-weight:700;background:var(--teal);color:#fff}
+.btn:hover{filter:brightness(1.07)}
+.btn.biru{background:var(--biru)} .btn.abu{background:var(--abu)} .btn.emas{background:var(--emas);color:#231a00}
+.btn:disabled{opacity:.55;cursor:wait}
+.sembunyi{display:none!important}
+.info{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.chip{background:#e7f0f5;border-radius:999px;padding:6px 13px;font-size:13.5px;font-weight:600}
+.bar{position:sticky;top:0;z-index:5;background:var(--kartu);border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.10);padding:10px 14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+#timer{font-size:20px;font-weight:800;color:var(--biru)} #timer.kritis{color:var(--merah)}
+.soal h3{margin:0 0 4px;font-size:15px;color:var(--teal)}
+.soal .iteks{font-size:16.5px;line-height:1.55;margin:6px 0 14px}
+.opsi{display:flex;flex-direction:column;gap:9px}
+.opsi label{font-weight:500;margin:0;display:flex;gap:10px;align-items:flex-start;background:#f4f8fa;border:1.5px solid #d5e1e9;border-radius:10px;padding:11px 12px;cursor:pointer;font-size:15.5px}
+.opsi label.terpilih{border-color:var(--teal);background:#e6f4ee}
+.opsi input{margin-top:3px;transform:scale(1.25)}
+.pernyataan{border:1.5px solid #d5e1e9;border-radius:10px;padding:11px 12px;margin-bottom:9px;background:#f4f8fa}
+.pernyataan .p-teks{font-size:15.5px;margin-bottom:9px}
+.bs-pilihan{display:flex;gap:9px}
+.bs-pilihan button{flex:1;padding:9px;border-radius:8px;border:1.5px solid #b9ccd8;background:#fff;font-weight:700;cursor:pointer;font-size:15px}
+.bs-pilihan button.sel-b{background:var(--teal);color:#fff;border-color:var(--teal)}
+.bs-pilihan button.sel-s{background:var(--merah);color:#fff;border-color:var(--merah)}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+.palet{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.palet button{width:38px;height:38px;border-radius:9px;border:1.5px solid #b9ccd8;background:#fff;font-weight:700;cursor:pointer}
+.palet button.isi{background:var(--teal);color:#fff;border-color:var(--teal)}
+.palet button.aktif{outline:3px solid var(--emas)}
+.nilai-besar{font-size:56px;font-weight:800;text-align:center;color:var(--biru);margin:8px 0 0}
+.status{text-align:center;font-size:19px;font-weight:800;margin:4px 0}
+.status.tuntas{color:var(--hijau)} .status.belum{color:var(--merah)}
+.tengah{text-align:center}
+.status-simpan{text-align:center;font-size:14px;margin-top:10px}
+.status-simpan.ok{color:var(--hijau);font-weight:600}
+.status-simpan.gagal{color:var(--merah);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{border-bottom:1px solid #e1e9ee;padding:7px 6px;text-align:left}
+th{background:#e7f0f5}
+.ulasan-item{border-top:1px solid #e1e9ee;padding:12px 0}
+.ulasan-item h4{margin:0 0 5px;font-size:15px}
+.ulasan-item p{margin:3px 0;font-size:14.5px;line-height:1.5}
+.kunci-jawaban{color:var(--hijau);font-weight:700}
+.salah{color:var(--merah);font-weight:700}
+small{color:var(--abu)}
+.scroll-x{overflow-x:auto}
+</style>
+</head>
+<body>
+<header>
+<h1>ASESMEN SUMATIF 2 MATEMATIKA</h1>
+<p>Bab Transformasi Geometri • Kelas IX • SMP Negeri 1 Bantarkawung</p>
+<p>Portal Rumah Belajar AAAMAAT KEREN • Pengembang: <span class="emas">Drs. PAIYO</span> • Disusun oleh Mas Yosad</p>
+</header>
+<div class="wrap">
+
+<!-- LAYAR MULAI -->
+<div id="layarMulai" class="kartu">
+<h2 style="margin-top:0">Asesmen Sumatif 2 — Transformasi Geometri</h2>
+<p>Isi data dirimu dengan benar, masukkan <b>token sesi</b> dari gurumu, lalu klik <b>Mulai Asesmen</b>.</p>
+<div class="info">
+<span class="chip">20 Soal</span><span class="chip">Waktu 60 Menit</span>
+<span class="chip">10 PG • 5 Benar/Salah • 5 MCMA</span><span class="chip">KKM 75 / 60*</span>
+</div>
+<label for="inToken">TOKEN SESI *</label>
+<input type="text" id="inToken" placeholder="Masukkan token dari gurumu" autocomplete="off">
+<label for="inNama">NAMA LENGKAP *</label>
+<input type="text" id="inNama" placeholder="Nama lengkapmu">
+<label for="inKelas">KELAS *</label>
+<select id="inKelas" onchange="kelasBerubah()">
+<option value="">— Pilih kelasmu —</option>
+<option value="IX A">IX A</option><option value="IX B">IX B</option><option value="IX C">IX C</option>
+<option value="IX D">IX D</option><option value="IX E">IX E</option><option value="IX F">IX F</option>
+<option value="Lainnya">Lainnya</option>
+</select>
+<input type="text" id="inKelasLain" class="sembunyi" placeholder="Tulis kelasmu di sini, mis. IX G" autocomplete="off" style="margin-top:8px">
+<label for="inAbsen">NO. ABSEN *</label>
+<input type="text" id="inAbsen" inputmode="numeric" placeholder="Nomor absen">
+<label for="inSekolah">NAMA SEKOLAH *</label>
+<input type="text" id="inSekolah" list="dlSekolah" value="SMP Negeri 1 Bantarkawung" autocomplete="off">
+<datalist id="dlSekolah">
+<option value="SMP Negeri 1 Bantarkawung"></option>
+</datalist>
+<p style="margin:4px 0 0"><small>Siswa dari sekolah lain: ganti nama sekolah di atas dengan nama sekolahmu sendiri.</small></p>
+<p id="errMulai" class="salah sembunyi"></p>
+<div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+<button class="btn" onclick="mulai()">▶ Mulai Asesmen (60 Menit)</button>
+</div>
+<p><small>Asesmen ini berisi 20 soal Bab Transformasi Geometri (translasi, refleksi, rotasi, dilatasi). Nilai langsung tampil setelah selesai dan otomatis tersimpan ke database guru. *KKM 75 untuk kelas IX A dan IX B; KKM 60 untuk kelas IX C, IX D, dan IX E. Kerjakan dengan jujur — Aku Bisa, Jujur, Bahagia!</small></p>
+</div>
+
+<!-- LAYAR UJIAN -->
+<div id="layarUjian" class="sembunyi">
+<div class="bar"><div><b id="barNama"></b><br><small id="barKelas"></small></div><div id="timer">60:00</div></div>
+<div class="kartu soal">
+<h3 id="soalLabel"></h3>
+<div class="iteks" id="soalTeks"></div>
+<div id="soalIsi"></div>
+<div class="nav">
+<button class="btn abu" id="btnPrev" onclick="geser(-1)">← Sebelumnya</button>
+<button class="btn biru" id="btnNext" onclick="geser(1)">Berikutnya →</button>
+</div>
+<div class="palet" id="palet"></div>
+<hr style="border:none;border-top:1px solid #e1e9ee;margin:18px 0">
+<button class="btn emas" style="width:100%" onclick="konfirmasiSelesai()">✔ Selesai &amp; Kirim Jawaban</button>
+</div>
+</div>
+
+<!-- LAYAR HASIL -->
+<div id="layarHasil" class="sembunyi">
+<div class="kartu">
+<h2 class="tengah" style="margin-bottom:0">Hasil Asesmenmu</h2>
+<div class="nilai-besar" id="nilaiBesar">0</div>
+<div class="status" id="statusHasil"></div>
+<p class="tengah" id="ringkasHasil"></p>
+<p class="tengah"><small>Kode verifikasi: <b id="kodeVerif"></b></small></p>
+<p class="status-simpan" id="statusSimpan"></p>
+<p class="tengah"><button class="btn abu sembunyi" id="btnSimpanUlang" onclick="simpanHasil()">Simpan Ulang</button></p>
+</div>
+<div class="kartu" id="kartuUlasan">
+<h3 style="margin-top:0">Ulasan Jawaban (Kunci &amp; Pembahasan)</h3>
+<div id="gerbangUlasan">
+<p>Masukkan kata sandi guru untuk membuka kunci dan pembahasan.</p>
+<input type="text" id="sandiUlasan" placeholder="Kata sandi guru" autocomplete="off">
+<p id="sandiSalah" class="salah sembunyi">Kata sandi salah.</p>
+<button class="btn biru" style="margin-top:10px" onclick="bukaUlasan()">Buka Ulasan</button>
+</div>
+<div id="ulasan" class="sembunyi"></div>
+</div>
+<div class="tengah"><button class="btn" onclick="location.reload()">Kembali ke Awal</button></div>
+</div>
+
+</div>
+<script>
+const SB_URL = 'https://vovjeijhxnehhtxjqtkm.supabase.co';
+const SB_KEY = 'sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV';
+const TOKEN_SESI = 'TRANS26';
+const SANDI_ULASAN = 'yosad67';
+const KKM = 75;
+const ASESMEN = 'ASESMEN SUMATIF 2 TRANSFORMASI';
+const SOAL = [{"tipe": "PG", "soal": "Sebuah drone pemantau berada di titik A(2, 5). Drone itu digerakkan dengan translasi T(3, -4). Koordinat posisi akhir drone A' adalah …", "opsi": ["A'(5, 1)", "A'(6, -20)", "A'(-1, 9)", "A'(5, -1)"], "kunci": 0, "bahas": "Diketahui titik A(2, 5) dan translasi T(3, -4). Ditanyakan bayangan A'. Rumus translasi: (x, y) → (x + a, y + b). Substitusi: A' = (2 + 3, 5 + (-4)) = (5, 1). Kesimpulan: A'(5, 1), pilihan A."}, {"tipe": "PG", "soal": "Sebuah peti berada di titik B(-4, 7). Peti itu dicerminkan terhadap sumbu X. Koordinat bayangan peti B' adalah …", "opsi": ["B'(4, 7)", "B'(-4, -7)", "B'(7, -4)", "B'(-7, 4)"], "kunci": 1, "bahas": "Diketahui titik B(-4, 7) dicerminkan terhadap sumbu X. Ditanyakan bayangan B'. Rumus refleksi terhadap sumbu X: (x, y) → (x, -y). Substitusi: B' = (-4, -7). Kesimpulan: B'(-4, -7), pilihan B."}, {"tipe": "PG", "soal": "Sebuah panel kaca berada di titik C(3, 2). Panel itu dirotasikan 90° berlawanan arah jarum jam dengan pusat O(0, 0). Koordinat bayangan panel C' adalah …", "opsi": ["C'(-2, 3)", "C'(3, -2)", "C'(-3, -2)", "C'(2, -3)"], "kunci": 0, "bahas": "Diketahui titik C(3, 2) dirotasikan +90° (berlawanan arah jarum jam) dengan pusat O. Ditanyakan bayangan C'. Rumus rotasi +90°: (x, y) → (-y, x). Substitusi: C' = (-2, 3). Kesimpulan: C'(-2, 3), pilihan A."}, {"tipe": "PG", "soal": "Sebuah membran berada di titik D(-2, 6). Membran itu didilatasikan dengan faktor skala k = 3 dan pusat O(0, 0). Koordinat bayangan membran D' adalah …", "opsi": ["D'(1, 9)", "D'(-6, 18)", "D'(-5, 9)", "D'(6, -18)"], "kunci": 1, "bahas": "Diketahui titik D(-2, 6) dan dilatasi pusat O dengan k = 3. Ditanyakan bayangan D'. Rumus dilatasi pusat O: (x, y) → (kx, ky). Substitusi: D' = (3 × (-2), 3 × 6) = (-6, 18). Kesimpulan: D'(-6, 18), pilihan B."}, {"tipe": "PG", "soal": "Sayap sebuah pesawat mainan berada di titik E(5, -8). Sayap itu dicerminkan terhadap garis y = x. Koordinat bayangan sayap E' adalah …", "opsi": ["E'(-8, 5)", "E'(5, 8)", "E'(-5, -8)", "E'(8, 5)"], "kunci": 0, "bahas": "Diketahui titik E(5, -8) dicerminkan terhadap garis y = x. Ditanyakan bayangan E'. Rumus refleksi terhadap garis y = x: (x, y) → (y, x). Substitusi: E' = (-8, 5). Kesimpulan: E'(-8, 5), pilihan A."}, {"tipe": "PG", "soal": "Sebuah taman berbentuk segitiga dengan titik sudut A(1, 2), B(4, 2), dan puncak C(2, 5). Seluruh taman digeser dengan translasi T(-4, 3). Koordinat bayangan puncak taman C' adalah …", "opsi": ["C'(-2, 8)", "C'(6, 2)", "C'(-2, 2)", "C'(8, -2)"], "kunci": 0, "bahas": "Diketahui titik C(2, 5) dan translasi T(-4, 3). Ditanyakan bayangan C'. Rumus translasi: (x, y) → (x + a, y + b). Substitusi: C' = (2 + (-4), 5 + 3) = (-2, 8). Kesimpulan: C'(-2, 8), pilihan A."}, {"tipe": "PG", "soal": "Sebuah lampu taman berada di titik F(-1, 4). Lampu itu dicerminkan terhadap garis vertikal x = 3. Koordinat bayangan lampu F' adalah …", "opsi": ["F'(7, 4)", "F'(-7, 4)", "F'(4, 7)", "F'(3, 4)"], "kunci": 0, "bahas": "Diketahui titik F(-1, 4) dicerminkan terhadap garis x = 3. Ditanyakan bayangan F'. Rumus refleksi terhadap garis x = h: x' = 2h - x, sedangkan y tetap. Substitusi: x' = 2(3) - (-1) = 7, y' = 4. Kesimpulan: F'(7, 4), pilihan A."}, {"tipe": "PG", "soal": "Sebuah sensor turbin berada di titik G(6, -4). Sensor itu dirotasikan 180° dengan pusat O(0, 0). Koordinat bayangan sensor G' adalah …", "opsi": ["G'(-6, 4)", "G'(6, 4)", "G'(4, -6)", "G'(0, -4)"], "kunci": 0, "bahas": "Diketahui titik G(6, -4) dirotasikan 180° dengan pusat O. Ditanyakan bayangan G'. Rumus rotasi 180°: (x, y) → (-x, -y). Substitusi: G' = (-6, 4). Kesimpulan: G'(-6, 4), pilihan A."}, {"tipe": "PG", "soal": "Sebuah kartu nama berada di titik H(-3, 7). Kartu itu dicerminkan terhadap garis y = -x. Koordinat bayangan kartu H' adalah …", "opsi": ["H'(-7, 3)", "H'(7, 3)", "H'(3, -7)", "H'(-3, -7)"], "kunci": 0, "bahas": "Diketahui titik H(-3, 7) dicerminkan terhadap garis y = -x. Ditanyakan bayangan H'. Rumus refleksi terhadap garis y = -x: (x, y) → (-y, -x). Substitusi: H' = (-7, 3). Kesimpulan: H'(-7, 3), pilihan A."}, {"tipe": "PG", "soal": "Sebuah posko berada di titik K(8, -6). Posko itu didilatasikan dengan faktor skala k = 1/2 dan pusat O(0, 0). Koordinat bayangan posko K' adalah …", "opsi": ["K'(4, -3)", "K'(16, -12)", "K'(-4, 3)", "K'(4, 3)"], "kunci": 0, "bahas": "Diketahui titik K(8, -6) dan dilatasi pusat O dengan k = 1/2. Ditanyakan bayangan K'. Rumus dilatasi pusat O: (x, y) → (kx, ky). Substitusi: K' = (1/2 × 8, 1/2 × (-6)) = (4, -3). Kesimpulan: K'(4, -3), pilihan A."}, {"tipe": "BS", "soal": "Sebuah kapal berada di posisi (5, -2). Mula-mula kapal bergerak terbawa arus dengan translasi T1(-3, 4), kemudian digerakkan oleh mesin dengan translasi T2(2, 5). Tentukan Benar atau Salah untuk setiap pernyataan berikut.", "pernyataan": ["Posisi kapal setelah translasi T1 adalah (2, 2)", "Posisi akhir kapal setelah translasi T2 adalah (5, 8)", "Kedua gerakan itu dapat digantikan oleh satu translasi tunggal T(-1, 9)"], "kunci": [true, false, true], "bahas": "(1) (5, -2) + (-3, 4) = (2, 2) — Benar. (2) (2, 2) + (2, 5) = (4, 7), bukan (5, 8) — Salah. (3) Translasi gabungan = (-3 + 2, 4 + 5) = (-1, 9), dan (5, -2) + (-1, 9) = (4, 7), sama dengan posisi akhir — Benar."}, {"tipe": "BS", "soal": "Seorang karakter permainan berada di titik (-4, 3), lalu dicerminkan terhadap cermin portal pada garis y = x. Tentukan Benar atau Salah untuk setiap pernyataan berikut.", "pernyataan": ["Karakter berpindah ke titik (3, -4)", "Jarak karakter ke titik origin berubah setelah refleksi", "Hasil refleksi (3, -4) dicerminkan lagi terhadap sumbu X menjadi (3, 4)"], "kunci": [true, false, true], "bahas": "(1) Refleksi terhadap y = x menukar koordinat: (-4, 3) → (3, -4) — Benar. (2) Refleksi adalah transformasi kaku; jarak ke titik origin tetap, tidak berubah — Salah. (3) Refleksi terhadap sumbu X: (3, -4) → (3, 4) — Benar."}, {"tipe": "BS", "soal": "Pada sebuah jam dinding yang menunjukkan pukul 03.00, jarum jam dan jarum menit bergerak memutar. Setiap 1 jam setara dengan putaran 30°. Tentukan Benar atau Salah untuk setiap pernyataan berikut.", "pernyataan": ["Jarum menit bergerak dari angka 12 ke angka 3 setara rotasi 90° searah jarum jam", "Jarum jam bergerak dari angka 12 ke angka 4 membentuk sudut 120°", "Dalam 15 menit (dari angka 12 ke angka 3) rotasi matematikanya adalah +90°"], "kunci": [true, true, false], "bahas": "(1) Dari 12 ke 3 adalah seperempat putaran searah jarum jam = 90° — Benar. (2) Jarum jam menempuh 4 jam × 30° = 120° — Benar. (3) Gerakan searah jarum jam dalam konvensi matematika bertanda negatif, yaitu -90°, bukan +90° — Salah."}, {"tipe": "BS", "soal": "Sebuah wayang setinggi 20 cm disinari lampu sehingga bayangannya tampak di layar. Jarak lampu ke wayang 2 m dan jarak lampu ke layar 5 m. Tentukan Benar atau Salah untuk setiap pernyataan berikut.", "pernyataan": ["Faktor skala pembesaran bayangan adalah k = 2,5", "Tinggi bayangan wayang di layar adalah 50 cm", "Luas bayangan adalah 2,5 kali luas fisik wayang"], "kunci": [true, true, false], "bahas": "(1) Faktor skala dihitung dari jarak: k = 5 m / 2 m = 2,5 — Benar. (2) Tinggi bayangan = 20 cm × 2,5 = 50 cm — Benar. (3) Luas membesar sebesar k² = 2,5² = 6,25 kali, bukan 2,5 kali — Salah."}, {"tipe": "BS", "soal": "Perhatikan pernyataan-pernyataan teori tentang dilatasi berikut. Tentukan Benar atau Salah untuk setiap pernyataan.", "pernyataan": ["Dilatasi dengan k = 0,5 dan pusat (0, 0) menghasilkan bayangan setengah lebih kecil dari bangun asal", "Dilatasi dengan k = -1 sama persis dengan rotasi 180° dengan pusat (0, 0)", "Dilatasi dapat mengubah besar sudut pada bangun segitiga"], "kunci": [true, true, false], "bahas": "(1) k = 0,5 berarti setiap ukuran dikali 0,5, jadi bayangan setengah dari bangun asal — Benar. (2) Dilatasi k = -1 memetakan (x, y) → (-x, -y), persis sama dengan rotasi 180° berpusat di (0, 0) — Benar. (3) Dilatasi mempertahankan besar sudut; yang berubah hanya ukuran sisi — Salah."}, {"tipe": "MCMA", "soal": "Titik P(2, 1) dirotasikan -90° (searah jarum jam) dengan pusat O(0, 0). Pernyataan yang benar adalah … (pilih semua yang benar)", "pernyataan": ["P'(1, -2)", "P' berada di kuadran IV", "Bila dirotasikan +90°, hasilnya P''(-1, 2)", "Jarak titik P ke pusat selalu berubah setelah rotasi"], "kunci": [0, 1, 2], "bahas": "Rotasi -90°: (x, y) → (y, -x), sehingga P(2, 1) → P'(1, -2) — pernyataan (1) benar. Titik (1, -2) ber-x positif dan ber-y negatif, jadi berada di kuadran IV — (2) benar. Rotasi +90°: (x, y) → (-y, x), sehingga P''( -1, 2) — (3) benar. Rotasi mempertahankan jarak titik ke pusat, jadi (4) salah. Kesimpulan: yang benar pernyataan (1), (2), dan (3)."}, {"tipe": "MCMA", "soal": "Sebuah truk berada di titik P(1, -2) dan berpindah ke titik P'(5, -2). Transformasi yang mungkin menjelaskan perpindahan truk itu adalah … (pilih semua yang benar)", "pernyataan": ["Translasi T(4, 0)", "Refleksi terhadap garis x = 3", "Translasi T(0, 4)", "Refleksi terhadap sumbu Y"], "kunci": [0, 1], "bahas": "Perpindahan dari (1, -2) ke (5, -2): x bertambah 4 dan y tetap. Translasi T(4, 0) memberikan hasil itu — (1) benar. Refleksi terhadap garis x = 3: x' = 2(3) - 1 = 5 dan y tetap — (2) benar. Translasi T(0, 4) mengubah y menjadi 2 — (3) salah. Refleksi terhadap sumbu Y menghasilkan x' = -1 — (4) salah. Kesimpulan: yang benar pernyataan (1) dan (2)."}, {"tipe": "MCMA", "soal": "Sebuah persegi panjang mempunyai titik sudut (0, 0), (6, 0), (6, 4), dan (0, 4). Persegi panjang itu didilatasikan dengan faktor skala k = 2 dan pusat O(0, 0). Pernyataan yang benar adalah … (pilih semua yang benar)", "pernyataan": ["Titik sudut bayangannya adalah (0, 0), (12, 0), (12, 8), dan (0, 8)", "Luas bayangan menjadi 4 kali lipat luas semula", "Keliling bayangan menjadi 2 kali lipat keliling semula", "Faktor skala yang digunakan adalah 4"], "kunci": [0, 1, 2], "bahas": "Setiap koordinat dikali 2: (6, 0) → (12, 0) dan (6, 4) → (12, 8) — (1) benar. Luas membesar k² = 2² = 4 kali — (2) benar. Keliling membesar k = 2 kali — (3) benar. Faktor skalanya 2, bukan 4 — (4) salah. Kesimpulan: yang benar pernyataan (1), (2), dan (3)."}, {"tipe": "MCMA", "soal": "Segitiga ABC dengan A(0, 0), B(6, 0), dan C(2, 4) ditranslasikan oleh T(3, 2). Pernyataan yang benar adalah … (pilih semua yang benar)", "pernyataan": ["A'(3, 2)", "B'(9, 6)", "Sifat bangun asli tetap dipertahankan", "Luas bangun menjadi 2 kali lipat"], "kunci": [0, 1, 2], "bahas": "Diketahui segitiga A(0, 0), B(6, 0), C(2, 4) ditranslasi T(3, 2). Ditanyakan pernyataan yang benar. Penyelesaian: translasi menambahkan pasangan (3, 2) ke setiap titik sudut, misalnya A(0, 0) → A'(3, 2); translasi adalah transformasi kaku sehingga bentuk dan sifat bangun asli tetap dipertahankan, dan luas bangun tidak berubah. Kesimpulan: pernyataan (1), (2), dan (3) benar, sedangkan (4) salah karena luas tetap sama."}, {"tipe": "MCMA", "soal": "Sebuah lingkaran berpusat di A(5, 5) dengan jari-jari 2 berubah menjadi lingkaran berpusat di B(10, 5) dengan jari-jari 2. Transformasi yang mungkin menjelaskan perubahan itu adalah … (pilih semua yang benar)", "pernyataan": ["Translasi T(5, 0)", "Refleksi terhadap garis vertikal x = 7,5", "Rotasi 90° terhadap O(0, 0)", "Dilatasi dengan k = 2 dan pusat (0, 0)"], "kunci": [0, 1], "bahas": "Pusat berpindah dari (5, 5) ke (10, 5): x bertambah 5, y tetap, jari-jari tetap. Translasi T(5, 0) memberikan hasil itu — (1) benar. Refleksi terhadap x = 7,5: x' = 2(7,5) - 5 = 10, y tetap — (2) benar. Rotasi 90° terhadap O memindahkan pusat ke (-5, 5) — (3) salah. Dilatasi k = 2 memindahkan pusat ke (10, 10) dan menggandakan jari-jari menjadi 4 — (4) salah. Kesimpulan: yang benar pernyataan (1) dan (2)."}];
+const TOTAL_POIN = SOAL.reduce((a,s)=> a + (s.tipe==='PG'?1:s.pernyataan.length), 0);
+
+let siswa = null, jawaban = [], idx = 0, sisaDetik = 60*60, timerId = null, mulaiPada = null, payloadHasil = null, terkirim = false;
+
+function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function huruf(i){return 'ABCD'[i]}
+
+function kelasBerubah(){
+  const sel = document.getElementById('inKelas');
+  document.getElementById('inKelasLain').classList.toggle('sembunyi', sel.value !== 'Lainnya');
+}
+function kkmUntuk(kelas){
+  const k = String(kelas||'').toUpperCase().replace(/\s+/g,'');
+  if (k==='IXC' || k==='IXD' || k==='IXE') return 60;
+  return 75;
+}
+function mulai(){
+  const token = document.getElementById('inToken').value.trim().toUpperCase();
+  const nama = document.getElementById('inNama').value.trim();
+  const kelasPilih = document.getElementById('inKelas').value;
+  const kelas = kelasPilih === 'Lainnya' ? document.getElementById('inKelasLain').value.trim() : kelasPilih;
+  const absen = document.getElementById('inAbsen').value.trim();
+  const sekolah = document.getElementById('inSekolah').value.trim() || 'SMP Negeri 1 Bantarkawung';
+  const err = document.getElementById('errMulai');
+  const salah = m => { err.textContent = m; err.classList.remove('sembunyi'); };
+  if (token !== TOKEN_SESI) return salah('Token sesi salah. Minta token yang benar kepada gurumu.');
+  if (!nama) return salah('Nama lengkap wajib diisi.');
+  if (!kelas) return salah('Kelas wajib diisi.');
+  if (!absen) return salah('No. absen wajib diisi.');
+  err.classList.add('sembunyi');
+  siswa = {nama, kelas, absen, sekolah};
+  jawaban = SOAL.map(s => s.tipe==='PG' ? -1 : s.pernyataan.map(()=> s.tipe==='MCMA' ? false : null));
+  idx = 0; mulaiPada = Date.now();
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarUjian').classList.remove('sembunyi');
+  document.getElementById('barNama').textContent = nama;
+  document.getElementById('barKelas').textContent = kelas + ' • Absen ' + absen + ' • ' + sekolah;
+  bangunPalet(); tampilSoal();
+  timerId = setInterval(tikTimer, 1000);
+  window.scrollTo(0,0);
+}
+function tikTimer(){
+  sisaDetik--;
+  const m = Math.floor(sisaDetik/60), d = sisaDetik%60;
+  const el = document.getElementById('timer');
+  el.textContent = String(m).padStart(2,'0')+':'+String(d).padStart(2,'0');
+  if (sisaDetik <= 300) el.classList.add('kritis');
+  if (sisaDetik <= 0){ clearInterval(timerId); selesai(true); }
+}
+function bangunPalet(){
+  const p = document.getElementById('palet');
+  p.innerHTML = SOAL.map((s,i)=>`<button id="pal${i}" onclick="loncat(${i})">${i+1}</button>`).join('');
+  segarPalet();
+}
+function sudahIsi(i){
+  const j = jawaban[i], s = SOAL[i];
+  if (s.tipe==='PG') return j !== -1;
+  return j.every(v => v !== null);
+}
+function segarPalet(){
+  SOAL.forEach((s,i)=>{
+    const b = document.getElementById('pal'+i);
+    if (!b) return;
+    b.classList.toggle('isi', sudahIsi(i));
+    b.classList.toggle('aktif', i === idx);
+  });
+}
+function loncat(i){ idx = i; tampilSoal(); }
+function geser(a){ idx = Math.min(SOAL.length-1, Math.max(0, idx+a)); tampilSoal(); }
+function tampilSoal(){
+  const s = SOAL[idx];
+  const namaTipe = s.tipe==='PG' ? 'Pilihan Ganda' : (s.tipe==='BS' ? 'Pilihan Ganda Kompleks — Benar/Salah' : 'MCMA — Pilih Semua yang Benar');
+  document.getElementById('soalLabel').textContent = `Soal ${idx+1} dari ${SOAL.length} • ${namaTipe}`;
+  document.getElementById('soalTeks').textContent = s.soal;
+  const isi = document.getElementById('soalIsi');
+  if (s.tipe==='PG'){
+    isi.innerHTML = '<div class="opsi">' + s.opsi.map((o,i)=>{
+      const sel = jawaban[idx]===i ? ' terpilih' : '';
+      return `<label class="${sel}"><input type="radio" name="pg" ${jawaban[idx]===i?'checked':''} onchange="jawabPG(${i})"><span><b>${huruf(i)}.</b> ${esc(o)}</span></label>`;
+    }).join('') + '</div>';
+  } else if (s.tipe==='BS'){
+    isi.innerHTML = s.pernyataan.map((t,i)=>{
+      const v = jawaban[idx][i];
+      return `<div class="pernyataan"><div class="p-teks"><b>${i+1}.</b> ${esc(t)}</div>
+      <div class="bs-pilihan">
+      <button class="${v===true?'sel-b':''}" onclick="jawabBS(${i},true)">BENAR</button>
+      <button class="${v===false?'sel-s':''}" onclick="jawabBS(${i},false)">SALAH</button>
+      </div></div>`;
+    }).join('') + '<p><small>Tentukan BENAR atau SALAH untuk setiap pernyataan (ada 3 pernyataan). Setiap pernyataan dinilai sendiri.</small></p>';
+  } else {
+    isi.innerHTML = '<div class="opsi">' + s.pernyataan.map((t,i)=>{
+      const sel = jawaban[idx][i]===true ? ' terpilih' : '';
+      return `<label class="${sel}"><input type="checkbox" ${jawaban[idx][i]===true?'checked':''} onchange="jawabMCMA(${i},this.checked)"><span><b>${i+1}.</b> ${esc(t)}</span></label>`;
+    }).join('') + '</div><p><small>Centang semua pernyataan yang menurutmu BENAR. Setiap pernyataan dinilai sendiri: tepat memilih yang benar dan tepat tidak memilih yang salah sama-sama bernilai.</small></p>';
+  }
+  document.getElementById('btnPrev').disabled = idx===0;
+  document.getElementById('btnNext').disabled = idx===SOAL.length-1;
+  segarPalet();
+}
+function jawabPG(i){ jawaban[idx]=i; tampilSoal(); }
+function jawabBS(i,v){ jawaban[idx][i]=v; tampilSoal(); }
+function jawabMCMA(i,v){ jawaban[idx][i]=v; tampilSoal(); }
+
+function hitungSkor(){
+  let poin = 0; const rincian = [];
+  SOAL.forEach((s,i)=>{
+    let p = 0;
+    if (s.tipe==='PG'){ p = jawaban[i]===s.kunci ? 1 : 0; }
+    else if (s.tipe==='BS'){ s.pernyataan.forEach((t,j)=>{ if (jawaban[i][j]===s.kunci[j]) p++; }); }
+    else { s.pernyataan.forEach((t,j)=>{ const harus = s.kunci.includes(j); const dipilih = jawaban[i][j]===true; if (harus===dipilih) p++; }); }
+    poin += p; rincian.push({no:i+1, tipe:s.tipe, poin:p});
+  });
+  return {poin, rincian};
+}
+function konfirmasiSelesai(){
+  const kosong = SOAL.map((s,i)=>i).filter(i=>!sudahIsi(i));
+  if (kosong.length && !confirm(`Masih ada ${kosong.length} soal yang belum lengkap dijawab (nomor: ${kosong.map(i=>i+1).join(', ')}). Tetap kirim sekarang?`)) return;
+  selesai(false);
+}
+function selesai(otomatis){
+  if (terkirim) return; terkirim = true;
+  clearInterval(timerId);
+  const {poin, rincian} = hitungSkor();
+  const nilai = Math.round((poin/TOTAL_POIN)*100);
+  const kkmSiswa = kkmUntuk(siswa.kelas);
+  const status = nilai >= kkmSiswa ? 'TUNTAS' : 'BELUM TUNTAS';
+  const kode = 'TRF-' + Array.from({length:6},()=>'ABCDEFGHJKMNPQRSTUVWXYZ23456789'[Math.floor(Math.random()*31)]).join('');
+  const durasi = Math.round((Date.now()-mulaiPada)/1000);
+  payloadHasil = {
+    nama: siswa.nama, kelas: siswa.kelas, absen: parseInt(siswa.absen)||null, no_absen: String(siswa.absen),
+    nilai, status, kode_verifikasi: kode,
+    tanggal: new Date().toISOString().slice(0, 10),
+    jenjang: 'SMP', bab: 'IX-02 TRANSFORMASI', asesmen: ASESMEN, jumlah_soal: SOAL.length,
+    jawaban: {sekolah: siswa.sekolah, poin, total_poin: TOTAL_POIN, rincian, jawaban_siswa: jawaban},
+    durasi_detik: durasi
+  };
+  document.getElementById('layarUjian').classList.add('sembunyi');
+  document.getElementById('layarHasil').classList.remove('sembunyi');
+  document.getElementById('nilaiBesar').textContent = nilai;
+  const st = document.getElementById('statusHasil');
+  st.textContent = status + (otomatis ? ' (waktu habis)' : '');
+  st.className = 'status ' + (nilai>=kkmSiswa ? 'tuntas' : 'belum');
+  const benarPG = rincian.filter(r=>r.tipe==='PG').reduce((a,r)=>a+r.poin,0);
+  document.getElementById('ringkasHasil').textContent = `${siswa.nama} • ${siswa.kelas} • Absen ${siswa.absen} — Poin ${poin} dari ${TOTAL_POIN} (PG benar ${benarPG} dari 10) • KKM ${kkmSiswa}`;
+  document.getElementById('kodeVerif').textContent = kode;
+  bangunUlasan(rincian);
+  simpanHasil();
+  window.scrollTo(0,0);
+}
+function deskJawaban(i){
+  const s = SOAL[i], j = jawaban[i];
+  if (s.tipe==='PG') return j===-1 ? '(tidak dijawab)' : huruf(j)+'. '+s.opsi[j];
+  if (s.tipe==='BS') return s.pernyataan.map((t,k)=>`${k+1}. ${j[k]===null?'(kosong)':(j[k]?'Benar':'Salah')}`).join(' | ');
+  const pil = s.pernyataan.map((t,k)=> j[k]===true ? (k+1) : null).filter(x=>x!==null);
+  return pil.length ? 'Memilih pernyataan nomor ' + pil.join(', ') : '(tidak memilih satu pun)';
+}
+function deskKunci(i){
+  const s = SOAL[i];
+  if (s.tipe==='PG') return huruf(s.kunci)+'. '+s.opsi[s.kunci];
+  if (s.tipe==='BS') return s.pernyataan.map((t,k)=>`${k+1}. ${s.kunci[k]?'Benar':'Salah'}`).join(' | ');
+  return 'Yang benar: pernyataan nomor ' + s.kunci.map(k=>k+1).join(', ');
+}
+function bangunUlasan(rincian){
+  document.getElementById('ulasan').innerHTML = SOAL.map((s,i)=>{
+    const maks = s.tipe==='PG' ? 1 : s.pernyataan.length;
+    return `<div class="ulasan-item"><h4>Soal ${i+1} (${s.tipe}) — Poinmu: ${rincian[i].poin}/${maks}</h4>
+    <p>${esc(s.soal)}</p>
+    <p>Jawabanmu: ${esc(deskJawaban(i))}</p>
+    <p class="kunci-jawaban">Kunci: ${esc(deskKunci(i))}</p>
+    <p><b>Pembahasan:</b> ${esc(s.bahas)}</p></div>`;
+  }).join('');
+}
+function bukaUlasan(){
+  const v = document.getElementById('sandiUlasan').value.trim();
+  if (v === SANDI_ULASAN){
+    document.getElementById('gerbangUlasan').classList.add('sembunyi');
+    document.getElementById('ulasan').classList.remove('sembunyi');
+  } else {
+    document.getElementById('sandiSalah').classList.remove('sembunyi');
+  }
+}
+async function simpanHasil(){
+  const el = document.getElementById('statusSimpan');
+  const btn = document.getElementById('btnSimpanUlang');
+  el.textContent = 'Menyimpan nilai ke database…'; el.className = 'status-simpan';
+  btn.classList.add('sembunyi');
+  try {
+    const r = await fetch(SB_URL + '/rest/v1/hasil_asesmen', {
+      method: 'POST',
+      headers: {'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
+      body: JSON.stringify(payloadHasil)
+    });
+    if (!r.ok) throw new Error('gagal-' + r.status);
+    el.textContent = '✔ Nilaimu sudah tersimpan di database guru.';
+    el.classList.add('ok');
+  } catch(e) {
+    el.textContent = '⚠ Nilai belum tersimpan ke database. Tunjukkan layar ini (beserta kode verifikasinya) kepada gurumu.';
+    el.classList.add('gagal');
+    btn.classList.remove('sembunyi');
+  }
+}
+
+</script>
+</body>
+</html>
