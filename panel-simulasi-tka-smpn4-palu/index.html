@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel Pantau Simulasi TKA — SMP Negeri 4 Palu — Guru</title>
+<style>
+  :root{--navy:#0b2a4a;--teal:#0e7c7b;--gold:#d4a017;--bg:#f2f5f8;--card:#fff;--mut:#5b6b7b}
+  *{box-sizing:border-box;font-family:'Segoe UI',system-ui,Arial,sans-serif}
+  body{margin:0;background:var(--bg);color:#16324a}
+  header{background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;padding:18px 16px}
+  header h1{margin:0;font-size:20px}
+  header p{margin:4px 0 0;font-size:13px;opacity:.9}
+  .wrap{max-width:1000px;margin:0 auto;padding:16px}
+  .card{background:var(--card);border-radius:12px;box-shadow:0 2px 10px rgba(11,42,74,.08);padding:16px;margin-bottom:14px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+  .stat{background:#eef6f6;border:1px solid #d7e8e8;border-radius:10px;padding:10px;text-align:center}
+  .stat b{display:block;font-size:22px;color:var(--navy)}
+  .stat span{font-size:12px;color:var(--mut)}
+  .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  select,input,button{padding:9px 10px;border:1px solid #c9d6df;border-radius:8px;font-size:14px}
+  button{background:var(--teal);color:#fff;border:none;cursor:pointer;font-weight:600}
+  button.gold{background:var(--gold);color:#231a00}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{padding:8px 7px;border-bottom:1px solid #e4ecf1;text-align:left;vertical-align:top}
+  th{background:var(--navy);color:#fff;position:sticky;top:0}
+  .tblwrap{overflow:auto;max-height:65vh;border:1px solid #e4ecf1;border-radius:8px}
+  .tuntas{color:#0a7a42;font-weight:700}.belum{color:#b3261e;font-weight:700}
+  .uji{background:#fff3cd;color:#7a5b00;border-radius:6px;padding:1px 6px;font-size:11px;font-weight:700}
+  #gate{max-width:420px;margin:60px auto}
+  #gate input{width:100%;margin:10px 0}
+  #gate button{width:100%}
+  .small{font-size:12px;color:var(--mut)}
+  .err{color:#b3261e;font-weight:600}
+</style>
+</head>
+<body>
+<div id="gate" class="card">
+  <h2 style="margin-top:0">🔐 Panel Guru — Simulasi TKA SMP Negeri 4 Palu</h2>
+  <p class="small">Masukkan kode khusus guru (kode yang sama dengan kode khusus portal) untuk melihat nilai yang masuk ke database sentral.</p>
+  <input type="password" id="kode" placeholder="Kode khusus guru" autocomplete="off">
+  <button onclick="buka()">Buka Panel</button>
+  <p id="gateMsg" class="err"></p>
+</div>
+
+<div id="panel" style="display:none">
+<header>
+  <h1>📊 Panel Pantau — Simulasi TKA Matematika SMP Negeri 4 Palu</h1>
+  <p>Database sentral Supabase • Label asesmen: SIMULASI TKA SMPN 4 PALU • <span id="segar">memuat…</span></p>
+</header>
+<div class="wrap">
+  <div class="card">
+    <div class="stats">
+      <div class="stat"><b id="stPeserta">–</b><span>Peserta unik</span></div>
+      <div class="stat"><b id="stKirim">–</b><span>Total kiriman</span></div>
+      <div class="stat"><b id="stRata">–</b><span>Rata-rata (nilai terbaik)</span></div>
+      <div class="stat"><b id="stMax">–</b><span>Nilai tertinggi</span></div>
+      <div class="stat"><b id="stTuntas">–</b><span>Tuntas (≥75)</span></div>
+    </div>
+    <p class="small">Rata-rata &amp; ketuntasan dihitung dari nilai <b>terbaik</b> tiap siswa. Baris bernama awalan “TES” ditandai <span class="uji">UJI</span> dan tidak ikut dihitung.</p>
+  </div>
+  <div class="card">
+    <div class="row">
+      <label>Kelas:
+        <select id="fKelas" onchange="render()">
+          <option value="">Semua</option>
+        </select>
+      </label>
+      <input id="fCari" type="search" placeholder="Cari nama…" oninput="render()">
+      <button class="gold" onclick="muat(true)">↻ Muat Ulang</button>
+      <span class="small">Panel menyegar otomatis tiap 30 detik.</span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="tblwrap">
+      <table>
+        <thead><tr><th>Waktu (WIB)</th><th>Nama</th><th>Kelas</th><th>Absen</th><th>Nilai</th><th>Status</th><th>Kode</th><th>Durasi</th></tr></thead>
+        <tbody id="isi"><tr><td colspan="8">Memuat data…</td></tr></tbody>
+      </table>
+    </div>
+    <p id="ket" class="small"></p>
+  </div>
+</div>
+</div>
+
+<script>
+const SB = "https://vovjeijhxnehhtxjqtkm.supabase.co";
+const KEY = "sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV";
+const LABEL = "SIMULASI TKA SMPN 4 PALU";
+const HASH_KHUSUS = "fa864c89fd4730323d445a16b806ba536622dc1e6d577288ed782cfea0ad333b";
+let DATA = [];
+
+async function sha256(teks){
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(teks));
+  return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,"0")).join("");
+}
+async function buka(){
+  const v = document.getElementById("kode").value.trim();
+  if(await sha256(v) === HASH_KHUSUS){
+    sessionStorage.setItem("panelPaluOK","1");
+    tampil();
+  } else {
+    document.getElementById("gateMsg").textContent = "Kode tidak cocok. Coba lagi.";
+  }
+}
+function tampil(){
+  document.getElementById("gate").style.display = "none";
+  document.getElementById("panel").style.display = "block";
+  muat(true);
+  setInterval(()=>muat(false), 30000);
+}
+if(sessionStorage.getItem("panelPaluOK")==="1"){ tampil(); }
+
+function fmtWaktu(iso){
+  const d = new Date(iso);
+  return d.toLocaleDateString("id-ID",{timeZone:"Asia/Jakarta",day:"2-digit",month:"short"}) + " " +
+         d.toLocaleTimeString("id-ID",{timeZone:"Asia/Jakarta",hour:"2-digit",minute:"2-digit"}).replace(":",".");
+}
+function fmtDurasi(s){
+  if(!s && s!==0) return "-";
+  const m = Math.floor(s/60), d = s%60;
+  return m + "m" + (d? (" " + d + "d") : "");
+}
+async function muat(manual){
+  try{
+    const url = SB + "/rest/v1/hasil_asesmen?select=created_at,nama,kelas,absen,nilai,status,kode_verifikasi,durasi_detik&asesmen=eq." + encodeURIComponent(LABEL) + "&order=created_at.desc&limit=1000";
+    const r = await fetch(url, {headers:{apikey:KEY, Authorization:"Bearer "+KEY}});
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    DATA = await r.json();
+    const kelasSet = [...new Set(DATA.map(x=>x.kelas).filter(Boolean))].sort();
+    const sel = document.getElementById("fKelas");
+    const cur = sel.value;
+    sel.innerHTML = '<option value="">Semua</option>' + kelasSet.map(k=>`<option ${k===cur?"selected":""}>${k}</option>`).join("");
+    render();
+    document.getElementById("segar").textContent = "terakhir disegar " + new Date().toLocaleTimeString("id-ID",{timeZone:"Asia/Jakarta",hour:"2-digit",minute:"2-digit",second:"2-digit"}).replace(/:/g,".") + " WIB";
+  }catch(e){
+    document.getElementById("isi").innerHTML = '<tr><td colspan="8" class="err">Gagal memuat data: ' + e.message + '</td></tr>';
+  }
+}
+function render(){
+  const fk = document.getElementById("fKelas").value;
+  const fc = document.getElementById("fCari").value.trim().toLowerCase();
+  const resmi = DATA.filter(x=>!/^TES/i.test(x.nama||""));
+  const unik = {};
+  resmi.forEach(x=>{
+    const k = (x.nama||"").toUpperCase()+"|"+(x.kelas||"")+"|"+(x.absen??"");
+    if(!unik[k] || x.nilai > unik[k].nilai) unik[k] = x;
+  });
+  const daftarUnik = Object.values(unik);
+  const rata = daftarUnik.length ? (daftarUnik.reduce((a,b)=>a+(b.nilai||0),0)/daftarUnik.length) : 0;
+  document.getElementById("stPeserta").textContent = daftarUnik.length;
+  document.getElementById("stKirim").textContent = DATA.length;
+  document.getElementById("stRata").textContent = daftarUnik.length ? rata.toFixed(1).replace(".",",") : "–";
+  document.getElementById("stMax").textContent = daftarUnik.length ? Math.max(...daftarUnik.map(x=>x.nilai||0)) : "–";
+  document.getElementById("stTuntas").textContent = daftarUnik.filter(x=>(x.nilai||0)>=75).length + " / " + daftarUnik.length;
+
+  const tampilData = DATA.filter(x=>
+    (!fk || x.kelas===fk) &&
+    (!fc || (x.nama||"").toLowerCase().includes(fc))
+  );
+  document.getElementById("isi").innerHTML = tampilData.length ? tampilData.map(x=>`
+    <tr>
+      <td>${fmtWaktu(x.created_at)}</td>
+      <td>${x.nama||"-"} ${/^TES/i.test(x.nama||"")?'<span class="uji">UJI</span>':""}</td>
+      <td>${x.kelas||"-"}</td>
+      <td>${x.absen ?? "-"}</td>
+      <td><b>${x.nilai ?? "-"}</b></td>
+      <td class="${(x.nilai||0)>=75?"tuntas":"belum"}">${x.status || ((x.nilai||0)>=75?"TUNTAS":"BELUM TUNTAS")}</td>
+      <td>${x.kode_verifikasi||"-"}</td>
+      <td>${fmtDurasi(x.durasi_detik)}</td>
+    </tr>`).join("") : '<tr><td colspan="8">Belum ada data untuk filter ini. Data akan muncul di sini begitu ada siswa yang mengirim hasil.</td></tr>';
+  document.getElementById("ket").textContent = "Menampilkan " + tampilData.length + " kiriman (terbaru di atas).";
+}
+</script>
+</body>
+</html>
