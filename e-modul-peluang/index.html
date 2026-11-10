@@ -124,6 +124,14 @@ table.data td.hl{background:var(--gold-soft);font-weight:800;color:#7a5c00}
 .feedback.show{display:block}
 .feedback.ok{background:var(--good-bg);border:1px solid var(--good)}
 .feedback.no{background:var(--bad-bg);border:1px solid var(--bad)}
+.feedback.saved{background:var(--surface2);border:1px solid var(--line);color:var(--muted)}
+.opt.picked{border-color:var(--teal)}
+.opt.picked .ol{background:var(--teal);color:#fff;border-color:var(--teal)}
+.review-gate{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px}
+.review-item{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0;background:var(--surface)}
+.review-item .qtext{font-weight:700;margin-bottom:8px}
+.review-item .ans{margin:4px 0;font-size:.95rem}
+.review-item .expl{margin-top:8px;border-radius:10px;padding:10px 12px;background:var(--good-bg);border:1px solid var(--good);font-size:.95rem}
 .quiz-result{display:none;margin-top:14px;border-radius:12px;padding:16px;background:var(--gold-soft);border:1px solid var(--gold);font-size:1rem}
 .quiz-result.show{display:block}
 .idpanel{margin:14px 0;border:1.5px dashed var(--teal);border-radius:12px;padding:14px 16px;background:var(--surface2)}
@@ -634,7 +642,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 20px 34px;color:var(--muted);fon
         </ul>
       </div>
       <h3 class="sec">🏆 Cek Penguasaan Bab</h3>
-      <p class="lede">Sepuluh soal campuran dari seluruh pertemuan. Kerjakan dengan tenang dan jujur — di akhir akan muncul skor dan saran pertemuan mana yang perlu kamu ulangi bila perlu.</p>
+      <p class="lede">Sepuluh soal campuran dari seluruh pertemuan. Kerjakan dengan tenang dan jujur. Selama mengerjakan, jawaban yang kamu pilih langsung tersimpan <b>tanpa ditandai benar atau salah</b> dan tidak ada pembahasan yang muncul — nilai dan status tuntasmu tampil setelah semua soal selesai. Kunci dan pembahasan tes ini hanya dibuka oleh guru.</p>
       <div class="idpanel" id="idPanel">
         <h4>📋 Identitas — agar hasilmu tercatat oleh guru</h4>
         <p>Isi sekali saja; tersimpan otomatis di perangkat ini. Hasil Cek Penguasaanmu akan terkirim ke guru setelah selesai. Bila tidak diisi, hasilmu tidak tercatat (tetap bisa belajar seperti biasa).</p>
@@ -644,10 +652,15 @@ footer{max-width:1180px;margin:0 auto;padding:0 20px 34px;color:var(--muted);fon
           <label>No. Absen<input id="idAbsen" type="number" min="1" max="40" inputmode="numeric" placeholder="mis. 11"></label>
         </div>
       </div>
-      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">10 soal · seluruh bab</span><span class="score-pill">Skor: <span class="g" id="score-final">0 / 10</span></span></div>
+      <div class="quiz-head"><span style="font-weight:700;color:var(--muted)">10 soal · seluruh bab · tanpa kunci &amp; pembahasan selama tes</span><span class="score-pill">Terjawab: <span class="g" id="score-final">0 / 10</span></span></div>
       <div id="quiz-final"></div>
       <div class="quiz-result" id="result-final"></div>
       <div class="report-box" id="reportBox"><span id="reportStatus">Hasilmu sedang disiapkan…</span> <button class="btn ghost" id="btnKirimHasil" style="display:none;padding:7px 14px;font-size:.9rem">📤 Kirim Hasil ke Guru</button></div>
+      <div class="review-gate" id="reviewGateFinal">
+        <button class="btn navy" type="button" id="btnReviewFinal">🔒 Kunci &amp; Pembahasan Cek Penguasaan (Khusus Guru)</button>
+        <p class="download-note">Khusus guru — digerbang kata sandi. Kunci dan pembahasan Cek Penguasaan tidak ditampilkan kepada siswa, baik selama maupun sesudah tes.</p>
+        <div id="reviewFinal"></div>
+      </div>
       <div class="btnrow">
         <button class="btn ghost" data-goto="p5">← Pertemuan 5</button>
         <span style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn gold markbtn" data-mark="p6">✓ Tandai Sudah Dipelajari</button><button class="btn" data-goto="beranda">Kembali ke Beranda</button></span>
@@ -871,23 +884,38 @@ function answer(id, btn){
   var qi = parseInt(btn.getAttribute('data-q'),10), oi = parseInt(btn.getAttribute('data-o'),10);
   var item = QUIZZES[id][qi];
   state[id].picks[qi] = (oi === item.a);
+  if(!state[id].pickIdx) state[id].pickIdx = {};
+  state[id].pickIdx[qi] = oi;
   if(id === 'final' && !state[id].startedAt) state[id].startedAt = Date.now();
   var qitem = btn.closest('.qitem');
   var opts = qitem.querySelectorAll('.opt');
   opts.forEach(function(o){ o.disabled = true; });
-  opts[item.a].classList.add('correct');
   var fb = document.getElementById('fb-'+id+'-'+qi);
   state[id].answered++;
-  if(oi === item.a){
-    state[id].correct++;
-    fb.className = 'feedback show ok';
-    fb.innerHTML = '<b>✅ Benar!</b> ' + item.fb;
+  if(oi === item.a) state[id].correct++;
+  if(id === 'final'){
+    /* Cek Penguasaan bersifat TES TERTUTUP (ketetapan guru, 10 Nov 2026):
+       selama pengerjaan tidak ada tanda benar/salah, tidak ada penanda kunci,
+       dan tidak ada pembahasan — jawaban hanya dinyatakan "tersimpan" agar
+       umpan balik tidak bisa dimanfaatkan untuk menjawab/mengoreksi soal lain.
+       Nilai & status tampil di layar hasil; kunci + pembahasan hanya terbuka
+       lewat gerbang kata sandi guru (lihat btnReviewFinal). */
+    btn.classList.add('picked');
+    fb.className = 'feedback show saved';
+    fb.innerHTML = '✓ Jawaban tersimpan. Lanjutkan ke soal berikutnya — nilai dan status tuntasmu tampil setelah semua soal selesai.';
+    document.getElementById('score-'+id).textContent = state[id].answered + ' / ' + QUIZZES[id].length;
   } else {
-    btn.classList.add('wrong');
-    fb.className = 'feedback show no';
-    fb.innerHTML = '<b>Belum tepat.</b> Jawaban yang benar ditandai hijau. ' + item.fb;
+    opts[item.a].classList.add('correct');
+    if(oi === item.a){
+      fb.className = 'feedback show ok';
+      fb.innerHTML = '<b>✅ Benar!</b> ' + item.fb;
+    } else {
+      btn.classList.add('wrong');
+      fb.className = 'feedback show no';
+      fb.innerHTML = '<b>Belum tepat.</b> Jawaban yang benar ditandai hijau. ' + item.fb;
+    }
+    document.getElementById('score-'+id).textContent = state[id].correct + ' / ' + QUIZZES[id].length;
   }
-  document.getElementById('score-'+id).textContent = state[id].correct + ' / ' + QUIZZES[id].length;
   if(state[id].answered === QUIZZES[id].length){ showResult(id); }
 }
 function showResult(id){
@@ -899,10 +927,22 @@ function showResult(id){
     else if(c >= 3) msg = '<b>👍 Bekalmu cukup baik ('+c+' dari 5).</b> Kamu siap mulai Pertemuan 1. Untuk soal yang masih salah, pembahasannya sudah tersedia di setiap soal di atas — baca sebentar, lalu lanjut belajar.';
     else msg = '<b>💪 Jangan berkecil hati ('+c+' dari 5).</b> Bab peluang sangat bertumpu pada pecahan: baca kembali pembahasan soal yang salah di atas, lalu mulai Pertemuan 1 dengan perlahan — di sana frekuensi relatif dibangun dari percobaan nyata. Kamu pasti bisa!';
   } else if(id === 'final'){
-    if(c >= 9) msg = '<b>🏆 Hebat! Skor '+c+' dari 10.</b> Kamu telah menguasai Bab Peluang — dari percobaan empirik sampai penerapan. Pertahankan dan bantu temanmu yang masih berlatih, ya.';
-    else if(c >= 7) msg = '<b>👍 Bagus! Skor '+c+' dari 10.</b> Sedikit lagi menuju tuntas. Cermati pembahasan soal yang masih salah — perhatikan pertemuan asalnya di akhir pembahasan — lalu coba kerjakan kembali setelah istirahat.';
-    else if(c >= 5) msg = '<b>📚 Skor '+c+' dari 10 — kamu sudah di tengah jalan.</b> Ulangi Pertemuan 2 (Ruang Sampel) dan Pertemuan 3 (Peluang Teoretik), karena hampir semua soal bab ini bertumpu pada n(S), n(A), dan rumus P(A) = n(A)/n(S), lalu coba lagi.';
-    else msg = '<b>🌱 Skor '+c+' dari 10 — tidak apa-apa, ini awal belajar.</b> Kembali ke Pertemuan 1 untuk memahami frekuensi relatif dari percobaan nyata, lanjutkan berurutan sampai Pertemuan 6, lalu kerjakan cek ini lagi. Semangat, No Drop!';
+    /* Layar hasil Cek Penguasaan: hanya NILAI, status TUNTAS/BELUM terhadap KKM
+       kelas siswa, dan jumlah benar — TANPA kunci dan TANPA pembahasan per soal. */
+    var nilaiF = Math.round(c / n * 100);
+    var dF = simpanIdentitas();
+    var statusF = '';
+    if(dF.kelas && dF.kelas.trim().length >= 2){
+      var kkmF = kkmUntuk(dF.kelas);
+      statusF = ' Status: <b>' + (nilaiF >= kkmF ? 'TUNTAS' : 'BELUM TUNTAS') + '</b> (KKM kelasmu ' + kkmF + ').';
+    } else {
+      statusF = ' Status tuntas dihitung dari KKM kelasmu (IX A/B: 75; IX C/D/E: 60) — pastikan Nama, Kelas, dan No. Absen pada panel identitas di atas sudah terisi agar hasilmu tercatat dengan status yang tepat.';
+    }
+    var headF = '<b>🏁 Cek Penguasaan selesai.</b> Nilaimu: <b>' + nilaiF + '</b> — benar ' + c + ' dari ' + n + ' soal.' + statusF + ' ';
+    if(c >= 9) msg = headF + 'Kamu telah menguasai Bab Peluang — dari percobaan empirik sampai penerapan. Pertahankan dan bantu temanmu yang masih berlatih, ya.';
+    else if(c >= 7) msg = headF + 'Sedikit lagi menuju penguasaan penuh. Ulangi pertemuan yang materinya terasa belum mantap, lalu coba kerjakan kembali setelah istirahat. Kunci dan pembahasan tes ini hanya dibuka oleh guru.';
+    else if(c >= 5) msg = headF + 'Kamu sudah di tengah jalan. Ulangi Pertemuan 2 (Ruang Sampel) dan Pertemuan 3 (Peluang Teoretik), karena hampir semua soal bab ini bertumpu pada n(S), n(A), dan rumus P(A) = n(A)/n(S), lalu coba lagi.';
+    else msg = headF + 'Tidak apa-apa, ini awal belajar. Kembali ke Pertemuan 1 untuk memahami frekuensi relatif dari percobaan nyata, lanjutkan berurutan sampai Pertemuan 6, lalu kerjakan cek ini lagi. Semangat, No Drop!';
   } else {
     var name = {p1:'Pertemuan 1',p2:'Pertemuan 2',p3:'Pertemuan 3',p4:'Pertemuan 4',p5:'Pertemuan 5',p6:'Pertemuan 6'}[id];
     if(c === 4) msg = '<b>🌟 Sempurna! Skor 4 dari 4 di '+name+'.</b> Tandai pertemuan ini sebagai “Sudah Dipelajari” lalu lanjutkan ke pertemuan berikutnya.';
@@ -1069,6 +1109,38 @@ async function kirimHasilFinal(){
   });
   document.getElementById('btnKirimHasil').addEventListener('click', kirimHasilFinal);
 })();
+
+/* ============ KUNCI & PEMBAHASAN CEK PENGUASAAN — KHUSUS GURU ============ */
+var reviewFinalUnlocked = false;
+function renderReviewFinal(){
+  var box = document.getElementById('reviewFinal');
+  var letters = ['A','B','C','D'];
+  var st = state['final'] || {picks:{}, pickIdx:{}};
+  var html = '<h4 style="margin:16px 0 4px">🔑 Kunci &amp; Pembahasan Cek Penguasaan (Khusus Guru)</h4>';
+  QUIZZES['final'].forEach(function(item, qi){
+    var pick = (st.pickIdx && typeof st.pickIdx[qi] !== 'undefined') ? st.pickIdx[qi] : null;
+    var ket = (pick === null)
+      ? 'Siswa belum menjawab soal ini pada sesi ini.'
+      : 'Pilihan siswa pada sesi ini: <b>' + letters[pick] + '</b> — ' + (pick === item.a ? '✅ benar.' : '❌ belum tepat.');
+    html += '<div class="review-item"><div class="qtext">' + (qi + 1) + '. ' + item.q + '</div>';
+    item.opts.forEach(function(o, oi){
+      html += '<div class="ans">' + letters[oi] + '. ' + o + (oi === item.a ? ' <b>← kunci jawaban</b>' : '') + '</div>';
+    });
+    html += '<div class="ans">' + ket + '</div>';
+    html += '<div class="expl"><b>Pembahasan:</b> ' + item.fb + '</div></div>';
+  });
+  box.innerHTML = html;
+}
+document.getElementById('btnReviewFinal').addEventListener('click', function(){
+  if(!reviewFinalUnlocked){
+    var pw = prompt('Masukkan kata sandi khusus guru:');
+    if(pw === null) return;
+    if(pw !== 'yosad67'){ alert('Kata sandi salah — kunci & pembahasan tidak dibuka.'); return; }
+    reviewFinalUnlocked = true;
+  }
+  renderReviewFinal();
+  document.getElementById('reviewFinal').scrollIntoView({behavior:'smooth', block:'start'});
+});
 
 ['diagnostik','p1','p2','p3','p4','p5','p6','final'].forEach(renderQuiz);
 refreshProgress();
