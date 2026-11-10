@@ -435,6 +435,13 @@
         transition: background .18s ease, transform .18s ease;
       }
       .yt-btn:hover .yt-play { background: var(--gold); color: #241B02; transform: translate(-50%, -50%) scale(1.08); }
+      .vp-btn {
+        position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0;
+        background: none; cursor: pointer; display: block; font: inherit;
+      }
+      .vp-btn img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .vp-btn:focus-visible { outline: 2.5px solid var(--gold); outline-offset: -2.5px; }
+      .vp-btn:hover .yt-play { background: var(--gold); color: #241B02; transform: translate(-50%, -50%) scale(1.08); }
       .yt-title {
         font-size: .8rem; font-weight: 600; line-height: 1.45; color: var(--ink);
         display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
@@ -941,6 +948,19 @@
         <div class="duo">
           <article class="video-card">
             <div class="yt-frame video-lead-frame" style="border:0;border-radius:0">
+              <button type="button" class="vp-btn" data-src="video-avatar/Video-Perkenalan-AAAMAAT-KEREN-MasYoSad.mp4" aria-label="Putar video: Video Perkenalan AAAMAAT KEREN — Sapaan Pak Paiyo dan Perkenalan Portal (versi Mas YoSad, 10 November 2026)">
+                <img src="video-avatar/Video-Perkenalan-AAAMAAT-KEREN-Sampul.jpg" alt="Avatar Pak Paiyo di depan layar Portal AAAMAAT KEREN" loading="lazy" />
+                <span class="yt-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5-11-6.5z"/></svg></span>
+              </button>
+            </div>
+            <div class="video-body">
+              <span class="badge badge-live">Baru — 10 November 2026</span>
+              <h3 style="margin-top:.8rem">Video Perkenalan AAAMAAT KEREN — Versi Mas YoSad</h3>
+              <p style="margin-top:.4rem">Sapaan dan perkenalan Portal Rumah Belajar Mandiri Siswa AAAMAAT KEREN dalam enam adegan (±54 detik), dibuat Mas YoSad dari naskah perkenalan Pak Paiyo. Klik gambar di atas untuk memutar video langsung di halaman ini.</p>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="yt-frame video-lead-frame" style="border:0;border-radius:0">
               <button type="button" class="yt-btn" data-yt="6pxwab3NQ-w" aria-label="Putar video: Video Pembuka — Sapaan Pak Paiyo dan Perkenalan Portal AAAMAAT KEREN">
                 <img src="https://i.ytimg.com/vi/6pxwab3NQ-w/hqdefault.jpg" alt="Video pembuka: avatar Pak Paiyo menyapa siswa" loading="lazy" />
                 <span class="yt-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5-11-6.5z"/></svg></span>
@@ -954,6 +974,11 @@
           </article>
           <aside class="news-card" aria-label="Berita dan update portal">
             <h3>Berita / Update</h3>
+            <div class="news-item">
+              <time datetime="2026-11-10">10 November 2026</time>
+              <b>Video Perkenalan Baru Buatan Mas YoSad Tayang</b>
+              <p>Video avatar perkenalan AAAMAAT KEREN versi Mas YoSad — enam adegan sapaan langsung dari naskah Pak Paiyo — kini dapat ditonton langsung di bagian Video Perkenalan di atas, berdampingan dengan video pembuka versi Google Flow.</p>
+            </div>
             <div class="news-item">
               <time datetime="2026-10-21">21 Oktober 2026</time>
               <b>Perangkat Mengajar Kelas 9 Terhubung ke Portal</b>
@@ -2915,6 +2940,30 @@
           bingkai.classList.remove("video-lead-frame");
           bingkai.innerHTML = "";
           bingkai.appendChild(iframe);
+        });
+      })();
+
+      /* ---------- Putar video berkas langsung (MP4 di repo) di tempat ---------- */
+      (function putarVideoLokal() {
+        document.addEventListener("click", function (e) {
+          var tombol = e.target.closest(".vp-btn");
+          if (!tombol) return;
+          var src = tombol.getAttribute("data-src");
+          var bingkai = tombol.closest(".yt-frame");
+          if (!src || !bingkai) return;
+          var video = document.createElement("video");
+          video.src = src;
+          video.controls = true;
+          video.autoplay = true;
+          video.setAttribute("playsinline", "");
+          video.setAttribute("preload", "metadata");
+          video.style.position = "absolute";
+          video.style.inset = "0";
+          video.style.width = "100%";
+          video.style.height = "100%";
+          bingkai.classList.remove("video-lead-frame");
+          bingkai.innerHTML = "";
+          bingkai.appendChild(video);
         });
       })();
 
