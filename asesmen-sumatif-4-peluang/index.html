@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asesmen Sumatif 4 — Bab Peluang | Kelas IX</title>
+<style>
+:root{--biru:#0b3d66;--teal:#0e7a5f;--emas:#c9a227;--bg:#eef4f7;--kartu:#ffffff;--teks:#173042;--abu:#5b7183;--merah:#b3261e;--hijau:#137333}
+*{box-sizing:border-box}body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--teks)}
+header{background:linear-gradient(135deg,var(--biru),var(--teal));color:#fff;padding:22px 16px;text-align:center}
+header h1{margin:0 0 6px;font-size:22px;letter-spacing:.4px}
+header p{margin:2px 0;opacity:.92;font-size:14px}
+.emas{color:var(--emas);font-weight:700}
+.wrap{max-width:820px;margin:0 auto;padding:18px 14px 40px}
+.kartu{background:var(--kartu);border-radius:14px;box-shadow:0 2px 10px rgba(11,61,102,.10);padding:20px;margin-bottom:16px}
+label{display:block;font-weight:600;margin:12px 0 5px;font-size:14px}
+input[type=text],select{width:100%;padding:11px 12px;border:1.5px solid #c4d3dd;border-radius:9px;font-size:16px}
+.btn{display:inline-block;border:none;cursor:pointer;border-radius:10px;padding:12px 22px;font-size:16px;font-weight:700;background:var(--teal);color:#fff}
+.btn:hover{filter:brightness(1.07)}
+.btn.biru{background:var(--biru)} .btn.abu{background:var(--abu)} .btn.emas{background:var(--emas);color:#231a00}
+.btn:disabled{opacity:.55;cursor:wait}
+.sembunyi{display:none!important}
+.info{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.chip{background:#e7f0f5;border-radius:999px;padding:6px 13px;font-size:13.5px;font-weight:600}
+.bar{position:sticky;top:0;z-index:5;background:var(--kartu);border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.10);padding:10px 14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+#timer{font-size:20px;font-weight:800;color:var(--biru)} #timer.kritis{color:var(--merah)}
+.soal h3{margin:0 0 4px;font-size:15px;color:var(--teal)}
+.soal .iteks{font-size:16.5px;line-height:1.55;margin:6px 0 14px}
+.opsi{display:flex;flex-direction:column;gap:9px}
+.opsi label{font-weight:500;margin:0;display:flex;gap:10px;align-items:flex-start;background:#f4f8fa;border:1.5px solid #d5e1e9;border-radius:10px;padding:11px 12px;cursor:pointer;font-size:15.5px}
+.opsi label.terpilih{border-color:var(--teal);background:#e6f4ee}
+.opsi input{margin-top:3px;transform:scale(1.25)}
+.pernyataan{border:1.5px solid #d5e1e9;border-radius:10px;padding:11px 12px;margin-bottom:9px;background:#f4f8fa}
+.pernyataan .p-teks{font-size:15.5px;margin-bottom:9px}
+.bs-pilihan{display:flex;gap:9px}
+.bs-pilihan button{flex:1;padding:9px;border-radius:8px;border:1.5px solid #b9ccd8;background:#fff;font-weight:700;cursor:pointer;font-size:15px}
+.bs-pilihan button.sel-b{background:var(--teal);color:#fff;border-color:var(--teal)}
+.bs-pilihan button.sel-s{background:var(--merah);color:#fff;border-color:var(--merah)}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+.palet{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.palet button{width:38px;height:38px;border-radius:9px;border:1.5px solid #b9ccd8;background:#fff;font-weight:700;cursor:pointer}
+.palet button.isi{background:var(--teal);color:#fff;border-color:var(--teal)}
+.palet button.aktif{outline:3px solid var(--emas)}
+.nilai-besar{font-size:56px;font-weight:800;text-align:center;color:var(--biru);margin:8px 0 0}
+.status{text-align:center;font-size:19px;font-weight:800;margin:4px 0}
+.status.tuntas{color:var(--hijau)} .status.belum{color:var(--merah)}
+.tengah{text-align:center}
+.status-simpan{text-align:center;font-size:14px;margin-top:10px}
+.status-simpan.ok{color:var(--hijau);font-weight:600}
+.status-simpan.gagal{color:var(--merah);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{border-bottom:1px solid #e1e9ee;padding:7px 6px;text-align:left}
+th{background:#e7f0f5}
+.ulasan-item{border-top:1px solid #e1e9ee;padding:12px 0}
+.ulasan-item h4{margin:0 0 5px;font-size:15px}
+.ulasan-item p{margin:3px 0;font-size:14.5px;line-height:1.5}
+.kunci-jawaban{color:var(--hijau);font-weight:700}
+.salah{color:var(--merah);font-weight:700}
+small{color:var(--abu)}
+.scroll-x{overflow-x:auto}
+</style>
+</head>
+<body>
+<header>
+<h1>ASESMEN SUMATIF 4 MATEMATIKA</h1>
+<p>Bab Peluang • Kelas IX • SMP Negeri 1 Bantarkawung</p>
+<p>Portal Rumah Belajar AAAMAAT KEREN • Pengembang: <span class="emas">Drs. PAIYO</span> • Disusun oleh Mas Yosad</p>
+</header>
+<div class="wrap">
+
+<!-- LAYAR MULAI -->
+<div id="layarMulai" class="kartu">
+<h2 style="margin-top:0">Asesmen Sumatif 4 — Peluang</h2>
+<p>Isi data dirimu dengan benar, masukkan <b>token sesi</b> dari gurumu, lalu klik <b>Mulai Asesmen</b>.</p>
+<div class="info">
+<span class="chip">20 Soal</span><span class="chip">Waktu 60 Menit</span>
+<span class="chip">10 PG • 5 Benar/Salah • 5 MCMA</span><span class="chip">KKM 75 (IX A &amp; IX B) • 60 (IX C, IX D, IX E)</span>
+</div>
+<label for="inToken">TOKEN SESI *</label>
+<input type="text" id="inToken" placeholder="Masukkan token dari gurumu" autocomplete="off">
+<label for="inNama">NAMA LENGKAP *</label>
+<input type="text" id="inNama" placeholder="Nama lengkapmu">
+<label for="inKelas">KELAS *</label>
+<input type="text" id="inKelas" list="dlKelas" placeholder="Pilih atau ketik kelasmu, mis. IX A" autocomplete="off">
+<datalist id="dlKelas">
+<option value="IX A"></option><option value="IX B"></option><option value="IX C"></option><option value="IX D"></option><option value="IX E"></option>
+</datalist>
+<label for="inAbsen">NO. ABSEN *</label>
+<input type="text" id="inAbsen" inputmode="numeric" placeholder="Nomor absen">
+<label for="inSekolah">NAMA SEKOLAH *</label>
+<input type="text" id="inSekolah" list="dlSekolah" value="SMP Negeri 1 Bantarkawung" autocomplete="off">
+<datalist id="dlSekolah">
+<option value="SMP Negeri 1 Bantarkawung"></option>
+</datalist>
+<p style="margin:4px 0 0"><small>Siswa dari sekolah lain: ganti nama sekolah di atas dengan nama sekolahmu sendiri.</small></p>
+<p id="errMulai" class="salah sembunyi"></p>
+<div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+<button class="btn" onclick="mulai()">▶ Mulai Asesmen (60 Menit)</button>
+<button class="btn biru" onclick="bukaPanelGuru()">Panel Guru</button>
+</div>
+<p><small>Asesmen ini berisi 20 soal Bab Peluang: ruang sampel dan titik sampel, peluang teoretik, peluang empirik, frekuensi harapan, dan komplemen kejadian. KKM 75 untuk kelas IX A dan IX B; KKM 60 untuk kelas IX C, IX D, dan IX E. Nilai langsung tampil setelah selesai dan otomatis tersimpan ke database guru. Kerjakan dengan jujur — Aku Bisa, Jujur, Bahagia!</small></p>
+</div>
+
+<!-- LAYAR UJIAN -->
+<div id="layarUjian" class="sembunyi">
+<div class="bar"><div><b id="barNama"></b><br><small id="barKelas"></small></div><div id="timer">60:00</div></div>
+<div class="kartu soal">
+<h3 id="soalLabel"></h3>
+<div class="iteks" id="soalTeks"></div>
+<div id="soalIsi"></div>
+<div class="nav">
+<button class="btn abu" id="btnPrev" onclick="geser(-1)">← Sebelumnya</button>
+<button class="btn biru" id="btnNext" onclick="geser(1)">Berikutnya →</button>
+</div>
+<div class="palet" id="palet"></div>
+<hr style="border:none;border-top:1px solid #e1e9ee;margin:18px 0">
+<button class="btn emas" style="width:100%" onclick="konfirmasiSelesai()">✔ Selesai &amp; Kirim Jawaban</button>
+</div>
+</div>
+
+<!-- LAYAR HASIL -->
+<div id="layarHasil" class="sembunyi">
+<div class="kartu">
+<h2 class="tengah" style="margin-bottom:0">Hasil Asesmenmu</h2>
+<div class="nilai-besar" id="nilaiBesar">0</div>
+<div class="status" id="statusHasil"></div>
+<p class="tengah" id="ringkasHasil"></p>
+<p class="tengah"><small>Kode verifikasi: <b id="kodeVerif"></b></small></p>
+<p class="status-simpan" id="statusSimpan"></p>
+<p class="tengah"><button class="btn abu sembunyi" id="btnSimpanUlang" onclick="simpanHasil()">Simpan Ulang</button></p>
+</div>
+<div class="kartu" id="kartuUlasan">
+<h3 style="margin-top:0">Ulasan Jawaban (Kunci &amp; Pembahasan)</h3>
+<div id="gerbangUlasan">
+<p>Masukkan kata sandi guru untuk membuka kunci dan pembahasan.</p>
+<input type="text" id="sandiUlasan" placeholder="Kata sandi guru" autocomplete="off">
+<p id="sandiSalah" class="salah sembunyi">Kata sandi salah.</p>
+<button class="btn biru" style="margin-top:10px" onclick="bukaUlasan()">Buka Ulasan</button>
+</div>
+<div id="ulasan" class="sembunyi"></div>
+</div>
+<div class="tengah"><button class="btn" onclick="location.reload()">Kembali ke Awal</button></div>
+</div>
+
+<!-- LAYAR GURU -->
+<div id="layarGuru" class="kartu sembunyi">
+<h2 style="margin-top:0">Panel Guru — Asesmen Sumatif 4 Peluang</h2>
+<label for="filterSekolah">SARING SEKOLAH</label>
+<select id="filterSekolah" onchange="gambarTabelGuru()"><option value="">— Semua Sekolah —</option></select>
+<p id="statGuru">Memuat data…</p>
+<div class="scroll-x"><table>
+<thead><tr><th>No</th><th>Nama</th><th>Kelas</th><th>Absen</th><th>Sekolah</th><th>Nilai</th><th>Status</th><th>Kode</th><th>Waktu</th></tr></thead>
+<tbody id="isiTabelGuru"></tbody></table></div>
+<div style="margin-top:14px;display:flex;gap:10px">
+<button class="btn biru" onclick="muatNilaiGuru()">Muat Ulang</button>
+<button class="btn abu" onclick="tutupPanelGuru()">Tutup</button>
+</div>
+</div>
+
+</div>
+<script>
+const SB_URL = 'https://vovjeijhxnehhtxjqtkm.supabase.co';
+const SB_KEY = 'sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV';
+const TOKEN_SESI = 'SUMATIF4';
+const SANDI_ULASAN = 'yosad67';
+const KKM = 75; // acuan tertinggi; status tiap siswa memakai KKM kelasnya (lihat kkmUntuk)
+function kkmUntuk(kelas){
+  const h = (String(kelas || '').toUpperCase().trim().match(/[A-E]\s*$/) || [''])[0].trim();
+  return (h === 'C' || h === 'D' || h === 'E') ? 60 : 75;
+}
+const ASESMEN = 'ASESMEN SUMATIF 4 PELUANG';
+const SOAL = [{"tipe": "PG", "soal": "Dalam sebuah percobaan, sebuah koin dilempar sebanyak 50 kali. Sisi Angka muncul sebanyak 27 kali. Peluang empirik munculnya sisi Gambar pada percobaan tersebut adalah …", "opsi": ["27/50", "23/50", "1/2", "23/27"], "kunci": 1, "bahas": "Diketahui sebuah koin dilempar 50 kali dan sisi Angka muncul 27 kali. Ditanyakan peluang empirik munculnya sisi Gambar. Penyelesaian: banyak muncul sisi Gambar = 50 − 27 = 23 kali. Peluang empirik = frekuensi kejadian : banyak percobaan = 23/50. Kesimpulan: peluang empirik munculnya sisi Gambar adalah 23/50."}, {"tipe": "PG", "soal": "Panitia bazar sekolah menyediakan 60 kupon undian yang berpeluang sama untuk terambil: 15 kupon bergambar wayang, 20 kupon bergambar batik, dan 25 kupon bergambar garuda. Jika satu kupon diambil secara acak, peluang terambil kupon bergambar garuda adalah …", "opsi": ["1/4", "1/3", "5/12", "7/12"], "kunci": 2, "bahas": "Diketahui jumlah seluruh kupon 60 dan kupon bergambar garuda 25. Ditanyakan peluang terambil kupon bergambar garuda. Penyelesaian: P(garuda) = banyak kupon garuda : banyak seluruh kupon = 25/60 = 5/12. Kesimpulan: peluang terambil kupon bergambar garuda adalah 5/12."}, {"tipe": "PG", "soal": "Di dalam sebuah kantong terdapat 5 koin Rp200, 3 koin Rp500, dan 7 koin Rp1.000. Jika diambil satu koin secara acak dari kantong tersebut, peluang terambil koin Rp200 adalah …", "opsi": ["1/5", "7/15", "1/3", "3/5"], "kunci": 2, "bahas": "Diketahui kantong berisi 5 + 3 + 7 = 15 koin dan banyak koin Rp200 adalah 5. Ditanyakan peluang terambil koin Rp200. Penyelesaian: P(Rp200) = banyak koin Rp200 : banyak seluruh koin = 5/15 = 1/3. Kesimpulan: peluang terambil koin Rp200 adalah 1/3."}, {"tipe": "PG", "soal": "Sebuah roda putar dibagi menjadi 10 bagian yang sama besar dan diberi nomor 1 sampai 10. Jika roda diputar sebanyak 200 kali, frekuensi harapan muncul nomor 7 adalah …", "opsi": ["10 kali", "20 kali", "25 kali", "40 kali"], "kunci": 1, "bahas": "Diketahui roda mempunyai 10 bagian sama besar dan diputar 200 kali. Ditanyakan frekuensi harapan muncul nomor 7. Penyelesaian: P(muncul nomor 7) = 1/10. Frekuensi harapan = P × banyak percobaan = 1/10 × 200 = 20. Kesimpulan: frekuensi harapan muncul nomor 7 adalah 20 kali."}, {"tipe": "PG", "soal": "Sebuah toko akan mengirim 500 gelas kaca. Peluang sebuah gelas pecah selama pengiriman adalah 0,04. Banyak gelas yang diperkirakan TIDAK pecah selama pengiriman adalah …", "opsi": ["20 gelas", "460 gelas", "480 gelas", "495 gelas"], "kunci": 2, "bahas": "Diketahui banyak gelas 500 dan peluang sebuah gelas pecah 0,04. Ditanyakan perkiraan banyak gelas yang tidak pecah. Penyelesaian: peluang tidak pecah = 1 − 0,04 = 0,96. Perkiraan gelas tidak pecah = 0,96 × 500 = 480. Kesimpulan: diperkirakan ada 480 gelas yang tidak pecah."}, {"tipe": "PG", "soal": "Dua buah dadu seimbang dilempar bersamaan satu kali. Peluang muncul mata dadu berjumlah 9 adalah …", "opsi": ["1/6", "5/36", "1/12", "1/9"], "kunci": 3, "bahas": "Diketahui dua dadu dilempar bersamaan dengan banyak titik sampel n(S) = 36. Ditanyakan peluang muncul mata dadu berjumlah 9. Penyelesaian: pasangan yang berjumlah 9 adalah (3,6), (4,5), (5,4), dan (6,3), sehingga n(A) = 4. P(A) = n(A) : n(S) = 4/36 = 1/9. Kesimpulan: peluang muncul mata dadu berjumlah 9 adalah 1/9."}, {"tipe": "PG", "soal": "Kartu bernomor 1 sampai 20 dimasukkan ke dalam sebuah kotak. Satu kartu diambil secara acak. Peluang terambil kartu yang nomornya BUKAN kelipatan 5 adalah …", "opsi": ["1/5", "4/5", "3/5", "7/10"], "kunci": 1, "bahas": "Diketahui kartu bernomor 1 sampai 20, jadi n(S) = 20. Ditanyakan peluang terambil kartu bukan kelipatan 5. Penyelesaian: kartu kelipatan 5 adalah 5, 10, 15, dan 20, sebanyak 4 kartu. Banyak kartu bukan kelipatan 5 = 20 − 4 = 16. P = 16/20 = 4/5. Kesimpulan: peluang terambil kartu bukan kelipatan 5 adalah 4/5."}, {"tipe": "PG", "soal": "Sebuah koin dan sebuah dadu dilempar bersamaan satu kali. Peluang muncul sisi Angka pada koin dan mata dadu ganjil pada dadu adalah …", "opsi": ["1/6", "1/3", "1/4", "1/2"], "kunci": 2, "bahas": "Diketahui satu koin (2 sisi) dan satu dadu (6 mata) dilempar bersamaan, jadi n(S) = 2 × 6 = 12. Ditanyakan peluang muncul sisi Angka dan mata dadu ganjil. Penyelesaian: hasil yang memenuhi adalah (Angka, 1), (Angka, 3), dan (Angka, 5), sehingga n(A) = 3. P(A) = 3/12 = 1/4. Kesimpulan: peluang muncul sisi Angka dan mata dadu ganjil adalah 1/4."}, {"tipe": "PG", "soal": "Hasil percobaan melempar sebuah dadu sebanyak 100 kali adalah sebagai berikut: mata 1 muncul 14 kali, mata 2 muncul 18 kali, mata 3 muncul 16 kali, mata 4 muncul 17 kali, mata 5 muncul 15 kali, dan mata 6 muncul 20 kali. Peluang empirik muncul mata dadu lebih dari 4 adalah …", "opsi": ["3/20", "7/20", "1/5", "13/20"], "kunci": 1, "bahas": "Diketahui dadu dilempar 100 kali; mata 5 muncul 15 kali dan mata 6 muncul 20 kali. Ditanyakan peluang empirik muncul mata dadu lebih dari 4 (yaitu mata 5 atau 6). Penyelesaian: frekuensi mata lebih dari 4 = 15 + 20 = 35. Peluang empirik = 35/100 = 7/20. Kesimpulan: peluang empirik muncul mata dadu lebih dari 4 adalah 7/20."}, {"tipe": "PG", "soal": "Di kelas IX C terdapat 32 siswa. Hasil survei menunjukkan 20 siswa menyukai matematika, 14 siswa menyukai olahraga, dan 8 siswa menyukai keduanya. Jika satu siswa dipilih secara acak, peluang siswa terpilih menyukai matematika dan olahraga adalah …", "opsi": ["5/8", "7/16", "1/4", "13/16"], "kunci": 2, "bahas": "Diketahui jumlah siswa 32 dan yang menyukai matematika dan olahraga (keduanya) 8 siswa. Ditanyakan peluang siswa terpilih menyukai keduanya. Penyelesaian: P(keduanya) = banyak siswa yang menyukai keduanya : banyak seluruh siswa = 8/32 = 1/4. Kesimpulan: peluang siswa terpilih menyukai matematika dan olahraga adalah 1/4."}, {"tipe": "BS", "soal": "Panitia classmeeting mengumpulkan 90 kupon undian yang berpeluang sama untuk terambil: 18 kupon putih, 27 kupon biru, dan 45 kupon merah. Satu kupon diambil secara acak. Tentukan Benar atau Salah untuk setiap pernyataan berikut.", "pernyataan": ["Peluang terambil kupon putih adalah 1/5", "Peluang terambil kupon biru adalah 3/10", "Peluang terambil kupon bukan merah adalah 2/5"], "kunci": [true, true, false], "bahas": "(1) P(putih) = 18/90 = 1/5 — Benar. (2) P(biru) = 27/90 = 3/10 — Benar. (3) P(bukan merah) = (90 − 45)/90 = 45/90 = 1/2, bukan 2/5 — Salah."}, {"tipe": "BS", "soal": "Sebuah dadu seimbang dilempar satu kali. Tentukan Benar atau Salah untuk setiap pernyataan berikut.", "pernyataan": ["Peluang muncul mata dadu prima adalah 1/2", "Peluang muncul mata dadu faktor dari 6 adalah 5/6", "Peluang muncul mata dadu bukan 6 adalah 5/6"], "kunci": [true, false, true], "bahas": "(1) Mata dadu prima adalah 2, 3, dan 5, sebanyak 3 dari 6, jadi P = 3/6 = 1/2 — Benar. (2) Faktor dari 6 pada mata dadu adalah 1, 2, 3, dan 6, sebanyak 4, jadi P = 4/6 = 2/3, bukan 5/6 — Salah. (3) Mata dadu bukan 6 ada 5 dari 6, jadi P = 5/6 — Benar."}, {"tipe": "BS", "soal": "Dua keping koin dilempar bersamaan sebanyak 100 kali. Tentukan Benar atau Salah untuk setiap pernyataan berikut.", "pernyataan": ["Frekuensi harapan muncul dua sisi Angka adalah 50 kali", "Frekuensi harapan muncul tepat satu sisi Angka adalah 50 kali", "Frekuensi harapan muncul dua sisi Gambar adalah 25 kali"], "kunci": [false, true, true], "bahas": "Ruang sampel dua koin adalah {AA, AG, GA, GG}. (1) P(dua Angka) = 1/4, frekuensi harapannya 1/4 × 100 = 25 kali, bukan 50 kali — Salah. (2) P(tepat satu Angka) = 2/4 = 1/2, frekuensi harapannya 1/2 × 100 = 50 kali — Benar. (3) P(dua Gambar) = 1/4, frekuensi harapannya 1/4 × 100 = 25 kali — Benar."}, {"tipe": "BS", "soal": "Dua buah dadu seimbang dilempar bersamaan satu kali. Tentukan Benar atau Salah untuk setiap pernyataan berikut.", "pernyataan": ["Banyak titik sampel pada pelemparan dua dadu adalah 36", "Peluang muncul mata dadu berjumlah 12 adalah 1/36", "Peluang muncul mata dadu berjumlah 2 adalah 1/18"], "kunci": [true, true, false], "bahas": "(1) Setiap dadu mempunyai 6 titik sampel, jadi dua dadu mempunyai 6 × 6 = 36 titik sampel — Benar. (2) Jumlah 12 hanya diperoleh dari pasangan (6,6), jadi P = 1/36 — Benar. (3) Jumlah 2 hanya diperoleh dari pasangan (1,1), jadi P = 1/36, bukan 1/18 — Salah."}, {"tipe": "BS", "soal": "Sebuah kotak berisi 12 bola: 5 bola merah, 4 bola biru, dan 3 bola kuning. Satu bola diambil secara acak dari kotak tersebut. Tentukan Benar atau Salah untuk setiap pernyataan berikut.", "pernyataan": ["Peluang terambil bola merah adalah 5/12", "Peluang terambil bola bukan biru adalah 2/3", "Peluang terambil bola kuning adalah 1/3"], "kunci": [true, true, false], "bahas": "(1) P(merah) = 5/12 — Benar. (2) Bola bukan biru ada 12 − 4 = 8, jadi P = 8/12 = 2/3 — Benar. (3) P(kuning) = 3/12 = 1/4, bukan 1/3 — Salah."}, {"tipe": "MCMA", "soal": "Berdasarkan prakiraan cuaca, peluang hujan besok adalah 25%, peluang berawan 40%, dan peluang cerah 35%. Pernyataan yang benar adalah … (pilih semua yang benar)", "pernyataan": ["Peluang besok tidak hujan adalah 75%", "Kejadian yang paling mungkin terjadi besok adalah berawan", "Peluang besok hujan atau cerah adalah 70%", "Peluang berawan lebih besar daripada peluang hujan"], "kunci": [0, 1, 3], "bahas": "Peluang tidak hujan = 100% − 25% = 75% (benar). Peluang terbesar adalah berawan 40%, jadi kejadian yang paling mungkin terjadi besok adalah berawan (benar). Peluang hujan atau cerah = 25% + 35% = 60%, bukan 70% (salah). Peluang berawan 40% lebih besar daripada peluang hujan 25% (benar)."}, {"tipe": "MCMA", "soal": "Di sebuah kelas terdapat 36 siswa. Hasil survei menunjukkan 22 siswa gemar membaca, 16 siswa gemar menggambar, dan 10 siswa gemar keduanya. Seorang siswa dipilih secara acak. Pernyataan yang benar adalah … (pilih semua yang benar)", "pernyataan": ["Peluang siswa terpilih gemar membaca adalah 11/18", "Peluang siswa terpilih gemar membaca dan menggambar adalah 5/18", "Banyak siswa yang gemar membaca atau menggambar adalah 28 siswa", "Peluang siswa terpilih gemar menggambar adalah 1/3"], "kunci": [0, 1, 2], "bahas": "P(membaca) = 22/36 = 11/18 (benar). P(keduanya) = 10/36 = 5/18 (benar). Banyak siswa yang gemar membaca atau menggambar = 22 + 16 − 10 = 28 siswa (benar). P(menggambar) = 16/36 = 4/9, bukan 1/3 (salah)."}, {"tipe": "MCMA", "soal": "Sebuah toko akan mengirim 300 boneka. Peluang sebuah boneka rusak selama pengiriman adalah 0,1. Pernyataan yang benar adalah … (pilih semua yang benar)", "pernyataan": ["Diperkirakan ada 30 boneka yang rusak selama pengiriman", "Peluang sebuah boneka tidak rusak adalah 0,9", "Diperkirakan ada 280 boneka yang tidak rusak selama pengiriman", "Jika dikirim 150 boneka, diperkirakan ada 15 boneka yang rusak"], "kunci": [0, 1, 3], "bahas": "Perkiraan boneka rusak = 0,1 × 300 = 30 (benar). Peluang tidak rusak = 1 − 0,1 = 0,9 (benar). Perkiraan boneka tidak rusak = 0,9 × 300 = 270, bukan 280 (salah). Untuk 150 boneka, perkiraan yang rusak = 0,1 × 150 = 15 (benar)."}, {"tipe": "MCMA", "soal": "Sebuah kantong berisi 4 kelereng merah, 5 kelereng biru, dan 3 kelereng hijau. Satu kelereng diambil secara acak. Pernyataan yang benar adalah … (pilih semua yang benar)", "pernyataan": ["Peluang terambil kelereng merah adalah 1/3", "Peluang terambil kelereng biru atau hijau adalah 2/3", "Peluang terambil kelereng bukan merah adalah 1/2", "Jika ditambahkan 4 kelereng merah ke dalam kantong, peluang terambil kelereng merah menjadi 1/2"], "kunci": [0, 1, 3], "bahas": "Jumlah seluruh kelereng 12. P(merah) = 4/12 = 1/3 (benar). P(biru atau hijau) = (5 + 3)/12 = 8/12 = 2/3 (benar). P(bukan merah) = 8/12 = 2/3, bukan 1/2 (salah). Setelah ditambah 4 kelereng merah, kelereng merah menjadi 8 dari 16 seluruhnya, jadi P(merah) = 8/16 = 1/2 (benar)."}, {"tipe": "MCMA", "soal": "Sebuah roda putar mempunyai 12 bagian yang sama besar: 3 bagian merah, 4 bagian biru, dan 5 bagian kuning. Roda diputar sebanyak 240 kali. Pernyataan yang benar adalah … (pilih semua yang benar)", "pernyataan": ["Frekuensi harapan jarum berhenti pada bagian merah adalah 60 kali", "Frekuensi harapan jarum berhenti pada bagian biru adalah 80 kali", "Frekuensi harapan jarum berhenti pada bagian kuning adalah 100 kali", "Frekuensi harapan jarum berhenti pada bagian merah atau biru adalah 120 kali"], "kunci": [0, 1, 2], "bahas": "FH(merah) = 3/12 × 240 = 60 kali (benar). FH(biru) = 4/12 × 240 = 80 kali (benar). FH(kuning) = 5/12 × 240 = 100 kali (benar). FH(merah atau biru) = 7/12 × 240 = 140 kali, bukan 120 kali (salah)."}];
+const TOTAL_POIN = SOAL.reduce((a,s)=> a + (s.tipe==='PG'?1:s.pernyataan.length), 0);
+
+let siswa = null, jawaban = [], idx = 0, sisaDetik = 60*60, timerId = null, mulaiPada = null, payloadHasil = null, terkirim = false;
+
+function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function huruf(i){return 'ABCD'[i]}
+
+function mulai(){
+  const token = document.getElementById('inToken').value.trim().toUpperCase();
+  const nama = document.getElementById('inNama').value.trim();
+  const kelas = document.getElementById('inKelas').value.trim();
+  const absen = document.getElementById('inAbsen').value.trim();
+  const sekolah = document.getElementById('inSekolah').value.trim() || 'SMP Negeri 1 Bantarkawung';
+  const err = document.getElementById('errMulai');
+  const salah = m => { err.textContent = m; err.classList.remove('sembunyi'); };
+  if (token !== TOKEN_SESI) return salah('Token sesi salah. Minta token yang benar kepada gurumu.');
+  if (!nama) return salah('Nama lengkap wajib diisi.');
+  if (!kelas) return salah('Kelas wajib diisi.');
+  if (!absen) return salah('No. absen wajib diisi.');
+  err.classList.add('sembunyi');
+  siswa = {nama, kelas, absen, sekolah};
+  jawaban = SOAL.map(s => s.tipe==='PG' ? -1 : s.pernyataan.map(()=> s.tipe==='MCMA' ? false : null));
+  idx = 0; mulaiPada = Date.now();
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarUjian').classList.remove('sembunyi');
+  document.getElementById('barNama').textContent = nama;
+  document.getElementById('barKelas').textContent = kelas + ' • Absen ' + absen + ' • ' + sekolah;
+  bangunPalet(); tampilSoal();
+  timerId = setInterval(tikTimer, 1000);
+  window.scrollTo(0,0);
+}
+function tikTimer(){
+  sisaDetik--;
+  const m = Math.floor(sisaDetik/60), d = sisaDetik%60;
+  const el = document.getElementById('timer');
+  el.textContent = String(m).padStart(2,'0')+':'+String(d).padStart(2,'0');
+  if (sisaDetik <= 300) el.classList.add('kritis');
+  if (sisaDetik <= 0){ clearInterval(timerId); selesai(true); }
+}
+function bangunPalet(){
+  const p = document.getElementById('palet');
+  p.innerHTML = SOAL.map((s,i)=>`<button id="pal${i}" onclick="loncat(${i})">${i+1}</button>`).join('');
+  segarPalet();
+}
+function sudahIsi(i){
+  const j = jawaban[i], s = SOAL[i];
+  if (s.tipe==='PG') return j !== -1;
+  return j.every(v => v !== null);
+}
+function segarPalet(){
+  SOAL.forEach((s,i)=>{
+    const b = document.getElementById('pal'+i);
+    if (!b) return;
+    b.classList.toggle('isi', sudahIsi(i));
+    b.classList.toggle('aktif', i === idx);
+  });
+}
+function loncat(i){ idx = i; tampilSoal(); }
+function geser(a){ idx = Math.min(SOAL.length-1, Math.max(0, idx+a)); tampilSoal(); }
+function tampilSoal(){
+  const s = SOAL[idx];
+  const namaTipe = s.tipe==='PG' ? 'Pilihan Ganda' : (s.tipe==='BS' ? 'Pilihan Ganda Kompleks — Benar/Salah' : 'MCMA — Pilih Semua yang Benar');
+  document.getElementById('soalLabel').textContent = `Soal ${idx+1} dari ${SOAL.length} • ${namaTipe}`;
+  document.getElementById('soalTeks').textContent = s.soal;
+  const isi = document.getElementById('soalIsi');
+  if (s.tipe==='PG'){
+    isi.innerHTML = '<div class="opsi">' + s.opsi.map((o,i)=>{
+      const sel = jawaban[idx]===i ? ' terpilih' : '';
+      return `<label class="${sel}"><input type="radio" name="pg" ${jawaban[idx]===i?'checked':''} onchange="jawabPG(${i})"><span><b>${huruf(i)}.</b> ${esc(o)}</span></label>`;
+    }).join('') + '</div>';
+  } else if (s.tipe==='BS'){
+    isi.innerHTML = s.pernyataan.map((t,i)=>{
+      const v = jawaban[idx][i];
+      return `<div class="pernyataan"><div class="p-teks"><b>${i+1}.</b> ${esc(t)}</div>
+      <div class="bs-pilihan">
+      <button class="${v===true?'sel-b':''}" onclick="jawabBS(${i},true)">BENAR</button>
+      <button class="${v===false?'sel-s':''}" onclick="jawabBS(${i},false)">SALAH</button>
+      </div></div>`;
+    }).join('') + '<p><small>Tentukan BENAR atau SALAH untuk setiap pernyataan (ada 3 pernyataan). Setiap pernyataan dinilai sendiri.</small></p>';
+  } else {
+    isi.innerHTML = '<div class="opsi">' + s.pernyataan.map((t,i)=>{
+      const sel = jawaban[idx][i]===true ? ' terpilih' : '';
+      return `<label class="${sel}"><input type="checkbox" ${jawaban[idx][i]===true?'checked':''} onchange="jawabMCMA(${i},this.checked)"><span><b>${i+1}.</b> ${esc(t)}</span></label>`;
+    }).join('') + '</div><p><small>Centang semua pernyataan yang menurutmu BENAR. Skor soal ini = keputusan tepat dikurangi keputusan keliru (paling rendah 0).</small></p>';
+  }
+  document.getElementById('btnPrev').disabled = idx===0;
+  document.getElementById('btnNext').disabled = idx===SOAL.length-1;
+  segarPalet();
+}
+function jawabPG(i){ jawaban[idx]=i; tampilSoal(); }
+function jawabBS(i,v){ jawaban[idx][i]=v; tampilSoal(); }
+function jawabMCMA(i,v){ jawaban[idx][i]=v; tampilSoal(); }
+
+function hitungSkor(){
+  let poin = 0; const rincian = [];
+  SOAL.forEach((s,i)=>{
+    let p = 0;
+    if (s.tipe==='PG'){ p = jawaban[i]===s.kunci ? 1 : 0; }
+    else if (s.tipe==='BS'){ s.pernyataan.forEach((t,j)=>{ if (jawaban[i][j]===s.kunci[j]) p++; }); }
+    else { let benar = 0, salah = 0; s.pernyataan.forEach((t,j)=>{ const harus = s.kunci.includes(j); const dipilih = jawaban[i][j]===true; if (harus===dipilih) benar++; else salah++; }); p = Math.max(0, benar - salah); }
+    poin += p; rincian.push({no:i+1, tipe:s.tipe, poin:p});
+  });
+  return {poin, rincian};
+}
+function konfirmasiSelesai(){
+  const kosong = SOAL.map((s,i)=>i).filter(i=>!sudahIsi(i));
+  if (kosong.length && !confirm(`Masih ada ${kosong.length} soal yang belum lengkap dijawab (nomor: ${kosong.map(i=>i+1).join(', ')}). Tetap kirim sekarang?`)) return;
+  selesai(false);
+}
+function selesai(otomatis){
+  if (terkirim) return; terkirim = true;
+  clearInterval(timerId);
+  const {poin, rincian} = hitungSkor();
+  const nilai = Math.round((poin/TOTAL_POIN)*100);
+  const kkmSiswa = kkmUntuk(siswa.kelas);
+  const status = nilai >= kkmSiswa ? 'TUNTAS' : 'BELUM TUNTAS';
+  const kode = 'SUM4-' + Array.from({length:6},()=>'ABCDEFGHJKMNPQRSTUVWXYZ23456789'[Math.floor(Math.random()*31)]).join('');
+  const durasi = Math.round((Date.now()-mulaiPada)/1000);
+  payloadHasil = {
+    nama: siswa.nama, kelas: siswa.kelas, absen: parseInt(siswa.absen)||null, no_absen: String(siswa.absen),
+    nilai, status, kode_verifikasi: kode,
+    tanggal: new Date().toISOString().slice(0, 10),
+    jenjang: 'SMP', bab: 'PELUANG', asesmen: ASESMEN, jumlah_soal: SOAL.length,
+    jawaban: {sekolah: siswa.sekolah, kkm: kkmSiswa, poin, total_poin: TOTAL_POIN, rincian, jawaban_siswa: jawaban},
+    durasi_detik: durasi
+  };
+  document.getElementById('layarUjian').classList.add('sembunyi');
+  document.getElementById('layarHasil').classList.remove('sembunyi');
+  document.getElementById('nilaiBesar').textContent = nilai;
+  const st = document.getElementById('statusHasil');
+  st.textContent = status + (otomatis ? ' (waktu habis)' : '');
+  st.className = 'status ' + (nilai>=kkmSiswa ? 'tuntas' : 'belum');
+  const benarPG = rincian.filter(r=>r.tipe==='PG').reduce((a,r)=>a+r.poin,0);
+  document.getElementById('ringkasHasil').textContent = `${siswa.nama} • ${siswa.kelas} • Absen ${siswa.absen} — Poin ${poin} dari ${TOTAL_POIN} (PG benar ${benarPG} dari 10) • KKM kelasmu ${kkmSiswa}`;
+  document.getElementById('kodeVerif').textContent = kode;
+  bangunUlasan(rincian);
+  simpanHasil();
+  window.scrollTo(0,0);
+}
+function deskJawaban(i){
+  const s = SOAL[i], j = jawaban[i];
+  if (s.tipe==='PG') return j===-1 ? '(tidak dijawab)' : huruf(j)+'. '+s.opsi[j];
+  if (s.tipe==='BS') return s.pernyataan.map((t,k)=>`${k+1}. ${j[k]===null?'(kosong)':(j[k]?'Benar':'Salah')}`).join(' | ');
+  const pil = s.pernyataan.map((t,k)=> j[k]===true ? (k+1) : null).filter(x=>x!==null);
+  return pil.length ? 'Memilih pernyataan nomor ' + pil.join(', ') : '(tidak memilih satu pun)';
+}
+function deskKunci(i){
+  const s = SOAL[i];
+  if (s.tipe==='PG') return huruf(s.kunci)+'. '+s.opsi[s.kunci];
+  if (s.tipe==='BS') return s.pernyataan.map((t,k)=>`${k+1}. ${s.kunci[k]?'Benar':'Salah'}`).join(' | ');
+  return 'Yang benar: pernyataan nomor ' + s.kunci.map(k=>k+1).join(', ');
+}
+function bangunUlasan(rincian){
+  document.getElementById('ulasan').innerHTML = SOAL.map((s,i)=>{
+    const maks = s.tipe==='PG' ? 1 : s.pernyataan.length;
+    return `<div class="ulasan-item"><h4>Soal ${i+1} (${s.tipe}) — Poinmu: ${rincian[i].poin}/${maks}</h4>
+    <p>${esc(s.soal)}</p>
+    <p>Jawabanmu: ${esc(deskJawaban(i))}</p>
+    <p class="kunci-jawaban">Kunci: ${esc(deskKunci(i))}</p>
+    <p><b>Pembahasan:</b> ${esc(s.bahas)}</p></div>`;
+  }).join('');
+}
+function bukaUlasan(){
+  const v = document.getElementById('sandiUlasan').value.trim();
+  if (v === SANDI_ULASAN){
+    document.getElementById('gerbangUlasan').classList.add('sembunyi');
+    document.getElementById('ulasan').classList.remove('sembunyi');
+  } else {
+    document.getElementById('sandiSalah').classList.remove('sembunyi');
+  }
+}
+async function simpanHasil(){
+  const el = document.getElementById('statusSimpan');
+  const btn = document.getElementById('btnSimpanUlang');
+  el.textContent = 'Menyimpan nilai ke database…'; el.className = 'status-simpan';
+  btn.classList.add('sembunyi');
+  try {
+    const r = await fetch(SB_URL + '/rest/v1/hasil_asesmen', {
+      method: 'POST',
+      headers: {'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
+      body: JSON.stringify(payloadHasil)
+    });
+    if (!r.ok) throw new Error('gagal-' + r.status);
+    el.textContent = '✔ Nilaimu sudah tersimpan di database guru.';
+    el.classList.add('ok');
+  } catch(e) {
+    el.textContent = '⚠ Nilai belum tersimpan ke database. Tunjukkan layar ini (beserta kode verifikasinya) kepada gurumu.';
+    el.classList.add('gagal');
+    btn.classList.remove('sembunyi');
+  }
+}
+
+/* ============ PANEL GURU ============ */
+function bukaPanelGuru(){
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarGuru').classList.remove('sembunyi');
+  muatNilaiGuru(); window.scrollTo(0,0);
+}
+function tutupPanelGuru(){
+  document.getElementById('layarGuru').classList.add('sembunyi');
+  document.getElementById('layarMulai').classList.remove('sembunyi');
+}
+let dataGuru = [];
+async function muatNilaiGuru(){
+  const stat = document.getElementById('statGuru');
+  const isi = document.getElementById('isiTabelGuru');
+  stat.textContent = 'Memuat data…'; isi.innerHTML = '';
+  try {
+    const r = await fetch(SB_URL + '/rest/v1/hasil_asesmen?select=*&order=created_at.desc', {
+      headers: {'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY}
+    });
+    if (!r.ok) throw new Error('gagal-' + r.status);
+    const semua = await r.json();
+    dataGuru = semua.filter(d => d.asesmen === ASESMEN);
+    const sel = document.getElementById('filterSekolah');
+    const terpilih = sel.value;
+    const daftarSekolah = [...new Set(dataGuru.map(d => (d.jawaban && d.jawaban.sekolah) || '').filter(Boolean))].sort();
+    sel.innerHTML = '<option value="">— Semua Sekolah —</option>' + daftarSekolah.map(s => `<option value="${esc(s)}">${esc(s)}</option>`).join('');
+    sel.value = daftarSekolah.includes(terpilih) ? terpilih : '';
+    gambarTabelGuru();
+  } catch(e) {
+    stat.textContent = 'Data belum dapat dibaca. Coba muat ulang sebentar lagi.';
+  }
+}
+function gambarTabelGuru(){
+  const stat = document.getElementById('statGuru');
+  const isi = document.getElementById('isiTabelGuru');
+  const saring = document.getElementById('filterSekolah').value;
+  const data = saring ? dataGuru.filter(d => ((d.jawaban && d.jawaban.sekolah) || '') === saring) : dataGuru;
+  if (!dataGuru.length){ stat.textContent = 'Belum ada nilai Asesmen Sumatif 4 Peluang yang masuk.'; isi.innerHTML=''; return; }
+  if (!data.length){ stat.textContent = 'Tidak ada nilai dari sekolah ini.'; isi.innerHTML=''; return; }
+  const tuntas = data.filter(d => d.status === 'TUNTAS').length;
+  const rata = (data.reduce((a,d)=>a+(d.nilai||0),0)/data.length).toFixed(1);
+  stat.innerHTML = `Total peserta${saring ? ' (' + esc(saring) + ')' : ''}: <b>${data.length}</b> • Rata-rata: <b>${rata}</b> • Tuntas (sesuai KKM kelas: 75 untuk IX A/B, 60 untuk IX C/D/E): <b>${tuntas}</b> • Belum tuntas: <b>${data.length-tuntas}</b>`;
+  isi.innerHTML = data.map((d,i)=>`<tr>
+    <td>${i+1}</td><td>${esc(d.nama||'')}</td><td>${esc(d.kelas||'')}</td><td>${d.absen ?? esc(d.no_absen||'')}</td>
+    <td>${esc((d.jawaban && d.jawaban.sekolah) || '')}</td>
+    <td><b>${d.nilai ?? ''}</b></td><td>${esc(d.status||'')}</td>
+    <td style="font-size:12px">${esc(d.kode_verifikasi||'')}</td>
+    <td style="font-size:12.5px">${d.created_at ? new Date(d.created_at).toLocaleString('id-ID') : esc(d.tanggal||'')}</td></tr>`).join('');
+}
+</script>
+</body>
+</html>
