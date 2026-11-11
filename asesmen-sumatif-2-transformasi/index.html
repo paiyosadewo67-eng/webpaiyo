@@ -99,8 +99,31 @@ small{color:var(--abu)}
 <p id="errMulai" class="salah sembunyi"></p>
 <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
 <button class="btn" onclick="mulai()">▶ Mulai Asesmen (60 Menit)</button>
+<button class="btn biru" onclick="kePanelGuru()">📋 Panel Guru — Daftar Nilai</button>
 </div>
 <p><small>Asesmen ini berisi 20 soal Bab Transformasi Geometri (translasi, refleksi, rotasi, dilatasi). Nilai langsung tampil setelah selesai dan otomatis tersimpan ke database guru. *KKM 75 untuk kelas IX A dan IX B; KKM 60 untuk kelas IX C, IX D, dan IX E. Kerjakan dengan jujur — Aku Bisa, Jujur, Bahagia!</small></p>
+</div>
+
+<!-- LAYAR PANEL GURU -->
+<div id="layarPanel" class="sembunyi">
+<div class="kartu">
+<h2 style="margin-top:0">📋 Panel Guru — Daftar Nilai</h2>
+<p>Asesmen Sumatif 2 — Transformasi Geometri. Masukkan kata sandi guru untuk melihat daftar nilai yang tersimpan di database.</p>
+<input type="password" id="sandiPanel" placeholder="Kata sandi guru" autocomplete="off">
+<p id="sandiPanelSalah" class="salah sembunyi">Kata sandi salah.</p>
+<button class="btn biru" style="margin-top:10px" onclick="bukaPanel()">🔓 Buka Daftar Nilai</button>
+<button class="btn abu" style="margin-top:10px" onclick="dariPanel()">← Kembali</button>
+<div id="isiPanel" class="sembunyi">
+<p style="margin-top:14px">Filter kelas:
+<select id="filterKelas" onchange="renderPanel()"><option value="">Semua kelas</option></select>
+&nbsp;<label><input type="checkbox" id="cekTerbaik" checked onchange="renderPanel()"> Nilai terbaik per siswa</label></p>
+<p id="ringkasPanel" style="font-weight:bold"></p>
+<div style="overflow-x:auto"><table id="tabelPanel" style="width:100%;border-collapse:collapse;font-size:14px"></table></div>
+<p><small>KKM 75 untuk kelas IX A &amp; IX B; KKM 60 untuk kelas IX C, IX D &amp; IX E. Baris uji (percobaan guru/Mas YoSad) tidak ditampilkan.</small></p>
+<button class="btn" onclick="muatPanel()">↻ Muat Ulang</button>
+<button class="btn abu" onclick="salinPanel()">📋 Salin Daftar (untuk WhatsApp)</button>
+</div>
+</div>
 </div>
 
 <!-- LAYAR UJIAN -->
@@ -355,6 +378,80 @@ async function simpanHasil(){
   }
 }
 
+
+const LABEL_PANEL = 'ASESMEN SUMATIF 2 TRANSFORMASI';
+let DATA_PANEL = [];
+function kePanelGuru(){
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarPanel').classList.remove('sembunyi');
+  window.scrollTo(0,0);
+}
+function dariPanel(){
+  document.getElementById('layarPanel').classList.add('sembunyi');
+  document.getElementById('layarMulai').classList.remove('sembunyi');
+  window.scrollTo(0,0);
+}
+function bukaPanel(){
+  const v = document.getElementById('sandiPanel').value.trim();
+  if (v !== SANDI_ULASAN){ document.getElementById('sandiPanelSalah').classList.remove('sembunyi'); return; }
+  document.getElementById('sandiPanelSalah').classList.add('sembunyi');
+  document.getElementById('isiPanel').classList.remove('sembunyi');
+  muatPanel();
+}
+async function muatPanel(){
+  const ringkas = document.getElementById('ringkasPanel');
+  ringkas.textContent = 'Memuat data dari database…';
+  try {
+    const url = SB_URL + '/rest/v1/hasil_asesmen?asesmen=eq.' + encodeURIComponent(LABEL_PANEL) + '&select=nama,kelas,absen,nilai,status,kode_verifikasi,created_at&order=created_at.asc&limit=1000';
+    const r = await fetch(url, {headers: {'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY}});
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const semua = await r.json();
+    DATA_PANEL = semua.filter(x => {
+      const n = (x.nama || '').toUpperCase();
+      return !n.includes('MAS YOSAD') && n !== 'EKO' && n !== 'CEK PAIYO';
+    });
+    const sel = document.getElementById('filterKelas');
+    const fLama = sel.value;
+    const kelasAda = [...new Set(DATA_PANEL.map(x => x.kelas))].sort();
+    sel.innerHTML = '<option value="">Semua kelas</option>' + kelasAda.map(k => '<option>' + esc(k) + '</option>').join('');
+    if (kelasAda.includes(fLama)) sel.value = fLama;
+    renderPanel();
+  } catch(e){
+    ringkas.textContent = '⚠ Gagal memuat data (' + e.message + '). Periksa koneksi internet lalu klik Muat Ulang.';
+  }
+}
+function barisPanel(){
+  const f = document.getElementById('filterKelas').value;
+  let rows = DATA_PANEL.filter(x => !f || x.kelas === f);
+  if (document.getElementById('cekTerbaik').checked){
+    const map = {};
+    rows.forEach(x => { const k = x.kelas + '|' + x.absen; if (!map[k] || x.nilai > map[k].nilai) map[k] = x; });
+    rows = Object.values(map);
+  }
+  rows.sort((a, b) => (a.kelas < b.kelas ? -1 : a.kelas > b.kelas ? 1 : a.absen - b.absen));
+  return rows;
+}
+function renderPanel(){
+  const rows = barisPanel();
+  const f = document.getElementById('filterKelas').value;
+  const tuntas = rows.filter(x => x.nilai >= kkmUntuk(x.kelas)).length;
+  const rata = rows.length ? (rows.reduce((t, x) => t + x.nilai, 0) / rows.length) : 0;
+  document.getElementById('ringkasPanel').textContent = rows.length + ' siswa' + (f ? ' kelas ' + f : '') + ' • Rata-rata ' + rata.toFixed(1).replace('.', ',') + ' • Tuntas ' + tuntas + ' • Belum tuntas ' + (rows.length - tuntas);
+  let h = '<tr style="background:#eef4f7"><th style="border:1px solid #ccc;padding:4px">No</th><th style="border:1px solid #ccc;padding:4px">Nama</th><th style="border:1px solid #ccc;padding:4px">Kelas</th><th style="border:1px solid #ccc;padding:4px">Absen</th><th style="border:1px solid #ccc;padding:4px">Nilai</th><th style="border:1px solid #ccc;padding:4px">Status</th><th style="border:1px solid #ccc;padding:4px">Kode</th></tr>';
+  rows.forEach((x, i) => {
+    const st = x.nilai >= kkmUntuk(x.kelas) ? 'TUNTAS' : 'BELUM TUNTAS';
+    h += '<tr><td style="border:1px solid #ccc;padding:4px">' + (i + 1) + '</td><td style="border:1px solid #ccc;padding:4px">' + esc(x.nama) + '</td><td style="border:1px solid #ccc;padding:4px">' + esc(x.kelas) + '</td><td style="border:1px solid #ccc;padding:4px">' + x.absen + '</td><td style="border:1px solid #ccc;padding:4px"><b>' + x.nilai + '</b></td><td style="border:1px solid #ccc;padding:4px">' + st + '</td><td style="border:1px solid #ccc;padding:4px">' + esc(x.kode_verifikasi || '') + '</td></tr>';
+  });
+  document.getElementById('tabelPanel').innerHTML = h;
+}
+function salinPanel(){
+  const f = document.getElementById('filterKelas').value;
+  const rows = barisPanel();
+  let t = 'DAFTAR NILAI — ASESMEN SUMATIF 2 TRANSFORMASI' + (f ? ' — Kelas ' + f : '') + '\n';
+  rows.forEach((x, i) => { t += (i + 1) + '. ' + x.nama + ' (' + x.kelas + ', absen ' + x.absen + ') = ' + x.nilai + ' — ' + (x.nilai >= kkmUntuk(x.kelas) ? 'TUNTAS' : 'BELUM TUNTAS') + '\n'; });
+  if (navigator.clipboard) navigator.clipboard.writeText(t).then(() => alert('Daftar nilai tersalin. Tinggal tempel (paste) di WhatsApp.'));
+  else alert('Peramban tidak mendukung salin otomatis.');
+}
 </script>
 </body>
 </html>
