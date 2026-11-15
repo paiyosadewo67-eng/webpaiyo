@@ -58,6 +58,13 @@ th{background:#e7f0f5}
 .salah{color:var(--merah);font-weight:700}
 small{color:var(--abu)}
 .scroll-x{overflow-x:auto}
+/* Pengaman anti-kecurangan (Simulasi TKA SMPN 4 Palu, 16 Nov 2026) */
+#layarUjian.terkunci{user-select:none;-webkit-user-select:none}
+#chipLanggar{background:#fdecea;color:#b3261e;border:1px solid #f5c6c2}
+#peringatan{position:fixed;inset:0;z-index:50;background:rgba(11,42,74,.82);display:flex;align-items:center;justify-content:center;padding:18px}
+#peringatan .kotak{background:#fff;border-radius:14px;max-width:460px;padding:22px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+#peringatan h3{margin:0 0 8px;color:#b3261e;font-size:19px}
+#peringatan p{margin:6px 0;font-size:15px;line-height:1.55}
 </style>
 </head>
 <body>
@@ -101,7 +108,7 @@ small{color:var(--abu)}
 
 <!-- LAYAR UJIAN -->
 <div id="layarUjian" class="sembunyi">
-<div class="bar"><div><b id="barNama"></b><br><small id="barKelas"></small></div><div id="timer">75:00</div></div>
+<div class="bar"><div><b id="barNama"></b><br><small id="barKelas"></small></div><div style="text-align:right"><div id="timer">75:00</div><span class="chip" id="chipLanggar">⚠ Pelanggaran: <b id="jmlLanggar">0</b></span></div></div>
 <div class="kartu soal">
 <h3 id="soalLabel"></h3>
 <div class="iteks" id="soalTeks"></div>
@@ -123,6 +130,7 @@ small{color:var(--abu)}
 <div class="nilai-besar" id="nilaiBesar">0</div>
 <div class="status" id="statusHasil"></div>
 <p class="tengah" id="ringkasHasil"></p>
+<p class="tengah" id="infoLanggar"></p>
 <p class="tengah"><small>Kode verifikasi: <b id="kodeVerif"></b></small></p>
 <p class="status-simpan" id="statusSimpan"></p>
 <p class="tengah"><button class="btn abu sembunyi" id="btnSimpanUlang" onclick="simpanHasil()">Simpan Ulang</button></p>
@@ -140,6 +148,16 @@ small{color:var(--abu)}
 <div class="tengah"><button class="btn" onclick="location.reload()">Kembali ke Awal</button></div>
 </div>
 
+<!-- PERINGATAN PELANGGARAN (pengaman anti-kecurangan) -->
+<div id="peringatan" class="sembunyi">
+<div class="kotak">
+<h3>⚠ Peringatan: Kamu Keluar dari Layar Tes</h3>
+<p id="teksPeringatan">Kamu keluar dari aplikasi / pindah tab. Tes harus dikerjakan tanpa pindah aplikasi.</p>
+<p><b>Pelanggaran ke-<span id="nomorLanggar">1</span></b> sudah tercatat dan akan terlihat oleh gurumu di panel guru. Timer tetap berjalan.</p>
+<button class="btn" onclick="tutupPeringatan()">Saya Mengerti — Kembali ke Tes</button>
+</div>
+</div>
+
 </div>
 <script>
 const SB_URL = 'https://vovjeijhxnehhtxjqtkm.supabase.co';
@@ -152,6 +170,8 @@ const SOAL = [{"tipe": "PG", "soal": "Pada pagi hari suhu udara di sebuah kota a
 const TOTAL_POIN = SOAL.reduce((a,s)=> a + (s.tipe==='PG'?1:s.pernyataan.length), 0);
 
 let siswa = null, jawaban = [], idx = 0, sisaDetik = 75*60, timerId = null, mulaiPada = null, payloadHasil = null, terkirim = false;
+/* Pengaman anti-kecurangan: deteksi & catat, bukan kunci mutlak (aplikasi web) */
+let pelanggaran = 0, rincianPelanggaran = [], pengamanAktif = false, terakhirLanggar = 0;
 
 function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function huruf(i){return 'ABCD'[i]}
@@ -178,6 +198,7 @@ function mulai(){
   document.getElementById('barKelas').textContent = kelas + ' • Absen ' + absen + ' • ' + sekolah;
   bangunPalet(); tampilSoal();
   timerId = setInterval(tikTimer, 1000);
+  aktifkanPengaman();
   window.scrollTo(0,0);
 }
 function tikTimer(){
@@ -261,6 +282,8 @@ function konfirmasiSelesai(){
 function selesai(otomatis){
   if (terkirim) return; terkirim = true;
   clearInterval(timerId);
+  nonaktifkanPengaman();
+  document.getElementById('peringatan').classList.add('sembunyi');
   const {poin, rincian} = hitungSkor();
   const nilai = Math.round((poin/TOTAL_POIN)*100);
   const status = nilai >= KKM ? 'TUNTAS' : 'BELUM TUNTAS';
@@ -271,7 +294,8 @@ function selesai(otomatis){
     nilai, status, kode_verifikasi: kode,
     tanggal: new Date().toISOString().slice(0, 10),
     jenjang: 'SMP', bab: 'TKA MATEMATIKA', asesmen: ASESMEN, jumlah_soal: SOAL.length,
-    jawaban: {sekolah: siswa.sekolah, poin, total_poin: TOTAL_POIN, rincian, jawaban_siswa: jawaban},
+    jawaban: {sekolah: siswa.sekolah, poin, total_poin: TOTAL_POIN, rincian, jawaban_siswa: jawaban,
+      pelanggaran, rincian_pelanggaran: rincianPelanggaran},
     durasi_detik: durasi
   };
   document.getElementById('layarUjian').classList.add('sembunyi');
@@ -282,6 +306,9 @@ function selesai(otomatis){
   st.className = 'status ' + (nilai>=KKM ? 'tuntas' : 'belum');
   const benarPG = rincian.filter(r=>r.tipe==='PG').reduce((a,r)=>a+r.poin,0);
   document.getElementById('ringkasHasil').textContent = `${siswa.nama} • ${siswa.kelas} • Absen ${siswa.absen} — Poin ${poin} dari ${TOTAL_POIN} (PG benar ${benarPG} dari 16)`;
+  document.getElementById('infoLanggar').textContent = pelanggaran
+    ? `⚠ Tercatat ${pelanggaran} pelanggaran (keluar aplikasi / pindah tab / layar penuh) — terlihat di panel guru.`
+    : '✔ Tidak ada pelanggaran tercatat selama tes.';
   document.getElementById('kodeVerif').textContent = kode;
   bangunUlasan(rincian);
   simpanHasil();
@@ -309,6 +336,79 @@ function bangunUlasan(rincian){
     <p class="kunci-jawaban">Kunci: ${esc(deskKunci(i))}</p>
     <p><b>Pembahasan:</b> ${esc(s.bahas)}</p></div>`;
   }).join('');
+}
+/* ===== Pengaman anti-kecurangan (16 Nov 2026) =====
+   Batas jujur: aplikasi web tidak bisa mengunci HP secara mutlak seperti
+   aplikasi ujian khusus. Pengaman ini MENDETEKSI & MENCATAT: setiap kali
+   siswa keluar aplikasi / pindah tab / keluar layar penuh, dihitung satu
+   pelanggaran, muncul peringatan, dan jumlahnya tersimpan bersama nilai.
+   Timer TIDAK pernah berhenti selama siswa keluar. */
+function mintaFullscreen(){
+  try{
+    const el = document.documentElement;
+    const p = el.requestFullscreen ? el.requestFullscreen() : (el.webkitRequestFullscreen ? el.webkitRequestFullscreen() : null);
+    if (p && p.catch) p.catch(()=>{});
+  }catch(e){}
+}
+function aktifkanPengaman(){
+  pengamanAktif = true; pelanggaran = 0; rincianPelanggaran = [];
+  document.getElementById('layarUjian').classList.add('terkunci');
+  mintaFullscreen();
+  document.addEventListener('visibilitychange', saatVisibility);
+  window.addEventListener('blur', saatBlur);
+  document.addEventListener('fullscreenchange', saatFullscreen);
+  document.addEventListener('contextmenu', cegahSelamaTes);
+  document.addEventListener('copy', cegahSelamaTes);
+  document.addEventListener('cut', cegahSelamaTes);
+  document.addEventListener('paste', cegahSelamaTes);
+  document.addEventListener('selectstart', cegahSelamaTes);
+  document.addEventListener('keydown', cegahTombol);
+}
+function nonaktifkanPengaman(){
+  pengamanAktif = false;
+  document.getElementById('layarUjian').classList.remove('terkunci');
+  document.removeEventListener('visibilitychange', saatVisibility);
+  window.removeEventListener('blur', saatBlur);
+  document.removeEventListener('fullscreenchange', saatFullscreen);
+  document.removeEventListener('contextmenu', cegahSelamaTes);
+  document.removeEventListener('copy', cegahSelamaTes);
+  document.removeEventListener('cut', cegahSelamaTes);
+  document.removeEventListener('paste', cegahSelamaTes);
+  document.removeEventListener('selectstart', cegahSelamaTes);
+  document.removeEventListener('keydown', cegahTombol);
+  if (document.fullscreenElement){ try{ document.exitFullscreen(); }catch(e){} }
+}
+function cegahSelamaTes(e){ if (pengamanAktif) e.preventDefault(); }
+function cegahTombol(e){
+  if (!pengamanAktif) return;
+  const k = (e.key||'').toLowerCase();
+  if ((e.ctrlKey || e.metaKey) && ['c','x','v','a','u','s','p'].includes(k)) e.preventDefault();
+  if (e.key === 'F12') e.preventDefault();
+}
+function catatPelanggaran(jenis){
+  if (!pengamanAktif) return;
+  const kini = Date.now();
+  /* Satu aksi keluar tab memicu visibilitychange + blur sekaligus — hitung sekali. */
+  if (kini - terakhirLanggar < 2000) return;
+  terakhirLanggar = kini;
+  pelanggaran++;
+  rincianPelanggaran.push({ke: pelanggaran, jenis, waktu: new Date().toISOString()});
+  document.getElementById('jmlLanggar').textContent = pelanggaran;
+  document.getElementById('nomorLanggar').textContent = pelanggaran;
+  document.getElementById('teksPeringatan').textContent =
+    jenis === 'layar-penuh'
+      ? 'Kamu keluar dari mode layar penuh. Tes harus dikerjakan dalam layar penuh.'
+      : 'Kamu keluar dari aplikasi / pindah tab. Tes harus dikerjakan tanpa pindah aplikasi.';
+  document.getElementById('peringatan').classList.remove('sembunyi');
+}
+function saatVisibility(){ if (document.hidden) catatPelanggaran('pindah-tab'); }
+function saatBlur(){ if (pengamanAktif && !document.hidden) catatPelanggaran('keluar-aplikasi'); }
+function saatFullscreen(){
+  if (pengamanAktif && !document.fullscreenElement) catatPelanggaran('layar-penuh');
+}
+function tutupPeringatan(){
+  document.getElementById('peringatan').classList.add('sembunyi');
+  mintaFullscreen();
 }
 async function sha256hex(teks){
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(teks));

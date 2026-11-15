@@ -56,6 +56,7 @@
       <div class="stat"><b id="stRata">–</b><span>Rata-rata (nilai terbaik)</span></div>
       <div class="stat"><b id="stMax">–</b><span>Nilai tertinggi</span></div>
       <div class="stat"><b id="stTuntas">–</b><span>Tuntas (≥75)</span></div>
+      <div class="stat"><b id="stLanggar">–</b><span>Pelanggaran tercatat</span></div>
     </div>
     <p class="small">Rata-rata &amp; ketuntasan dihitung dari nilai <b>terbaik</b> tiap siswa. Baris bernama awalan “TES” ditandai <span class="uji">UJI</span> dan tidak ikut dihitung.</p>
   </div>
@@ -74,8 +75,8 @@
   <div class="card">
     <div class="tblwrap">
       <table>
-        <thead><tr><th>Waktu (WIB)</th><th>Nama</th><th>Kelas</th><th>Absen</th><th>Nilai</th><th>Status</th><th>Kode</th><th>Durasi</th></tr></thead>
-        <tbody id="isi"><tr><td colspan="8">Memuat data…</td></tr></tbody>
+        <thead><tr><th>Waktu (WIB)</th><th>Nama</th><th>Kelas</th><th>Absen</th><th>Nilai</th><th>Status</th><th>Kode</th><th>Durasi</th><th>Pelanggaran</th></tr></thead>
+        <tbody id="isi"><tr><td colspan="9">Memuat data…</td></tr></tbody>
       </table>
     </div>
     <p id="ket" class="small"></p>
@@ -123,7 +124,7 @@ function fmtDurasi(s){
 }
 async function muat(manual){
   try{
-    const url = SB + "/rest/v1/hasil_asesmen?select=created_at,nama,kelas,absen,nilai,status,kode_verifikasi,durasi_detik&asesmen=eq." + encodeURIComponent(LABEL) + "&order=created_at.desc&limit=1000";
+    const url = SB + "/rest/v1/hasil_asesmen?select=created_at,nama,kelas,absen,nilai,status,kode_verifikasi,durasi_detik,jawaban&asesmen=eq." + encodeURIComponent(LABEL) + "&order=created_at.desc&limit=1000";
     const r = await fetch(url, {headers:{apikey:KEY, Authorization:"Bearer "+KEY}});
     if(!r.ok) throw new Error("HTTP " + r.status);
     DATA = await r.json();
@@ -134,7 +135,7 @@ async function muat(manual){
     render();
     document.getElementById("segar").textContent = "terakhir disegar " + new Date().toLocaleTimeString("id-ID",{timeZone:"Asia/Jakarta",hour:"2-digit",minute:"2-digit",second:"2-digit"}).replace(/:/g,".") + " WIB";
   }catch(e){
-    document.getElementById("isi").innerHTML = '<tr><td colspan="8" class="err">Gagal memuat data: ' + e.message + '</td></tr>';
+    document.getElementById("isi").innerHTML = '<tr><td colspan="9" class="err">Gagal memuat data: ' + e.message + '</td></tr>';
   }
 }
 function render(){
@@ -153,6 +154,7 @@ function render(){
   document.getElementById("stRata").textContent = daftarUnik.length ? rata.toFixed(1).replace(".",",") : "–";
   document.getElementById("stMax").textContent = daftarUnik.length ? Math.max(...daftarUnik.map(x=>x.nilai||0)) : "–";
   document.getElementById("stTuntas").textContent = daftarUnik.filter(x=>(x.nilai||0)>=75).length + " / " + daftarUnik.length;
+  document.getElementById("stLanggar").textContent = resmi.reduce((a,x)=>a+((x.jawaban && typeof x.jawaban.pelanggaran==="number") ? x.jawaban.pelanggaran : 0),0);
 
   const tampilData = DATA.filter(x=>
     (!fk || x.kelas===fk) &&
@@ -168,7 +170,8 @@ function render(){
       <td class="${(x.nilai||0)>=75?"tuntas":"belum"}">${x.status || ((x.nilai||0)>=75?"TUNTAS":"BELUM TUNTAS")}</td>
       <td>${x.kode_verifikasi||"-"}</td>
       <td>${fmtDurasi(x.durasi_detik)}</td>
-    </tr>`).join("") : '<tr><td colspan="8">Belum ada data untuk filter ini. Data akan muncul di sini begitu ada siswa yang mengirim hasil.</td></tr>';
+      <td>${(()=>{const n=(x.jawaban && typeof x.jawaban.pelanggaran==="number") ? x.jawaban.pelanggaran : 0; return n ? '<b style="color:#b3261e">⚠ '+n+'</b>' : '0';})()}</td>
+    </tr>`).join("") : '<tr><td colspan="9">Belum ada data untuk filter ini. Data akan muncul di sini begitu ada siswa yang mengirim hasil.</td></tr>';
   document.getElementById("ket").textContent = "Menampilkan " + tampilData.length + " kiriman (terbaru di atas).";
 }
 </script>
