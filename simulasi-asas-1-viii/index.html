@@ -176,7 +176,9 @@ function huruf(i){return 'ABCD'[i]}
 
 function acakArr(a){ const x = a.slice(); for (let i=x.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); const t=x[i]; x[i]=x[j]; x[j]=t; } return x; }
 function buatAcakan(bankSoal){
-  return acakArr(bankSoal).map(s => {
+  const urutanBagian = ['PG','BS','MCMA','URAIAN'];
+  const berkelompok = urutanBagian.flatMap(t => acakArr(bankSoal.filter(s => s.tipe===t)));
+  return berkelompok.map(s => {
     const c = JSON.parse(JSON.stringify(s));
     if (c.tipe==='PG'){
       const ps = acakArr(c.opsi.map((o,i)=>({o, k: i===c.kunci})));
