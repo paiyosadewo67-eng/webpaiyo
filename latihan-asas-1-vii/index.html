@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Latihan ASAS 1 per Bab — Matematika Kelas VII | AAAMAAT KEREN</title>
+<style>
+:root{--navy:#0d2b45;--navy2:#081c30;--teal:#0e7a5f;--teald:#0a5c48;--gold:#c9a227;--paper:#fdfbf6;--ink:#24313d;--red:#c0392b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+header{background:linear-gradient(150deg,var(--navy2),var(--navy) 55%,var(--teald) 130%);color:#f4efe3;text-align:center;padding:20px 14px 16px;border-bottom:4px solid var(--gold)}
+header .eyebrow{letter-spacing:.2em;font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase}
+header h1{font-family:Georgia,serif;font-size:clamp(24px,4.5vw,38px);margin:8px 0 4px}
+header p{margin:0;font-size:clamp(13px,2.2vw,16px);color:#cfd9de}
+header .motto{margin-top:8px;font-weight:800;color:#ffe9a8;font-size:clamp(14px,2.4vw,18px)}
+main{max-width:900px;margin:0 auto;padding:18px 14px 40px}
+.kartu{background:#fff;border:1px solid rgba(13,43,69,.14);border-radius:16px;padding:22px;box-shadow:0 2px 8px rgba(13,43,69,.06)}
+.tengah{text-align:center}
+button{font-family:inherit;cursor:pointer}
+.btn{display:inline-block;border:none;border-radius:999px;padding:13px 28px;font-size:17px;font-weight:700;margin:6px;transition:transform .06s}
+.btn:active{transform:scale(.97)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-emas{background:var(--gold);color:#231a02}
+.btn-garis{background:#fff;border:2px solid var(--navy);color:var(--navy)}
+.btn:disabled{opacity:.45;cursor:default}
+.aturan{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:16px 0;text-align:left}
+.aturan div{background:rgba(14,122,95,.07);border:1px solid rgba(14,122,95,.25);border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.55}
+.bab-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+@media (max-width:680px){.bab-grid{grid-template-columns:1fr}}
+.bab-card{border:2px solid var(--teal);border-radius:16px;padding:18px;background:#fff;text-align:left}
+.bab-card h3{margin:0 0 4px;font-size:20px;color:var(--teald)}
+.bab-card .ikon{font-size:34px}
+.bab-card p{margin:6px 0;font-size:14.5px;line-height:1.55;color:#40536a}
+.bab-card .isi{font-size:13px;font-weight:700;color:#7a6a1e;background:rgba(201,162,39,.12);border:1px dashed rgba(201,162,39,.7);border-radius:8px;padding:6px 9px;line-height:1.45}
+.bab-card .btn{margin:10px 0 0}
+.kepala-latihan{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.kepala-latihan .nama-bab{font-weight:800;font-size:18px;color:var(--navy)}
+.kepala-latihan .progres-teks{font-size:14px;font-weight:700;color:#5c6b78}
+.bar{height:12px;background:#eceff1;border-radius:999px;overflow:hidden;margin-bottom:14px}
+.bar>div{height:100%;background:var(--teal);width:0%;transition:width .3s}
+.lencana{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.04em;background:rgba(13,43,69,.08);border:1px solid rgba(13,43,69,.25);color:var(--navy);border-radius:999px;padding:3px 12px;margin-bottom:8px}
+.soal{font-size:clamp(17px,2.4vw,20px);line-height:1.55;font-weight:600;margin:6px 0 14px}
+.gambar{text-align:center;margin:6px 0 14px}
+.gambar svg{max-width:100%;height:auto;background:#fbfcfe;border:1px solid rgba(13,43,69,.12);border-radius:12px}
+.opsi{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:480px){.opsi{grid-template-columns:1fr}}
+.opsi button{border:2px solid rgba(13,43,69,.25);background:#fff;border-radius:12px;padding:14px 12px;font-size:clamp(16px,2.4vw,19px);font-weight:600;text-align:left;min-height:56px;line-height:1.4}
+.opsi button:hover:not(:disabled){border-color:var(--navy);background:rgba(13,43,69,.04)}
+.opsi button.dipilih{border-color:var(--navy);background:rgba(13,43,69,.10)}
+.opsi button.benar{background:#e3f4ec;border-color:var(--teal);color:var(--teald)}
+.opsi button.salah{background:#fbe7e3;border-color:var(--red);color:var(--red)}
+.opsi button:disabled{cursor:default}
+.nyataan{border:2px solid rgba(13,43,69,.22);border-radius:12px;padding:12px 14px;margin-bottom:10px;background:#fff}
+.nyataan .teks{font-size:clamp(15.5px,2.2vw,18px);font-weight:600;line-height:1.5;margin-bottom:10px}
+.nyataan.benar{border-color:var(--teal);background:#e3f4ec}
+.nyataan.salah{border-color:var(--red);background:#fbe7e3}
+.pil-baris{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pil{border:2px solid rgba(13,43,69,.3);background:#fff;border-radius:999px;padding:8px 20px;font-size:16px;font-weight:700}
+.pil:hover:not(:disabled){border-color:var(--navy)}
+.pil.dipilih{background:var(--navy);color:#fff;border-color:var(--navy)}
+.pil:disabled{opacity:.8;cursor:default}
+.kunci-badge{font-size:13px;font-weight:800;margin-left:6px}
+.petunjuk{font-size:14px;color:#5c6b78;margin:0 0 10px;line-height:1.5}
+.aksi{text-align:center;margin-top:14px}
+.status{margin-top:14px;font-weight:800;font-size:18px;text-align:center;line-height:1.45;min-height:1.2em}
+.status.ok{color:var(--teald)} .status.no{color:var(--red)}
+.motivasi{margin-top:6px;text-align:center;font-size:16px;line-height:1.55;color:#40536a}
+.pembahasan{margin-top:14px;background:rgba(201,162,39,.10);border:1px solid rgba(201,162,39,.55);border-radius:12px;padding:14px 16px;font-size:15.5px;line-height:1.65;text-align:left}
+.pembahasan h4{margin:0 0 8px;font-size:16px;color:#7a6a1e}
+.pembahasan b{color:var(--navy)}
+.navigasi{display:flex;justify-content:space-between;gap:10px;margin-top:18px;flex-wrap:wrap}
+.skor-besar{font-size:clamp(30px,6vw,44px);font-weight:800;color:var(--teald);margin:6px 0}
+table.rekap{border-collapse:collapse;margin:14px auto;font-size:15.5px;width:100%}
+table.rekap th,table.rekap td{border:1px solid rgba(13,43,69,.25);padding:7px 10px;text-align:left}
+table.rekap th{background:rgba(13,43,69,.06);text-align:center}
+table.rekap td.c{text-align:center;font-weight:800}
+footer{text-align:center;color:#5c6b78;font-size:13px;padding:0 14px 26px;line-height:1.6}
+.sembunyi{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Matematika Kelas VII • Persiapan ASAS 1 • Sesuai Kisi-kisi ASAS 1 MGMP Kab. Brebes • AAAMAAT KEREN</div>
+  <h1>📚 Latihan ASAS 1 per Bab</h1>
+  <p>Latihan soal-jawab tiga bab — kerjakan soalnya, klik <b>Cek Pembahasan</b>, lalu baca motivasi dan pembahasannya. Tanpa nilai resmi, tanpa batas waktu: ini ruang berlatihmu.</p>
+  <div class="motto">“Aku Bisa Jujur Bahagia”</div>
+</header>
+<main>
+
+  <!-- ============ LAYAR PILIH BAB ============ -->
+  <section id="layar-bab">
+    <div class="kartu">
+      <h2 style="margin-top:0" class="tengah">Pilih Bab untuk Berlatih</h2>
+      <div class="aturan">
+        <div>📝 Tiap bab berisi <strong>10 soal baru</strong>: 5 pilihan ganda, 3 Benar/Salah (3 pernyataan), dan 2 pilihan ganda kompleks (4 pernyataan) — mengikuti kisi-kisi ASAS 1 Kelas VII.</div>
+        <div>🔍 Setelah menjawab, klik <strong>Cek Pembahasan</strong>: kamu langsung tahu benar atau belum tepat, mendapat kalimat motivasi, dan bisa membaca pembahasan langkah demi langkah.</div>
+        <div>🌱 Ini <strong>latihan</strong>, bukan ujian. Tidak ada token, tidak ada timer, dan skor akhirmu hanya ringkasan latihan di layar. Salah itu bahan belajar — yang penting jujur dan berani mencoba.</div>
+      </div>
+      <div class="bab-grid" id="daftar-bab"></div>
+    </div>
+  </section>
+
+  <!-- ============ LAYAR LATIHAN ============ -->
+  <section id="layar-latihan" class="sembunyi">
+    <div class="kepala-latihan">
+      <span class="nama-bab" id="nama-bab"></span>
+      <span class="progres-teks" id="progres-teks"></span>
+    </div>
+    <div class="bar"><div id="bar-isi"></div></div>
+    <div class="kartu">
+      <span class="lencana" id="lencana-tipe"></span>
+      <div class="soal" id="teks-soal"></div>
+      <div class="gambar sembunyi" id="wadah-gambar"></div>
+      <p class="petunjuk sembunyi" id="petunjuk"></p>
+      <div id="wadah-jawaban"></div>
+      <div class="aksi">
+        <button class="btn btn-emas" id="btn-cek">🔍 Cek Pembahasan</button>
+      </div>
+      <div class="status" id="status"></div>
+      <div class="motivasi" id="motivasi"></div>
+      <div class="pembahasan sembunyi" id="pembahasan"></div>
+      <div class="navigasi">
+        <button class="btn btn-garis" id="btn-sebelum">← Sebelumnya</button>
+        <button class="btn btn-teal" id="btn-berikut">Berikutnya →</button>
+        <button class="btn btn-emas sembunyi" id="btn-ringkasan">🏁 Lihat Ringkasan</button>
+      </div>
+    </div>
+    <p class="tengah" style="margin-top:14px"><button class="btn btn-garis" id="btn-ganti-bab">↩ Kembali ke Daftar Bab</button></p>
+  </section>
+
+  <!-- ============ LAYAR RINGKASAN ============ -->
+  <section id="layar-ringkasan" class="sembunyi">
+    <div class="kartu tengah">
+      <h2 style="margin-top:0">🏁 Ringkasan Latihan</h2>
+      <p id="ringkasan-bab" style="font-weight:700;color:#40536a"></p>
+      <div class="skor-besar" id="ringkasan-skor"></div>
+      <p id="ringkasan-pesan" style="font-size:16px;line-height:1.6"></p>
+      <table class="rekap" id="tabel-rekap"></table>
+      <button class="btn btn-teal" id="btn-ulangi">🔁 Ulangi Bab Ini</button>
+      <button class="btn btn-garis" id="btn-bab-lain">📚 Pilih Bab Lain</button>
+    </div>
+  </section>
+
+</main>
+<footer>
+  Latihan ASAS 1 per Bab — Matematika Kelas VII • Disusun mengikuti kisi-kisi ASAS 1 MGMP Matematika Kabupaten Brebes<br>
+  Rumah Belajar Mandiri AAAMAAT KEREN • SMP Negeri 1 Bantarkawung • Guru: Drs. Paiyo
+</footer>
+
+<script>
+"use strict";
+/* ================= DATA SOAL ================= */
+var MOTIV_BENAR = [
+  "Masya Allah, tepat sekali! Kejujuranmu dalam mencoba membuahkan hasil. 🌟",
+  "Betul! Kamu berpikir selangkah demi selangkah — itulah cara juara. 💪",
+  "Tepat! Pertahankan cara berpikirmu yang runtut ini ya.",
+  "Alhamdulillah, benar! Semakin sering berlatih, semakin tajam nalarmu.",
+  "Hebat! Jawabanmu menunjukkan kamu paham konsepnya, bukan sekadar menebak. 🎉"
+];
+var MOTIV_SALAH = [
+  "Belum tepat, tidak apa-apa — salah itu bahan belajar. Baca pembahasannya pelan-pelan ya. 🌱",
+  "Tidak apa-apa, yang penting kamu berani mencoba dengan jujur. Yuk, pahami pembahasannya.",
+  "Hampir! Perhatikan langkah yang terlewat pada pembahasan berikut ini.",
+  "Belum beruntung kali ini — justru dari kesalahan kita tahu bagian mana yang perlu diperkuat.",
+  "Tidak masalah! Setiap soal yang dibahas membuatmu selangkah lebih siap menghadapi ASAS 1."
+];
+
+var BABS = [
+/* ================= BAB 1: BILANGAN ================= */
+{ id:"bilangan", ikon:"🔢", nama:"Bab 1 • Bilangan",
+  deskripsi:"Bilangan bulat dan pecahan dalam kehidupan sehari-hari: perbedaan suhu, penskoran olimpiade, operasi campuran, mengurutkan pecahan, serta KPK dan FPB terapan.",
+  soal:[
+  { tipe:"pg",
+    soal:"Suhu udara di Dieng pada suatu pagi adalah −2°C, sedangkan suhu udara di Brebes pada saat yang sama adalah 30°C. Perbedaan (selisih) suhu kedua tempat tersebut adalah …",
+    opsi:["28°C","32°C","30°C","−32°C"], kunci:1,
+    bahas:"<b>Diketahui:</b> suhu Dieng −2°C; suhu Brebes 30°C.<br><b>Ditanyakan:</b> perbedaan (selisih) suhu kedua tempat.<br><b>Konsep:</b> selisih = suhu yang lebih besar dikurangi suhu yang lebih kecil. Mengurangkan bilangan negatif sama dengan menambahkan lawannya.<br><b>Substitusi:</b> selisih = 30 − (−2).<br><b>Hitungan:</b> 30 − (−2) = 30 + 2 = 32.<br><b>Kesimpulan:</b> perbedaan suhu kedua tempat adalah <b>32°C</b>." },
+  { tipe:"pg",
+    soal:"Dalam sebuah olimpiade matematika, setiap jawaban benar diberi skor 4, jawaban salah diberi skor −1, dan soal yang tidak dijawab diberi skor 0. Sinta menjawab 20 soal: 15 benar, 3 salah, dan 2 tidak dijawab. Skor yang diperoleh Sinta adalah …",
+    opsi:["54","60","57","63"], kunci:2,
+    bahas:"<b>Diketahui:</b> jawaban benar 15 (skor 4), salah 3 (skor −1), tidak dijawab 2 (skor 0).<br><b>Ditanyakan:</b> skor total Sinta.<br><b>Rumus:</b> skor = (banyak benar × 4) + (banyak salah × (−1)) + (banyak kosong × 0).<br><b>Substitusi:</b> skor = (15 × 4) + (3 × (−1)) + (2 × 0).<br><b>Hitungan:</b> 60 + (−3) + 0 = 57.<br><b>Kesimpulan:</b> skor yang diperoleh Sinta adalah <b>57</b>." },
+  { tipe:"pg",
+    soal:"Hasil dari −12 + 8 × (−3) − (−10) adalah …",
+    opsi:["−26","−46","2","−2"], kunci:0,
+    bahas:"<b>Diketahui:</b> operasi campuran −12 + 8 × (−3) − (−10).<br><b>Ditanyakan:</b> hasil operasi tersebut.<br><b>Konsep:</b> kerjakan perkalian terlebih dahulu, baru penjumlahan dan pengurangan. Mengurangkan bilangan negatif sama dengan menambahkan lawannya.<br><b>Substitusi:</b> 8 × (−3) = −24 dan −(−10) = +10.<br><b>Hitungan:</b> −12 + (−24) + 10 = −36 + 10 = −26.<br><b>Kesimpulan:</b> hasilnya adalah <b>−26</b>." },
+  { tipe:"pg",
+    soal:"Perhatikan empat bilangan berikut: 3/4 ; 60% ; 0,7 ; 5/8. Urutan bilangan tersebut dari yang terkecil adalah …",
+    opsi:["5/8 ; 60% ; 0,7 ; 3/4","60% ; 5/8 ; 0,7 ; 3/4","60% ; 0,7 ; 5/8 ; 3/4","3/4 ; 0,7 ; 5/8 ; 60%"], kunci:1,
+    bahas:"<b>Diketahui:</b> bilangan 3/4, 60%, 0,7, dan 5/8.<br><b>Ditanyakan:</b> urutan bilangan dari yang terkecil.<br><b>Konsep:</b> ubahlah semua bilangan menjadi bentuk desimal, lalu bandingkan nilainya.<br><b>Substitusi:</b> 3/4 = 0,75; 60% = 0,60; 0,7 = 0,70; 5/8 = 0,625.<br><b>Hitungan:</b> 0,60 &lt; 0,625 &lt; 0,70 &lt; 0,75.<br><b>Kesimpulan:</b> urutan dari yang terkecil adalah <b>60% ; 5/8 ; 0,7 ; 3/4</b>." },
+  { tipe:"pg",
+    soal:"Andi les matematika setiap 3 hari sekali, Budi setiap 4 hari sekali, dan Citra setiap 6 hari sekali. Pada tanggal 2 November mereka les bersama-sama. Mereka akan les bersama-sama lagi pada tanggal …",
+    opsi:["12 November","16 November","14 November","24 November"], kunci:2,
+    bahas:"<b>Diketahui:</b> Andi les setiap 3 hari, Budi 4 hari, Citra 6 hari; terakhir les bersama tanggal 2 November.<br><b>Ditanyakan:</b> tanggal mereka les bersama lagi.<br><b>Rumus:</b> carilah KPK dari 3, 4, dan 6.<br><b>Substitusi:</b> kelipatan 3: 3, 6, 9, 12, …; kelipatan 4: 4, 8, 12, …; kelipatan 6: 6, 12, ….<br><b>Hitungan:</b> KPK(3, 4, 6) = 12, sehingga 2 November + 12 hari = 14 November.<br><b>Kesimpulan:</b> mereka akan les bersama-sama lagi pada tanggal <b>14 November</b>." },
+  { tipe:"bs",
+    soal:"Tentukan Benar atau Salah untuk setiap pernyataan tentang bilangan 24 dan 36 berikut.",
+    pernyataan:[
+      { t:"FPB dari 24 dan 36 adalah 12", k:true },
+      { t:"KPK dari 24 dan 36 adalah 48", k:false },
+      { t:"Faktor persekutuan dari 24 dan 36 adalah 1, 2, 3, 4, 6, dan 12", k:true } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> 24 = 2<sup>3</sup> × 3 dan 36 = 2<sup>2</sup> × 3<sup>2</sup>. FPB diambil dari faktor yang sama dengan pangkat terkecil: 2<sup>2</sup> × 3 = 12.<br><b>Pernyataan 2 — SALAH.</b> KPK diambil dari semua faktor dengan pangkat terbesar: 2<sup>3</sup> × 3<sup>2</sup> = 72, bukan 48.<br><b>Pernyataan 3 — BENAR.</b> Faktor 24: 1, 2, 3, 4, 6, 8, 12, 24. Faktor 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Yang sama adalah 1, 2, 3, 4, 6, dan 12.<br><b>Kesimpulan:</b> kuncinya adalah <b>Benar – Salah – Benar</b>." },
+  { tipe:"bs",
+    soal:"Sari mempunyai pita sepanjang 3 1/2 m. Ia menggunakan 1 1/4 m untuk menghias kado dan 3/4 m untuk membuat bunga. Tentukan Benar atau Salah untuk setiap pernyataan berikut.",
+    pernyataan:[
+      { t:"Panjang pita yang digunakan Sari seluruhnya adalah 2 m", k:true },
+      { t:"Sisa pita Sari adalah 1 1/4 m", k:false },
+      { t:"Jika sisa pita dipotong menjadi 3 bagian sama panjang, setiap bagian panjangnya 1/2 m", k:true } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Pita yang digunakan = 1 1/4 + 3/4 = 1 + (1/4 + 3/4) = 2 m.<br><b>Pernyataan 2 — SALAH.</b> Sisa pita = 3 1/2 − 2 = 1 1/2 m, bukan 1 1/4 m.<br><b>Pernyataan 3 — BENAR.</b> Setiap bagian = 1 1/2 : 3 = 3/2 × 1/3 = 1/2 m.<br><b>Kesimpulan:</b> kuncinya adalah <b>Benar – Salah – Benar</b>." },
+  { tipe:"bs",
+    soal:"Sebidang lahan berbentuk persegi panjang mempunyai panjang 12 1/2 m dan lebar 8 m. Tentukan Benar atau Salah untuk setiap pernyataan berikut.",
+    pernyataan:[
+      { t:"Luas lahan tersebut adalah 100 m<sup>2</sup>", k:true },
+      { t:"Jika 2/5 bagian lahan ditanami jagung, luas lahan yang ditanami jagung adalah 40 m<sup>2</sup>", k:true },
+      { t:"Sisa lahan yang tidak ditanami jagung adalah 50 m<sup>2</sup>", k:false } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Luas = panjang × lebar = 12 1/2 × 8 = 25/2 × 8 = 100 m<sup>2</sup>.<br><b>Pernyataan 2 — BENAR.</b> Bagian yang ditanami jagung = 2/5 × 100 = 40 m<sup>2</sup>.<br><b>Pernyataan 3 — SALAH.</b> Sisa lahan = 100 − 40 = 60 m<sup>2</sup>, bukan 50 m<sup>2</sup>.<br><b>Kesimpulan:</b> kuncinya adalah <b>Benar – Benar – Salah</b>." },
+  { tipe:"mcma",
+    soal:"Sebuah kapal selam berada 120 m di bawah permukaan laut. Kapal itu kemudian naik 45 m, lalu turun lagi 30 m. Pilih SEMUA pernyataan yang BENAR.",
+    pernyataan:[
+      { t:"Kedudukan awal kapal selam dapat ditulis −120 m", k:true },
+      { t:"Setelah naik 45 m, kapal berada 75 m di bawah permukaan laut", k:true },
+      { t:"Kedudukan akhir kapal selam adalah −90 m", k:false },
+      { t:"Kedudukan akhir kapal selam adalah 105 m di bawah permukaan laut", k:true } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Kedudukan di bawah permukaan laut ditulis dengan bilangan negatif: −120 m.<br><b>Pernyataan 2 — BENAR.</b> −120 + 45 = −75, artinya kapal berada 75 m di bawah permukaan laut.<br><b>Pernyataan 3 — SALAH.</b> Kedudukan akhir = −75 − 30 = −105 m, bukan −90 m.<br><b>Pernyataan 4 — BENAR.</b> −105 m artinya 105 m di bawah permukaan laut.<br><b>Kesimpulan:</b> pernyataan yang benar adalah <b>1, 2, dan 4</b>." },
+  { tipe:"mcma",
+    soal:"Ibu mempunyai 7/8 kg tepung terigu. Untuk membuat kue digunakan 1/2 kg, dan untuk membuat bakwan digunakan 1/4 kg. Pilih SEMUA pernyataan yang BENAR.",
+    pernyataan:[
+      { t:"Tepung yang digunakan Ibu seluruhnya adalah 3/4 kg", k:true },
+      { t:"Sisa tepung Ibu adalah 1/8 kg", k:true },
+      { t:"Tepung untuk membuat kue dua kali tepung untuk membuat bakwan", k:true },
+      { t:"Jika Ibu membeli lagi 1/2 kg tepung, tepung Ibu menjadi 1 kg", k:false } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Tepung yang digunakan = 1/2 + 1/4 = 2/4 + 1/4 = 3/4 kg.<br><b>Pernyataan 2 — BENAR.</b> Sisa tepung = 7/8 − 3/4 = 7/8 − 6/8 = 1/8 kg.<br><b>Pernyataan 3 — BENAR.</b> 1/2 kg adalah dua kali 1/4 kg.<br><b>Pernyataan 4 — SALAH.</b> 1/8 + 1/2 = 1/8 + 4/8 = 5/8 kg, bukan 1 kg.<br><b>Kesimpulan:</b> pernyataan yang benar adalah <b>1, 2, dan 3</b>." }
+  ] },
+
+/* ================= BAB 2: ALJABAR ================= */
+{ id:"aljabar", ikon:"✏️", nama:"Bab 2 • Aljabar",
+  deskripsi:"Unsur dan operasi bentuk aljabar, membuat model matematika dari soal cerita, serta menyelesaikan persamaan dan pertidaksamaan linear satu variabel sederhana.",
+  soal:[
+  { tipe:"pg",
+    soal:"Harga sebuah buku tulis adalah a rupiah dan harga sebuah pensil adalah b rupiah. Rani membeli 3 buku tulis dan 2 pensil. Bentuk aljabar yang menyatakan harga yang harus dibayar Rani adalah …",
+    opsi:["2a + 3b","3a + 2b","5ab","a + b"], kunci:1,
+    bahas:"<b>Diketahui:</b> harga sebuah buku tulis a rupiah; harga sebuah pensil b rupiah; Rani membeli 3 buku tulis dan 2 pensil.<br><b>Ditanyakan:</b> bentuk aljabar harga yang harus dibayar Rani.<br><b>Konsep:</b> harga beberapa barang = banyak barang × harga satuannya, kemudian jumlahkan semuanya.<br><b>Substitusi:</b> 3 buku tulis → 3 × a = 3a; 2 pensil → 2 × b = 2b.<br><b>Hitungan:</b> total harga = 3a + 2b.<br><b>Kesimpulan:</b> bentuk aljabarnya adalah <b>3a + 2b</b> rupiah." },
+  { tipe:"pg",
+    soal:"Bentuk sederhana dari 7x + 3y − 2x + 5y − 4 adalah …",
+    opsi:["9x + 8y − 4","5x + 2y − 4","5x + 8y − 4","9x + 2y + 4"], kunci:2,
+    bahas:"<b>Diketahui:</b> bentuk aljabar 7x + 3y − 2x + 5y − 4.<br><b>Ditanyakan:</b> bentuk sederhananya.<br><b>Konsep:</b> jumlahkan atau kurangkan hanya suku-suku yang sejenis, yaitu suku dengan variabel yang sama.<br><b>Substitusi:</b> suku x: 7x − 2x; suku y: 3y + 5y; konstanta: −4.<br><b>Hitungan:</b> 7x − 2x = 5x dan 3y + 5y = 8y.<br><b>Kesimpulan:</b> bentuk sederhananya adalah <b>5x + 8y − 4</b>." },
+  { tipe:"pg",
+    soal:"Hasil dari 3(2x − 5) adalah …",
+    opsi:["6x − 5","5x − 15","6x + 15","6x − 15"], kunci:3,
+    bahas:"<b>Diketahui:</b> bentuk aljabar 3(2x − 5).<br><b>Ditanyakan:</b> hasil perkaliannya.<br><b>Konsep:</b> gunakan sifat distributif: kalikan 3 ke setiap suku di dalam kurung.<br><b>Substitusi:</b> 3 × 2x dan 3 × (−5).<br><b>Hitungan:</b> 3 × 2x = 6x dan 3 × (−5) = −15.<br><b>Kesimpulan:</b> hasilnya adalah <b>6x − 15</b>." },
+  { tipe:"pg",
+    soal:"Sebuah persegi panjang mempunyai panjang (3x + 2) cm dan lebar 4 cm. Keliling persegi panjang tersebut adalah …",
+    opsi:["3x + 6 cm","6x + 4 cm","6x + 12 cm","12x + 8 cm"], kunci:2,
+    bahas:"<b>Diketahui:</b> panjang persegi panjang (3x + 2) cm; lebar 4 cm.<br><b>Ditanyakan:</b> keliling persegi panjang.<br><b>Rumus:</b> keliling = 2 × (panjang + lebar).<br><b>Substitusi:</b> keliling = 2 × ((3x + 2) + 4) = 2 × (3x + 6).<br><b>Hitungan:</b> 2 × 3x + 2 × 6 = 6x + 12.<br><b>Kesimpulan:</b> kelilingnya adalah <b>(6x + 12) cm</b>. Hati-hati: 12x + 8 adalah luasnya, bukan kelilingnya." },
+  { tipe:"pg",
+    soal:"Sebuah taksi mengenakan tarif awal Rp8.000,00 dan tarif Rp4.000,00 untuk setiap kilometer. Dedi membayar seluruhnya Rp36.000,00. Jarak yang ditempuh Dedi adalah …",
+    opsi:["5 km","7 km","6 km","9 km"], kunci:1,
+    bahas:"<b>Diketahui:</b> tarif awal Rp8.000,00; tarif per kilometer Rp4.000,00; total yang dibayar Rp36.000,00.<br><b>Ditanyakan:</b> jarak yang ditempuh Dedi.<br><b>Model:</b> misalkan jarak yang ditempuh adalah x km, maka 8.000 + 4.000x = 36.000.<br><b>Hitungan:</b> 4.000x = 36.000 − 8.000 = 28.000, sehingga x = 28.000 : 4.000 = 7.<br><b>Kesimpulan:</b> jarak yang ditempuh Dedi adalah <b>7 km</b>." },
+  { tipe:"bs",
+    soal:"Perhatikan bentuk aljabar 4a − 7b + 9. Tentukan Benar atau Salah untuk setiap pernyataan berikut.",
+    pernyataan:[
+      { t:"Variabel pada bentuk aljabar tersebut adalah a dan b", k:true },
+      { t:"Koefisien dari b adalah 7", k:false },
+      { t:"Konstanta pada bentuk aljabar tersebut adalah 9", k:true } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Huruf yang menjadi variabel pada 4a − 7b + 9 adalah a dan b.<br><b>Pernyataan 2 — SALAH.</b> Suku kedua adalah −7b, jadi koefisien dari b adalah −7 (tanda negatif ikut serta), bukan 7.<br><b>Pernyataan 3 — BENAR.</b> Suku yang tidak memuat variabel adalah 9, dan itulah konstantanya.<br><b>Kesimpulan:</b> kuncinya adalah <b>Benar – Salah – Benar</b>." },
+  { tipe:"bs",
+    soal:"Rudi membeli 3 buku dan 2 pensil. Harga sebuah buku x rupiah dan harga sebuah pensil y rupiah. Tentukan Benar atau Salah untuk setiap pernyataan berikut.",
+    pernyataan:[
+      { t:"Harga yang dibayar Rudi dapat dinyatakan dengan 3x + 2y rupiah", k:true },
+      { t:"Jika x = 5.000 dan y = 3.000, Rudi membayar Rp21.000,00", k:true },
+      { t:"Pada bentuk 3x + 2y, suku 3x dan 2y adalah suku sejenis", k:false } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Tiga buku seharga 3x rupiah dan dua pensil seharga 2y rupiah, sehingga totalnya 3x + 2y rupiah.<br><b>Pernyataan 2 — BENAR.</b> 3 × 5.000 + 2 × 3.000 = 15.000 + 6.000 = 21.000.<br><b>Pernyataan 3 — SALAH.</b> Suku sejenis harus mempunyai variabel yang sama. Suku 3x dan 2y berbeda variabel, jadi bukan suku sejenis.<br><b>Kesimpulan:</b> kuncinya adalah <b>Benar – Benar – Salah</b>." },
+  { tipe:"bs",
+    soal:"Sebuah angkot hanya boleh membawa muatan paling banyak 500 kg. Berat penumpang yang sudah naik adalah 380 kg. Misalkan x adalah berat tambahan muatan (dalam kg) yang masih boleh dibawa. Tentukan Benar atau Salah untuk setiap pernyataan berikut.",
+    pernyataan:[
+      { t:"Pertidaksamaan yang sesuai dengan keadaan itu adalah 380 + x ≤ 500", k:true },
+      { t:"Tambahan muatan sebesar 130 kg masih diperbolehkan", k:false },
+      { t:"Berat tambahan muatan paling banyak yang diperbolehkan adalah 120 kg", k:true } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Kata \u201cpaling banyak 500 kg\u201d berarti total muatan kurang dari atau sama dengan 500 kg, ditulis 380 + x ≤ 500.<br><b>Pernyataan 2 — SALAH.</b> 380 + 130 = 510 kg, sudah melebihi batas 500 kg.<br><b>Pernyataan 3 — BENAR.</b> Dari 380 + x ≤ 500 diperoleh x ≤ 500 − 380 = 120, jadi tambahan muatan paling banyak 120 kg.<br><b>Kesimpulan:</b> kuncinya adalah <b>Benar – Salah – Benar</b>." },
+  { tipe:"mcma",
+    soal:"Bu Tuti menjual x buah kue dengan harga Rp3.000,00 per buah. Modal yang dikeluarkan Bu Tuti adalah (2.500x + 10.000) rupiah. Pilih SEMUA pernyataan yang BENAR.",
+    pernyataan:[
+      { t:"Pendapatan Bu Tuti adalah 3.000x rupiah", k:true },
+      { t:"Keuntungan Bu Tuti adalah (500x − 10.000) rupiah", k:true },
+      { t:"Jika x = 40, keuntungan Bu Tuti adalah Rp10.000,00", k:true },
+      { t:"Jika x = 10, Bu Tuti sudah memperoleh keuntungan", k:false } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Pendapatan = banyak kue × harga per buah = x × 3.000 = 3.000x rupiah.<br><b>Pernyataan 2 — BENAR.</b> Keuntungan = pendapatan − modal = 3.000x − (2.500x + 10.000) = 500x − 10.000 rupiah.<br><b>Pernyataan 3 — BENAR.</b> Jika x = 40: keuntungan = 500 × 40 − 10.000 = 20.000 − 10.000 = 10.000 rupiah.<br><b>Pernyataan 4 — SALAH.</b> Jika x = 10: keuntungan = 500 × 10 − 10.000 = −5.000, artinya Bu Tuti masih rugi Rp5.000,00, belum untung.<br><b>Kesimpulan:</b> pernyataan yang benar adalah <b>1, 2, dan 3</b>." },
+  { tipe:"mcma",
+    soal:"Diketahui bentuk aljabar 6p − 4q + 10. Pilih SEMUA pernyataan yang BENAR.",
+    pernyataan:[
+      { t:"Hasil dari (6p − 4q + 10) − (2p + q − 3) adalah 4p − 5q + 13", k:true },
+      { t:"Jika p = 2 dan q = 1, nilai bentuk aljabar tersebut adalah 18", k:true },
+      { t:"Bentuk aljabar 6p − 4q + 10 mempunyai tepat 2 suku", k:false },
+      { t:"Bentuk aljabar 6p − 4q + 10 dapat ditulis sebagai 2(3p − 2q + 5)", k:true } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Kurangkan suku sejenis: 6p − 2p = 4p; −4q − q = −5q; 10 − (−3) = 13. Hasilnya 4p − 5q + 13.<br><b>Pernyataan 2 — BENAR.</b> Substitusi p = 2 dan q = 1: 6 × 2 − 4 × 1 + 10 = 12 − 4 + 10 = 18.<br><b>Pernyataan 3 — SALAH.</b> Suku-sukunya adalah 6p, −4q, dan 10 — ada 3 suku, bukan 2.<br><b>Pernyataan 4 — BENAR.</b> 2(3p − 2q + 5) = 6p − 4q + 10, sama dengan bentuk semula.<br><b>Kesimpulan:</b> pernyataan yang benar adalah <b>1, 2, dan 4</b>." }
+  ] },
+
+/* ================= BAB 3: RASIO ================= */
+{ id:"rasio", ikon:"⚖️", nama:"Bab 3 • Rasio",
+  deskripsi:"Rasio dua besaran, skala pada peta dan miniatur, proporsi, serta perbandingan senilai dan berbalik nilai dalam kehidupan sehari-hari.",
+  soal:[
+  { tipe:"pg",
+    soal:"Di kelas VII-A terdapat 12 siswa laki-laki dan 18 siswa perempuan. Rasio banyak siswa laki-laki terhadap banyak siswa perempuan adalah …",
+    opsi:["3 : 2","2 : 3","12 : 30","18 : 12"], kunci:1,
+    bahas:"<b>Diketahui:</b> siswa laki-laki 12 anak; siswa perempuan 18 anak.<br><b>Ditanyakan:</b> rasio banyak siswa laki-laki terhadap siswa perempuan.<br><b>Konsep:</b> rasio disederhanakan dengan membagi kedua bilangan dengan FPB-nya.<br><b>Substitusi:</b> rasio = 12 : 18, dan FPB dari 12 dan 18 adalah 6.<br><b>Hitungan:</b> 12 : 18 = (12 : 6) : (18 : 6) = 2 : 3.<br><b>Kesimpulan:</b> rasionya adalah <b>2 : 3</b>." },
+  { tipe:"pg",
+    soal:"Jarak dua kota sebenarnya adalah 60 km. Jarak kedua kota pada peta adalah 3 cm. Skala peta tersebut adalah …",
+    opsi:["1 : 200.000","1 : 20.000.000","1 : 2.000.000","1 : 200"], kunci:2,
+    bahas:"<b>Diketahui:</b> jarak sebenarnya 60 km; jarak pada peta 3 cm.<br><b>Ditanyakan:</b> skala peta.<br><b>Rumus:</b> skala = jarak pada peta : jarak sebenarnya, dengan satuan yang sama.<br><b>Substitusi:</b> 60 km = 6.000.000 cm, sehingga skala = 3 : 6.000.000.<br><b>Hitungan:</b> bagi kedua bilangan dengan 3: 3 : 6.000.000 = 1 : 2.000.000.<br><b>Kesimpulan:</b> skala peta tersebut adalah <b>1 : 2.000.000</b>." },
+  { tipe:"pg",
+    soal:"Sebuah miniatur gedung dibuat dengan skala 1 : 150. Tinggi miniatur gedung tersebut adalah 24 cm. Tinggi gedung sebenarnya adalah …",
+    opsi:["360 m","3,6 m","15 m","36 m"], kunci:3,
+    bahas:"<b>Diketahui:</b> skala miniatur 1 : 150; tinggi miniatur 24 cm.<br><b>Ditanyakan:</b> tinggi gedung sebenarnya.<br><b>Rumus:</b> ukuran sebenarnya = ukuran pada miniatur × bilangan penyebut skala.<br><b>Substitusi:</b> tinggi sebenarnya = 24 × 150.<br><b>Hitungan:</b> 24 × 150 = 3.600 cm = 36 m.<br><b>Kesimpulan:</b> tinggi gedung sebenarnya adalah <b>36 m</b>." },
+  { tipe:"pg",
+    soal:"Perbandingan uang Sinta dan uang Rudi adalah 3 : 5. Jika uang Sinta Rp45.000,00, uang Rudi adalah …",
+    opsi:["Rp27.000,00","Rp60.000,00","Rp75.000,00","Rp90.000,00"], kunci:2,
+    bahas:"<b>Diketahui:</b> perbandingan uang Sinta : Rudi = 3 : 5; uang Sinta Rp45.000,00.<br><b>Ditanyakan:</b> uang Rudi.<br><b>Konsep:</b> carilah nilai satu bagian terlebih dahulu: 45.000 : 3 = 15.000.<br><b>Substitusi:</b> uang Rudi adalah 5 bagian.<br><b>Hitungan:</b> 5 × 15.000 = 75.000.<br><b>Kesimpulan:</b> uang Rudi adalah <b>Rp75.000,00</b>." },
+  { tipe:"pg",
+    soal:"Harga 5 buku tulis adalah Rp22.500,00. Harga 8 buku tulis yang sama adalah …",
+    opsi:["Rp32.000,00","Rp36.000,00","Rp40.000,00","Rp45.000,00"], kunci:1,
+    bahas:"<b>Diketahui:</b> harga 5 buku tulis Rp22.500,00.<br><b>Ditanyakan:</b> harga 8 buku tulis yang sama.<br><b>Konsep:</b> ini perbandingan senilai — carilah harga satu buku terlebih dahulu.<br><b>Substitusi:</b> harga 1 buku = 22.500 : 5 = 4.500.<br><b>Hitungan:</b> harga 8 buku = 8 × 4.500 = 36.000.<br><b>Kesimpulan:</b> harga 8 buku tulis adalah <b>Rp36.000,00</b>." },
+  { tipe:"bs",
+    soal:"Sebuah sepeda motor menempuh jarak 90 km dalam waktu 2 jam dengan kecepatan tetap. Tentukan Benar atau Salah untuk setiap pernyataan berikut.",
+    pernyataan:[
+      { t:"Kecepatan sepeda motor tersebut adalah 45 km/jam", k:true },
+      { t:"Untuk menempuh jarak 180 km dengan kecepatan yang sama dibutuhkan waktu 5 jam", k:false },
+      { t:"Jarak yang ditempuh dalam waktu 3 jam adalah 135 km", k:true } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Kecepatan = jarak : waktu = 90 : 2 = 45 km/jam.<br><b>Pernyataan 2 — SALAH.</b> Waktu yang dibutuhkan = 180 : 45 = 4 jam, bukan 5 jam.<br><b>Pernyataan 3 — BENAR.</b> Jarak = kecepatan × waktu = 45 × 3 = 135 km.<br><b>Kesimpulan:</b> kuncinya adalah <b>Benar – Salah – Benar</b>." },
+  { tipe:"bs",
+    soal:"Sebuah mesin fotokopi dapat menggandakan 120 lembar kertas dalam waktu 4 menit dengan kecepatan tetap. Tentukan Benar atau Salah untuk setiap pernyataan berikut.",
+    pernyataan:[
+      { t:"Dalam 1 menit, mesin itu menggandakan 30 lembar", k:true },
+      { t:"Dalam 10 menit, mesin itu menggandakan 300 lembar", k:true },
+      { t:"Untuk menggandakan 300 lembar dibutuhkan waktu 12 menit", k:false } ],
+    bahas:"<b>Pernyataan 1 — BENAR.</b> Dalam 1 menit mesin menggandakan 120 : 4 = 30 lembar.<br><b>Pernyataan 2 — BENAR.</b> Dalam 10 menit mesin menggandakan 30 × 10 = 300 lembar.<br><b>Pernyataan 3 — SALAH.</b> Waktu untuk menggandakan 300 lembar = 300 : 30 = 10 menit, bukan 12 menit.<br><b>Kesimpulan:</b> kuncinya adalah <b>Benar – Benar – Salah</b>." },
+  { tipe:"bs",
+    soal:"Persediaan pakan di sebuah peternakan cukup untuk 20 ekor ayam selama 15 hari. Tentukan Benar atau Salah untuk setiap pernyataan berikut.",
+    pernyataan:[
+      { t:"Jika ayam bertambah menjadi 30 ekor, pakan akan habis dalam 10 hari", k:true },
+      { t:"Jika ayam berkurang menjadi 10 ekor, pakan cukup untuk 25 hari", k:false },
+      { t:"Persediaan pakan tersebut setara dengan 300 porsi harian (ekor × hari)", k:true } ],
+    bahas:"<b>Konsep:</b> ini perbandingan berbalik nilai — semakin banyak ayam, semakin cepat pakan habis. Total persediaan = 20 × 15 = 300 porsi harian.<br><b>Pernyataan 1 — BENAR.</b> Untuk 30 ekor: 300 : 30 = 10 hari.<br><b>Pernyataan 2 — SALAH.</b> Untuk 10 ekor: 300 : 10 = 30 hari, bukan 25 hari.<br><b>Pernyataan 3 — BENAR.</b> 20 ekor × 15 hari = 300 porsi harian.<br><b>Kesimpulan:</b> kuncinya adalah <b>Benar – Salah – Benar</b>." },
+  { tipe:"mcma",
+    soal:"Harga 4 kg mangga adalah Rp48.000,00. Pilih SEMUA pernyataan yang BENAR.",
+    pernyataan:[
+      { t:"Harga 1 kg mangga adalah Rp12.000,00", k:true },
+      { t:"Harga 7 kg mangga adalah Rp84.000,00", k:true },
+      { t:"Dengan uang Rp60.000,00 dapat dibeli 6 kg mangga", k:false },
+      { t:"Harga 10 kg mangga adalah Rp120.000,00", k:true } ],
+    bahas:"<b>Diketahui:</b> harga 4 kg mangga Rp48.000,00, jadi harga 1 kg = 48.000 : 4 = 12.000.<br><b>Pernyataan 1 — BENAR.</b> Harga 1 kg mangga adalah Rp12.000,00.<br><b>Pernyataan 2 — BENAR.</b> Harga 7 kg = 7 × 12.000 = 84.000.<br><b>Pernyataan 3 — SALAH.</b> Dengan Rp60.000,00 dapat dibeli 60.000 : 12.000 = 5 kg, bukan 6 kg.<br><b>Pernyataan 4 — BENAR.</b> Harga 10 kg = 10 × 12.000 = 120.000.<br><b>Kesimpulan:</b> pernyataan yang benar adalah <b>1, 2, dan 4</b>." },
+  { tipe:"mcma",
+    soal:"Sebuah proyek pembangunan dapat diselesaikan oleh 12 pekerja dalam waktu 20 hari. Pilih SEMUA pernyataan yang BENAR.",
+    pernyataan:[
+      { t:"Jika hanya ada 8 pekerja, proyek selesai dalam waktu 30 hari", k:true },
+      { t:"Jika banyak pekerja ditambah menjadi 24 orang, proyek selesai dalam waktu 10 hari", k:true },
+      { t:"Jika proyek harus selesai dalam 15 hari, dibutuhkan 16 pekerja", k:true },
+      { t:"Jika pekerja dikurangi menjadi 6 orang, proyek selesai dalam waktu 25 hari", k:false } ],
+    bahas:"<b>Konsep:</b> ini perbandingan berbalik nilai — semakin banyak pekerja, semakin cepat proyek selesai. Beban kerja seluruhnya = 12 × 20 = 240 pekerja-hari.<br><b>Pernyataan 1 — BENAR.</b> Dengan 8 pekerja: 240 : 8 = 30 hari.<br><b>Pernyataan 2 — BENAR.</b> Dengan 24 pekerja: 240 : 24 = 10 hari.<br><b>Pernyataan 3 — BENAR.</b> Agar selesai dalam 15 hari: 240 : 15 = 16 pekerja.<br><b>Pernyataan 4 — SALAH.</b> Dengan 6 pekerja: 240 : 6 = 40 hari, bukan 25 hari.<br><b>Kesimpulan:</b> pernyataan yang benar adalah <b>1, 2, dan 3</b>." }
+  ] }
+];
+/* ================= LOGIKA APLIKASI ================= */
+var TIPE_LABEL = { pg:"Pilihan Ganda", bs:"Benar / Salah", mcma:"Pilihan Ganda Kompleks" };
+var babAktif = -1, soalAktif = 0;
+var sesi = {}; // sesi[babIdx] = array state per soal
+
+function el(id){ return document.getElementById(id); }
+function buatState(soal){
+  var s = { dicek:false, benar:false, tepat:0 };
+  if (soal.tipe === "pg") s.pil = null;
+  if (soal.tipe === "bs") s.pil = [null, null, null];
+  if (soal.tipe === "mcma") s.pil = [false, false, false, false];
+  return s;
+}
+function pastikanSesi(){
+  if (!sesi[babAktif]) {
+    sesi[babAktif] = BABS[babAktif].soal.map(buatState);
+  }
+}
+function tampil(id){
+  ["layar-bab","layar-latihan","layar-ringkasan"].forEach(function(x){
+    el(x).classList.toggle("sembunyi", x !== id);
+  });
+  window.scrollTo(0, 0);
+}
+
+function renderDaftarBab(){
+  var wadah = el("daftar-bab");
+  wadah.innerHTML = "";
+  BABS.forEach(function(bab, i){
+    var div = document.createElement("div");
+    div.className = "bab-card";
+    div.innerHTML = "<div class='ikon'>" + bab.ikon + "</div><h3>" + bab.nama + "</h3>" +
+      "<div class='isi'>10 soal: 5 PG • 3 Benar/Salah • 2 Pilihan Ganda Kompleks</div>" +
+      "<p>" + bab.deskripsi + "</p>" +
+      "<button class='btn btn-teal'>Mulai Latihan →</button>";
+    div.querySelector("button").addEventListener("click", function(){ mulaiBab(i); });
+    wadah.appendChild(div);
+  });
+}
+
+function mulaiBab(i){
+  babAktif = i; soalAktif = 0;
+  pastikanSesi();
+  tampil("layar-latihan");
+  tampilSoal();
+}
+
+function tampilSoal(){
+  var bab = BABS[babAktif], soal = bab.soal[soalAktif], st = sesi[babAktif][soalAktif];
+  el("nama-bab").textContent = bab.ikon + " " + bab.nama;
+  var nCek = sesi[babAktif].filter(function(s){ return s.dicek; }).length;
+  el("progres-teks").textContent = "Soal " + (soalAktif + 1) + " dari 10 • Sudah dicek: " + nCek;
+  el("bar-isi").style.width = ((soalAktif + 1) * 10) + "%";
+  el("lencana-tipe").textContent = TIPE_LABEL[soal.tipe] + " • Soal " + (soalAktif + 1);
+  el("teks-soal").innerHTML = soal.soal;
+  var wg = el("wadah-gambar");
+  if (soal.svg) { wg.innerHTML = soal.svg; wg.classList.remove("sembunyi"); }
+  else { wg.innerHTML = ""; wg.classList.add("sembunyi"); }
+  var pet = el("petunjuk");
+  if (soal.tipe === "bs") { pet.textContent = "Untuk setiap pernyataan, pilih Benar atau Salah."; pet.classList.remove("sembunyi"); }
+  else if (soal.tipe === "mcma") { pet.textContent = "Pilih SEMUA pernyataan yang menurutmu benar (boleh lebih dari satu), lalu klik Cek Pembahasan."; pet.classList.remove("sembunyi"); }
+  else { pet.classList.add("sembunyi"); }
+  renderJawaban(soal, st);
+  // status & pembahasan
+  var status = el("status"), motivasi = el("motivasi"), bahas = el("pembahasan");
+  if (st.dicek) {
+    status.textContent = st.pesanStatus;
+    status.className = "status " + (st.benar ? "ok" : "no");
+    motivasi.textContent = st.pesanMotivasi;
+    bahas.innerHTML = "<h4>📖 Pembahasan</h4>" + soal.bahas;
+    bahas.classList.remove("sembunyi");
+    el("btn-cek").classList.add("sembunyi");
+  } else {
+    status.textContent = ""; status.className = "status";
+    motivasi.textContent = "";
+    bahas.classList.add("sembunyi");
+    el("btn-cek").classList.remove("sembunyi");
+  }
+  el("btn-sebelum").disabled = (soalAktif === 0);
+  el("btn-berikut").classList.toggle("sembunyi", soalAktif === 9);
+  el("btn-ringkasan").classList.toggle("sembunyi", soalAktif !== 9);
+}
+
+function renderJawaban(soal, st){
+  var wadah = el("wadah-jawaban");
+  wadah.innerHTML = "";
+  if (soal.tipe === "pg") {
+    var grid = document.createElement("div"); grid.className = "opsi";
+    soal.opsi.forEach(function(op, i){
+      var b = document.createElement("button");
+      b.innerHTML = "<b>" + "ABCD"[i] + ".</b> " + op;
+      if (st.pil === i) b.classList.add("dipilih");
+      if (st.dicek) {
+        b.disabled = true;
+        if (i === soal.kunci) b.classList.add("benar");
+        else if (st.pil === i) b.classList.add("salah");
+      } else {
+        b.addEventListener("click", function(){ st.pil = i; renderJawaban(soal, st); });
+      }
+      grid.appendChild(b);
+    });
+    wadah.appendChild(grid);
+  } else if (soal.tipe === "bs") {
+    soal.pernyataan.forEach(function(p, j){
+      var div = document.createElement("div");
+      div.className = "nyataan";
+      if (st.dicek) div.classList.add(st.pil[j] === p.k ? "benar" : "salah");
+      var teks = document.createElement("div"); teks.className = "teks";
+      teks.innerHTML = (j + 1) + ". " + p.t;
+      div.appendChild(teks);
+      var baris = document.createElement("div"); baris.className = "pil-baris";
+      [true, false].forEach(function(v){
+        var b = document.createElement("button");
+        b.className = "pil" + (st.pil[j] === v ? " dipilih" : "");
+        b.textContent = v ? "Benar" : "Salah";
+        if (st.dicek) { b.disabled = true; }
+        else b.addEventListener("click", function(){ st.pil[j] = v; renderJawaban(soal, st); });
+        baris.appendChild(b);
+      });
+      if (st.dicek) {
+        var badge = document.createElement("span"); badge.className = "kunci-badge";
+        badge.textContent = "Kunci: " + (p.k ? "Benar" : "Salah");
+        baris.appendChild(badge);
+      }
+      div.appendChild(baris);
+      wadah.appendChild(div);
+    });
+  } else { // mcma
+    soal.pernyataan.forEach(function(p, j){
+      var div = document.createElement("div");
+      div.className = "nyataan";
+      if (st.dicek) div.classList.add(st.pil[j] === p.k ? "benar" : "salah");
+      var teks = document.createElement("div"); teks.className = "teks";
+      teks.innerHTML = (j + 1) + ". " + p.t;
+      div.appendChild(teks);
+      var baris = document.createElement("div"); baris.className = "pil-baris";
+      var b = document.createElement("button");
+      b.className = "pil" + (st.pil[j] ? " dipilih" : "");
+      b.textContent = st.pil[j] ? "☑ Dipilih sebagai benar" : "☐ Pilih pernyataan ini";
+      if (st.dicek) { b.disabled = true; }
+      else b.addEventListener("click", function(){ st.pil[j] = !st.pil[j]; renderJawaban(soal, st); });
+      baris.appendChild(b);
+      if (st.dicek) {
+        var badge = document.createElement("span"); badge.className = "kunci-badge";
+        badge.textContent = "Kunci: pernyataan ini " + (p.k ? "BENAR" : "SALAH");
+        baris.appendChild(badge);
+      }
+      div.appendChild(baris);
+      wadah.appendChild(div);
+    });
+  }
+}
+
+function cekPembahasan(){
+  var soal = BABS[babAktif].soal[soalAktif], st = sesi[babAktif][soalAktif];
+  var status = el("status");
+  // validasi isian
+  if (soal.tipe === "pg" && st.pil === null) {
+    status.textContent = "Pilih dulu salah satu jawaban ya, baru klik Cek Pembahasan. 🙂";
+    status.className = "status"; status.style.color = "#b07d10";
+    return;
+  }
+  if (soal.tipe === "bs" && st.pil.some(function(v){ return v === null; })) {
+    status.textContent = "Tentukan dulu Benar/Salah untuk SEMUA pernyataan ya. 🙂";
+    status.className = "status"; status.style.color = "#b07d10";
+    return;
+  }
+  if (soal.tipe === "mcma" && !st.pil.some(Boolean)) {
+    status.textContent = "Pilih dulu minimal satu pernyataan yang menurutmu benar ya. 🙂";
+    status.className = "status"; status.style.color = "#b07d10";
+    return;
+  }
+  status.style.color = "";
+  st.dicek = true;
+  if (soal.tipe === "pg") {
+    st.benar = (st.pil === soal.kunci);
+    st.tepat = st.benar ? 1 : 0;
+    st.pesanStatus = st.benar ? "✅ Benar!" : "❌ Belum tepat.";
+  } else {
+    var tepat = 0;
+    soal.pernyataan.forEach(function(p, j){ if (st.pil[j] === p.k) tepat++; });
+    st.tepat = tepat;
+    st.benar = (tepat === soal.pernyataan.length);
+    st.pesanStatus = st.benar ? "✅ Benar semua!" :
+      "Belum tepat sepenuhnya — " + tepat + " dari " + soal.pernyataan.length + " pernyataanmu tepat.";
+  }
+  var idx = (babAktif * 3 + soalAktif) % 5;
+  st.pesanMotivasi = st.benar ? MOTIV_BENAR[idx] : MOTIV_SALAH[idx];
+  tampilSoal();
+}
+
+function tampilRingkasan(){
+  var bab = BABS[babAktif], stList = sesi[babAktif];
+  var nBenar = stList.filter(function(s){ return s.dicek && s.benar; }).length;
+  el("ringkasan-bab").textContent = bab.ikon + " " + bab.nama;
+  el("ringkasan-skor").textContent = "Benar " + nBenar + " dari 10 soal";
+  var pesan;
+  if (nBenar >= 9) pesan = "Luar biasa! Penguasaanmu pada bab ini sangat kuat. Pertahankan dan lanjutkan ke bab berikutnya. 🌟";
+  else if (nBenar >= 7) pesan = "Bagus sekali! Sebagian besar sudah kamu kuasai. Baca lagi pembahasan soal yang belum tepat, lalu lanjutkan ke bab lain. 💪";
+  else if (nBenar >= 5) pesan = "Kemajuan yang baik! Kamu sudah menguasai separuh bab ini. Ulangi soal yang belum tepat sambil membaca pembahasannya ya. 🌱";
+  else pesan = "Tidak apa-apa — latihan memang tempatnya salah dan belajar. Baca pembahasan tiap soal pelan-pelan, lalu ulangi bab ini. Kamu pasti bisa! 🤲";
+  el("ringkasan-pesan").textContent = pesan;
+  var tabel = el("tabel-rekap");
+  var html = "<tr><th>No</th><th>Bentuk Soal</th><th>Hasil</th></tr>";
+  bab.soal.forEach(function(s, i){
+    var st = stList[i];
+    var hasil = !st.dicek ? "⏳ Belum dicek" : (st.benar ? "✅ Benar" : "❌ Belum tepat");
+    html += "<tr><td class='c'>" + (i + 1) + "</td><td>" + TIPE_LABEL[s.tipe] + "</td><td class='c'>" + hasil + "</td></tr>";
+  });
+  tabel.innerHTML = html;
+  tampil("layar-ringkasan");
+}
+
+el("btn-cek").addEventListener("click", cekPembahasan);
+el("btn-sebelum").addEventListener("click", function(){ if (soalAktif > 0) { soalAktif--; tampilSoal(); } });
+el("btn-berikut").addEventListener("click", function(){ if (soalAktif < 9) { soalAktif++; tampilSoal(); } });
+el("btn-ringkasan").addEventListener("click", tampilRingkasan);
+el("btn-ganti-bab").addEventListener("click", function(){ tampil("layar-bab"); });
+el("btn-ulangi").addEventListener("click", function(){
+  delete sesi[babAktif];
+  mulaiBab(babAktif);
+});
+el("btn-bab-lain").addEventListener("click", function(){ tampil("layar-bab"); });
+
+renderDaftarBab();
+</script>
+</body>
+</html>
