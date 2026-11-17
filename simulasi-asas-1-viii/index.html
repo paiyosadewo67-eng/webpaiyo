@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulasi ASAS 1 Matematika Kelas VIII | SMP Negeri 1 Bantarkawung</title>
+<style>
+:root{--biru:#0b3d66;--teal:#0e7a5f;--emas:#c9a227;--bg:#eef4f7;--kartu:#ffffff;--teks:#173042;--abu:#5b7183;--merah:#b3261e;--hijau:#137333}
+*{box-sizing:border-box}body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:var(--bg);color:var(--teks)}
+header{background:linear-gradient(135deg,var(--biru),var(--teal));color:#fff;padding:22px 16px;text-align:center}
+header h1{margin:0 0 6px;font-size:22px;letter-spacing:.4px}
+header p{margin:2px 0;opacity:.92;font-size:14px}
+.emas{color:var(--emas);font-weight:700}
+.wrap{max-width:820px;margin:0 auto;padding:18px 14px 40px}
+.kartu{background:var(--kartu);border-radius:14px;box-shadow:0 2px 10px rgba(11,61,102,.10);padding:20px;margin-bottom:16px}
+label{display:block;font-weight:600;margin:12px 0 5px;font-size:14px}
+input[type=text],select{width:100%;padding:11px 12px;border:1.5px solid #c4d3dd;border-radius:9px;font-size:16px}
+.btn{display:inline-block;border:none;cursor:pointer;border-radius:10px;padding:12px 22px;font-size:16px;font-weight:700;background:var(--teal);color:#fff}
+.btn:hover{filter:brightness(1.07)}
+.btn.biru{background:var(--biru)} .btn.abu{background:var(--abu)} .btn.emas{background:var(--emas);color:#231a00}
+.btn:disabled{opacity:.55;cursor:wait}
+.sembunyi{display:none!important}
+.info{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.chip{background:#e7f0f5;border-radius:999px;padding:6px 13px;font-size:13.5px;font-weight:600}
+.bar{position:sticky;top:0;z-index:5;background:var(--kartu);border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.10);padding:10px 14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+#timer{font-size:20px;font-weight:800;color:var(--biru)} #timer.kritis{color:var(--merah)}
+.soal h3{margin:0 0 4px;font-size:15px;color:var(--teal)}
+.soal .iteks{font-size:16.5px;line-height:1.55;margin:6px 0 14px}
+.opsi{display:flex;flex-direction:column;gap:9px}
+.opsi label{font-weight:500;margin:0;display:flex;gap:10px;align-items:flex-start;background:#f4f8fa;border:1.5px solid #d5e1e9;border-radius:10px;padding:11px 12px;cursor:pointer;font-size:15.5px}
+.opsi label.terpilih{border-color:var(--teal);background:#e6f4ee}
+.opsi input{margin-top:3px;transform:scale(1.25)}
+.pernyataan{border:1.5px solid #d5e1e9;border-radius:10px;padding:11px 12px;margin-bottom:9px;background:#f4f8fa}
+.pernyataan .p-teks{font-size:15.5px;margin-bottom:9px}
+.bs-pilihan{display:flex;gap:9px}
+.bs-pilihan button{flex:1;padding:9px;border-radius:8px;border:1.5px solid #b9ccd8;background:#fff;font-weight:700;cursor:pointer;font-size:15px}
+.bs-pilihan button.sel-b{background:var(--teal);color:#fff;border-color:var(--teal)}
+.bs-pilihan button.sel-s{background:var(--merah);color:#fff;border-color:var(--merah)}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+.palet{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.palet button{width:38px;height:38px;border-radius:9px;border:1.5px solid #b9ccd8;background:#fff;font-weight:700;cursor:pointer}
+.palet button.isi{background:var(--teal);color:#fff;border-color:var(--teal)}
+.palet button.aktif{outline:3px solid var(--emas)}
+.nilai-besar{font-size:56px;font-weight:800;text-align:center;color:var(--biru);margin:8px 0 0}
+.status{text-align:center;font-size:19px;font-weight:800;margin:4px 0}
+.status.tuntas{color:var(--hijau)} .status.belum{color:var(--merah)}
+.tengah{text-align:center}
+.status-simpan{text-align:center;font-size:14px;margin-top:10px}
+.status-simpan.ok{color:var(--hijau);font-weight:600}
+.status-simpan.gagal{color:var(--merah);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{border-bottom:1px solid #e1e9ee;padding:7px 6px;text-align:left}
+th{background:#e7f0f5}
+.ulasan-item{border-top:1px solid #e1e9ee;padding:12px 0}
+.ulasan-item h4{margin:0 0 5px;font-size:15px}
+.ulasan-item p{margin:3px 0;font-size:14.5px;line-height:1.5}
+.kunci-jawaban{color:var(--hijau);font-weight:700}
+.salah{color:var(--merah);font-weight:700}
+small{color:var(--abu)}
+.scroll-x{overflow-x:auto}
+</style>
+</head>
+<body>
+<header>
+<h1>SIMULASI ASAS 1 MATEMATIKA</h1>
+<p>Asesmen Sumatif Akhir Semester 1 • Kelas VIII • SMP Negeri 1 Bantarkawung, Kabupaten Brebes</p>
+<p>Portal Rumah Belajar AAAMAAT KEREN • Pengembang: <span class="emas">Drs. PAIYO</span> • Disusun oleh Mas Yosad</p>
+</header>
+<div class="wrap">
+
+<!-- LAYAR MULAI -->
+<div id="layarMulai" class="kartu">
+<h2 style="margin-top:0">Simulasi Asesmen Sumatif Akhir Semester 1 — Matematika Kelas VIII</h2>
+<p>Isi data dirimu dengan benar, masukkan <b>token sesi</b> dari gurumu, lalu klik <b>Mulai Asesmen</b>.</p>
+<div class="info">
+<span class="chip">30 Soal</span><span class="chip">Waktu 90 Menit</span>
+<span class="chip">15 PG • 5 Benar/Salah • 5 MCMA • 5 Uraian</span><span class="chip">KKM 75</span><span class="chip">Pekan Simulasi • 23–28 Nov 2026</span>
+</div>
+<label for="inToken">TOKEN SESI *</label>
+<input type="text" id="inToken" placeholder="Masukkan token dari gurumu" autocomplete="off">
+<label for="inNama">NAMA LENGKAP *</label>
+<input type="text" id="inNama" placeholder="Nama lengkapmu">
+<label for="inKelas">KELAS *</label>
+<input type="text" id="inKelas" list="dlKelas" placeholder="Pilih atau ketik kelasmu, mis. VIII A" autocomplete="off">
+<datalist id="dlKelas">
+<option value="VIII A"></option><option value="VIII B"></option><option value="VIII C"></option><option value="VIII D"></option><option value="VIII E"></option><option value="VIII F"></option><option value="VIII G"></option><option value="VIII H"></option><option value="VIII I"></option>
+<option value="VIII"></option><option value="IX"></option><option value="VII"></option>
+</datalist>
+<label for="inAbsen">NO. ABSEN *</label>
+<input type="text" id="inAbsen" inputmode="numeric" placeholder="Nomor absen">
+<label for="inSekolah">NAMA SEKOLAH *</label>
+<input type="text" id="inSekolah" list="dlSekolah" value="SMP Negeri 1 Bantarkawung" autocomplete="off">
+<datalist id="dlSekolah">
+<option value="SMP Negeri 1 Bantarkawung"></option>
+</datalist>
+<p style="margin:4px 0 0"><small>Siswa dari sekolah lain: ganti nama sekolah di atas dengan nama sekolahmu sendiri.</small></p>
+<p id="errMulai" class="salah sembunyi"></p>
+<div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+<button class="btn" onclick="mulai()">▶ Mulai Asesmen (90 Menit)</button>
+<button class="btn biru" onclick="bukaPanelGuru()">Panel Guru</button>
+</div>
+<p><small>Simulasi ini mencakup Pola Bilangan, Relasi &amp; Fungsi, Persamaan Garis Lurus, dan Sistem Persamaan Linear Dua Variabel (SPLDV) — sesuai kisi-kisi ASAS 1 Kabupaten Brebes. <b>Urutan soal dan pilihan jawaban diacak untuk setiap siswa</b>, jadi nomor soalmu bisa berbeda dengan teman di sebelahmu. Nilai langsung tampil setelah selesai dan otomatis tersimpan ke database guru. Kerjakan dengan jujur — Aku Bisa, Jujur, Bahagia!</small></p>
+</div>
+
+<!-- LAYAR UJIAN -->
+<div id="layarUjian" class="sembunyi">
+<div class="bar"><div><b id="barNama"></b><br><small id="barKelas"></small></div><div id="timer">90:00</div></div>
+<div class="kartu soal">
+<h3 id="soalLabel"></h3>
+<div class="iteks" id="soalTeks"></div>
+<div id="soalIsi"></div>
+<div class="nav">
+<button class="btn abu" id="btnPrev" onclick="geser(-1)">← Sebelumnya</button>
+<button class="btn biru" id="btnNext" onclick="geser(1)">Berikutnya →</button>
+</div>
+<div class="palet" id="palet"></div>
+<hr style="border:none;border-top:1px solid #e1e9ee;margin:18px 0">
+<button class="btn emas" style="width:100%" onclick="konfirmasiSelesai()">✔ Selesai &amp; Kirim Jawaban</button>
+</div>
+</div>
+
+<!-- LAYAR HASIL -->
+<div id="layarHasil" class="sembunyi">
+<div class="kartu">
+<h2 class="tengah" style="margin-bottom:0">Hasil Simulasimu</h2>
+<div class="nilai-besar" id="nilaiBesar">0</div>
+<div class="status" id="statusHasil"></div>
+<p class="tengah" id="ringkasHasil"></p>
+<p class="tengah"><small>Kode verifikasi: <b id="kodeVerif"></b></small></p>
+<p class="status-simpan" id="statusSimpan"></p>
+<p class="tengah"><button class="btn abu sembunyi" id="btnSimpanUlang" onclick="simpanHasil()">Simpan Ulang</button></p>
+</div>
+<div class="kartu" id="kartuUlasan">
+<h3 style="margin-top:0">Ulasan Jawaban (Kunci &amp; Pembahasan)</h3>
+<div id="gerbangUlasan">
+<p>Masukkan kata sandi guru untuk membuka kunci dan pembahasan.</p>
+<input type="text" id="sandiUlasan" placeholder="Kata sandi guru" autocomplete="off">
+<p id="sandiSalah" class="salah sembunyi">Kata sandi salah.</p>
+<button class="btn biru" style="margin-top:10px" onclick="bukaUlasan()">Buka Ulasan</button>
+</div>
+<div id="ulasan" class="sembunyi"></div>
+</div>
+<div class="tengah"><button class="btn" onclick="location.reload()">Kembali ke Awal</button></div>
+</div>
+
+<!-- LAYAR GURU -->
+<div id="layarGuru" class="kartu sembunyi">
+<h2 style="margin-top:0">Panel Guru — Simulasi ASAS 1 Matematika VIII</h2>
+<label for="filterSekolah">SARING SEKOLAH</label>
+<select id="filterSekolah" onchange="gambarTabelGuru()"><option value="">— Semua Sekolah —</option></select>
+<p id="statGuru">Memuat data…</p>
+<div class="scroll-x"><table>
+<thead><tr><th>No</th><th>Nama</th><th>Kelas</th><th>Absen</th><th>Sekolah</th><th>Nilai</th><th>Status</th><th>Kode</th><th>Waktu</th></tr></thead>
+<tbody id="isiTabelGuru"></tbody></table></div>
+<div style="margin-top:14px;display:flex;gap:10px">
+<button class="btn biru" onclick="muatNilaiGuru()">Muat Ulang</button>
+<button class="btn abu" onclick="tutupPanelGuru()">Tutup</button>
+</div>
+</div>
+
+</div>
+<script>
+const SB_URL = 'https://vovjeijhxnehhtxjqtkm.supabase.co';
+const SB_KEY = 'sb_publishable_-DF9cSfj-OoFYMMlVM3nJw_PJzzVRBV';
+const TOKEN_SESI = 'MTK8-BANTAR';
+const SANDI_ULASAN = 'yosad67';
+const KKM = 75;
+const ASESMEN = 'SIMULASI ASAS 1 MATEMATIKA VIII';
+let SOAL = [{"no": 1, "tipe": "PG", "soal": "Perhatikan barisan bilangan berikut:\n3, 6, 11, 18, 27, …\n\nTiga bilangan berikutnya dari barisan tersebut adalah...", "bahas": "Diketahui: barisan 3, 6, 11, 18, 27, … dengan selisih berturut-turut 3, 5, 7, 9 (selalu naik 2).\nDitanyakan: tiga bilangan berikutnya.\nRumus: selisih berikutnya = selisih sebelumnya + 2, yaitu 11, 13, 15.\nSubstitusi & hitungan: 27 + 11 = 38; 38 + 13 = 51; 51 + 15 = 66.\nKesimpulan: tiga bilangan berikutnya adalah 38, 51, 66.", "opsi": ["36, 47, 60", "38, 51, 66", "38, 49, 62", "36, 49, 64"], "kunci": 1}, {"no": 2, "tipe": "PG", "soal": "Susunan batang korek api membentuk pola berikut: pola ke-1 terdiri atas 3 batang, pola ke-2 terdiri atas 5 batang, dan pola ke-3 terdiri atas 7 batang.\n\nBanyak batang korek api pada pola ke-15 adalah...", "bahas": "Diketahui: banyak batang pola ke-1, 2, 3 berturut-turut 3, 5, 7 (bertambah tetap 2).\nDitanyakan: banyak batang pada pola ke-15.\nRumus: Un = a + (n − 1)b dengan a = 3 dan b = 2, sehingga Un = 2n + 1.\nSubstitusi: U15 = 2(15) + 1.\nHitungan: U15 = 30 + 1 = 31.\nKesimpulan: banyak batang pada pola ke-15 adalah 31 batang.", "opsi": ["29 batang", "31 batang", "33 batang", "45 batang"], "kunci": 1}, {"no": 3, "tipe": "PG", "soal": "Diketahui barisan aritmetika: 5, 9, 13, 17, …\n\nRumus suku ke-n barisan tersebut adalah...", "bahas": "Diketahui: barisan aritmetika 5, 9, 13, 17, … dengan suku pertama a = 5 dan beda b = 9 − 5 = 4.\nDitanyakan: rumus suku ke-n.\nRumus: Un = a + (n − 1)b.\nSubstitusi: Un = 5 + (n − 1)(4) = 5 + 4n − 4.\nHitungan: Un = 4n + 1.\nKesimpulan: rumus suku ke-n barisan tersebut adalah Un = 4n + 1.", "opsi": ["Un = 4n + 1", "Un = 4n + 5", "Un = 5n − 1", "Un = n + 4"], "kunci": 0}, {"no": 4, "tipe": "PG", "soal": "Diketahui barisan aritmetika: 7, 13, 19, 25, …\n\nSuku ke-25 barisan tersebut adalah...", "bahas": "Diketahui: barisan aritmetika 7, 13, 19, 25, … dengan a = 7 dan beda b = 13 − 7 = 6.\nDitanyakan: suku ke-25.\nRumus: Un = a + (n − 1)b.\nSubstitusi: U25 = 7 + (25 − 1)(6) = 7 + 24 × 6.\nHitungan: U25 = 7 + 144 = 151.\nKesimpulan: suku ke-25 barisan tersebut adalah 151.", "opsi": ["145", "151", "157", "139"], "kunci": 1}, {"no": 5, "tipe": "PG", "soal": "Diketahui himpunan A = {2, 3, 4, 5} dan himpunan B = {4, 6, 8, 10}. Relasi dari A ke B adalah \"setengah dari\".\n\nHimpunan pasangan berurutan yang menyatakan relasi tersebut adalah...", "bahas": "Diketahui: A = {2, 3, 4, 5}, B = {4, 6, 8, 10}, relasi \"setengah dari\" (a adalah setengah dari b, artinya b = 2a).\nDitanyakan: himpunan pasangan berurutan relasi tersebut.\nHitungan: 2 setengah dari 4 → (2, 4); 3 setengah dari 6 → (3, 6); 4 setengah dari 8 → (4, 8); 5 setengah dari 10 → (5, 10).\nKesimpulan: himpunan pasangan berurutannya adalah {(2, 4), (3, 6), (4, 8), (5, 10)}.", "opsi": ["{(2, 4), (3, 6), (4, 8), (5, 10)}", "{(4, 2), (6, 3), (8, 4), (10, 5)}", "{(2, 4), (3, 6), (4, 10), (5, 8)}", "{(2, 6), (3, 4), (4, 8), (5, 10)}"], "kunci": 0}, {"no": 6, "tipe": "PG", "soal": "Diagram panah dari himpunan A = {2, 3, 4, 6} ke himpunan B = {4, 6, 8, 9, 12} menunjukkan panah-panah berikut:\n2 → 4, 2 → 6, 3 → 6, 3 → 9, 4 → 8, 4 → 12, 6 → 12.\n\nRelasi yang tepat dari A ke B pada diagram panah tersebut adalah...", "bahas": "Diketahui: panah-panah 2 → 4, 2 → 6, 3 → 6, 3 → 9, 4 → 8, 4 → 12, 6 → 12.\nDitanyakan: nama relasi yang tepat.\nHitungan: periksa setiap panah — 2 adalah faktor dari 4 dan 6; 3 adalah faktor dari 6 dan 9; 4 adalah faktor dari 8 dan 12; 6 adalah faktor dari 12. Semua panah memenuhi hubungan \"faktor dari\".\nKesimpulan: relasi yang tepat adalah \"faktor dari\".", "opsi": ["faktor dari", "kelipatan dari", "kuadrat dari", "dua kali dari"], "kunci": 0}, {"no": 7, "tipe": "PG", "soal": "Perhatikan himpunan pasangan berurutan berikut:\n(i) {(1, 2), (2, 3), (2, 4), (3, 5)}\n(ii) {(1, 3), (2, 3), (3, 3), (4, 5)}\n(iii) {(2, 1), (2, 2), (3, 1), (4, 1)}\n(iv) {(3, 2), (4, 2), (4, 3), (5, 3)}\n\nHimpunan pasangan berurutan yang merupakan fungsi (pemetaan) adalah...", "bahas": "Diketahui: empat himpunan pasangan berurutan (i)–(iv).\nDitanyakan: yang merupakan fungsi.\nRumus/syarat: relasi disebut fungsi jika setiap anggota domain (komponen pertama) berpasangan dengan tepat satu anggota kodomain.\nHitungan: (i) angka 2 berpasangan dengan 3 dan 4 → bukan fungsi. (ii) setiap komponen pertama muncul tepat satu kali → fungsi. (iii) angka 2 berpasangan dengan 1 dan 2 → bukan fungsi. (iv) angka 4 berpasangan dengan 2 dan 3 → bukan fungsi.\nKesimpulan: yang merupakan fungsi adalah (ii).", "opsi": ["(i)", "(ii)", "(iii)", "(iv)"], "kunci": 1}, {"no": 8, "tipe": "PG", "soal": "Diketahui himpunan P = {1, 2, 3} dan himpunan Q = {a, b, c, d}.\n\nBanyak pemetaan (fungsi) yang mungkin dari himpunan P ke himpunan Q adalah...", "bahas": "Diketahui: n(P) = 3 dan n(Q) = 4.\nDitanyakan: banyak pemetaan yang mungkin dari P ke Q.\nRumus: banyak pemetaan dari P ke Q = n(Q)^n(P).\nSubstitusi: 4³.\nHitungan: 4 × 4 × 4 = 64.\nKesimpulan: banyak pemetaan yang mungkin dari P ke Q adalah 64.", "opsi": ["12", "64", "81", "7"], "kunci": 1}, {"no": 9, "tipe": "PG", "soal": "Gradien garis dengan persamaan 3x + 6y = 12 adalah...", "bahas": "Diketahui: persamaan garis 3x + 6y = 12.\nDitanyakan: gradien garis.\nRumus: untuk garis ax + by + c = 0, gradien m = −a/b.\nSubstitusi: ubah ke bentuk 3x + 6y − 12 = 0, maka a = 3 dan b = 6, sehingga m = −3/6.\nHitungan: m = −1/2.\nKesimpulan: gradien garis tersebut adalah −1/2.", "opsi": ["−1/2", "1/2", "−2", "2"], "kunci": 0}, {"no": 10, "tipe": "PG", "soal": "Gradien garis yang melalui titik pangkal koordinat O(0, 0) dan titik (4, −6) adalah...", "bahas": "Diketahui: garis melalui O(0, 0) dan titik (4, −6).\nDitanyakan: gradien garis.\nRumus: gradien garis melalui titik pangkal dan titik (a, b) adalah m = b/a.\nSubstitusi: m = −6/4.\nHitungan: m = −3/2.\nKesimpulan: gradien garis tersebut adalah −3/2.", "opsi": ["−3/2", "3/2", "−2/3", "2/3"], "kunci": 0}, {"no": 11, "tipe": "PG", "soal": "Gradien garis yang melalui titik A(2, 3) dan B(6, 11) adalah...", "bahas": "Diketahui: garis melalui A(2, 3) dan B(6, 11).\nDitanyakan: gradien garis.\nRumus: m = (y₂ − y₁)/(x₂ − x₁).\nSubstitusi: m = (11 − 3)/(6 − 2) = 8/4.\nHitungan: m = 2.\nKesimpulan: gradien garis tersebut adalah 2.", "opsi": ["1/2", "2", "−2", "4"], "kunci": 1}, {"no": 12, "tipe": "PG", "soal": "Persamaan garis yang melalui titik (−2, 5) dan bergradien 3 adalah...", "bahas": "Diketahui: garis melalui titik (x₁, y₁) = (−2, 5) dengan gradien m = 3.\nDitanyakan: persamaan garis.\nRumus: y − y₁ = m(x − x₁).\nSubstitusi: y − 5 = 3(x − (−2)) = 3(x + 2).\nHitungan: y − 5 = 3x + 6 → y = 3x + 11.\nKesimpulan: persamaan garis tersebut adalah y = 3x + 11.", "opsi": ["y = 3x + 11", "y = 3x − 1", "y = 3x + 1", "y = −3x + 11"], "kunci": 0}, {"no": 13, "tipe": "PG", "soal": "Perhatikan persamaan-persamaan berikut:\n(i) x + 2y = 10\n(ii) x² + y = 5\n(iii) x + y + z = 12\n(iv) 3x = 9\n\nPersamaan yang merupakan persamaan linear dua variabel adalah...", "bahas": "Diketahui: empat persamaan (i)–(iv).\nDitanyakan: yang merupakan persamaan linear dua variabel (PLDV).\nSyarat PLDV: memuat tepat dua variabel dan setiap variabel berpangkat satu.\nHitungan: (i) dua variabel x dan y, keduanya berpangkat satu → PLDV. (ii) x berpangkat dua → bukan. (iii) memuat tiga variabel → bukan. (iv) hanya satu variabel → bukan.\nKesimpulan: yang merupakan PLDV adalah (i) x + 2y = 10.", "opsi": ["x + 2y = 10", "x² + y = 5", "x + y + z = 12", "3x = 9"], "kunci": 0}, {"no": 14, "tipe": "PG", "soal": "Diketahui sistem persamaan linear dua variabel:\n2x + y = 11\nx − y = 1\n\nNilai x yang memenuhi sistem persamaan tersebut adalah...", "bahas": "Diketahui: 2x + y = 11 dan x − y = 1.\nDitanyakan: nilai x.\nRumus: metode eliminasi — jumlahkan kedua persamaan untuk mengeliminasi y.\nSubstitusi & hitungan: (2x + y) + (x − y) = 11 + 1 → 3x = 12 → x = 4.\nKesimpulan: nilai x yang memenuhi adalah 4.", "opsi": ["3", "4", "5", "7"], "kunci": 1}, {"no": 15, "tipe": "PG", "soal": "Himpunan penyelesaian dari sistem persamaan 3x + 2y = 16 dan x + y = 6 adalah {(a, b)}.\n\nNilai dari 2a − b adalah...", "bahas": "Diketahui: 3x + 2y = 16 dan x + y = 6, dengan penyelesaian {(a, b)}.\nDitanyakan: nilai 2a − b.\nRumus: metode substitusi — dari persamaan kedua, x = 6 − y.\nSubstitusi: 3(6 − y) + 2y = 16 → 18 − 3y + 2y = 16 → −y = −2 → y = 2, sehingga b = 2 dan a = x = 6 − 2 = 4.\nHitungan: 2a − b = 2(4) − 2 = 8 − 2 = 6.\nKesimpulan: nilai 2a − b adalah 6.", "opsi": ["4", "6", "8", "10"], "kunci": 1}, {"no": 16, "tipe": "BS", "soal": "Diketahui barisan aritmetika: 4, 7, 10, 13, …\n\nTentukan kebenaran dari masing-masing pernyataan berikut dengan memilih BENAR (B) atau SALAH (S)!", "bahas": "Diketahui: barisan aritmetika dengan a = 4 dan beda b = 3, sehingga Un = 4 + (n − 1)(3) = 3n + 1.\nPernyataan 1: Un = 3n + 1 → BENAR.\nPernyataan 2: U10 = 3(10) + 1 = 31, bukan 34 → SALAH.\nPernyataan 3: jumlah 10 suku pertama Sn = n/2 × (a + Un) = 10/2 × (4 + 31) = 5 × 35 = 175 → BENAR.\nKesimpulan: urutan kebenarannya adalah Benar, Salah, Benar.", "pernyataan": ["Rumus suku ke-n barisan tersebut adalah Un = 3n + 1.", "Suku ke-10 barisan tersebut adalah 34.", "Jumlah 10 suku pertama barisan tersebut adalah 175."], "kunci": [true, false, true]}, {"no": 17, "tipe": "BS", "soal": "Sebuah pabrik melakukan uji coba mesin produksi. Pada hari ke-1 mesin menghasilkan 20 unit barang, hari ke-2 menghasilkan 26 unit, dan hari ke-3 menghasilkan 32 unit. Banyak produksi bertambah tetap setiap hari.\n\nTentukan kebenaran dari masing-masing pernyataan berikut dengan memilih BENAR (B) atau SALAH (S)!", "bahas": "Diketahui: produksi hari ke-1, 2, 3 berturut-turut 20, 26, 32 — barisan aritmetika dengan a = 20 dan beda b = 6, sehingga Un = 20 + (n − 1)(6) = 6n + 14.\nPernyataan 1: Un = 6n + 14 → BENAR.\nPernyataan 2: U10 = 6(10) + 14 = 74, bukan 80 → SALAH.\nPernyataan 3: U14 = 6(14) + 14 = 98 dan U15 = 6(15) + 14 = 104, jadi produksi pertama kali melampaui 100 unit pada hari ke-15 → BENAR.\nKesimpulan: urutan kebenarannya adalah Benar, Salah, Benar.", "pernyataan": ["Rumus banyak produksi pada hari ke-n adalah Un = 6n + 14.", "Banyak produksi pada hari ke-10 adalah 80 unit.", "Produksi pertama kali melampaui 100 unit pada hari ke-15."], "kunci": [true, false, true]}, {"no": 18, "tipe": "BS", "soal": "Suatu relasi dari himpunan A = {1, 2, 3, 4} ke himpunan B dinyatakan dengan himpunan pasangan berurutan {(1, 3), (2, 5), (3, 7), (4, 9)}.\n\nTentukan kebenaran dari masing-masing pernyataan berikut dengan memilih BENAR (B) atau SALAH (S)!", "bahas": "Diketahui: himpunan pasangan berurutan {(1, 3), (2, 5), (3, 7), (4, 9)} dengan domain A = {1, 2, 3, 4}.\nPernyataan 1: setiap anggota domain berpasangan tepat satu kali → relasi ini fungsi → BENAR.\nPernyataan 2: range adalah himpunan komponen kedua = {3, 5, 7, 9} → BENAR.\nPernyataan 3: pola pasangan adalah 3 = 2(1) + 1, 5 = 2(2) + 1, dan seterusnya, jadi rumus fungsinya f(x) = 2x + 1, bukan 2x + 3 → SALAH.\nKesimpulan: urutan kebenarannya adalah Benar, Benar, Salah.", "pernyataan": ["Relasi tersebut merupakan fungsi (pemetaan).", "Range dari relasi tersebut adalah {3, 5, 7, 9}.", "Rumus fungsi dari relasi tersebut adalah f(x) = 2x + 3."], "kunci": [true, true, false]}, {"no": 19, "tipe": "BS", "soal": "Garis g melalui titik (1, 4) dan sejajar dengan garis 2x − y = 5.\n\nTentukan kebenaran dari masing-masing pernyataan berikut dengan memilih BENAR (B) atau SALAH (S)!", "bahas": "Diketahui: garis 2x − y = 5 ⇔ y = 2x − 5 bergradien 2; garis g sejajar dengannya dan melalui titik (1, 4).\nPernyataan 1: garis sejajar memiliki gradien sama, jadi gradien g adalah 2 → BENAR.\nPernyataan 2: persamaan g: y − 4 = 2(x − 1) → y = 2x + 2 → BENAR.\nPernyataan 3: uji titik (0, 4): y = 2(0) + 2 = 2 ≠ 4, jadi titik (0, 4) tidak terletak pada garis g → SALAH.\nKesimpulan: urutan kebenarannya adalah Benar, Benar, Salah.", "pernyataan": ["Gradien garis g adalah 2.", "Persamaan garis g adalah y = 2x + 2.", "Garis g melalui titik (0, 4)."], "kunci": [true, true, false]}, {"no": 20, "tipe": "BS", "soal": "Sebuah lahan parkir memuat 20 kendaraan yang terdiri atas sepeda motor dan mobil. Tarif parkir sepeda motor Rp2.000,00 dan mobil Rp5.000,00. Pada suatu hari, tukang parkir memperoleh uang parkir sebesar Rp64.000,00.\n\nTentukan kebenaran dari masing-masing pernyataan berikut dengan memilih BENAR (B) atau SALAH (S)!", "bahas": "Diketahui: jumlah kendaraan 20 dan total uang parkir Rp64.000. Misalkan m = banyak motor dan b = banyak mobil.\nModel SPLDV: m + b = 20 dan 2.000m + 5.000b = 64.000.\nSubstitusi m = 20 − b: 2.000(20 − b) + 5.000b = 64.000 → 40.000 + 3.000b = 64.000 → b = 8, sehingga m = 12.\nPernyataan 1: banyak mobil 8 → BENAR.\nPernyataan 2: banyak motor 12, bukan 10 → SALAH.\nPernyataan 3: pendapatan dari mobil = 8 × Rp5.000 = Rp40.000 → BENAR.\nKesimpulan: urutan kebenarannya adalah Benar, Salah, Benar.", "pernyataan": ["Banyak mobil yang parkir adalah 8 kendaraan.", "Banyak sepeda motor yang parkir adalah 10 kendaraan.", "Pendapatan parkir dari mobil saja adalah Rp40.000,00."], "kunci": [true, false, true]}, {"no": 21, "tipe": "MCMA", "soal": "Sebuah gedung pertunjukan memiliki susunan kursi sebagai berikut: baris ke-1 memuat 15 kursi dan setiap baris berikutnya memuat 2 kursi lebih banyak daripada baris sebelumnya.\n\nPilihlah SEMUA pernyataan yang BENAR berkaitan dengan susunan kursi tersebut!", "bahas": "Diketahui: barisan aritmetika dengan a = 15 dan beda b = 2, sehingga Un = 15 + (n − 1)(2) = 2n + 13.\nPernyataan 1: U10 = 2(10) + 13 = 33 → BENAR.\nPernyataan 2: rumus baris ke-n adalah Un = 2n + 13 → BENAR.\nPernyataan 3: jumlah 5 baris pertama S5 = 5/2 × (15 + 23) = 95, bukan 85 → SALAH.\nPernyataan 4: U20 = 2(20) + 13 = 53 → BENAR.\nKesimpulan: pernyataan yang benar adalah nomor 1, 2, dan 4.", "pernyataan": ["Banyak kursi pada baris ke-10 adalah 33 kursi.", "Rumus banyak kursi pada baris ke-n adalah Un = 2n + 13.", "Jumlah kursi pada 5 baris pertama adalah 85 kursi.", "Banyak kursi pada baris ke-20 adalah 53 kursi."], "kunci": [0, 1, 3]}, {"no": 22, "tipe": "MCMA", "soal": "Diketahui fungsi f(x) = ax + b. Jika f(2) = 7 dan f(4) = 13, pilihlah SEMUA pernyataan yang BENAR berikut ini!", "bahas": "Diketahui: f(2) = 7 dan f(4) = 13 untuk f(x) = ax + b.\nModel: 2a + b = 7 dan 4a + b = 13. Eliminasi: 2a = 6 → a = 3, lalu b = 7 − 2(3) = 1. Jadi f(x) = 3x + 1.\nPernyataan 1: a = 3 dan b = 1 → BENAR.\nPernyataan 2: rumus fungsinya f(x) = 3x + 1 → BENAR.\nPernyataan 3: f(5) = 3(5) + 1 = 16 → BENAR.\nPernyataan 4: f(−1) = 3(−1) + 1 = −2, bukan −4 → SALAH.\nKesimpulan: pernyataan yang benar adalah nomor 1, 2, dan 3.", "pernyataan": ["Nilai a = 3 dan b = 1.", "Rumus fungsinya adalah f(x) = 3x + 1.", "Nilai f(5) adalah 16.", "Nilai f(−1) adalah −4."], "kunci": [0, 1, 2]}, {"no": 23, "tipe": "MCMA", "soal": "Sebuah jasa pengiriman barang menetapkan tarif sebagai berikut: biaya dasar Rp8.000,00 ditambah Rp2.500,00 untuk setiap kilogram berat barang.\n\nPilihlah SEMUA pernyataan yang BENAR berkaitan dengan tarif pengiriman tersebut!", "bahas": "Diketahui: biaya dasar Rp8.000 dan tarif Rp2.500 per kg. Jika x menyatakan berat barang (kg), biaya total f(x) = 2.500x + 8.000.\nPernyataan 1: rumus biaya f(x) = 2.500x + 8.000 → BENAR.\nPernyataan 2: f(4) = 2.500(4) + 8.000 = 10.000 + 8.000 = Rp18.000 → BENAR.\nPernyataan 3: f(10) = 2.500(10) + 8.000 = Rp33.000, bukan Rp30.000 → SALAH.\nPernyataan 4: laju perubahan biaya (gradien) adalah tarif per kg, yaitu 2.500 → BENAR.\nKesimpulan: pernyataan yang benar adalah nomor 1, 2, dan 4.", "pernyataan": ["Rumus biaya pengiriman untuk barang seberat x kg adalah f(x) = 2.500x + 8.000.", "Biaya mengirim paket seberat 4 kg adalah Rp18.000,00.", "Biaya mengirim paket seberat 10 kg adalah Rp30.000,00.", "Gradien (laju perubahan biaya per kilogram) adalah 2.500."], "kunci": [0, 1, 3]}, {"no": 24, "tipe": "MCMA", "soal": "Di sebuah gudang terdapat karung beras dan karung gula yang masing-masing sejenis sama beratnya. Tiga karung beras dan dua karung gula berat seluruhnya 210 kg, sedangkan dua karung beras dan tiga karung gula berat seluruhnya 190 kg.\n\nPilihlah SEMUA pernyataan yang BENAR berikut ini!", "bahas": "Diketahui: 3 karung beras + 2 karung gula = 210 kg dan 2 karung beras + 3 karung gula = 190 kg. Misalkan b = berat 1 karung beras dan g = berat 1 karung gula (kg).\nModel SPLDV: 3b + 2g = 210 dan 2b + 3g = 190. Eliminasi: 9b + 6g = 630 dan 4b + 6g = 380, selisihnya 5b = 250 → b = 50; lalu 3(50) + 2g = 210 → g = 30.\nPernyataan 1: berat 1 karung beras 50 kg → BENAR.\nPernyataan 2: berat 1 karung gula 30 kg, bukan 25 kg → SALAH.\nPernyataan 3: perbandingan beras : gula = 50 : 30 = 5 : 3 → BENAR.\nPernyataan 4: berat 10 karung beras + 10 karung gula = 500 + 300 = 800 kg = 0,8 ton → BENAR.\nKesimpulan: pernyataan yang benar adalah nomor 1, 3, dan 4.", "pernyataan": ["Berat satu karung beras adalah 50 kg.", "Berat satu karung gula adalah 25 kg.", "Perbandingan berat satu karung beras dan satu karung gula adalah 5 : 3.", "Berat 10 karung beras dan 10 karung gula adalah 0,8 ton."], "kunci": [0, 2, 3]}, {"no": 25, "tipe": "MCMA", "soal": "Harga 2 buku tulis dan 3 pensil adalah Rp17.000,00, sedangkan harga 3 buku tulis dan 2 pensil adalah Rp18.000,00.\n\nPilihlah SEMUA pernyataan yang BENAR berikut ini!", "bahas": "Diketahui: 2 buku + 3 pensil = Rp17.000 dan 3 buku + 2 pensil = Rp18.000. Misalkan b = harga 1 buku dan p = harga 1 pensil (rupiah).\nModel SPLDV: 2b + 3p = 17.000 dan 3b + 2p = 18.000. Eliminasi: 4b + 6p = 34.000 dan 9b + 6p = 54.000, selisihnya 5b = 20.000 → b = 4.000; lalu 2(4.000) + 3p = 17.000 → p = 3.000.\nPernyataan 1: harga 1 buku Rp4.000 → BENAR.\nPernyataan 2: harga 1 pensil Rp3.000 → BENAR.\nPernyataan 3: harga 1 buku + 1 pensil = Rp7.000, bukan Rp8.000 → SALAH.\nPernyataan 4: harga 5 buku + 5 pensil = 5 × Rp7.000 = Rp35.000 → BENAR.\nKesimpulan: pernyataan yang benar adalah nomor 1, 2, dan 4.", "pernyataan": ["Harga satu buku tulis adalah Rp4.000,00.", "Harga satu pensil adalah Rp3.000,00.", "Harga satu buku tulis dan satu pensil adalah Rp8.000,00.", "Harga 5 buku tulis dan 5 pensil adalah Rp35.000,00."], "kunci": [0, 1, 3]}, {"no": 26, "tipe": "URAIAN", "soal": "Pola penyusunan tiang beton pada sebuah bangunan adalah sebagai berikut: pola ke-1 memerlukan 4 tiang, pola ke-2 memerlukan 7 tiang, dan pola ke-3 memerlukan 10 tiang. Banyak tiang bertambah tetap pada setiap pola berikutnya.\n\nBerapakah banyak tiang beton yang dibutuhkan pada pola ke-25?", "bahas": "Diketahui: banyak tiang pola ke-1, 2, 3 berturut-turut 4, 7, 10 — barisan aritmetika dengan a = 4 dan beda b = 3.\nDitanyakan: banyak tiang pada pola ke-25.\nRumus: Un = a + (n − 1)b.\nSubstitusi: U25 = 4 + (25 − 1)(3) = 4 + 24 × 3.\nHitungan: U25 = 4 + 72 = 76.\nKesimpulan: banyak tiang yang dibutuhkan pada pola ke-25 adalah 76 tiang.", "kunciTeks": "76", "cek": {"jenis": "angka", "target": 76, "petunjuk": "Tulis angka saja (satuannya tiang). Contoh: 76"}, "petunjuk": "Tulis angka saja (satuannya tiang). Contoh: 76"}, {"no": 27, "tipe": "URAIAN", "soal": "Diketahui rumus fungsi f(x) = 4x − 7.\n\nTentukan nilai f(6)!", "bahas": "Diketahui: f(x) = 4x − 7.\nDitanyakan: nilai f(6).\nRumus: substitusikan x = 6 ke dalam rumus fungsi.\nSubstitusi: f(6) = 4(6) − 7.\nHitungan: f(6) = 24 − 7 = 17.\nKesimpulan: nilai f(6) adalah 17.", "kunciTeks": "17", "cek": {"jenis": "angka", "target": 17, "petunjuk": "Tulis angka saja. Contoh: 17"}, "petunjuk": "Tulis angka saja. Contoh: 17"}, {"no": 28, "tipe": "URAIAN", "soal": "Tentukan persamaan garis yang melalui titik (1, 3) dan tegak lurus dengan garis x − 2y = 4.\n\nTuliskan persamaan garis tersebut dalam bentuk y = mx + c!", "bahas": "Diketahui: garis x − 2y = 4 ⇔ y = 1/2 x − 2 bergradien m₁ = 1/2; garis yang dicari melalui titik (1, 3) dan tegak lurus garis tersebut.\nDitanyakan: persamaan garis dalam bentuk y = mx + c.\nRumus: dua garis tegak lurus memenuhi m₁ × m₂ = −1, dan persamaan garis melalui titik (x₁, y₁) adalah y − y₁ = m(x − x₁).\nSubstitusi: m₂ = −1/(1/2) = −2; y − 3 = −2(x − 1).\nHitungan: y − 3 = −2x + 2 → y = −2x + 5.\nKesimpulan: persamaan garis tersebut adalah y = −2x + 5.", "kunciTeks": "y = -2x + 5", "cek": {"jenis": "teks", "terima": ["y=-2x+5", "2x+y=5", "2x+y-5=0"], "petunjuk": "Tulis persamaan garisnya. Contoh: y = -2x + 5"}, "petunjuk": "Tulis persamaan garisnya dalam bentuk y = mx + c. Contoh: y = -2x + 5"}, {"no": 29, "tipe": "URAIAN", "soal": "Di sebuah ladang terdapat hewan ternak ayam dan kambing. Jumlah seluruh hewan adalah 25 ekor dan jumlah seluruh kakinya adalah 70 kaki.\n\nBerapakah banyak kambing di ladang tersebut?", "bahas": "Diketahui: jumlah ayam + kambing = 25 ekor dan jumlah kaki seluruhnya 70 (ayam berkaki 2, kambing berkaki 4). Misalkan a = banyak ayam dan k = banyak kambing.\nDitanyakan: banyak kambing.\nModel SPLDV: a + k = 25 dan 2a + 4k = 70.\nSubstitusi a = 25 − k: 2(25 − k) + 4k = 70 → 50 + 2k = 70 → 2k = 20.\nHitungan: k = 10.\nKesimpulan: banyak kambing di ladang tersebut adalah 10 ekor.", "kunciTeks": "10", "cek": {"jenis": "angka", "target": 10, "petunjuk": "Tulis angka saja (satuannya ekor). Contoh: 10"}, "petunjuk": "Tulis angka saja (satuannya ekor). Contoh: 10"}, {"no": 30, "tipe": "URAIAN", "soal": "Harga tiket masuk sebuah tempat wisata adalah Rp30.000,00 untuk dewasa dan Rp20.000,00 untuk anak-anak. Pada suatu hari, terjual 120 tiket dengan total pendapatan Rp3.000.000,00.\n\nBerapakah banyak penonton anak-anak pada hari itu?", "bahas": "Diketahui: harga tiket dewasa Rp30.000 dan anak-anak Rp20.000; terjual 120 tiket dengan pendapatan Rp3.000.000. Misalkan d = banyak penonton dewasa dan a = banyak penonton anak-anak.\nDitanyakan: banyak penonton anak-anak.\nModel SPLDV: d + a = 120 dan 30.000d + 20.000a = 3.000.000 (disederhanakan: 3d + 2a = 300).\nSubstitusi d = 120 − a: 3(120 − a) + 2a = 300 → 360 − a = 300 → a = 60.\nHitungan: banyak penonton anak-anak = 60.\nKesimpulan: banyak penonton anak-anak pada hari itu adalah 60 orang.", "kunciTeks": "60", "cek": {"jenis": "angka", "target": 60, "petunjuk": "Tulis angka saja (satuannya orang). Contoh: 60"}, "petunjuk": "Tulis angka saja (satuannya orang). Contoh: 60"}];
+const TOTAL_POIN = SOAL.reduce((a,s)=> a + (s.tipe==='PG'?1 : s.tipe==='URAIAN'?4 : s.pernyataan.length), 0);
+
+let siswa = null, jawaban = [], idx = 0, sisaDetik = 90*60, timerId = null, mulaiPada = null, payloadHasil = null, terkirim = false;
+
+function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function huruf(i){return 'ABCD'[i]}
+
+function acakArr(a){ const x = a.slice(); for (let i=x.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); const t=x[i]; x[i]=x[j]; x[j]=t; } return x; }
+function buatAcakan(bankSoal){
+  return acakArr(bankSoal).map(s => {
+    const c = JSON.parse(JSON.stringify(s));
+    if (c.tipe==='PG'){
+      const ps = acakArr(c.opsi.map((o,i)=>({o, k: i===c.kunci})));
+      c.opsi = ps.map(p=>p.o); c.kunci = ps.findIndex(p=>p.k);
+    } else if (c.tipe==='BS'){
+      const ps = acakArr(c.pernyataan.map((t,i)=>({t, k: c.kunci[i]})));
+      c.pernyataan = ps.map(p=>p.t); c.kunci = ps.map(p=>p.k);
+    } else if (c.tipe==='MCMA'){
+      const ps = acakArr(c.pernyataan.map((t,i)=>({t, k: c.kunci.includes(i)})));
+      c.pernyataan = ps.map(p=>p.t); c.kunci = ps.map((p,i)=>p.k?i:-1).filter(i=>i>=0);
+    }
+    return c;
+  });
+}
+function normTeks(t){ return String(t||'').toLowerCase().replace(/sqrt/g,'\u221a').replace(/[\u00d7*\u00b7]/g,'').replace(/\s+/g,''); }
+function nilaiUraian(s, j){
+  const teks = String(j||'').trim(); if (!teks) return false;
+  const c = s.cek || {};
+  if (c.jenis==='angka'){ const m = teks.replace(',','.').match(/-?\d+(\.\d+)?/); return !!m && Math.abs(parseFloat(m[0]) - c.target) < 0.001; }
+  if (c.jenis==='koordinat'){ const a = (teks.match(/-?\d+(\.\d+)?/g)||[]).map(Number); return a.length===2 && a[0]===c.target[0] && a[1]===c.target[1]; }
+  if (c.jenis==='pecahan'){ let v = null; const f = teks.replace(/\s/g,'').match(/^(-?\d+)\s*[/:]\s*(\d+)$/); if (f) v = parseInt(f[1])/parseInt(f[2]); else { const d = parseFloat(teks.replace(',','.')); if (!isNaN(d)) v = d; } return v!==null && Math.abs(v - c.target) < 0.011; }
+  if (c.jenis==='teks'){ const n = normTeks(teks); return (c.terima||[]).some(t => normTeks(t) === n); }
+  return normTeks(teks) === normTeks(s.kunciTeks);
+}
+function jawabUraian(v){ jawaban[idx] = v; segarPalet(); }
+
+function mulai(){
+  const token = document.getElementById('inToken').value.trim().toUpperCase();
+  const nama = document.getElementById('inNama').value.trim();
+  const kelas = document.getElementById('inKelas').value.trim();
+  const absen = document.getElementById('inAbsen').value.trim();
+  const sekolah = document.getElementById('inSekolah').value.trim() || 'SMP Negeri 1 Bantarkawung';
+  const err = document.getElementById('errMulai');
+  const salah = m => { err.textContent = m; err.classList.remove('sembunyi'); };
+  if (token !== TOKEN_SESI) return salah('Token sesi salah. Minta token yang benar kepada gurumu.');
+  if (!nama) return salah('Nama lengkap wajib diisi.');
+  if (!kelas) return salah('Kelas wajib diisi.');
+  if (!absen) return salah('No. absen wajib diisi.');
+  const absenNum = parseInt(absen); if (isNaN(absenNum) || absenNum < 1 || absenNum > 45) return salah('No. absen harus berupa angka 1–45.');
+  err.classList.add('sembunyi');
+  siswa = {nama, kelas, absen, sekolah};
+  SOAL = buatAcakan(SOAL);
+  jawaban = SOAL.map(s => s.tipe==='PG' ? -1 : s.tipe==='URAIAN' ? '' : s.pernyataan.map(()=> s.tipe==='MCMA' ? false : null));
+  idx = 0; mulaiPada = Date.now();
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarUjian').classList.remove('sembunyi');
+  document.getElementById('barNama').textContent = nama;
+  document.getElementById('barKelas').textContent = kelas + ' • Absen ' + absen + ' • ' + sekolah;
+  bangunPalet(); tampilSoal();
+  timerId = setInterval(tikTimer, 1000);
+  window.scrollTo(0,0);
+}
+function tikTimer(){
+  sisaDetik--;
+  const m = Math.floor(sisaDetik/60), d = sisaDetik%60;
+  const el = document.getElementById('timer');
+  el.textContent = String(m).padStart(2,'0')+':'+String(d).padStart(2,'0');
+  if (sisaDetik <= 300) el.classList.add('kritis');
+  if (sisaDetik <= 0){ clearInterval(timerId); selesai(true); }
+}
+function bangunPalet(){
+  const p = document.getElementById('palet');
+  p.innerHTML = SOAL.map((s,i)=>`<button id="pal${i}" onclick="loncat(${i})">${i+1}</button>`).join('');
+  segarPalet();
+}
+function sudahIsi(i){
+  const j = jawaban[i], s = SOAL[i];
+  if (s.tipe==='PG') return j !== -1;
+  if (s.tipe==='URAIAN') return String(j||'').trim() !== '';
+  if (s.tipe==='MCMA') return j.some(v => v === true);
+  return j.every(v => v !== null);
+}
+function segarPalet(){
+  SOAL.forEach((s,i)=>{
+    const b = document.getElementById('pal'+i);
+    if (!b) return;
+    b.classList.toggle('isi', sudahIsi(i));
+    b.classList.toggle('aktif', i === idx);
+  });
+}
+function loncat(i){ idx = i; tampilSoal(); }
+function geser(a){ idx = Math.min(SOAL.length-1, Math.max(0, idx+a)); tampilSoal(); }
+function tampilSoal(){
+  const s = SOAL[idx];
+  const namaTipe = s.tipe==='PG' ? 'Pilihan Ganda' : (s.tipe==='BS' ? 'Pilihan Ganda Kompleks — Benar/Salah' : (s.tipe==='MCMA' ? 'MCMA — Pilih Semua yang Benar' : 'Uraian — Isian Singkat'));
+  document.getElementById('soalLabel').textContent = `Soal ${idx+1} dari ${SOAL.length} • ${namaTipe}`;
+  document.getElementById('soalTeks').innerHTML = esc(s.soal).replace(/\n/g,'<br>');
+  const isi = document.getElementById('soalIsi');
+  if (s.tipe==='PG'){
+    isi.innerHTML = '<div class="opsi">' + s.opsi.map((o,i)=>{
+      const sel = jawaban[idx]===i ? ' terpilih' : '';
+      return `<label class="${sel}"><input type="radio" name="pg" ${jawaban[idx]===i?'checked':''} onchange="jawabPG(${i})"><span><b>${huruf(i)}.</b> ${esc(o)}</span></label>`;
+    }).join('') + '</div>';
+  } else if (s.tipe==='BS'){
+    isi.innerHTML = s.pernyataan.map((t,i)=>{
+      const v = jawaban[idx][i];
+      return `<div class="pernyataan"><div class="p-teks"><b>${i+1}.</b> ${esc(t)}</div>
+      <div class="bs-pilihan">
+      <button class="${v===true?'sel-b':''}" onclick="jawabBS(${i},true)">BENAR</button>
+      <button class="${v===false?'sel-s':''}" onclick="jawabBS(${i},false)">SALAH</button>
+      </div></div>`;
+    }).join('') + '<p><small>Tentukan BENAR atau SALAH untuk setiap pernyataan (ada 3 pernyataan). Setiap pernyataan dinilai sendiri.</small></p>';
+  } else if (s.tipe==='URAIAN'){
+    isi.innerHTML = '<input type="text" id="inUraian" placeholder="Ketik jawaban akhirmu di sini" autocomplete="off" value="' + esc(jawaban[idx]) + '" oninput="jawabUraian(this.value)">'
+      + '<p><small>' + esc(s.petunjuk || 'Tulis jawaban akhirmu pada kotak di atas.') + ' Soal uraian bernilai 4 poin bila tepat (bentuk jawaban yang setara ikut diterima).</small></p>';
+  } else {
+    isi.innerHTML = '<div class="opsi">' + s.pernyataan.map((t,i)=>{
+      const sel = jawaban[idx][i]===true ? ' terpilih' : '';
+      return `<label class="${sel}"><input type="checkbox" ${jawaban[idx][i]===true?'checked':''} onchange="jawabMCMA(${i},this.checked)"><span><b>${i+1}.</b> ${esc(t)}</span></label>`;
+    }).join('') + '</div><p><small>Centang semua pernyataan yang menurutmu BENAR. Setiap pernyataan dinilai sendiri.</small></p>';
+  }
+  document.getElementById('btnPrev').disabled = idx===0;
+  document.getElementById('btnNext').disabled = idx===SOAL.length-1;
+  segarPalet();
+}
+function jawabPG(i){ jawaban[idx]=i; tampilSoal(); }
+function jawabBS(i,v){ jawaban[idx][i]=v; tampilSoal(); }
+function jawabMCMA(i,v){ jawaban[idx][i]=v; tampilSoal(); }
+
+function hitungSkor(){
+  let poin = 0; const rincian = [];
+  SOAL.forEach((s,i)=>{
+    let p = 0;
+    if (s.tipe==='PG'){ p = jawaban[i]===s.kunci ? 1 : 0; }
+    else if (s.tipe==='BS'){ s.pernyataan.forEach((t,j)=>{ if (jawaban[i][j]===s.kunci[j]) p++; }); }
+    else if (s.tipe==='URAIAN'){ p = nilaiUraian(s, jawaban[i]) ? 4 : 0; }
+    else { s.pernyataan.forEach((t,j)=>{ const harus = s.kunci.includes(j); const dipilih = jawaban[i][j]===true; if (harus===dipilih) p++; }); }
+    poin += p; rincian.push({no:s.no, tampil:i+1, tipe:s.tipe, poin:p});
+  });
+  return {poin, rincian};
+}
+function konfirmasiSelesai(){
+  const kosong = SOAL.map((s,i)=>i).filter(i=>!sudahIsi(i));
+  if (kosong.length && !confirm(`Masih ada ${kosong.length} soal yang belum lengkap dijawab (nomor: ${kosong.map(i=>i+1).join(', ')}). Tetap kirim sekarang?`)) return;
+  selesai(false);
+}
+function selesai(otomatis){
+  if (terkirim) return; terkirim = true;
+  clearInterval(timerId);
+  const {poin, rincian} = hitungSkor();
+  const nilai = Math.round((poin/TOTAL_POIN)*100);
+  const status = nilai >= KKM ? 'TUNTAS' : 'BELUM TUNTAS';
+  const kode = 'SAS8-' + Array.from({length:6},()=>'ABCDEFGHJKMNPQRSTUVWXYZ23456789'[Math.floor(Math.random()*31)]).join('');
+  const durasi = Math.round((Date.now()-mulaiPada)/1000);
+  payloadHasil = {
+    nama: siswa.nama, kelas: siswa.kelas, absen: parseInt(siswa.absen)||null, no_absen: String(siswa.absen),
+    nilai, status, kode_verifikasi: kode,
+    tanggal: new Date().toISOString().slice(0, 10),
+    jenjang: 'SMP', bab: 'SIMULASI ASAS', asesmen: ASESMEN, jumlah_soal: SOAL.length,
+    jawaban: {sekolah: siswa.sekolah, poin, total_poin: TOTAL_POIN, rincian, urutan: SOAL.map(s=>s.no), jawaban_siswa: jawaban},
+    durasi_detik: durasi
+  };
+  document.getElementById('layarUjian').classList.add('sembunyi');
+  document.getElementById('layarHasil').classList.remove('sembunyi');
+  document.getElementById('nilaiBesar').textContent = nilai;
+  const st = document.getElementById('statusHasil');
+  st.textContent = status + (otomatis ? ' (waktu habis)' : '');
+  st.className = 'status ' + (nilai>=KKM ? 'tuntas' : 'belum');
+  document.getElementById('ringkasHasil').textContent = `${siswa.nama} • ${siswa.kelas} • Absen ${siswa.absen} — Poin ${poin} dari ${TOTAL_POIN}`;
+  document.getElementById('kodeVerif').textContent = kode;
+  bangunUlasan(rincian);
+  simpanHasil();
+  window.scrollTo(0,0);
+}
+function deskJawaban(i){
+  const s = SOAL[i], j = jawaban[i];
+  if (s.tipe==='PG') return j===-1 ? '(tidak dijawab)' : huruf(j)+'. '+s.opsi[j];
+  if (s.tipe==='URAIAN') return String(j||'').trim() || '(tidak dijawab)';
+  if (s.tipe==='BS') return s.pernyataan.map((t,k)=>`${k+1}. ${j[k]===null?'(kosong)':(j[k]?'Benar':'Salah')}`).join(' | ');
+  const pil = s.pernyataan.map((t,k)=> j[k]===true ? (k+1) : null).filter(x=>x!==null);
+  return pil.length ? 'Memilih pernyataan nomor ' + pil.join(', ') : '(tidak memilih satu pun)';
+}
+function deskKunci(i){
+  const s = SOAL[i];
+  if (s.tipe==='PG') return huruf(s.kunci)+'. '+s.opsi[s.kunci];
+  if (s.tipe==='URAIAN') return s.kunciTeks;
+  if (s.tipe==='BS') return s.pernyataan.map((t,k)=>`${k+1}. ${s.kunci[k]?'Benar':'Salah'}`).join(' | ');
+  return 'Yang benar: pernyataan nomor ' + s.kunci.map(k=>k+1).join(', ');
+}
+function bangunUlasan(rincian){
+  document.getElementById('ulasan').innerHTML = SOAL.map((s,i)=>{
+    const maks = s.tipe==='PG' ? 1 : s.tipe==='URAIAN' ? 4 : s.pernyataan.length;
+    return `<div class="ulasan-item"><h4>Soal tampil ${i+1} (soal asli No. ${s.no}, ${s.tipe}) — Poinmu: ${rincian[i].poin}/${maks}</h4>
+    <p>${esc(s.soal).replace(/\n/g,'<br>')}</p>
+    <p>Jawabanmu: ${esc(deskJawaban(i))}</p>
+    <p class="kunci-jawaban">Kunci: ${esc(deskKunci(i))}</p>
+    <p><b>Pembahasan:</b> ${esc(s.bahas).replace(/\n/g,'<br>')}</p></div>`;
+  }).join('');
+}
+function bukaUlasan(){
+  const v = document.getElementById('sandiUlasan').value.trim();
+  if (v === SANDI_ULASAN){
+    document.getElementById('gerbangUlasan').classList.add('sembunyi');
+    document.getElementById('ulasan').classList.remove('sembunyi');
+  } else {
+    document.getElementById('sandiSalah').classList.remove('sembunyi');
+  }
+}
+async function simpanHasil(){
+  const el = document.getElementById('statusSimpan');
+  const btn = document.getElementById('btnSimpanUlang');
+  el.textContent = 'Menyimpan nilai ke database…'; el.className = 'status-simpan';
+  btn.classList.add('sembunyi');
+  try {
+    const r = await fetch(SB_URL + '/rest/v1/hasil_asesmen', {
+      method: 'POST',
+      headers: {'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal'},
+      body: JSON.stringify(payloadHasil)
+    });
+    if (!r.ok) throw new Error('gagal-' + r.status);
+    el.textContent = '✔ Nilaimu sudah tersimpan di database guru.';
+    el.classList.add('ok');
+  } catch(e) {
+    el.textContent = '⚠ Nilai belum tersimpan ke database. Tunjukkan layar ini (beserta kode verifikasinya) kepada gurumu.';
+    el.classList.add('gagal');
+    btn.classList.remove('sembunyi');
+  }
+}
+
+/* ============ PANEL GURU ============ */
+function bukaPanelGuru(){
+  document.getElementById('layarMulai').classList.add('sembunyi');
+  document.getElementById('layarGuru').classList.remove('sembunyi');
+  muatNilaiGuru(); window.scrollTo(0,0);
+}
+function tutupPanelGuru(){
+  document.getElementById('layarGuru').classList.add('sembunyi');
+  document.getElementById('layarMulai').classList.remove('sembunyi');
+}
+let dataGuru = [];
+async function muatNilaiGuru(){
+  const stat = document.getElementById('statGuru');
+  const isi = document.getElementById('isiTabelGuru');
+  stat.textContent = 'Memuat data…'; isi.innerHTML = '';
+  try {
+    const r = await fetch(SB_URL + '/rest/v1/hasil_asesmen?select=*&order=created_at.desc', {
+      headers: {'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY}
+    });
+    if (!r.ok) throw new Error('gagal-' + r.status);
+    const semua = await r.json();
+    dataGuru = semua.filter(d => d.asesmen === ASESMEN);
+    const sel = document.getElementById('filterSekolah');
+    const terpilih = sel.value;
+    const daftarSekolah = [...new Set(dataGuru.map(d => (d.jawaban && d.jawaban.sekolah) || '').filter(Boolean))].sort();
+    sel.innerHTML = '<option value="">— Semua Sekolah —</option>' + daftarSekolah.map(s => `<option value="${esc(s)}">${esc(s)}</option>`).join('');
+    sel.value = daftarSekolah.includes(terpilih) ? terpilih : '';
+    gambarTabelGuru();
+  } catch(e) {
+    stat.textContent = 'Data belum dapat dibaca. Coba muat ulang sebentar lagi.';
+  }
+}
+function gambarTabelGuru(){
+  const stat = document.getElementById('statGuru');
+  const isi = document.getElementById('isiTabelGuru');
+  const saring = document.getElementById('filterSekolah').value;
+  const data = saring ? dataGuru.filter(d => ((d.jawaban && d.jawaban.sekolah) || '') === saring) : dataGuru;
+  if (!dataGuru.length){ stat.textContent = 'Belum ada nilai Simulasi ASAS 1 yang masuk.'; isi.innerHTML=''; return; }
+  if (!data.length){ stat.textContent = 'Tidak ada nilai dari sekolah ini.'; isi.innerHTML=''; return; }
+  const tuntas = data.filter(d => (d.nilai||0) >= KKM).length;
+  const rata = (data.reduce((a,d)=>a+(d.nilai||0),0)/data.length).toFixed(1);
+  stat.innerHTML = `Total peserta${saring ? ' (' + esc(saring) + ')' : ''}: <b>${data.length}</b> • Rata-rata: <b>${rata}</b> • Tuntas (≥${KKM}): <b>${tuntas}</b> • Belum tuntas: <b>${data.length-tuntas}</b>`;
+  isi.innerHTML = data.map((d,i)=>`<tr>
+    <td>${i+1}</td><td>${esc(d.nama||'')}</td><td>${esc(d.kelas||'')}</td><td>${d.absen ?? esc(d.no_absen||'')}</td>
+    <td>${esc((d.jawaban && d.jawaban.sekolah) || '')}</td>
+    <td><b>${d.nilai ?? ''}</b></td><td>${esc(d.status||'')}</td>
+    <td style="font-size:12px">${esc(d.kode_verifikasi||'')}</td>
+    <td style="font-size:12.5px">${d.created_at ? new Date(d.created_at).toLocaleString('id-ID') : esc(d.tanggal||'')}</td></tr>`).join('');
+}
+</script>
+</body>
+</html>
