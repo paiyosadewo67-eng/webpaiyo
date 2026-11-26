@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Papan Pembahasan — Soal Uraian Prediksi ASAS 1 Kelas IX</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; font-family: "Segoe UI", system-ui, sans-serif; background: #0f2a1d; color: #fff; }
+  body { display: flex; flex-direction: column; }
+  header { padding: .6rem 1rem; background: #14532d; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+  header h1 { font-size: 1.15rem; font-weight: 700; margin-right: auto; }
+  header h1 small { display: block; font-size: .78rem; font-weight: 400; opacity: .85; }
+  .navsoal { display: flex; gap: .4rem; }
+  .navsoal button, .alat button, #btnKunci, #btnLayar { font-size: 1rem; border: 0; border-radius: .6rem; padding: .55rem .9rem; cursor: pointer; background: #e7f6ec; color: #14532d; font-weight: 700; }
+  .navsoal button.aktif { background: #facc15; color: #422006; }
+  #btnKunci { background: #fde68a; }
+  #btnLayar { background: #bae6fd; }
+  #soal { background: #fefce8; color: #1c1917; padding: 1rem 1.2rem; font-size: clamp(1.15rem, 2.4vw, 1.7rem); line-height: 1.45; border-bottom: 4px solid #facc15; }
+  #soal .no { display: inline-block; background: #14532d; color: #fff; border-radius: .5rem; padding: .05rem .6rem; font-weight: 800; margin-right: .5rem; }
+  #soal .sub { margin-left: 2.2rem; }
+  .alat { display: flex; flex-wrap: wrap; gap: .4rem; padding: .5rem 1rem; background: #166534; align-items: center; }
+  .alat .label { font-size: .9rem; opacity: .9; margin-right: .2rem; }
+  .warna { width: 2.2rem; height: 2.2rem; border-radius: 50%; border: 3px solid transparent; cursor: pointer; }
+  .warna.aktif { border-color: #fff; }
+  #papanWrap { flex: 1; position: relative; background: #fff; }
+  #papan { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: crosshair;
+           background-image: radial-gradient(#d6d3d1 1.2px, transparent 1.2px); background-size: 28px 28px; }
+  #kunci { display: none; background: #fff7ed; color: #431407; padding: .9rem 1.2rem; font-size: 1.15rem; border-top: 4px solid #fb923c; line-height: 1.5; }
+  footer { padding: .35rem 1rem; font-size: .8rem; background: #14532d; opacity: .95; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<header>
+  <h1>✍️ Papan Pembahasan — Soal Uraian Prediksi ASAS 1
+    <small>Matematika Kelas IX • Tulis jawabanmu langsung di papan digital (PID)</small>
+  </h1>
+  <div class="navsoal" id="navSoal"></div>
+  <button id="btnKunci" type="button">🔑 Kunci (Guru)</button>
+  <button id="btnLayar" type="button">⛶ Layar Penuh</button>
+</header>
+
+<div id="soal"></div>
+
+<div class="alat">
+  <span class="label">Warna pena:</span>
+  <button class="warna aktif" data-w="#111827" style="background:#111827" aria-label="Hitam"></button>
+  <button class="warna" data-w="#1d4ed8" style="background:#1d4ed8" aria-label="Biru"></button>
+  <button class="warna" data-w="#dc2626" style="background:#dc2626" aria-label="Merah"></button>
+  <button class="warna" data-w="#15803d" style="background:#15803d" aria-label="Hijau"></button>
+  <span class="label" style="margin-left:.6rem">Alat:</span>
+  <button id="btnUndo" type="button">↩️ Urungkan</button>
+  <button id="btnHapus" type="button">🧽 Bersihkan Papan Soal Ini</button>
+</div>
+
+<div id="papanWrap"><canvas id="papan"></canvas></div>
+<div id="kunci"></div>
+
+<footer><span>Portal AAAMAAT KEREN — SMP Negeri 1 Bantarkawung</span><span>Diketahui → Ditanyakan → Rumus → Hitungan → Kesimpulan</span></footer>
+
+<script>
+const SOAL = [
+  { no: 26, html: 'Rasionalkan penyebut pecahan berikut, kemudian sederhanakan!<div class="sub">a. 6/√3</div><div class="sub">b. 4/(√5 − 1)</div>',
+    kunci: '<b>Kunci 26:</b> a. 6/√3 = 2√3 &nbsp;•&nbsp; b. 4/(√5 − 1) = √5 + 1' },
+  { no: 27, html: 'Segitiga ABC memiliki titik sudut A(1, 2), B(4, 2), dan C(2, 5). Segitiga tersebut direfleksikan terhadap sumbu-y, kemudian didilatasikan dengan pusat O(0, 0) dan faktor skala k = 2. Tentukan koordinat bayangan akhir titik A, B, dan C!',
+    kunci: '<b>Kunci 27:</b> A′(−2, 4), B′(−8, 4), C′(−4, 10) — refleksi sumbu-y: (x, y) → (−x, y); dilatasi k = 2: (x, y) → (2x, 2y).' },
+  { no: 28, html: 'Segitiga ABC siku-siku di titik A. Garis AD adalah garis tinggi yang tegak lurus terhadap sisi miring BC, dengan titik D terletak pada BC. Jika panjang BC = 25 cm dan BD = 9 cm, tentukan panjang garis tinggi AD!',
+    kunci: '<b>Kunci 28:</b> AD = 12 cm — CD = 25 − 9 = 16 cm; AD² = BD × CD = 9 × 16 = 144.' },
+  { no: 29, html: 'Ibu memasukkan uang koin ke dalam sebuah kantong, yaitu 5 koin Rp500, 8 koin Rp200, dan 7 koin Rp1.000. Kemudian Dani mengambil satu koin secara acak dari kantong tersebut. Tentukan:<div class="sub">a. peluang terambil koin Rp500;</div><div class="sub">b. peluang terambil koin yang bukan Rp1.000.</div>',
+    kunci: '<b>Kunci 29:</b> total koin 20. a. 5/20 = 1/4 &nbsp;•&nbsp; b. 13/20.' },
+  { no: 30, html: 'Di kelas IX terdapat 40 murid. Hasil survei menunjukkan 25 murid menyukai sepak bola, 20 murid menyukai bola voli, dan 7 murid tidak menyukai keduanya. Jika dipilih satu murid secara acak, tentukan peluang terpilihnya murid yang menyukai sepak bola dan bola voli sekaligus!',
+    kunci: '<b>Kunci 30:</b> yang menyukai keduanya = (25 + 20) − (40 − 7) = 12 murid; peluang = 12/40 = 3/10.' }
+];
+
+const canvas = document.getElementById('papan');
+const ctx = canvas.getContext('2d');
+let aktif = 0, warna = '#111827', menggambar = false, titikAkhir = null;
+const simpanan = SOAL.map(() => null);   // dataURL papan tiap soal
+const tumpukanUndo = SOAL.map(() => []); // riwayat coretan (dataURL) tiap soal
+
+function sesuaikanUkuran() {
+  const r = canvas.getBoundingClientRect();
+  const lama = canvas.width ? canvas.toDataURL() : null;
+  canvas.width = Math.max(300, Math.floor(r.width));
+  canvas.height = Math.max(300, Math.floor(r.height));
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.lineWidth = 4;
+  if (lama) { const img = new Image(); img.onload = () => ctx.drawImage(img, 0, 0); img.src = lama; }
+}
+function muatPapan(i) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  if (simpanan[i]) { const img = new Image(); img.onload = () => ctx.drawImage(img, 0, 0); img.src = simpanan[i]; }
+}
+function tampilkan(i) {
+  simpanan[aktif] = canvas.toDataURL();
+  aktif = i;
+  document.getElementById('soal').innerHTML = '<span class="no">Soal ' + SOAL[i].no + '</span>' + SOAL[i].html;
+  document.getElementById('kunci').style.display = 'none';
+  document.getElementById('kunci').innerHTML = SOAL[i].kunci;
+  document.querySelectorAll('#navSoal button').forEach((b, j) => b.classList.toggle('aktif', j === i));
+  muatPapan(i);
+}
+const nav = document.getElementById('navSoal');
+SOAL.forEach((s, i) => {
+  const b = document.createElement('button');
+  b.type = 'button'; b.textContent = 'Soal ' + s.no;
+  b.onclick = () => tampilkan(i);
+  nav.appendChild(b);
+});
+document.querySelectorAll('.warna').forEach(b => b.onclick = () => {
+  warna = b.dataset.w;
+  document.querySelectorAll('.warna').forEach(x => x.classList.toggle('aktif', x === b));
+});
+function posisi(e) { const r = canvas.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+canvas.addEventListener('pointerdown', e => {
+  tumpukanUndo[aktif].push(canvas.toDataURL());
+  if (tumpukanUndo[aktif].length > 40) tumpukanUndo[aktif].shift();
+  menggambar = true; titikAkhir = posisi(e);
+  canvas.setPointerCapture(e.pointerId);
+});
+canvas.addEventListener('pointermove', e => {
+  if (!menggambar) return;
+  const p = posisi(e);
+  ctx.strokeStyle = warna; ctx.lineWidth = 4;
+  ctx.beginPath(); ctx.moveTo(titikAkhir.x, titikAkhir.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+  titikAkhir = p;
+});
+['pointerup', 'pointercancel', 'pointerleave'].forEach(ev => canvas.addEventListener(ev, () => { menggambar = false; simpanan[aktif] = canvas.toDataURL(); }));
+document.getElementById('btnUndo').onclick = () => {
+  const t = tumpukanUndo[aktif];
+  if (!t.length) return;
+  const img = new Image();
+  img.onload = () => { ctx.clearRect(0, 0, canvas.width, canvas.height); ctx.drawImage(img, 0, 0); simpanan[aktif] = canvas.toDataURL(); };
+  img.src = t.pop();
+};
+document.getElementById('btnHapus').onclick = () => {
+  tumpukanUndo[aktif].push(canvas.toDataURL());
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  simpanan[aktif] = canvas.toDataURL();
+};
+document.getElementById('btnKunci').onclick = () => {
+  const k = document.getElementById('kunci');
+  if (k.style.display === 'block') { k.style.display = 'none'; return; }
+  const sandi = prompt('Kata sandi guru:');
+  if (sandi === 'yosad67') { k.style.display = 'block'; }
+  else if (sandi !== null) { alert('Kata sandi tidak cocok.'); }
+};
+document.getElementById('btnLayar').onclick = () => {
+  if (document.fullscreenElement) document.exitFullscreen();
+  else document.documentElement.requestFullscreen();
+};
+window.addEventListener('resize', sesuaikanUkuran);
+sesuaikanUkuran();
+tampilkan(0);
+</script>
+</body>
+</html>
